@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<toc label="HTML5 and JavaScript Framework" link_to="../com.qnx.doc.qnxcar2.dev.nav/main.xml#car2_html5ww" topic="topic/about.html"><topic label="HTML5 and JavaScript Development Tools" href="topic/overview.html"><topic label="HTML5 app support" href="topic/html5_web_app_support.html"/></topic><topic label="Obtaining the development tools" href="topic/obtain_dev_tools_task.html"/><topic label="Modifying CSS Styles" href="topic/modifying_css.html"/><topic label="Creating BAR packages for Cordova apps" href="topic/creating_bar_package.html"/><topic label="Creating BAR packages for WebWorks apps" href="topic/creating_ww_bar_package.html"/></toc>

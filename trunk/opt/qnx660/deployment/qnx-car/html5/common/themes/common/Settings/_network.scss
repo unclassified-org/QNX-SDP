@@ -1,0 +1,114 @@
+/* $Id$ */
+
+.x-tab.icon_network{
+  background-image: $network-tab-icon;
+}
+
+.x-tab-active.icon_network{
+  background-image: $network-tab-icon-active;
+}
+
+.network_tab {
+  font-size: 125%;
+  padding: 10px * $y-multiplier 30px * $x-multiplier;
+
+  .title {
+	background: no-repeat;
+	font-size: 150%;
+	font-weight: bold;
+	height: 64px * $y-multiplier;
+	padding: 13px  * $y-multiplier 0px * $x-multiplier 0px  * $y-multiplier 75px * $x-multiplier;
+	background-image: $network-sheet-icon;
+
+    .x-innerhtml {
+      position: absolute;
+      top: 35px * $y-multiplier;
+      /*We want to use the y-multipler here so the 
+      text keeps aligned with the content below*/
+      left: 122px * $y-multiplier;
+      font-weight: bold;
+      line-height: 25px * $y-multiplier;
+    } 
+  }
+
+  .top-spacer {
+	height: 40px * $y-multiplier;
+  }
+
+  .label {
+	font-size: 119%;
+	font-weight: bold;
+  }
+
+  .data {
+	font-size: 112%;
+	margin-left: 10px * $x-multiplier;
+	margin-top: 1px * $y-multiplier;
+  }
+
+  .hbox {
+	margin: 10px * $y-multiplier 5px * $x-multiplier 0px * $y-multiplier 0px * $x-multiplier;
+  }
+
+  .offset {
+	margin-left: 75px * $x-multiplier;
+  }
+
+  .x-button.configure_button {
+	margin-top: 40px * $y-multiplier;
+  }
+}
+
+.network_configure_sheet {
+
+  .x-form-label {
+	background: none;
+	color: $text-color;
+	font-size: 100%;
+	padding: 6px * $y-multiplier 6px * $x-multiplier 6px * $y-multiplier 6px * $x-multiplier;
+	border: none;
+  }
+
+  .x-field-radio .x-form-label {
+	padding-left: 80px * $x-multiplier;
+  }
+
+  .x-field-labeled.offset, .x-button.offset {
+	margin-left: 100px * $x-multiplier;
+  }
+
+  .header {
+	font-size: 125%;
+	font-weight: bold;
+	padding: 10px * $y-multiplier 30px * $x-multiplier;
+  }
+
+  .x-field {
+	margin: 5px * $y-multiplier 0px * $x-multiplier;
+	border: none;
+  }
+
+  .x-field-input {
+	width: 250px * $x-multiplier;
+	margin-left: 10px * $x-multiplier;
+  }
+
+  .x-input-text {
+	background-size: 100% 100%;
+	color: $text-color;
+	background-image: $input-text-background;
+  }
+
+  .x-form-fieldset {
+	margin-bottom: 15px * $y-multiplier;
+  }
+
+  .x-form-fieldset > .x-inner {
+	background: none;
+	border: none;
+  }
+
+  .x-form-fieldset.x-item-disabled {
+	opacity: 0.5;
+  }
+}

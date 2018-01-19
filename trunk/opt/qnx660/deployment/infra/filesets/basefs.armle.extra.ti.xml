@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fileset name="basefs.armle.extra.ti">
+  <file name="lib/firmware/ti1273/firmware_ti1273_mcp25.bin" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/sbin/wpa_supplicant_ti" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/firmware/ti1273/firmware.bin" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/firmware/ti1273/nvs_map.bin" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/firmware/ti1273/tiwlan.bin.mcp3" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/firmware/ti1283/firmware.bin" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/firmware/ti1283/nvs_map.bin" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/firmware/ti1283/tiwlan.bin.mcp3" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/sbin/roleAp.bin.mcp3" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/sbin/roleSta.bin.mcp3" uid="root" gid="nto" mode="0755"/>
+</fileset>

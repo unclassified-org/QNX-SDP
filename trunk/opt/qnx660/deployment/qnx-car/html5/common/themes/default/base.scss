@@ -1,0 +1,44 @@
+/* Base theme definition for bw theme */
+
+/* Useful Definitions */
+
+$theme-dir: "platform:///apps/common/themes/default";
+
+/* Fonts */
+
+// @font-face { font-family: "FuturaTL-Light"; src: url("#{$theme-dir}/common/fonts/1DB55E_A_0.ttf") format("truetype"); }
+// @font-face { font-family: "FuturaTL-Bold"; src: url("#{$theme-dir}/common/fonts/1DB55E_C_0.ttf") format("truetype"); }
+// @font-face { font-family: "FuturaTL-Book"; src: url("#{$theme-dir}/common/fonts/1DB55E_5_0.ttf") format("truetype"); }
+// @font-face { font-family: "FuturaTL-Medium"; src: url("#{$theme-dir}/common/fonts/1DB55E_F_0.ttf") format("truetype"); }
+
+$font-family-default: 'Arial';
+$font-family-light: 'Arial';
+$font-family-medium: 'Arial Black';
+$font-family-bold: 'Arial Black';
+$font-size: 1em;
+
+/* Colors */
+
+$background-color: #000000;
+$text-color: #FFFFFF;
+$button-text-color: #FFFFFF;
+$button-disabled-color: #202020;
+$title-bar-background-color: rgba(250, 175, 64, 0.5);
+$title-bar-color:#FFFFFF;
+
+$sub-text-color:gray;
+
+$active-background-color: #FAAF40;
+$active-text-color: #000000;
+$active-button-text-color: #000000;
+$active-button-disabled-color: #202020;
+
+$dialog-title-color: #000000;
+
+/* Other Defaults */
+
+body {
+	color: $text-color;
+	background-color: $background-color;
+	font-family: $font-family-default;
+}

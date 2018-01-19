@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<groups>
+	<group name="nto" gid="0" members="root,upd"/>
+	<group name="bin" gid="1" members="root,bin"/>
+	<group name="daemon" gid="2"/>
+	<group name="sys" gid="3" members="root,bin"/>
+	<group name="adm" gid="4" members="root"/>
+	<group name="tty" gid="5" members="root"/>
+	<group name="sshd" gid="6"/>
+	<group name="samba" gid="22" members="samba"/>
+	<group name="logger" gid="25" members="logger"/>
+	<group name="phone" gid="30"/>
+	<group name="radio" gid="31"/>
+	<group name="coreServices" gid="32"/>
+	<group name="preservedmem" gid="34"/>
+	<group name="lpddrTempMon" gid="35"/>
+	<group name="pipeservice" gid="36"/>
+	<group name="net" gid="42" members="net"/>
+	<group name="wpa" gid="43"/>
+	<group name="pnsagent" gid="44" members="pnsagent"/>
+	<group name="bslauncher" gid="45"/>
+	<group name="time" gid="46" members="time"/>
+	<group name="imservice" gid="47" members="imservice"/>
+	<group name="proxyinfo" gid="48" members="proxyinfo"/>
+	<group name="vpn" gid="49"/>
+	<group name="search" gid="50"/>
+	<group name="buttons" gid="51"/>
+	<group name="ifwatchd" gid="60"/>
+	<group name="rim_diag_mux" gid="62"/>
+	<group name="media" gid="80"/>
+	<group name="dlna" gid="81"/>
+	<group name="pps" gid="86"/>
+	<group name="navigator" gid="87"/>
+	<group name="upd" gid="88" members="upd"/>
+	<group name="apps" gid="89" members="apps,upd"/>
+	<group name="guest" gid="90" members="guest"/>
+	<group name="ptg" gid="91"/>
+	<!-- Groups 92-98 are reserved for internal launch apps -->
+	<group name="infotray" gid="92"/>
+	<group name="nobody" gid="99"/>
+	<group name="devuser" gid="100" members="devuser"/>
+	<group name="protected_media" gid="101"/>
+	<group name="drm_license" gid="102"/>
+	<group name="bbm_data" gid="103"/>
+	<group name="escreens" gid="104"/>
+	<group name="carrier_mgr" gid="105"/>
+	<group name="carrier_config" gid="106"/>
+	<group name="random" gid="107"/>
+	<group name="crypto" gid="108"/>
+	<group name="asr" gid="109"/>
+	<group name="certmgr" gid="110"/>
+	<group name="dtg" gid="112"/>
+	<group name="shm_lock_init" gid="113"/>
+	<group name="devicepublisher" gid="114"/>
+	<group name="imfwk" gid="115" members="imfwk"/>
+	<group name="trustzone" gid="116"/>
+	<group name="filesystem" gid="117" members="fsmon"/>
+	<group name="powerman" gid="118"/>
+	<group name="battery" gid="119"/>
+	<group name="usb" gid="120" members="usbmgr,media"/>
+	<group name="standbymon" gid="131"/>
+	<group name="Disk_Drivers" gid="132" members="devb"/>
+	<group name="air_services" gid="133"/>
+	<group name="io-hid" gid="134" members="io-hid"/>
+	<group name="cfs" gid="135"/>
+	<group name="muxclient" gid="136"/>
+	<group name="fsecd" gid="137"/>
+	<group name="pim" gid="200"/>
+	<group name="vibctl" gid="201"/>
+	<group name="ema" gid="203" members="ema"/>
+	<group name="ldo-msm" gid="204"/>
+	<group name="bozohttp" gid="205"/>
+	<group name="powerauth" gid="207"/>
+	<group name="rim_diag_rm" gid="206"/>
+	<group name="smux" gid="208"/>
+	<group name="shmux" gid="209"/>
+	<group name="rpmb" gid="210"/>
+	<group name="perimeter_mgr" gid="211"/>
+	<group name="inetd" gid="212"/>
+	<group name="fsevmgr" gid="213"/>
+	<group name="webkit" gid="214"/>
+	<group name="input_service" gid="215"/>
+	<group name="bbregistry" gid="220" members="bbregistry"/>
+	<group name="miracast" gid="221" members="miracast"/>
+	<group name="bbregistry_framework" gid="222"/>
+	<group name="bluetooth" gid="300"/>
+	<group name="bt_remotedevices" gid="301"/>
+	<group name="mirrorlink" gid="302"/>
+	<group name="bbiocore" gid="320" members="ema"/>
+	<group name="bbio" gid="321"/>
+    <group name="location_manager" gid="325"/>
+	<group name="location_service" gid="326"/>
+	<group name="rimlocp" gid="327"/>
+	<group name="data_miner" gid="329"/>
+	<group name="geomonitor_service" gid="330"/>
+	<group name="backlight" gid="332"/>
+	<group name="soundplayerd" gid="335" members="soundplayerd"/>
+	<group name="callmone911" gid="338"/>
+	<group name="printd" gid="343" members="printd"/>
+	<group name="sensor-services" gid="345" members="sensor-services"/>
+	<group name="omadm" gid="347"/>
+	<group name="bbmcore" gid="350"/>
+	<group name="nfc" gid="360"/>
+	<group name="notifications" gid="361"/>
+	<group name="bbgroups" gid="363"/>
+	<group name="localization" gid="364"/>
+	<group name="bp2p" gid="365"/>
+	<group name="oma_fl" gid="366"/>
+	<group name="bbjma_data" gid="368"/>
+	<group name="context" gid="369"/>
+	<group name="corp_liable" gid="370"/>
+	<group name="invokeproxy" gid="374"/>
+	<group name="mdnsdp" gid="376"/>
+	<group name="visual_voicemail" gid="377"/>
+	<group name="carrier_cfg" gid="379"/>
+	<group name="videochat" gid="380"/>
+	<group name="mdnsde" gid="381"/>
+	<group name="resarb" gid="386"/>
+	<group name="resarb_hi_priority" gid="387"/>
+	<group name="qxdmlogger" gid="391"/>
+	<group name="qct_mplogsvc" gid="392"/>
+	<group name="now_playing" gid="393"/>
+	<group name="mips_resmgr" gid="394"/>
+	<group name="flight_recorder" gid="395"/>
+	<group name="sanity-monitor" gid="396"/>
+	<group name="reset-cause" gid="398"/>
+	<group name="racd" gid="399"/>
+	<group name="qcore" gid="400"/>
+	<group name="qrs_rdv" gid="401"/>
+	<group name="mis" gid="402"/>
+	<group name="i2c_service" gid="403"/>
+	<group name="smmu_server" gid="404"/>
+	<group name="io_service" gid="405"/>
+	<group name="videoCore" gid="406"/>
+	<group name="vpeCore" gid="407"/>
+	<group name="pmic_service" gid="408"/>
+	<group name="ssr_policy_mgr" gid="409"/>
+	<group name="mode_reset" gid="410"/>
+	<group name="keyboard" gid="411"/>
+	<group name="dumper" gid="412"/>
+	<group name="pimanal" gid="413"/>
+	<group name="led_control" gid="414"/>
+	<group name="mq" gid="415"/>
+	<group name="ims" gid="453" members="ims"/>
+	<group name="tones_omafl" gid="416" members="media,notifications"/>
+	<group name="menu_service" gid="417"/>
+	<group name="keypad" gid="418"/>
+	<group name="io-acoustic" gid="419"/>
+	<group name="qcthermal" gid="421"/>
+	<group name="cellular-voice-service" gid="423"/>
+	<group name="certmgr_users" gid="424"/>
+	<group name="ves" gid="425"/>
+	<group name="i2c-omap35xx-omap4_service" gid="426"/>
+	<group name="bbid" gid="427"/>
+	<group name="nginx" gid="428"/>
+	<group name="tpm" gid="429"/>
+	<group name="inputmethods" gid="430"/>
+	<group name="qpmic-intsvr" gid="431"/>
+	<group name="qreliability" gid="432"/>
+	<group name="navstatus" gid="433"/>
+	<group name="devc-pty" gid="509"/>
+	<group name="camera" gid="521"/>
+	<group name="devc-ser" gid="522"/>
+	<group name="unifiedradiomgr" gid="523"/>
+	<group name="camera_priv" gid="524"/>
+	<group name="personal_network" gid="750"/>
+	<group name="enterprise_network" gid="751"/>
+	<!-- Groups for on demand background services -->
+	<!-- GIDs 752-764 reserved for networking -->
+	<group name="all_fib" gid="765"/>
+	<group name="mes_service" gid="337"/>
+	<group name="scoreloop" gid="362"/>
+	<group name="places" gid="367"/>
+	<group name="georeg" gid="378"/>
+	<group name="progress" gid="382"/>
+	<group name="ntdiagnostics" gid="383"/>
+	<group name="localsearch" gid="384"/>
+	<group name="phone-service" gid="422"/>
+	<group name="rct-dtmf-receiver" gid="462"/>
+	<!-- Groups 700-724 are reserved for Desktop Manager CGI -->
+	<group name="cgi_backup" gid="705"/>
+	<!-- Groups 800-899 are reserved for apkruntime services -->
+	<group name="apkruntime_root" gid="800" members="apkruntime_root"/>
+	<group name="apkruntime_system" gid="810" members="apkruntime_system"/>
+	<group name="apkruntime_radio" gid="811" members="apkruntime_radio"/>
+	<group name="apkruntime_bluetooth" gid="812" members="apkruntime_bluetooth"/>
+	<group name="apkruntime_graphics" gid="813" members="apkruntime_graphics"/>
+	<group name="apkruntime_input" gid="814" members="apkruntime_input"/>
+	<group name="apkruntime_audio" gid="815" members="apkruntime_audio"/>
+	<group name="apkruntime_camera" gid="816" members="apkruntime_camera"/>
+	<group name="apkruntime_log" gid="817" members="apkruntime_log"/>
+	<group name="apkruntime_compass" gid="818" members="apkruntime_compass"/>
+	<group name="apkruntime_mount" gid="819" members="apkruntime_mount"/>
+	<group name="apkruntime_wifi" gid="820" members="apkruntime_wifi"/>
+	<group name="apkruntime_adb" gid="821" members="apkruntime_adb"/>
+	<group name="apkruntime_install" gid="822" members="apkruntime_install"/>
+	<group name="apkruntime_media" gid="823" members="apkruntime_media"/>
+	<group name="apkruntime_dhcp" gid="824" members="apkruntime_dhcp"/>
+	<group name="apkruntime_sdcard_rw" gid="825" members="apkruntime_sdcard_rw"/>
+	<group name="apkruntime_vpn" gid="826" members="apkruntime_vpn"/>
+	<group name="apkruntime_keystore" gid="827" members="apkruntime_keystore"/>
+	<group name="apkruntime_usb" gid="828" members="apkruntime_usb"/>
+	<group name="apkruntime_gps" gid="831" members="apkruntime_gps"/>
+	<group name="apkruntime_nfc" gid="832" members="apkruntime_nfc"/>
+	<group name="apkruntime_rrr" gid="840" members="apkruntime_rrr"/>
+	<group name="apkruntime_shell" gid="850" members="apkruntime_shell"/>
+	<group name="apkruntime_cache" gid="851" members="apkruntime_cache"/>
+	<group name="apkruntime_diag" gid="852" members="apkruntime_diag"/>
+	<group name="apkruntime_net_bt_admin" gid="861" members="apkruntime_net_bt_admin"/>
+	<group name="apkruntime_net_bt" gid="862" members="apkruntime_net_bt"/>
+	<group name="apkruntime_inet" gid="863" members="apkruntime_inet"/>
+	<group name="apkruntime_net_raw" gid="864" members="apkruntime_net_raw"/>
+	<group name="apkruntime_net_admin" gid="865" members="apkruntime_net_admin"/>
+	<group name="apkruntime_misc" gid="898" members="apkruntime_misc"/>
+	<group name="apkruntime_nobody" gid="899" members="apkruntime_nobody"/>
+	<group name="dev0" gid="900" members="devuser"/>
+	<group name="dev1" gid="901" members="devuser"/>
+	<group name="dev2" gid="902" members="devuser"/>
+	<group name="dev3" gid="903" members="devuser"/>
+	<group name="dev4" gid="904" members="devuser"/>
+	<group name="dev5" gid="905" members="devuser"/>
+	<group name="dev6" gid="906" members="devuser"/>
+	<group name="dev7" gid="907" members="devuser"/>
+	<group name="dev8" gid="908" members="devuser"/>
+	<group name="dev9" gid="909" members="devuser"/>
+	<group name="dev10" gid="910" members="devuser"/>
+	<group name="dev11" gid="911" members="devuser"/>
+	<group name="dev12" gid="912" members="devuser"/>
+	<group name="dev13" gid="913" members="devuser"/>
+	<group name="dev14" gid="914" members="devuser"/>
+	<group name="dev15" gid="915" members="devuser"/>
+	<group name="dev16" gid="916" members="devuser"/>
+	<group name="dev17" gid="917" members="devuser"/>
+	<group name="dev18" gid="918" members="devuser"/>
+	<group name="dev19" gid="919" members="devuser"/>
+	<group name="dev20" gid="920" members="devuser"/>
+	<group name="dev21" gid="921" members="devuser"/>
+	<group name="dev22" gid="922" members="devuser"/>
+	<group name="dev23" gid="923" members="devuser"/>
+	<group name="dev24" gid="924" members="devuser"/>
+	<group name="dev25" gid="925" members="devuser"/>
+	<group name="dev26" gid="926" members="devuser"/>
+	<group name="dev27" gid="927" members="devuser"/>
+	<group name="dev28" gid="928" members="devuser"/>
+	<group name="dev29" gid="929" members="devuser"/>
+	<group name="dev30" gid="930" members="devuser"/>
+	<group name="dev31" gid="931" members="devuser"/>
+	<group name="dev32" gid="932" members="devuser"/>
+	<group name="dev33" gid="933" members="devuser"/>
+	<group name="dev34" gid="934" members="devuser"/>
+	<group name="dev35" gid="935" members="devuser"/>
+	<group name="dev36" gid="936" members="devuser"/>
+	<group name="dev37" gid="937" members="devuser"/>
+	<group name="dev38" gid="938" members="devuser"/>
+	<group name="dev39" gid="939" members="devuser"/>
+	<group name="dev40" gid="940" members="devuser"/>
+	<group name="dev41" gid="941" members="devuser"/>
+	<group name="dev42" gid="942" members="devuser"/>
+	<group name="dev43" gid="943" members="devuser"/>
+	<group name="dev44" gid="944" members="devuser"/>
+	<group name="dev45" gid="945" members="devuser"/>
+	<group name="dev46" gid="946" members="devuser"/>
+	<group name="dev47" gid="947" members="devuser"/>
+	<group name="dev48" gid="948" members="devuser"/>
+	<group name="dev49" gid="949" members="devuser"/>
+	<group name="dev50" gid="950" members="devuser"/>
+	<group name="dev51" gid="951" members="devuser"/>
+	<group name="dev52" gid="952" members="devuser"/>
+	<group name="dev53" gid="953" members="devuser"/>
+	<group name="dev54" gid="954" members="devuser"/>
+	<group name="dev55" gid="955" members="devuser"/>
+	<group name="dev56" gid="956" members="devuser"/>
+	<group name="dev57" gid="957" members="devuser"/>
+	<group name="dev58" gid="958" members="devuser"/>
+	<group name="dev59" gid="959" members="devuser"/>
+	<group name="dev60" gid="960" members="devuser"/>
+	<group name="dev61" gid="961" members="devuser"/>
+	<group name="dev62" gid="962" members="devuser"/>
+	<group name="dev63" gid="963" members="devuser"/>
+	<group name="dev64" gid="964" members="devuser"/>
+	<group name="dev65" gid="965" members="devuser"/>
+	<group name="dev66" gid="966" members="devuser"/>
+	<group name="dev67" gid="967" members="devuser"/>
+	<group name="dev68" gid="968" members="devuser"/>
+	<group name="dev69" gid="969" members="devuser"/>
+	<group name="dev70" gid="970" members="devuser"/>
+	<group name="dev71" gid="971" members="devuser"/>
+	<group name="dev72" gid="972" members="devuser"/>
+	<group name="dev73" gid="973" members="devuser"/>
+	<group name="dev74" gid="974" members="devuser"/>
+	<group name="dev75" gid="975" members="devuser"/>
+	<group name="dev76" gid="976" members="devuser"/>
+	<group name="dev77" gid="977" members="devuser"/>
+	<group name="dev78" gid="978" members="devuser"/>
+	<group name="dev79" gid="979" members="devuser"/>
+	<group name="dev80" gid="980" members="devuser"/>
+	<group name="dev81" gid="981" members="devuser"/>
+	<group name="dev82" gid="982" members="devuser"/>
+	<group name="dev83" gid="983" members="devuser"/>
+	<group name="dev84" gid="984" members="devuser"/>
+	<group name="dev85" gid="985" members="devuser"/>
+	<group name="dev86" gid="986" members="devuser"/>
+	<group name="dev87" gid="987" members="devuser"/>
+	<group name="dev88" gid="988" members="devuser"/>
+	<group name="dev89" gid="989" members="devuser"/>
+	<group name="dev90" gid="990" members="devuser"/>
+	<group name="dev91" gid="991" members="devuser"/>
+	<group name="dev92" gid="992" members="devuser"/>
+	<group name="dev93" gid="993" members="devuser"/>
+	<group name="dev94" gid="994" members="devuser"/>
+	<group name="dev95" gid="995" members="devuser"/>
+	<group name="dev96" gid="996" members="devuser"/>
+	<group name="dev97" gid="997" members="devuser"/>
+	<group name="dev98" gid="998" members="devuser"/>
+	<group name="dev99" gid="999" members="devuser"/>
+	<group name="1000" gid="1000" members="devuser"/>
+	<group name="1000_shared" gid="1001" members="devuser"/>
+	<group name="1000_sys" gid="1002"/>
+	<group name="1000_certs" gid="1003"/>
+	<group name="1000_config" gid="1004"/>
+	<group name="1100" gid="1100"/>
+	<group name="1100_shared" gid="1101"/>
+	<group name="1100_sys" gid="1102"/>
+	<group name="1100_certs" gid="1103"/>
+	<group name="1100_config" gid="1104"/>
+	<group name="1200" gid="1200"/>
+	<group name="1200_shared" gid="1201"/>
+	<group name="1200_sys" gid="1202"/>
+	<group name="1200_certs" gid="1203"/>
+	<group name="1200_config" gid="1204"/>
+</groups>

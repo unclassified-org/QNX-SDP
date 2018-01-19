@@ -1,0 +1,16 @@
+### screen-panda.build
+
+[+script] car_startup_screen_panda = {
+	waitfor /base/bin/tiler
+	display_msg Starting tiler...
+	tiler &
+	
+    display_msg Waiting for tiler before starting screen...
+	waitfor /dev/tiler
+    display_msg Tiler ready!
+    GRAPHICS_ROOT=/base/usr/lib/graphics/omap5430ES2_0
+}
+
+[type=link] /base/usr/lib/graphics/omap5430ES2_0/graphics.conf=/base/etc/system/config/graphics.conf
+
+##eof

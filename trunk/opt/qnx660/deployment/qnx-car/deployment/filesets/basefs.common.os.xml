@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fileset name="basefs.common.os">
+  <file name="usr/bin/arp" uid="root" gid="nto" mode="0755"/>
+  <directory name="usr/libexec" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/libexec/sftp-server" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/sbin/dhclient" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/sbin/dhclient-script" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/sbin/dhcp.client" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/sbin/dhcpd" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/sbin/sshd" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/bin/scp" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/bin/chat" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/bin/ssh-keygen" uid="root" gid="nto" mode="0750"/>
+  <file name="usr/sbin/certmgr_pps" uid="root" gid="nto" mode="0755"/>
+  <file name="sbin/setkey" uid="root" gid="nto" mode="0750"/>
+  <file name="usr/bin/dig" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/bin/ping" uid="nobody" gid="nto" mode="2750"/>
+  <file name="usr/bin/ping6" uid="root" gid="nto" mode="4751"/>
+  <file name="usr/bin/traceroute" uid="root" gid="nto" mode="4751"/>
+  <file name="usr/bin/traceroute6" uid="root" gid="nto" mode="4751"/>
+  <file name="usr/sbin/ndp" uid="root" gid="nto" mode="0750"/>
+  <symlink name="bin/awk" target="gawk" uid="root" gid="nto" mode="0755"/>
+  <file name="bin/aps" uid="root" gid="nto" mode="0755"/>
+  <file name="bin/cat" uid="root" gid="nto" mode="0755"/>
+  <symlink name="bin/chgrp" target="chown" uid="root" gid="nto" mode="0755"/>
+  <file name="bin/chmod" uid="root" gid="nto" mode="0755"/>
+  <file name="bin/chemod" uid="root" gid="nto" mode="0755"/>
+  <file name="bin/chown" uid="root" gid="nto" mode="0755"/>
+  <file name="bin/cp" uid="root" gid="nto" mode="0755"/>
+  <file name="bin/df" uid="root" gid="nto" mode="0750"/>
+  <file name="bin/downsize" uid="root" gid="nto" mode="0755"/>
+  <file name="bin/echo" uid="root" gid="nto" mode="0755"/>
+  <file name="bin/elvis" uid="root" gid="nto" mode="0755"/>
+  <file name="bin/gawk" uid="root" gid="nto" mode="0755"/>
+  <file name="bin/getfacl" uid="root" gid="nto" mode="0755"/>
+  <file name="bin/hostname" uid="root" gid="nto" mode="0755"/>
+  <file name="bin/kill" uid="root" gid="nto" mode="0755"/>
+  <file name="bin/ln" uid="root" gid="nto" mode="0755"/>
+  <file name="bin/ls" uid="root" gid="nto" mode="0755"/>
+  <file name="bin/mkdir" uid="root" gid="nto" mode="0755"/>
+  <file name="bin/mount" uid="root" gid="nto" mode="0755"/>
+  <file name="bin/mv" uid="root" gid="nto" mode="0755"/>
+  <file name="bin/on" uid="root" gid="nto" mode="0755"/>
+  <file name="bin/pidin" uid="root" gid="nto" mode="0755"/>
+  <file name="bin/ps" uid="root" gid="nto" mode="0755"/>
+  <file name="bin/restart" uid="root" gid="nto" mode="0755"/>
+  <file name="bin/rm" uid="root" gid="nto" mode="0755"/>
+  <file name="bin/screeninfo" uid="root" gid="nto" mode="0755"/>
+  <file name="bin/sed" uid="root" gid="nto" mode="0755"/>
+  <file name="bin/setfacl" uid="root" gid="nto" mode="0755"/>
+  <symlink name="bin/sh" target="ksh" uid="root" gid="nto" mode="0755"/>
+  <file name="bin/slay" uid="root" gid="nto" mode="0755"/>
+  <file name="bin/sloginfo" uid="root" gid="nto" mode="0755"/>
+  <file name="bin/stty" uid="root" gid="nto" mode="0755"/>
+  <file name="bin/sync" uid="root" gid="nto" mode="0755"/>
+  <file name="bin/umount" uid="root" gid="nto" mode="0750"/>
+  <file name="bin/uname" uid="root" gid="nto" mode="0750"/>
+  <file name="bin/gzip" uid="root" gid="nto" mode="0755"/>
+  <file name="bin/resarb" uid="root" gid="nto" mode="0755"/>
+  <file name="bin/usblauncher" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libresarb.so" target="libresarb.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libresarb.so.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libmmresarb.so" target="libmmresarb.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libmmresarb.so.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="lib/libtracelog.so" target="libtracelog.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/libtracelog.so.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="lib/libclipboard.so" target="libclipboard.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/libclipboard.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/libcpp-ne.so.4" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/libcpp-ne.so.5" uid="root" gid="nto" mode="0755"/>
+  <symlink name="lib/libcpp-ne.so" target="libcpp-ne.so.5" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/libcpp.so.4" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/libcpp.so.5" uid="root" gid="nto" mode="0755"/>
+  <symlink name="lib/libcpp.so" target="libcpp.so.5" uid="root" gid="nto" mode="0755"/>
+  <symlink name="lib/libbbarc.so" target="libbbarc.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/libbbarc.so.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="lib/libpps.so" target="libpps.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/libpps.so.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="lib/libstdc++.so.6" target="libstdc++.so.6.0.17" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/libstdc++.so.6.0.17" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/bin/basename" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/bin/cut" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/bin/date" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/bin/dirname" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/bin/env" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/bin/expr" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/bin/find" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/bin/fullpath" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/bin/grep" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/bin/less" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/bin/netstat" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/bin/pdebug" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/bin/passwd" uid="root" gid="nto" mode="0750"/>
+  <file name="usr/bin/printf" uid="root" gid="nto" mode="0750"/>
+  <symlink name="usr/bin/setconf" target="getconf" uid="root" gid="nto" mode="0750"/>
+  <file name="usr/bin/sleep" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/bin/sort" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/bin/strings" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/bin/tail" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/bin/head" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/bin/touch" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/bin/unzip" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/bin/zip" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/bin/use" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/bin/wc" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/bin/which" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/bin/hogs" uid="root" gid="nto" mode="0750"/>
+  <file name="usr/bin/xargs" uid="root" gid="nto" mode="0750"/>
+  <file name="usr/sbin/mm-renderer" uid="root" gid="nto" mode="0750"/>
+  <symlink name="usr/lib/libstrm.so" target="libstrm.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libstrm.so.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="lib/libjpeg.so" target="libjpeg.so.4" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/libjpeg.so.4" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/lsm-pf-v6.so" uid="root" gid="nto" mode="0755"/>
+  <directory name="lib/dll/mmedia" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/mmedia/aac_parser.so" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/mmedia/audio_streamer.so" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/mmedia/audio_writer.so" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/mmedia/audio_meter.so" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/mmedia/audio_clock.so" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/mmedia/avi_parser.so" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/mmedia/fildes_streamer.so" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/mmedia/frame_writer.so" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/mmedia/http_streamer.so" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/mmedia/mdev_streamer.so" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/mmedia/mp4_parser.so" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/mmedia/mp2ts_parser.so" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/mmedia/mpega_parser.so" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/mmedia/queue_filter.so" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/mmedia/rawfile_writer.so" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/mmedia/stream_reader.so" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/mmedia/wav_parser.so" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/mm-mdp-mmf.so" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/mm-plp-m3u.so" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/mmrenderer_cli.so" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/mmr-mmf-routing.so" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/mmr-playlist-engine.so" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/mmr-track-engine.so" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/mmr-audiomgmt-plugin.so" uid="root" gid="nto" mode="0755"/>
+  <file name="sbin/authman" uid="root" gid="nto" mode="0750"/>
+  <directory name="lib" uid="root" gid="nto" mode="0755"/>
+  <directory name="lib/dll" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/cam-cdrom.so" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/deva-mixer-ac97.so" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/devh-usb.so" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/devnp-shim.so" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/devnp-asix.so" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/devnp-usbdnet.so" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/img_codec_bmp.so" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/img_codec_gif.so" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/img_codec_jpg.so" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/img_codec_pcx.so" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/img_codec_png.so" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/img_codec_sgi.so" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/img_codec_tga.so" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/img_codec_tif.so" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/io-blk.so" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/lsm-qnet.so" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/screen-gles1.so" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/screen-gles2.so" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/screen-sw.so" uid="root" gid="nto" mode="0755"/>
+  <symlink name="lib/libasound.so" target="libasound.so.2" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/libasound.so.2" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libaudio_manager.so" target="libaudio_manager.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libaudio_manager.so.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="lib/libbessel.so" target="libbessel.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/libbessel.so.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="lib/libhiddi.so" target="libhiddi.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/libhiddi.so.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="lib/libimfclient.so" target="libimfclient.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/libimfclient.so.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="lib/libimg.so" target="libimg.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/libimg.so.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="lib/libinputevents.so" target="libinputevents.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/libinputevents.so.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libmmrndclient.so" target="libmmrndclient.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libmmrndclient.so.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="lib/libQREncoder.so" target="libQREncoder.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/libQREncoder.so.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="lib/libusbdi.so" target="libusbdi.so.2" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/libusbdi.so.2" uid="root" gid="nto" mode="0755"/>
+  <symlink name="lib/libwlconfig.so" target="libwlconfig.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/libwlconfig.so.1" uid="root" gid="nto" mode="0755"/>
+  <directory name="sbin" uid="root" gid="nto" mode="0755"/>
+  <file name="sbin/devb-umass" uid="root" gid="nto" mode="0750"/>
+  <file name="sbin/devc-pty" uid="root" gid="nto" mode="0750"/>
+  <file name="sbin/devc-serusb" uid="root" gid="nto" mode="0750"/>
+  <file name="sbin/fdisk" uid="root" gid="nto" mode="0750"/>
+  <file name="sbin/ifconfig" uid="root" gid="nto" mode="0750"/>
+  <file name="sbin/ifwatchd" uid="root" gid="nto" mode="0750"/>
+  <file name="sbin/io-audio" uid="root" gid="nto" mode="0750"/>
+  <file name="sbin/io-hid" uid="root" gid="nto" mode="0750"/>
+  <file name="sbin/io-pkt-v6-hc" uid="root" gid="nto" mode="0750"/>
+  <file name="sbin/io-usb" uid="root" gid="nto" mode="0750"/>
+  <file name="sbin/io-usb-dcd" uid="root" gid="nto" mode="0750"/>
+  <file name="sbin/mkqnx6fs" uid="root" gid="nto" mode="0750"/>
+  <file name="sbin/pfctl" uid="root" gid="nto" mode="0755"/>
+  <file name="sbin/route" uid="root" gid="nto" mode="0755"/>
+  <file name="sbin/rtc" uid="root" gid="nto" mode="0750"/>
+  <file name="sbin/screen" uid="root" gid="nto" mode="0750"/>
+  <file name="usr/bin/mount_ifs" uid="root" gid="nto" mode="0755"/>
+  <file name="sbin/sysctl" uid="root" gid="nto" mode="0755"/>
+  <file name="sbin/ulink_ctrl" uid="root" gid="nto" mode="0750"/>
+  <file name="sbin/usb" uid="root" gid="nto" mode="0750"/>
+  <file name="sbin/usb_info" uid="root" gid="nto" mode="0750"/>
+  <directory name="usr/lib" uid="root" gid="nto" mode="0755"/>
+  <directory name="usr/lib/graphics" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libaoi.so" target="libaoi.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libaoi.so.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libbacktrace.so" target="libbacktrace.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libbacktrace.so.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libbz2.so" target="libbz2.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libbz2.so.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libcares.so" target="libcares.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libcares.so.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libcrypto.so" target="libcrypto.so.2" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libcrypto.so.2" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libcurl.so" target="libcurl.so.2" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libcurl.so.2" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libEGL.so" target="libEGL.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libEGL.so.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libexpat.so" target="libexpat.so.2" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libexpat.so.2" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libfontconfig.so" target="libfontconfig.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libfontconfig.so.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libfreetype.so" target="libfreetype.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libfreetype.so.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libGLESv1_CL.so" target="libGLESv1_CL.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libGLESv1_CL.so.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libGLESv1_CM.so" target="libGLESv1_CM.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libGLESv1_CM.so.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libGLESv2.so" target="libGLESv2.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libGLESv2.so.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libglib-2.0.so" target="libglib-2.0.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libglib-2.0.so.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libicudata.so" target="libicudata.so.49" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libicudata.so.49" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libicui18n.so" target="libicui18n.so.49" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libicui18n.so.49" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libicuuc.so" target="libicuuc.so.49" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libicuuc.so.49" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libiconv.so" target="libiconv.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libiconv.so.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libintl.so" target="libintl.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libintl.so.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libiptcdata.so" target="libiptcdata.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libiptcdata.so.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/liblogging.so" target="liblogging.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/liblogging.so.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libmd.so" target="libmd.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libmd.so.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libmmedia.so" target="libmmedia.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libmmedia.so.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libmmfilter.so" target="libmmfilter.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libmmfilter.so.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libmmplaylist.so" target="libmmplaylist.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libmmplaylist.so.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libmmrndcore.so" target="libmmrndcore.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libmmrndcore.so.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libmmro-mmf.so" target="libmmro-mmf.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libmmro-mmf.so.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libnbutil.so" target="libnbutil.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libnbutil.so.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libOpenVG.so" target="libOpenVG.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libOpenVG.so.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libOpenVGU.so" target="libOpenVGU.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libOpenVGU.so.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libpcre.so" target="libpcre.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libpcre.so.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libpng.so" target="libpng14.so" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libpng14.so" target="libpng14.so.0" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libpng14.so.0" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libpopt.so" target="libpopt.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libpopt.so.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libppscache.so" target="libppscache.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libppscache.so.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libqdb.so" target="libqdb.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libqdb.so.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/librcheck.so" target="librcheck.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/librcheck.so.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/librpc.so" target="librpc.so.2" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/librpc.so.2" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libscreen.so" target="libscreen.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libscreen.so.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libsqlite3.so" target="libsqlite3.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libsqlite3.so.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libssl.so" target="libssl.so.2" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libssl.so.2" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libswblit.so" target="libswblit.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libswblit.so.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libWFD.so" target="libWFD.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libWFD.so.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libxml2.so" target="libxml2.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libxml2.so.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libxslt.so" target="libxslt.so.2" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libxslt.so.2" uid="root" gid="nto" mode="0755"/>
+  <directory name="usr/lib/terminfo" uid="root" gid="nto" mode="0755"/>
+  <directory name="usr/lib/terminfo/a" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/terminfo/a/ansi" uid="root" gid="nto" mode="0644"/>
+  <directory name="usr/lib/terminfo/q" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/terminfo/q/qansi" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/lib/terminfo/q/qansi-g" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/lib/terminfo/q/qansi-m" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/lib/terminfo/q/qansi-t" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/lib/terminfo/q/qansi-w" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/lib/terminfo/q/qnx" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/lib/terminfo/q/qnx2" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/lib/terminfo/q/qnx4" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/lib/terminfo/q/qnxm" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/lib/terminfo/q/qnxs2" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/lib/terminfo/q/qnxt" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/lib/terminfo/q/qnxt2" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/lib/terminfo/q/qnxt4" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/lib/terminfo/q/qnxtmono" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/lib/terminfo/q/qnxw" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/lib/terminfo/q/qvt101" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/lib/terminfo/q/qvt102" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/lib/terminfo/q/qvt108" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/lib/terminfo/terminfo.src" uid="root" gid="nto" mode="0644"/>
+  <directory name="usr/lib/terminfo/t" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/terminfo/t/test" uid="root" gid="nto" mode="0644"/>
+  <directory name="usr/lib/terminfo/v" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/terminfo/v/vi200-f" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/lib/terminfo/v/viewpoint" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/lib/terminfo/v/visual" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/lib/terminfo/v/vs100" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/lib/terminfo/v/vs100s" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/lib/terminfo/v/vt100" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/lib/terminfo/v/vt100-am" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/lib/terminfo/v/vt102" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/lib/terminfo/v/vt102-am" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/lib/terminfo/v/vt102-plus" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/lib/terminfo/v/vt52" uid="root" gid="nto" mode="0644"/>
+  <directory name="usr/lib/terminfo/x" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/terminfo/x/xterm" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/lib/terminfo/x/xterm-m" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/lib/terminfo/x/xterm-q" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/lib/terminfo/x/xterms" uid="root" gid="nto" mode="0644"/>
+  <directory name="usr/local" uid="root" gid="nto" mode="0755"/>
+  <directory name="usr/photon" uid="root" gid="nto" mode="0755"/>
+  <directory name="usr/photon/bin" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/bin/devi-hid" uid="root" gid="nto" mode="0755"/>
+  <directory name="usr/share/keyboard" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/share/keyboard/altgr.inc" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/share/keyboard/CapsLockFull.inc" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/share/keyboard/common.inc" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/share/keyboard/compose.inc" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/share/keyboard/cs_CZ_102.kbd" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/share/keyboard/cs_CZ_102.kdef" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/share/keyboard/da_DK_102.kbd" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/share/keyboard/da_DK_102.kdef" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/share/keyboard/de_CH_102.kbd" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/share/keyboard/de_CH_102.kdef" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/share/keyboard/de_DE_102.kbd" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/share/keyboard/de_DE_102.kdef" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/share/keyboard/en_CA_101_dvorak.kbd" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/share/keyboard/en_CA_101_dvorak.kdef" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/share/keyboard/en_CA_101.kbd" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/share/keyboard/en_CA_101.kdef" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/share/keyboard/en_GB_102.kbd" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/share/keyboard/en_GB_102.kdef" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/share/keyboard/en_US_101_dvorak.kbd" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/share/keyboard/en_US_101_dvorak.kdef" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/share/keyboard/en_US_101.kbd" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/share/keyboard/en_US_101.kdef" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/share/keyboard/es_ES_102.kbd" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/share/keyboard/es_ES_102.kdef" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/share/keyboard/fr_BE_102.kbd" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/share/keyboard/fr_BE_102.kdef" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/share/keyboard/fr_CA_102.kbd" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/share/keyboard/fr_CA_102.kdef" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/share/keyboard/fr_CH_102.kbd" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/share/keyboard/fr_CH_102.kdef" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/share/keyboard/fr_FR_102.kbd" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/share/keyboard/fr_FR_102.kdef" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/share/keyboard/it_IT_102.kbd" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/share/keyboard/it_IT_102.kdef" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/share/keyboard/ja_JP_106.kbd" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/share/keyboard/ja_JP_106.kdef" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/share/keyboard/nl_NL_102.kbd" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/share/keyboard/nl_NL_102.kdef" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/share/keyboard/noaltgr.inc" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/share/keyboard/no_NO_102.kbd" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/share/keyboard/no_NO_102.kdef" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/share/keyboard/pl_PL_102.kbd" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/share/keyboard/pl_PL_102.kdef" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/share/keyboard/pt_PT_102.kbd" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/share/keyboard/pt_PT_102.kdef" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/share/keyboard/ru_RU_102.kbd" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/share/keyboard/ru_RU_102.kdef" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/share/keyboard/sample.kbd" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/share/keyboard/sample.kdef" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/share/keyboard/se_SE_102.kbd" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/share/keyboard/se_SE_102.kdef" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/share/keyboard/shiftlk.inc" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/share/keyboard/ShiftLockFull.inc" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/share/keyboard/sk_SK_102.kbd" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/share/keyboard/sk_SK_102.kdef" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/share/keyboard/symbols.inc" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/share/keyboard/uc_keyboard_t" uid="root" gid="nto" mode="0644"/>
+  <directory name="usr/photon/translations" uid="root" gid="nto" mode="0755"/>
+  <directory name="usr/sbin" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/sbin/bslauncher" uid="root" gid="nto" mode="0750"/>
+  <file name="usr/sbin/coreServices2" uid="root" gid="nto" mode="0750"/>
+  <file name="usr/sbin/dumper" uid="root" gid="nto" mode="0750"/>
+  <file name="usr/sbin/fileset" uid="root" gid="nto" mode="0750"/>
+  <file name="usr/sbin/if_up" uid="root" gid="nto" mode="0750"/>
+  <file name="usr/sbin/inetd" uid="root" gid="nto" mode="0750"/>
+  <file name="usr/sbin/io-fs-media" uid="root" gid="nto" mode="0750"/>
+  <file name="usr/sbin/nicinfo" uid="root" gid="nto" mode="0750"/>
+  <file name="usr/sbin/ntpdate" uid="root" gid="nto" mode="0750"/>
+  <file name="usr/sbin/pppd" uid="root" gid="nto" mode="0750"/>
+  <file name="usr/sbin/pps" uid="root" gid="nto" mode="0750"/>
+  <file name="usr/sbin/qconn" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/sbin/rtsold" uid="root" gid="nto" mode="0750"/>
+  <file name="usr/sbin/soundplayerd" uid="root" gid="nto" mode="0750"/>
+  <file name="usr/sbin/wpa_pps" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/sbin/slm" uid="root" gid="nto" mode="0750"/>
+  <file name="usr/sbin/slogger" uid="root" gid="nto" mode="0750"/>
+  <directory name="usr/share" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/bin/getconf" uid="root" gid="nto" mode="0750"/>
+  <!-- <file name="bin/keyboard" uid="root" gid="nto" mode="0750"/> no longer exists in BB10_0_09 -->
+  <file name="bin/keyboard-imf" uid="root" gid="nto" mode="0750"/>
+
+  <file name="lib/libtp.so.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="lib/libtp.so" target="libtp.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/libsbgse56.so.0.0" uid="root" gid="nto" mode="0755"/>
+  <symlink name="lib/libsbgse56.so.0" target="libsbgse56.so.0.0" uid="root" gid="nto" mode="0755"/>
+  <symlink name="lib/libsbgse56.so" target="libsbgse56.so.0.0" uid="root" gid="nto" mode="0755"/>
+  <symlink name="lib/libkalman.so" target="libkalman.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/libkalman.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/sbin/net_pps" uid="root" gid="nto" mode="0750"/>
+
+  <symlink name="lib/libelfcore.so" target="libelfcore.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/libelfcore.so.1" uid="root" gid="nto" mode="0755"/>
+
+  <!-- Additional Alpha 5 Libraries -->
+  <file name="bin/slog2info" uid="root" gid="nto" mode="0755"/>
+  <file name="bin/slogger2" uid="root" gid="nto" mode="0755"/>
+  <symlink name="lib/libslog2.so" target="libslog2.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/libslog2.so.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="lib/libslog2parse.so" target="libslog2parse.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/libslog2parse.so.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="lib/libcsm.so" target="libcsm.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/libcsm.so.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="lib/librtas.so" target="librtas.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/librtas.so.1" uid="root" gid="nto" mode="0755"/>
+
+  <symlink name="lib/libcam.so" target="libcam.so.2" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/libcam.so.2" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/cam-disk.so" uid="root" gid="nto" mode="0755"/>
+  <symlink name="lib/libnvram.so" target="libnvram.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/libnvram.so.1" uid="root" gid="nto" mode="0755"/>
+
+  <!-- Needed by coreServices as of 10_0_08 -->
+  <file name="lib/dll/csauthorization.so" uid="root" gid="nto" mode="0755"/>
+
+  <!-- Audioman -->
+  <file name="usr/bin/audioman" uid="root" gid="nto" mode="0755"/>
+  <symlink name="lib/libavp_api.so" target="libavp_api.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/libavp_api.so.1" uid="root" gid="nto" mode="0755"/>
+
+  <!-- Wallpaper -->
+  <file name="usr/sbin/wallpaper_car2" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/bin/display_image" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/share/images/car-startup.png" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/share/images/car-startup720p.png" uid="root" gid="nto" mode="0755"/>
+
+  <!-- Early Chime -->
+  <file name="usr/share/sounds/car2-chime.wav" uid="root" gid="nto" mode="0755"/>
+
+  <!-- For boards that have SATA, to initialize it when running the system in SD-only mode -->
+  <file name="sbin/devb-ahci" uid="root" gid="nto" mode="0755"/>
+
+  <!-- Lives in the IFS
+  <file name="lib/dll/cam-disk.so" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/fs-cd.so" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/fs-dos.so" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/fs-qnx4.so" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/fs-qnx6.so" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/fs-udf.so" uid="root" gid="nto" mode="0755"/>
+  <symlink name="lib/libc.so" target="libc.so.3" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/libc.so.3" uid="root" gid="nto" mode="0755"/>
+  <symlink name="lib/libcam.so" target="libcam.so.2" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/libcam.so.2" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libdisputil.so" target="libdisputil.so.2" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libdisputil.so.2" uid="root" gid="nto" mode="0755"/>
+  <symlink name="lib/libm.so" target="libm.so.2" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/libm.so.2" uid="root" gid="nto" mode="0755"/>
+  <symlink name="lib/libsocket.so" target="libsocket.so.3" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/libsocket.so.3" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libz.so" target="libz.so.2" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libz.so.2" uid="root" gid="nto" mode="0755"/>
+  <file name="bin/login" uid="root" gid="nto" mode="0755"/>
+  <file name="sbin/pipe" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/sbin/random" uid="root" gid="nto" mode="0750"/>
+  <file name="bin/resource_seed" uid="root" gid="nto" mode="0750"/>
+  <symlink name="bin/waitfor" target="on" uid="root" gid="nto" mode="0755"/>
+  <file name="bin/ksh" uid="root" gid="nto" mode="0755"/>
+  <symlink name="bin/sh" target="ksh" uid="root" gid="nto" mode="0755"/>
+  -->
+</fileset>

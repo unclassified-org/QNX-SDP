@@ -1,0 +1,4 @@
+DataSchemaFile::/tmp/db/personalization_data_schema.sql
+Filename::/db/personalization.db
+SchemaFile::/tmp/db/personalization_schema.sql
+BackupDir::/var/db/backup/,/var/db/backup2

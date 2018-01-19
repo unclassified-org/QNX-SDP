@@ -1,0 +1,327 @@
+<!doctype html>
+<html>
+	<head>
+		<!-- 
+			The entry point HTML page for the Car Control section.
+			@author lgreenway@qnx.com
+		
+			$Id: index.html 7073 2013-09-03 20:14:07Z mlapierre@qnx.com $ 
+		-->
+		<title>Car Control</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+		
+		<link rel="stylesheet" href="css/external-includes.css" type="text/css" media="screen" title="no title">
+		<!-- qnx.theme2 stylesheet, settings -->
+		<link rel="stylesheet" id="theme-css" app="CarControl" type="text/css" charset="utf-8">
+
+		<!-- Load WebWorks -->
+   
+		<script src="local:///chrome/webworks.js" type="text/javascript" charset="utf-8"></script>
+		<script src="local:///cordova.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script src="platform:///apps/common/js/jquery/jquery-1.6.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="platform:///apps/common/js/jquery.mobile-1.0.1/jquery.mobile-1.0.1.min.js" type="text/javascript" charset="utf-8"></script>
+
+		<script src="js/jquery-css-transform.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery-animate-css-rotate-scale.js" type="text/javascript" charset="utf-8"></script>
+		
+		<!-- Application -->
+		<script src="js/utils.js" type="text/javascript" charset="utf-8"></script>
+
+		<!-- Dialog Service -->
+		<script src="modules/dialog/dialog.js" type="text/javascript" charset="utf-8"></script>
+
+		<!-- Audio Control -->
+		<script src="js/audioControl.js" type="text/javascript" charset="utf-8"></script>
+
+		<!-- Climate Control -->
+		<script src="js/climateControl.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/climateControl/fanTemperature.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/climateControl/fanSpeed.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/climateControl/fanSetting.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/climateControl/heatedSeat.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/climateControl/airCirculation.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/climateControl/airConditioning.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/climateControl/rearDefrost.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/climateControl/zoneLink.js" type="text/javascript" charset="utf-8"></script>
+
+		<!-- Virtual Mechanic -->
+		<script src="js/virtualMechanic/config.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/virtualMechanic/fluids.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/virtualMechanic/tractionSystem.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/virtualMechanic/brakingSystem.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/virtualMechanic/powertrainSystem.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/virtualMechanic/electricalSystem.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/virtualMechanic/vehicleStats.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/virtualMechanic.js" type="text/javascript" charset="utf-8"></script>
+
+		<!-- Personalization dependencies -->
+		<script src="js/personalization.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/personalization/ppsEventHandlers.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/personalization/blade.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/personalization/dataReader.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/personalization/dataWriter.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/personalization/ppsReader.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/personalization/ppsWriter.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" charset="utf-8">
+				/**
+				 * Navigator application event handler.  Triggered by "reselect" event. 
+				 */				
+				function onAppEvent(event) {
+					showHome();
+					if(event && event.action){
+						switch(event.action){
+							case 'virtualmechanic' :
+								$.mobile.changePage($('#virtualMechanic'), {transition:'none'});
+								break;
+							case 'audiomixer' :
+								$.mobile.changePage($('#audioControl'), {transition:'none'});
+								break;
+							case 'climatecontrol' :
+								$.mobile.changePage($('#climateControl'), {transition:'none'});
+								break;
+							case 'personalization' :
+								$.mobile.changePage($('#personalization'), {transition:'none'});
+								break;
+						}
+					}
+				}
+
+
+				var isDriving = false;
+				/**
+				 * Sensors event handler. Hardcoded to work only with speed currently
+				 * Calls onSpeedChange callback
+				 */
+				function onSensorsData(sensorData) {
+					var value = sensorData[VIRTUAL_MECHANIC.SENSOR_SPEED];
+					if(typeof(value) != 'undefined') {
+						onSpeedChange(value)
+					}
+				}
+
+				/**
+				 * Speed sensor event handler. Disables any controls that should not be
+				 * available when the vehicle is in motion
+				 */
+				function onSpeedChange(value) {
+					// Does the event data contain the speed attribute
+					if (value && typeof value === "number") {
+						// If the speed (anything over 0) does not correspond to the isDriving boolean
+						if((value > 0 && !isDriving) || (value <= 0 && isDriving)) {
+							// Is the speed greater than 0
+							if(value > 0) {
+								isDriving = true;
+							} else {
+								isDriving = false;
+							}
+
+							// Update all the elements on the UI to be either disabled or enabled
+							$("[data-monitor-driving]").each(function() {
+								if(isDriving) {
+									$(this).addClass("disabled").append('<div class="delinker"></div>');
+								} else {
+									$(this).removeClass("disabled").children(".delinker").remove();
+								}
+							});
+
+							// If user is currently on a restricted page do to driving status, change page view back to home
+							if(isDriving) {
+								if($.mobile.activePage.attr("id") === "personalization") {
+									showHome();
+								}
+							}
+						}
+					}
+				}
+
+				/**
+				 * Shows the home index.
+				 */
+				function showHome()
+				{
+					$.mobile.changePage($('#home'), {transition:'none'});	
+					
+					// Close dialogs in virtual mechanic
+					hideDialog($('.dialog'));
+				}
+
+				/**
+				 * Invokes the specified page control initialization function if the page has been initialized,
+				 * or waits for the page to be initialized before invoking the control initialization function.
+				 * @param pageId {String} The application sub-page ID value.
+				 * @param initFunction {Function} The control initialization function.
+				 */
+				function deferInitialization(pageId, initFunction) {
+					var initClosure = function() {
+						try {
+							initFunction();
+						} catch(ex) {
+							console.error('Error initializing controls for page ID: ' + pageId);
+						} finally {
+							delete initClosure;
+						}
+					};
+					
+					if($(pageId).attr('data-initialized') === 'true') {
+						initClosure();
+					} else {
+						$(document).delegate(pageId, 'pageinit', initClosure);
+					}
+				};
+				
+				/**
+				  * The application identifier. Used by application.event to determine
+				  * target of navigator events.  This should correspond to the id in this apps config.xml
+				  * and, more importantly, the id in the navigator's tab list.
+				  */
+				var applicationName = 'carcontrol';
+
+				/**
+				 * webworksready event handler. 
+				 */
+				function ready() {
+					//initialise car.sensors depended part of VIRTUAL_MECHANIC (config) object
+					VIRTUAL_MECHANIC.init();
+
+					qnx.application.event.register(applicationName);
+
+					if (window.cordova) {
+		                document.addEventListener("reselect", onAppEventReselect);
+		                document.addEventListener("resume", onAppEvent);
+					} else {
+		                blackberry.event.addEventListener("reselect", onAppEventReselect);
+		                blackberry.event.addEventListener("resume", onAppEvent);
+					}
+
+					// watch specifically for speed change
+					car.sensors.watchSensors(onSensorsData);
+					// Initialize vehicle sensors
+					car.sensors.get(onSensorsData, function(error) {
+						console.error(error.code, error.msg);
+					});
+
+					// Initialize settings API, and get the current profile for this app
+					var settingsData = qnx.settings.get();
+
+					var currentProfile = settingsData['carControl_profile'];
+					if(currentProfile != undefined)
+					{
+						$('body').attr('data-currentProfile', currentProfile);
+					}
+					else
+					{
+						console.warn('Car control profile undefined!');
+					}	
+
+					// Defer the control initialization functions for the application pages.
+					// This will initialize controls immediately if the page's pageinit event
+					// has already fired, or waits for the pageinit event to occur before
+					// invoking the control initialization function.
+					deferInitialization('#climateControl', initClimateControl);
+					deferInitialization('#virtualMechanic', initVirtualMechanics);
+					deferInitialization('#audioControl', initAudioControl);
+					deferInitialization('#personalization', initPersonalization);
+					
+					// Prevent layerX and layerY events from firing as they're deprecated in webkit
+					// and cause thousands of warnings to be logged
+					// remove layerX and layerY
+					var all = $.event.props,
+								len = all.length,
+								res = [];
+					while (len--)
+					{
+						var el = all[len];
+						if (el != 'layerX' && el != 'layerY') res.push(el);
+					}
+					$.event.props = res;					
+				}
+
+				/**
+				 * Navigator application event handler.  Triggered by "resume" event. 
+				 */				
+				function onAppEvent(event) {
+					if(event && event.action){
+						switch(event.action){
+							case 'virtualmechanic' :
+								$.mobile.changePage($('#virtualMechanic'), {transition:'none'});
+								break;
+							case 'audiomixer' :
+								$.mobile.changePage($('#audioControl'), {transition:'none'});
+								break;
+							case 'climatecontrol' :
+								$.mobile.changePage($('#climateControl'), {transition:'none'});
+								break;
+							case 'personalization' :
+								$.mobile.changePage($('#personalization'), {transition:'none'});
+								break;
+						}
+					}
+				}
+
+				/**
+				 * Navigator application event handler.  Triggered by "reselect" event. 
+				 */				
+				function onAppEventReselect(event) {
+					showHome();
+				}
+
+				var isDriving = false;
+				/**
+				 * Document ready funciton handler. Initializes the QnxCar framework,
+				 * the Apps Core framework object for navigator events, and fetches
+				 * the application profile setting.
+				 *
+				 */
+				function onLoad() {
+					if (window.cordova) {
+						document.addEventListener("deviceready", ready);
+					} else {
+						document.addEventListener("webworksready", ready);
+					}						
+				};
+
+		</script>
+	</head>
+	<body onload="onLoad()">
+		<div id="home" data-role="page">
+			<script type="text/javascript">
+				/**
+				 * pageinit handlers for application sub-pages. Adds a data-initialized="true"
+				 * attribute once the JQM pageinit event has fired for that page.
+				 */
+				$(document).delegate('div[data-role="page"]', 'pageinit', function(ele) {
+					console.log('pageinit', ele);
+					$(ele.target).attr('data-initialized', 'true');
+				});
+			</script>
+			
+			<nav>
+				<div class="rootNav ui-grid-a">
+					<div class="ui-block-a">
+						<div class="navButton audioControl">
+							<a href="audioControl.html" data-prefetch data-transition="none">Audio Control</a>
+						</div>
+					</div>
+					<div class="ui-block-b">
+						<div class="navButton climateControl">
+							<a href="climateControl.html" data-prefetch data-transition="none">Climate Control</a>
+						</div>
+					</div>
+					<div class="ui-block-a">
+						<div class="navButton virtualMechanic">
+							<a href="virtualMechanic.html" data-prefetch data-transition="none">Virtual Mechanic</a>
+						</div>
+					</div>
+					<div class="ui-block-b">
+						<div class="navButton personalization" data-monitor-driving="true">
+							<a href="personalization.html" data-prefetch data-transition="none">Personalization</a>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</body>
+</html>

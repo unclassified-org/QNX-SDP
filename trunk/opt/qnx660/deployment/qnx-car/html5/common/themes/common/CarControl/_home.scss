@@ -1,0 +1,87 @@
+/* Home screen */
+#home
+{
+	width: 800px * $x-multiplier;
+	height: 395px * $y-multiplier;
+	min-height: 395px * $y-multiplier !important;
+	background: no-repeat top left;
+	background-image: $background;
+}
+#home .rootNav
+{
+	padding-top: 44px * $y-multiplier;
+}
+#home div.rootNav div.navButton
+{
+	position: relative;
+	height: 160px * $y-multiplier;
+	width: 290px * $x-multiplier;
+	margin: 0 auto;
+	margin-top: 10px * $y-multiplier;
+}
+#home div.rootNav div.navButton.audioControl 
+{ 
+	background: no-repeat 0% 0%;
+	background-size: 200% 100%;
+	background-image: $home-audio-control; 
+}
+#home div.rootNav div.navButton.climateControl 
+{
+	background: no-repeat 0% 0%;
+	background-size: 200% 100%;
+	background-image: $home-climate-control; 
+}
+#home div.rootNav div.navButton.virtualMechanic 
+{
+	background: no-repeat 0% 0%;
+	background-size: 200% 100%;
+	background-image: $home-mechanic; 
+}
+#home div.rootNav div.navButton.personalization 
+{ 
+	background: no-repeat 0% 0%;
+	background-size: 200% 100%;
+	background-image: $home-personalization; 
+}
+#home div.rootNav div.navButton:active 
+{ 
+	background-position: 100% 0;
+	a {
+		color: $active-button-text-color; 
+	}
+}
+
+#home div.rootNav div.navButton.disabled {
+	opacity: .5;
+}
+#home div.rootNav div.navButton.disabled:active {
+	background-position: left;
+}
+
+#home div.rootNav div.navButton .delinker {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+#home div.rootNav div.navButton a
+{
+	display: block;
+	width: 100%;
+	height: 160px * $y-multiplier;
+	line-height: 2.75em;
+	font-size: 94%;
+	color: $title-bar-color;
+	font-weight: normal;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+#home .rootNav .ui-block-a .navButton {
+	margin-right: 9%;
+}
+#home .rootNav .ui-block-b .navButton {
+	margin-left: 9.5%;
+}

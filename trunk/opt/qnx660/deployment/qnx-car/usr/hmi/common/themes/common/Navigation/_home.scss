@@ -1,0 +1,66 @@
+/**
+ * SCSS for the home view
+ * @author mlapierre
+ *
+ * $Id: _home.scss 6970 2013-08-13 17:53:33Z nschultz@qnx.com $
+ */
+
+.home-dv {
+	padding: {
+		top: 44px * $y-multiplier;
+		right: 0px;
+		bottom: 0px;
+		left: 44px * $x-multiplier;
+	}
+	height: 100%;
+}
+
+.home {
+	.item {
+		width: 210px * $x-multiplier;
+		height: 165px * $y-multiplier;
+		float: left;
+		margin: {
+			top: 0px;
+			right: 40px * $x-multiplier;
+			bottom: 10px * $y-multiplier;
+			left: 0px;
+		}
+		text-align: center;
+		padding-top: 12px * $y-multiplier;
+		
+		span {
+			font-size: 93.75%;
+		}
+		background-size: 200% 100%;
+		color: $title-bar-color;
+	}
+	.item:active {
+		background-position-x: -100%;
+		color: $active-text-color;
+	}
+
+	.item.search {
+		background-image: $home-item-search;
+	}
+
+	.item.poi {
+		background-image: $home-item-poi;
+	}
+
+	.item.favourites {
+		background-image: $home-item-favourites;
+	}
+
+	.item.history {
+		background-image: $home-item-history;
+	}
+
+	.item.map {
+		background-image: $home-item-map;
+	}
+
+	.item.settings {
+		background-image: $home-item-settings;
+	}	
+}

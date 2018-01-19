@@ -1,0 +1,96 @@
+/**
+ * Styles for the search view.
+ * @author lgreenway
+ *
+ * $Id$
+ */
+.search.panel {
+	background-image: $img-search-background;
+	background-repeat: no-repeat;
+
+	.search-title {
+		height: 42px * $y-multiplier;
+		font-size: 150%;
+		color: $text-color;
+		background-color: $title-bar-background-color;
+		padding:
+			7px * $y-multiplier
+			0px * $x-multiplier
+			0px * $y-multiplier
+			20px * $x-multiplier;
+	}
+	
+	.search-searchbar {
+		height: 60px * $y-multiplier;
+		background-color: $title-bar-background-color;
+	}
+	
+	.x-list.menu-list {
+		background-color: transparent;
+
+		&.search-source-list {
+			height: 353px * $y-multiplier;
+		}
+
+		&.search-results {
+			height: 335px * $y-multiplier;
+		}
+	}
+	
+	.search-input {
+		width: 520px * $x-multiplier;
+		height: 42px * $y-multiplier !important;
+		min-height: auto;
+		margin:
+			9px * $y-multiplier
+			0px * $x-multiplier
+			0px * $y-multiplier
+			20px * $x-multiplier;
+		padding-left: 24px * $x-multiplier;
+		overflow: hidden; /* TODO temporary workaround to reduce screen redraws on keypresses */
+		font-size: 150%;
+		background-color: $background-color;
+		border-radius: 24px * $y-multiplier;
+		
+		.x-input-el, .x-field {
+			min-height: 0px;
+			padding: (2px * $y-multiplier) 0px 0px 0px;
+			color: $text-color;
+		}
+		
+		.x-clear-icon {
+			background-image: $img-clear-icon;
+			margin-top: -1.07em;
+			
+			&:active {
+				background-image: $img-clear-icon-over;
+			}
+		}
+
+		input {
+			background-color: transparent;
+		}
+	}
+	
+	.search-input .x-component-outer {
+		margin-top: 5px * $y-multiplier;
+	}
+	
+	.search-button {
+		width: 140px * $x-multiplier;
+		height: 50px * $y-multiplier;
+		margin:
+			5px * $y-multiplier
+			0px * $x-multiplier
+			0px * $y-multiplier
+			20px * $x-multiplier;
+		background-image: $img-btn-search;
+		background-size: 100% 100%;
+		color: $button-text-color;
+		
+		&.x-button-pressing {
+			background-image: $img-btn_search-over;
+			color: $active-button-text-color;
+		}
+	}
+}

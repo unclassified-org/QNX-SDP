@@ -1,0 +1,118 @@
+/* $Id:$ */
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: $font-size * $x-multiplier;
+}
+
+#statuslist {
+  position: relative;
+  height: 25px * $y-multiplier;
+  background: $background-color repeat-x top left;
+  z-index: 1;
+  background-image: $status-background;
+}
+
+#environmentData {
+  position: absolute;
+  top: 0;
+  left: 15px * $x-multiplier;
+  bottom: 0;
+  height: 100%;
+  line-height: 25px * $y-multiplier;
+  color: $title-bar-color;
+
+  .profileName {
+    float: left;
+    padding-right: 5px * $x-multiplier;
+    max-width: 200px * $x-multiplier;
+    word-break: break-all;
+  }
+}
+
+#logo {
+  position: absolute;
+  display: block;
+  left: 0;
+  right: 0;
+  height: 25px * $y-multiplier;
+  background: transparent no-repeat 50% 50%;
+  background-image: $status-logo;
+}
+
+#services {
+  position: absolute;
+  top: 0;
+  right: 10px * $x-multiplier;
+  bottom: 0;
+  overflow: hidden;
+
+  .service {
+	display: none;
+	width: 25px * $x-multiplier;
+	height: 25px * $y-multiplier;
+	background: transparent no-repeat 50% 50%;
+  }
+
+  .service.show {
+	display: inline-block;
+  }
+
+  #phone {
+	background-image: $phone-service-icon;
+  }
+
+  #bluetooth {
+	background-image: $bluetooth-service-icon;
+  }
+
+  #bluetooth.syncing {
+	background-image: $bluetooth-sync-icon;
+  }
+
+  #wifi {
+	background-image: $wifi-service-icon;
+  }
+
+  #device {
+	background-image: $device-service-icon;
+  }
+
+  #volume {
+	display: inline-block;
+  }
+
+  #volume  .stat{
+	background-image: $volume-stat-icon;
+  }
+
+  #volume .level {
+	display: inline-block;
+	width: 80px * $x-multiplier;
+	height: 25px * $y-multiplier;
+	background: transparent no-repeat 50% top;
+	background-image: $volume-level-icon;
+  }
+
+  #bluetooth.syncing {
+	-webkit-animation-name: rotate;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-transition-timing-function: linear;
+	background-position: center center;
+	display: inline-block;
+  }
+}
+
+@-webkit-keyframes rotate {
+  from {
+	-webkit-transform: rotate(0deg);
+  }
+  to {
+	-webkit-transform: rotate(360deg);
+  }
+}

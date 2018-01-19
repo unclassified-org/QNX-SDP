@@ -1,0 +1,15 @@
+<Client>
+	<DeviceId>
+		<DisplayName>boxee</DisplayName>
+		<HttpRecognition>
+			<HttpText>boxee</HttpText>
+		</HttpRecognition>
+		<MappingUpdatePolicy>FIX</MappingUpdatePolicy>
+	</DeviceId>
+	<Capabilities>
+		<SupportedMediaProfiles>
+			<Profile>AASCALE#JPEGORG</Profile>
+			<Profile>MPEG</Profile>
+		</SupportedMediaProfiles>
+	</Capabilities>
+</Client>

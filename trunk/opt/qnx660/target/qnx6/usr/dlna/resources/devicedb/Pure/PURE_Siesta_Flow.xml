@@ -1,0 +1,14 @@
+<Client>
+	<DeviceId>
+		<DisplayName>PURE Siesta Flow</DisplayName>
+		<HttpRecognition>
+			<HttpText>PURE Siesta Flow D1R</HttpText>
+		</HttpRecognition>
+		<MappingUpdatePolicy>FIX</MappingUpdatePolicy>
+	</DeviceId>
+	<Capabilities>
+		<MediaTypeList>
+			<MediaType>MUSIC</MediaType>
+		</MediaTypeList>
+	</Capabilities>
+</Client>

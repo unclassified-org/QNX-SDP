@@ -1,0 +1,41 @@
+### screen-panda.build
+
+[+script] car_startup_screen_panda = {
+	tiler &
+	waitfor /dev/tiler
+    GRAPHICS_ROOT=/proc/boot
+}
+
+
+### Libraries
+[perms=0755]
+libmtouch-calib.so.1
+
+graphics/omap5430ES2_0/libglslcompiler.so
+graphics/omap5430ES2_0/libwfdcfg-generic.so
+graphics/omap5430ES2_0/libIMGegl.so
+graphics/omap5430ES2_0/libImgGLESv1_CM.so
+graphics/omap5430ES2_0/libImgGLESv2.so
+graphics/omap5430ES2_0/libpvr2d.so
+graphics/omap5430ES2_0/libPVRScopeServices.so
+graphics/omap5430ES2_0/libsrv_um.so
+graphics/omap5430ES2_0/libWFDomap5430ES2_0.so
+graphics/omap5430ES2_0/pvrsrv.so
+graphics/omap5430ES2_0/pvrsrvinit.so
+graphics/omap5430ES2_0/wsegl-screen.so
+
+dll/screen-pvr2d.so
+
+# Use a special search path for these libraries
+[search=${QNX_TARGET}/${PROCESSOR}/ti/omap5430/lib/dll] tiler_pat.so
+[search=${QNX_TARGET}/${PROCESSOR}/ti/omap5430/usr/lib] libtilerusr.so
+
+### Executables
+[perms=0755 data=c]
+graphics.conf=../etc/system/config/graphics.conf
+[type=link] /base/usr/lib/graphics/omap5430ES2_0/graphics.conf=/proc/boot/graphics.conf
+
+# Use a special search path for this binary
+[search=${QNX_TARGET}/${PROCESSOR}/ti/omap5430/bin] tiler
+
+##eof

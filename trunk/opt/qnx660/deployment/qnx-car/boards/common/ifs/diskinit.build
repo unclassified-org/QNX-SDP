@@ -1,0 +1,34 @@
+###################################################################################
+##
+## This includes non-platform-specific items that are specific to the init IFS
+##
+###################################################################################
+
+[uid=0 gid=0 perms=0644 dperms=0755 -optional]
+
+#Do not automount the qnx6 partitions that might not exist yet in init IFS
+# disk-init will mount them if they are not automounted
+[perms=0444] automount = {
+    cardisk0t12:/dos:dos
+}
+[+script] car_init_bootscript = {
+	# Start common utilities 
+	display_msg Starting slogger
+	slogger -s128 -u100 &
+	slogger2
+
+	display_msg "*** Disk initialisation utilities are available ***"
+	SESSIONPATH=/dev/shmem  # for vi
+	devc-pty  # for telnetd
+
+	display_msg * Run network-start for network bootstrap support.
+	display_msg
+
+	[+session] sh /proc/boot/disk-init -S
+	
+	# Start the main shell 
+	[+session] sh /proc/boot/.console.sh -n
+}
+
+
+##eof

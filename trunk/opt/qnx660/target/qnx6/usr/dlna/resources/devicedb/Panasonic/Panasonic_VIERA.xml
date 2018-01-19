@@ -1,0 +1,36 @@
+<Client>
+	<DeviceId>
+		<DisplayName>Panasonic VIERA</DisplayName>
+		<HttpRecognition>
+			<HttpText>X-PANASONIC-DMP-Profile:</HttpText>
+		</HttpRecognition>
+		<MappingUpdatePolicy>FIX</MappingUpdatePolicy>
+	</DeviceId>
+	<Capabilities>
+		<Scaling>
+			<Target>JPEGORG</Target>
+			<Target>JPEG1920x1080</Target>
+			<Target>JPEG120x90</Target>
+		</Scaling>
+	</Capabilities>
+	<Adaptations>
+		<DLNA>
+			<Version>DLNA15</Version>
+		</DLNA>
+		<HTTP>
+			<HttpSetting>chunked</HttpSetting>
+		</HTTP>
+		<MimeTranslations>
+			<MimeTypeMapping>
+				<In>video/x-msvideo</In>
+				<Out>video/avi</Out>
+			</MimeTypeMapping>
+		</MimeTranslations>
+		<ProfileTranslations>
+			<ProfileMapping>
+				<In>AVI</In>
+				<Out>*</Out>
+			</ProfileMapping>
+		</ProfileTranslations>
+	</Adaptations>
+</Client>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fileset name="basefs.omap5uevm.video">
+  <file name="ti/omap5430/bin/syslink" dest="bin/syslink" uid="root" gid="nto" mode="0755"/>
+  <file name="ti/omap5430/bin/syslink_trace_daemon" dest="bin/syslink_trace_daemon" uid="root" gid="nto" mode="0755"/>
+  <file name="ti/omap5430/lib/dll/tiler_pat.so" dest="lib/dll/tiler_pat.so" uid="root" gid="nto" mode="0755"/>
+  <file name="ti/omap5430/bin/tiler" dest="bin/tiler" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libdce.so" target="libdce.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="ti/omap5430/usr/lib/libdce.so.1" dest="usr/lib/libdce.so.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libtilerusr.so" target="libtilerusr.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="ti/omap5430/usr/lib/libtilerusr.so.1" dest="usr/lib/libtilerusr.so.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libmemmgr.so" target="libmemmgr.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="ti/omap5430/usr/lib/libmemmgr.so.1" dest="usr/lib/libmemmgr.so.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libmemmgr_utils.so" target="libmemmgr_utils.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="ti/omap5430/usr/lib/libmemmgr_utils.so.1" dest="usr/lib/libmemmgr_utils.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/mmedia/ivahd_video_decoder-omap5430.so" uid="root" gid="nto" mode="0755"/>
+
+  <!-- Firmware for Video -->
+  <file name="ti/omap5430/lib/firmware/ducati/ducati-m3-core0_es2.xem3" dest="lib/firmware/ducati/ducati-m3-core0_es2.xem3" uid="root" gid="nto" mode="0755"/>
+  <file name="ti/omap5430/lib/firmware/ducati/ducati-m3-core0_es2_40mb_unsupported_experimental.xem3" dest="lib/firmware/ducati/ducati-m3-core0_es2_40mb_unsupported_experimental.xem3" uid="root" gid="nto" mode="0755"/>	
+  </fileset>

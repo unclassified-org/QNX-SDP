@@ -1,0 +1,20 @@
+<Client>
+	<DeviceId>
+		<DisplayName>Philips Renderer TV</DisplayName>
+		<DeviceDescriptionRecognition>
+			<DescriptionText>UPnP Media Renderer 1.0</DescriptionText>
+			<DescriptionText>NMR</DescriptionText>
+		</DeviceDescriptionRecognition>
+		<MappingUpdatePolicy>FIX</MappingUpdatePolicy>
+	</DeviceId>
+	<Capabilities>
+		<Scaling>
+			<Target>JPEG1920x1080</Target>
+		</Scaling>
+	</Capabilities>
+	<Adaptations>
+		<DLNA>
+			<Version>DLNANO</Version>
+		</DLNA>
+	</Adaptations>
+</Client>

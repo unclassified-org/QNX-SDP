@@ -1,0 +1,29 @@
+.loadingOverlay{
+	background:  rgba(0, 0, 0, 0.3) url(platform:///apps/common/img/720p/loadingOverlay.png) no-repeat top !important;
+}
+
+.loadingText{
+	margin-top: -158px;
+}
+
+.loading{
+	width: 108px;
+	height: 108px;
+	margin-top: -54px;
+	margin-left: -54px;
+	background:  transparent url(platform:///apps/common/img/720p/loading.png) no-repeat 50% 50%;
+}
+
+.loadingAnimation{
+	width: 108px;
+	height: 108px;
+	margin-top: -54px;
+	margin-left: -54px;
+	background:  transparent url(platform:///apps/common/img/720p/loading.png) no-repeat 50% 50%;
+}
+
+.waitspinner{
+	background:  transparent url(platform:///apps/common/img/720p/loading.png) no-repeat 50% 50% !important;
+	background-size: 100% 100% !important;
+}
+

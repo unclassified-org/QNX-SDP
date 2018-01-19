@@ -1,0 +1,495 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<index>
+<entry keyword=" API">
+<entry keyword="mm-sync">
+<topic href="com.qnx.doc.mm_sync.dev_guide/topic/mmsync_api/mmsync_api_overview.html#mmsync_api" title="Multimedia Synchronizer API"/>
+</entry>
+<entry keyword="multimedia synchronizer">
+<topic href="com.qnx.doc.mm_sync.dev_guide/topic/mmsync_api/mmsync_api_overview.html#mmsync_api" title="Multimedia Synchronizer API"/>
+</entry>
+</entry>
+<entry keyword=" delete files">
+<entry keyword="reference removal">
+<topic href="com.qnx.doc.mm_sync.dev_guide/topic/overview_dbcleanup.html#overview_db_cleanup" title="Database cleanup"/>
+</entry>
+</entry>
+<entry keyword=" playlist session synchronizers">
+<entry keyword="configuring">
+<topic href="com.qnx.doc.mm_sync.dev_guide/topic/configuration_plss.html#config_plss" title="The &lt;Configuration&gt;/&lt;Database&gt;/&lt;Synchronization&gt;/&lt;PLSS&gt; element"/>
+</entry>
+</entry>
+<entry keyword=" unused metadata">
+<entry keyword="reference removal">
+<topic href="com.qnx.doc.mm_sync.dev_guide/topic/overview_dbcleanup.html#overview_db_cleanup" title="Database cleanup"/>
+</entry>
+</entry>
+<entry keyword="aggregate">
+<entry keyword="functions">
+<topic href="com.qnx.doc.qdb_en.dev_guide/topic/writing_functions.html#writing_functions" title="Writing User-Defined Functions"/>
+</entry>
+</entry>
+<entry keyword="arguments">
+<entry keyword="mmsyncclient">
+<topic href="com.qnx.doc.mm_sync.dev_guide/topic/starting_mmsyncclient.html#starting_mmsyncclient" title="mmsyncclient command utility"/>
+</entry>
+</entry>
+<entry keyword="asynchronous mode">
+<topic href="com.qnx.doc.qdb_en.dev_guide/topic/example_connecting_async.html#async" title="Using asynchronous mode"/>
+</entry>
+<entry keyword="auto">
+<entry keyword="vacuum">
+<topic href="com.qnx.doc.qdb_en.dev_guide/topic/sql/pragma.html#pragma" title="PRAGMA"/>
+</entry>
+</entry>
+<entry keyword="auto-vacuum mode">
+<topic href="com.qnx.doc.qdb_en.dev_guide/topic/sql/vacuum.html#vacuum" title="VACUUM"/>
+</entry>
+<entry keyword="backup">
+<entry keyword="database">
+<topic href="com.qnx.doc.qdb_en.dev_guide/topic/api/qdb_backup.html#qdb_backup" title="qdb_backup()"/>
+<entry keyword="canceling">
+<topic href="com.qnx.doc.qdb_en.dev_guide/topic/api/qdb_bkcancel.html#qdb_bkcancel" title="qdb_bkcancel()"/>
+</entry>
+</entry>
+</entry>
+<entry keyword="busy">
+<entry keyword="timeout">
+<topic href="com.qnx.doc.qdb_en.dev_guide/topic/starting_busy_timeout.html#busy_timeout" title="Busy timeout"/>
+</entry>
+</entry>
+<entry keyword="busy timeout">
+<entry keyword="setting">
+<topic href="com.qnx.doc.qdb_en.dev_guide/topic/api/qdb_setbusytimeout.html#qdb_setbusytimeout" title="qdb_setbusytimeout()"/>
+</entry>
+</entry>
+<entry keyword="cache">
+<entry keyword="default">
+<entry keyword="size">
+<topic href="com.qnx.doc.qdb_en.dev_guide/topic/sql/pragma.html#pragma" title="PRAGMA"/>
+</entry>
+</entry>
+<entry keyword="shared">
+<topic href="com.qnx.doc.qdb_en.dev_guide/topic/starting_shared_caching.html#shared_caching" title="Shared caching"/>
+</entry>
+<entry keyword="size">
+<topic href="com.qnx.doc.qdb_en.dev_guide/topic/sql/pragma.html#pragma" title="PRAGMA"/>
+<entry keyword="default">
+<topic href="com.qnx.doc.qdb_en.dev_guide/topic/sql/pragma.html#pragma" title="PRAGMA"/>
+</entry>
+</entry>
+</entry>
+<entry keyword="case sesitivity">
+<topic href="com.qnx.doc.qdb_en.dev_guide/topic/sql/pragma.html#pragma" title="PRAGMA"/>
+</entry>
+<entry keyword="cell">
+<entry keyword="data">
+<entry keyword="getting">
+<topic href="com.qnx.doc.qdb_en.dev_guide/topic/api/qdb_cell.html#qdb_cell" title="qdb_cell()"/>
+</entry>
+</entry>
+</entry>
+<entry keyword="ChangedFilesHaveConstantId element">
+<topic href="com.qnx.doc.mm_sync.dev_guide/topic/configuration_maintaining_ids.html#config_maintaining_ids" title="Maintaining constant IDs for updated files and playlists"/>
+</entry>
+<entry keyword="changes">
+<entry keyword="count">
+<topic href="com.qnx.doc.qdb_en.dev_guide/topic/sql/pragma.html#pragma" title="PRAGMA"/>
+</entry>
+</entry>
+<entry keyword="check">
+<entry keyword="integrity">
+<topic href="com.qnx.doc.qdb_en.dev_guide/topic/sql/pragma.html#pragma" title="PRAGMA"/>
+</entry>
+</entry>
+<entry keyword="client interface">
+<topic href="com.qnx.doc.mm_sync.dev_guide/topic/mmsync_api/mmsync_client_api.html#mmsync_api_client" title="Client interface"/>
+</entry>
+<entry keyword="client interface constants">
+<topic href="com.qnx.doc.mm_sync.dev_guide/topic/mmsync_api/mmsync_client_api_constants.html#mmsync_api_client_constants" title="Constants in mmsyncclient.h, interface.h, and types.h"/>
+</entry>
+<entry keyword="client interface data types">
+<topic href="com.qnx.doc.mm_sync.dev_guide/topic/mmsync_api/mmsync_client_api_data_types.html#mmsync_api_client_data_types" title="Data types in types.h"/>
+</entry>
+<entry keyword="client interface functions">
+<topic href="com.qnx.doc.mm_sync.dev_guide/topic/mmsync_api/mmsync_client_api_functions.html#mmsync_api_client_functions" title="Functions in mmsyncclient.h"/>
+</entry>
+<entry keyword="clients">
+<entry keyword="sharing connections">
+<topic href="com.qnx.doc.qdb_en.dev_guide/topic/starting_connection_sharing.html#connection_sharing" title="Sharing connections between clients"/>
+</entry>
+</entry>
+<entry keyword="collation">
+<entry keyword="functions">
+<topic href="com.qnx.doc.qdb_en.dev_guide/topic/writing_functions.html#writing_functions" title="Writing User-Defined Functions"/>
+</entry>
+<entry keyword="user-defined">
+<topic href="com.qnx.doc.qdb_en.dev_guide/topic/api/qdb_collation.html#qdb_collation" title="qdb_collation()"/>
+</entry>
+</entry>
+<entry keyword="column">
+<entry keyword="full names">
+<topic href="com.qnx.doc.qdb_en.dev_guide/topic/sql/pragma.html#pragma" title="PRAGMA"/>
+</entry>
+<entry keyword="name">
+<topic href="com.qnx.doc.qdb_en.dev_guide/topic/api/qdb_column_index.html#qdb_column_index" title="qdb_column_index()"/>
+<topic href="com.qnx.doc.qdb_en.dev_guide/topic/api/qdb_column_name.html#qdb_column_name" title="qdb_column_name()"/>
+<topic href="com.qnx.doc.qdb_en.dev_guide/topic/api/qdb_column_decltype.html#qdb_column_decltype" title="qdb_column_decltype()"/>
+</entry>
+<entry keyword="short names">
+<topic href="com.qnx.doc.qdb_en.dev_guide/topic/sql/pragma.html#pragma" title="PRAGMA"/>
+</entry>
+</entry>
+<entry keyword="command syntax">
+<entry keyword="mm-sync">
+<topic href="com.qnx.doc.mm_sync.dev_guide/topic/starting_mmsync_command.html#starting_mmsync_command" title="mm-sync command line"/>
+</entry>
+<entry keyword="mmsyncclient">
+<topic href="com.qnx.doc.mm_sync.dev_guide/topic/starting_mmsyncclient.html#starting_mmsyncclient" title="mmsyncclient command utility"/>
+</entry>
+<entry keyword="QDB">
+<topic href="com.qnx.doc.qdb_en.dev_guide/topic/starting_qdb.html#qdb_command" title="QDB Command Line"/>
+</entry>
+<entry keyword="QDB client">
+<topic href="com.qnx.doc.qdb_en.dev_guide/topic/qdbc.html#qdbc" title="QDB Client"/>
+</entry>
+</entry>
+<entry keyword="commands">
+<entry keyword="mmsyncclient">
+<topic href="com.qnx.doc.mm_sync.dev_guide/topic/starting_mmsyncclient.html#starting_mmsyncclient" title="mmsyncclient command utility"/>
+</entry>
+</entry>
+<entry keyword="config subdirectory">
+<topic href="com.qnx.doc.qdb_en.dev_guide/topic/starting_pps_config_path.html#pps_config_path" title="PPS configuration path"/>
+</entry>
+<entry keyword="ConfigurableMetadata element">
+<topic href="com.qnx.doc.mm_sync.dev_guide/topic/configuration_metadata.html#config_metadata" title="The &lt;Configuration&gt;/&lt;Database&gt;/&lt;Synchronization&gt;/&lt;ConfigurableMetadata&gt; element"/>
+</entry>
+<entry keyword="configuration constants">
+<topic href="com.qnx.doc.mm_sync.dev_guide/topic/mmsync_api/mmsync_config_constants.html#mmsync_api_config_constants" title="Configuration constants"/>
+</entry>
+<entry keyword="Configuration element">
+<topic href="com.qnx.doc.mm_sync.dev_guide/topic/configuration_configuration.html#config_configuration" title="The &lt;Configuration&gt; element"/>
+</entry>
+<entry keyword="configuration file">
+<entry keyword="contents">
+<topic href="com.qnx.doc.mm_sync.dev_guide/topic/configuration_file.html#config_file" title="Configuration file contents"/>
+</entry>
+<entry keyword="structure">
+<topic href="com.qnx.doc.mm_sync.dev_guide/topic/configuration_file.html#config_file" title="Configuration file contents"/>
+</entry>
+<entry keyword="XML elements">
+<topic href="com.qnx.doc.mm_sync.dev_guide/topic/configuration_file.html#config_file" title="Configuration file contents"/>
+</entry>
+</entry>
+<entry keyword="configuration objects location">
+<topic href="com.qnx.doc.qdb_en.dev_guide/topic/starting_pps_config_path.html#pps_config_path" title="PPS configuration path"/>
+</entry>
+<entry keyword="configuring mediastore synchronizers">
+<topic href="com.qnx.doc.mm_sync.dev_guide/topic/configuration_mss.html#config_mss" title="The &lt;Configuration&gt;/&lt;Database&gt;/&lt;Synchronization&gt;/&lt;MSS&gt; element"/>
+</entry>
+<entry keyword="configuring mm-sync">
+<topic href="com.qnx.doc.mm_sync.dev_guide/topic/configuration.html#config" title="Configuring Mediastore Synchronization"/>
+</entry>
+<entry keyword="configuring QDB databases">
+<topic href="com.qnx.doc.qdb_en.dev_guide/topic/starting_qdb.html#qdb_command" title="QDB Command Line"/>
+</entry>
+<entry keyword="connections">
+<entry keyword="sharing between clients">
+<topic href="com.qnx.doc.qdb_en.dev_guide/topic/starting_connection_sharing.html#connection_sharing" title="Sharing connections between clients"/>
+</entry>
+</entry>
+<entry keyword="constants">
+<topic href="com.qnx.doc.mm_sync.dev_guide/topic/mmsync_api/mmsync_api_overview.html#mmsync_api" title="Multimedia Synchronizer API"/>
+</entry>
+<entry keyword="controlling mm-sync behavior">
+<topic href="com.qnx.doc.mm_sync.dev_guide/topic/configuration.html#config" title="Configuring Mediastore Synchronization"/>
+</entry>
+<entry keyword="corrupt database">
+<entry keyword="recovering from">
+<topic href="com.qnx.doc.qdb_en.dev_guide/topic/starting_corrupt_db.html#corrupt_db" title="Handling corrupt databases"/>
+</entry>
+</entry>
+<entry keyword="count changes">
+<topic href="com.qnx.doc.qdb_en.dev_guide/topic/sql/pragma.html#pragma" title="PRAGMA"/>
+</entry>
+<entry keyword="creating mediastore databases">
+<topic href="com.qnx.doc.mm_sync.dev_guide/topic/starting_db_persistence.html#starting_db_persistence" title="Maintaining database persistence"/>
+</entry>
+<entry keyword="current_pass field">
+<topic href="com.qnx.doc.mm_sync.dev_guide/topic/working_tracking.html#working_tracking" title="Tracking synchronization progress"/>
+</entry>
+<entry keyword="data">
+<entry keyword="cell">
+<entry keyword="getting">
+<topic href="com.qnx.doc.qdb_en.dev_guide/topic/api/qdb_cell.html#qdb_cell" title="qdb_cell()"/>
+</entry>
+</entry>
+</entry>
+<entry keyword="data types">
+<topic href="com.qnx.doc.mm_sync.dev_guide/topic/mmsync_api/mmsync_api_overview.html#mmsync_api" title="Multimedia Synchronizer API"/>
+</entry>
+<entry keyword="database">
+<entry keyword="busy timeout">
+<topic href="com.qnx.doc.qdb_en.dev_guide/topic/starting_busy_timeout.html#busy_timeout" title="Busy timeout"/>
+</entry>
+<entry keyword="connecting">
+<topic href="com.qnx.doc.qdb_en.dev_guide/topic/api/qdb_connect.html#qdb_connect" title="qdb_connect()"/>
+</entry>
+<entry keyword="disconnecting">
+<topic href="com.qnx.doc.qdb_en.dev_guide/topic/api/qdb_disconnect.html#qdb_disconnect" title="qdb_disconnect()"/>
+</entry>
+<entry keyword="recovering from corrupt">
+<topic href="com.qnx.doc.qdb_en.dev_guide/topic/starting_corrupt_db.html#corrupt_db" title="Handling corrupt databases"/>
+</entry>
+<entry keyword="recovery">
+<topic href="com.qnx.doc.qdb_en.dev_guide/topic/starting_recovery.html#recovery" title="Database recovery"/>
+</entry>
+<entry keyword="recovery script">
+<topic href="com.qnx.doc.qdb_en.dev_guide/topic/starting_corrupt_db.html#corrupt_db" title="Handling corrupt databases"/>
+</entry>
+</entry>
+<entry keyword="database cleanup">
+<topic href="com.qnx.doc.mm_sync.dev_guide/topic/overview_dbcleanup.html#overview_db_cleanup" title="Database cleanup"/>
+</entry>
+<entry keyword="database configuration">
+<entry keyword="objects">
+<topic href="com.qnx.doc.qdb_en.dev_guide/topic/starting_config_file.html#config_files" title="Database configuration objects"/>
+</entry>
+<entry keyword="parameters">
+<topic href="com.qnx.doc.qdb_en.dev_guide/topic/starting_config_file.html#config_files" title="Database configuration objects"/>
+</entry>
+<entry keyword="sample object">
+<topic href="com.qnx.doc.qdb_en.dev_guide/topic/starting_config_file.html#config_files" title="Database configuration objects"/>
+</entry>
+</entry>
+<entry keyword="Database element">
+<topic href="com.qnx.doc.mm_sync.dev_guide/topic/configuration_database.html#config_database" title="The &lt;Configuration&gt;/&lt;Database&gt; element"/>
+</entry>
+<entry keyword="database inconsistencies">
+<entry keyword="repairing">
+<topic href="com.qnx.doc.mm_sync.dev_guide/topic/working_repairing.html#working_repairing" title="Repairing database inconsistencies"/>
+</entry>
+</entry>
+<entry keyword="database size">
+<entry keyword="getting">
+<topic href="com.qnx.doc.qdb_en.dev_guide/topic/api/qdb_getdbsize.html#qdb_getdbsize" title="qdb_getdbsize()"/>
+</entry>
+</entry>
+<entry keyword="database status">
+<topic href="com.qnx.doc.qdb_en.dev_guide/topic/starting_pps_config_path.html#pps_config_path" title="PPS configuration path"/>
+</entry>
+<entry keyword="default configuration file">
+<topic href="com.qnx.doc.mm_sync.dev_guide/topic/configuration.html#config" title="Configuring Mediastore Synchronization"/>
+</entry>
+<entry keyword="default configuration settings">
+<topic href="com.qnx.doc.mm_sync.dev_guide/topic/mmsync_api/mmsync_config_constants.html#mmsync_api_config_constants" title="Configuration constants"/>
+</entry>
+<entry keyword="description">
+<entry keyword="mm-sync">
+<topic href="com.qnx.doc.mm_sync.dev_guide/topic/starting_mmsync_command.html#starting_mmsync_command" title="mm-sync command line"/>
+</entry>
+<entry keyword="mmsyncclient">
+<topic href="com.qnx.doc.mm_sync.dev_guide/topic/starting_mmsyncclient.html#starting_mmsyncclient" title="mmsyncclient command utility"/>
+</entry>
+<entry keyword="QDB client">
+<topic href="com.qnx.doc.qdb_en.dev_guide/topic/qdbc.html#qdbc" title="QDB Client"/>
+</entry>
+<entry keyword="QDB command line">
+<topic href="com.qnx.doc.qdb_en.dev_guide/topic/starting_qdb.html#qdb_command" title="QDB Command Line"/>
+</entry>
+</entry>
+<entry keyword="directed synchronizations">
+<topic href="com.qnx.doc.mm_sync.dev_guide/topic/overview_scopes.html#overview_scopes" title="Full, directed, and file synchronizations"/>
+</entry>
+<entry keyword="enumerations">
+<topic href="com.qnx.doc.mm_sync.dev_guide/topic/mmsync_api/mmsync_api_overview.html#mmsync_api" title="Multimedia Synchronizer API"/>
+</entry>
+<entry keyword="error data types">
+<topic href="com.qnx.doc.mm_sync.dev_guide/topic/mmsync_api/mmsync_error_data_types.html#mmsync_api_error_data_types" title="Data types in event.h"/>
+</entry>
+<entry keyword="error information">
+<topic href="com.qnx.doc.mm_sync.dev_guide/topic/mmsync_api/mmsync_error_info.html#mmsync_api_error" title="Error information"/>
+</entry>
+<entry keyword="event interface">
+<topic href="com.qnx.doc.mm_sync.dev_guide/topic/mmsync_api/mmsync_event_info.html#mmsync_api_event" title="Event interface"/>
+</entry>
+<entry keyword="event interface data types">
+<topic href="com.qnx.doc.mm_sync.dev_guide/topic/mmsync_api/mmsync_event_data_types.html#mmsync_api_event_data_types" title="Data types in event.h"/>
+</entry>
+<entry keyword="event interface functions">
+<topic href="com.qnx.doc.mm_sync.dev_guide/topic/mmsync_api/mmsync_event_api_functions.html#mmsync_api_event_functions" title="Functions in mmsyncclient.h"/>
+</entry>
+<entry keyword="executing SQL statements on QDB databases">
+<topic href="com.qnx.doc.qdb_en.dev_guide/topic/qdbc.html#qdbc" title="QDB Client"/>
+</entry>
+<entry keyword="extension element">
+<topic href="com.qnx.doc.mm_sync.dev_guide/topic/configuration_filtering.html#config_filtering" title="Filtering synchronization by file type"/>
+</entry>
+<entry keyword="extensions element">
+<topic href="com.qnx.doc.mm_sync.dev_guide/topic/configuration_filtering.html#config_filtering" title="Filtering synchronization by file type"/>
+</entry>
+<entry keyword="file">
+<entry keyword="legacy format">
+<topic href="com.qnx.doc.qdb_en.dev_guide/topic/sql/pragma.html#pragma" title="PRAGMA"/>
+</entry>
+</entry>
+<entry keyword="files pass">
+<topic href="com.qnx.doc.mm_sync.dev_guide/topic/overview_passes.html#overview_passes" title="Synchronization passes"/>
+</entry>
+<entry keyword="filesystem traversal">
+<topic href="com.qnx.doc.mm_sync.dev_guide/topic/overview_traversal.html#overview_traversal" title="Mediastore filesystem traversal"/>
+</entry>
+<entry keyword="filtering synchronizations by file type">
+<topic href="com.qnx.doc.mm_sync.dev_guide/topic/configuration_filtering.html#config_filtering" title="Filtering synchronization by file type"/>
+</entry>
+<entry keyword="flag">
+<entry keyword="synchronous">
+<topic href="com.qnx.doc.qdb_en.dev_guide/topic/sql/pragma.html#pragma" title="PRAGMA"/>
+</entry>
+</entry>
+<entry keyword="foreground merge">
+<topic href="com.qnx.doc.mm_sync.dev_guide/topic/overview_optimization.html#overview_optimization" title="Optimization of synchronization for slow devices"/>
+</entry>
+<entry keyword="foreground thread">
+<topic href="com.qnx.doc.mm_sync.dev_guide/topic/configuration_priorities.html#config_priorities" title="Synchronization thread priorities"/>
+</entry>
+<entry keyword="foreign">
+<entry keyword="key list">
+<topic href="com.qnx.doc.qdb_en.dev_guide/topic/sql/pragma.html#pragma" title="PRAGMA"/>
+</entry>
+</entry>
+<entry keyword="format">
+<entry keyword="legacy file">
+<topic href="com.qnx.doc.qdb_en.dev_guide/topic/sql/pragma.html#pragma" title="PRAGMA"/>
+</entry>
+</entry>
+<entry keyword="full">
+<entry keyword="column names">
+<topic href="com.qnx.doc.qdb_en.dev_guide/topic/sql/pragma.html#pragma" title="PRAGMA"/>
+</entry>
+</entry>
+<entry keyword="full recursive synchronizations">
+<topic href="com.qnx.doc.mm_sync.dev_guide/topic/overview_scopes.html#overview_scopes" title="Full, directed, and file synchronizations"/>
+</entry>
+<entry keyword="functions">
+<topic href="com.qnx.doc.mm_sync.dev_guide/topic/mmsync_api/mmsync_api_overview.html#mmsync_api" title="Multimedia Synchronizer API"/>
+<entry keyword="aggregate">
+<topic href="com.qnx.doc.qdb_en.dev_guide/topic/writing_functions.html#writing_functions" title="Writing User-Defined Functions"/>
+</entry>
+<entry keyword="collation">
+<topic href="com.qnx.doc.qdb_en.dev_guide/topic/writing_functions.html#writing_functions" title="Writing User-Defined Functions"/>
+</entry>
+<entry keyword="scalar">
+<topic href="com.qnx.doc.qdb_en.dev_guide/topic/writing_functions.html#writing_functions" title="Writing User-Defined Functions"/>
+</entry>
+<entry keyword="writing user-defined">
+<topic href="com.qnx.doc.qdb_en.dev_guide/topic/writing_functions.html#writing_functions" title="Writing User-Defined Functions"/>
+</entry>
+</entry>
+<entry keyword="handling updated files and playlists">
+<topic href="com.qnx.doc.mm_sync.dev_guide/topic/configuration_maintaining_ids.html#config_maintaining_ids" title="Maintaining constant IDs for updated files and playlists"/>
+</entry>
+<entry keyword="index info">
+<topic href="com.qnx.doc.qdb_en.dev_guide/topic/sql/pragma.html#pragma" title="PRAGMA"/>
+</entry>
+<entry keyword="index list">
+<topic href="com.qnx.doc.qdb_en.dev_guide/topic/sql/pragma.html#pragma" title="PRAGMA"/>
+</entry>
+<entry keyword="indices">
+<entry keyword="cleaning up">
+<topic href="com.qnx.doc.qdb_en.dev_guide/topic/sql/vacuum.html#vacuum" title="VACUUM"/>
+</entry>
+</entry>
+<entry keyword="integrity">
+<entry keyword="check">
+<topic href="com.qnx.doc.qdb_en.dev_guide/topic/sql/pragma.html#pragma" title="PRAGMA"/>
+</entry>
+</entry>
+<entry keyword="interface.h">
+<topic href="com.qnx.doc.mm_sync.dev_guide/topic/mmsync_api/mmsync_client_api.html#mmsync_api_client" title="Client interface"/>
+</entry>
+<entry keyword="interrupting synchronizations">
+<topic href="com.qnx.doc.mm_sync.dev_guide/topic/working_priority.html#working_priority" title="Setting a priority folder"/>
+</entry>
+<entry keyword="key list">
+<entry keyword="foreign">
+<topic href="com.qnx.doc.qdb_en.dev_guide/topic/sql/pragma.html#pragma" title="PRAGMA"/>
+</entry>
+</entry>
+<entry keyword="legacy format">
+<entry keyword="file">
+<topic href="com.qnx.doc.qdb_en.dev_guide/topic/sql/pragma.html#pragma" title="PRAGMA"/>
+</entry>
+</entry>
+<entry keyword="library element">
+<topic href="com.qnx.doc.mm_sync.dev_guide/topic/configuration_filtering.html#config_filtering" title="Filtering synchronization by file type"/>
+</entry>
+<entry keyword="Limiting items read">
+<topic href="com.qnx.doc.mm_sync.dev_guide/topic/configuration_limiting.html#config_limiting" title="Limiting the number of items read"/>
+</entry>
+<entry keyword="list">
+<entry keyword="foreign key">
+<topic href="com.qnx.doc.qdb_en.dev_guide/topic/sql/pragma.html#pragma" title="PRAGMA"/>
+</entry>
+</entry>
+<entry keyword="loading mediastore databases">
+<topic href="com.qnx.doc.mm_sync.dev_guide/topic/starting_starting_mmsync.html#starting_mmsync" title="Setting up the Multimedia Synchronizer Environment"/>
+</entry>
+<entry keyword="maintaining database persistence">
+<topic href="com.qnx.doc.mm_sync.dev_guide/topic/starting_db_persistence.html#starting_db_persistence" title="Maintaining database persistence"/>
+</entry>
+<entry keyword="maintaining QDB databases">
+<topic href="com.qnx.doc.qdb_en.dev_guide/topic/starting_qdb.html#qdb_command" title="QDB Command Line"/>
+</entry>
+<entry keyword="managing synchronizations">
+<topic href="com.qnx.doc.mm_sync.dev_guide/topic/starting_mmsyncclient.html#starting_mmsyncclient" title="mmsyncclient command utility"/>
+</entry>
+<entry keyword="mapping metadata to database fields">
+<topic href="com.qnx.doc.mm_sync.dev_guide/topic/configuration_metadata.html#config_metadata" title="The &lt;Configuration&gt;/&lt;Database&gt;/&lt;Synchronization&gt;/&lt;ConfigurableMetadata&gt; element"/>
+</entry>
+<entry keyword="MaxFolderItems element">
+<topic href="com.qnx.doc.mm_sync.dev_guide/topic/configuration_limiting.html#config_limiting" title="Limiting the number of items read"/>
+</entry>
+<entry keyword="MaxMediaStoreItems element">
+<topic href="com.qnx.doc.mm_sync.dev_guide/topic/configuration_limiting.html#config_limiting" title="Limiting the number of items read"/>
+</entry>
+<entry keyword="MaxMediaStoreItemsConfiguration element">
+<topic href="com.qnx.doc.mm_sync.dev_guide/topic/configuration_limiting.html#config_limiting" title="Limiting the number of items read"/>
+</entry>
+<entry keyword="media file categories">
+<topic href="com.qnx.doc.mm_sync.dev_guide/topic/mmsync_api/mmsync_media_categories.html#mmsync_api_media_categories" title="Media file categories"/>
+</entry>
+<entry keyword="media file categories data types">
+<topic href="com.qnx.doc.mm_sync.dev_guide/topic/mmsync_api/mmsync_media_data_types.html#mmsync_api_media_data_types" title="Data types in interface.h"/>
+</entry>
+<entry keyword="merge thread">
+<topic href="com.qnx.doc.mm_sync.dev_guide/topic/configuration_priorities.html#config_priorities" title="Synchronization thread priorities"/>
+</entry>
+<entry keyword="metadata pass">
+<topic href="com.qnx.doc.mm_sync.dev_guide/topic/overview_passes.html#overview_passes" title="Synchronization passes"/>
+</entry>
+<entry keyword="mm-sync utility">
+<topic href="com.qnx.doc.mm_sync.dev_guide/topic/starting_mmsync_command.html#starting_mmsync_command" title="mm-sync command line"/>
+</entry>
+<entry keyword="mmsyncclient utility">
+<topic href="com.qnx.doc.mm_sync.dev_guide/topic/starting_mmsyncclient.html#starting_mmsyncclient" title="mmsyncclient command utility"/>
+</entry>
+<entry keyword="mmsyncclient.h">
+<topic href="com.qnx.doc.mm_sync.dev_guide/topic/mmsync_api/mmsync_client_api.html#mmsync_api_client" title="Client interface"/>
+</entry>
+<entry keyword="modes">
+<entry keyword="auto-vacuum">
+<topic href="com.qnx.doc.qdb_en.dev_guide/topic/sql/vacuum.html#vacuum" title="VACUUM"/>
+</entry>
+</entry>
+<entry keyword="MSS element">
+<topic href="com.qnx.doc.mm_sync.dev_guide/topic/configuration_mss.html#config_mss" title="The &lt;Configuration&gt;/&lt;Database&gt;/&lt;Synchronization&gt;/&lt;MSS&gt; element"/>
+</entry>
+<entry keyword="multimedia synchronization">
+<entry keyword="overview">
+<topic href="com.qnx.doc.mm_sync.dev_guide/topic/overview_intro.html#overview" title="Multimedia Synchronization Overview"/>
+</entry>
+</entry>
+<entry keyword="multimedia synchronizer">
+<topic href="com.qnx.doc.mm_sync.dev_guide/topic/overview_intro.html#overview" title="Multimedia Synchronization Overview"/>
+<entry keyword="See mm-sync">

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fileset name="rootfs.common.dlna">
+
+  <!-- DLNA 
+
+	Fileset for the following DLNA components: 
+	
+	- Twonky DMS: 3rd party media server
+	- DMC: 3rd party control point 
+	- DMCConnector: 3rd party C library interface to DMC - used by DMC Client
+	- MMR plugin: 3rd party plug that can be used to configure MMR as a router/gateway to a DMR
+	- DMC Client: CAR2 specific component that offers a DMC-to-HMI interface
+
+   -->
+
+  <!-- Enable Service --> 
+
+  <directory name="var/etc" uid="root" gid="nto" mode="0755" />
+  <file name="var/etc/services-enabled" uid="root" gid="nto" mode="0755"/>
+
+  <!-- Twonky DMS -->
+  
+  <directory name="var/twonky/" uid="root" gid="nto" mode="0755"/>
+  <directory name="var/pps/services/mediaserver/" uid="root" gid="nto" mode="0755"/>
+  <file name="var/pps/services/mediaserver/settings" uid="root" gid="nto" mode="0755"/>
+  
+  <!-- DMC -->
+  
+  <directory name="var/pps/services/dmc/" uid="root" gid="nto" mode="0755"/>
+
+  <!-- DMR -->
+
+  <directory name="var/pps/services/dmr/" uid="root" gid="nto" mode="0755"/>
+  <file name="var/pps/services/dmr/rendererCtrl" uid="root" gid="nto" mode="0755"/>
+  <file name="var/pps/services/dmr/rendererStatus" uid="root" gid="nto" mode="0755"/>
+  
+  <!-- DMCConnector -->
+  
+  <!-- MMR plugin -->
+
+  <!-- Utilities -->
+
+  <!-- DMC Client --> 
+
+  <directory name="var/pps/services/dlna/dmcclient/dms/networkstate" uid="root" gid="nto" mode="0755" />
+  <directory name="var/pps/services/dlna/dmcclient/dmr/networkstate" uid="root" gid="nto" mode="0755" />
+  <directory name="var/pps/services/dlna/dmcclient/dmr/playstate" uid="root" gid="nto" mode="0755" />
+ 
+</fileset>

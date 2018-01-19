@@ -1,0 +1,36 @@
+// Import base theme variables
+
+@import '../base';
+@import "../common/media-sources";
+
+$app-dir: $theme-dir + "/Navigation";
+
+// Variable definitions for current application
+
+@media (max-device-height: 719px) 
+{
+	@import './800x480/style';
+	@import './images';
+
+	// Import common components
+	@import '../../common/menu';
+	@import '../../common/lists';
+	@import '../../common/messagebox';
+
+	// Import application layout
+	@import '../../common/Navigation/master';
+}
+
+@media (min-device-height: 720px) 
+{
+	@import './1280x720/style';
+	@import './images';
+	
+	// Import common components
+	@import '../../common/menu';
+	@import '../../common/lists';
+	@import '../../common/messagebox';
+
+	// Import application layout
+	@import '../../common/Navigation/master';
+}

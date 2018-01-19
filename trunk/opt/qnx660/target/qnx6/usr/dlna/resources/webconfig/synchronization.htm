@@ -1,0 +1,74 @@
+<div id="synchronizationContainer">
+    <div class="serverSettingsTitlebarWrapper">
+        <div class="subHeader nomargin">
+            <span class="subheaderTitle" string="synchronization"></span>
+        </div>
+    </div>
+	<div>
+		<span class="titleWrapper">
+			<span string="status_desc" class="title"></span>
+		</span>
+	</div>
+	<div class="smallServerContentSpacer"></div>
+	<div>
+		<a class="actionbtn" onmousedown="onButtonMouseDown(this)" onmouseup="onButtonMouseUp(this)" onclick="reloadConfig();" >
+			<span class="actionbtn_l"></span><span string="reload_config"class="actionbtn_c"></span><span class="actionbtn_r"></span>
+		</a>
+		<div class="serverContentSpacer"></div>
+	</div>
+    <div class="boxHeader">
+    	<span class="titleWrapper">
+        	<span class="title" string="users" />
+			<div id="sy1" class="toggleButton hidden smallestFont"><div class="toggleText" string="show"></div></div><div class="toggleSpacer"></div>
+			</span>
+		<div class="clear" />
+    </div>
+	<div class="hideSubheaderBody">
+		<span class="titleWrapper">
+			<span string="users_desc" class="title"></span>
+		</span>
+		<div class="smallServerContentSpacer"></div>
+		<span class="titleWrapper">
+			<span string="users_subdesc" class="title"></span>
+		</span>
+		<div class="smallServerContentSpacer"></div>
+		<div id="userslist">
+		</div>
+		<div class="smallServerContentSpacer"></div>
+		<div>
+			<a class="actionbtn" onmousedown="onButtonMouseDown(this)" onmouseup="onButtonMouseUp(this)" onclick="addUser();" >
+				<span class="actionbtn_l"></span><span string="add_new_user" class="actionbtn_c"></span><span class="actionbtn_r"></span>
+			</a>
+		</div>
+		<div class="serverContentSpacer">
+		</div>
+	</div>
+    <div class="boxHeader">
+    	<span class="titleWrapper">
+        	<span class="title" string="syncfolders" />
+			<div id="sy2" class="toggleButton hidden smallestFont"><div class="toggleText" string="show"></div></div><div class="toggleSpacer"></div>
+			</span>
+		<div class="clear" />
+    </div>
+	<div class="hideSubheaderBody">
+		<span class="titleWrapper">
+			<span string="syncfolder_desc" class="title"></span>
+			<div class="smallServerContentSpacer"></div>
+			<span string="syncfolder_name_desc" class="title"></span>
+			<div class="clear"/><div class="clear"/><div class="clear"/><div class="clear"/>
+			<span string="local_syncfolder_desc" class="title"></span>
+			<div class="clear"/><div class="clear"/><div class="clear"/><div class="clear"/>
+			<span string="user_name_desc" class="title"></span>
+			<div class="clear"/><div class="clear"/><div class="clear"/><div class="clear"/>
+			<span string="rights_desc" class="title"></span>						
+		</span>		
+		<div class="smallServerContentSpacer"></div>
+		<div id="sharedlist">
+		</div>
+		<div>
+			<a class="actionbtn" onmousedown="onButtonMouseDown(this)" onmouseup="onButtonMouseUp(this)" onclick="addShareAndRights();" >
+				<span class="actionbtn_l"></span><span string="add_share" class="actionbtn_c"></span><span class="actionbtn_r"></span>
+			</a>
+		</div>
+	</div>
+</div>

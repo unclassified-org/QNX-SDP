@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets"
+        xmlns:rim="http://www.blackberry.com/ns/widgets"
+        version="1.0.0.0"
+        id="Status">
+    <name>Status</name>
+    <author>QNX</author>
+    <description>Status application</description>
+	<rim:category name="system"/>
+    <icon src="icon.png"/>
+    <content src="index.html"/>
+    <access uri="http://localhost" subdomains="true"/>
+	<access uri="*" />
+
+	<feature id="car.hvac" required="true" version="1.0.0"/>
+	<feature id="car.Zone" required="true" version="1.0.0.0"/>
+	<feature id="car.profile" required="true" version="1.0.0"/>
+	<feature id="car.audiomixer" required="true" version="1.0.0"/>
+	<feature id="car.theme" required="true" version="1.0.0.0"/>
+
+	<feature id="blackberry.event" required="true" version="1.0.0"/>
+	<feature id="qnx.settings" required="true" version="1.0.0"/>
+	<feature id="qnx.bluetooth" required="true" version="1.0.0"/>
+	<feature id="qnx.message" required="true" version="1.0.0"/>
+	<feature id="qnx.bluetooth.pbap" required="true" version="1.0.0"/>
+	<feature id="qnx.phone" required="true" version="1.0.0.0"/>
+</widget>

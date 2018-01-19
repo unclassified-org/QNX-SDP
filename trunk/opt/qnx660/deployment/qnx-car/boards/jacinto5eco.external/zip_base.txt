@@ -1,0 +1,6 @@
+../jacinto5eco/sd-boot/boot.scr
+../jacinto5eco/sd-boot/MLO
+../jacinto5eco/sd-boot/j5-sd-hdr.raw.gz
+../jacinto5eco/sd-boot/u-boot.bin
+../jacinto5eco/ifs/qnx-ifs
+../jacinto5eco/sd-boot/MLO-NAND

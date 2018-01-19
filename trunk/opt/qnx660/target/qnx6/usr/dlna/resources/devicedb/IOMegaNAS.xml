@@ -1,0 +1,19 @@
+<Server>
+	<DeviceId>
+		<DisplayName>IO Mega NAS</DisplayName>
+		<HttpRecognition>
+			<HttpText>Aggregation, EMC, Twonky</HttpText>
+		</HttpRecognition>
+		<MappingUpdatePolicy>FIXPC</MappingUpdatePolicy>
+	</DeviceId>
+	<Adaptations>
+		<DefaultView>advanceddefault</DefaultView>
+		<DLNA>
+			<Version>DLNA15</Version>
+		</DLNA>
+	</Adaptations>
+	<DeviceQuirks>
+		<Quirk>AGGREGATION</Quirk>
+	</DeviceQuirks>
+</Server>
+

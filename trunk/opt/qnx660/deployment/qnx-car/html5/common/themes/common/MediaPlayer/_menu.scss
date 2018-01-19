@@ -1,0 +1,64 @@
+/**
+ * Styles for the pull-down, stacked menus.
+ * @author lgreenway
+ *
+ * $Id$
+ */
+/* overriding ST2 PR4 x-list gray bg */
+.x-list-emptytext{
+	font-size: 300%;
+	padding: 0 0 0 (6px * $x-multiplier);
+}
+
+.menu-main .x-list {
+	background-color: transparent;
+}
+
+.menu-source-synched-false, .menu-source-available-false {
+	opacity: 0.2;
+}
+
+/* Menu Images */
+.x-list-item {
+	.menu-image-folder { background-image: $img-menu-folder; }
+	.menu-image-radio { background-image: $img-menu-radio; }
+	.menu-image-pandora { background-image: $img-menu-pandora; }
+	.menu-image-hdd { background-image: $img-menu-hdd; }
+	.menu-image-cd { background-image: $img-menu-cd; }
+	.menu-image-usb { background-image: $img-menu-usb; }
+	.menu-image-sd { background-image: $img-menu-sd; }
+	.menu-image-ipod { background-image: $img-menu-ipod; }
+	.menu-image-dlna,
+	.menu-image-DLNA { background-image: $img-menu-DLNA; }
+	.menu-image-bluetooth { background-image: $img-menu-bluetooth; }
+	.menu-image-mtp { background-image: $img-menu-mtp; }
+	.menu-image-song { background-image: $img-menu-song; }
+	.menu-image-playlist { background-image: $img-menu-playlist; }
+	.menu-image-artist { background-image: $img-menu-artist; }
+	.menu-image-album { background-image: $img-menu-album; }
+	.menu-image-genre { background-image: $img-menu-genre; }
+	.menu-image-video { background-image: $img-menu-video; }
+	.menu-image-pandoraStation { background-image: $img-menu-pandoraStation; }
+
+	&.menu-selected {
+		.menu-image-folder { background-image: $img-menu-folder-over; }
+		.menu-image-radio { background-image: $img-menu-radio-over; }
+		.menu-image-pandora { background-image: $img-menu-pandora-over; }
+		.menu-image-hdd { background-image: $img-menu-hdd-over; }
+		.menu-image-cd { background-image: $img-menu-cd-over; }
+		.menu-image-usb { background-image: $img-menu-usb-over; }
+		.menu-image-sd { background-image: $img-menu-sd-over; }
+		.menu-image-ipod { background-image: $img-menu-ipod-over; }
+		.menu-image-dlna,
+		.menu-image-DLNA { background-image: $img-menu-DLNA-over; }
+		.menu-image-bluetooth { background-image: $img-menu-bluetooth-over; }
+		.menu-image-mtp { background-image: $img-menu-mtp-over; }
+		.menu-image-song { background-image: $img-menu-song-over; }
+		.menu-image-playlist { background-image: $img-menu-playlist-over; }
+		.menu-image-artist { background-image: $img-menu-artist-over; }
+		.menu-image-album { background-image: $img-menu-album-over; }
+		.menu-image-genre { background-image: $img-menu-genre-over; }
+		.menu-image-video { background-image: $img-menu-video-over; }
+		.menu-image-pandoraStation { background-image: $img-menu-pandoraStation-over; }
+	}
+}

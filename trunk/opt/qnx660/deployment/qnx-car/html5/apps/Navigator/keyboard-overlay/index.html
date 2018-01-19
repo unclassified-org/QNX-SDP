@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <link rel="stylesheet" id="theme-css" app="KeyboardOverlay" type="text/css" charset="utf-8" onload="assignHandlers()">
+    <script src="js/keyboard.js" type="text/javascript" charset="utf-8"></script>
+    <script src="local:///chrome/webworks.js" type="text/javascript" charset="utf-8"></script>
+    <title>Keyboard</title>
+</head>
+<body>
+      <div id="container">
+        <table id="alphabetic">
+          <tr>
+            <td class="letter">q</td>
+            <td class="letter">w</td>
+            <td class="letter">e</td>
+            <td class="letter">r</td>
+            <td class="letter">t</td>
+            <td class="letter">y</td>
+            <td class="letter">u</td>
+            <td class="letter">i</td>
+            <td class="letter">o</td>
+            <td class="letter">p</td>
+          </tr>
+          <tr>
+            <td class="letter">a</td>
+            <td class="letter">s</td>
+            <td class="letter">d</td>
+            <td class="letter">f</td>
+            <td class="letter">g</td>
+            <td class="letter">h</td>
+            <td class="letter">j</td>
+            <td class="letter">k</td>
+            <td class="letter">l</td>
+            <td class="special" id="deleteAlpha"></td>
+          </tr>
+          <tr>
+            <td class="special" id="leftShift"></td>
+            <td class="letter">z</td>
+            <td class="letter">x</td>
+            <td class="letter">c</td>
+            <td class="letter">v</td>
+            <td class="letter">b</td>
+            <td class="letter">n</td>
+            <td class="letter">m</td>
+            <td class="letter service">,</td>
+            <td class="special" id="rightShift"></td>
+          </tr>
+          <tr>
+            <td class="special" id="hideAlpha"></td>
+            <td class="service" id="abcAlpha">?123</td>
+            <td class="special" id="language"></td>
+            <td class="letter" id="spaceAlpha" colspan="4" style="text-transform: capitalize;">Space</td>
+            <td class="letter service">.</td>
+            <td class="service" id="returnAlpha" colspan="2">Return</td>
+          </tr>
+        </table>
+
+        <table id="numeric" style="display:none;">
+          <tr>
+            <td class="letter">#</td>
+            <td class="number">1</td>
+            <td class="number">2</td>
+            <td class="number">3</td>
+            <td class="letter">(</td>
+            <td class="letter">)</td>
+            <td class="letter">_</td>
+            <td class="letter">-</td>
+            <td class="letter">+</td>
+            <td class="letter">@</td>
+          </tr>
+          <tr>
+            <td class="letter">*</td>
+            <td class="number">4</td>
+            <td class="number">5</td>
+            <td class="number">6</td>
+            <td class="letter">/</td>
+            <td class="letter">:</td>
+            <td class="letter">;</td>
+            <td class="letter">'</td>
+            <td class="letter">"</td>
+            <td class="special" id="deleteNum"></td>
+          </tr>
+          <tr>
+            <td class="special" id="leftMoreNum"></td>
+            <td class="number">7</td>
+            <td class="number">8</td>
+            <td class="number">9</td>
+            <td class="letter">$</td>
+            <td class="letter">?</td>
+            <td class="letter">!</td>
+            <td class="letter">=</td>
+            <td class="letter service">,</td>
+            <td class="special" id="rightMoreNum"></td>
+          </tr>
+          <tr>  
+            <td class="special" id="hideNum"></td>
+            <td class="service" id="abcNum">ABC</td>
+            <td class="number">0</td>
+            <td class="letter" id="spaceNum" colspan="4" style="text-transform: capitalize;">Space</td>
+            <td class="letter service">.</td>
+            <td class="service" id="returnNum" colspan="2" >Return</td>
+          </tr>
+        </table>
+
+        <table id="symbolic" style="display:none;">
+          <tr>
+            <td class="letter">]</td>
+            <td class="letter">&lt;</td>
+            <td class="letter">{</td>
+            <td class="letter">&laquo;</td>
+            <td class="letter">~</td>
+            <td class="letter">&curren;</td>
+            <td class="letter">&plusmn;</td>
+            <td class="letter">&ldquo;</td>
+            <td class="letter">^</td>
+            <td class="letter">%</td>
+          </tr>
+          <tr>
+            <td class="letter">[</td>
+            <td class="letter">&gt;</td>
+            <td class="letter">}</td>
+            <td class="letter">&raquo;</td>
+            <td class="letter">\</td>
+            <td class="letter">&divide;</td>
+            <td class="letter">&lsquo;</td>
+            <td class="letter">&rdquo;</td>
+            <td class="letter">&</td>
+            <td class="special" id="deleteSym"></td>
+          </tr>
+          <tr>
+            <td class="special" id="leftMoreSym"></td>
+            <td class="letter">$</td>
+            <td class="letter">&euro;</td>
+            <td class="letter">&yen;</td>
+            <td class="letter">&pound;</td>
+            <td class="letter">&middot;</td>
+            <td class="letter">|</td>
+            <td class="letter">&igrave;</td>
+            <td class="letter">&iquest;</td>
+            <td class="special" id="rightMoreSym"></td>
+          </tr>
+          <tr>
+            <td class="special" id="hideSym"></td>
+            <td class="service" id="abcSym">ABC</td>
+            <td class="letter">,</td>
+            <td class="letter" id="spaceSym" colspan="4" style="text-transform: capitalize;">Space</td>
+            <td class="letter">.</td>
+            <td class="service" id="returnNum" colspan="2">Return</td>
+          </tr>
+        </table>
+      </div>            
+</body>
+</html>

@@ -1,0 +1,20 @@
+<Client>
+	<DeviceId>
+		<DisplayName>TwonkyMobile</DisplayName>
+		<HttpRecognition>
+			<HttpText>TwonkyMedia-NMC DLNADOC/1.50 mobileview</HttpText>
+		</HttpRecognition>
+		<MappingUpdatePolicy>FIX</MappingUpdatePolicy>
+	</DeviceId>
+	<Capabilities>
+		<ProtocolList>
+			<Protocol>DNS</Protocol>
+			<Protocol>ROUTING</Protocol>
+		</ProtocolList>
+	</Capabilities>
+	<Adaptations>
+		<DLNA>
+			<Version>DLNA15</Version>
+		</DLNA>
+	</Adaptations>
+</Client>

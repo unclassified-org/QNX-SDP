@@ -1,0 +1,202 @@
+/* Audio Control */
+#audioControl
+{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 800px * $x-multiplier;
+	height: 395px * $y-multiplier;
+	min-height: 395px $y-multiplier !important;
+	overflow: hidden;
+	background: no-repeat top left;
+}
+
+/* Audio settings panel (volume, bass, treble) */
+#audioControl div#audioSettings
+{
+	float: left;
+	width: 312px * $x-multiplier;
+	height: 395px * $y-multiplier;
+	overflow: hidden;
+}
+
+#audioControl div#audioSettings div.setting 
+{ 
+	float: left;
+	position: relative;
+	height: 132px * $y-multiplier;
+	width: 100%;
+	background: no-repeat 0% 0%;
+	background-size: 100% 100%;
+}
+
+#audioControl div#audioSettings div.setting div.name 
+{
+	width: 100%;
+	color: $text-color;
+	text-transform: uppercase;
+	line-height: 35px * $y-multiplier;
+	text-align: center;
+}
+
+#audioControl div#audioSettings div.setting div.sliderControl 
+{
+	position: absolute;
+	left: 25px * $x-multiplier;
+	top: 52px * $y-multiplier;
+	width: 272px * $x-multiplier;
+	height: 69px * $y-multiplier;
+}
+#audioControl div#audioSettings div.setting div.sliderControl div.btnDown,
+#audioControl div#audioSettings div.setting div.sliderControl div.btnUp 
+{
+	float: left;
+	width: 39px * $x-multiplier;
+	height: 106px * $y-multiplier;
+	background-repeat: no-repeat;
+}
+
+#audioControl div#audioSettings div.setting div.sliderControl div.btnDown:active,
+#audioControl div#audioSettings div.setting div.sliderControl div.btnUp:active 
+{
+	background-position: (-39px * $x-multiplier) 0;
+}
+
+#audioControl div#audioSettings div.setting div.sliderControl div.display 
+{
+	float: left;
+	width: 190px * $x-multiplier;
+	height: 66px * $y-multiplier;
+	margin: 0px ( 2px * $y-multiplier );
+	background: no-repeat 0% 0%;
+	background-size: 100% 1100%;
+}
+/* Slider display levels */
+#audioControl div#audioSettings div.setting div.sliderControl.level1 div.display 
+{ 
+	background-position: 0% 10%; 
+}
+
+#audioControl div#audioSettings div.setting div.sliderControl.level2 div.display 
+{ 
+	background-position: 0% 20%; 
+}
+
+#audioControl div#audioSettings div.setting div.sliderControl.level3 div.display 
+{
+	background-position: 0% 30%; 
+}
+
+#audioControl div#audioSettings div.setting div.sliderControl.level4 div.display 
+{ 
+	background-position: 0% 40%; 
+}
+
+#audioControl div#audioSettings div.setting div.sliderControl.level5 div.display 
+{
+	background-position: 0% 50%; 
+}
+
+#audioControl div#audioSettings div.setting div.sliderControl.level6 div.display 
+{ 
+	background-position: 0% 60%;
+}
+
+#audioControl div#audioSettings div.setting div.sliderControl.level7 div.display 
+{ 
+	background-position: 0% 70%;
+}
+
+#audioControl div#audioSettings div.setting div.sliderControl.level8 div.display 
+{ 
+	background-position: 0% 80%;
+}
+
+#audioControl div#audioSettings div.setting div.sliderControl.level9 div.display 
+{ 
+	background-position: 0% 90%;
+}
+
+#audioControl div#audioSettings div.setting div.sliderControl.level10 div.display 
+{
+	background-position: 0% 100%;
+}
+
+/* Fade/Balance control */
+#audioControl div#fadeBalanceControl 
+{ 
+	float: left; 
+	position: relative; 
+	background: no-repeat 0px 0px; 
+	background-size: cover; 
+	width: 488px * $x-multiplier; 
+	height: 395px * $y-multiplier; 
+}
+
+#audioControl div#fadeBalanceControl div.boundingBox 
+{
+	position: relative; 
+	width: 327px * $x-multiplier; 
+	height: 355px * $y-multiplier; 
+	margin-left: 75px * $x-multiplier; 
+	margin-top: 40px * $y-multiplier;
+}
+
+#audioControl div#fadeBalanceControl div.fadeBalancePosition 
+{ 
+	position: absolute; 
+	top: 0px; 
+	left: 0px; 
+	z-index: 5; 
+	width: 200px * $x-multiplier; 
+	height: 200px * $y-multiplier; 
+	background: no-repeat 0% 0%; 
+	background-size: 200% 100% 
+} 
+#audioControl div#fadeBalanceControl div.fadeBalancePosition.dragging 
+{ 
+	background-position: 100% 0%; 
+}
+
+
+/* Audio Control images*/
+#audioControl
+{
+	background-image: $background;
+}
+
+#audioControl div#audioSettings div.setting 
+{ 
+	background-image: $audio-control-bkg-slider;
+}
+
+#audioControl div#audioSettings div.setting div.sliderControl div.btnDown
+{ 
+	background-image: $audio-control-btn-slider-minus; 
+}
+
+#audioControl div#audioSettings div.setting div.sliderControl div.btnUp 
+{ 
+	background-image: $audio-control-btn-slider-plus; 
+}
+
+#audioControl div#audioSettings div.setting div.sliderControl div.display 
+{ 
+	background-image: $audio-control-bkg-sliderDisplay; 
+}
+
+#audioControl div#audioSettings div.setting div.sliderControl.volume div.display 
+{ 
+	background-image: $audio-control-bkg-sliderDisplay-vol; 
+}
+
+/* Fade/Balance control */
+#audioControl div#fadeBalanceControl 
+{ 
+	background-image: $audio-control-bkg-vehicle; 
+}
+
+#audioControl div#fadeBalanceControl div.fadeBalancePosition 
+{ 
+	background-image: $audio-control-btn-fade; 
+} 

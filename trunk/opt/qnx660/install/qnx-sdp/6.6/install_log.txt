@@ -1,0 +1,412 @@
+__________________________________________________________________________
+
+Thu Mar 27 09:18:27 CST 2014
+
+Free Memory: 60320 kB
+Total Memory: 80832 kB
+
+java.class.path:
+    /tmp/install.dir.49953/InstallerData
+    /tmp/install.dir.49953/InstallerData/installer.zip
+
+ZGUtil.CLASS_PATH:
+    /tmp/install.dir.49953/InstallerData
+    /tmp/install.dir.49953/InstallerData/installer.zip
+
+sun.boot.class.path:
+    /tmp/install.dir.49953/Linux/resource/jre/lib/resources.jar
+    /tmp/install.dir.49953/Linux/resource/jre/lib/rt.jar
+    /tmp/install.dir.49953/Linux/resource/jre/lib/sunrsasign.jar
+    /tmp/install.dir.49953/Linux/resource/jre/lib/jsse.jar
+    /tmp/install.dir.49953/Linux/resource/jre/lib/jce.jar
+    /tmp/install.dir.49953/Linux/resource/jre/lib/charsets.jar
+    /tmp/install.dir.49953/Linux/resource/jre/classes
+
+java.ext.dirs:
+    /tmp/install.dir.49953/Linux/resource/jre/lib/ext
+    /usr/java/packages/lib/ext
+
+java.version                  == 1.6.0_15 (Java 1)
+java.vm.name                  == Java HotSpot(TM) Server VM
+java.vm.vendor                == Sun Microsystems Inc.
+java.vm.version               == 14.1-b02
+java.vm.specification.name    == Java Virtual Machine Specification
+java.vm.specification.vendor  == Sun Microsystems Inc.
+java.vm.specification.version == 1.0
+java.specification.name       == Java Platform API Specification
+java.specification.vendor     == Sun Microsystems Inc.
+java.specification.version    == 1.6
+java.vendor                   == Sun Microsystems Inc.
+java.vendor.url               == http://java.sun.com/
+java.class.version            == 50.0
+java.compiler                 == null
+java.home                     == /tmp/install.dir.49953/Linux/resource/jre
+java.io.tmpdir                == /tmp
+os.name                       == Linux
+os.arch                       == i386
+os.version                    == 3.8.0-35-generic
+path.separator                == :
+file.separator                == /
+file.encoding                 == UTF-8
+user.name                     == root
+user.home                     == /root
+user.dir                      == /tmp/install.dir.49953
+user.language                 == en
+user.region                   == null
+__________________________________________________________________________
+
+Installed Feature(s) full of QNX Software Development Platform 6.6
+
+Install Begin: MARCH 27, 2014 9:10:55 AM CST
+Install End: MARCH 27, 2014 9:18:22 AM CST
+
+Installed by InstallAnywhere 14.0 Enterprise Build 4349
+
+
+User Interactions
+-----------------
+
+
+#License Key
+#-----------
+INPUT_LICENSE_KEY=D21S-8786-Y6BV-9UU7-WTF8
+
+#Choose Installation Directory
+#-----------------------------
+USER_INSTALL_DIR=/opt/qnx660
+
+#Get User Input: QNX_CONFIGURATION
+#---------------------------------
+QNX6_INPUT_RESULTS=\"Yes\",\"\"
+QNX6_INPUT_RESULTS_1=Yes
+QNX6_INPUT_RESULTS_2=
+QNX6_INPUT_RESULTS_BOOLEAN_1=1
+QNX6_INPUT_RESULTS_BOOLEAN_2=0
+
+#Choose Link Folder
+#------------------
+USER_SHORTCUTS=/root
+
+#Install
+#-------
+-fileOverwrite_/opt/qnx660/install/qnx-sdp/6.6/licenseNonCommercial.txt=Yes
+-fileOverwrite_/opt/qnx660/install/qnx-sdp/6.6/licensePartner.txt=Yes
+-fileOverwrite_/opt/qnx660/install/qnx-sdp/6.6/LicenseGuide.pdf=Yes
+-fileOverwrite_/opt/qnx660/install/qnx-sdp/6.6/Third_Party_Terms_List.pdf=Yes
+-fileOverwrite_/opt/qnx660/install/qnx-sdp/6.6/doc-manifest=Yes
+-fileOverwrite_/opt/qnx660/install/qnx-sdp/6.6/linux-manifest=Yes
+-fileOverwrite_/opt/qnx660/install/qnx-sdp/6.6/licenseCommercial.txt=Yes
+-fileOverwrite_/opt/qnx660/install/qnx-sdp/6.6/commit_msg=Yes
+-fileOverwrite_/opt/qnx660/install/qnx-sdp/6.6/addLicense.bin=Yes
+-fileOverwrite_/opt/qnx660/install/qnx-sdp/6.6/uninstaller.lax=Yes
+-fileOverwrite_/etc/qnx/bin/qnxactivate=Yes
+
+#Launch QNX SDK for Apps and Media 1.0
+#-------------------------------------
+USER_INPUT_RESULTS=\"Yes, install\",\"\"
+USER_INPUT_RESULTS_1=Yes, install
+USER_INPUT_RESULTS_2=
+USER_INPUT_RESULTS_BOOLEAN_1=1
+USER_INPUT_RESULTS_BOOLEAN_2=0
+
+Summary
+-------
+
+Installation: Successful.
+
+57 Successes
+0 Warnings
+0 NonFatalErrors
+0 FatalErrors
+
+Action Notes:
+
+None
+
+Install Log Detail:
+
+Check Disk Space:         /qnx660
+                          Status: SUCCESSFUL
+                          Additional Notes: NOTE - Required Disk Space: 1,000,579,904; Free Disk Space: 40,074,817,536
+
+Install Action:           Find Component in Registry: check previous installation
+                          Status: SUCCESSFUL
+
+
+Custom Action:            com.zerog.ia.customcode.util.fileutils.ExtractToFile
+                          Status: SUCCESSFUL
+
+Custom Action:            com.qnx.install.ia2010.ValidateLicense
+                          Status: SUCCESSFUL
+
+
+
+
+Install Action:           Find Component in Registry: Find component
+                          Status: SUCCESSFUL
+
+
+Modify Text File - Single File:   New File /etc/qnx/license/test-test
+                          Status: SUCCESSFUL
+
+
+
+
+
+
+
+
+Check Disk Space:         /opt/qnx660
+                          Status: SUCCESSFUL
+                          Additional Notes: NOTE - Required Disk Space: 1,000,579,902; Free Disk Space: 40,073,637,888
+
+Install Directory:        /opt/qnx660/jre
+                          Status: SUCCESSFUL
+
+Install JRE:              /opt/qnx660/jre
+                          Status: SUCCESSFUL
+
+Install Directory:        /opt/qnx660/
+                          Status: SUCCESSFUL
+                          Additional Notes: NOTE - Directory already existed
+
+Expand Archive: TAR       /opt/qnx660/qnx_sdp.tar
+                          Status: SUCCESSFUL
+
+Delete File:              Source:test-test
+                          Status: SUCCESSFUL
+
+Modify Text File - Single File:   New File /opt/qnx660/qnx660-env.sh
+                          Status: SUCCESSFUL
+
+Modify Text File - Single File:   New File /opt/qnx660/run-qde.sh
+                          Status: SUCCESSFUL
+
+
+Install Directory:        /opt/qnx660/host/linux/x86/usr/qde/eclipse/dropins/
+                          Status: SUCCESSFUL
+
+Modify Text File - Single File:   New File /opt/qnx660/host/linux/x86/usr/qde/eclipse/dropins/com.qnx.tools.ide.doc.qnx.momentics.8.0.0.link
+                          Status: SUCCESSFUL
+
+Install Directory:        /opt/qnx660/install/qnx-sdp/
+                          Status: SUCCESSFUL
+
+Install Directory:        /opt/qnx660/install/qnx-sdp/6.6/
+                          Status: SUCCESSFUL
+
+Install File:             /opt/qnx660/install/qnx-sdp/6.6/licenseNonCommercial.txt
+                          Status: SUCCESSFUL
+
+Install File:             /opt/qnx660/install/qnx-sdp/6.6/licensePartner.txt
+                          Status: SUCCESSFUL
+
+Install File:             /opt/qnx660/install/qnx-sdp/6.6/LicenseGuide.pdf
+                          Status: SUCCESSFUL
+
+Install File:             /opt/qnx660/install/qnx-sdp/6.6/Third_Party_Terms_List.pdf
+                          Status: SUCCESSFUL
+
+Install File:             /opt/qnx660/install/qnx-sdp/6.6/doc-manifest
+                          Status: SUCCESSFUL
+
+Install File:             /opt/qnx660/install/qnx-sdp/6.6/linux-manifest
+                          Status: SUCCESSFUL
+
+Install File:             /opt/qnx660/install/qnx-sdp/6.6/licenseCommercial.txt
+                          Status: SUCCESSFUL
+
+Install File:             /opt/qnx660/install/qnx-sdp/6.6/commit_msg
+                          Status: SUCCESSFUL
+
+Install File:             /opt/qnx660/install/qnx-sdp/6.6/addLicense.bin
+                          Status: SUCCESSFUL
+
+Install Uninstaller:      QNX Software Development Platform 6.6(Install All Uninstaller Components)
+                          Status: SUCCESSFUL
+
+
+Install File:             /opt/qnx660/install/qnx-sdp/6.6/uninstaller.lax
+                          Status: SUCCESSFUL
+
+Install Uninstaller:      QNX Software Development Platform 6.6(Install All Uninstaller Components)
+                          Status: SUCCESSFUL
+
+Install Directory:        /etc/qnx/
+                          Status: SUCCESSFUL
+                          Additional Notes: NOTE - Directory already existed
+
+Modify Text File - Single File:   New File /etc/qnx/qconfig/qnx_software_development_platform_6.6.0.xml
+                          Status: SUCCESSFUL
+
+Custom Action:            com.qnx.install.ia2010.AddLicense
+                          Status: SUCCESSFUL
+
+Execute Command:          chmod 666 /etc/qnx/license/licenses
+                          Status: SUCCESSFUL
+
+Install Directory:        /etc/qnx/bin/
+                          Status: SUCCESSFUL
+                          Additional Notes: NOTE - Directory already existed
+
+Install File:             /etc/qnx/bin/qnxactivate
+                          Status: SUCCESSFUL
+
+Install Directory:        /root/
+                          Status: SUCCESSFUL
+                          Additional Notes: NOTE - Directory already existed
+
+Create Link:              /root/run-qde.sh
+                          Status: SUCCESSFUL
+
+
+Execute Command:          /etc/qnx/bin/qnxactivate -d "/etc/qnx"
+                          Status: SUCCESSFUL
+
+Execute Command:          chmod 777 /opt/qnx660/host/linux/x86/usr/qde/eclipse/p2
+                          Status: SUCCESSFUL
+
+Execute Command:          chmod 777 /opt/qnx660/host/linux/x86/usr/qde/eclipse/configuration
+                          Status: SUCCESSFUL
+
+Execute Command:          /home/kaiwan/qnx6.6/qnx-sdk-for-apps-and-media-1.0-201402230339.bin
+                          Status: SUCCESSFUL
+
+====================STDERR ENTRIES==================
+
+__________________________________________________________________________
+
+InstallAnywhere 2012
+Version: 14.0
+__________________________________________________________________________
+
+Thu Mar 27 09:10:53 CST 2014
+
+Free Memory: 29217 kB
+Total Memory: 32064 kB
+
+No Arguments
+
+java.class.path:
+    /tmp/install.dir.49953/InstallerData
+    /tmp/install.dir.49953/InstallerData/installer.zip
+
+ZGUtil.CLASS_PATH:
+    /tmp/install.dir.49953/InstallerData
+    /tmp/install.dir.49953/InstallerData/installer.zip
+
+sun.boot.class.path:
+    /tmp/install.dir.49953/Linux/resource/jre/lib/resources.jar
+    /tmp/install.dir.49953/Linux/resource/jre/lib/rt.jar
+    /tmp/install.dir.49953/Linux/resource/jre/lib/sunrsasign.jar
+    /tmp/install.dir.49953/Linux/resource/jre/lib/jsse.jar
+    /tmp/install.dir.49953/Linux/resource/jre/lib/jce.jar
+    /tmp/install.dir.49953/Linux/resource/jre/lib/charsets.jar
+    /tmp/install.dir.49953/Linux/resource/jre/classes
+
+java.ext.dirs:
+    /tmp/install.dir.49953/Linux/resource/jre/lib/ext
+    /usr/java/packages/lib/ext
+
+java.version                  == 1.6.0_15 (Java 1)
+java.vm.name                  == Java HotSpot(TM) Server VM
+java.vm.vendor                == Sun Microsystems Inc.
+java.vm.version               == 14.1-b02
+java.vm.specification.name    == Java Virtual Machine Specification
+java.vm.specification.vendor  == Sun Microsystems Inc.
+java.vm.specification.version == 1.0
+java.specification.name       == Java Platform API Specification
+java.specification.vendor     == Sun Microsystems Inc.
+java.specification.version    == 1.6
+java.vendor                   == Sun Microsystems Inc.
+java.vendor.url               == http://java.sun.com/
+java.class.version            == 50.0
+java.compiler                 == null
+java.home                     == /tmp/install.dir.49953/Linux/resource/jre
+java.io.tmpdir                == /tmp
+os.name                       == Linux
+os.arch                       == i386
+os.version                    == 3.8.0-35-generic
+path.separator                == :
+file.separator                == /
+file.encoding                 == UTF-8
+user.name                     == root
+user.home                     == /root
+user.dir                      == /tmp/install.dir.49953
+user.language                 == en
+user.region                   == null
+__________________________________________________________________________
+
+
+
+
+Loading externalized properties
+
+
+
+System's temporary directory = /tmp
+================================ query registry ================
+================================ query registry ================
+***** 2 ReplayVariables for CreateDialog named QNX6_INPUT_RESULTS
+XMLElement@1e90d95 [element_name="component" id="1d38d7cb-1f0d-11b2-8a8d-f93903c03ce3" version="1.0.0.0" name="common" location="/opt/qnxcar2/install/licenseNonCommercial.txt" vendor="QNX Software Systems Limited"]
+XMLElement@17aea99 [element_name="component" id="1d38eaa5-1f0d-11b2-8a8d-f93903c03ce3" version="1.0.0.0" name="InstallAnywhere VM Component" location="/opt/qnxcar2/jre" vendor="QNX Software Systems Limited"]
+XMLElement@bffa22 [element_name="component" id="1d38e1e1-1f0d-11b2-8a8d-f93903c03ce3" version="1.0.0.0" name="InstallAnywhere Uninstall Component" location="/opt/qnxcar2/install/uninstaller" vendor="QNX Software Systems Limited"]
+installUnixJRE:  the source VM tar: /tmp/install.dir.49953/Linux/resource/vm.tar
+    exists = true
+installUnixJRE:  the source VMRoot: /tmp/install.dir.49953/Linux/resource/jre
+    exists = true
+installUnixJRE:  the dest VMRoot: /opt/qnx660/jre
+    exists = true
+#
+# INSTALLING VM: /opt/qnx660/jre
+#
+
+installUnixJRE: Using new TAR technique...
+Destination path for tar extraction (sans 'jre') =
+    /opt/qnx660
+
+installUnixJRE: install shell script:
+#!/bin/sh
+echo "InstallUnixJRE Script begun..."
+cd '/opt/qnx660'
+tar xf '/tmp/install.dir.49953/Linux/resource/vm.tar'
+chmod -R '775' '/opt/qnx660/jre'
+echo "...InstallUnixJRE Script complete."
+##### SCRIPT END ############
+
+XMLScriptWriter: No Installation Objects were skipped
+Retrying Installables deferred in pass 0
+Deferral retries done because: 
+There were no deferrals in the last pass.
+***** 2 ReplayVariables for CreateDialog named USER_INPUT_RESULTS
+Did not match to message method
+SHUTDOWN REQUESTED
+
+REGISTRY ALREADY STORED!
+
+Exiting with exit code: 0
+====================STDOUT ENTRIES==================
+
+ExtractToFile: target = /tmp/install.dir.49953/Linux/resource/jre/lib/i386/libqnxlic.so
+ExtractToFile: extractWhatURL = jar:file:/tmp/install.dir.49953/InstallerData/installer.zip!/$WORKSPACE$/libqnxlic.so
+License validating ..... D21S-8786-Y6BV-9UU7-WTF8
+
+DEBUG: this is commercial license
+Just finished validating license
+THE VALUE of p is 4
+THE VALUE of es is false
+Check existing license before adding a new key........
+check if license key for product# 7 already exists...
+[productType=7,serial=3082132,activateDays=-251,expireDays=2850,EXPIRY,{type=7,flags=e01]
+ previous licenses exist, about to disable all keys with product number: 7
+Adding license key........
+The product [productType=7,serial=3450378,activateDays=31,expireDays=-1,ACTIVATE,{type=7,flags=e00] is being installed
+
+Splash screen for Commercial.
+
+
+testing license...
+[productType=7,serial=3450378,activateDays=31,expireDays=-1,ACTIVATE,{type=7,flags=e00]
+(X) commiting registry
+(X) shutting down service manager
+(X) cleaning up temporary directories

@@ -1,0 +1,15 @@
+<Client>
+	<DeviceId>
+		<DisplayName>Android</DisplayName>
+		<HttpRecognition>
+			<HttpText>Android</HttpText>
+		</HttpRecognition>
+		<MappingUpdatePolicy>AUTO</MappingUpdatePolicy>
+	</DeviceId>
+	<Adaptations>
+		<TranscoderParameter>
+			<Target>MP4</Target>
+			<Parameter>-relocate_moov</Parameter>
+		</TranscoderParameter>
+	</Adaptations>
+</Client>

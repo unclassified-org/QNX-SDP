@@ -1,0 +1,80 @@
+/*
+	NOTE: Since the dial needs to maintain its aspect ratio, measurements will be based on
+	the y-multiplier only, unless where applicable to font-sizing/spacing.
+*/
+
+.radiotunerdial
+{
+	position: relative;
+	top: -44px * $y-multiplier;
+	left: -10px * $y-multiplier;
+	width: 343px * $y-multiplier;
+	height: 395px * $y-multiplier;
+	
+	z-index: 1;
+}
+
+.radiotunerdial .dial
+{
+	height: 720px * $y-multiplier;
+	width: 720px * $y-multiplier;
+	position: absolute;
+	top: -162px * $y-multiplier;
+	left: -358px * $y-multiplier; 
+	background: $img-radio-dial no-repeat 0px 0px;
+	overflow: hidden;
+	z-index: 1;
+	pointer-events: none;
+}
+
+.radiotunerdial .overlay
+{
+	position: absolute;
+	top: 50%;
+	margin-top: -93px * $y-multiplier;
+	width: 383px * $y-multiplier;
+	height: 186px * $y-multiplier;
+	background: $img-radio-dial-overlay no-repeat 0px 50%;
+	z-index: 3;
+}
+
+.radiotunerdial .frequencyListContainer
+{
+	position: absolute;
+	z-index: 2;
+	top: 50%;
+	right: 0px;
+
+	margin: (-42px * $y-multiplier) 0 0 0;
+	padding: 0px 0px 0px (5px * $x-multiplier);
+
+	width: 176px * $y-multiplier;
+	height: 84px * $y-multiplier;
+	
+	overflow: hidden;
+}
+
+.radiotunerdial ul.frequencies
+{
+	position: absolute;
+	top: 2px * $y-multiplier;
+
+	width: 176px * $y-multiplier;
+
+	margin: 0;
+	padding: 0;
+
+	list-style-type: none;
+	
+	-webkit-perspective: 1000;
+}
+
+.radiotunerdial ul.frequencies li
+{
+	font-size: 350%;
+	height: 72px * $y-multiplier;
+	line-height: 72px * $y-multiplier;
+	color: $text-color;
+	padding-left: 5px * $x-multiplier;
+	-webkit-perspective: 1000;
+}

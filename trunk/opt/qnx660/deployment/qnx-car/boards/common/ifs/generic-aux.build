@@ -1,0 +1,179 @@
+###################################################################################
+##
+## This includes non-platform-specific items that are specific to the init and update IFSs
+##
+###################################################################################
+
+[+script] car_startup_bootscript_aux = {
+    pipe &
+}
+
+[uid=0 gid=0 perms=0644 dperms=0755 -optional]
+
+.startup-msg-usb = {
+#!/bin/sh
+if [ -e /dev/io-usb/io-usb ]
+then
+	echo "* USB is running."
+	
+	slay -p devb-umass >/dev/null 2>&1
+	if [ "$?" -gt 0 ]  # $? is the number of processes found
+	then
+		echo "* devb-umass is running."
+	else
+		echo "* Run devb-umass to locate disks."
+	fi
+elif [ -n "$1" ]
+then
+	echo "* Run $1 to enable USB."
+fi
+}
+
+.check-dos-disk = {
+    #!/proc/boot/ksh
+
+    echo Waiting for SD disk...
+
+
+    if waitfor /dev/sd0 10
+	then
+		DOS_DISK=/dev/sd0
+	else
+		DOS_DISK=/dev/cardisk0
+	fi
+
+	echo "Starting disk-init with DOS_DISK=$DOS_DISK..."
+}
+
+### Libraries
+[perms=0755]
+
+fs-dos.so
+libsocket.so.3
+libusbdi.so.2
+[type=link] libusbdi.so=libusbdi.so.2
+lsm-autoip.so
+lsm-qnet.so
+
+libslog2.so.1
+libslog2parse.so.1
+libslog2shim.so.1
+[type=link] libslog2shim.so=libslog2shim.so.1
+
+### Executables
+[perms=0755 data=c]
+
+# Moved from generic.build
+cat
+chgrp
+date
+dinit
+ln
+ls
+mkdir
+nvram-insecure
+pidin
+pps
+random
+rm
+rmdir
+setfacl
+shutdown
+slay
+sleep
+sloginfo
+touch
+tracelogger
+uname
+which
+
+# used by diskinit.sh
+fdisk
+mkqnx6fs
+tar
+unzip
+head
+gzip
+mount
+umount
+cp
+
+# extra utilities for convenience
+chattr
+chmod
+chown
+cksum
+dd
+devb-umass
+find
+getconf
+getfacl
+grep
+io-usb
+less
+mv
+od
+on
+setconf
+setfacl
+sync
+tail
+usb
+use
+vi
+sed
+
+# networking
+devc-pty
+dhcp.client
+ftpd
+fs-cifs
+fs-nfs2
+fs-nfs3
+ifconfig
+inetd
+io-pkt-v4
+login
+pdebug
+ping
+qconn
+telnetd
+cut
+
+slogger
+slogger2
+
+[uid=0 gid=0 perms=0644]
+
+## configuration for network services
+/etc/ftpusers = {
+# All other users are allowed
+* allow
+}
+/usr/lib/terminfo=${QNX_TARGET}/usr/lib/terminfo
+/etc/services = {
+# this file must be saved in Unix format to work
+telnet  23/tcp
+chargen 19/tcp   ttytst source
+ftp     21/tcp
+tftp    69/udp
+biff    512/udp  comsat
+login   513/tcp
+shell   514/tcp  cmd
+}
+/etc/passwd = {
+root:x:0:0:Superuser:/root:/bin/sh
+}
+# password is "root"
+/etc/shadow = {
+root:H0F7UOrnO5QYw:1279741748:0:0
+}
+/etc/inetd.conf = {
+telnet  stream tcp nowait root /proc/boot/telnetd  in.telnetd
+ftp     stream tcp nowait root /proc/boot/ftpd     in.ftpd
+}
+
+[type=link] /bin/ls = /proc/boot/ls  # for ftpd
+[type=link] /bin/login = /proc/boot/login  # for telnetd
+
+##eof

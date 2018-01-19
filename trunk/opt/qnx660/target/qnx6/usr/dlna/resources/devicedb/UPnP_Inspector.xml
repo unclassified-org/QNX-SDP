@@ -1,0 +1,9 @@
+<Client>
+	<DeviceId>
+		<DisplayName>UPnP Inspector</DisplayName>
+		<HttpRecognition>
+			<HttpText>Twisted PageGetter</HttpText>
+		</HttpRecognition>
+		<MappingUpdatePolicy>FIXPC</MappingUpdatePolicy>
+	</DeviceId>
+</Client>

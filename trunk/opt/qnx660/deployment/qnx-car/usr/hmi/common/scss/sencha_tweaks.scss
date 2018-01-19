@@ -1,0 +1,11 @@
+/*$Id: sencha_tweaks.scss 5673 2013-01-14 17:23:58Z lgreenway@qnx.com $*/
+
+$commonDir: "platform:///apps/common";
+
+/*
+Setting the overflow to hidden on ALL list components to prevent
+excessive redrawing during overscroll or 'rubber-banding'
+*/
+.x-list {
+	overflow: hidden;
+}

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fileset name="rootfs.common.directories">
+  <directory name="accounts" uid="apps" gid="nto" mode="0755"/>
+  <directory name="root" uid="root" gid="nto" mode="0711"/>
+  <directory name="apps" uid="apps" gid="nto" mode="0755"/>
+  <directory name="var" uid="root" gid="nto" mode="0755"/>
+</fileset>

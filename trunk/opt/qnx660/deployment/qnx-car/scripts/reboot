@@ -1,0 +1,96 @@
+#!/bin/sh
+
+# Trap the hang-up signal to allow the reboot script to be called via SSH without any issue.
+trap "" SIGHUP
+
+if [ "$#" -ne 0 ] && [ "$1" != "-U" ] && [ "$1" != "-I" ]
+then
+        echo "Usage: reboot [-U|-I]"
+        echo "      -U: perform a self-update and reboot"
+        echo "      -I: reboot into init IFS"
+        exit 1
+fi
+
+echo "Backing up Databases..."
+for db in mme personalization; do
+	if [ -e /dev/qdb/$db ]; then
+		qdbc -d$db -B -vv
+	fi
+done
+
+# Flag to test if we performed a software update or not
+RAN_SOFTWARE_UPDATE=0
+
+if [ "$1" = "-U" ]; then
+    echo "Performing a self-update..."
+
+    MANIFEST_FILE_PATH="/var/swud/mydelta.manifest"
+    UPDATE_FILE_PATH="/var/swud/mydelta.mld"
+    PRE_INSTALL_CMD="/base/scripts/prepare_self_update.sh"
+    POST_INSTALL_CMD="/base/scripts/post_self_update.sh"
+
+    if [ ! -f $UPDATE_FILE_PATH ]; then
+        echo "$UPDATE_FILE_PATH doesn't exist.  Self-update aborted"
+	exit
+    fi
+    build_num=$(gawk 'match($0, /buildNum::(.*)/, matches) {print matches[1]}' < /pps/qnxcar/system/info)
+
+    echo "format_version=20130918" > $MANIFEST_FILE_PATH
+    echo "[id=\"SIMPLE_UPDATE\"]" >> $MANIFEST_FILE_PATH
+    echo "name=\"SIMPLE_UPDATE\"" >> $MANIFEST_FILE_PATH
+    echo "base_version=\"$build_num\"" >> $MANIFEST_FILE_PATH
+    echo "version=\"99.99.99\"" >> $MANIFEST_FILE_PATH
+    echo "path=\"$UPDATE_FILE_PATH\"" >> $MANIFEST_FILE_PATH
+    echo "pre_install_command=\"$PRE_INSTALL_CMD\"">> $MANIFEST_FILE_PATH
+    echo "post_install_command=\"$POST_INSTALL_CMD\"" >> $MANIFEST_FILE_PATH
+    echo "hardware_id=CAR2.1" >> $MANIFEST_FILE_PATH
+    echo "vendor_id=QNX" >> $MANIFEST_FILE_PATH
+
+    # Mount the simple update module with the path to this
+    mount -T swud -o $MANIFEST_FILE_PATH  /base/lib/dll/swud-simple-self-update.so
+
+    res=$?
+
+    if [ $res -ne 0 ]; then
+       echo "mount command returned $res.  Self-update aborted"
+       exit $res
+    else
+       echo "Self-update accepted.  Update should begin soon"
+    fi
+
+    rm $MANIFEST_FILE_PATH
+
+    # Set the flag to skip the slm and shutdown
+    RAN_SOFTWARE_UPDATE=1
+elif [ "$1" = "-I" ]; then
+    defaultifs=/dos/qnx-ifs
+    bootifs=`ls /dos/${PLATFORM}-init.ifs`
+
+    echo "Setting system to boot into ${bootifs} ..."
+    if [ -r ${bootifs} ] && [ -w ${defaultifs} ]; then
+            cp ${bootifs} ${defaultifs}
+            if [ $? -ne 0 ]; then
+                    echo "reboot: ERROR: Update requested, but failed to set boot IFS (${bootifs} -> ${defaultifs})"
+                    exit 2
+            fi
+    else
+            echo "reboot: ERROR: Could could not find or no permission to access ${bootifs} or ${defaultifs}."
+            exit 3
+    fi
+fi
+
+# Un-comment to set time on reboot (to be handled during system startup)
+#echo "Setting time from NTP and storing in HW RTC..."
+#/base/scripts/settime-variant.sh
+
+# Only stop SLM and reboot if we DID NOT run a self-update.
+if [ $RAN_SOFTWARE_UPDATE -eq 0 ]; then
+    echo "Initiating SLM shutdown...."
+    echo "stop -v car2-shutdown" > /dev/slm
+
+    echo "Calling shutdown..."
+    umount /dos
+    shutdown
+fi
+
+exit 0

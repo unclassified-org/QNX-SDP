@@ -1,0 +1,14 @@
+// Import base theme variables
+
+@import '../base';
+
+$app-dir: $theme-dir + "/Pandora";
+$img-dir: $app-dir + '/images';
+
+// Import images, colors, gradients
+@import './images';
+@import './colors';
+@import './gradients';
+
+// Import application layout
+@import '../../common/Pandora/master';

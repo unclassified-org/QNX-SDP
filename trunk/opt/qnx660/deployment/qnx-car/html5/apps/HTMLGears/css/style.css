@@ -1,0 +1,71 @@
+
+html, body { 
+    width: 800px; 
+    height: 395px; 
+}
+
+body {
+    text-align: center;
+    overflow:none;
+    background-color:black;
+}
+
+.transparent {
+    background-color:transparent;
+}
+
+legend {
+    text-align: left;
+}
+
+h1 {
+    margin-top: 0.5em;
+    font: bold 1.2em sans-serif;
+    color: #fff;
+    text-shadow: 2px 2px 4px #333;
+}
+
+#container {
+    width: 800px;
+    height: 395px;
+}
+
+#message {
+    width: 450px;
+    padding:1em;
+    margin:auto;
+    border: 1px dotted #000;
+    border-radius: 10px;
+}
+
+.fieldset {
+    background-color: rgba(238,238,238,0.5);
+    width:450px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px dotted #000;
+    padding: 1em;
+    margin-bottom: 0.8em;
+}
+
+.fieldset label {
+    text-align:right;
+    display:inline-block;
+    width:100px;
+    padding-right:10px;
+}
+
+.fieldset legend {
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 2px 2px #333;
+}
+
+.fieldset input {
+    width:250px;
+}
+
+.fieldset input[type=button] {
+    width: 100px;
+    height: 40px;
+}

@@ -1,0 +1,38 @@
+// Import base theme variables
+
+@import '../base';
+
+$app-dir: $theme-dir + "/Settings";
+
+// Variable definitions for current application
+$border-color:							#FFFFFF;
+$msgbox-text-color:						#3D97B1;
+$layout-card-item-background-color:		#31515b;
+
+@media (max-device-height: 719px) 
+{
+	@import './800x480/style';
+	@import './images';
+
+	// Import application layout
+	@import '../../common/Settings/master';
+
+	// Load common components
+	$common-img-dir: $theme-dir + "/common/800x480/img";
+	@import '../common/loading-animation';
+	/*@import '../../common/messagebox';*/
+}
+
+@media (min-device-height: 720px) 
+{
+	@import './1280x720/style';
+	@import './images';
+
+	// Import application layout
+	@import '../../common/Settings/master';
+
+	// Load common components
+	$common-img-dir: $theme-dir + "/common/1280x720/img";
+	@import '../common/loading-animation';
+	/*@import '../../common/messagebox';*/
+}

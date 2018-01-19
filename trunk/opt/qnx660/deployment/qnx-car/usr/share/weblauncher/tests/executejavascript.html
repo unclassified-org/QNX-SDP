@@ -1,0 +1,21 @@
+<script>qnx.callExtensionMethod('webview.setEnabledOutOfProcessWebInspector', 1, true);</script>
+<script src="weblauncher.js"></script>
+<script>
+// This should output the same values
+
+var root = Object.create(qnx.weblauncher.webview);
+root.id = 1;
+
+var outwebview = Object.create(qnx.weblauncher.webview);
+outwebview.id = root.create(root.applicationWindowGroup(), "OutProcess");
+outwebview.onEvent('Created', function (webview, value, eventId) {
+    console.error(webview.executeJavaScript("2+2"));
+});
+
+var inwebview = Object.create(qnx.weblauncher.webview);
+inwebview.id = root.create(root.applicationWindowGroup(), "InProcess");
+inwebview.onEvent('Created', function (webview, value, eventId) {
+    console.error(webview.executeJavaScript("2+2"));
+});
+
+</script>

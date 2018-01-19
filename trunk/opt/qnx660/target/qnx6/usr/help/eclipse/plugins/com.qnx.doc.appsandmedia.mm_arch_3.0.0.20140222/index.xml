@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<index>
+<entry keyword="device monitoring and information retrieval process">
+<topic href="topic/mm_devices.html#devices_arch" title="Device detection and information retrieval"/>
+</entry>
+<entry keyword="devices">
+<entry keyword="monitoring">
+<topic href="topic/mm_devices.html#devices_arch" title="Device detection and information retrieval"/>
+</entry>
+<entry keyword="retrieving information on">
+<topic href="topic/mm_devices.html#devices_arch" title="Device detection and information retrieval"/>
+</entry>
+</entry>
+<entry keyword="media">
+<entry keyword="playing">
+<topic href="topic/mm_playback.html#playback_arch" title="Media playback"/>
+</entry>
+</entry>
+<entry keyword="media playback process">
+<topic href="topic/mm_playback.html#playback_arch" title="Media playback"/>
+</entry>
+<entry keyword="metadata">
+<entry keyword="retrieving">
+<topic href="topic/mm_synch.html#synch_arch" title="Metadata synchronization and retrieval"/>
+</entry>
+<entry keyword="synchronizing">
+<topic href="topic/mm_synch.html#synch_arch" title="Metadata synchronization and retrieval"/>
+</entry>
+</entry>
+<entry keyword="metadata synchronization and retrieval process">
+<topic href="topic/mm_synch.html#synch_arch" title="Metadata synchronization and retrieval"/>
+</entry>
+<entry keyword="multimedia">
+<entry keyword="application requirements">
+<topic href="topic/mm_arch.html#intro" title="Multimedia Architecture"/>
+</entry>
+<entry keyword="architecture">
+<topic href="topic/mm_arch.html#intro" title="Multimedia Architecture"/>
+</entry>
+<entry keyword="communication between components">
+<topic href="topic/mm_arch.html#intro" title="Multimedia Architecture"/>
+</entry>
+<entry keyword="components">
+<topic href="topic/mm_arch.html#intro" title="Multimedia Architecture"/>
+</entry>
+<entry keyword="OS services for detecting media devices">
+<topic href="topic/mm_arch.html#intro" title="Multimedia Architecture"/>
+</entry>
+<entry keyword="sample utilities">
+<topic href="topic/mm_arch.html#intro" title="Multimedia Architecture"/>
+</entry>
+</entry>
+<entry keyword="USB">
+<entry keyword="default mountpoint">
+<topic href="topic/mm_devices.html#devices_arch" title="Device detection and information retrieval"/>
+</entry>
+</entry>
+</index>

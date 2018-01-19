@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fileset name="basefs.html5.common.torch.webkit">
+  <!-- Torch Libraries -->
+  <directory name="usr/lib/" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libgoogleurl.so" target="libgoogleurl.so.0" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libgoogleurl.so.0" target="libgoogleurl.so.0.1" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libgoogleurl.so.0.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libgrskia.so" target="libgrskia.so.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libgrskia.so.1" target="libgrskia.so.1.0" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libgrskia.so.1.0" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libharfbuzz.so" target="libharfbuzz.so.0" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libharfbuzz.so.0" target="libharfbuzz.so.0.3" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libharfbuzz.so.0.3" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libskia-qnx.so" target="libskia-qnx.so.0" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libskia-qnx.so.0" target="libskia-qnx.so.0.1" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libskia-qnx.so.0.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libuuid-browser.so" target="libuuid-browser.so.0" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libuuid-browser.so.0" target="libuuid-browser.so.0.1" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libuuid-browser.so.0.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libwebkit.so" target="libwebkit.so.0" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libwebkit.so.0" target="libwebkit.so.0.1" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libwebkit.so.0.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libwebkitplatform.so" target="libwebkitplatform.so.0" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libwebkitplatform.so.0" target="libwebkitplatform.so.0.1" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libwebkitplatform.so.0.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libwebview.so" target="libwebview.so.2" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libwebview.so.2" target="libwebview.so.2.0" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libwebview.so.2.0" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libcontext.so" target="libcontext.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libcontext.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libstrpattern.so" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libstrpattern.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libstrpattern.so.1.0" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libstrpattern.so.1.0.0" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libgssapi.so" target="libgssapi.so.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libgssapi.so" target="libgssapi.so.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libkrb5.so" target="libkrb5.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libkrb5.so.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libheimntlm.so" target="libheimntlm.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libheimntlm.so.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libasn1.so" target="libasn1.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libasn1.so.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libcom_err.so" target="libcom_err.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libcom_err.so.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libhx509.so" target="libhx509.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libhx509.so.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libroken.so" target="libroken.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libroken.so.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libwind.so" target="libwind.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libwind.so.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libheimbase.so" target="libheimbase.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libheimbase.so.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libgssapi.so" target="libgssapi.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libgssapi.so.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libiType.so" target="libiType.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libiType.so.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libcamapi.so" target="libcamapi.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libcamapi.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libcertmgr_client.so.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libcertmgr_client.so" target="libcertmgr_client.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libharfbuzzng.so.0.9.5" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libharfbuzzng.so.0" target="libharfbuzzng.so.0.9.5" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libharfbuzzng.so" target="libharfbuzzng.so.0" uid="root" gid="nto" mode="0755"/>
+  <symlink name="lib/libphone-number.so" target="libphone-number.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/libphone-number.so.1" uid="root" gid="nto" mode="0755"/>
+
+  <!-- test-weblauncher -->
+  <file name="usr/share/weblauncher/tests/weblauncher.js" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/share/weblauncher/tests/apitest.html" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/share/weblauncher/tests/exit2.html" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/share/weblauncher/tests/screen.html" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/share/weblauncher/tests/webview.html" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/share/weblauncher/tests/createderror.html" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/share/weblauncher/tests/alertdialog.html" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/share/weblauncher/tests/CMakeLists.txt" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/share/weblauncher/tests/exit.html" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/share/weblauncher/tests/executejavascript.html" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/share/weblauncher/tests/launcher.html" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/share/weblauncher/tests/test-weblauncher" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/sbin/test-weblauncher" target="../share/weblauncher/tests/test-weblauncher" uid="root" gid="nto" mode="0755"/>
+
+  <!-- WebPlatform JS API -->
+  <file name="usr/share/webplatform/i18n.js" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/share/webplatform/jnext.js" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/share/webplatform/pps.js" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/share/webplatform/screen.js" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/share/webplatform/ui-resources/assets/contextmenu.png" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/share/webplatform/ui-resources/assets/dialogues.png" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/share/webplatform/ui-resources/assets/invocationlist.png" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/share/webplatform/ui-resources/index.js" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/share/webplatform/ui-resources/styles/styles.css" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/share/webplatform/ui-resources/ui.html" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/share/webplatform/webplatform.js" uid="root" gid="nto" mode="0755"/>
+
+</fileset>

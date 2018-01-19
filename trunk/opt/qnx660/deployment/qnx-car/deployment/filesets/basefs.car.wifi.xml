@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fileset name="basefs.car.wifi">
+  <file name="usr/sbin/wpa_pps" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/sbin/hostapd_ti" uid="root" gid="nto" mode="0755"/>
+  <file name="etc/hostapd.conf" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/sbin/tetherman" uid="root" gid="nto" mode="0755"/>
+</fileset>

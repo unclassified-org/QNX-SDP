@@ -1,0 +1,22 @@
+<Client>
+	<DeviceId>
+		<DisplayName>Windows Media Player</DisplayName>
+		<DeviceDescriptionRecognition>
+			<DescriptionText>Windows Media Player</DescriptionText>
+		</DeviceDescriptionRecognition>
+		<HttpRecognition>
+			<HttpText>Windows-Media-Player</HttpText>
+		</HttpRecognition>
+		<MappingUpdatePolicy>FIXPC3</MappingUpdatePolicy>
+	</DeviceId>
+	<Adaptations>
+		<DLNA>
+			<Version>DLNA15</Version>
+			<DescriptionFile>devicedescription-win7.xml</DescriptionFile>
+		</DLNA>
+	</Adaptations>
+	<DeviceQuirks>
+		<Quirk>UNLIMITED</Quirk>
+		<Quirk>FILTER_BAD_CHARS</Quirk>
+	</DeviceQuirks>
+</Client>

@@ -1,0 +1,32 @@
+.menu.settings {
+	background-color: $background-color;
+
+	.x-label {
+		margin: {
+			top: 6px * $y-multiplier;
+			right: 6px * $x-multiplier;
+			bottom: 6px * $y-multiplier;
+			left: 6px * $x-multiplier;
+		}
+		font-size: 112.5%;
+	}
+
+	.x-button.green {
+		width: 175px * $x-multiplier;
+		height: 60px * $y-multiplier;
+		margin-left: 70%;
+	}
+	.x-item-disabled {
+		pointer-events:none;
+		opacity: .5;
+	}
+
+	.x-field-checkbox {
+		margin: {
+			top: 10px * $y-multiplier;
+			right: 0px * $x-multiplier;
+			bottom: 0px * $y-multiplier;
+			left: 1px * $x-multiplier;
+		}
+	}
+}

@@ -1,0 +1,94 @@
+/**
+ * Common CSS for Sencha Touch 2.1 application lists using the
+ * Ext.dataview.List component.
+ * @author lgreenway
+ *
+ * $Id: lists.scss 5717 2013-01-18 16:08:21Z lgreenway@qnx.com $
+ */
+ 
+$menu-list-item-active-bg-color: #51C7E9 !important !default;
+
+.x-list.menu-list {
+	background-color: transparent;
+
+	.x-dock {
+		border: none !important;
+		
+		// HACK: Lists which have plugins have a dock container which has a height of 0
+		&.x-stretched {
+			-webkit-box-flex: 1;
+		}
+	}
+	
+	.x-list-item {
+		height: 59px;
+		font-size: 48px;
+		color: white;
+		padding: 0px 20px;
+		border: none !important;
+		
+		&.menu-selected, &:active {
+			border: none !important;
+			color: black !important;
+			background-color: $menu-list-item-active-bg-color;
+			background-image: none !important;
+			text-shadow: none !important;
+		}
+	}
+	
+	.x-list-item-body {
+		padding: 0px;
+
+		.menu-image-left {
+			background-position: left center;
+			background-repeat: no-repeat;
+			padding-left: 60px;
+		}
+	
+		.menu-image-right {
+			background-position: right center;
+			background-repeat: no-repeat;
+			background-size: 48px 48px;
+			padding-right: 60px;
+		}
+
+		.menu-label {
+			&, * {
+				text-overflow: ellipsis;
+				overflow: hidden;
+				white-space: nowrap;
+			}
+			
+			.menu-line-1 {
+				display: -webkit-box;
+				font-size: 24px;
+				line-height: 24px;
+				font-weight: bold;
+				padding-top: 6px;
+				
+				.left {
+					-webkit-box-flex: 1;
+					padding-right: 0.5em;
+				}
+				
+				.right {
+					font-weight: normal;
+					font-size: 20px;
+				}
+			}
+			
+			.menu-line-2 {
+				font-size: 18px;
+				line-height: 22px;
+				opacity: 0.5;
+				width: 100%;
+			}
+		}
+	}
+	
+	.x-list-emptytext {
+		font-size: 28px;
+		margin: 10px;
+	}
+}
+

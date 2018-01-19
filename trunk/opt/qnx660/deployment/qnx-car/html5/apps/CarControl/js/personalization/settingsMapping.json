@@ -1,0 +1,101 @@
+{
+	"watchHvac": {
+		"extensionName": "car.hvac",
+		"fieldMapping": {
+			"airRecirculation_all": {
+				"dbField": "hvac_air_circulation",
+				"getterMethod": "car.hvac.get",
+				"setterMethod": "car.hvac.set",
+				"getSetWithAttribute": "true",
+				"dataType": "boolean"
+			},
+			"airConditioning_all": {
+				"dbField": "hvac_air_conditioning",
+				"getterMethod": "car.hvac.get",
+				"setterMethod": "car.hvac.set",
+				"getSetWithAttribute": "true",
+				"dataType": "boolean"
+			},
+			"fanDirection_row1left": {
+				"dbField": "hvac_fan_setting_l",
+				"getterMethod": "car.hvac.get",
+				"setterMethod": "car.hvac.set",
+				"getSetWithAttribute": "true"
+			},
+			"fanSpeed_row1left": {
+				"dbField": "hvac_fan_speed_l",
+				"getterMethod": "car.hvac.get",
+				"setterMethod": "car.hvac.set",
+				"getSetWithAttribute": "true",
+				"dataType": "number"
+			},
+			"temperature_row1left": {
+				"dbField": "hvac_fan_temp_l",
+				"getterMethod": "car.hvac.get",
+				"setterMethod": "car.hvac.set",
+				"getSetWithAttribute": "true",
+				"dataType": "number"
+			},
+			"heatedSeat_row1left": {
+				"dbField": "hvac_heated_seat_level_l",
+				"getterMethod": "car.hvac.get",
+				"setterMethod": "car.hvac.set",
+				"getSetWithAttribute": "true",
+				"dataType": "number"
+			},
+			"defrost_all": {
+				"dbField": "hvac_rear_defrost",
+				"getterMethod": "car.hvac.get",
+				"setterMethod": "car.hvac.set",
+				"getSetWithAttribute": "true",
+				"dataType": "boolean"
+			},
+			"zoneLink_all": {
+				"dbField": "hvac_zone_link",
+				"getterMethod": "car.hvac.get",
+				"setterMethod": "car.hvac.set",
+				"getSetWithAttribute": "true",
+				"dataType": "boolean"
+			}
+		}
+	},
+	"watchAudioMixer": {
+		"extensionName": "car.audiomixer",
+		"fieldMapping": {
+			"balance_all": {
+				"dbField": "audio_balance",
+				"getterMethod": "car.audiomixer.get",
+				"setterMethod": "car.audiomixer.set",
+				"getSetWithAttribute": "true",
+				"dataType": "number"
+			},
+			"bass_all": {
+				"dbField": "audio_bass",
+				"getterMethod": "car.audiomixer.get",
+				"setterMethod": "car.audiomixer.set",
+				"getSetWithAttribute": "true",
+				"dataType": "number"
+			},
+			"fade_all": {
+				"dbField": "audio_fade",
+				"getterMethod": "car.audiomixer.get",
+				"setterMethod": "car.audiomixer.set",
+				"getSetWithAttribute": "true",
+				"dataType": "number"
+			},
+			"treble_all": {
+				"dbField": "audio_treble",
+				"getterMethod": "car.audiomixer.get",
+				"setterMethod": "car.audiomixer.set",
+				"getSetWithAttribute": "true",
+				"dataType": "number"
+			},
+            "volume_all": {
+                "dbField": "audio_volume",
+                "getterMethod": "car.audiomixer.get",
+                "setterMethod": "car.audiomixer.set",
+                "dataType": "number"
+            }
+		}
+	}
+}

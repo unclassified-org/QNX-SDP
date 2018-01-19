@@ -1,0 +1,19 @@
+/* $Id$ */
+/*url to the common directory*/
+$commonDir:"platform:///apps/common";
+
+.x-msgbox.x-floating {
+    background-image: url("#{$commonDir}/img/dialog_bkgrd.png");
+}
+
+.x-msgbox.x-floating .x-msgbox-buttons .x-button {
+    background-image: url("#{$commonDir}/img/btn_blue_def.png");
+}
+
+.x-msgbox.x-floating .x-msgbox-buttons .x-button.x-button-pressing {
+    background-image: url("#{$commonDir}/img/btn_grey_def.png");
+}
+.x-clear-icon{
+    background-image: url("#{$commonDir}/img/search_del.png") !important;
+    background-repeat: no-repeat;
+}

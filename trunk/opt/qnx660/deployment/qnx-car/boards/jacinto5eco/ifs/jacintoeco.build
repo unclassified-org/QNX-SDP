@@ -1,0 +1,78 @@
+[+script] .script = {
+	# sync up with RTC
+	#rtc hw
+
+	# Seed resources into the hardware database
+	resource_seed
+	#######################################################################
+	## SERIAL driver
+	#######################################################################
+	display_msg Starting serial driver
+	waitfor /base/sbin/devc-seromap 5
+	[pri=128] devc-seromap -e -F -b115200 -c48000000/16 0x48020000^2,72
+	waitfor /dev/ser1 4
+	reopen /dev/ser1
+	display_msg " "
+
+	#######################################################################
+	## HCI driver
+	#######################################################################
+	#display_msg Starting HCI Shared Transport UART driver...
+	#devc-seromap_hci -E -f -a -n /etc/config/WL1283.bts -c48000000/16 0x481A6000^2,44
+
+	#######################################################################
+	## MMC/SD driver
+	## Note:  
+	##       1. The CAM and FS patches should be install first
+	#######################################################################
+	#display_msg Starting MMC/SD driver...
+	## BLOCK drivers (use -p option to startup in order to enable PATA)
+	# MMC 0
+	#devb-mmcsd-jacinto5 cam quiet blk cache=2m mmcsd verbose=5,dma=24,dma=25
+	# MMC 1 (SD/MMC, slot J15)
+	# works with Santosh board
+	#devb-mmcsd-jacinto5 cam quiet blk cache=32M,ncache=2000,noatime mmcsd noac12,ioport=0x481d8100,irq=28,ioport=0x49000000,dma=2,dma=3 dos exe=all,umask=022
+	#devb-mmcsd-jacinto5 blk cache=2m,automount=@/proc/boot/automount mmcsd ioport=0x481d8100,irq=28,ioport=0x49000000,dma=2,dma=3,bs=nocd dos exe=all disk name=cardisk@0
+	# ATA
+	#devb-eide-dm644x eide noslave,master=udma=4 blk cache=2M
+	
+	## NAND_ETFS driver
+	# Provide proper "-r" value for reserving the bootloader area on your board
+	#     -r kbytes    Set size of raw partition /dev/etfs1. Default: 0.
+	# Only when starting the driver for the first time.
+	# use "-e" option to erase and create the ETFS filesystem
+	#fs-etfs-omap3530_micron -D gpmc=0x50000000 -r2433 -e -m /fs/etfs
+	#fs-etfs-omap3530_micron -D gpmc=0x50000000 -r2433 -m /fs/etfs
+	
+	#######################################################################
+	## USB OTG Host Controller driver
+	## -
+	#######################################################################
+	#display_msg Starting USB OTG Host driver...
+	# For Mistral
+	# io-usb -vvv -d dm816x-mg ioport=0x47401400,irq=18,ioport=0x47401c00,irq=19
+	# For Spectrum Digital B Board
+	#io-usb -vvv -d dm816x-mg ioport=0x47401400,irq=18 &
+
+}
+
+[perms=0644] .splash-screen = {	
+    waitfor /base/usr/share/images/car-startup.png
+    display_image -zorder=-2 -noinit=1 -file=/base/usr/share/images/car-startup.png -pipeline=1 &
+}
+[perms=0644] .video-screen = {
+    waitfor /dev/screen 10	
+    vcapture-test -pipeline=4 -bsize=720x240 -csize=720x240 -zorder=5 -quit-if-no-video &
+}
+### Libraries
+[perms=0755]
+
+#for input 
+#devu-dm816x-mg.so
+
+# Executables
+[data=c perms=0755]
+resource_seed
+# For radio
+mq
+libmq.so.1

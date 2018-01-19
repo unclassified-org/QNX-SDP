@@ -1,0 +1,58 @@
+/**
+ * Styles for the Video view.
+ * @author lgreenway
+ *
+ * $Id$
+ */
+.video-hbox {
+	margin-top: 16px * $y-multiplier;
+}
+
+.video-vbox-left {
+	width: 300px * $x-multiplier;
+	margin-left: 20px * $x-multiplier;
+}
+
+.video-title {
+	background-image: $img-video-background;
+	background-repeat: no-repeat;
+	background-position: 0px (6px * $x-multiplier);
+	font-size: 125%;
+	font-weight: bold;
+	padding-left: 40px * $x-multiplier;
+	height: 65px * $y-multiplier;
+	width: 280px * $x-multiplier;
+}
+
+.video-title .x-innerhtml {
+	width: 250px * $x-multiplier;
+	height: 35px * $y-multiplier;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.video-fullscreen {
+	margin-left: 70px * $x-multiplier;
+	margin-top: 20px * $y-multiplier;
+}
+
+.video-placeholder {
+	height: 259px * $y-multiplier;
+	width: 460px * $x-multiplier;
+	background-color: #000;
+}
+
+.video-progressbar {
+	width: 460px * $x-multiplier;
+}
+
+.video-progresstime {
+	font-size: 75%;
+	font-weight: bold;
+}
+
+video.x-media {
+	height: 259px * $y-multiplier;
+	width: 460px * $x-multiplier;
+}

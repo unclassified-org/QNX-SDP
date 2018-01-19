@@ -1,0 +1,519 @@
+###########################################################################
+##
+## INTERRUPT MAP
+##
+###########################################################################
+##
+## vector:   0
+## trigger:  level
+## device:   EMUINT (MPU emulation)
+##
+## vector:   1
+## trigger:  level
+## device:   COMMTX (MPU emulation)
+##
+## vector:   2
+## trigger:  level
+## device:   COMMRX (MPU emulation)
+##
+## vector:   3
+## trigger:  level
+## device:   BENCH (MPU emulation)
+##
+## vector:   4
+## trigger:  N/A
+## device:   Reserved
+##
+## vector:   5
+## trigger:  level
+## device:   SSM_WFI_IRQ
+##
+## vector:   6
+## trigger:  level
+## device:   SSM_IRQ
+##
+## vector:   7
+## trigger:  level
+## device:   NMI
+##
+## vector:   8
+## trigger:  level
+## device:   SEC_EVNT
+##
+## vector:   9
+## trigger:  level
+## device:   L3DEBUG
+##
+## vector:   10
+## trigger:  level
+## device:   L3APPINT
+##
+## vector:   11
+## trigger:  level
+## device:   PRCMINT
+##
+## vector:   12
+## trigger:  level
+## device:   EDMACOMPINT
+##
+## vector:   13
+## trigger:  level
+## device:   EDMAMPERR
+##
+## vector:   14
+## trigger:  level
+## device:   EDMAERRINT
+##
+## vector:   15
+## trigger:  level
+## device:   PBISTINT
+##
+## vector:   16
+## trigger:  N/A
+## device:   Reserved
+##
+## vector:   17
+## trigger:  N/A
+## device:   Reserved
+##
+## vector:   18
+## trigger:  N/A
+## device:   Reserved
+##
+## vector:   19
+## trigger:  N/A
+## device:   Reserved
+##
+## vector:   20
+## trigger:  level
+## device:   TPPSSERR
+##
+## vector:   21
+## trigger:  level
+## device:   TPPMBOXINT
+##
+## vector:   22
+## trigger:  level
+## device:   TPPSTCINT0
+##
+## vector:   23
+## trigger:  level
+## device:   TPPSTCINT0
+##
+## vector:   24
+## trigger:  level
+## device:   MCARDTXINT
+##
+## vector:   25
+## trigger:  level
+## device:   MCARDRXINT
+##
+## vector:   26
+## trigger:  level
+## device:   TPPDMAPKT
+##
+## vector:   27
+## trigger:  level
+## device:   TPPDMABS
+##
+## vector:   28
+## trigger:  level
+## device:   TPPERRINT0
+##
+## vector:   29
+## trigger:  level
+## device:   TPPERRINT1
+##
+## vector:   30
+## trigger:  level
+## device:   TPPERRINT2
+##
+## vector:   31
+## trigger:  level
+## device:   TPPERRINT3
+##
+## vector:   32
+## trigger:  N/A
+## device:   Reserved
+##
+## vector:   33
+## trigger:  N/A
+## device:   Reserved
+##
+## vector:   34
+## trigger:  N/A
+## device:   Reserved
+##
+## vector:   35
+## trigger:  N/A
+## device:   Reserved
+##
+## vector:   36
+## trigger:  level
+## device:   DSSINT
+##
+## vector:   37
+## trigger:  level
+## device:   GFXINT
+##
+## vector:   38
+## trigger:  level
+## device:   HDMIINT
+##
+## vector:   39
+## trigger:  N/A
+## device:   Reserved
+##
+## vector:   40
+## trigger:  level
+## device:   MACRXTHR0
+##
+## vector:   41
+## trigger:  level
+## device:   MACRXINT0
+##
+## vector:   42
+## trigger:  level
+## device:   MACTXINT0
+##
+## vector:   43
+## trigger:  level
+## device:   MACMISC0
+##
+## vector:   44
+## trigger:  level
+## device:   MACRXTHR1
+##
+## vector:   45
+## trigger:  level
+## device:   MACRXINT1
+##
+## vector:   46
+## trigger:  level
+## device:   MACTXINT1
+##
+## vector:   47
+## trigger:  level
+## device:   MACMISC1
+##
+## vector:   48
+## trigger:  level
+## device:   SATAINT
+##
+## vector:   49
+## trigger:  level
+## device:   USBSSINT
+##
+## vector:   50
+## trigger:  N/A
+## device:   USBINT0
+##
+## vector:   51
+## trigger:  level
+## device:   USBINT1
+##
+## vector:   52
+## trigger:  level
+## device:   VLYNQINT
+##
+## vector:   53
+## trigger:  level
+## device:   PCIINTA
+##
+## vector:   54
+## trigger:  level
+## device:   PCIINTB
+##
+## vector:   55
+## trigger:  level
+## device:   PCIINTC
+##
+## vector:   56
+## trigger:  level
+## device:   PCIINTD
+##
+## vector:   57
+## trigger:  level
+## device:   PCIRSTREQ
+##
+## vector:   58
+## trigger:  level
+## device:   PCIPHYDN
+##
+## vector:   59
+## trigger:  level
+## device:   PCIBRINT
+##
+## vector:   60
+## trigger:  level
+## device:   PCIPROTERR
+##
+## vector:   61
+## trigger:  level
+## device:   PCIPMINT
+##
+## vector:   62
+## trigger:  N/A
+## device:   Reserved
+##
+## vector:   63
+## trigger:  N/A
+## device:   Reserved
+##
+## vector:   64
+## trigger:  level
+## device:   SDINT
+##
+## vector:   65
+## trigger:  level
+## device:   SPIINT
+##
+## vector:   66
+## trigger:  level
+## device:   TINT0
+##
+## vector:   67
+## trigger:  level
+## device:   TINT1
+##
+## vector:   68
+## trigger:  level
+## device:   TINT2
+##
+## vector:   69
+## trigger:  level
+## device:   TINT3
+##
+## vector:   70
+## trigger:  level
+## device:   I2CINT0
+##
+## vector:   71
+## trigger:  level
+## device:   I2CINT1
+##
+## vector:   72
+## trigger:  level
+## device:   UARTINT0
+##
+## vector:   73
+## trigger:  level
+## device:   UARTINT1
+##
+## vector:   74
+## trigger:  level
+## device:   UARTINT2
+##
+## vector:   75
+## trigger:  level
+## device:   RTCINT
+##
+## vector:   76
+## trigger:  level
+## device:   RTCALARMINT
+##
+## vector:   77
+## trigger:  level
+## device:   MBINT
+##
+## vector:   78
+## trigger:  N/A
+## device:   Reserved
+##
+## vector:   79
+## trigger:  N/A
+## device:   Reserved
+##
+## vector:   80
+## trigger:  level
+## device:   MCATXINT0
+##
+## vector:   81
+## trigger:  level
+## device:   MCARXINT0
+##
+## vector:   82
+## trigger:  level
+## device:   MCATXINT1
+##
+## vector:   83
+## trigger:  level
+## device:   MCARXINT1
+##
+## vector:   84
+## trigger:  level
+## device:   MCATXINT2
+##
+## vector:   85
+## trigger:  level
+## device:   MCARXINT2
+##
+## vector:   86
+## trigger:  level
+## device:   MCBSPINT
+##
+## vector:   87
+## trigger:  level
+## device:   SMCDINT0
+##
+## vector:   88
+## trigger:  level
+## device:   SMCDINT1
+##
+## vector:   89
+## trigger:  N/A
+## device:   Reserved
+##
+## vector:   90
+## trigger:  N/A
+## device:   Reserved
+##
+## vector:   91
+## trigger:  level
+## device:   WDTINT
+##
+## vector:   92
+## trigger:  level
+## device:   TINT4
+##
+## vector:   93
+## trigger:  level
+## device:   TINT5
+##
+## vector:   94
+## trigger:  level
+## device:   TINT6
+##
+## vector:   95
+## trigger:  level
+## device:   TINT7
+##
+## vector:   96
+## trigger:  level
+## device:   GPIOINT0A
+##
+## vector:   97
+## trigger:  level
+## device:   GPIOINT0B
+##
+## vector:   98
+## trigger:  level
+## device:   GPIOINT1A
+##
+## vector:   99
+## trigger:  level
+## device:   GPIOINT1B
+##
+## vector:   100
+## trigger:  level
+## device:   GPMCINT
+##
+## vector:   101
+## trigger:  level
+## device:   DDRERR0
+##
+## vector:   102
+## trigger:  level
+## device:   DDRERR1
+##
+## vector:   103
+## trigger:  level
+## device:   IVA0CONT1SYNC
+##
+## vector:   104
+## trigger:  level
+## device:   IVA0CONT2SYNC
+##
+## vector:   105
+## trigger:  level
+## device:   IVA1CONT1SYNC
+##
+## vector:   106
+## trigger:  level
+## device:   IVA1CONT2SYNC
+##
+## vector:   107
+## trigger:  level
+## device:   IVA0MBOXINT
+##
+## vector:   108
+## trigger:  level
+## device:   IVA1MBOXINT
+##
+## vector:   109
+## trigger:  level
+## device:   IVA2MBOXINT
+##
+## vector:   110
+## trigger:  level
+## device:   IVA2CONT1SYNC
+##
+## vector:   111
+## trigger:  level
+## device:   IVA2CONT2SYNC
+##
+## vector:   112
+## trigger:  level
+## device:   TCERRINT0
+##
+## vector:   113
+## trigger:  level
+## device:   TCERRINT1
+##
+## vector:   114
+## trigger:  level
+## device:   TCERRINT2
+##
+## vector:   115
+## trigger:  level
+## device:   TCERRINT3
+##
+## vector:   116
+## trigger:  level
+## device:   SECPUBINT
+##
+## vector:   117
+## trigger:  level
+## device:   SECSECINT
+##
+## vector:   118
+## trigger:  level
+## device:   SECPUBSWINT
+##
+## vector:   119
+## trigger:  level
+## device:   SECSECSWINT
+##
+## vector:   120
+## trigger:  level
+## device:   SMRFLX
+##
+## vector:   121
+## trigger:  N/A
+## device:   Reserved
+##
+## vector:   122
+## trigger:  N/A
+## device:   Reserved
+##
+## vector:   123
+## trigger:  N/A
+## device:   Reserved
+##
+## vector:   124
+## trigger:  N/A
+## device:   Reserved
+##
+## vector:   125
+## trigger:  level
+## device:   SPI1
+##
+## vector:   126
+## trigger:  level
+## device:   SPI2
+##
+## vector:   127
+## trigger:  level
+## device:   SPI3
+##
+###########################################################################

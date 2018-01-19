@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets"
+        xmlns:rim="http://www.blackberry.com/ns/widgets"
+        version="1.0.0.0"
+        id="QnxAppPortal">
+	<name>QNX App Portal</name>
+	<author>QNX</author>
+	<rim:category name="internet"/>
+	<description>QNX App Portal</description>
+	<feature id="blackberry.event" required="true" version="1.0.0.0"/>
+	<feature id="qnx.application.event" required="true" version="1.0.0.0"/>
+	<feature id="qnx.application" required="true" version="1.0.0.0"/>
+	<feature id="qnx.box" required="true" version="1.0.0.0"/>
+	<access uri="*"/>
+	<access uri="https://api.box.com" subdomains="true"/>
+	<access uri="http://api.box.com" subdomains="true"/>
+	<access uri="https://dl.boxcloud.com" subdomains="true"/>
+	<access uri="https://boxcloud.com" subdomains="true"/>
+	<icon src="icon.png"/>
+	<content src="index.html"/>
+</widget>

@@ -1,0 +1,16 @@
+<Client>
+	<DeviceId>
+		<DisplayName>Marantz NA 7004</DisplayName>
+		<DeviceDescriptionRecognition>
+			<DescriptionText>MARANTZ NETWORK AUDIO PLAYER</DescriptionText>
+			<DescriptionText>NA7004</DescriptionText>
+		</DeviceDescriptionRecognition>		
+		<MappingUpdatePolicy>FIX</MappingUpdatePolicy>
+	</DeviceId>
+	<Adaptations>	
+		<MimeTypeMapping>
+			<In>audio/x-wav</In>
+			<Out>audio/wav</Out>
+		</MimeTypeMapping>
+	</Adaptations>
+</Client>

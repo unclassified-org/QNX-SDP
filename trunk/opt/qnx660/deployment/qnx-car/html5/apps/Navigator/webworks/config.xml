@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets"
+        xmlns:rim="http://www.blackberry.com/ns/widgets"
+        version="1.0.0.0"
+        id="Navigator">  
+    <name>Navigator</name>
+    <author>QNX</author>
+    <description>QnxCar2 Navigator</description>
+	<rim:category name="system"/>
+    <rim:permissions>
+        <rim:permit>access_shared</rim:permit>
+        <rim:permit>access_internet</rim:permit>
+        <rim:permit>read_geolocation</rim:permit>
+        <rim:permit>access_location_services</rim:permit>
+   </rim:permissions>
+	<access uri="http://localhost" />
+	<access uri="file:///" />
+    <access uri="*"/>
+    
+    <!-- Weather Network -->
+	<access uri="https://virtualearth.net" subdomains="true" />
+	<access uri="http://pelmorex.com" subdomains="true" />
+	
+	<!-- Media Player integrated Pandora -->
+	<access uri="http://savagebeast.com" subdomains="true" />
+	<access uri="https://savagebeast.com" subdomains="true" />
+	<access uri="http://pandora.com" subdomains="true" />
+
+    <feature id="blackberry.event" required="true" version="1.0.0.0"/>
+    <feature id="qnx.navigator" required="true" version="1.0.0.0"/>
+    <feature id="qnx.navigator.overlay" required="true" version="1.0.0.0"/>
+    <feature id="qnx.keyboard.overlay" required="true" version="1.0.0.0"/>
+    <feature id="qnx.application" required="true" version="1.0.0.0"/>
+    <feature id="qnx.application.event" required="true" version="1.0.0.0"/>
+    <feature id="qnx.voice" required="true" version="1.0.0.0"/>
+    <feature id="car.theme" required="true" version="1.0.0.0"/>
+    <feature id="car.sensors" required="true" version="1.0.0.0"/>
+    <icon src="icon.png"/>
+    <content src="index.html"/>  
+</widget>

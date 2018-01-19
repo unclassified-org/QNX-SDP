@@ -1,0 +1,17 @@
+## This includes non-platform-specific items that are specific to the main system
+## IFS and start last. The startup.sh script is run from here.
+
+
+[perms=0444] automount = {
+    cardisk0t12:/dos:dos
+    cardisk0t178:/:qnx6
+    cardisk0t179:/base:qnx6:ro
+}
+
+[+script] script-startup = {    
+	# Set environment and start the main shell
+        display_msg Build_9
+	[+session] ksh /proc/boot/.console.sh &
+}
+
+[type=link] /etc=/base/etc

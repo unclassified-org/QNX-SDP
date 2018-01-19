@@ -1,0 +1,37 @@
+<Client>
+	<DeviceId>
+		<DisplayName>Philips Streamium AV</DisplayName>
+		<HttpRecognition>
+			<HttpText>Philips-Software-WebClient</HttpText>
+		</HttpRecognition>
+		<MappingUpdatePolicy>FIX</MappingUpdatePolicy>
+	</DeviceId>
+	<Capabilities>
+		<Scaling>
+			<Target>JPEG138x103</Target>
+			<Target>JPEG1920x1080</Target>
+		</Scaling>
+		<SupportedMediaProfiles>
+			<Profile>MP3</Profile>
+			<Profile>WAV</Profile>
+			<Profile>WMV</Profile>
+		</SupportedMediaProfiles>
+	</Capabilities>
+	<Adaptations>
+		<DLNA>
+			<Version>DLNANO</Version>
+		</DLNA>
+		<HTTP>
+			<HttpSetting>LIVEWITHLENGTH</HttpSetting>
+		</HTTP>
+		<MimeTranslations>
+			<MimeTypeMapping>
+				<In>video/x-msvideo</In>
+				<Out>video/x-ms-avi</Out>
+			</MimeTypeMapping>
+		</MimeTranslations>
+	</Adaptations>
+	<DeviceQuirks>
+		<Quirk>PHILIPSSRT</Quirk>
+	</DeviceQuirks>
+</Client>

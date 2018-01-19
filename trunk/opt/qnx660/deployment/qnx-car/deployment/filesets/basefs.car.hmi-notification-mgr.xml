@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fileset name="basefs.car.hmi-notification-mgr">
+  <directory name="lib/dll/hmi-notification" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/hmi-notification/event-source-generic.so" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/hmi-notification/event-source-handsfree.so" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/hmi-notification/event-source-vm.so" uid="root" gid="nto" mode="0755"/>
+  <file name="etc/system/hmi-notification/policy.cfg" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libhmi-notification-core.so" target="libhmi-notification-core.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libhmi-notification-core.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/sbin/hmi-notification-mgr" uid="root" gid="nto" mode="0755"/>
+</fileset>

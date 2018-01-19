@@ -1,0 +1,40 @@
+<Client>
+	<DeviceId>
+		<DisplayName>Philips SL300i</DisplayName>
+		<DeviceDescriptionRecognition>
+			<DescriptionText>SL300i</DescriptionText>
+		</DeviceDescriptionRecognition>
+		<HttpRecognition>
+			<HttpText>Allegro-Software-WebClient/4.30</HttpText>
+		</HttpRecognition>
+		<MappingUpdatePolicy>FIX</MappingUpdatePolicy>
+	</DeviceId>
+	<Capabilities>
+		<Scaling>
+			<Target>JPEG138x103</Target>
+			<Target>JPEG720x576</Target>
+		</Scaling>
+		<SupportedMediaProfiles>
+			<Profile>MP3</Profile>
+			<Profile>WAV</Profile>
+			<Profile>WMV</Profile>
+		</SupportedMediaProfiles>
+	</Capabilities>
+	<Adaptations>
+		<DLNA>
+			<Version>DLNANO</Version>
+		</DLNA>
+		<HTTP>
+			<HttpSetting>LIVEWITHLENGTH</HttpSetting>
+		</HTTP>
+		<MimeTranslations>
+			<MimeTypeMapping>
+				<In>video/x-msvideo</In>
+				<Out>video/x-ms-avi</Out>
+			</MimeTypeMapping>
+		</MimeTranslations>
+	</Adaptations>
+	<DeviceQuirks>
+		<Quirk>PHILIPSSRT</Quirk>
+	</DeviceQuirks>
+</Client>

@@ -1,0 +1,25 @@
+
+/**
+ *  File:style.scss
+ **/
+@import "style";
+
+/**
+ *  File:../../../../../../common/scss/font.scss
+ **/
+@import '../../../../../../common/scss/font';
+
+@media (min-height: 180px) and (max-height: 269px) {
+
+	/**
+ 	**/
+	@import "StandardDef/style";
+}
+
+@media (min-height: 270px) and (max-height: 404px) { 
+
+	/**
+	 *  File:720p/style.scss
+ 	**/
+	@import "720p/style";
+}

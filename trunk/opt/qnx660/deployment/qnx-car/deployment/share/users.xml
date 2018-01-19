@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<users>
+	<user name="root" uid="0" gid="0" home="/root" shell="/bin/sh" fullname="Superuser"/>
+	<user name="bin" uid="1" gid="1" home="/bin" fullname="Binaries Commands and Source"/>
+	<user name="sshd" uid="15" gid="6" home="/var/chroot/sshd" shell="/bin/false" fullname="sshd"/>
+	<user name="samba" uid="22" gid="22" home="/accounts/1000/sys/samba" fullname="Samba Filesharing Service"/>
+	<user name="logger" uid="25" gid="25" home="/var/log" fullname="Logging"/>
+	<user name="slogger2" uid="26" gid="25" home="/var/log" fullname="Alternative logging"/>
+	<user name="dumper" uid="27" gid="412" home="/var/log" fullname="Dumper logging"/>
+	<user name="nvresmgr" uid="28" gid="0" home="/" fullname="NVRAM resource manager"/>
+	<user name="quip" uid="29" gid="25" home="/" shell="/bin/false" fullname="QUIP"/>
+	<user name="coreServices" uid="30" gid="0" home="/" shell="/bin/false" fullname="Core Services"/>
+	<user name="coreServicesSpawner" uid="31" gid="32" home="/" shell="/bin/false" fullname="Core Services Spawner"/>
+	<user name="coreServicesProcMon" uid="32" gid="32" home="/" shell="/bin/false" fullname="Core Services ProcMon"/>
+	<user name="mq" uid="32" gid="415" home="/" fullname="message queue"/>
+	<user name="keypad" uid="33" gid="418" home="/" fullname="keypad_pm892x"/>
+	<user name="preservedmem" uid="34" gid="34" home="/" shell="/bin/true" fullname="Preserved memory service"/>
+	<user name="lpddrTempMon" uid="35" gid="35" home="/" shell="/bin/false" fullname="LPDDR Temperature Monitor"/>
+	<user name="pipeservice" uid="36" gid="36" home="/" shell="/bin/true" fullname="Pipe Service"/>
+	<user name="net" uid="42" gid="42" home="/" fullname="Networking"/>
+	<user name="wpa" uid="43" gid="43" home="/" fullname="WPA"/>
+	<user name="pnsagent" uid="44" gid="44" home="/" fullname="Push Notification Service"/>
+	<user name="bslauncher" uid="45" gid="45" home="/" fullname="Background Service Launcher"/>
+	<user name="time" uid="46" gid="46" home="/" fullname="Time Sync Manager"/>
+	<user name="imservice" uid="47" gid="47" home="/" fullname="Instant Messaging Service"/>
+	<user name="proxyinfo" uid="48" gid="48" home="/" fullname="Proxy Information Daemon"/>
+	<user name="vpn" uid="49" gid="49" home="/" fullname="VPN Service"/>
+	<user name="buttons" uid="51" gid="51" home="/" fullname="Buttons Service"/>
+	<user name="ifwatchd" uid="60" gid="60" home="/" fullname="ifwatchd process"/>
+	<user name="ifwatchd-samba" uid="61" gid="60" home="/" fullname="ifwatchd process on samba shares"/>
+	<user name="rim_diag_mux" uid="62" gid="62" home="/" fullname="rim_diag_mux process"/>
+	<user name="media" uid="80" gid="80" home="/" fullname="Media Services"/>
+	<user name="dlna" uid="81" gid="81" home="/" shell="/bin/false" fullname="Dlna Services"/>
+	<user name="upd" uid="88" gid="88" home="/" fullname="Software Update Service"/>
+	<user name="apps" uid="89" gid="89" home="/apps" fullname="Application"/>
+	<user name="guest" uid="90" gid="90" home="/" fullname="Guest"/>
+	<user name="nobody" uid="99" gid="99" home="/" fullname="Nobody"/>
+	<user name="devuser" uid="100" gid="100" home="/accounts/devuser" shell="/bin/sh" fullname="Development User"/>
+	<user name="dtm" uid="101" gid="101" home="/" fullname="Desktop Manager"/>
+	<user name="carrier_mgr" uid="105" gid="105" home="/" fullname="Carrier Manager"/>
+	<user name="cm_dll_loader" uid="106" gid="105" home="/" fullname="Carrier Manager DLL Loader"/>
+	<user name="random" uid="107" gid="107" home="/" fullname="Service Random process"/>
+	<user name="crypto" uid="108" gid="108" home="/" fullname="Crypto Service process"/>
+	<user name="asr" uid="109" gid="109" home="/var/asr" fullname="Voice Service process"/>
+	<user name="certmgr" uid="110" gid="110" home="/var/certdb" fullname="Certificate Manager Server"/>
+	<user name="pim" uid="202" gid="200" home="/" fullname="Personal Information Manager"/>
+	<user name="ema" uid="203" gid="203" home="/" fullname="Enterprise Management Agent"/>
+	<user name="rim_diag_rm" uid="206" gid="206" home="/" fullname="QC8960 Diagnostics Res Mgr"/>
+	<user name="perimeter_mgr" uid="211" gid="211" home="/" fullname="Perimeter Manager"/>
+	<user name="inetd" uid="212" gid="212" home="/" fullname="Internet Service Daemon"/>
+	<user name="webkit" uid="214" gid="214" home="/" fullname="Webkit"/>
+	<user name="input_service" uid="215" gid="215" home="/" fullname="Input Service"/>
+	<user name="led_control" uid="30" gid="414" home="/" shell="/bin/true" fullname="led_control process"/>
+	<user name="io-acoustic" uid="419" gid="419" home="/" shell="/bin/true" fullname="io-acoustic processing service"/>
+	<user name="menu_service" uid="417" gid="417" home="/" shell="/bin/true" fullname="Menu service process"/>
+	<user name="shm_lock_init" uid="113" gid="113" home="/" shell="/bin/true" fullname="Shared Memory Lock Initializer"/>
+	<user name="devicepublisher" uid="114" gid="114" home="/" shell="/bin/true" fullname="Device Publisher"/>
+	<user name="imfwk" uid="115" gid="115" home="/" shell="/bin/true" fullname="Input System"/>
+	<user name="trustzone" uid="116" gid="116" home="/" shell="/bin/true" fullname="trustzone process"/>
+	<user name="fsmon" uid="117" gid="117" home="/" shell="/bin/true" fullname="Filesystem Monitor and Publisher"/>
+	<user name="powerman" uid="118" gid="118" home="/" shell="/bin/true" fullname="powerman service"/>
+	<user name="battery" uid="119" gid="119" home="/" shell="/bin/true" fullname="battery service"/>
+	<user name="standbymon" uid="131" gid="131" home="/" shell="/bin/true" fullname="standby monitor"/>
+	<user name="devb" uid="132" gid="132" home="/" shell="/bin/true" fullname="Disk Driver"/>
+	<user name="io-hid" uid="134" gid="134" home="/" shell="/bin/true" fullname="Human Interface Device driver"/>
+	<user name="cfs" uid="135" gid="135" home="/" fullname="Cloud File Services"/>
+	<user name="muxclient" uid="136" gid="136" home="/" shell="/bin/true" fullname="Mux clients"/>
+	<user name="fsecd" uid="137" gid="137" home="/" shell="/bin/true" fullname="Encryption domain key management service"/>
+	<user name="phone-service" uid="422" gid="422" home="/" shell="/bin/true" fullname="phone service"/>
+	<user name="cellular-voice-service" uid="423" gid="423" home="/" shell="/bin/true" fullname="cellular voice service"/>
+	<user name="vibctl" uid="201" gid="201" home="/" shell="/bin/true" fullname="Vibrator Controller"/>
+	<user name="ldo-msm" uid="204" gid="204" home="/" shell="/bin/true" fullname="Qualcomm LDO process"/>
+	<user name="bozohttp" uid="205" gid="205" home="/" shell="/bin/true" fullname="bozohttpd service"/>
+	<user name="powerauth" uid="207" gid="207" home="/" shell="/bin/true" fullname="powerauth service"/>
+	<user name="smux" uid="208" gid="208" home="/" shell="/bin/true" fullname="log collection over USB MUX"/>
+	<user name="shmux" uid="209" gid="209" home="/" shell="/bin/true" fullname="shell over USB MUX"/>
+	<user name="rpmb" uid="210" gid="210" home="/" shell="/bin/true" fullname="RPMB resource manager"/>
+	<user name="bbregistry" uid="220" gid="220" home="/" shell="/bin/true" fullname="BB accessibility registry service"/>
+	<user name="miracast" uid="221" gid="221" home="/" shell="/bin/true" fullname="miracast service"/>
+	<!-- usb related uids 120-130, 150-160 -->
+	<user name="usbmgr" uid="120" gid="120" home="/" shell="/bin/true" fullname="USB manager service"/>
+	<user name="io-usb" uid="121" gid="120" home="/" shell="/bin/true" fullname="Host USB stack"/>
+	<user name="io-usb-dcd" uid="122" gid="120" home="/" shell="/bin/true" fullname="Device USB stack"/>
+	<user name="rimusb" uid="123" gid="120" home="/" shell="/bin/true" fullname="RIM Mux and VSP service"/>
+	<user name="devc-serusb" uid="124" gid="120" home="/" shell="/bin/true" fullname="USB Character device support"/>
+	<user name="ulink_ctrl" uid="125" gid="120" home="/" shell="/bin/true" fullname="USB Link control"/>
+	<user name="usbid-ctl" uid="126" gid="120" home="/" shell="/bin/true" fullname="USB ID control"/>
+	<user name="phy_ctrl" uid="127" gid="120" home="/" shell="/bin/true" fullname="USB phy control"/>
+	<user name="enum-devices" uid="129" gid="120" home="/" shell="/bin/true" fullname="Device enumerator"/>
+	<user name="devu-umass_client-rblock" uid="130" gid="120" home="/" shell="/bin/true" fullname="USB block device driver"/>
+	<user name="devb-umass" uid="150" gid="120" home="/" shell="/bin/true" fullname="Mass Storage Host block device driver"/>
+	<user name="enum-usb" uid="151" gid="120" home="/" shell="/bin/true" fullname="USB Device enumerator"/>
+	<user name="usb-test" uid="160" gid="120" home="/" shell="/bin/true" fullname="Debug and test apps"/>
+	<!-- screen/graphics process uids 310-319 -->
+	<user name="tiler" uid="310" gid="99" home="/" shell="/bin/true" fullname="screen's tiler process"/>
+	<user name="screen" uid="311" gid="99" home="/" shell="/bin/true" fullname="screen process"/>
+	<!-- bbio uids 300-305, 320 -->
+	<user name="bbiocore" uid="320" gid="320" home="/" shell="/bin/true" fullname="bbiocore process"/>
+	<!-- radio process uids -->
+	<user name="omadm" uid="347" gid="0" home="/" shell="/bin/true" fullname="omadm client"/>
+	<user name="datacrl_rrm" uid="351" gid="0" home="/" fullname="Data control rrm process"/>
+	<user name="rrm" uid="352" gid="0" home="/" fullname="Radio resource manager process"/>
+	<user name="rim_dmux_svc" uid="353" gid="0" home="/" fullname="rim_dmux_svc process"/>
+	<user name="rmnet_usb" uid="354" gid="0" home="/" fullname="rmnet_usb process"/>
+	<user name="cellular_services" uid="355" gid="0" home="/" fullname="cellular_services process"/>
+	<user name="radioctrl_data_pps" uid="356" gid="0" home="/" fullname="radioctrl_data_pps process"/>
+	<user name="omadm_pps" uid="357" gid="0" home="/" fullname="omadm_pps process"/>
+	<user name="radio_escreen" uid="358" gid="0" home="/" fullname="radio_escreen process"/>
+	<user name="cellular_control" uid="359" gid="0" home="/" fullname="cellular_control process"/>
+	<user name="simtoolkit" uid="366" gid="0" home="/" fullname="simtoolkit_ui_service process"/>
+	<user name="csi" uid="373" gid="0" home="/" fullname="csi process"/>
+	<user name="rim_qcmdm_mgr" uid="375" gid="0" home="/" shell="/bin/true" fullname="rim_qcmdm_mgr process"/>
+	<user name="pb_dm_hdlr" uid="451" gid="0" home="/" shell="/bin/true" fullname="GPS DM handler process"/>
+	<user name="rim_serport" uid="452" gid="0" home="/" shell="/bin/true" fullname="rim_serport process"/>
+	<user name="ims" uid="453" gid="453" home="/" shell="/bin/true" fullname="ims process"/>
+	<user name="capsensor" uid="454" gid="0" home="/" shell="/bin/true" fullname="capsensor process"/>
+	<user name="radiologd" uid="455" gid="0" home="/" fullname="radiologd process"/>
+	<user name="atparser" uid="456" gid="0" home="/" fullname="atparser process"/>
+	<user name="cmodem_logd" uid="457" gid="0" home="/" fullname="cmodem_logd process"/>
+	<user name="modem" uid="458" gid="0" home="/" fullname="modem-ste-m5730 process"/>
+	<user name="caif" uid="459" gid="0" home="/" fullname="io-caif process"/>
+	<user name="rfm-server" uid="460" gid="0" home="/" fullname="rfm-server process"/>
+	<user name="cellular-restarter" uid="461" gid="0" home="/" fullname="cellular-restarter process"/>
+	<user name="rct-dtmf-receiver" uid="462" gid="462" home="/" fullname="RCT DTMF Receiver Service"/>
+	<user name="pi_service" uid="463" gid="0" home="/" fullname="packet injector service process"/>
+	<!-- geolocation processes uids 321-330 -->
+	<user name="io-locp" uid="321" gid="0" home="/" shell="/bin/true" fullname="io-locp process"/>
+	<user name="ee_provider" uid="322" gid="0" home="/" shell="/bin/true" fullname="ee_provider process"/>
+	<user name="location_manager" uid="325" gid="325" home="/" shell="/bin/true" fullname="location_manager process"/>
+	<user name="location_service" uid="326" gid="326" home="/" shell="/bin/true" fullname="location_service process"/>
+	<user name="rimlocp" uid="327" gid="327" home="/" shell="/bin/true" fullname="RIM Location Provider process"/>
+	<user name="agps-provider" uid="328" gid="0" home="/" shell="/bin/true" fullname="agps-provider process"/>
+	<user name="data_miner" uid="329" gid="329" home="/" shell="/bin/true" fullname="data_miner process"/>
+	<user name="geomonitor_service" uid="330" gid="330" home="/" shell="/bin/true" fullname="geomonitor_service process"/>
+	<user name="appupdatenotifier" uid="331" gid="0" home="/" shell="/bin/true" fullname="appupdatenotifier process"/>
+	<user name="backlight" uid="332" gid="332" home="/" shell="/bin/true" fullname="backlight process"/>
+	<user name="power_brain" uid="333" gid="0" home="/" shell="/bin/true" fullname="power_brain process"/>
+	<user name="keyboard-imf" uid="334" gid="0" home="/" shell="/bin/true" fullname="keyboard-imf process"/>
+	<user name="soundplayerd" uid="335" gid="0" home="/" shell="/bin/true" fullname="soundplayerd process"/>
+	<user name="fsevmgr" uid="336" gid="99" home="/" shell="/bin/true" fullname="fsevmgr process"/>
+	<user name="mes_service" uid="337" gid="337" home="/" shell="/bin/true" fullname="mes_service process"/>
+	<user name="callmone911" uid="338" gid="338" home="/" shell="/bin/true" fullname="Call Monitor E911"/>
+	<user name="pps" uid="339" gid="86" home="/" shell="/bin/true" fullname="pps process"/>
+	<user name="thermal" uid="340" gid="0" home="/" shell="/bin/true" fullname="thermal process"/>
+	<user name="paymentsystem" uid="341" gid="0" home="/" shell="/bin/true" fullname="paymentsystem process"/>
+	<user name="discoveryd" uid="342" gid="0" home="/" shell="/bin/true" fullname="discoveryd process"/>
+	<user name="printd" uid="343" gid="343" home="/" shell="/bin/true" fullname="printd process"/>
+	<user name="sensor-services" uid="345" gid="0" home="/" shell="/bin/true" fullname="sensor-services process"/>
+	<user name="securedatamon" uid="346" gid="0" home="/" shell="/bin/true" fullname="securedatamon process"/>
+	<user name="syslink" uid="348" gid="0" home="/" shell="/bin/true" fullname="syslink process"/>
+	<user name="drmclock" uid="349" gid="0" home="/" shell="/bin/true" fullname="drmclock process"/>
+	<user name="bbmcore" uid="350" gid="350" home="/" shell="/bin/true" fullname="bbmcore process"/>
+	<user name="nfc" uid="360" gid="360" home="/" shell="/bin/true" fullname="nfc process"/>
+	<user name="notifications" uid="361" gid="361" home="/" shell="/bin/true" fullname="Notification Service"/>
+	<user name="scoreloop" uid="362" gid="362" home="/" shell="/bin/true" fullname="Scoreloop Service"/>
+	<user name="bbgroups" uid="363" gid="363" home="/" shell="/bin/true" fullname="bbgroups service"/>
+	<user name="localization" uid="364" gid="364" home="/" shell="/bin/true" fullname="Localization Service"/>
+	<user name="places" uid="367" gid="367" home="/" shell="/bin/true" fullname="place service process"/>
+	<user name="bbjma" uid="368" gid="368" home="/" fullname="BlackBerry Java Migration Agent"/>
+	<user name="context" uid="369" gid="369" home="/" shell="/bin/true" fullname="context service process"/>
+	<user name="georeg" uid="378" gid="378" home="/" shell="/bin/true" fullname="georeg service process"/>
+	<user name="search" uid="381" gid="381" home="/" fullnamene="Search service"/>
+	<user name="progress" uid="382" gid="382" home="/" fullname="Progress service"/>
+	<user name="localsearch" uid="384" gid="384" home="/" shell="/bin/true" fullname="local search service"/>
+	<!-- Bridge Peer-to-Peer Processes -->
+	<user name="trustman" uid="370" gid="365" home="/" shell="/bin/true" fullname="BP2P TrustManager Service"/>
+	<user name="tunnelman" uid="371" gid="365" home="/" shell="/bin/true" fullname="BP2P TunnelManager Service"/>
+	<user name="dnsp2p" uid="372" gid="365" home="/" shell="/bin/true" fullname="BP2P dnsp2p Service"/>
+	<user name="invokeproxy" uid="374" gid="365" home="/" shell="/bin/true" fullname="BP2P Invocation Proxy Service"/>
+	<user name="nginx" uid="517" gid="428" home="/" shell="/bin/true" fullname="BP2P nginx web server"/>
+	<user name="mdnsdp" uid="376" gid="376" home="/" fullname="mdnsd service - personal perimeter"/>
+	<user name="mdnsde" uid="381" gid="381" home="/" fullname="mdnsd service - enterprise perimeter"/>
+	<user name="vvm" uid="377" gid="377" home="/" shell="/bin/true" fullname="vvm_service process"/>
+	<user name="carrier_cfg" uid="379" gid="379" home="/" shell="/bin/true" fullname="Carrier Configuration"/>
+	<!-- Real Time Communication Processes 380-390 -->
+	<user name="videochat" uid="380" gid="380" home="/" shell="/bin/true" fullname="VideoChat Service"/>
+	<user name="ntdiagnostics" uid="383" gid="383" home="/" shell="/bin/true" fullname="ntdiagnostics"/>
+	<user name="qxdmlogger" uid="391" gid="391" home="/" shell="/bin/true" fullname="QXDM Logger"/>
+	<user name="qct_mplogsvc" uid="392" gid="392" home="/" shell="/bin/true" fullname="MP Logger Service"/>
+	<user name="mips_resmgr" uid="394" gid="394" home="/" shell="/bin/true" fullname="MIPS Resource Manager"/>
+	<user name="flight_recorder" uid="395" gid="395" home="/" shell="/bin/true" fullname="Flight Recorder Thermal Logger"/>
+	<user name="sanity-monitor" uid="396" gid="396" home="/" shell="/bin/true" fullname="sanity-monitor process"/>
+	<user name="reset-cause" uid="398" gid="398" home="/" shell="/bin/true" fullname="reset-cause process"/>
+	<user name="racd" uid="399" gid="399" home="/var/remote-admin" fullname="remote admin commands service"/>
+	<!-- Qualcomm processes uids 400-450 -->
+	<user name="qcore" uid="400" gid="400" home="/" shell="/bin/true" fullname="qcore process"/>
+	<user name="qrs_rdv" uid="401" gid="401" home="/" shell="/bin/true" fullname="qrs_rdv process"/>
+	<user name="mis" uid="402" gid="402" home="/" shell="/bin/true" fullname="mis process"/>
+	<user name="i2c_service" uid="403" gid="403" home="/" shell="/bin/true" fullname="i2c service process"/>
+	<user name="smmu_server" uid="404" gid="404" home="/" shell="/bin/true" fullname="ssmu server process"/>
+	<user name="io_service" uid="405" gid="405" home="/" shell="/bin/true" fullname="io service process"/>
+	<user name="videoCore" uid="406" gid="406" home="/" shell="/bin/true" fullname="videoCore process"/>
+	<user name="vpeCore" uid="407" gid="407" home="/" shell="/bin/true" fullname="vpeCore process"/>
+	<user name="pmic_service" uid="408" gid="408" home="/" shell="/bin/true" fullname="pmic service process"/>
+	<user name="ssr_policy_mgr" uid="409" gid="409" home="/" shell="/bin/true" fullname="subsytem restart policy manager process"/>
+	<user name="mode_reset" uid="410" gid="410" home="/" shell="/bin/true" fullname="mode reset process"/>
+	<user name="qcthermal" uid="421" gid="421" home="/" shell="/bin/true" fullname="Qualcomm Thermal process"/>
+	<user name="ves" uid="425" gid="425" home="/" fullname="VES Services"/>
+	<user name="i2c-omap35xx-omap4_service" uid="426" gid="426" home="/" shell="/bin/true" fullname="i2c-omap35xx-omap4 service"/>
+	<user name="bbid" uid="427" gid="427" home="/" shell="/bin/true" fullname="BlackBerry ID service process"/>
+	<user name="tpm" uid="429" gid="429" home="/" shell="/bin/true" fullname="Qualcomm TPM process"/>
+	<user name="qpmic-intsvr" uid="431" gid="431" home="/" shell="/bin/true" fullname="qpmic-intsvr process"/>
+	<user name="qreliability" uid="432" gid="432" home="/" shell="/bin/true" fullname="qreliability process"/>
+	<user name="devc-pty" uid="509" gid="509" home="/" shell="/bin/true" fullname="devc-pty process"/>
+	<user name="devc-seromap-winbt" uid="510" gid="300" home="/" shell="/bin/true" fullname="devc-seromap-winbt process"/>
+	<user name="devc-seriobt" uid="511" gid="300" home="/" shell="/bin/true" fullname="devc-seriobt process"/>
+	<user name="io-bluetooth" uid="512" gid="300" home="/" shell="/bin/true" fullname="io-bluetooth process"/>
+	<user name="pps-bluetooth" uid="513" gid="301" home="/" shell="/bin/true" fullname="pps-bluetooth process"/>
+	<user name="pps-bt-media" uid="514" gid="300" home="/" shell="/bin/true" fullname="pps-bt-media process"/>
+	<user name="devc-seromap_hci-winbt" uid="515" gid="300" home="/" shell="/bin/true" fullname="devc-seromap_hci-winbt process"/>
+	<user name="chat" uid="516" gid="0" home="/" shell="/bin/true" fullname="Chat service process"/>
+	<user name="pimanal" uid="413" gid="413" home="/" shell="/bin/true" fullname="PIM Analytics service process"/>
+	<user name="nowplaying" uid="393" gid="393" home="/" shell="/bin/true" fullname="Now Playing"/>
+	<user name="camera" uid="521" gid="521" home="/" fullname="Camera Service"/>
+	<user name="devc-ser" uid="522" gid="522" home="/" shell="/bin/true" fullname="devc serial cpu driver process"/>
+	<user name="unifiedradiomgr" uid="523" gid="523" home="/" shell="/bin/true" fullname="unified radio manager service"/>
+	<user name="io-mirrorlink" uid="524" gid="302" home="/" shell="/bin/true" fullname="io-mirrorlink process"/>
+	<user name="upnpserver" uid="525" gid="302" home="/" shell="/bin/true" fullname="upnpserver process"/>
+	<!-- Groups 700-724 are reserved for Desktop Manager CGI -->
+	<user name="apkruntime_root" uid="800" gid="800" home="/" fullname="Apkruntime traditional unix root user"/>
+	<user name="apkruntime_system" uid="810" gid="810" home="/" fullname="Apkruntime system server"/>
+	<user name="apkruntime_radio" uid="811" gid="811" home="/" fullname="Apkruntime telephony subsystem, RIL"/>
+	<user name="apkruntime_bluetooth" uid="812" gid="812" home="/" fullname="Apkruntime bluetooth subsystem"/>
+	<user name="apkruntime_graphics" uid="813" gid="813" home="/" fullname="Apkruntime graphics devices"/>
+	<user name="apkruntime_input" uid="814" gid="814" home="/" fullname="Apkruntime input devices"/>
+	<user name="apkruntime_audio" uid="815" gid="815" home="/" fullname="Apkruntime audio devices"/>
+	<user name="apkruntime_camera" uid="816" gid="816" home="/" fullname="Apkruntime camera devices"/>
+	<user name="apkruntime_log" uid="817" gid="817" home="/" fullname="Apkruntime log devices"/>
+	<user name="apkruntime_compass" uid="818" gid="818" home="/" fullname="Apkruntime compass device"/>
+	<user name="apkruntime_mount" uid="819" gid="819" home="/" fullname="Apkruntime mountd socket"/>
+	<user name="apkruntime_wifi" uid="820" gid="820" home="/" fullname="Apkruntime wifi subsystem"/>
+	<user name="apkruntime_adb" uid="821" gid="821" home="/" fullname="Apkruntime debug bridge (adbd)"/>
+	<user name="apkruntime_install" uid="822" gid="822" home="/" fullname="Apkruntime group for installing packages"/>
+	<user name="apkruntime_media" uid="823" gid="823" home="/" fullname="Apkruntime media server process"/>
+	<user name="apkruntime_dhcp" uid="824" gid="824" home="/" fullname="Apkruntime DHCP client"/>
+	<user name="apkruntime_sdcard_rw" uid="825" gid="825" home="/" fullname="Apkruntime external storage write access"/>
+	<user name="apkruntime_vpn" uid="826" gid="826" home="/" fullname="Apkruntime VPN system"/>
+	<user name="apkruntime_keystore" uid="827" gid="827" home="/" fullname="Apkruntime keystore subsystem"/>
+	<user name="apkruntime_usb" uid="828" gid="828" home="/" fullname="Apkruntime USB devices"/>
+	<user name="apkruntime_gps" uid="831" gid="831" home="/" fullname="Apkruntime GPS daemon"/>
+	<user name="apkruntime_nfc" uid="832" gid="832" home="/" fullname="Apkruntime NFC subsystem"/>
+	<user name="apkruntime_rrr" uid="840" gid="840" home="/" fullname="Apkruntime RRR subsystem"/>
+	<user name="apkruntime_shell" uid="850" gid="850" home="/" fullname="Apkruntime adb and debug shell user"/>
+	<user name="apkruntime_cache" uid="851" gid="851" home="/" fullname="Apkruntime cache access"/>
+	<user name="apkruntime_diag" uid="852" gid="852" home="/" fullname="Apkruntime access to diagnostic resources"/>
+	<user name="apkruntime_net_bt_admin" uid="861" gid="861" home="/" fullname="Apkruntime Bluetooth create any socket"/>
+	<user name="apkruntime_net_bt" uid="862" gid="862" home="/" fullname="Apkruntime Bluetooth create soc, rfcom or l2cap sockets"/>
+	<user name="apkruntime_inet" uid="863" gid="863" home="/" fullname="Apkruntime can create AF_INET and AF_INET6 sockets"/>
+	<user name="apkruntime_net_raw" uid="864" gid="864" home="/" fullname="Apkruntime can create raw INET sockets"/>
+	<user name="apkruntime_net_admin" uid="865" gid="865" home="/" fullname="Apkruntime can configure interfaces and routing tables"/>
+	<user name="apkruntime_misc" uid="898" gid="898" home="/" fullname="Apkruntime access to misc storage"/>
+	<user name="apkruntime_nobody" uid="899" gid="899" home="/" fullname="Apkruntime Nobody"/>
+</users>

@@ -1,0 +1,511 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<index>
+<entry keyword=" context handles">
+<entry keyword="closing">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/using_mm-renderer_1clscontexthndls.html#Closingcontexthandles" title="Closing context handles"/>
+</entry>
+</entry>
+<entry keyword=" contexts">
+<entry keyword="closing handles">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/using_mm-renderer_1clscontexthndls.html#Closingcontexthandles" title="Closing context handles"/>
+</entry>
+</entry>
+<entry keyword=" data types">
+<entry keyword="Dictionary object API">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/dict_obj_api/strm_dict_api_datatypes.html#clientAPI" title="Data types in strm.h"/>
+</entry>
+<entry keyword="multimedia renderer Client API">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/mmr_api/mmr_client_api_datatypes.html#clientAPI_datatypes" title="Data types in renderer.h and types.h"/>
+</entry>
+<entry keyword="multimedia renderer Event API">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/mmr_api/mmr_event_api_datatypes.html#eventAPI_datatypes" title="Data types in events.h"/>
+</entry>
+</entry>
+<entry keyword=" functions">
+<entry keyword="Dictionary object API">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/dict_obj_api/strm_dict_api_functions.html#clientAPI" title="Functions in strm.h"/>
+</entry>
+<entry keyword="multimedia renderer Client API">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/mmr_api/mmr_client_api_functions.html#clientAPI_functions" title="Functions in renderer.h"/>
+</entry>
+<entry keyword="multimedia renderer Event API">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/mmr_api/mmr_event_api_functions.html#eventAPI_functions" title="Functions in events.h"/>
+</entry>
+</entry>
+<entry keyword="abstraction layers">
+<entry keyword="mm-renderer">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/arch_1abstractionlayers.html#Abstractionlayers" title="Abstraction layers"/>
+</entry>
+</entry>
+<entry keyword="APIs">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/dict_obj_api/dictionary_object_api.html#DictionaryObjectAPI" title="Dictionary Object API"/>
+</entry>
+<entry keyword="architecture">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/arch.html#mmrendererArchitecture" title="Multimedia Renderer Architecture"/>
+<entry keyword="mm-renderer">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/arch.html#mmrendererArchitecture" title="Multimedia Renderer Architecture"/>
+</entry>
+</entry>
+<entry keyword="command syntax">
+<entry keyword="mm-renderer">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/mm-renderer_config_command.html#mm-renderer_config_command" title="mm-renderer command line"/>
+</entry>
+</entry>
+<entry keyword="configuration ">
+<entry keyword="mm-renderer">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/mm-renderer_config.html#mm-renderer_config" title="Starting the multimedia renderer"/>
+</entry>
+</entry>
+<entry keyword="configuring multimedia renderer">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/mm-renderer_config_command.html#mm-renderer_config_command" title="mm-renderer command line"/>
+</entry>
+<entry keyword="connecting">
+<entry keyword="to mm-renderer">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/using_mm-renderer.html#Usingmmrenderer" title="Using the Multimedia Renderer"/>
+<topic href="com.qnx.doc.mme.mmrenderer/topic/mmr_api/mmr_connection_t.html#mmr_connection_t" title="mmr_connection_t"/>
+</entry>
+</entry>
+<entry keyword="contexts">
+<entry keyword="context handles">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/arch_1contexts.html#Contexts" title="Contexts"/>
+</entry>
+<entry keyword="description">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/arch_1contexts.html#Contexts" title="Contexts"/>
+</entry>
+<entry keyword="input">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/arch_1inputs.html#Inputs" title="Inputs"/>
+</entry>
+<entry keyword="output">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/arch_1outputs.html#Outputs" title="Outputs"/>
+</entry>
+<entry keyword="plugins">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/arch_1plugins.html#Plugins" title="Plugins"/>
+</entry>
+<entry keyword="PPS objects">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/using_mm-renderer_play_state_warnings_errors.html#H2Playstatewarningsanderrors" title="Play state, warnings, and errors"/>
+<topic href="com.qnx.doc.mme.mmrenderer/topic/using_mm-renderer_1ppscontexts.html#Contextstate" title="Context state"/>
+<topic href="com.qnx.doc.mme.mmrenderer/topic/using_mm-renderer_1ppsobjects.html#PPSobjects" title="PPS objects"/>
+</entry>
+<entry keyword="state information">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/using_mm-renderer_play_state_warnings_errors.html#H2Playstatewarningsanderrors" title="Play state, warnings, and errors"/>
+<topic href="com.qnx.doc.mme.mmrenderer/topic/using_mm-renderer_1ppscontexts.html#Contextstate" title="Context state"/>
+</entry>
+<entry keyword="structure">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/mmr_api/mmr_context_t.html#mmr_context_t" title="mmr_context_t"/>
+</entry>
+</entry>
+<entry keyword="data types">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/mmr_api/mm-renderer_event_api.html#mmrenderer_eventAPI" title="Multimedia Renderer Event API"/>
+<topic href="com.qnx.doc.mme.mmrenderer/topic/dict_obj_api/dictionary_object_api.html#DictionaryObjectAPI" title="Dictionary Object API"/>
+<topic href="com.qnx.doc.mme.mmrenderer/topic/mmr_api/mm-renderer_client_api.html#mmrenderer_clientAPI" title="Multimedia Renderer Client API"/>
+</entry>
+<entry keyword="defining parameters">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/using_mm-renderer_1parameters.html#Parameters" title="Defining Parameters"/>
+</entry>
+<entry keyword="description">
+<entry keyword="mm-renderer">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/mm-renderer_config_command.html#mm-renderer_config_command" title="mm-renderer command line"/>
+</entry>
+</entry>
+<entry keyword="dictionaries">
+<entry keyword="cloning">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/dict_obj_api/strm_dict_clone.html#apinamestrm_dict_cloneapiname" title="strm_dict_clone()"/>
+</entry>
+<entry keyword="comparing">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/dict_obj_api/strm_dict_compare.html#apinamestrm_dict_compareapiname" title="strm_dict_compare()"/>
+</entry>
+<entry keyword="creating">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/dict_obj_api/strm_dict_new.html#apinamestrm_dict_newapiname" title="strm_dict_new()"/>
+</entry>
+<entry keyword="deleting entries">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/dict_obj_api/strm_dict_index_delete.html#apinamestrm_dict_index_deleteapiname" title="strm_dict_index_delete()"/>
+<topic href="com.qnx.doc.mme.mmrenderer/topic/dict_obj_api/strm_dict_key_delete.html#apinamestrm_dict_key_deleteapiname" title="strm_dict_key_delete()"/>
+</entry>
+<entry keyword="destroying">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/dict_obj_api/strm_dict_destroy.html#apinamestrm_dict_destroyapiname" title="strm_dict_destroy()"/>
+</entry>
+<entry keyword="determining size of">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/dict_obj_api/strm_dict_size.html#apinamestrm_dict_sizeapiname" title="strm_dict_size()"/>
+</entry>
+<entry keyword="finding entries">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/dict_obj_api/strm_dict_find_index.html#apinamestrm_dict_find_indexapiname" title="strm_dict_find_index()"/>
+</entry>
+<entry keyword="finding keys">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/dict_obj_api/strm_dict_key_get.html#apinamestrm_dict_key_getapiname" title="strm_dict_key_get()"/>
+<topic href="com.qnx.doc.mme.mmrenderer/topic/dict_obj_api/strm_dict_key_rstr.html#apinamestrm_dict_key_rstrapiname" title="strm_dict_key_rstr()"/>
+</entry>
+<entry keyword="finding values">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/dict_obj_api/strm_dict_value_get.html#apinamestrm_dict_value_getapiname" title="strm_dict_value_get()"/>
+<topic href="com.qnx.doc.mme.mmrenderer/topic/dict_obj_api/strm_dict_find_value.html#apinamestrm_dict_find_valueapiname" title="strm_dict_find_value()"/>
+<topic href="com.qnx.doc.mme.mmrenderer/topic/dict_obj_api/strm_dict_find_rstr.html#apinamestrm_dict_find_rstrapiname" title="strm_dict_find_rstr()"/>
+<topic href="com.qnx.doc.mme.mmrenderer/topic/dict_obj_api/strm_dict_value_rstr.html#apinamestrm_dict_value_rstrapiname" title="strm_dict_value_rstr()"/>
+</entry>
+<entry keyword="modifying entries">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/dict_obj_api/strm_dict_set_rstr.html#apinamestrm_dict_set_rstrapiname" title="strm_dict_set_rstr()"/>
+<topic href="com.qnx.doc.mme.mmrenderer/topic/dict_obj_api/strm_dict_set.html#apinamestrm_dict_setapiname" title="strm_dict_set()"/>
+</entry>
+<entry keyword="structure">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/dict_obj_api/strm_dict_t.html#ttstrm_dict_ttt" title="strm_dict_t"/>
+</entry>
+<entry keyword="subtracting">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/dict_obj_api/strm_dict_subtract.html#apinamestrm_dict_subtractapiname" title="strm_dict_subtract()"/>
+</entry>
+</entry>
+<entry keyword="dictionary object">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/using_mm-renderer_1parameters.html#Parameters" title="Defining Parameters"/>
+<topic href="com.qnx.doc.mme.mmrenderer/topic/dict_obj_api/strm_dict_t.html#ttstrm_dict_ttt" title="strm_dict_t"/>
+</entry>
+<entry keyword="Dictionary Object API">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/dict_obj_api/dictionary_object_api.html#DictionaryObjectAPI" title="Dictionary Object API"/>
+</entry>
+<entry keyword="disconnecting">
+<entry keyword="from mm-renderer">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/using_mm-renderer.html#Usingmmrenderer" title="Using the Multimedia Renderer"/>
+</entry>
+</entry>
+<entry keyword="error information">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/mmr_api/mmr_error_info_t.html#mmr_error_info_t" title="mmr_error_info_t"/>
+<topic href="com.qnx.doc.mme.mmrenderer/topic/mmr_api/mm_error_code_t.html#mm_error_code" title="mm_error_code_t"/>
+</entry>
+<entry keyword="functions">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/mmr_api/mm-renderer_event_api.html#mmrenderer_eventAPI" title="Multimedia Renderer Event API"/>
+<topic href="com.qnx.doc.mme.mmrenderer/topic/dict_obj_api/dictionary_object_api.html#DictionaryObjectAPI" title="Dictionary Object API"/>
+<topic href="com.qnx.doc.mme.mmrenderer/topic/mmr_api/mm-renderer_client_api.html#mmrenderer_clientAPI" title="Multimedia Renderer Client API"/>
+</entry>
+<entry keyword="header files">
+<entry keyword="location">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/mmr_api/mm-renderer_event_api.html#mmrenderer_eventAPI" title="Multimedia Renderer Event API"/>
+<topic href="com.qnx.doc.mme.mmrenderer/topic/dict_obj_api/dictionary_object_api.html#DictionaryObjectAPI" title="Dictionary Object API"/>
+<topic href="com.qnx.doc.mme.mmrenderer/topic/mmr_api/mm-renderer_client_api.html#mmrenderer_clientAPI" title="Multimedia Renderer Client API"/>
+</entry>
+</entry>
+<entry keyword="input">
+<entry keyword="description">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/arch_1inputs.html#Inputs" title="Inputs"/>
+</entry>
+</entry>
+<entry keyword="input metadata">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/using_mm-renderer_input_metadata.html#H2Inputmetadata" title="Input metadata"/>
+</entry>
+<entry keyword="libraries">
+<entry keyword="location">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/mmr_api/mm-renderer_event_api.html#mmrenderer_eventAPI" title="Multimedia Renderer Event API"/>
+<topic href="com.qnx.doc.mme.mmrenderer/topic/dict_obj_api/dictionary_object_api.html#DictionaryObjectAPI" title="Dictionary Object API"/>
+<topic href="com.qnx.doc.mme.mmrenderer/topic/mmr_api/mm-renderer_client_api.html#mmrenderer_clientAPI" title="Multimedia Renderer Client API"/>
+</entry>
+</entry>
+<entry keyword="media">
+<entry keyword="supported types">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/arch_1supportedmediacategories.html#Supportedmediacategories" title="Supported media categories"/>
+</entry>
+</entry>
+<entry keyword="mm_error_code_t">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/mmr_api/mm_error_code_t.html#mm_error_code" title="mm_error_code_t"/>
+</entry>
+<entry keyword="mm-renderer">
+<entry keyword="abstraction layers">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/arch_1abstractionlayers.html#Abstractionlayers" title="Abstraction layers"/>
+</entry>
+<entry keyword="architecture">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/arch.html#mmrendererArchitecture" title="Multimedia Renderer Architecture"/>
+</entry>
+<entry keyword="connecting to">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/using_mm-renderer.html#Usingmmrenderer" title="Using the Multimedia Renderer"/>
+</entry>
+<entry keyword="connection data type">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/mmr_api/mmr_connection_t.html#mmr_connection_t" title="mmr_connection_t"/>
+</entry>
+<entry keyword="context states">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/mmr_api/mmr_state_t.html#mmr_state" title="mmr_state_t"/>
+</entry>
+<entry keyword="contexts">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/arch_1contexts.html#Contexts" title="Contexts"/>
+<topic href="com.qnx.doc.mme.mmrenderer/topic/mmr_api/mmr_context_t.html#mmr_context_t" title="mmr_context_t"/>
+</entry>
+<entry keyword="detecting changes in play state">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/using_mm-renderer_play_state_warnings_errors.html#H2Playstatewarningsanderrors" title="Play state, warnings, and errors"/>
+</entry>
+<entry keyword="detecting warnings and errors">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/using_mm-renderer_play_state_warnings_errors.html#H2Playstatewarningsanderrors" title="Play state, warnings, and errors"/>
+</entry>
+<entry keyword="determining play state">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/using_mm-renderer_play_states.html#H2Playstates" title="Play states"/>
+</entry>
+<entry keyword="disconnecting from">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/using_mm-renderer.html#Usingmmrenderer" title="Using the Multimedia Renderer"/>
+</entry>
+<entry keyword="error codes">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/mmr_api/mm_error_code_t.html#mm_error_code" title="mm_error_code_t"/>
+</entry>
+<entry keyword="errors">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/mmr_api/mmr_error_info_t.html#mmr_error_info_t" title="mmr_error_info_t"/>
+</entry>
+<entry keyword="event data">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/mmr_api/mmr_event_data.html#mmr_event_data" title="mmr_event::data"/>
+</entry>
+<entry keyword="event details ">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/mmr_api/mmr_event_details.html#mmr_event_details" title="mmr_event::details"/>
+</entry>
+<entry keyword="event information">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/mmr_api/mmr_event_t.html#mmr_event_t" title="mmr_event_t"/>
+</entry>
+<entry keyword="event types">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/mmr_api/mmr_event_type_t.html#mmr_event_type" title="mmr_event_type_t"/>
+</entry>
+<entry keyword="file and MIME types">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/using_mm-renderer_supported_types.html#supported_types" title="Supported file and MIME types"/>
+</entry>
+<entry keyword="input">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/arch_1inputs.html#Inputs" title="Inputs"/>
+</entry>
+<entry keyword="input metadata">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/using_mm-renderer_input_metadata.html#H2Inputmetadata" title="Input metadata"/>
+</entry>
+<entry keyword="media playback">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/using_mm-renderer_1playback.html#Mediaplayback" title="Playing media"/>
+</entry>
+<entry keyword="output">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/arch_1outputs.html#Outputs" title="Outputs"/>
+</entry>
+<entry keyword="overview">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/arch.html#mmrendererArchitecture" title="Multimedia Renderer Architecture"/>
+</entry>
+<entry keyword="play speed">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/using_mm-renderer_play_speed.html#H2Playspeed" title="Play speed"/>
+</entry>
+<entry keyword="playing media">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/using_mm-renderer_1playback.html#Mediaplayback" title="Playing media"/>
+</entry>
+<entry keyword="playlists and playlist windows">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/using_mm-renderer_playlist_window.html#H2Playlistwindow" title="Playlist window"/>
+</entry>
+<entry keyword="plugins">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/arch_1plugins.html#Plugins" title="Plugins"/>
+</entry>
+<entry keyword="PPS objects">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/using_mm-renderer_1ppsobjects.html#PPSobjects" title="PPS objects"/>
+</entry>
+<entry keyword="seeking to positions">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/using_mm-renderer_seeking_and_positions.html#H2Seekingandpositions" title="Seeking to positions"/>
+</entry>
+<entry keyword="supported media categories">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/arch_1supportedmediacategories.html#Supportedmediacategories" title="Supported media categories"/>
+</entry>
+<entry keyword="using">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/using_mm-renderer.html#Usingmmrenderer" title="Using the Multimedia Renderer"/>
+</entry>
+</entry>
+<entry keyword="mm-renderer configuration">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/mm-renderer_config.html#mm-renderer_config" title="Starting the multimedia renderer"/>
+</entry>
+<entry keyword="mm-renderer configuration file">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/mm-renderer_config_file.html#mm-renderer_config_file" title="mm-renderer configuration file"/>
+</entry>
+<entry keyword="mm-renderer utility">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/mm-renderer_config_command.html#mm-renderer_config_command" title="mm-renderer command line"/>
+</entry>
+<entry keyword="mmr_connection_t">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/mmr_api/mmr_connection_t.html#mmr_connection_t" title="mmr_connection_t"/>
+</entry>
+<entry keyword="mmr_context_t">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/mmr_api/mmr_context_t.html#mmr_context_t" title="mmr_context_t"/>
+</entry>
+<entry keyword="mmr_error_info_t">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/mmr_api/mmr_error_info_t.html#mmr_error_info_t" title="mmr_error_info_t"/>
+</entry>
+<entry keyword="mmr_event mmr_event_data">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/mmr_api/mmr_event_data.html#mmr_event_data" title="mmr_event::data"/>
+</entry>
+<entry keyword="mmr_event mmr_event_details">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/mmr_api/mmr_event_details.html#mmr_event_details" title="mmr_event::details"/>
+</entry>
+<entry keyword="mmr_event_t">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/mmr_api/mmr_event_t.html#mmr_event_t" title="mmr_event_t"/>
+</entry>
+<entry keyword="mmr_event_type_t">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/mmr_api/mmr_event_type_t.html#mmr_event_type" title="mmr_event_type_t"/>
+</entry>
+<entry keyword="mmr_state_t">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/mmr_api/mmr_state_t.html#mmr_state" title="mmr_state_t"/>
+</entry>
+<entry keyword="multimedia renderer">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/arch.html#mmrendererArchitecture" title="Multimedia Renderer Architecture"/>
+<entry keyword="See mm-renderer">
+</entry>
+</entry>
+<entry keyword="multimedia renderer Client API">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/mmr_api/mm-renderer_client_api.html#mmrenderer_clientAPI" title="Multimedia Renderer Client API"/>
+</entry>
+<entry keyword="multimedia renderer Event API">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/mmr_api/mm-renderer_event_api.html#mmrenderer_eventAPI" title="Multimedia Renderer Event API"/>
+</entry>
+<entry keyword="options">
+<entry keyword="mm-renderer">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/mm-renderer_config_command.html#mm-renderer_config_command" title="mm-renderer command line"/>
+</entry>
+</entry>
+<entry keyword="output">
+<entry keyword="description">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/arch_1outputs.html#Outputs" title="Outputs"/>
+</entry>
+</entry>
+<entry keyword="overview">
+<entry keyword="mm-renderer">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/arch.html#mmrendererArchitecture" title="Multimedia Renderer Architecture"/>
+</entry>
+</entry>
+<entry keyword="play state">
+<entry keyword="detecting changes">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/using_mm-renderer_play_state_warnings_errors.html#H2Playstatewarningsanderrors" title="Play state, warnings, and errors"/>
+</entry>
+</entry>
+<entry keyword="playback">
+<entry keyword="how to play media">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/using_mm-renderer_1playback.html#Mediaplayback" title="Playing media"/>
+</entry>
+<entry keyword="play state">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/using_mm-renderer_play_states.html#H2Playstates" title="Play states"/>
+</entry>
+<entry keyword="play state, warnings, and errors">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/using_mm-renderer_play_state_warnings_errors.html#H2Playstatewarningsanderrors" title="Play state, warnings, and errors"/>
+</entry>
+<entry keyword="seeking">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/using_mm-renderer_seeking_and_positions.html#H2Seekingandpositions" title="Seeking to positions"/>
+</entry>
+<entry keyword="setting speed of">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/using_mm-renderer_play_speed.html#H2Playspeed" title="Play speed"/>
+</entry>
+</entry>
+<entry keyword="playlist windows">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/using_mm-renderer_playlist_window.html#H2Playlistwindow" title="Playlist window"/>
+</entry>
+<entry keyword="plugins">
+<entry keyword="description">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/arch_1plugins.html#Plugins" title="Plugins"/>
+</entry>
+</entry>
+<entry keyword="PPS objects">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/using_mm-renderer_1ppsobjects.html#PPSobjects" title="PPS objects"/>
+<entry keyword="and context states">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/using_mm-renderer_1ppscontexts.html#Contextstate" title="Context state"/>
+</entry>
+</entry>
+<entry keyword="shareable string object">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/dict_obj_api/strm_string_t.html#ttstrm_string_ttt" title="strm_string_t"/>
+</entry>
+<entry keyword="shareable strings">
+<entry keyword="allocating">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/dict_obj_api/strm_string_alloc.html#apinamestrm_string_allocapiname" title="strm_string_alloc()"/>
+</entry>
+<entry keyword="cloning">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/dict_obj_api/strm_string_clone.html#apinamestrm_string_cloneapiname" title="strm_string_clone()"/>
+</entry>
+<entry keyword="create from strings">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/dict_obj_api/strm_string_make.html#apinamestrm_string_makeapiname" title="strm_string_make()"/>
+</entry>
+<entry keyword="destroying">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/dict_obj_api/strm_string_destroy.html#apinamestrm_string_destroyapiname" title="strm_string_destroy()"/>
+</entry>
+<entry keyword="getting string pointers">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/dict_obj_api/strm_string_get.html#apinamestrm_string_getapiname" title="strm_string_get()"/>
+</entry>
+<entry keyword="modifying">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/dict_obj_api/strm_string_modify.html#strm_string_modify" title="strm_string_modify()"/>
+</entry>
+</entry>
+<entry keyword="strm_dict_clone()">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/dict_obj_api/strm_dict_clone.html#apinamestrm_dict_cloneapiname" title="strm_dict_clone()"/>
+</entry>
+<entry keyword="strm_dict_compare()">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/dict_obj_api/strm_dict_compare.html#apinamestrm_dict_compareapiname" title="strm_dict_compare()"/>
+</entry>
+<entry keyword="strm_dict_destroy()">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/dict_obj_api/strm_dict_destroy.html#apinamestrm_dict_destroyapiname" title="strm_dict_destroy()"/>
+</entry>
+<entry keyword="strm_dict_find_index()">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/dict_obj_api/strm_dict_find_index.html#apinamestrm_dict_find_indexapiname" title="strm_dict_find_index()"/>
+</entry>
+<entry keyword="strm_dict_find_rstr()">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/dict_obj_api/strm_dict_find_rstr.html#apinamestrm_dict_find_rstrapiname" title="strm_dict_find_rstr()"/>
+</entry>
+<entry keyword="strm_dict_find_value()">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/dict_obj_api/strm_dict_find_value.html#apinamestrm_dict_find_valueapiname" title="strm_dict_find_value()"/>
+</entry>
+<entry keyword="strm_dict_index_delete()">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/dict_obj_api/strm_dict_index_delete.html#apinamestrm_dict_index_deleteapiname" title="strm_dict_index_delete()"/>
+</entry>
+<entry keyword="strm_dict_key_delete()">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/dict_obj_api/strm_dict_key_delete.html#apinamestrm_dict_key_deleteapiname" title="strm_dict_key_delete()"/>
+</entry>
+<entry keyword="strm_dict_key_get()">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/dict_obj_api/strm_dict_key_get.html#apinamestrm_dict_key_getapiname" title="strm_dict_key_get()"/>
+</entry>
+<entry keyword="strm_dict_key_rstr()">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/dict_obj_api/strm_dict_key_rstr.html#apinamestrm_dict_key_rstrapiname" title="strm_dict_key_rstr()"/>
+</entry>
+<entry keyword="strm_dict_new()">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/dict_obj_api/strm_dict_new.html#apinamestrm_dict_newapiname" title="strm_dict_new()"/>
+</entry>
+<entry keyword="strm_dict_set_rstr()">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/dict_obj_api/strm_dict_set_rstr.html#apinamestrm_dict_set_rstrapiname" title="strm_dict_set_rstr()"/>
+</entry>
+<entry keyword="strm_dict_set()">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/dict_obj_api/strm_dict_set.html#apinamestrm_dict_setapiname" title="strm_dict_set()"/>
+</entry>
+<entry keyword="strm_dict_size()">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/dict_obj_api/strm_dict_size.html#apinamestrm_dict_sizeapiname" title="strm_dict_size()"/>
+</entry>
+<entry keyword="strm_dict_subtract()">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/dict_obj_api/strm_dict_subtract.html#apinamestrm_dict_subtractapiname" title="strm_dict_subtract()"/>
+</entry>
+<entry keyword="strm_dict_t">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/dict_obj_api/strm_dict_t.html#ttstrm_dict_ttt" title="strm_dict_t"/>
+</entry>
+<entry keyword="strm_dict_value_get()">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/dict_obj_api/strm_dict_value_get.html#apinamestrm_dict_value_getapiname" title="strm_dict_value_get()"/>
+</entry>
+<entry keyword="strm_dict_value_rstr()">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/dict_obj_api/strm_dict_value_rstr.html#apinamestrm_dict_value_rstrapiname" title="strm_dict_value_rstr()"/>
+</entry>
+<entry keyword="strm_string_alloc()">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/dict_obj_api/strm_string_alloc.html#apinamestrm_string_allocapiname" title="strm_string_alloc()"/>
+</entry>
+<entry keyword="strm_string_clone()">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/dict_obj_api/strm_string_clone.html#apinamestrm_string_cloneapiname" title="strm_string_clone()"/>
+</entry>
+<entry keyword="strm_string_destroy()">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/dict_obj_api/strm_string_destroy.html#apinamestrm_string_destroyapiname" title="strm_string_destroy()"/>
+</entry>
+<entry keyword="strm_string_get()">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/dict_obj_api/strm_string_get.html#apinamestrm_string_getapiname" title="strm_string_get()"/>
+</entry>
+<entry keyword="strm_string_make()">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/dict_obj_api/strm_string_make.html#apinamestrm_string_makeapiname" title="strm_string_make()"/>
+</entry>
+<entry keyword="strm_string_modify()">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/dict_obj_api/strm_string_modify.html#strm_string_modify" title="strm_string_modify()"/>
+</entry>
+<entry keyword="strm_string_t">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/dict_obj_api/strm_string_t.html#ttstrm_string_ttt" title="strm_string_t"/>
+</entry>
+<entry keyword="structures">
+<entry keyword="dictionary">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/dict_obj_api/strm_dict_t.html#ttstrm_dict_ttt" title="strm_dict_t"/>
+</entry>
+<entry keyword="shareable string">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/dict_obj_api/strm_string_t.html#ttstrm_string_ttt" title="strm_string_t"/>
+</entry>
+<entry keyword="strm_dict_t">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/dict_obj_api/strm_dict_t.html#ttstrm_dict_ttt" title="strm_dict_t"/>
+</entry>
+<entry keyword="strm_string_t">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/dict_obj_api/strm_string_t.html#ttstrm_string_ttt" title="strm_string_t"/>
+</entry>
+</entry>
+<entry keyword="supported file and MIME types">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/using_mm-renderer_supported_types.html#supported_types" title="Supported file and MIME types"/>
+</entry>
+<entry keyword="using mm-renderer">
+<topic href="com.qnx.doc.mme.mmrenderer/topic/using_mm-renderer.html#Usingmmrenderer" title="Using the Multimedia Renderer"/>
+</entry>
+</index>

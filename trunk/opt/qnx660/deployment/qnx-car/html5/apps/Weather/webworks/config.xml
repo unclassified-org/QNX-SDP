@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:rim="http://www.blackberry.com/ns/widgets"
+	version="1.0.0.0" id="LocalSearch" xml:lang="en">
+	<author href="http://www.qnx.com/" rim:copyright="Copyright 2012 QNX Software Systems Limited">QNX Software
+		Systems Limited
+	</author>
+	<name>Local Search</name>
+	<rim:category name="internet"/>
+	<rim:permissions>
+		<rim:permit>access_shared</rim:permit>
+        <rim:permit>access_internet</rim:permit>
+        <rim:permit>access_location_services</rim:permit>
+        <rim:permit>read_geolocation</rim:permit>
+	</rim:permissions>
+	<icon src="icon.png" />
+	<access uri="*" />
+	<access uri="http://pelmorex.com" subdomains="true" />
+	<access uri="http://googleapis.com" subdomains="true" />
+	<access uri="http://gstatic.com" subdomains="true" />
+	<content src="index.html" />
+	<feature id="qnx.application" required="true" version="1.0.0.0" />
+	<feature id="qnx.application.event" required="true" version="1.0.0.0" />
+</widget>

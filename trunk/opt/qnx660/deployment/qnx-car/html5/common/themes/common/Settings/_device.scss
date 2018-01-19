@@ -1,0 +1,91 @@
+/* CSS file for Device properties screen */
+.device_sheet {
+  .offset {
+	margin-left: 60px * $x-multiplier;
+  }
+
+  .title {
+	.label-container {
+	  font-size: 150%;
+	  font-weight: bold;
+	  line-height: 32px * $y-multiplier;
+	  margin-top: 29px * $y-multiplier;
+	}
+	.icon {
+	  border: none;
+	  background-size: 64px * $x-multiplier 64px * $y-multiplier;
+	  background-repeat: no-repeat;
+	  width: 64px * $x-multiplier;
+	  height: 64px * $y-multiplier;
+	  margin-top: 30px * $y-multiplier;
+	  background-image: $device-sheet-icon;
+	}
+  }
+
+  .label-container .label .x-innerhtml {
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	max-width: 400px * $x-multiplier;
+  }
+
+  #device-deviceMac {
+	font-weight: normal;
+  }
+
+  .offset.services {
+	padding-top: 5px * $y-multiplier;
+	height: 180px * $y-multiplier !important;
+
+	.x-dataview-item {
+	  height: 30px * $y-multiplier !important;
+	  color: $text-color;
+	  position: relative;
+	}
+  }
+
+  .offset.buttons {
+	padding-top: 20px * $y-multiplier;
+  }
+
+  .service-item-div {
+	padding-left: 20px * $x-multiplier;
+	font-size: 106%;
+  }
+
+  .service-item-div.connected {
+	font-weight: bold;
+	opacity: 1;
+  }
+
+  .service-item-div.disconnected {
+	opacity: 0.4;
+	font-weight: normal;
+  }
+
+  .service-item-div::before {
+	content: "";
+	position: absolute;
+	width: 32px * $x-multiplier;
+	height: 32px * $y-multiplier;
+	top: 5px * $y-multiplier;
+	left: 0px;
+	border: none;
+	background-color: transparent !important;
+	background-clip: border;
+	background-repeat: no-repeat;
+  }
+
+  .service-item-div.disconnected::before {
+	background-image: $device-sheet-service-disconnected;
+  }
+
+  .service-item-div.connected::before {
+	background-image: $device-sheet-service-connected;
+  }
+
+  /* Sencha 2.1 fix to remove extra lines in services list */
+  .offset.services.x-list-normal .x-dock-horizontal {
+	border: 0;
+  }
+}

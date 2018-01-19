@@ -1,0 +1,76 @@
+/**
+ * This file pre-loads :active state and large images to prevent images from 'popping in'.
+ * @author lgreenway
+ *
+ * $Id: preload.js 4273 2012-09-25 17:51:22Z mlapierre@qnx.com $
+ */
+
+QnxCar.Util.ImagePreloader.preloadImages(
+	[
+		'images/audioControl/backgrounds/bkg_slider.png',
+		'images/audioControl/backgrounds/bkg_sliderDisplay.png',
+		'images/audioControl/backgrounds/bkg_sliderDisplay_vol.png',
+		'images/audioControl/backgrounds/bkg_vehicle.png',
+		'images/audioControl/buttons/btn_fade.png',
+		'images/audioControl/buttons/btn_slider_minus.png',
+		'images/audioControl/buttons/btn_slider_plus.png',
+
+		'images/climateControl/backgrounds/climate_bkgrd.png',
+		'images/climateControl/backgrounds/dial_L_black.png',
+		'images/climateControl/backgrounds/dial_L_white.png',
+		'images/climateControl/backgrounds/dial_R_black.png',
+		'images/climateControl/backgrounds/dial_R_white.png',
+		'images/climateControl/buttons/btn_ac.png',
+		'images/climateControl/buttons/btn_all.png',
+		'images/climateControl/buttons/btn_circ.png',
+		'images/climateControl/buttons/btn_fanSpeed.png',
+		'images/climateControl/buttons/btn_heatedSeat.png',
+		'images/climateControl/buttons/btn_rearDef.png',
+		'images/climateControl/masks/dial_L_mask.png',
+		'images/climateControl/masks/dial_R_mask.png',
+		'images/climateControl/masks/temp_control.png',
+
+		'images/home/buttons/climate_home.png',
+		'images/home/buttons/servesched_home.png',
+		'images/home/buttons/vol_home.png',
+
+		'images/virtualMechanic/backgrounds/absSwitch.png',
+		'images/virtualMechanic/backgrounds/absSwitch_base.png',
+		'images/virtualMechanic/backgrounds/braking_bkgrd.png',
+		'images/virtualMechanic/backgrounds/currentGear.png',
+		'images/virtualMechanic/backgrounds/dialog_bkgrd.png',
+		'images/virtualMechanic/backgrounds/electrical_bkgrd.png',
+		'images/virtualMechanic/backgrounds/fluid_bar_blk.png',
+		'images/virtualMechanic/backgrounds/fluid_bar_caut.png',
+		'images/virtualMechanic/backgrounds/fluid_bar_norm.png',
+		'images/virtualMechanic/backgrounds/fluid_bar_red.png',
+		'images/virtualMechanic/backgrounds/powertrain_bkgrd.png',
+		'images/virtualMechanic/backgrounds/statusArrow_large_left.png',
+		'images/virtualMechanic/backgrounds/statusArrow_large_right.png',
+		'images/virtualMechanic/backgrounds/statusArrow_left.png',
+		'images/virtualMechanic/backgrounds/statusArrow_right.png',
+		'images/virtualMechanic/backgrounds/statusBox_large.png',
+		'images/virtualMechanic/backgrounds/stat_avspeed.png',
+		'images/virtualMechanic/backgrounds/stat_depart.png',
+		'images/virtualMechanic/backgrounds/stat_distance.png',
+		'images/virtualMechanic/backgrounds/stat_mileage.png',
+		'images/virtualMechanic/backgrounds/stat_tripdur.png',
+		'images/virtualMechanic/backgrounds/traction_bkgrd.png',
+		'images/virtualMechanic/backgrounds/virtMech_bkgrd.png',
+		'images/virtualMechanic/buttons/btn_absSwitch.png',
+		'images/virtualMechanic/buttons/btn_def.png',
+		'images/virtualMechanic/buttons/btn_dialogClose.png',
+		'images/virtualMechanic/buttons/btn_vehicleStatsMaint.png',
+		'images/virtualMechanic/buttons/btn_vehicleStatus.png',
+		'images/virtualMechanic/fuelBar.png',
+		'images/virtualMechanic/icons/braking.png',
+		'images/virtualMechanic/icons/calendar.png',
+		'images/virtualMechanic/icons/caution.png',
+		'images/virtualMechanic/icons/electric.png',
+		'images/virtualMechanic/icons/fluid.png',
+		'images/virtualMechanic/icons/ok.png',
+		'images/virtualMechanic/icons/powertrain.png',
+		'images/virtualMechanic/icons/stats.png',
+		'images/virtualMechanic/icons/traction.png',
+	]
+);

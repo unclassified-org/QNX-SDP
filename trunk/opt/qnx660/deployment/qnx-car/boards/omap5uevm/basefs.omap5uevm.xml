@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fileset name="basefs.omap5uevm">
+  <directory name="bin" uid="root" gid="nto" mode="0755"/>
+  <file name="bin/resource_seed" uid="root" gid="nto" mode="0755"/>
+  <directory name="etc" uid="root" gid="nto" mode="0755"/>
+  <directory name="etc/system" uid="root" gid="nto" mode="0755"/>
+  <directory name="etc/system/config" uid="root" gid="nto" mode="0755"/>
+  <directory name="etc/system/config/bluetooth" uid="root" gid="nto" mode="0755"/>
+  <file name="etc/system/config/bluetooth/TIInit_11.8.32.QNX.bts" uid="root" gid="nto" mode="0644"/>
+  <file name="etc/system/config/graphics.conf" uid="root" gid="nto" mode="0644"/>
+  <file name="etc/system/config/qnxair.conf" uid="root" gid="nto" mode="0644"/>
+  <directory name="lib" uid="root" gid="nto" mode="0755"/>
+  <symlink name="lib/libusbdi.so" target="libusbdi.so.2" uid="root" gid="nto" mode="0755"/>
+  <symlink name="lib/libabe.so" target="libabe.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/libabe.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/libusbdi.so.2" uid="root" gid="nto" mode="0755"/>
+  <symlink name="lib/libmtouch-calib.so" target="libmtouch-calib.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/libmtouch-calib.so.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="lib/libmtouch-devi.so" target="libmtouch-devi.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/libmtouch-devi.so.1" uid="root" gid="nto" mode="0755"/>
+  <directory name="lib/dll" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/deva-ctrl-mcpdm-omap5uevm.so" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/deva-ctrl-mcbsp-omap4.so" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/devn-smsc9500.so" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/devu-uevm5432-ehci-omap3.so" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/devu-sevm-omap5-xhci.so" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/spi-omap4430.so" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/screen-gles1.so" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/screen-gles2.so" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/screen-pvr2d.so" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/screen-sw.so" uid="root" gid="nto" mode="0755"/>
+  <directory name="sbin" uid="root" gid="nto" mode="0755"/>
+  <file name="sbin/devb-sdmmc-omap5evm" uid="root" gid="nto" mode="0755"/>
+  <file name="sbin/devb-ahci-omap5" uid="root" gid="nto" mode="0755"/>
+  <file name="sbin/devc-seromap" uid="root" gid="nto" mode="0755"/>
+  <file name="sbin/devc-seromap_hci" uid="root" gid="nto" mode="0755"/>
+  <file name="sbin/i2c-omap35xx-omap4" uid="root" gid="nto" mode="0755"/>
+  <file name="sbin/spi-master" uid="root" gid="nto" mode="0755"/>
+  <directory name="usr" uid="root" gid="nto" mode="0755"/>
+  <directory name="usr/bin" uid="root" gid="nto" mode="0755"/>
+  <directory name="usr/lib" uid="root" gid="nto" mode="0755"/>
+  <directory name="usr/lib/graphics" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/graphics/omap5430ES2_0/libglslcompiler.so" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/graphics/omap5430ES2_0/libwfdcfg-generic.so" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/graphics/omap5430ES2_0/libIMGegl.so" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/graphics/omap5430ES2_0/libImgGLESv1_CM.so" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/graphics/omap5430ES2_0/libImgGLESv2.so" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/graphics/omap5430ES2_0/libpvr2d.so" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/graphics/omap5430ES2_0/libPVRScopeServices.so" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/graphics/omap5430ES2_0/libsrv_um.so" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/graphics/omap5430ES2_0/libusc.so" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/graphics/omap5430ES2_0/libWFDomap5430ES2_0.so" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/graphics/omap5430ES2_0/pvrsrv.so" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/graphics/omap5430ES2_0/pvrsrvinit.so" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/graphics/omap5430ES2_0/wsegl-screen.so" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/bin/gles1-gears" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/bin/gles2-gears" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/bin/egl-configs" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/bin/sw-vsync" uid="root" gid="nto" mode="0755"/>
+  <file name="bin/omap4-dieid" uid="root" gid="nto" mode="0755"/>
+</fileset>

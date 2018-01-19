@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fileset name="rootfs.car.media">
+
+  <!-- photos -->
+
+  <!-- <file name="accounts/1000/shared/camera/_0000_89627974_20.jpg" uid="root" gid="1001" mode="0644"/> -->
+  <!-- <file name="accounts/1000/shared/camera/_0001_89627521_20.jpg" uid="root" gid="1001" mode="0644"/> -->
+
+  <!-- music -->
+
+  <file name="accounts/1000/shared/music/MiaCuba.mp3" uid="root" gid="1001" mode="0755"/>
+  <file name="accounts/1000/shared/music/Hero.mp3" uid="root" gid="1001" mode="0755"/>
+  <file name="accounts/1000/shared/music/Off My Mind.mp3" uid="root" gid="1001" mode="0755"/>
+  <file name="accounts/1000/shared/music/Sunny Day  (full version).mp3" uid="root" gid="1001" mode="0755"/>
+  <file name="accounts/1000/shared/music/Love 's Waiting.mp3" uid="root" gid="1001" mode="0755"/>
+  <file name="accounts/1000/shared/music/Livin' It U.mp3" uid="root" gid="1001" mode="0755"/>
+  <file name="accounts/1000/shared/music/Bo Bo's Groove.mp3" uid="root" gid="1001" mode="0755"/>
+  <file name="accounts/1000/shared/music/Sarasong.mp3" uid="root" gid="1001" mode="0755"/>
+  <file name="accounts/1000/shared/music/Funktional Love ft. Ruchama.mp3" uid="root" gid="1001" mode="0755"/>
+  <file name="accounts/1000/shared/music/In Her Smile.mp3" uid="root" gid="1001" mode="0755"/>
+  <file name="accounts/1000/shared/music/Rue de la flemme.mp3" uid="root" gid="1001" mode="0755"/>
+  <file name="accounts/1000/shared/music/Overture of Winter.mp3" uid="root" gid="1001" mode="0755"/>
+  <file name="accounts/1000/shared/music/Way Out (Dreams) Feat. Yunus.mp3" uid="root" gid="1001" mode="0755"/>
+  <file name="accounts/1000/shared/music/IN THE GLOW OF THE MOON.mp3" uid="root" gid="1001" mode="0755"/>
+  <file name="accounts/1000/shared/music/Foreign Beyond.mp3" uid="root" gid="1001" mode="0755"/>
+  <file name="accounts/1000/shared/music/Rhythm of the heat.mp3" uid="root" gid="1001" mode="0755"/>
+  <file name="accounts/1000/shared/music/Pretty.mp3" uid="root" gid="1001" mode="0755"/>
+
+  <!-- videos -->
+  
+  <directory name="accounts/1000/shared/videos" uid="root" gid="1001" mode="0755"/>
+  <file name="accounts/1000/shared/videos/qnx_jeep_video_june_2012_1280x720.mp4" uid="root" gid="1001" mode="0644"/>
+  
+</fileset>

@@ -1,0 +1,89 @@
+#dialogOverlay {
+	position: absolute;
+	top: 0;
+	right: 0;
+	height:395px * $y-multiplier;
+	left: 0;
+	background-color: rgba(0, 0, 0, .5);
+	z-index: 100;
+	pointer-events: visiblePainted;
+}
+
+#dialogOverlay .dialogEscapeSpace {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 101;
+}
+
+#dialogOverlay .dialogContainer {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 325px * $x-multiplier;
+	opacity: 0;
+	background: $background-color;
+	-webkit-box-shadow: 0px 0px 10px $title-bar-background-color;
+	-webkit-transform: translate3d(0px, 15px, 0px);
+	-webkit-transition: -webkit-transform .25s ease-in-out, opacity .25s linear;
+}
+
+#dialogOverlay .dialogContainer .borderWrapper {}
+
+#dialogOverlay .dialogContainer .header {
+	position: relative;
+	height: 42px * $y-multiplier;
+	background: $title-bar-background-color;
+	background-size: 100% 100%;
+}
+
+#dialogOverlay .dialogContainer .header .title {
+	display: none;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	font-size: 1.25em;
+	line-height: 2.25em;
+	vertical-align: middle;
+	text-transform: uppercase;
+	text-align: center;
+	color: $text-color;
+	font-weight: bold;
+}
+
+#dialogOverlay .dialogContainer .header .btnClose {
+	display: none;
+	position: absolute;
+	top: 50%;
+	margin-top: -12px;
+	right: 10px * $x-multiplier;
+	width: 24px * $x-multiplier;
+	height: 24px * $y-multiplier;
+	background: transparent no-repeat 50% 50%;
+}
+
+#dialogOverlay .dialogContainer .body {
+	background: transparent no-repeat 50% 50%;
+	background-size: 100% 100%;
+}
+
+#dialogOverlay .dialogContainer .body .content {
+	padding: (15px * $y-multiplier) (15px * $x-multiplier);
+}
+
+#dialogOverlay .dialogContainer .footer {
+	display: none;
+	width: 100%;
+	padding: (10px * $y-multiplier) 0 (5px * $y-multiplier) 0;
+	text-align: center;
+}
+#dialogOverlay .formCtrlButton .ctrlLabel {
+	color: $text-color;
+}
+#dialogOverlay .dialogContainer .header .btnClose {
+	background-image: $dialog-button-blue;
+}

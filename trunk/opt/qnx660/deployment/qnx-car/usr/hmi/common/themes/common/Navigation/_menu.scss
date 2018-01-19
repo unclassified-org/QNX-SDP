@@ -1,0 +1,77 @@
+/**
+ * CSS for the menu
+ * @author mlapierre
+ *
+ * $Id: _menu.scss 6951 2013-08-06 20:22:55Z nschultz@qnx.com $
+ */
+
+.x-panel.menu {
+	.x-list.menu-list.short {
+		height: 335px * $y-multiplier;
+	}
+	
+	.x-button.list-topper {
+		background:  50px * $x-multiplier 15px * $y-multiplier no-repeat, 
+					 0% 0% no-repeat;
+		background-size: 30px * $x-multiplier 30px * $y-multiplier, 100% 200%;
+		width: 730px * $x-multiplier;
+		height: 60px * $y-multiplier;
+		
+		.x-button-label {
+			color: $text-color;
+			font-size: 212.5%;
+		}
+	}
+	
+	.x-button.list-topper.x-button-pressing,
+	.x-button.list-topper:active {
+		background:  50px * $x-multiplier 15px * $y-multiplier no-repeat, 
+					 0% 100% no-repeat;
+		background-size: 30px * $x-multiplier 30px * $y-multiplier, 100% 200%;
+		.x-button-label {
+			color: $active-text-color;
+		}
+	}
+	
+	/* Sencha performance tweak for destination history list */
+	.x-button.list-topper + .x-body .x-list {
+		height: 335px * $y-multiplier !important;
+	}
+
+	.x-button.clear-history{
+		background-image: $clear-history-button;
+	}
+	.x-button.clear-history.x-button-pressing,
+	.x-button.clear-history:active {
+		background-image: $clear-history-button-ovr;
+	}
+
+	.x-button.add-favourite{
+		background-image:$add-favourite-button; 
+	}
+	.x-button.add-favourite.x-button-pressing,
+	.x-button.add-favourite:active {
+		background-image: $add-favourite-button-ovr;
+	}
+}
+
+.x-toolbar.settings-header {
+	background-image: $settings-header;
+	background-color: transparent;
+	background-size: 100% 100%;
+	border: none;
+	height: 60px * $y-multiplier;
+	font-size: 175%;
+	
+	.x-title {
+		line-height: 65px * $y-multiplier;
+	}
+	
+	& ~ .x-dock-body {
+		height: 335px * $y-multiplier;
+	}
+}
+
+.x-form.settings-form .x-form-inner {
+	padding-bottom: 54px * $y-multiplier;
+}

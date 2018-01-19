@@ -1,0 +1,52 @@
+<div id="statusContainer">
+    <div class="serverSettingsTitlebarWrapper">
+        <div class="subHeader nomargin">
+            <span string="administration" class="subheaderTitle"></span>
+        </div>
+    </div>
+	<div>
+		<span class="titleWrapper">
+			<span string="administration_desc" class="title"></span>
+			<div class="smallServerContentSpacer"></div>
+			<span string="administration_desc_1" class="title"></span>
+			<div class="clear"/><div class="clear"/><div class="clear"/><div class="clear"/>
+			<span string="administration_desc_2" class="title"></span>
+			<div class="clear"/><div class="clear"/><div class="clear"/><div class="clear"/>
+			<span string="administration_desc_3" class="title"></span>
+		</span>
+	</div>
+	<div class="smallServerContentSpacer"></div>
+	<div id="adminstatus">
+	</div>
+	<div class="smallServerContentSpacer"></div>
+	<div>
+		<table class="mediaReceiversTable">
+			<tr>
+				<th><span string="user_name"></span></th>
+				<th><span string="password"></span></th>
+			</tr>
+			<tr>
+				<td>
+					<input id="adminuser" class="pathInput floatL" type="text" value=""/>
+				</td>
+				<td>
+					<input id="adminpassword" class="pathInput floatL" type="password" value=""/>
+				</td>
+				<td>
+					<a class="actionbtn bold" onmousedown="onButtonMouseDown(this)" onmouseup="onButtonMouseUp(this)" onclick="updateAdminAccount();">
+						<span class="actionbtn_l"></span><span string="update" class="actionbtn_c"></span><span class="actionbtn_r"></span>
+					</a>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<div class="smallServerContentSpacer"></div>
+	<div>
+	<a class="actionbtnmd bold" onmousedown="onButtonMouseDown(this)" onmouseup="onButtonMouseUp(this)" onclick="resetAdminAccount();">
+		<span class="actionbtn_l"></span><span string="reset_default_settings" class="actionbtn_c"></span><span class="actionbtn_r"></span>
+	</a>
+	<a class="actionbtnmd bold" id="disable_admin" onmousedown="onButtonMouseDown(this)" onmouseup="onButtonMouseUp(this)" onclick="disableAdminAccess();">
+		<span class="actionbtn_l"></span><span string="disable_pw_check" class="actionbtn_c"></span><span class="actionbtn_r"></span>
+	</a>
+	</div>
+</div>

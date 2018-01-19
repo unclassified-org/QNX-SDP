@@ -1,0 +1,72 @@
+###################################################################################
+##
+## This includes non-platform-specific items that are specific to the update IFS.
+##
+###################################################################################
+
+[uid=0 gid=0 perms=0644 dperms=0755 -optional]
+
+
+[perms=0444] automount = {
+    cardisk0t12:/dos:dos
+    cardisk0t178:/:qnx6
+    cardisk0t179:/base:qnx6:ro
+}
+
+[+script] updateScript = {
+	# Start common utilities 
+	display_msg Starting slogger
+	slogger -s128 -u100 &
+	slogger2
+	
+	#Take down splash screen before updating
+	display_msg Taking down splash screen
+	slay -f wallpaper_car2
+
+	display_msg * Run network-start for network bootstrap support.
+	sh /proc/boot/.startup-msg-usb usb-start
+	display_msg
+	
+	#Mount any usb mass-storage devices plugged in, in which updateAgent
+	# will look for delta files, before checking the SD card.
+	usb-start
+	devb-umass blk automount=+umass0@dos:/umass0:dos cam pnp disk name=umass
+
+	display_msg Wait for screen...
+	waitfor /dev/screen
+	display_msg Wait for /base filesystem...
+	waitfor /base
+	[+session] sh /proc/boot/disk-init -UN
+	
+	# Start the main shell (in the foreground, so startup.sh won't run)
+	# TODO: remove this for update, all we do is run updateAgent, then shutdown
+	#[+session] sh /proc/boot/.console.sh -n
+	shutdown
+}
+
+# ALL UA COMPONENTS ARE LIVING IN UA PARTITION - listing required components here for reference only
+### Libraries
+#[perms=0755]
+
+# Required by Update Agent
+#libcpp-ne.so.4
+#libicudata.so.49
+#libicuuc.so.46
+#libfota.so
+#libicui18n.so
+#libupi.so
+#libfota.so.1
+#libicui18n.so.46
+#libicudata.so
+#libicuuc.so
+
+### Executables
+#[perms=0755 data=c]
+
+#updateAgent
+
+### Links and in-line files
+#[uid=0 gid=0 perms=0644]
+
+
+##eof

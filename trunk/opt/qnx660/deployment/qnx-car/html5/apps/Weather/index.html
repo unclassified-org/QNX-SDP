@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Local Search</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="css/bootstrap.amelia.min.css"/>
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=latin,latin-ext">
+  <script src="local:///chrome/webworks.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+
+  <div class="container">
+    <section id="weather">
+      <div class="row-fluid" style="margin-top: 20px;">
+        <div id="weather_holder" class="span4">
+          <div class="well span12" style="text-align: center;">
+          </div>
+        </div>
+        <div id="locations_holder" class="span4 pull-right">
+          <div class="well span12 input-append">
+            <input id="search_string" type="text" class="input-medium search-query">
+            <button id="search" class="btn">Search</button>
+            <label class="span6 radio inline">
+              <input type="radio" name="optionsRadios" id="radioWeather" value="weather" checked>
+              Weather Search
+            </label>
+            <label class="span6 radio">
+              <input type="radio" name="optionsRadios" id="radioPoi" value="poi">
+              Poi Search
+            </label>        
+          </div>
+          <div id="locations_list_holder">
+            <div class="well span12" style="padding: 8px 0;">
+              <ul id="locations_list" class="nav nav-list">
+                <li class="nav-header">Previous Locations</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- vendor libraries -->
+  <script src="app/vendor/jquery-2.0.3.js"></script>
+  <script src="app/vendor/underscore.js"></script>
+  <script src="app/vendor/backbone.js"></script>
+
+  <!-- app -->
+  <script src="app/models/location.js"></script>
+  <script src="app/models/weather.js"></script>
+  <script src="app/collections/locations.js"></script>
+  <script src="app/views/location_list_view.js"></script>
+  <script src="app/views/location_list_item_view.js"></script>
+  <script src="app/views/weather_view.js"></script>
+
+  <script src="app/Images.js"></script>
+
+  <script type="text/javascript">
+      function initApp() {
+          var node = document.createElement("script"),
+              loading = document.getElementById("loadingMessage");
+          node.setAttribute("type", "text/javascript");
+          node.setAttribute("src", "app/app.js");
+          loading.innerText = "loading application...";
+          document.getElementsByTagName("head")[0].appendChild(node);
+      }
+      function onReady() {
+          var node = document.createElement("script"),
+              loading = document.createElement("div");
+
+          node.type = "text/javascript";
+          node.src = "https://maps.googleapis.com/maps/api/js?libraries=places&sensor=false&" + "callback=initApp";
+
+          loading.innerText = "loading maps...";
+          loading.id = "loadingMessage";
+          document.body.appendChild(loading);  
+          document.body.appendChild(node);
+      }
+      if (typeof qnx != 'undefined') {
+        window.addEventListener("load", function (e) {
+            document.addEventListener("webworksready", onReady);
+        }, false);        
+      } else {
+        $(document).ready(onReady);
+      }
+  </script>
+
+  <div id="map_canvas"></div>
+</body>
+</html>

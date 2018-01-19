@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fileset name="basefs.mm.aac">
+  <symlink name="usr/lib/libqaacd.so" target="libqaacd.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libqaacd.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/mmedia/qnx_raac_decoder.so" uid="root" gid="nto" mode="0755"/>
+</fileset>

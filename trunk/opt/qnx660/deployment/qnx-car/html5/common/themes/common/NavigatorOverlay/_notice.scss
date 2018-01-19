@@ -1,0 +1,54 @@
+.notice-wrap {
+	position: absolute;
+    top: 15px * $y-multiplier;
+    right: 15px * $x-multiplier;
+    width: 320px * $x-multiplier;
+    z-index: 9999;
+}
+ 
+.notice-item {
+    position: relative;
+    display: block;
+    background: $background-color;
+    color: $text-color;
+    height: 100px * $y-multiplier;
+    margin: 0 0 12px 0;
+    text-align: center;
+}
+
+.notice {
+    -webkit-box-shadow: 0 0 10px 2px $active-background-color;
+}
+
+.notice-item p {
+    font-size: 1.3em;
+    margin: 10px;
+    
+}
+.notice-item-title {
+    height: 30px * $y-multiplier;
+    text-align: center;
+    background: transparent $alertBanner;
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+
+.notice-item-title h1 {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-top: 3px * $y-multiplier;
+}
+
+.notice-item-close {
+    width:16px * $x-multiplier;
+    height:16px * $y-multiplier;
+    position: absolute;
+    top: 6px * $y-multiplier;
+    left: 6px * $x-multiplier;
+    cursor: pointer;
+    border:none;
+    background: transparent $alertX;
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+

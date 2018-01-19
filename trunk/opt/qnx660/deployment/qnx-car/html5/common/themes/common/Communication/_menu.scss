@@ -1,0 +1,240 @@
+/**
+ * CSS for the menu
+ * @author mlapierre
+ *
+ * $Id: menu.css 4377 2012-09-28 22:34:57Z lgreenway@qnx.com $
+ */
+
+.menu-msgdetails {
+	display: block;
+	width: inherit;
+	height: inherit;
+	color: $text-color;
+	background-color: $background-color;
+
+	.x-innerhtml {
+		padding: (20px * $x-multiplier) (20px * $y-multiplier);
+	}
+}
+
+.menu-msgdetails-toprow {
+	display: -webkit-box;
+	height: 50px * $y-multiplier; 
+	width: 540px * $x-multiplier;
+	-webkit-box-align: start;
+}
+
+.menu-msgdetails-sender {
+	font-size: 225%;
+	font-weight: bold;
+	
+	-webkit-box-flex: 1;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.menu-msgdetails-timestamp {
+	font-size: 150%;
+}
+
+.menu-msgdetails-subject {
+	font-size: 125%;
+	font-weight: bold;
+	margin-bottom: 10px * $y-multiplier;
+}
+
+.menu-msgdetails-toprow + .menu-msgdetails-message {
+	padding-top: 16px * $y-multiplier;
+} 
+
+.menu-msgdetails-message {
+	font-size: 112.5%;	
+	width: 540px * $x-multiplier;
+	text-align: justify;
+	margin-bottom: 30px * $y-multiplier;
+}
+
+.menu-msgdetails-message pre {
+	font-family: inherit;
+	white-space: pre-wrap;
+}
+
+.menu-image-contact {
+	background-size: (48px * $x-multiplier) auto;
+}
+
+/* menu-list overrides for menu-list-addressbook */
+.x-list.menu-list.menu-list-addressbook {
+	.x-list-item {
+		height: initial;
+		padding-left: 25px * $x-multiplier;
+	}
+
+	.x-list-header {
+		font-size: initial !important;
+		background-color: $active-background-color; //FIXME should be done by common/lists
+		background-image: none;
+		border-top: none;
+		border-bottom: none;
+		color: black;
+		-webkit-box-shadow: none;
+		padding-left: 35px * $x-multiplier;
+	}
+	.x-list-header-swap {
+		font-size: initial !important;
+	}
+	
+	.x-indexbar-wrapper {
+		display: block;
+		
+		.x-indexbar {
+			background-color: $background-color;
+			width: 25px * $x-multiplier;
+			padding: (9px * $y-multiplier) (7px * $x-multiplier);
+			
+			> div {
+				color: white;
+				line-height: 13px * $y-multiplier;
+			}
+		}
+		
+		.x-indexbar.x-indexbar-pressed {
+			background-color: $active-background-color;	
+			color: $active-text-color;
+			border-radius: 0px;
+			
+			> div {
+				color: $active-text-color;
+			}
+		}
+	}
+}
+
+.menu-contactdetails {
+	display: block;
+	width: inherit;
+	height: inherit;
+	color: $text-color;
+	background-color: $background-color;
+}
+
+.menu-contactdetails-row {
+	height: 50px * $y-multiplier;
+	margin-bottom: 10px * $y-multiplier;
+
+	&.address {
+		height: 80px * $y-multiplier;
+	}
+}
+
+.menu-contactdetails-image {
+	margin: {
+		top: 10px * $y-multiplier;
+		right: 0px;
+		bottom: 0px;
+		left: 50px * $x-multiplier;
+	}
+	height: 128px * $y-multiplier;
+	width: 128px * $x-multiplier;
+	background-size: contain;
+	background-position: 50% 0%;
+	background-repeat: no-repeat;
+	float: left;
+}
+
+.menu-contactdetails-summary {
+	margin: {
+		top: 10px * $y-multiplier;
+		right: 0px;
+		bottom: 0px;
+		left: 210px * $x-multiplier;
+	}
+	height: 150px * $y-multiplier;
+}
+
+.menu-contactdetails-name {
+	font-size: 300%;
+	line-height: 50px * $y-multiplier;
+	padding-top: 15px * $y-multiplier;
+}
+
+.menu-contactdetails-company,
+.menu-contactdetails-position {
+	font-size: 150%;
+	padding-top: 5px * $y-multiplier;
+}
+
+.menu-contactdetails-detailimg {
+	width: 210px * $x-multiplier;
+	height: 50px * $y-multiplier;
+	background-repeat: no-repeat;
+	float: left;
+	background-size: (36px * $x-multiplier) (36px * $y-multiplier);
+	background-position: (140px * $x-multiplier) center;
+}
+
+.menu-contactdetails-button, 
+.menu-contactdetails-large-button {
+	width: 300px * $x-multiplier;
+	height: 50px * $y-multiplier;
+	color: $text-color;
+	font-size: 112.5%;
+	float: left;
+	padding: {
+		top: 12px * $y-multiplier;
+		right: 0px;
+		bottom: 0px;
+		left: 15px * $x-multiplier;
+	}
+	background-size: 100%;
+}
+.menu-contactdetails-large-button {
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-box-pack: center;
+	height: 80px * $y-multiplier;
+	padding: {
+		top: 0px;
+		right: 0px;
+		bottom: 0px;
+		left: 15px * $x-multiplier;
+	}
+}
+.menu-contactdetails-button:active {
+	color: $active-button-text-color;
+}
+.menu-contactdetails-large-button:active {
+	background-position-y: -80px * $y-multiplier;
+	color: $active-button-text-color;
+}
+
+.menu-contactdetails-button > .menu-contactdetails-lbltype {
+	width: 80px * $x-multiplier;
+	float: left;
+}
+
+.menu-contactdetails-button > .menu-contactdetails-lbl,
+.menu-contactdetails-large-button > .menu-contactdetails-lbl {
+	width: 270px * $x-multiplier;
+	overflow-x: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.menu-contactdetails-button > .menu-contactdetails-lbltype + .menu-contactdetails-lbl {
+	width: 190px * $x-multiplier;
+}
+
+.menu-item-available-false {
+	opacity: 0.2;
+	pointer-events: none;
+}
+
+/* to fix last element height in list which using paging */
+.last-element {
+  height:15px * $y-multiplier;
+  padding:0px;
+}
+
+/* END Communication menu styles */

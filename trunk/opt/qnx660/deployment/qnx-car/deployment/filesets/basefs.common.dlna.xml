@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fileset name="basefs.common.dlna">
+
+  <!-- DLNA 
+
+	Fileset for the following DLNA components: 
+	
+	- Twonky DMS: 3rd party media server
+	- DMC: 3rd party control point 
+	- DMCConnector: 3rd party C library interface to DMC - used by DMC Client
+	- MMR plugin: 3rd party plug that can be used to configure MMR as a router/gateway to a DMR
+	- DMC Client: CAR2 specific component that offers a DMC-to-HMI interface
+
+   -->
+
+  <!-- Twonky DMS -->
+  
+  <directory name="usr/dlna/" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/cgi-bin/cgi-jpegscale" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/cgi-bin/jpeg-jpeg.desc" uid="root" gid="nto" mode="0755"/>
+
+  <file name="usr/dlna/resources/cds-hdrl.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/cds-noupdate-samsung.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/cds-noupdate.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/cds-samsung.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/cds.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/cms.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/00Readme.txt" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/00Template.txt" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Acer_Media_Player.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/ACTIVY_Media_Player.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Android.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Apple_iPhone.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Archos_605_wifi.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/AssetControl_DS_Control_Point.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Audi_Multimedia.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Bang_&amp;_Olufsen.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Boxee.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/BridgeCo_Firmware_based.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Buffalo/Buffalo_Link_Theater_(PC-P4LWAG).xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Buffalo/Buffalo_LT-H90LAN.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Buffalo/Buffalo_PC-P1LAN.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Buffalo/Buffalo_PC-P4LAN.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Chorus_DS_Control_Point.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/CTT_DLNA_1.5.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/CyberLink_SoftDMA.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/default.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Denon/DENON_AVR-4308.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Denon/DENON_S-302.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Denon/DENON.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/DirectTV_HD_DVR.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/DiXiM.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/D-Link/D-Link_DSM120.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/D-Link/D-Link_DSM320.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/D-Link/D-Link_DSM510.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/D-Link/D-Link_DSM520.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/DSPG/DSPG_XpndR_DPF_Demo_1.01.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/DSPG/DSPG_XpndR_Phone_Demo_1.01.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Freecom_MusicPal.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Frontier_Jupiter_6.2.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Generic_DLNA_1.0.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Generic_Media_Receiver.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Generic_Music_Only_Receiver.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Go.Video_D2730.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Homepod.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/HP_Dream_Screen.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/HP_MediaSmart_TV.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Infusion.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Intervideo_WinDVD.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/IOMegaNAS.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/JVC.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Kenwood_Media_Player.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/KiSS_Player.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Kodak/Kodak_EX-1011.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Kodak/Kodak_EX-811.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Lacie/Lacie_GAIABA.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Lacie/Lacie_LaCinema_HD.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/LG_DLNA_Player.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/LinkSys_Media_Link_for_Music.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Linn/Linn_Bubble_DS_Control_Point.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Linn/Linn_DS_Music_Player.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Linn/Linn_Kinsky_Desktop_Control_Point.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Linn/Linn_Kinsky_PDA_Control_Point.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Live_Radio_DMR.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Loewe/Loewe_Multiroom_Receiver.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Loewe/Loewe_Network_Mediaplayer.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/LPTT_DLNA.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Marantz_DMP.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Marantz_NA_7004.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Medion/Medion_IPTV_Box.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Medion/Medion_WLAN_Internet_Radio.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Microsoft/WinCE_based_Client.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Microsoft/Windows_7.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Microsoft/Windows_Media_Player.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Microsoft/XBOX_360.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Momento.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Naim_Audio_Streamer.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Nero_Home.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Netgear/Netgear_Digital_Entertainer_9000_Series.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Netgear/Netgear_Digital_Entertainer.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Netgear/Netgear_EVA_2000.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Netgear/Netgear_MP101_RTP.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Netgear/Netgear_MP101.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Netgear/Netgear_MP115.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Niles_Audio.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Nintendo_Wii.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Nokia/Nokia_Home_Music.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Nokia/Nokia_N95_Phone.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Nokia/Nokia_Phone.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/NOXON_Audio.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/o2_Joggler.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/omnifi_DMS1.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Orange/Orange_Music_Player.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Orange/Orange_ODMS_WebUI.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Oregan_Media_Browser.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/OXX_Alto.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/PacketVideo/PV_Player.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/PacketVideo/Twonky_Aggregation_Server.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/PacketVideo/TwonkyManager.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/PacketVideo/TwonkyMobile.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/PacketVideo/Twonky_NMC.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/PacketVideo/TwonkyPlayer.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/PacketVideo/TwonkyRenderer.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Panasonic/Panasonic_DIGA_Blueray_player.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Panasonic/Panasonic_VIERA.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Philips/Philips_MCW770.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Philips/Philips_Music_Player_NP1100.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Philips/Philips_Music_Player_NP2x00.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Philips/Philips_Renderer_2012TV.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Philips/Philips_Renderer_TV.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Philips/Philips_SL300i.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Philips/Philips_SL400i.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Philips/Philips_SL50i.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Philips/Philips_SLA5500.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Philips/Philips_SLA5520.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Philips/Philips_Streamium_Audio.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Philips/Philips_Streamium_AV.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Philips/Philips_Streamium_MCi730.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Philips/Philips_Streamium_NP2500.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Philips/Philips_Streamium_NP2900.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Philips/Philips_Streamium_WAC7500.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Philips/Philips_Streamium_WAS6050.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Philips/Philips_Streamium_WAS7500.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Philips/Philips_TV.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/PlugPlayer.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Pure/PURE_Avanti_Flow.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Pure/PURE_Contour.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Pure/PURE_EVOKE_Flow.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Pure/PURE_Oasis_Flow.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Pure/PURE_ONE_Flow.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Pure/PURE_Sensia.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Pure/PURE_Siesta_Flow.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Pure/PURE_Sirocco_550.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Roku_Soundbridge.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Rudeo_Play_&amp;_Control.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Sagem/SAGEM_My_Dual_Radio_700.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Sagem/SAGEM_My_Web_Tuner_500.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Samsung/Samsung_Phone.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Samsung/Samsung_Photo_Player.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Samsung/Samsung_Smart_TV.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Samsung/Samsung_TV.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Sharp_AQUOS_TV.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Siemens_M740_AV.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Sky_Perfect_STB.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/SMC_EZ-Stream.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Songbook_DS_Control_Point.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Sonos.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Sony/PS3.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Sony/PSP.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Sony/Sony_AV_Receiver.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Sony/Sony_Blu-Ray_Home_Theater.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Sony/Sony_Blu-Ray_Player.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Sony/Sony_Bravia.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Sony/Sony_CPF-IX001.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Sony/Sony_KDL-26J3000.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Sony/Sony_MR100.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Sony/Sony_NAS-CZ1.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Sony/Sony_NAS-Z200.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Sony/Sony_NetJuke.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Sony/Sony_Network_Media_Receiver.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Sony/Sony_STB.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Sony/Sony_VGF-CP1_frame.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Sony/Sony_VGF-WA1.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Syabas_Firmware_based.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/TA_music_player.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/TEAC/TEAC_WAP-4500.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/TEAC/TEAC_WAP-8500.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/TechniSat_InternetRadio.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/TG100.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Toshiba_Regza_TV.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Twonky_NDS_STB.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/UPC_Horizon.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/UPnP_Inspector.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/UPnP_Testtool.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/U-Verse.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/WAP-5000.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/WAS7000.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/WD/WD_TV_HD_Live_Media_Player.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/WD/WD_TV_Live_Hub.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/WD/WD_TV_Live_Plus.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Xstream_Player.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Yamaha/YAMAHA_DMC.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Yamaha/YAMAHA_Network_Receiver.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Ziova_CS505_510.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedb/Zyxel_DMA___Dixim_DMA.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedescription-custom-settings.txt" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedescription-dlna-1-0.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedescription-dlna-1-5.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedescription-no-wmdrm.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedescription-playon.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedescription-redsonic.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedescription-tmm.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedescription-wd-live.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedescription-win7.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedescription-xbox.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/devicedescription-yamaha.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/filescanner-extended-formats.txt" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/msreg.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/nmc.html" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/nocover_audio.jpg" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/nocover_container.jpg" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/nocover_photo.jpg" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/nocover_video.jpg" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/protocolinfo.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/strings-chs.txt" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/strings-cht.txt" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/strings-de.txt" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/strings-en.txt" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/strings-es.txt" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/strings-fi.txt" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/strings-fr.txt" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/strings-it.txt" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/strings-jp.txt" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/strings-ko.txt" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/strings-nl.txt" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/strings-ru.txt" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/transcoding.db" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/twonkyicon-120x120.jpg" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/twonkyicon-120x120.png" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/twonkyicon-48x48.jpg" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/twonkyicon-48x48.png" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/twonkyicon-80x80.jpg" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/twonkyicon-80x80.png" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/views/advanced.view.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/views/classified.view.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/views/folder.view.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/views/ipodlike.view.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/views/mobile.view.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/views/playlists.view.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/views/simple.view.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/views/view-definitions.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webconfig/advanced.htm" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webconfig/aggregation.htm" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webconfig/ani_spinner_40black.gif" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webconfig/arrow_hide.png" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webconfig/arrow_show.png" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webconfig/bg_color_grey.gif" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webconfig/bg_diag_blue_10.gif" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webconfig/bg_diag_grey_10.gif" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webconfig/bg_diag_grey_5.gif" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webconfig/bg_diagline.gif" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webconfig/bg_diagpattern.gif" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webconfig/browse-nav.htm" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webconfig/btn_sprite_blue_lg.png" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webconfig/btn_sprite_blue_md.png" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webconfig/btn_sprite_blue_sm.png" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webconfig/btn_sprite_lg.png" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webconfig/btn_sprite_md.png" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webconfig/btn_sprite.png" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webconfig/config.js" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webconfig/convert-readme.txt" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webconfig/ellipsis.xml" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webconfig/favicon.ico" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webconfig/fonts/eau_sans_bold_obl-webfont.eot" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webconfig/fonts/eau_sans_bold_obl-webfont.svg" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webconfig/fonts/eau_sans_bold_obl-webfont.woff" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webconfig/fonts/eau_sans_bold-webfont.eot" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webconfig/fonts/eau_sans_bold-webfont.svg" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webconfig/fonts/eau_sans_bold-webfont.woff" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webconfig/fonts/eau_sans_book_obl-webfont.eot" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webconfig/fonts/eau_sans_book_obl-webfont.svg" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webconfig/fonts/eau_sans_book_obl-webfont.woff" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webconfig/fonts/eau_sans_book-webfont.eot" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webconfig/fonts/eau_sans_book-webfont.svg" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webconfig/fonts/eau_sans_book-webfont.woff" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webconfig/fonts/Museo_Slab_500-webfont.eot" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webconfig/fonts/Museo_Slab_500-webfont.svg" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webconfig/fonts/Museo_Slab_500-webfont.ttf" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webconfig/fonts/Museo_Slab_500-webfont.woff" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webconfig/footer_logo.png" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webconfig/gen_folder_music_110.png" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webconfig/gen_folder_photo.png" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webconfig/gen_folder_video.png" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webconfig/gen_music_40.png" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webconfig/gen_photo_100.png" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webconfig/gen_video_100.png" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webconfig/ico_arrow_topnav.gif" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webconfig/ico_folder.png" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webconfig/ico_sprite_footer.png" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webconfig/ico_upFolder.png" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webconfig/index.htm" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webconfig/jquery-1.5.1.min.js" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webconfig/jquery.ba-bbq.min.js" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webconfig/loading_icon.gif" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webconfig/logo_TwonkyServer.png" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webconfig/new.css" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webconfig/reset.css" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webconfig/settings-nav.htm" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webconfig/setup.htm" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webconfig/sharing.htm" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webconfig/spacer.gif" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webconfig/status.htm" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webconfig/strings-chs.json" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webconfig/strings-cht.json" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webconfig/strings-de.json" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webconfig/strings-en.json" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webconfig/strings-es.json" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webconfig/strings-fi.json" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webconfig/strings-fr.json" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webconfig/strings-it.json" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webconfig/strings-jp.json" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webconfig/strings-ko.json" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webconfig/strings-nl.json" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webconfig/strings-ru.json" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webconfig/synchronization.htm" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webconfig/webdav-strings-en.json" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webdav/administrator.htm" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webdav/ani_spinner_40black.gif" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webdav/bg_diagpattern.gif" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webdav/btn_sprite_lg.png" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webdav/btn_sprite_md.png" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webdav/btn_sprite.png" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webdav/config.js" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webdav/favicon.ico" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webdav/footer_logo.png" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webdav/ico_arrow_topnav.gif" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webdav/ico_folder.png" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webdav/ico_upFolder.png" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webdav/index.htm" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webdav/jquery-1.5.1.min.js" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webdav/jquery.ba-bbq.min.js" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webdav/loading_icon.gif" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webdav/logo_TwonkyServer.png" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webdav/Museo_Slab_500-webfont.eot" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webdav/Museo_Slab_500-webfont.svg" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webdav/Museo_Slab_500-webfont.ttf" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webdav/Museo_Slab_500-webfont.woff" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webdav/new.css" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webdav/reset.css" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webdav/settings-nav.htm" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webdav/sharedfolders.htm" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webdav/status.htm" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webdav/users.htm" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webdav/WebDavConfig.css" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webdav/WebDavConfig.js" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webdav/webdav-strings-de.json" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/webdav/webdav-strings-en.json" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/dlna/resources/wmdrm-trouble.htm" uid="root" gid="nto" mode="0755"/>
+
+  <directory name="usr/lib/" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libtm-base.so" target="libtm-base.so.7" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libtm-base.so.7" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libtm-dmc.so" target="libtm-dmc.so.7" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libtm-dmc.so.7" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libtm-dmr.so" target="libtm-dmr.so.7" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libtm-dmr.so.7" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libtm-nmc-mobile-stationary.so" target="libtm-nmc-mobile-stationary.so.7" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libtm-nmc-mobile-stationary.so.7" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libtm-nmc-renderer-wrapper.so" target="libtm-nmc-renderer-wrapper.so.7" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libtm-nmc-renderer-wrapper.so.7" uid="root" gid="nto" mode="0755"/>
+  
+  <!-- DMC -->
+  
+  <directory name="usr/sbin/" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/sbin/dmc" uid="root" gid="nto" mode="0755"/>
+
+  <!-- DMR -->
+
+  <directory name="usr/sbin/" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/sbin/dmr" uid="root" gid="nto" mode="0755"/>
+  
+  <!-- DMCConnector -->
+  
+  <directory name="lib/" uid="root" gid="nto" mode="0755"/>
+  <symlink name="lib/libDMCConnector.so" target="libDMCConnector.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/libDMCConnector.so.1" uid="root" gid="nto" mode="0755"/>
+  
+  <!-- MMR plugin -->
+
+  <directory name="usr/lib/" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libmmro-dlna.so" target="libmmro-dlna.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libmmro-dlna.so.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libresarb.so" target="libresarb.so.1" uid="root" gid="nto" mode="755"/>
+  <file name="usr/lib/libresarb.so.1" uid="root" gid="nto" mode="755"/>
+  <directory name="lib/dll/" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/mmr-dlnaplaylist-engine.so" uid="root" gid="nto" mode="0755"/>
+  
+</fileset>

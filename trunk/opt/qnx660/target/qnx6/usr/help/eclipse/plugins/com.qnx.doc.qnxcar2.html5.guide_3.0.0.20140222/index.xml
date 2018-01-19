@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<index>
+<entry keyword="apps">
+<entry keyword="Cordova BAR file">
+<topic href="topic/creating_bar_package.html#cordova_create_bar_package" title="Creating BAR packages for Cordova apps"/>
+</entry>
+<entry keyword="WebWorks BAR file">
+<topic href="topic/creating_ww_bar_package.html#webworks_create_bar_package" title="Creating BAR packages for WebWorks apps"/>
+</entry>
+</entry>
+<entry keyword="Cordova">
+<entry keyword="creating BAR file">
+<topic href="topic/creating_bar_package.html#cordova_create_bar_package" title="Creating BAR packages for Cordova apps"/>
+</entry>
+</entry>
+<entry keyword="developing">
+<entry keyword="using Cordova">
+<topic href="topic/overview.html#html5_dev_tools" title="HTML5 and JavaScript Development Tools"/>
+</entry>
+</entry>
+<entry keyword="development">
+<entry keyword="tools">
+<topic href="topic/overview.html#html5_dev_tools" title="HTML5 and JavaScript Development Tools"/>
+</entry>
+</entry>
+<entry keyword="HMI versions">
+<topic href="topic/html5_web_app_support.html#qnxcar2_html5_web_app" title="HTML5 app support"/>
+</entry>
+<entry keyword="HTML5">
+<entry keyword="Cordova">
+<topic href="topic/overview.html#html5_dev_tools" title="HTML5 and JavaScript Development Tools"/>
+</entry>
+<entry keyword="development">
+<topic href="topic/overview.html#html5_dev_tools" title="HTML5 and JavaScript Development Tools"/>
+</entry>
+</entry>
+<entry keyword="HTML5 tools">
+<entry keyword="obtaining">
+<topic href="topic/obtain_dev_tools_task.html#Connecting" title="Obtaining the development tools"/>
+</entry>
+</entry>
+<entry keyword="tools">
+<entry keyword="obtaining">
+<topic href="topic/obtain_dev_tools_task.html#Connecting" title="Obtaining the development tools"/>
+</entry>
+</entry>
+<entry keyword="WebWorks">
+<entry keyword="creating BAR file">
+<topic href="topic/creating_ww_bar_package.html#webworks_create_bar_package" title="Creating BAR packages for WebWorks apps"/>
+</entry>
+</entry>
+</index>

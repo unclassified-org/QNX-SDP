@@ -1,0 +1,38 @@
+###########################################################################
+##
+## QNX Neutrino trunk on the Texas Instruments DM814X EVM Board
+##
+###########################################################################
+
+[image=0x81000000]
+[uid=0 gid=0 +compress perms=0644 -optional]
+#[+compress]
+
+[virtual=armle-v7,raw] .bootstrap = {
+	#startup-ti-j5eco-evm -v -d
+	#startup-dm814xevm -r 0x8A600000,0x5A00000 -v
+	#startup-ti-j5eco-evm -v -L 0x96C00000,0x8D00000 -x 0xB3D00000,0XC300000 -W evm
+	#startup-ti-j5eco-evm -v -W evm
+	startup-ti-j5eco_dra62x-evm811x -W evm -c 720000000
+	
+	#######################################################################
+	## PATH set here is the *safe* path for executables.
+	## LD_LIBRARY_PATH set here is the *safe* path for libraries.
+	##     i.e. These are the paths searched by setuid/setgid binaries.
+	##          (confstr(_CS_PATH...) and confstr(_CS_LIBPATH...))
+	#######################################################################
+	# use the "-ae" option to prevent unaligned access from raising SIGBUS
+	# (fixes webkit)
+	[+keeplinked] PATH=/proc/boot:/bin:/usr/bin:/opt/bin:/base/bin:/base/usr/bin:/base/sbin:/base/usr/sbin LD_LIBRARY_PATH=/proc/boot:/lib:/usr/lib:/lib/dll:/opt/lib:/base/lib:/base/usr/lib:/base/lib/dll procnto-instr -ae
+}
+
+[-page_align code=uip data=copy]
+
+[+script] .script = {
+	# Initialise the console
+	procmgr_symlink ../../proc/boot/libc.so.3 /usr/lib/ldqnx.so.2
+	TZ=EDT5EST
+
+	timestamp "IFS SCRIPT START" &
+}
+

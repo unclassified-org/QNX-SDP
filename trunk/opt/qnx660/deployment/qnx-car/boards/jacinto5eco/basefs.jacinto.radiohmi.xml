@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fileset name="basefs.jacinto.radiohmi">
+
+	<directory name="usr/hmi" uid="apps" gid="nto" mode="0755"/>
+
+	<directory name="usr/hmi/MediaPlayer" uid="apps" gid="nto" mode="0755"/>
+	<file name="usr/hmi/MediaPlayer/app.js" uid="apps" gid="nto" mode="0755"/>
+	<file name="usr/hmi/MediaPlayer/index.html" uid="apps" gid="nto" mode="0755"/>
+	<file name="usr/hmi/MediaPlayer/preload.js" uid="apps" gid="nto" mode="0755"/>
+
+	<directory name="hmi/MediaPlayer/app" uid="apps" gid="nto" mode="0755"/>
+	<directory name="usr/hmi/MediaPlayer/app/controller" uid="apps" gid="nto" mode="0755"/>
+	<file name="usr/hmi/MediaPlayer/app/controller/Radio.js" uid="apps" gid="nto" mode="0755"/>
+
+	<directory name="usr/hmi/MediaPlayer/app/controller/dab" uid="apps" gid="nto" mode="0755"/>
+	<file name="usr/hmi/MediaPlayer/app/controller/dab/Radio.js" uid="apps" gid="nto" mode="0755"/>
+
+	<directory name="usr/hmi/MediaPlayer/app/controller/hd" uid="apps" gid="nto" mode="0755"/>
+	<file name="usr/hmi/MediaPlayer/app/controller/hd/Radio.js" uid="apps" gid="nto" mode="0755"/>
+
+	<directory name="usr/hmi/MediaPlayer/app/model" uid="apps" gid="nto" mode="0755"/>
+	<file name="usr/hmi/MediaPlayer/app/model/DabComponent.js" uid="apps" gid="nto" mode="0755"/>
+	<file name="usr/hmi/MediaPlayer/app/model/DabFrequency.js" uid="apps" gid="nto" mode="0755"/>
+	<file name="usr/hmi/MediaPlayer/app/model/DabService.js" uid="apps" gid="nto" mode="0755"/>
+	<file name="usr/hmi/MediaPlayer/app/model/RadioPreset.js" uid="apps" gid="nto" mode="0755"/>
+
+	<directory name="usr/hmi/MediaPlayer/app/profile" uid="apps" gid="nto" mode="0755"/>
+	<file name="usr/hmi/MediaPlayer/app/profile/dab.js" uid="apps" gid="nto" mode="0755"/>
+	<file name="usr/hmi/MediaPlayer/app/profile/hd.js" uid="apps" gid="nto" mode="0755"/>
+	<file name="usr/hmi/MediaPlayer/app/profile/high.js" uid="apps" gid="nto" mode="0755"/>
+	<file name="usr/hmi/MediaPlayer/app/profile/mid.js" uid="apps" gid="nto" mode="0755"/>
+
+	<directory name="usr/hmi/MediaPlayer/app/store" uid="apps" gid="nto" mode="0755"/>
+	<file name="usr/hmi/MediaPlayer/app/store/Dab3Frequencies.js" uid="apps" gid="nto" mode="0755"/>
+	<file name="usr/hmi/MediaPlayer/app/store/DabComponents.js" uid="apps" gid="nto" mode="0755"/>
+	<file name="usr/hmi/MediaPlayer/app/store/DabLFrequencies.js" uid="apps" gid="nto" mode="0755"/>
+	<file name="usr/hmi/MediaPlayer/app/store/DabServices.js" uid="apps" gid="nto" mode="0755"/>
+	<file name="usr/hmi/MediaPlayer/app/store/RadioPresets.js" uid="apps" gid="nto" mode="0755"/>
+
+	<directory name="usr/hmi/MediaPlayer/app/view" uid="apps" gid="nto" mode="0755"/>
+
+	<directory name="usr/hmi/MediaPlayer/app/view/dab" uid="apps" gid="nto" mode="0755"/>
+	<directory name="usr/hmi/MediaPlayer/app/view/dab/Radio.js" uid="apps" gid="nto" mode="0755"/>
+
+	<directory name="usr/hmi/MediaPlayer/app/view/hd" uid="apps" gid="nto" mode="0755"/>
+	<file name="usr/hmi/MediaPlayer/app/view/hd/Radio.js" uid="apps" gid="nto" mode="0755"/>
+
+	<directory name="usr/hmi/MediaPlayer/app/view/radio" uid="apps" gid="nto" mode="0755"/>
+	<file name="usr/hmi/MediaPlayer/app/view/radio/HdCentralFeature.js" uid="apps" gid="nto" mode="0755"/>
+	<file name="usr/hmi/MediaPlayer/app/view/radio/HdCentralPanel.js" uid="apps" gid="nto" mode="0755"/>
+	<file name="usr/hmi/MediaPlayer/app/view/radio/HdCentralStatus.js" uid="apps" gid="nto" mode="0755"/>
+	<file name="usr/hmi/MediaPlayer/app/view/radio/HdLotImage.js" uid="apps" gid="nto" mode="0755"/>
+	<file name="usr/hmi/MediaPlayer/app/view/radio/HdPgrmSelect.js" uid="apps" gid="nto" mode="0755"/>
+	<file name="usr/hmi/MediaPlayer/app/view/radio/HdPresetList.js" uid="apps" gid="nto" mode="0755"/>
+	<file name="usr/hmi/MediaPlayer/app/view/radio/TunerDial.js" uid="apps" gid="nto" mode="0755"/>
+
+	<directory name="usr/hmi/MediaPlayer/resources" uid="apps" gid="nto" mode="0755"/>
+
+	<directory name="usr/hmi/MediaPlayer/resources/css" uid="apps" gid="nto" mode="0755"/>
+	<file name="usr/hmi/MediaPlayer/resources/css/dab_radio.css" uid="apps" gid="nto" mode="0755"/>
+	<file name="usr/hmi/MediaPlayer/resources/css/hd_radio.css" uid="apps" gid="nto" mode="0755"/>
+
+	<directory name="usr/hmi/MediaPlayer/resources/img" uid="apps" gid="nto" mode="0755"/>
+
+	<directory name="usr/hmi/MediaPlayer/resources/img/radio" uid="apps" gid="nto" mode="0755"/>
+	<file name="usr/hmi/MediaPlayer/resources/img/radio/HD_Logo.png" uid="apps" gid="nto" mode="0755"/>
+	<file name="usr/hmi/MediaPlayer/resources/img/radio/LOT_image.jpg" uid="apps" gid="nto" mode="0755"/>
+
+	<directory name="usr/hmi/MediaPlayer/resources/img/radio/albumArt" uid="apps" gid="nto" mode="0755"/>
+	<file name="usr/hmi/MediaPlayer/resources/img/radio/albumArt/LOT_image_0.jpeg" uid="apps" gid="nto" mode="0755"/>
+	<file name="usr/hmi/MediaPlayer/resources/img/radio/albumArt/LOT_image_0.png" uid="apps" gid="nto" mode="0755"/>
+	<file name="usr/hmi/MediaPlayer/resources/img/radio/albumArt/LOT_image_1.jpeg" uid="apps" gid="nto" mode="0755"/>
+	<file name="usr/hmi/MediaPlayer/resources/img/radio/albumArt/LOT_image_1.png" uid="apps" gid="nto" mode="0755"/>
+	<file name="usr/hmi/MediaPlayer/resources/img/radio/albumArt/LOT_image_2.jpeg" uid="apps" gid="nto" mode="0755"/>
+	<file name="usr/hmi/MediaPlayer/resources/img/radio/albumArt/LOT_image_2.png" uid="apps" gid="nto" mode="0755"/>
+	<file name="usr/hmi/MediaPlayer/resources/img/radio/albumArt/LOT_image_3.jpeg" uid="apps" gid="nto" mode="0755"/>
+	<file name="usr/hmi/MediaPlayer/resources/img/radio/albumArt/LOT_image_3.png" uid="apps" gid="nto" mode="0755"/>
+	<file name="usr/hmi/MediaPlayer/resources/img/radio/albumArt/LOT_image_4.jpeg" uid="apps" gid="nto" mode="0755"/>
+	<file name="usr/hmi/MediaPlayer/resources/img/radio/albumArt/LOT_image_4.png" uid="apps" gid="nto" mode="0755"/>
+	<file name="usr/hmi/MediaPlayer/resources/img/radio/albumArt/LOT_image_5.jpeg" uid="apps" gid="nto" mode="0755"/>
+	<file name="usr/hmi/MediaPlayer/resources/img/radio/albumArt/LOT_image_5.png" uid="apps" gid="nto" mode="0755"/>
+	<file name="usr/hmi/MediaPlayer/resources/img/radio/albumArt/LOT_image_6.jpeg" uid="apps" gid="nto" mode="0755"/>
+	<file name="usr/hmi/MediaPlayer/resources/img/radio/albumArt/LOT_image_6.png" uid="apps" gid="nto" mode="0755"/>
+	<file name="usr/hmi/MediaPlayer/resources/img/radio/albumArt/LOT_image_7.jpeg" uid="apps" gid="nto" mode="0755"/>
+	<file name="usr/hmi/MediaPlayer/resources/img/radio/albumArt/LOT_image_7.png" uid="apps" gid="nto" mode="0755"/>
+
+	<directory name="usr/hmi/common" uid="apps" gid="nto" mode="0755"/>
+	<directory name="usr/hmi/common/js" uid="apps" gid="nto" mode="0755"/>
+	<directory name="usr/hmi/common/js/QnxCar" uid="apps" gid="nto" mode="0755"/>
+	<directory name="usr/hmi/common/js/QnxCar/Media" uid="apps" gid="nto" mode="0755"/>
+	<file name="usr/hmi/common/js/QnxCar/Media/Radio.js" uid="apps" gid="nto" mode="0755"/>
+
+</fileset>

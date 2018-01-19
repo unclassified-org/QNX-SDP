@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<index>
+<entry keyword="browsing media files">
+<topic href="com.qnx.doc.qnxcar2.mm_architecture/topic/qnx_car_mm_arch_browse.html#car_mm_arch_browse" title="Media browsing"/>
+</entry>
+<entry keyword="car.mediaplayer extension">
+<topic href="com.qnx.doc.qnxcar2.mm_architecture/topic/qnx_car_mm_arch.html#car_mm_arch" title="QNX CAR Multimedia Architecture"/>
+</entry>
+<entry keyword="detecting devices">
+<topic href="com.qnx.doc.qnxcar2.mm_architecture/topic/qnx_car_mm_arch_synch.html#car_mm_arch_synch" title="Media device detection and synchronization"/>
+</entry>
+<entry keyword="device detection and synchronization process">
+<topic href="com.qnx.doc.qnxcar2.mm_architecture/topic/qnx_car_mm_arch_synch.html#car_mm_arch_synch" title="Media device detection and synchronization"/>
+</entry>
+<entry keyword="device publishers">
+<entry keyword="role in CAR multimedia architecture">
+<topic href="com.qnx.doc.qnxcar2.mm_architecture/topic/qnx_car_mm_arch.html#car_mm_arch" title="QNX CAR Multimedia Architecture"/>
+</entry>
+</entry>
+<entry keyword="HMI apps ">
+<entry keyword="sending media browsing and playback commands">
+<topic href="com.qnx.doc.qnxcar2.mm_architecture/topic/qnx_car_mm_arch.html#car_mm_arch" title="QNX CAR Multimedia Architecture"/>
+</entry>
+<entry keyword="sending requests to mm-player">
+<topic href="com.qnx.doc.qnxcar2.mm_architecture/topic/qnx_car_mm_arch.html#car_mm_arch" title="QNX CAR Multimedia Architecture"/>
+</entry>
+</entry>
+<entry keyword="media browsing process">
+<topic href="com.qnx.doc.qnxcar2.mm_architecture/topic/qnx_car_mm_arch_browse.html#car_mm_arch_browse" title="Media browsing"/>
+</entry>
+<entry keyword="media files">
+<entry keyword="browsing">
+<topic href="com.qnx.doc.qnxcar2.mm_architecture/topic/qnx_car_mm_arch_browse.html#car_mm_arch_browse" title="Media browsing"/>
+</entry>
+<entry keyword="playing">
+<topic href="com.qnx.doc.qnxcar2.mm_architecture/topic/qnx_car_mm_arch_play.html#car_mm_arch_play" title="Media playback"/>
+</entry>
+</entry>
+<entry keyword="media playback process">
+<topic href="com.qnx.doc.qnxcar2.mm_architecture/topic/qnx_car_mm_arch_play.html#car_mm_arch_play" title="Media playback"/>
+</entry>
+<entry keyword="mm-player">
+<entry keyword="supporting services">
+<topic href="com.qnx.doc.qnxcar2.mm_architecture/topic/qnx_car_mm_arch.html#car_mm_arch" title="QNX CAR Multimedia Architecture"/>
+</entry>
+</entry>
+<entry keyword="mm-player ">
+<entry keyword="plugins">
+<topic href="com.qnx.doc.qnxcar2.mm_architecture/topic/qnx_car_mm_arch.html#car_mm_arch" title="QNX CAR Multimedia Architecture"/>
+</entry>
+<entry keyword="support for different device types">
+<topic href="com.qnx.doc.qnxcar2.mm_architecture/topic/qnx_car_mm_arch.html#car_mm_arch" title="QNX CAR Multimedia Architecture"/>
+</entry>
+</entry>
+<entry keyword="multimedia">
+<entry keyword="architecture">
+<topic href="com.qnx.doc.qnxcar2.mm_architecture/topic/qnx_car_mm_arch.html#car_mm_arch" title="QNX CAR Multimedia Architecture"/>
+</entry>
+<entry keyword="components">
+<topic href="com.qnx.doc.qnxcar2.mm_architecture/topic/qnx_car_mm_arch.html#car_mm_arch" title="QNX CAR Multimedia Architecture"/>
+</entry>
+<entry keyword="layers">
+<topic href="com.qnx.doc.qnxcar2.mm_architecture/topic/qnx_car_mm_arch.html#car_mm_arch" title="QNX CAR Multimedia Architecture"/>
+</entry>
+</entry>
+<entry keyword="playing media files">
+<topic href="com.qnx.doc.qnxcar2.mm_architecture/topic/qnx_car_mm_arch_play.html#car_mm_arch_play" title="Media playback"/>
+</entry>
+<entry keyword="synchronizing media metadata">
+<topic href="com.qnx.doc.qnxcar2.mm_architecture/topic/qnx_car_mm_arch_synch.html#car_mm_arch_synch" title="Media device detection and synchronization"/>
+</entry>
+</index>

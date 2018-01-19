@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fileset name="basefs.python27.os">
+  <file name="usr/bin/python2.7" uid="root" gid="nto" mode="0750"/>
+  <file name="bin/python2.7-config" uid="root" gid="nto" mode="0750"/>
+  <file name="usr/lib/libpython2.7.so" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libpython2.7.so.1.0" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/python2.7/site-packages/MultipartPostHandler.py" uid="root" gid="nto" mode="0755"/>
+</fileset>

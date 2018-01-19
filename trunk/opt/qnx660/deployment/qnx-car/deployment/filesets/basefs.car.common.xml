@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fileset name="basefs.car.common">
+  <!-- include the root directory permissions in the tar file -->
+  <directory name="." uid="root" gid="nto" mode="0755"/>
+
+  <directory name="etc" uid="root" gid="nto" mode="0755"/>
+  <directory name="etc/system" uid="root" gid="nto" mode="0755"/>
+  <directory name="etc/system/config" uid="root" gid="nto" mode="0755"/>
+  <file name="etc/system/config/images/info1.png" uid="root" gid="nto" mode="0644"/>
+  <file name="etc/system/config/images/info2.png" uid="root" gid="nto" mode="0644"/>
+  <file name="etc/system/config/images/target1.bmp" uid="root" gid="nto" mode="0644"/>
+  <file name="etc/system/config/images/target2.bmp" uid="root" gid="nto" mode="0644"/>
+  <file name="etc/system/config/images/target3.bmp" uid="root" gid="nto" mode="0644"/>
+  <file name="etc/system/config/images/target4.bmp" uid="root" gid="nto" mode="0644"/>
+  <file name="etc/system/config/images/target5.bmp" uid="root" gid="nto" mode="0644"/>
+  <file name="etc/system/config/images/target6.bmp" uid="root" gid="nto" mode="0644"/>
+
+  <directory name="etc/authman" uid="root" gid="nto" mode="0750"/>
+  <file name="etc/authman/sys.acl" uid="root" gid="nto" mode="0640"/>
+
+  <file name="lib/dll/pubs/pp-audiocd.so" uid="root" gid="nto" mode="0640"/>
+  <file name="lib/dll/pubs/pp-dvd.so" uid="root" gid="nto" mode="0640"/>
+  <file name="lib/dll/pubs/pp-generic.so" uid="root" gid="nto" mode="0640"/>
+  <file name="lib/dll/pubs/pp-ipod.so" uid="root" gid="nto" mode="0640"/>
+  <file name="lib/dll/pubs/pp-mediafs.so" uid="root" gid="nto" mode="0640"/>
+
+  <file name="lib/dll/devh-microtouch.so" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/mmedia/xing_mpega_decoder.so" uid="root" gid="nto" mode="0755"/>
+  <file name="sbin/devb-ram" uid="root" gid="nto" mode="0755"/>
+  <file name="sbin/dinit" uid="root" gid="nto" mode="0755"/>
+  <file name="scripts/bar-install" uid="root" gid="nto" mode="0755"/>
+  <file name="scripts/bar-uninstall" uid="root" gid="nto" mode="0755"/>
+  <file name="scripts/reboot" uid="root" gid="nto" mode="0755"/>
+  <file name="scripts/config.ksh" uid="root" gid="nto" mode="0755"/>
+  <file name="scripts/appdata-ram.sh" uid="root" gid="nto" mode="0755"/>
+  <file name="scripts/set-resolution.sh" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/bin/calib-touch" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/bin/fsync" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/sbin/gles2-gears-pps" uid="root" gid="nto" mode="0755"/>
+  <directory name="usr/lib/webplatform" uid="root" gid="nto" mode="0755"/>
+  <directory name="usr/lib/webplatform/plugins" uid="root" gid="nto" mode="0755"/>
+  <directory name="usr/lib/webplatform/plugins/jnext" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/webplatform/plugins/jnext.so" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/webplatform/plugins/jnext/jscreen.so" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/webplatform/plugins/jnext/jqdb.so" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/webplatform/plugins/jnext/jpps.so" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/webplatform/plugins/jnext/jplayer.so" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/webplatform/plugins/jnext/auth.txt" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/sbin/qdb" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/bin/qdbc" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/bin/showmem" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/bin/ldd" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/sbin/logger" uid="root" gid="nto" mode="0755"/>
+  <file name="scripts/screenshot.sh" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/bin/screenshot" uid="root" gid="nto" mode="0755"/>
+  <file name="bin/random-mac" uid="root" gid="nto" mode="0755"/>
+  <file name="bin/mousetouchproxy" uid="root" gid="nto" mode="0755"/>
+  <file name="bin/rfbserv" uid="root" gid="nto" mode="0755"/>
+
+
+  <!-- binaries that Deckard includes in the IFS -->
+  <file name="lib/dll/fs-cd.so" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/fs-dos.so" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/fs-qnx4.so" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/fs-qnx6.so" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/fs-udf.so" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/libcam.so.2" uid="root" gid="nto" mode="0755"/>
+  <symlink name="lib/libhugbp.so" target="libhugbp.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/libhugbp.so.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="lib/libhuapi.so" target="libhuapi.so.5.6" uid="root" gid="nto" mode="0755"/>
+  <symlink name="lib/libhuapi.so.5" target="libhuapi.so.5.6" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/libhuapi.so.5.6" uid="root" gid="nto" mode="0755"/>
+  <symlink name="lib/libm.so" target="libm.so.2" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/libm.so.2" uid="root" gid="nto" mode="0755"/>
+  <symlink name="lib/libsocket.so" target="libsocket.so.3" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/libsocket.so.3" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/bin/clear" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libdisputil.so" target="libdisputil.so.2" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libdisputil.so.2" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libz.so" target="libz.so.2" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libz.so.2" uid="root" gid="nto" mode="0755"/>
+  <!-- -->
+
+  <!-- Example Applications -->
+  <!-- -->
+
+  <!-- Build Information -->
+  <file name="etc/os.version" uid="root" gid="nto" mode="0555"/>
+  <!-- -->
+
+  <file name="usr/bin/top" uid="root" gid="nto" mode="0755"/>
+
+  <!-- Boot Manager -->
+  <file name="usr/sbin/bootmgr" uid="root" gid="nto" mode="0755"/>
+  <!-- -->
+
+   <!-- swud -->
+   <file name="bin/swud" dest="usr/sbin/swud" uid="root" gid="nto" mode="0755"/>
+   <symlink name="usr/lib/libswu-core.so" target="libswu-core.so.1" uid="root" gid="nto" mode="0755"/>
+   <file name="usr/lib/libswu-core.so.1" uid="root" gid="nto" mode="0755"/>
+   <symlink name="usr/lib/libfota.so" target="libfota.so.1" uid="root" gid="nto" mode="0755"/>
+   <file name="usr/lib/libfota.so.1" uid="root" gid="nto" mode="0755"/>
+   <file name="usr/lib/libupi.so" uid="root" gid="nto" mode="0755"/>
+   <file name="lib/dll/rb_self_update.so" uid="root" gid="nto" mode="0755"/>
+   <file name="lib/dll/swud-client-config.so" uid="root" gid="nto" mode="0755"/>
+   <file name="lib/dll/swud-legacy-hmi.so" uid="root" gid="nto" mode="0755"/>
+   <file name="lib/dll/swud-simple-self-update.so" uid="root" gid="nto" mode="0755"/>
+   <file name="lib/dll/swud-self-update-hmi.so" uid="root" gid="nto" mode="0755"/>
+   <file name="lib/dll/swud-usb.so" uid="root" gid="nto" mode="0755"/>
+
+<!-- -->
+</fileset>

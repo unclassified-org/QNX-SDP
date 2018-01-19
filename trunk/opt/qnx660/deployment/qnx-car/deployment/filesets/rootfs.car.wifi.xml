@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fileset name="rootfs.car.wifi">
+  <directory name="var/etc/tethering" uid="root" gid="nto" mode="0755"/>
+  <file name="var/etc/wpa_supplicant.conf" uid="root" gid="nto" mode="0755"/>
+  <file name="var/etc/wpa_pps.conf" uid="root" gid="nto" mode="0755"/>
+  <file name="var/etc/ap_pps_mhs.conf" uid="root" gid="nto" mode="0755"/>
+</fileset>

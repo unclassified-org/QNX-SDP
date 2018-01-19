@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets"
+        xmlns:rim="http://www.blackberry.com/ns/widgets"
+        version="1.0.0.0"
+        id="htmlgears">  
+    <name>HTMLGears</name>
+    <author>QNX</author>
+    <description>A simple demo of the qnx and blackberry event extensions plus integration of an openGL app.</description>
+	<rim:category name="system"/>
+    <feature id="blackberry.event" required="true" version="1.0.0.0"/>
+    <feature id="qnx.application.event" required="true" version="1.0.0.0"/>
+    <feature id="qnx.gears" required="true" version="1.0.0.0"/>
+    <access uri="*"/>
+    <icon src="icon.png"/>
+    <content src="index.html"/>  
+</widget>

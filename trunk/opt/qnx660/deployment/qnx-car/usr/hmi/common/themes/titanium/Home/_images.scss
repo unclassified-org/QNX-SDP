@@ -1,0 +1,15 @@
+$home-background: 					url("#{$img-dir}/bkgrd_800x395_home.png") no-repeat;
+
+$media-background: 					url("#{$img-dir}/media/media_blank.png");
+$media-default-artowrk:				url("#{$img-dir}/media/album_def.png");
+$progressbar-background: 			url("#{$img-dir}/media/prog_bar.png") left center;
+$progressbar-highlight-background: 	url("#{$img-dir}/media/prog_bar_ovr.png") left center;
+
+$message-background: 				url("#{$img-dir}/messages/messages_blank.png");
+$message-icon-email: 				url("#{$img-dir}/messages/message_home.png");
+$message-icon-text: 				url("#{$img-dir}/messages/sms_home.png");
+$message-icon-voicemail: 			url("#{$img-dir}/messages/phone_home.png");
+$message-icon-twitter: 				url("#{$img-dir}/messages/twitter_home.png");
+
+$navigation-background: 			url("#{$img-dir}/nav/nav_blank.png");
+$navigation-background-disabled: 	url("#{$img-dir}/nav/nav_nonav.png");

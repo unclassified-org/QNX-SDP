@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?NLS  TYPE="org.eclipse.help.toc"?>
+<toc label="QNX CAR Platform for Infotainment" topic="topic/bookset.html">
+
+<topic label="Architecture Guide" href="../com.qnx.doc.qnxcar2.system_architecture/topic/about.html">
+    <link toc="../com.qnx.doc.qnxcar2.system_architecture/main.xml" />
+</topic>
+    
+    <topic label="Automatic Speech Recognition Developer's Guide" href="../com.qnx.doc.asr.lib_ref/topic/manual/about.html">
+        <link toc="../com.qnx.doc.asr.lib_ref/main.xml" /> 
+    </topic>
+
+
+<topic label="Bluetooth Architectural Overview and Configuration Guide" href="../com.qnx.doc.qnxcar2.btguide/topic/about.html">
+    <link toc="../com.qnx.doc.qnxcar2.btguide/main.xml" />
+</topic>
+
+<topic label="Boot Optimization Guide" href="../com.qnx.doc.qnxcar2.fastboot_guide/topic/about.html">
+    <link toc="../com.qnx.doc.qnxcar2.fastboot_guide/main.xml" />
+</topic>
+
+<topic label="Building and Customizing Target Images" href="../com.qnx.doc.qnxcar2.images_guide/topic/about.html">
+    <link toc="../com.qnx.doc.qnxcar2.images_guide/main.xml" />
+</topic>
+
+<topic label="HMI Development Guides" href="topic/hmi.html">
+
+    <!-- JI:583209 Remove Android from docs for legal reasons
+    <topic label="Android Application Runtime" href="../com.qnx.doc.hmi.android_app_runtime/topic/about.html">
+        <link toc="../com.qnx.doc.hmi.android_app_runtime/main.xml" />
+    </topic>
+    -->
+    
+    <topic label="HMI Notification Manager" href="../com.qnx.doc.qnxcar2.hmi_notif_mgr/topic/manual/about.html">
+        <link toc="../com.qnx.doc.qnxcar2.hmi_notif_mgr/main.xml" />
+    </topic>
+
+    <topic label="HTML5 and JavaScript Framework" href="../com.qnx.doc.qnxcar2.html5.guide/topic/about.html">
+        <link toc="../com.qnx.doc.qnxcar2.html5.guide/main.xml" />
+
+        <topic label="Cordova JavaScript Plugins" href="../com.qnx.doc.qnxcar2.js.cordova_ref/topic/about.html">
+            <link toc="../com.qnx.doc.qnxcar2.js.cordova_ref/main.xml" />
+        </topic>
+
+        <topic label="WebWorks JavaScript Extensions (Deprecated)" href="../com.qnx.doc.qnxcar2.js.lib_ref/topic/about.html">
+            <link toc="../com.qnx.doc.qnxcar2.js.lib_ref/main.xml" />
+        </topic>
+		
+		<topic label="Porting WebWorks Applications to Cordova" href="../com.qnx.doc.qnxcar2.cordova_porting_guide/topic/porting_instructions.html">
+            <link toc="../com.qnx.doc.qnxcar2.cordova_porting_guide/main.xml" />
+        </topic>				
+    </topic>
+    
+    <topic label="Application and Window Management" href="../com.qnx.doc.qnxcar2.hmi/topic/about.html">
+        <link toc="../com.qnx.doc.qnxcar2.hmi/main.xml" />
+    </topic>
+
+    <topic label="Qt Development Environment" href="../com.qnx.doc.qnxcar2.qt.guide/topic/about.html">
+        <link toc="../com.qnx.doc.qnxcar2.qt.guide/main.xml" />
+    </topic>
+    
+    <topic label="Showcasing Your Apps on the QNX App Portal" href="../com.qnx.doc.qnxcar2.app_portal/topic/showcasing_concept.html">
+        <link toc="../com.qnx.doc.qnxcar2.app_portal/main.xml" />
+    </topic>
+    
+</topic>
+    
+<topic label="Multimedia Components" href="topic/multimedia.html">
+
+    <topic label="Architecture Guide" 
+        href="../com.qnx.doc.qnxcar2.mm_architecture/com.qnx.doc.qnxcar2.mm_architecture/topic/about.html">
+        <link toc="../com.qnx.doc.qnxcar2.mm_architecture/qnxcar2.mm_architecture.xml" />
+    </topic>
+    
+    <!-- Doesn't exist yet:
+    <topic label="Artwork Client" href="../com.qnx.doc./topic/about.html">
+        <link toc="../com.qnx.doc./main.xml" />
+    </topic>
+    -->
+    
+    <topic label="Multimedia Controller" href="../com.qnx.doc.mm_control.conf_guide/topic/about.html">
+        <link toc="../com.qnx.doc.mm_control.conf_guide/main.xml" />
+    </topic>
+    
+    <topic label="Multimedia Detector" href="../com.qnx.doc.mm_detect.dev_guide/topic/about.html">
+        <link toc="../com.qnx.doc.mm_detect.dev_guide/main.xml" />
+    </topic>
+    
+    <topic label="Multimedia Player" />
+    <topic label="Multimedia Player" href="../com.qnx.doc.qnxcar2.mm_player.dev_guide/topic/about.html">
+        <link toc="../com.qnx.doc.qnxcar2.mm_player.dev_guide/main.xml" />
+    </topic>
+    
+</topic>
+    
+<topic label="PPS Objects Reference" href="../com.qnx.doc.qnxcar2.ppsref/topic/about.html">
+    <link toc="../com.qnx.doc.qnxcar2.ppsref/main.xml" />
+</topic>
+
+<topic label="System Services Reference" href="../com.qnx.doc.car.system_services.ref/topic/about.html">
+    <link toc="../com.qnx.doc.car.system_services.ref/main.xml" />
+</topic>
+
+<topic label="User's Guide" href="../com.qnx.doc.qnxcar2.gsg/topic/about.html">
+    <link toc="../com.qnx.doc.qnxcar2.gsg/main.xml" />
+</topic>
+
+<topic label="Copyrights" href="../com.qnx.doc.qnxcar.copyright/com.qnx.doc.copyright/topic/coverpage.html">
+    <link toc="../com.qnx.doc.qnxcar.copyright/copyright_qnxcar.xml" />
+</topic>
+
+</toc>

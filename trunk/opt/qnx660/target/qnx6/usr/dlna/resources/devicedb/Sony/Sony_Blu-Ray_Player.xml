@@ -1,0 +1,17 @@
+<Client>
+	<DeviceId>
+		<DisplayName>Sony Blu-Ray Player</DisplayName>
+		<HttpRecognition>
+			<HttpText>Blu-ray Disc Player</HttpText>
+		</HttpRecognition>
+		<MappingUpdatePolicy>FIX</MappingUpdatePolicy>
+	</DeviceId>
+	<Adaptations>
+		<DLNA>
+			<Version>DLNA15</Version>
+		</DLNA>
+	</Adaptations>
+	<DeviceQuirks>
+		<Quirk>ADDITIONAL_MPEG_RES</Quirk>
+	</DeviceQuirks>
+</Client>

@@ -1,0 +1,27 @@
+.info-container {
+    position: absolute;
+    top:0px;
+    height: 0px;
+    width:100%;
+    z-index: 1;
+    -webkit-transition: height 0.3s linear;
+    background-color: $background-color;
+    opacity: 0.5;
+}
+
+.info-container.show {
+    height: 50px + $y-multiplier;
+}
+
+.info-container.pulsate {
+    -webkit-animation-name: innerglow;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite
+}
+
+@-webkit-keyframes innerglow {
+    0% { -webkit-box-shadow: inset 0 0 20px 8px $active-background-color; opacity: 0.5; }
+    50% { -webkit-box-shadow: inset 0 0 20px 8px $active-background-color; opacity: 1.0; }
+    100% { -webkit-box-shadow: inset 0 0 20px 8px $active-background-color; opacity: 0.5; }
+}

@@ -1,0 +1,38 @@
+$btn-def-background: 					url("#{$img-dir}/bluetooth/btn_def.png");
+$btn-def-background-ovr: 				url("#{$img-dir}/bluetooth/btn_def_ovr.png");
+
+$input-text-background:					url("#{$img-dir}/bt_field.png");
+$input-text-clear-icon:					url("#{$img-dir}/search_del.png");
+
+$sheet-spacer-background:				url("#{$img-dir}/menu_shadow.png");
+
+$settings-background:					url("#{$img-dir}/bluetooth/settings_bkgrd.png");
+
+$bluetooth-tab-icon:					url("#{$img-dir}/bluetooth/bluetooth_36.png");
+$bluetooth-tab-icon-active:				url("#{$img-dir}/bluetooth/bluetooth_36_ovr.png");
+
+$bt-logo-background: 					url("#{$img-dir}/bluetooth/bluetooth_64.png");
+$add-new-device: 						url("#{$img-dir}/bluetooth/addnew_lrg.png");
+$add-new-device-active: 				url("#{$img-dir}/bluetooth/addnew_lrg_ovr.png");
+
+$list-devices-item-before:				url("#{$img-dir}/bluetooth/device_24.png");
+$list-devices-item-pressed-before:		url("#{$img-dir}/bluetooth/device_24_ovr.png");
+
+$add-device-sheet-icon:					url("#{$img-dir}/bluetooth/add_64.png");
+$pairing-sheet-icon:					url("#{$img-dir}/bluetooth/spinner_48.gif");
+
+$device-sheet-icon:						url("#{$img-dir}/bluetooth/device_title.png");
+$device-sheet-service-connected:		url("#{$img-dir}/bluetooth/white-on.png");
+$device-sheet-service-disconnected:		url("#{$img-dir}/bluetooth/white-off.png");
+
+$network-tab-icon:						url("#{$img-dir}/network/wirednet_36.png");
+$network-tab-icon-active:				url("#{$img-dir}/network/wirednet_36_ovr.png");
+$network-sheet-icon:					url("#{$img-dir}/network/wirednet_64.png");
+
+$update-tab-icon:						url("#{$img-dir}/update/softupdate_36.png");
+$update-tab-icon-active:				url("#{$img-dir}/update/softupdate_36_ovr.png");
+$update-sheet-icon:						url("#{$img-dir}/update/softupdate_64.png");
+
+$messagebox-background:					url("#{$img-dir}/dialog_bkgrd.png");
+$messagebox-button-background:			url("#{$img-dir}/btn_blue_def.png");
+$messagebox-button-background-pressed:	url("#{$img-dir}/btn_grey_def.png");

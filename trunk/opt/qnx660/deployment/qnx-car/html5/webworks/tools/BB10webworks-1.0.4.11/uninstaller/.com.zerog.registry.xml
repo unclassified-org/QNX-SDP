@@ -1,0 +1,824 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<registry install_date="2013-03-05 10:14:01" version="1.1" last_modified="2013-03-05 10:14:04">
+	<products>
+		<product name="BlackBerry 10 WebWorks SDK 1.0.4.11" id="9acd4288-1f07-11b2-82ed-f0c0f4dbd299" version="1.0.4.11" copyright="Research In Motion" info_url="" support_url="" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11" last_modified="2013-03-05 10:14:01">
+		<![CDATA[]]>
+			<vendor name="Research In Motion" id="9acd4287-1f07-11b2-82ed-f0c0f4dbd299" home_page="www.rim.com" email=""/>
+			<feature short_name="Application" name="Application" last_modified="2013-03-05 10:14:01">
+			<![CDATA[This installs the application feature.]]>
+				<component ref_id="9acd42c7-1f07-11b2-831b-f0c0f4dbd299" version="1.0.0.0" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\uninstaller\Uninstall BlackBerry 10 WebWorks SDK 1.0.4.11.exe"/>
+				<component ref_id="9acd42c6-1f07-11b2-8319-f0c0f4dbd299" version="1.0.0.0" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\SDK_license_English.txt"/>
+			</feature>
+		</product>
+	</products>
+	<components>
+		<component id="9acd42c7-1f07-11b2-831b-f0c0f4dbd299" version="1.0.0.0" name="InstallAnywhere Uninstall Component" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\uninstaller\Uninstall BlackBerry 10 WebWorks SDK 1.0.4.11.exe" vendor="Research In Motion">
+			<resource keyfile="false" name="BlackBerry_10_WebWorks_SDK_1.0.4.11_Install_03_05_2013_10_14_01.log" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\uninstaller\Logs\BlackBerry_10_WebWorks_SDK_1.0.4.11_Install_03_05_2013_10_14_01.log" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="BlackBerry 10 WebWorks SDK 1.0.4.11" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="uninstaller" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\uninstaller" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="Logs" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\uninstaller\Logs" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[true]]>
+			</resource>
+			<resource keyfile="false" name="win_reg_entry" location="$INSTALLED$|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\BlackBerry 10 WebWorks SDK 1.0.4.11|983103||STRING|$DELETE$|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\BlackBerry 10 WebWorks SDK 1.0.4.11|983103|" type="win_reg_entry" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="win_reg_entry" location="$INSTALLED$|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\BlackBerry 10 WebWorks SDK 1.0.4.11|131103|DisplayName|STRING|BlackBerry 10 WebWorks SDK 1.0.4.11$DELETE$|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\BlackBerry 10 WebWorks SDK 1.0.4.11|131103|DisplayName" type="win_reg_entry" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="uninstaller.jar" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\uninstaller\uninstaller.jar" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="true" name="Uninstall BlackBerry 10 WebWorks SDK 1.0.4.11.exe" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\uninstaller\Uninstall BlackBerry 10 WebWorks SDK 1.0.4.11.exe" type="executable" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="Uninstall BlackBerry 10 WebWorks SDK 1.0.4.11.lax" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\uninstaller\Uninstall BlackBerry 10 WebWorks SDK 1.0.4.11.lax" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="resource" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\uninstaller\resource" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="iawin64_x64.dll" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\uninstaller\resource\iawin64_x64.dll" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="iawin32.dll" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\uninstaller\resource\iawin32.dll" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="remove.exe" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\uninstaller\resource\remove.exe" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="win_reg_entry" location="$INSTALLED$|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\BlackBerry 10 WebWorks SDK 1.0.4.11|131103|DisplayName|STRING|BlackBerry 10 WebWorks SDK 1.0.4.11$DELETE$|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\BlackBerry 10 WebWorks SDK 1.0.4.11|131103|DisplayName" type="win_reg_entry" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="win_reg_entry" location="$INSTALLED$|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\BlackBerry 10 WebWorks SDK 1.0.4.11|131103|UninstallString|STRING|&quot;d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\uninstaller\Uninstall BlackBerry 10 WebWorks SDK 1.0.4.11.exe&quot;$DELETE$|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\BlackBerry 10 WebWorks SDK 1.0.4.11|131103|UninstallString" type="win_reg_entry" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="win_reg_entry" location="$INSTALLED$|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\BlackBerry 10 WebWorks SDK 1.0.4.11|131103|Publisher|STRING|Research In Motion$DELETE$|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\BlackBerry 10 WebWorks SDK 1.0.4.11|131103|Publisher" type="win_reg_entry" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="win_reg_entry" location="$INSTALLED$|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\BlackBerry 10 WebWorks SDK 1.0.4.11|131103|URLInfoAbout|STRING|www.rim.com$DELETE$|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\BlackBerry 10 WebWorks SDK 1.0.4.11|131103|URLInfoAbout" type="win_reg_entry" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="win_reg_entry" location="$INSTALLED$|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\BlackBerry 10 WebWorks SDK 1.0.4.11|131103|ProductID|STRING|9acd4288-1f07-11b2-82ed-f0c0f4dbd299$DELETE$|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\BlackBerry 10 WebWorks SDK 1.0.4.11|131103|ProductID" type="win_reg_entry" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="win_reg_entry" location="$INSTALLED$|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\BlackBerry 10 WebWorks SDK 1.0.4.11|131103|InstallLocation|STRING|d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11$DELETE$|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\BlackBerry 10 WebWorks SDK 1.0.4.11|131103|InstallLocation" type="win_reg_entry" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="win_reg_entry" location="$INSTALLED$|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\BlackBerry 10 WebWorks SDK 1.0.4.11|131103|InstallDate|STRING|Tue Mar 05 10:14:01 EST 2013$DELETE$|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\BlackBerry 10 WebWorks SDK 1.0.4.11|131103|InstallDate" type="win_reg_entry" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="win_reg_entry" location="$INSTALLED$|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\BlackBerry 10 WebWorks SDK 1.0.4.11|131103|DisplayVersion|STRING|1.0.4.11$DELETE$|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\BlackBerry 10 WebWorks SDK 1.0.4.11|131103|DisplayVersion" type="win_reg_entry" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="ZGWin32LaunchHelper.exe" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\uninstaller\resource\ZGWin32LaunchHelper.exe" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name=".com.zerog.registry.xml" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\uninstaller\.com.zerog.registry.xml" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+		</component>
+		<component id="9acd42c6-1f07-11b2-8319-f0c0f4dbd299" version="1.0.0.0" name="BlackBerry 10 WebWorks SDK" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\SDK_license_English.txt" vendor="Research In Motion">
+			<resource keyfile="false" name="uninstaller" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\uninstaller" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="default-icon.png" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\default-icon.png" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="dependencies" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\dependencies" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="tools" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\dependencies\tools" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="bin" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\dependencies\tools\bin" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="blackberry-airpackager" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\dependencies\tools\bin\blackberry-airpackager" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="blackberry-airpackager.bat" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\dependencies\tools\bin\blackberry-airpackager.bat" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="blackberry-connect" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\dependencies\tools\bin\blackberry-connect" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="blackberry-connect.bat" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\dependencies\tools\bin\blackberry-connect.bat" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="blackberry-custompackager" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\dependencies\tools\bin\blackberry-custompackager" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="blackberry-custompackager.bat" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\dependencies\tools\bin\blackberry-custompackager.bat" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="blackberry-debugtokenrequest" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\dependencies\tools\bin\blackberry-debugtokenrequest" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="blackberry-debugtokenrequest.bat" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\dependencies\tools\bin\blackberry-debugtokenrequest.bat" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="blackberry-deploy" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\dependencies\tools\bin\blackberry-deploy" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="blackberry-deploy.bat" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\dependencies\tools\bin\blackberry-deploy.bat" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="blackberry-keytool" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\dependencies\tools\bin\blackberry-keytool" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="blackberry-keytool.bat" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\dependencies\tools\bin\blackberry-keytool.bat" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="blackberry-nativepackager" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\dependencies\tools\bin\blackberry-nativepackager" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="blackberry-nativepackager.bat" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\dependencies\tools\bin\blackberry-nativepackager.bat" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="blackberry-pythonpackager" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\dependencies\tools\bin\blackberry-pythonpackager" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="blackberry-pythonpackager.bat" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\dependencies\tools\bin\blackberry-pythonpackager.bat" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="blackberry-signer" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\dependencies\tools\bin\blackberry-signer" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="blackberry-signer.bat" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\dependencies\tools\bin\blackberry-signer.bat" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="blackberry-uripackager" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\dependencies\tools\bin\blackberry-uripackager" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="blackberry-uripackager.bat" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\dependencies\tools\bin\blackberry-uripackager.bat" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="lib" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\dependencies\tools\lib" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="apache-mime4j-0.6.jar" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\dependencies\tools\lib\apache-mime4j-0.6.jar" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="BarAir.jar" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\dependencies\tools\lib\BarAir.jar" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="BarDeploy.jar" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\dependencies\tools\lib\BarDeploy.jar" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="BarLibrary.jar" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\dependencies\tools\lib\BarLibrary.jar" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="BarPackager.jar" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\dependencies\tools\lib\BarPackager.jar" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="BarSigner.jar" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\dependencies\tools\lib\BarSigner.jar" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="commons-codec-1.4.jar" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\dependencies\tools\lib\commons-codec-1.4.jar" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="commons-logging-1.1.1.jar" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\dependencies\tools\lib\commons-logging-1.1.1.jar" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="Connect.jar" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\dependencies\tools\lib\Connect.jar" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="DebugTokenRequest.jar" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\dependencies\tools\lib\DebugTokenRequest.jar" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="EccpressoAll.jar" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\dependencies\tools\lib\EccpressoAll.jar" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="EccpressoJDK15ECC.jar" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\dependencies\tools\lib\EccpressoJDK15ECC.jar" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="httpclient-4.0.3.jar" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\dependencies\tools\lib\httpclient-4.0.3.jar" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="httpcore-4.0.1.jar" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\dependencies\tools\lib\httpcore-4.0.1.jar" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="httpmime-4.0.3.jar" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\dependencies\tools\lib\httpmime-4.0.3.jar" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="jqconnDoor.jar" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\dependencies\tools\lib\jqconnDoor.jar" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="KeyTool.jar" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\dependencies\tools\lib\KeyTool.jar" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="Framework" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="clientFiles" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\clientFiles" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="webworks-1.0.4.11.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\clientFiles\webworks-1.0.4.11.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="dependencies" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\dependencies" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="bootstrap" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\dependencies\bootstrap" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="index.html" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\dependencies\bootstrap\index.html" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="require.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\dependencies\bootstrap\require.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="ui.html" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\dependencies\bootstrap\ui.html" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="wwe" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\dependencies\bootstrap\wwe" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="jnext" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\dependencies\jnext" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="auth.txt" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\dependencies\jnext\auth.txt" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="ext" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="app" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\app" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="client.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\app\client.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="index.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\app\index.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="manifest.json" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\app\manifest.json" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="bbm.platform" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\bbm.platform" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="BBMEvents.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\bbm.platform\BBMEvents.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="BBMJNEXT.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\bbm.platform\BBMJNEXT.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="client.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\bbm.platform\client.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="device" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\bbm.platform\device" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="libbbm.so" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\bbm.platform\device\libbbm.so" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="index.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\bbm.platform\index.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="manifest.json" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\bbm.platform\manifest.json" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="simulator" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\bbm.platform\simulator" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="libbbm.so" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\bbm.platform\simulator\libbbm.so" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="card" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\card" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="client.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\card\client.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="index.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\card\index.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="manifest.json" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\card\manifest.json" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="connection" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\connection" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="client.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\connection\client.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="index.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\connection\index.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="manifest.json" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\connection\manifest.json" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="event" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\event" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="client.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\event\client.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="index.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\event\index.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="manifest.json" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\event\manifest.json" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="identity" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\identity" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="client.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\identity\client.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="index.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\identity\index.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="manifest.json" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\identity\manifest.json" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="invoke" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\invoke" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="client.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\invoke\client.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="index.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\invoke\index.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="invocationEvents.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\invoke\invocationEvents.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="manifest.json" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\invoke\manifest.json" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="invoked" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\invoked" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="client.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\invoked\client.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="index.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\invoked\index.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="invocationEvents.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\invoked\invocationEvents.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="manifest.json" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\invoked\manifest.json" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="io" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\io" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="client.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\io\client.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="index.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\io\index.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="manifest.json" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\io\manifest.json" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="io.filetransfer" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\io.filetransfer" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="client.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\io.filetransfer\client.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="device" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\io.filetransfer\device" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="libfiletransfer.so" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\io.filetransfer\device\libfiletransfer.so" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="index.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\io.filetransfer\index.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="manifest.json" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\io.filetransfer\manifest.json" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="simulator" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\io.filetransfer\simulator" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="libfiletransfer.so" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\io.filetransfer\simulator\libfiletransfer.so" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="jpps" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\jpps" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="client.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\jpps\client.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="device" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\jpps\device" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="libjpps.so" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\jpps\device\libjpps.so" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="index.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\jpps\index.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="manifest.json" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\jpps\manifest.json" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="simulator" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\jpps\simulator" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="libjpps.so" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\jpps\simulator\libjpps.so" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="notification" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\notification" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="client.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\notification\client.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="index.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\notification\index.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="manifest.json" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\notification\manifest.json" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="payment" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\payment" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="client.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\payment\client.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="device" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\payment\device" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="libpaymentjnext.so" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\payment\device\libpaymentjnext.so" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="index.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\payment\index.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="manifest.json" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\payment\manifest.json" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="simulator" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\payment\simulator" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="libpaymentjnext.so" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\payment\simulator\libpaymentjnext.so" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="pim.calendar" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\pim.calendar" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="Attendee.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\pim.calendar\Attendee.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="CalendarAccount.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\pim.calendar\CalendarAccount.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="CalendarError.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\pim.calendar\CalendarError.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="CalendarEvent.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\pim.calendar\CalendarEvent.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="CalendarEventFilter.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\pim.calendar\CalendarEventFilter.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="CalendarFindOptions.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\pim.calendar\CalendarFindOptions.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="CalendarFolder.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\pim.calendar\CalendarFolder.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="CalendarRepeatRule.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\pim.calendar\CalendarRepeatRule.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="calendarUtils.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\pim.calendar\calendarUtils.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="client.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\pim.calendar\client.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="device" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\pim.calendar\device" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="libpimcalendar.so" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\pim.calendar\device\libpimcalendar.so" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="index.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\pim.calendar\index.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="manifest.json" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\pim.calendar\manifest.json" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="simulator" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\pim.calendar\simulator" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="libpimcalendar.so" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\pim.calendar\simulator\libpimcalendar.so" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="pim.contacts" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\pim.contacts" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="client.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\pim.contacts\client.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="Contact.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\pim.contacts\Contact.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="ContactAccount.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\pim.contacts\ContactAccount.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="ContactActivity.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\pim.contacts\ContactActivity.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="ContactAddress.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\pim.contacts\ContactAddress.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="contactConsts.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\pim.contacts\contactConsts.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="ContactError.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\pim.contacts\ContactError.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="ContactField.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\pim.contacts\ContactField.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="ContactFindOptions.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\pim.contacts\ContactFindOptions.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="ContactName.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\pim.contacts\ContactName.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="ContactNews.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\pim.contacts\ContactNews.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="ContactOrganization.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\pim.contacts\ContactOrganization.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="ContactPhoto.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\pim.contacts\ContactPhoto.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="ContactPickerOptions.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\pim.contacts\ContactPickerOptions.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="contactUtils.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\pim.contacts\contactUtils.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="device" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\pim.contacts\device" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="libpimcontacts.so" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\pim.contacts\device\libpimcontacts.so" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="index.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\pim.contacts\index.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="manifest.json" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\pim.contacts\manifest.json" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="simulator" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\pim.contacts\simulator" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="libpimcontacts.so" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\pim.contacts\simulator\libpimcontacts.so" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="push" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\push" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="client.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\push\client.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="device" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\push\device" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="libpushjnext.so" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\push\device\libpushjnext.so" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="index.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\push\index.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="manifest.json" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\push\manifest.json" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="simulator" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\push\simulator" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="libpushjnext.so" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\push\simulator\libpushjnext.so" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="sensors" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\sensors" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="client.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\sensors\client.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="device" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\sensors\device" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="libsensors.so" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\sensors\device\libsensors.so" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="index.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\sensors\index.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="manifest.json" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\sensors\manifest.json" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="sensorsEvents.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\sensors\sensorsEvents.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="sensorsJNEXT.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\sensors\sensorsJNEXT.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="simulator" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\sensors\simulator" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="libsensors.so" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\sensors\simulator\libsensors.so" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="system" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\system" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="client.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\system\client.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="index.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\system\index.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="manifest.json" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\system\manifest.json" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="ui.contextmenu" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\ui.contextmenu" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="client.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\ui.contextmenu\client.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="index.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\ui.contextmenu\index.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="manifest.json" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\ui.contextmenu\manifest.json" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="ui.cover" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\ui.cover" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="client.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\ui.cover\client.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="index.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\ui.cover\index.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="manifest.json" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\ui.cover\manifest.json" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="ui.dialog" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\ui.dialog" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="client.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\ui.dialog\client.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="index.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\ui.dialog\index.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="manifest.json" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\ui.dialog\manifest.json" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="ui.toast" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\ui.toast" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="client.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\ui.toast\client.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="index.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\ui.toast\index.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="manifest.json" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\ui.toast\manifest.json" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="utils" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\utils" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="client.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\utils\client.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="device" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\utils\device" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="libutils.so" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\utils\device\libutils.so" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="index.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\utils\index.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="manifest.json" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\utils\manifest.json" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="simulator" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\utils\simulator" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="libutils.so" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\utils\simulator\libutils.so" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="lib" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\lib" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="config" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\lib\config" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="default.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\lib\config\default.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="user.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\lib\config\user.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="config.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\lib\config.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="controllerWebView.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\lib\controllerWebView.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="event.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\lib\event.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="events" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\lib\events" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="applicationEvents.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\lib\events\applicationEvents.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="deviceEvents.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\lib\events\deviceEvents.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="exception.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\lib\exception.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="framework.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\lib\framework.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="jnext.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\lib\jnext.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="overlayWebView.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\lib\overlayWebView.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="plugins" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\lib\plugins" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="default.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\lib\plugins\default.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="event.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\lib\plugins\event.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="extensions.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\lib\plugins\extensions.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="policy" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\lib\policy" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="folderAccess.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\lib\policy\folderAccess.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="webkitOriginAccess.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\lib\policy\webkitOriginAccess.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="whitelist.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\lib\policy\whitelist.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="server.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\lib\server.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="utils.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\lib\utils.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="webkitEvent.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\lib\webkitEvent.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="webkitHandlers" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\lib\webkitHandlers" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="networkResourceRequested.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\lib\webkitHandlers\networkResourceRequested.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="webview.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\lib\webview.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="webworks-info.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\lib\webworks-info.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="README.md" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\README.md" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="lib" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\lib" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="bar-builder.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\lib\bar-builder.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="bar-conf.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\lib\bar-conf.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="cmdline.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\lib\cmdline.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="conf.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\lib\conf.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="config-parser.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\lib\config-parser.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="extension-manager.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\lib\extension-manager.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="file-manager.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\lib\file-manager.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="i18n-manager.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\lib\i18n-manager.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="localize.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\lib\localize.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="logger.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\lib\logger.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="native-packager.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\lib\native-packager.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="packager-utils.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\lib\packager-utils.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="packager-validator.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\lib\packager-validator.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="session.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\lib\session.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="signing-helper.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\lib\signing-helper.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="node_modules" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name=".bin" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\.bin" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="jasmine-node" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\.bin\jasmine-node" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="xlocalize" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\.bin\xlocalize" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="commander" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\commander" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name=".npmignore" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\commander\.npmignore" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name=".travis.yml" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\commander\.travis.yml" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="History.md" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\commander\History.md" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="index.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\commander\index.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="lib" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\commander\lib" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="commander.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\commander\lib\commander.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="Makefile" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\commander\Makefile" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="package.json" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\commander\package.json" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="Readme.md" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\commander\Readme.md" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="data2xml" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\data2xml" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name=".npmignore" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\data2xml\.npmignore" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name=".travis.yml" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\data2xml\.travis.yml" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="data2xml.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\data2xml\data2xml.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="examples" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\data2xml\examples" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="complex.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\data2xml\examples\complex.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="simple.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\data2xml\examples\simple.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="package.json" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\data2xml\package.json" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="README.md" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\data2xml\README.md" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="test" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\data2xml\test" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="basics.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\data2xml\test\basics.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="load.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\data2xml\test\load.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="xml-generation.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\data2xml\test\xml-generation.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="jWorkflow" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\jWorkflow" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name=".npmignore" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\jWorkflow\.npmignore" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="jworkflow-min-0.6.0.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\jWorkflow\jworkflow-min-0.6.0.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="lib" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\jWorkflow\lib" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="jWorkflow.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\jWorkflow\lib\jWorkflow.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="package.json" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\jWorkflow\package.json" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="Rakefile" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\jWorkflow\Rakefile" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="README.rdoc" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\jWorkflow\README.rdoc" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="test" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\jWorkflow\test" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="test.html" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\jWorkflow\test\test.html" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="test_jworkflow.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\jWorkflow\test\test_jworkflow.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="vendor" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\jWorkflow\test\vendor" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="jquery.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\jWorkflow\test\vendor\jquery.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="qunit.css" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\jWorkflow\test\vendor\qunit.css" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="qunit.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\jWorkflow\test\vendor\qunit.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="localize" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\localize" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="bin" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\localize\bin" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="translations.json" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\localize\bin\translations.json" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="xlocalize.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\localize\bin\xlocalize.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="lib" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\localize\lib" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="localize.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\localize\lib\localize.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="package.json" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\localize\package.json" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="README.md" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\localize\README.md" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="test" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\localize\test" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="localize.test.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\localize\test\localize.test.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="translations" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\localize\test\translations" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="subsitution" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\localize\test\translations\subsitution" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="translations.json" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\localize\test\translations\subsitution\translations.json" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="translations" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\localize\test\translations\translations" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="helloWorld.es.txt" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\localize\test\translations\translations\helloWorld.es.txt" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="helloWorld.txt" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\localize\test\translations\translations\helloWorld.txt" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="translations.json" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\localize\test\translations\translations.json" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="xlocalize" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\localize\test\xlocalize" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="subdir" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\localize\test\xlocalize\subdir" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="test2.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\localize\test\xlocalize\subdir\test2.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="test.html" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\localize\test\xlocalize\test.html" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="xlocalize.test.sh" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\localize\test\xlocalize.test.sh" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="xlocalize.testfile1.json" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\localize\test\xlocalize.testfile1.json" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="xlocalize.testfile2.json" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\localize\test\xlocalize.testfile2.json" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="xlocalize.testfile3.json" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\localize\test\xlocalize.testfile3.json" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="xlocalize.testfile4.json" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\localize\test\xlocalize.testfile4.json" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="validator" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\validator" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name=".npmignore" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\validator\.npmignore" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="index.html" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\validator\index.html" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="index.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\validator\index.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="lib" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\validator\lib" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="defaultError.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\validator\lib\defaultError.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="entities.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\validator\lib\entities.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="filter.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\validator\lib\filter.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="index.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\validator\lib\index.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="validator.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\validator\lib\validator.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="validators.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\validator\lib\validators.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="xss.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\validator\lib\xss.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="package.json" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\validator\package.json" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="README.md" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\validator\README.md" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="test" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\validator\test" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="filter.test.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\validator\test\filter.test.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="run.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\validator\test\run.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="validator.test.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\validator\test\validator.test.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="test.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\validator\test.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="validator-min.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\validator\validator-min.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="validator.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\validator\validator.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="wrench" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\wrench" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name=".npmignore" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\wrench\.npmignore" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="lib" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\wrench\lib" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="wrench.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\wrench\lib\wrench.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="x.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\wrench\lib\x.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="package.json" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\wrench\package.json" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="readme.md" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\wrench\readme.md" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="tests" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\wrench\tests" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="mkdir.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\wrench\tests\mkdir.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="readdir" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\wrench\tests\readdir" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="bar.txt" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\wrench\tests\readdir\bar.txt" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="foo" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\wrench\tests\readdir\foo" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="bar" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\wrench\tests\readdir\foo\bar" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="ipsum.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\wrench\tests\readdir\foo\bar\ipsum.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="dolor.md" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\wrench\tests\readdir\foo\dolor.md" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="lorem.txt" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\wrench\tests\readdir\foo\lorem.txt" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="readdir.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\wrench\tests\readdir.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="runner.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\wrench\tests\runner.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="xml2js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name=".npmignore" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\.npmignore" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="Cakefile" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\Cakefile" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="lib" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\lib" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="xml2js.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\lib\xml2js.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="node_modules" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="sax" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="AUTHORS" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\AUTHORS" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="examples" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\examples" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="big-not-pretty.xml" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\examples\big-not-pretty.xml" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="example.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\examples\example.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="get-products.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\examples\get-products.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="hello-world.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\examples\hello-world.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="not-pretty.xml" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\examples\not-pretty.xml" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="pretty-print.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\examples\pretty-print.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="shopping.xml" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\examples\shopping.xml" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="strict.dtd" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\examples\strict.dtd" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="switch-bench.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\examples\switch-bench.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="test.html" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\examples\test.html" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="test.xml" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\examples\test.xml" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="lib" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\lib" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="sax.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\lib\sax.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="package.json" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\package.json" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="README.md" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\README.md" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="test" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\test" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="buffer-overrun.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\test\buffer-overrun.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="case.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\test\case.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="cdata-chunked.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\test\cdata-chunked.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="cdata-end-split.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\test\cdata-end-split.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="cdata-fake-end.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\test\cdata-fake-end.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="cdata-multiple.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\test\cdata-multiple.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="cdata.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\test\cdata.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="cyrillic.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\test\cyrillic.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="duplicate-attribute.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\test\duplicate-attribute.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="entities.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\test\entities.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="entity-mega.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\test\entity-mega.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="index.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\test\index.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="issue-23.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\test\issue-23.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="issue-30.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\test\issue-30.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="issue-35.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\test\issue-35.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="issue-47.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\test\issue-47.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="issue-49.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\test\issue-49.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="issue-84.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\test\issue-84.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="parser-position.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\test\parser-position.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="script-close-better.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\test\script-close-better.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="script.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\test\script.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="self-closing-child-strict.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\test\self-closing-child-strict.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="self-closing-child.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\test\self-closing-child.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="self-closing-tag.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\test\self-closing-tag.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="stray-ending.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\test\stray-ending.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="trailing-attribute-no-value.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\test\trailing-attribute-no-value.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="trailing-non-whitespace.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\test\trailing-non-whitespace.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="unclosed-root.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\test\unclosed-root.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="unquoted.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\test\unquoted.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="xmlns-issue-41.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\test\xmlns-issue-41.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="xmlns-rebinding.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\test\xmlns-rebinding.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="xmlns-strict.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\test\xmlns-strict.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="xmlns-unbound.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\test\xmlns-unbound.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="xmlns-xml-default-ns.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\test\xmlns-xml-default-ns.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="xmlns-xml-default-prefix-attribute.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\test\xmlns-xml-default-prefix-attribute.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="xmlns-xml-default-prefix.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\test\xmlns-xml-default-prefix.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="xmlns-xml-default-redefine.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\test\xmlns-xml-default-redefine.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="package.json" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\package.json" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="README.md" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\README.md" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="src" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\src" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="xml2js.coffee" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\src\xml2js.coffee" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="test" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\test" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="fixtures" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\test\fixtures" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="sample.xml" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\test\fixtures\sample.xml" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="xml2js.test.coffee" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\test\xml2js.test.coffee" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="zip" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="CHANGES.md" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\CHANGES.md" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="inflate.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\inflate.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="node_modules" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="q" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name=".npmignore" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\.npmignore" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="CHANGES.md" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\CHANGES.md" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="design" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\design" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="q0.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\design\q0.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="q1.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\design\q1.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="q2.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\design\q2.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="q3.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\design\q3.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="q4.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\design\q4.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="q5.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\design\q5.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="q6.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\design\q6.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="q7.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\design\q7.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="README.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\design\README.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="examples" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\examples" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="async-generators" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\examples\async-generators" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="0.html" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\examples\async-generators\0.html" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="1-return.html" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\examples\async-generators\1-return.html" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="2-error-propagation.html" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\examples\async-generators\2-error-propagation.html" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="3-wishful-thinking.html" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\examples\async-generators\3-wishful-thinking.html" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="README.md" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\examples\async-generators\README.md" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="delay.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\examples\delay.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="join.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\examples\join.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="shallow-deep.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\examples\shallow-deep.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="step1.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\examples\step1.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="step2.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\examples\step2.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="step3.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\examples\step3.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="then1.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\examples\then1.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="then2.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\examples\then2.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="then3.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\examples\then3.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="view1.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\examples\view1.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="view2.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\examples\view2.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="view3.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\examples\view3.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="markm-mzero.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\markm-mzero.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="node_modules" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\node_modules" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="event-queue" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\node_modules\event-queue" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="event-queue.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\node_modules\event-queue\event-queue.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="package.json" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\node_modules\event-queue\package.json" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="readme.md" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\node_modules\event-queue\readme.md" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="package.json" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\package.json" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="q.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\q.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="q.min.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\q.min.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="README.md" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\README.md" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="ref_send.md" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\ref_send.md" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="test" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\test" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="all.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\test\all.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="issue" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\test\issue" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="22.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\test\issue\22.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="9.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\test\issue\9.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="join.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\test\join.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="methods.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\test\methods.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="multiple-listeners.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\test\multiple-listeners.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="promised-chains.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\test\promised-chains.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="reject.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\test\reject.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="resolve-reject.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\test\resolve-reject.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="thenable.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\test\thenable.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="value-of.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\test\value-of.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="test.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\test.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="TODO" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\TODO" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="q-io" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q-io" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="CHANGES" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q-io\CHANGES" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="package.json" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q-io\package.json" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="q-io.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q-io\q-io.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="README" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q-io\README" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="test" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q-io\test" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="issues" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q-io\test\issues" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="1.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q-io\test\issues\1.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="q-io-buffer" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q-io-buffer" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="package.json" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q-io-buffer\package.json" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="q-io-buffer.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q-io-buffer\q-io-buffer.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="README" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q-io-buffer\README" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="package.json" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\package.json" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="README.md" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\README.md" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="test.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\test.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="zip.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\zip.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="zip.zip" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\zip.zip" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="params-example.json" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\params-example.json" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="README.txt" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\README.txt" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="third_party" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\third_party" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="data2xml" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\third_party\data2xml" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="data2xml.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\third_party\data2xml\data2xml.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="jnext" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\third_party\jnext" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="jnext-patch.txt" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\third_party\jnext\jnext-patch.txt" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="wrench" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\third_party\wrench" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="wrench.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\third_party\wrench\wrench.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="bbwp.bat" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\bbwp.bat" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="licenses.txt" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\licenses.txt" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="true" name="SDK_license_English.txt" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\SDK_license_English.txt" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="third_party" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\third_party" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="node" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\third_party\node" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="windows" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\third_party\node\windows" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="node.exe" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\third_party\node\windows\node.exe" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="lib" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\lib" type="directory" uninstall="true" rollbackEnabledCancel="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="bbwp.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\lib\bbwp.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+			<resource keyfile="false" name="bbwpignore.js" location="d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\lib\bbwpignore.js" type="file" uninstall="true" rollbackEnabledCancel="true"/>
+		</component>
+	</components>
+</registry>

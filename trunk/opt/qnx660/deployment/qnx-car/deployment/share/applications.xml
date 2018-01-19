@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<applications>
+
+  <!-- HTML5 Applications -->
+  <!-- 3rd Party Applications -->
+  <application name="AccuWeather.bar" srcPath="html5/AccuWeather.bar" extras="websl" classification="optional"/>
+  <application name="BestParking.bar" srcPath="html5/BestParking.bar" extras="websl" classification="optional"/>
+  <application name="BingMap.bar" srcPath="html5/BingMap.bar" extras="websl" classification="optional"/>
+  <application name="eventseekr.bar" srcPath="html5/eventseekr.bar" extras="websl" classification="optional"/>
+  <application name="HearPlanet.bar" srcPath="html5/HearPlanet.bar" extras="websl" classification="optional"/>
+  <application name="Parkopedia.bar" srcPath="html5/Parkopedia.bar" extras="websl" classification="optional"/>
+  <application name="PeaksAndValleys.bar" srcPath="html5/PeaksAndValleys.bar" extras="websl" classification="optional"/>
+  <application name="Slacker.bar" srcPath="html5/Slacker.bar" extras="websl" classification="optional"/>
+  <application name="TunnelTilt.bar" srcPath="html5/TunnelTilt.bar" extras="websl" classification="optional"/>
+  <application name="WeatherNetwork.bar" srcPath="html5/WeatherNetwork.bar" extras="websl" classification="optional"/>
+  <application name="WeatherNetworkMini.bar" srcPath="html5/WeatherNetworkMini.bar" extras="websl" classification="optional"/>
+  <application name="Youtube.bar" srcPath="html5/Youtube.bar" extras="websl" classification="optional"/>
+  <application name="Soundtracker.cordova.bar" srcPath="html5/Soundtracker.cordova.bar" extras="websl" classification="optional"/>
+
+  <!-- Internal Applications -->
+  <application name="HelloWebWorks.bar" srcPath="html5/HelloWebWorks.bar" extras="websl" classification="optional"/>
+  <application name="Pandora.bar" srcPath="html5/Pandora.bar" extras="websl" classification="optional"/>
+  <application name="Shutdown.bar" srcPath="html5/Shutdown.bar" extras="websl" classification="optional"/>
+  <application name="AppPortal.bar" srcPath="html5/AppPortal.bar" extras="websl" classification="optional"/>
+
+  <!-- Native Applications -->
+  <application name="sys.browser.bar" srcPath="browser/sys.browser.bar" extras="websl" classification="optional"/>
+  <application name="AppSection.bar" srcPath="html5/AppSection.bar" extras="websl" classification="optional"/>
+  <application name="CarControl.bar" srcPath="html5/CarControl.bar" extras="websl" classification="optional"/>
+  <application name="Communication.bar" srcPath="html5/Communication.bar" extras="websl" classification="optional"/>
+  <application name="Home.bar" srcPath="html5/Home.bar" extras="websl" classification="optional"/>
+  <application name="HTMLGears.bar" srcPath="html5/HTMLGears.bar" extras="websl" classification="optional"/>
+  <application name="MediaPlayer.bar" srcPath="html5/MediaPlayer.bar" extras="websl" classification="optional"/>
+  <application name="MediaPlayer_mmplayer.bar" srcPath="html5/MediaPlayer_mmplayer.bar" extras="websl" classification="optional"/>
+  <application name="Navigator.bar" srcPath="html5/Navigator.bar" extras="websl" classification="optional"/>
+  <application name="Navigation.bar" srcPath="html5/Navigation.bar" extras="websl" classification="optional"/>
+  <application name="RearviewCamera.bar" srcPath="native/RearviewCamera.bar" extras="websl" classification="optional"/>
+  <application name="Settings.bar" srcPath="qt/Settings.bar" extras="websl" classification="optional"/>
+  <application name="Status.bar" srcPath="html5/Status.bar" extras="websl" classification="optional"/>
+  <application name="Weather.bar" srcPath="html5/Weather.bar" extras="websl" classification="optional"/>
+
+  <!-- Cordova Applications -->
+  <application name="Communication.cordova.bar" srcPath="html5/Communication.cordova.bar" extras="websl" classification="optional"/>
+  <application name="CarControl.cordova.bar" srcPath="html5/CarControl.cordova.bar" extras="websl" classification="optional"/>
+  <application name="Home.cordova.bar" srcPath="html5/Home.cordova.bar" extras="websl" classification="optional"/>
+  <application name="MediaPlayer_mmplayer.cordova.bar" srcPath="html5/MediaPlayer_mmplayer.cordova.bar" extras="websl" classification="optional"/>
+  <application name="Navigation.cordova.bar" srcPath="html5/Navigation.cordova.bar" extras="websl" classification="optional"/>
+
+
+  <!-- Apkruntime and Sample Apps -->
+  <application name="apkruntime-qnxcar-2-1.bar" srcPath="apkruntime/apkruntime-qnxcar-2-1.bar" extras="websl" classification="optional"/>
+
+</applications>
+  

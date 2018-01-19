@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<index>
+<entry keyword="/pps/services/launcher/control object">
+<topic href="topic/rpps_launchercontrol.html#navigator" title="Launcher control object (/pps/services/launcher/control)"/>
+<topic href="topic/cwinmgr_setup_pps.html#window_manager_setup_pps" title="Interacting with the /pps/services/launcher/control object"/>
+</entry>
+<entry keyword="Application Launcher (launcher)">
+<topic href="topic/applauncher.html#hfp" title="Application Launcher (launcher)"/>
+</entry>
+<entry keyword="application management">
+<topic href="topic/cwinmgr_appmgmt.html#window_manager_appmgmt" title="Application management"/>
+</entry>
+<entry keyword="apps">
+<entry keyword="access control for">
+<topic href="topic/authman.html#hfp" title="Authorization Manager (authman)"/>
+</entry>
+<entry keyword="authorization to run">
+<topic href="topic/authman.html#hfp" title="Authorization Manager (authman)"/>
+</entry>
+<entry keyword="installing">
+<topic href="topic/install_task.html#installing" title="Installing a packaged app on the target"/>
+<topic href="topic/pkg_and_inst.html#hfp" title="Packaging, Installing, and Launching Apps"/>
+<topic href="topic/launch_task.html#installing" title="Launching an app on the target"/>
+</entry>
+<entry keyword="launching">
+<topic href="topic/rpps_launchercontrol.html#navigator" title="Launcher control object (/pps/services/launcher/control)"/>
+<topic href="topic/pkg_and_inst.html#hfp" title="Packaging, Installing, and Launching Apps"/>
+<topic href="topic/applauncher.html#hfp" title="Application Launcher (launcher)"/>
+</entry>
+<entry keyword="packaging">
+<topic href="topic/pkg_and_inst.html#hfp" title="Packaging, Installing, and Launching Apps"/>
+</entry>
+<entry keyword="running">
+<topic href="topic/launch_task.html#installing" title="Launching an app on the target"/>
+</entry>
+<entry keyword="starting">
+<topic href="topic/pkg_and_inst.html#hfp" title="Packaging, Installing, and Launching Apps"/>
+<topic href="topic/cwinmgr_startapp.html#window_manager_startapp" title="Starting an application "/>
+<topic href="topic/launch_task.html#installing" title="Launching an app on the target"/>
+</entry>
+<entry keyword="stopping">
+<topic href="topic/cwinmgr_stopapp.html#window_manager_stopapp" title="Stopping an application"/>
+<topic href="topic/stop_apps_task.html#stop_apps" title="Stopping all apps on the target"/>
+</entry>
+<entry keyword="uninstalling">
+<topic href="topic/uninstall.html#hfp" title="Uninstalling Apps"/>
+</entry>
+<entry keyword="window manager">
+<topic href="topic/cwinmgr_windowmgmt.html#window_manager_windowmgmt" title="Window management"/>
+<topic href="topic/cwinmgr_stopapp.html#window_manager_stopapp" title="Stopping an application"/>
+<topic href="topic/cwinmgr_startapp.html#window_manager_startapp" title="Starting an application "/>
+</entry>
+<entry keyword="window manager can start and stop">
+<topic href="topic/cwindow_manager.html#window_manager" title="Creating Your Own Application Window Manager"/>
+</entry>
+</entry>
+<entry keyword="Authorization Manager (authman)">
+<topic href="topic/authman.html#hfp" title="Authorization Manager (authman)"/>
+</entry>
+<entry keyword="events">
+<topic href="topic/cwinmgr_handle_screen_events.html#window_manager_windowmgmt" title="Handle Screen events"/>
+</entry>
+<entry keyword="launcher">
+<topic href="topic/applauncher.html#hfp" title="Application Launcher (launcher)"/>
+</entry>
+<entry keyword="launching applications">
+<topic href="topic/rpps_launchercontrol.html#navigator" title="Launcher control object (/pps/services/launcher/control)"/>
+<topic href="topic/launch_task.html#installing" title="Launching an app on the target"/>
+</entry>
+<entry keyword="Navigator">
+<topic href="topic/rpps_launchercontrol.html#navigator" title="Launcher control object (/pps/services/launcher/control)"/>
+<entry keyword="See launching applications">
+<topic href="topic/rpps_launchercontrol.html#navigator" title="Launcher control object (/pps/services/launcher/control)"/>
+</entry>
+</entry>
+<entry keyword="PPS">
+<entry keyword="launcher control object">
+<topic href="topic/rpps_launchercontrol.html#navigator" title="Launcher control object (/pps/services/launcher/control)"/>
+<topic href="topic/cwinmgr_setup_pps.html#window_manager_setup_pps" title="Interacting with the /pps/services/launcher/control object"/>
+<topic href="topic/launch_task.html#installing" title="Launching an app on the target"/>
+<topic href="topic/stop_apps_task.html#stop_apps" title="Stopping all apps on the target"/>
+</entry>
+<entry keyword="messages">
+<topic href="topic/cwinmgr_setup_pps.html#window_manager_setup_pps" title="Interacting with the /pps/services/launcher/control object"/>
+</entry>
+<entry keyword="server objects">
+<topic href="topic/rpps_launchercontrol.html#navigator" title="Launcher control object (/pps/services/launcher/control)"/>
+</entry>
+</entry>
+<entry keyword="Screen">
+<topic href="topic/cwinmgr_windowmgmt.html#window_manager_windowmgmt" title="Window management"/>
+</entry>
+<entry keyword="start command">
+<topic href="topic/rpps_launchercontrol.html#navigator" title="Launcher control object (/pps/services/launcher/control)"/>
+<topic href="topic/cwinmgr_startapp.html#window_manager_startapp" title="Starting an application "/>
+</entry>
+<entry keyword="stop command">
+<topic href="topic/rpps_launchercontrol.html#navigator" title="Launcher control object (/pps/services/launcher/control)"/>
+<topic href="topic/cwinmgr_stopapp.html#window_manager_stopapp" title="Stopping an application"/>
+</entry>
+<entry keyword="uninstalling apps">
+<topic href="topic/uninstall.html#hfp" title="Uninstalling Apps"/>
+</entry>
+<entry keyword="window management">
+<topic href="topic/cwinmgr_startapp.html#window_manager_startapp" title="Starting an application "/>
+<topic href="topic/cwinmgr_setup_screen.html#window_manager_windowmgmt" title="Set up Screen "/>
+</entry>
+<entry keyword="window manager">
+<topic href="topic/cwinmgr_startapp.html#window_manager_startapp" title="Starting an application "/>
+<topic href="topic/cwindow_manager.html#window_manager" title="Creating Your Own Application Window Manager"/>
+<entry keyword="handling events">
+<topic href="topic/cwinmgr_handle_screen_events.html#window_manager_windowmgmt" title="Handle Screen events"/>
+</entry>
+<entry keyword="interacting with PPS">
+<topic href="topic/cwinmgr_setup_pps.html#window_manager_setup_pps" title="Interacting with the /pps/services/launcher/control object"/>
+</entry>
+<entry keyword="reference code for">
+<topic href="topic/cwinmgr_sample.html#window_manager_appmgmt" title="An example of a simple application window manager"/>
+</entry>
+<entry keyword="requirements of a">
+<topic href="topic/cwinmgr_appmgmt.html#window_manager_appmgmt" title="Application management"/>
+</entry>
+<entry keyword="responsible for application windows">
+<topic href="topic/cwinmgr_windowmgmt.html#window_manager_windowmgmt" title="Window management"/>
+</entry>
+<entry keyword="setting up">
+<topic href="topic/cwinmgr_setup_screen.html#window_manager_windowmgmt" title="Set up Screen "/>
+</entry>
+<entry keyword="simple example of">
+<topic href="topic/cwinmgr_sample.html#window_manager_appmgmt" title="An example of a simple application window manager"/>
+</entry>
+</entry>
+<entry keyword="write()">
+<topic href="topic/cwinmgr_stopapp.html#window_manager_stopapp" title="Stopping an application"/>
+<topic href="topic/cwinmgr_startapp.html#window_manager_startapp" title="Starting an application "/>
+</entry>
+</index>

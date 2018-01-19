@@ -1,0 +1,178 @@
+.dialButtonsContainer {
+	width: 300px * $x-multiplier;
+	height: 320px * $y-multiplier;
+	margin: {
+		top: 10px * $y-multiplier;
+		right: 15px * $x-multiplier;
+		bottom: 0px * $y-multiplier;
+		left: 20px * $x-multiplier;
+	}
+	.x-button{
+		width: 100px * $x-multiplier;
+		height: 80px * $y-multiplier;
+		background-size: 100%;
+	}
+}
+
+.dialControlsContainer {
+	height: 320px * $y-multiplier;
+	margin: {
+		top: 10px * $y-multiplier;
+		right: 20px * $x-multiplier;
+		bottom: 0px * $y-multiplier;
+		left: 15px * $x-multiplier;
+	}
+}
+
+#phoneNumber {
+	position: relative;
+	background-image: $dialpad-number-field;
+	background-color: $phone-number-background;
+	background-size: 100%;
+	width: 418px * $x-multiplier;
+	height: 85px * $y-multiplier;
+	color: $text-color;
+	font-size: 237.5%;
+	text-align: right;
+	padding-top: 17px * $y-multiplier;
+	overflow-x: hidden;
+
+	.x-innerhtml {
+		position: absolute;
+		right: 90px * $x-multiplier;
+		white-space: nowrap;
+		width: initial;
+	}
+}
+
+#deleteNumber {
+	background-image: $dialpad-delete;
+	position: absolute;
+	top: 8px * $y-multiplier;
+	right: 10px * $x-multiplier;
+	width: 78px * $x-multiplier;
+	height: 68px * $y-multiplier;
+}
+#deleteNumber:active {
+	background-image: $dialpad-delete-over;
+}
+
+#callBtn {
+	background-image: $dialpad-call;
+	background-size: 100%;
+	width: 210px * $x-multiplier;
+	height: 80px * $y-multiplier;
+	margin-top: 80px * $y-multiplier;
+}
+#callBtn:active {
+	background-image: $dialpad-call-over;
+}
+
+#addtoContacts {
+	position: absolute;
+	background-image: $dialpad-addcontact;
+	top: 270px * $y-multiplier;
+	left: 420px * $x-multiplier;
+	width: 210px * $x-multiplier;
+	height: 80px * $y-multiplier;
+}
+#addtoContacts:active {
+	background-image: $dialpad-addcontact-over;
+}
+
+/* Images */
+
+.x-button.one {
+	background-image: $dialpad-one;
+}
+
+.x-button.one:active {
+	background-image: $dialpad-one-over;
+}
+
+.x-button.two {
+	background-image: $dialpad-two;
+}
+.x-button.two:active {
+	background-image: $dialpad-two-over;
+}
+
+.x-button.three {
+	background-image: $dialpad-three;
+}
+
+.x-button.three:active {
+	background-image: $dialpad-three-over;
+}
+
+.x-button.four {
+	background-image: $dialpad-four;
+}
+
+.x-button.four:active {
+	background-image: $dialpad-four-over;
+}
+
+.x-button.five {
+	background-image: $dialpad-five;
+}
+
+.x-button.five:active {
+	background-image: $dialpad-five-over;
+}
+
+.x-button.six {
+	background-image: $dialpad-six;
+}
+
+.x-button.six:active {
+	background-image: $dialpad-six-over;
+}
+
+.x-button.seven {
+	background-image: $dialpad-seven;
+}
+
+.x-button.seven:active {
+	background-image: $dialpad-seven-over;
+}
+
+.x-button.eight {
+	background-image: $dialpad-eight;
+}
+
+.x-button.eight:active {
+	background-image: $dialpad-eight-over;
+}
+
+.x-button.nine {
+	background-image: $dialpad-nine;
+}
+
+.x-button.nine:active {
+	background-image: $dialpad-nine-over;
+}
+
+.x-button.zero {
+	background-image: $dialpad-zero;
+}
+
+.x-button.zero:active {
+	background-image: $dialpad-zero-over;
+}
+
+.x-button.star {
+	background-image: $dialpad-star;
+}
+
+.x-button.star:active {
+	background-image: $dialpad-star-over;
+}
+
+.x-button.hash {
+	background-image: $dialpad-hash;
+}
+
+.x-button.hash:active {
+	background-image: $dialpad-hash-over;
+}

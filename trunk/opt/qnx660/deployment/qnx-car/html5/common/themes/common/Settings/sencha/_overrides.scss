@@ -1,0 +1,61 @@
+/**
+* SCSS file contains fixes and overrides to the standard Sencha CSSs require to have CAR2 stuff look proper
+*/
+
+.x-list {
+  background-color: inherit !important;
+}
+
+/* fixes the shift of the content of the sheets, for example for 'Add New Device' */
+.x-stretched.x-container > .x-inner {
+  position: relative;
+}
+
+.x-input-el, .x-field {
+  color: $text-color;
+  background: none;
+}
+
+.x-input-el {
+  width: 100%;
+  background: transparent;
+  padding: .4em;
+  min-height: 2.5em;
+  display: block;
+  border-width: 0;
+  background: transparent;
+  -webkit-appearance: none;
+}
+
+.x-list-normal .x-list-item:last-child .x-list-item-label {
+  border: 0px !important;
+}
+
+.x-clear-icon {
+  background: no-repeat center center !important;
+  margin-top: -1.3em !important;
+  background-image: $input-text-clear-icon !important;
+}
+
+/** copied from _settings.scss */
+.x-button,.x-button-pressed {
+  border: none !important;
+  background-color: transparent !important;
+  -webkit-box-shadow: none !important;
+  -webkit-border-radius: 0px !important;
+}
+
+.x-button.x-item-disabled {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+/** This class likes to override body defined font styles, need to keep it the same **/
+x-html {
+  font-size: $font-size * $x-multiplier !important;
+}
+
+/* to prevent white flash when application just finished loading PR*/
+.settings_panel.x-layout-card-item {
+  background-color: $layout-card-item-background-color;
+}

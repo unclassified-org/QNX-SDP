@@ -1,0 +1,13 @@
+#!/bin/sh
+DESC="Encodes a U-Boot script into binary format. Requires non-QNX-mkimage (use Linux version)"
+
+if [ "$#" -ne 2 ]
+then
+	echo "$DESC"
+	echo "Usage: $0 IN OUT"
+	exit 2
+fi
+infile=$1
+outfile=$2
+exec mkimage -A arm -O u-boot -T script -C none -a 0 -e 0 \
+	-n "Beagleboard-xM boot script" -d "${infile:?}" "${outfile:?}"

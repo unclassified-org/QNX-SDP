@@ -1,0 +1,82 @@
+body {
+	font: 24pt Verdana, Sans-Serif;
+	position: fixed;
+}
+
+#container{
+	width: 1280px;
+	height: 278px;
+	padding-top: 8px;
+}
+
+.keyboard{
+	padding-left: 15px;
+}
+
+.keyboard li{
+	margin: 0 11px 5px 0;
+	width: 111px;
+	height: 60px;
+	line-height: 60px;
+	padding-top: 0px;
+	border: 2px solid #343434;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	text-shadow: 0 2px 2px #ffffff;
+}
+
+.keyboard .tab,
+.keyboard .delete{
+	width: 112px;
+}
+
+.keyboard .capslock{
+	width: 128px;
+}
+
+.keyboard .return{
+	width: 237px;
+}
+
+.keyboard .left-shift{
+	width: 112px;
+}
+
+.keyboard .right-shift{
+	width: 112px;
+}
+
+.keyboard .space{
+	width: 492px;
+}
+
+.service,
+.hide,
+.lang,
+.layout{
+	text-shadow: 0 -2px -2px #333333 !important;
+}
+
+.keyboard .hide{
+	background-image:  url(../images/hide_key.png) , -webkit-linear-gradient(bottom, rgb(15, 15, 15) 23%, rgb(79, 79, 79) 62%, rgb(135, 135, 135) 87%) !important;
+}
+
+.keyboard .lang{
+	background-image:  url(../images/lang_sel.png) , -webkit-linear-gradient(bottom, rgb(15, 15, 15) 23%, rgb(79, 79, 79) 62%, rgb(135, 135, 135) 87%) !important;
+}
+
+.keyboard .delete{
+	background-image:  url(../images/delete.png) , -webkit-linear-gradient(bottom, rgb(15, 15, 15) 23%, rgb(79, 79, 79) 62%, rgb(135, 135, 135) 87%) !important;
+}
+
+.keyboard .left-shift{
+	background-image:  url(../images/shift.png) , -webkit-linear-gradient(bottom, rgb(15, 15, 15) 23%, rgb(79, 79, 79) 62%, rgb(135, 135, 135) 87%) !important;
+}
+
+#toNumeric2,
+#toNumeric1,
+#toSymbols1,
+#toSymbols2{
+	background-image:  url(../images/more.png) , -webkit-linear-gradient(bottom, rgb(15, 15, 15) 23%, rgb(79, 79, 79) 62%, rgb(135, 135, 135) 87%) !important;
+}
+

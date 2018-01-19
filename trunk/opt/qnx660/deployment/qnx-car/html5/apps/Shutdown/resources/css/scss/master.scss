@@ -1,0 +1,23 @@
+/* $Id$ */
+
+/**
+ *  File:../../../../../../common/scss/loading_animation.scss
+ **/
+@import "../../../../../../common/scss/loading_animation";
+/**
+ *  File:menu.scss
+ **/
+@import "style";
+
+@media (min-device-height: 720px) {
+/**
+ *  File:../../../../../../common/scss/720p/loading_animation.scss
+ **/
+  @import "../../../../../../common/scss/720p/loading_animation";
+
+/**
+ *  File:720p/menu.scss
+ **/
+  @import "720p/style";
+}
+

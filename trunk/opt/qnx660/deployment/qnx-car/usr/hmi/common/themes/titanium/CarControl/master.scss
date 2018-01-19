@@ -1,0 +1,19 @@
+// Import base theme variables
+
+@import '../base';
+
+$app-dir: $theme-dir + "/CarControl";
+
+@media (max-device-height: 719px) 
+{
+	@import './800x480/style';
+	@import './images';
+
+	// import loading css
+	$common-img-dir: $theme-dir + "/common/800x480/img";
+	@import	'../common/loading-animation.scss';
+
+	// Import application layout
+	@import '../../common/CarControl/master';
+
+}

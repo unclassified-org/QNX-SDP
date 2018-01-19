@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fileset name="dosfs.jacinto.boot">
+  <file name="qnx-ifs" uid="root" gid="nto" mode="0644"/>
+  <file name="jacintoeco.ifs" uid="root" gid="nto" mode="0444"/>
+  <file name="jacintoeco-init.ifs" uid="root" gid="nto" mode="0444"/>
+  <file name="jacintoeco-update.ifs" uid="root" gid="nto" mode="0444"/>
+  <file name="MLO" uid="root" gid="nto" mode="0644"/>
+  <file name="u-boot.bin" uid="root" gid="nto" mode="0644"/>
+</fileset>

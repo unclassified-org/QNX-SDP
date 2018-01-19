@@ -1,0 +1,114 @@
+$app-background:				url("#{$img-dir}/bkgrd_800x395.png");
+
+$accept-button:					url("#{$img-dir}/comm_dialer/accept.png");
+$accept-button-over:			url("#{$img-dir}/comm_dialer/accept_ovr.png");
+$accept-button-disabled: 		url("#{$img-dir}/comm_dialer/accept_dis.png");
+
+$decline-button:				url("#{$img-dir}/comm_dialer/decline.png");
+$decline-button-over:			url("#{$img-dir}/comm_dialer/decline_ovr.png");
+$decline-button-disabled: 		url("#{$img-dir}/comm_dialer/decline_dis.png");
+
+$hangup-button:					url("#{$img-dir}/comm_dialer/end.png");
+$hangup-button-over:			url("#{$img-dir}/comm_dialer/end_ovr.png");
+$hangup-button-disabled: 		url("#{$img-dir}/comm_dialer/end_dis.png");
+
+$dialpad-one:					url("#{$img-dir}/comm_dialer/1.png");
+$dialpad-one-over:				url("#{$img-dir}/comm_dialer/1_ovr.png");
+
+$dialpad-two:					url("#{$img-dir}/comm_dialer/2.png");
+$dialpad-two-over:				url("#{$img-dir}/comm_dialer/2_ovr.png");
+
+$dialpad-three:					url("#{$img-dir}/comm_dialer/3.png");
+$dialpad-three-over:			url("#{$img-dir}/comm_dialer/3_ovr.png");
+
+$dialpad-four:					url("#{$img-dir}/comm_dialer/4.png");
+$dialpad-four-over:				url("#{$img-dir}/comm_dialer/4_ovr.png");
+
+$dialpad-five:					url("#{$img-dir}/comm_dialer/5.png");
+$dialpad-five-over:				url("#{$img-dir}/comm_dialer/5_ovr.png");
+
+$dialpad-six:					url("#{$img-dir}/comm_dialer/6.png");
+$dialpad-six-over:				url("#{$img-dir}/comm_dialer/6_ovr.png");
+
+$dialpad-seven:					url("#{$img-dir}/comm_dialer/7.png");
+$dialpad-seven-over:			url("#{$img-dir}/comm_dialer/7_ovr.png");
+
+$dialpad-eight:					url("#{$img-dir}/comm_dialer/8.png");
+$dialpad-eight-over:			url("#{$img-dir}/comm_dialer/8_ovr.png");
+
+$dialpad-nine:					url("#{$img-dir}/comm_dialer/9.png");
+$dialpad-nine-over:				url("#{$img-dir}/comm_dialer/9_ovr.png");
+
+$dialpad-zero:					url("#{$img-dir}/comm_dialer/0.png");
+$dialpad-zero-over:				url("#{$img-dir}/comm_dialer/0_ovr.png");
+
+$dialpad-star:					url("#{$img-dir}/comm_dialer/_.png");
+$dialpad-star-over:				url("#{$img-dir}/comm_dialer/__ovr.png");
+
+$dialpad-hash:					url("#{$img-dir}/comm_dialer/hash.png");
+$dialpad-hash-over:				url("#{$img-dir}/comm_dialer/hash_ovr.png");
+
+$dialpad-number-field:			url("#{$img-dir}/comm_dialer/dial_field.png");
+
+$dialpad-delete:				url("#{$img-dir}/comm_dialer/del.png");
+$dialpad-delete-over:			url("#{$img-dir}/comm_dialer/del_ovr.png");
+
+$dialpad-call:					url("#{$img-dir}/comm_dialer/call.png");
+$dialpad-call-over:				url("#{$img-dir}/comm_dialer/call_ovr.png");
+
+$dialpad-addcontact:			url("#{$img-dir}/comm_dialer/addcontact.png");
+$dialpad-addcontact-over:		url("#{$img-dir}/comm_dialer/addcontact_ovr.png");
+
+$home-email: 					url("#{$img-dir}/comm_home/email_home.png");
+$home-text: 					url("#{$img-dir}/comm_home/sms_home.png");
+$home-calllog: 					url("#{$img-dir}/comm_home/call_log_home.png");
+$home-addressbook: 				url("#{$img-dir}/comm_home/address_book_home.png");
+$home-dialpad: 					url("#{$img-dir}/comm_home/dial_pad_home.png");
+
+/* Menu Images */
+
+$menu-recent: 					url("#{$img-dir}/comm_menu/recent.png");
+$menu-recent-over: 				url("#{$img-dir}/comm_menu/recent_ovr.png");
+
+$menu-addressbook: 				url("#{$img-dir}/comm_menu/address.png");
+$menu-addressbook-over: 		url("#{$img-dir}/comm_menu/address_ovr.png");
+
+$menu-messages: 				url("#{$img-dir}/comm_menu/message.png");
+$menu-messages-over: 			url("#{$img-dir}/comm_menu/message_ovr.png");
+
+$menu-dialpad: 					url("#{$img-dir}/comm_menu/dial.png");
+$menu-dialpad-over: 			url("#{$img-dir}/comm_menu/dial_ovr.png");
+
+$menu-allmessages: 				url("#{$img-dir}/comm_menu/message_all.png");
+$menu-allmessages-over: 		url("#{$img-dir}/comm_menu/message_all_ovr.png");
+
+$menu-email: 					url("#{$img-dir}/comm_menu/message.png");
+$menu-email-over: 				url("#{$img-dir}/comm_menu/message_ovr.png");
+
+$menu-textmessages: 			url("#{$img-dir}/comm_menu/message_text.png");
+$menu-textmessages-over: 		url("#{$img-dir}/comm_menu/message_text_ovr.png");
+
+$menu-contacts: 				url("#{$img-dir}/comm_menu/contact.png");
+$menu-contacts-over: 			url("#{$img-dir}/comm_menu/contact_ovr.png");
+
+/* Contact Details */
+
+$contact-details-default: 		url("#{$img-dir}/Contact_def.png");
+
+$contact-details-button: 		url("#{$img-dir}/contact_btn.png");
+$contact-details-button-large: 	url("#{$img-dir}/contact_btn_lrg.png");
+$contact-details-button-over: 	url("#{$img-dir}/contact_btn_ovr.png");
+
+$contact-details-phone: 		url("#{$img-dir}/comm_menu/phone_36.png");
+$contact-details-email: 		url("#{$img-dir}/comm_menu/email_36.png");
+$contact-details-text: 			url("#{$img-dir}/comm_menu/message_text_36.png");
+$contact-details-address: 		url("#{$img-dir}/comm_menu/address_36.png");
+
+/* Search */
+
+$img-search-background: url(#{$img-dir}/search_bkgrd.png);
+$img-clear-icon: url(#{$img-dir}/search_del.png) !important;
+$img-clear-icon-over: url(#{$img-dir}/search_del_ovr.png) !important;
+$img-btn-search: url(#{$img-dir}/btn_lrg.png);
+$img-btn_search-over: url(#{$img-dir}/btn_lrg_ovr.png);
+

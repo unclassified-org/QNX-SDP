@@ -1,0 +1,9 @@
+### screen-jacinto5.build
+
+[+script] car_startup_screen_j5 = {
+    GRAPHICS_ROOT=/base/usr/lib/graphics/jacinto5
+}
+
+[type=link] /base/usr/lib/graphics/jacinto5/graphics.conf=/base/etc/system/config/graphics.conf
+
+##eof

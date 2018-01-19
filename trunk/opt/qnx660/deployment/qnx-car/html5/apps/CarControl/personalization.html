@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Personalization</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	</head>
+	<body onload="window.location = 'index.html'">
+
+		<div id="personalization" data-role="page" data-dom-cache="true">
+
+			<div class="flexbox">
+
+				<div class="containerProfileSelector">
+					<div class="profileListWrapper">
+						<ul class="profileList"></ul>
+					</div>
+					<div class="containerProfileCtrls">
+						<span class="ctrlAddProfile profileCtrl"></span>
+						<span class="ctrlRemoveProfile profileCtrl disabled"></span>
+					</div>
+				</div>
+				
+				<div class="containerProfileSettings">
+					<form action="" method="post">
+						<div class="name">
+							<input id="personalizationCtrlName" type="text" name="name" value="" class="txtName" data-role="none" />
+							<div class="ctrlClearField"></div>
+						</div>
+
+						<div class="flexbox">
+							<div class="gridLayoutB left">
+								<div class="gridBlockA">
+									<label for="personalizationCtrlTheme" class="label">Active Theme:</label>
+									<select id="personalizationCtrlTheme" name="theme" class="formCtrlDropdown" data-role="none"></select>
+								</div>
+								<div class="gridBlockB">
+									<label for="personalizationCtrlAvatar" class="label">Avatar:</label>
+									<select id="personalizationCtrlAvatar" name="avatar" class="formCtrlDropdown" data-role="none">
+										<option value="male1">Male 1</option>
+										<option value="male2">Male 2</option>
+										<option value="female1">Female 1</option>
+										<option value="female2">Female 2</option>
+									</select>
+								</div>
+								<div class="gridBlockC">
+									<label for="personalizationCtrlPreferredDevice" class="label">Preferred Device:</label>
+									<select id="personalizationCtrlPreferredDevice" name="preferredDevice" class="formCtrlDropdown" data-role="none">
+										<option value="0">- None -</option>
+									</select>
+								</div>
+								<div class="gridBlockD">
+									<div class="formCtrlButton ctrlPhonePairing">
+										<div class="innerWrapper">
+											<span class="btnSegment segmentLeft"></span>
+											<span class="ctrlLabel">Set Up Phone<br />Pairing</span>
+											<span class="btnSegment segmentRight"></span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+
+			</div>
+
+		</div>
+
+	</body>
+</html>

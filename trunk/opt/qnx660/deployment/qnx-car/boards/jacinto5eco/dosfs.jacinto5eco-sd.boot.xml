@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fileset name="dosfs.jacinto5eco-sd.boot">
+  <file name="qnx-ifs" uid="root" gid="nto" mode="0644"/>
+  <file name="j5-nand-sata.ifs" uid="root" gid="nto" mode="0444"/>
+  <file name="MLO" uid="root" gid="nto" mode="0644"/>
+  <file name="MLO-NAND" uid="root" gid="nto" mode="0644"/>
+  <file name="u-boot.bin" uid="root" gid="nto" mode="0644"/>
+</fileset>

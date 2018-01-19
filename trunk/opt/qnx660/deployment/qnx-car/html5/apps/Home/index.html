@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- 
+		The main and only HTML page for Home
+		@author mlapierre
+		
+		$Id: index.html 7083 2013-09-05 17:50:48Z mlapierre@qnx.com $ 
+	-->
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>Home</title>
+
+	<link rel="stylesheet" href="resources/css/external-includes.css" type="text/css" charset="utf-8">
+
+	<!-- qnx.theme2 stylesheet, settings -->
+	<link rel="stylesheet" id="theme-css" app="Home" type="text/css" charset="utf-8">
+
+
+
+	<script type="text/javascript">
+		function onReady() {
+			var node = document.createElement("script");
+			node.setAttribute("type", "text/javascript");
+			node.setAttribute("src", "app.js");
+			document.getElementsByTagName("head")[0].appendChild(node);
+		}
+		window.addEventListener("load", function (e) {
+			if (window.cordova) {
+				document.addEventListener("deviceready", onReady);
+			} else {
+				document.addEventListener("webworksready", onReady);
+			}
+		}, false);
+	</script>
+	
+	<script src="local:///chrome/webworks.js" type="text/javascript" charset="utf-8"></script>
+	<script src="local:///cordova.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" src="platform:///apps/common/js/touch-2.2.1/sencha-touch-all.js"></script>
+</head>
+<body>
+</body>
+</html>

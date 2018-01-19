@@ -1,0 +1,26 @@
+<Client>
+	<DeviceId>
+		<DisplayName>Nintendo Wii</DisplayName>
+		<HttpRecognition>
+			<HttpText>Nintendo Wii</HttpText>
+		</HttpRecognition>
+		<MappingUpdatePolicy>FIX</MappingUpdatePolicy>
+	</DeviceId>
+	<Capabilities>
+		<Scaling>
+			<Target>JPEG600x350</Target>
+		</Scaling>
+		<SupportedMediaProfiles>
+			<Profile>MP3</Profile>
+			<Profile>FLV</Profile>
+		</SupportedMediaProfiles>
+	</Capabilities>
+	<Adaptations>
+		<DLNA>
+			<Version>DLNANO</Version>
+		</DLNA>
+		<HTTP>
+			<HttpSetting>chunked</HttpSetting>
+		</HTTP>
+	</Adaptations>
+</Client>

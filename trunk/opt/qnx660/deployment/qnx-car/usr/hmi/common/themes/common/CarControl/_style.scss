@@ -1,0 +1,336 @@
+/* BEGIN -- jQM default font override */
+body,
+
+.ui-bar-a, 
+.ui-bar-a input, 
+.ui-bar-a select, 
+.ui-bar-a textarea, 
+.ui-bar-a button,
+.ui-body-a,
+.ui-body-a input,
+.ui-body-a select,
+.ui-body-a textarea,
+.ui-body-a button,
+.ui-btn-up-a,
+.ui-btn-hover-a,
+.ui-btn-down-a,
+
+.ui-bar-b, 
+.ui-bar-b input, 
+.ui-bar-b select, 
+.ui-bar-b textarea, 
+.ui-bar-b button,
+.ui-body-b,
+.ui-body-b input,
+.ui-body-b select,
+.ui-body-b textarea,
+.ui-body-b button,
+.ui-btn-up-b,
+.ui-btn-hover-b,
+.ui-btn-down-b,
+
+.ui-bar-c, 
+.ui-bar-c input, 
+.ui-bar-c select, 
+.ui-bar-c textarea, 
+.ui-bar-c button,
+.ui-body-c,
+.ui-body-c input,
+.ui-body-c select,
+.ui-body-c textarea,
+.ui-body-c button,
+.ui-btn-up-c,
+.ui-btn-hover-c,
+.ui-btn-down-c,
+
+.ui-bar-d, 
+.ui-bar-d input, 
+.ui-bar-d select, 
+.ui-bar-d textarea, 
+.ui-bar-d button,
+.ui-body-d,
+.ui-body-d input,
+.ui-body-d select,
+.ui-body-d textarea,
+.ui-body-d button,
+.ui-btn-up-d,
+.ui-btn-hover-d,
+.ui-btn-down-d,
+
+.ui-bar-e,
+.ui-bar-e input, 
+.ui-bar-e select, 
+.ui-bar-e textarea, 
+.ui-bar-e button,
+.ui-body-e,
+.ui-body-e input,
+.ui-body-e select,
+.ui-body-e textarea,
+.ui-body-e button,
+.ui-btn-up-e,
+.ui-btn-hover-e,
+.ui-btn-down-e,
+
+.ui-btn-active {
+	font-family: $font-family-light;
+}
+
+*, ::after, ::before {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-user-select: none;
+	-webkit-touch-callout: none;
+	-webkit-user-drag: none;
+	outline: 0;
+}
+
+html, body 
+{ 
+	width: (800px * $x-multiplier); 
+	height: (395px * $y-multiplier); 
+	font-size: $font-size * $font-multiplier; /*Need to do this for the 720 fonts otherwise the percents won't quite work*/
+}
+
+input, select, textarea {
+	-webkit-user-select: auto;
+}
+
+input[type="checkbox"] {
+	-webkit-appearance: none;
+	display: inline-block;
+	background: transparent no-repeat top left;
+	width: 30px * $x-multiplier;
+	height: 30px * $y-multiplier;
+	vertical-align: middle;
+	border-radius: 0;
+}
+input[type="checkbox"]:checked {
+	background-position-y: -30px * $y-multiplier;
+}
+
+.formCtrlButton {
+	display: inline-block;
+	min-width: 150px * $x-multiplier;
+	height: 58px * $y-multiplier;
+}
+.formCtrlButton .innerWrapper {
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+.formCtrlButton span.btnSegment {
+	position: absolute;
+	top: 0;
+	height: 100%;
+	width: 50%;
+	background: transparent no-repeat top left;
+}
+.formCtrlButton span.btnSegment.segmentLeft {
+	left: 0;
+	background-position: 0 0;
+	z-index: 0;
+}
+.formCtrlButton:active span.btnSegment.segmentLeft {
+	background-position: 0 (-66px * $y-multiplier);
+}
+.formCtrlButton span.btnSegment.segmentRight {
+	right: 0;
+	background-position: 100% 0;
+	z-index: 1;
+}
+.formCtrlButton:active span.btnSegment.segmentRight {
+	background-position: 100% (-66px * $y-multiplier);
+}
+.formCtrlButton span.ctrlLabel {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	vertical-align: middle;
+	color: #000000;
+	text-align: center;
+	line-height: 66px * $y-multiplier;
+	text-shadow: none;
+	font-size: 95%;
+	text-transform: uppercase;
+	z-index: 2;
+}
+.formCtrlButton:active span.ctrlLabel {
+	color: $text-color;
+}
+.formCtrlButton:active span.ctrlLabel.bold {
+	font-weight: bold;
+}
+
+.formCtrlDropdown {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	max-width: 353px * $x-multiplier;
+	height: 58px * $y-multiplier;
+	background: transparent no-repeat 0% 0%;
+	background-size: 100% 200%;
+	-webkit-background-clip: content-box !important;
+	-webkit-box-sizing: border-box;
+	padding-right: 10px * $x-multiplier;
+	left: -8px * $x-multiplier;
+}
+.formCtrlDropdown:active {
+	background-position: 0% 100%;
+}
+.formCtrlDropdown span.center {
+	position: absolute;
+	top: 0;
+	right: 10px * $x-multiplier;
+	bottom: 0;
+	left: 10px * $x-multiplier;
+	-webkit-background-clip: content-box;
+}
+.formCtrlDropdown:active span.center {
+	background-position: 50% (-58px * $y-multiplier);
+}
+.formCtrlDropdown span.ctrlLabel {
+	position: absolute;
+	top: 20px * $y-multiplier;
+	right: 15px * $x-multiplier;
+	bottom: 0px;
+	left: 15px * $x-multiplier;
+	overflow: hidden;
+	white-space: nowrap;
+	text-shadow: none;
+	color: #231f20;
+}
+.formCtrlDropdown:active span.ctrlLabel {
+	color: $text-color;
+}
+.formCtrlDropdown span.right {
+	position: absolute;
+	width: 10px * $y-multiplier;
+	height: 100%;
+	right: 0;
+	top: 0;
+	background: transparent no-repeat right top;
+}
+.formCtrlDropdown:active span.right {
+	background-position: 100% (-58px * $y-multiplier);
+}
+
+#bladeContainer {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background-color: rgba(0, 0, 0, 0);
+	visibility: hidden;
+}
+#bladeContainer.show {
+	visibility: visible;
+	background-color: rgba(0, 0, 0, .5);
+}
+#bladeContainer .modalBlade {
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: 91.25%;
+	background-color: #000000;
+	-webkit-transition: -webkit-transform .5s ease-in-out;
+	-webkit-transform-origin: 100% 0;
+	-webkit-transform: translate3d(100%, 0, 0);
+}
+#bladeContainer .modalBlade.show {
+	opacity: 1;
+	-webkit-transform: translate3d(0, 0, 0);
+}
+#bladeContainer .modalBladeEscapeSpace {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+#bladeContainer .modalBlade .innerWrapper {
+	position: relative;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	height: 100%;
+}
+#bladeContainer .modalBlade .innerWrapper .modalShadow {
+	position: absolute;
+	top: 0;
+	left: -10px * $x-multiplier;
+	height: 100%;
+	width: 10px * $x-multiplier;
+	background: transparent no-repeat 50% top;
+	background-size-y: 100%;
+}
+
+#bladeContainer .modalBlade .innerWrapper .body {
+	position: relative;
+	-webkit-box-flex: 1;
+	-webkit-box-sizing: border-box;
+	overflow: auto;
+	padding: (10px * $y-multiplier) (20px * $x-multiplier);
+	padding-bottom: 0;
+}
+#bladeContainer .modalBlade .innerWrapper .body .title {
+	margin: 0;
+	font-size: 250%;
+}
+#bladeContainer .modalBlade .innerWrapper .body label,
+#bladeContainer .modalBlade .innerWrapper .body .label {
+	display: inline-block;
+	text-shadow: none;
+	color: $text-color;
+	font-size: 152%;
+	font-weight: normal;
+	line-height: (45px * $y-multiplier);
+	vertical-align: middle;
+}
+#bladeContainer .modalBlade .innerWrapper .body label.inline,
+#bladeContainer .modalBlade .innerWrapper .body .label.inline {
+	margin-left: 20px * $x-multiplier;
+}
+#bladeContainer .modalBlade .innerWrapper .selectOptions {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	font-size: 325%;
+	font-weight: normal;
+	font-family: $font-family-default;
+	
+}
+#bladeContainer .modalBlade .innerWrapper .selectOptions li {
+	padding: (5px * $y-multiplier) (10px * $x-multiplier);
+	-webkit-transition: background-color .15s linear;
+	border-bottom: 1px solid #000000;
+}
+#bladeContainer .modalBlade .innerWrapper .selectOptions li:last-child {
+	border: none;
+}
+#bladeContainer .modalBlade .innerWrapper .selectOptions li.selected {
+	background-color: $active-background-color;
+	color: $active-text-color;
+}
+
+.modalForm {
+	display: none;
+}
+
+input[type="checkbox"] {
+	background-image: $personalization-btn-chkbx;
+}
+.formCtrlButton span.btnSegment {
+	background-image: $personalization-btn-default;
+}
+
+.formCtrlDropdown {
+	background-image: $personalization-drpdown-default;
+}
+.formCtrlDropdown span.right {
+	background-image: $personalization-drpdown-default;
+}
+#bladeContainer .modalBlade .innerWrapper .modalShadow {
+	background-image: $personalization-bg-modal-shadow;
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fileset name="rootfs.common.etc">
+  <directory name="var/etc" uid="root" gid="nto" mode="0755"/>
+  <directory name="var/etc/id" uid="upd" gid="upd" mode="0700"/>
+  <directory name="var/etc/system" uid="root" gid="nto" mode="0755"/>
+  <directory name="var/etc/system/config" uid="root" gid="nto" mode="0755"/>
+  <directory name="var/etc/system/config/network" uid="root" gid="nto" mode="0755"/>
+  <file name="var/etc/system/config/network/ax0.conf" uid="root" gid="nto" mode="0640"/>
+  <file name="var/etc/system/config/network/en0.conf" uid="root" gid="nto" mode="0640"/>
+  <file name="var/etc/system/config/network/fec0.conf" uid="root" gid="nto" mode="0640"/>
+  <file name="var/etc/system/config/network/dm0.conf" uid="root" gid="nto" mode="0640"/>
+  <file name="var/etc/system/config/network/tiw_sta0.conf" uid="root" gid="nto" mode="0640"/>
+  <directory name="var/etc/wifi_cert" uid="root" gid="nto" mode="0750"/>
+  <directory name="var/etc/wifi_cert/stage" uid="root" gid="nto" mode="0750"/>
+  <directory name="var/etc/wifi_cert/store" uid="root" gid="nto" mode="0750"/>
+  <directory name="var/etc/www" uid="root" gid="nto" mode="0750"/>
+  <directory name="var/etc/ssh" uid="root" gid="nto" mode="0755"/>
+  <file name="var/etc/ssh/sshd_config" uid="root" gid="nto" mode="0644"/>
+  <file name="var/etc/dhcpd_urndis.leases" uid="root" gid="nto" mode="0644"/>
+  <file name="var/etc/dhcpd_usbdnet.leases" uid="root" gid="nto" mode="0644"/>
+  <file name="var/etc/iked.conf" uid="root" gid="nto" mode="0644"/>
+  <file name="var/etc/dhclient.conf" uid="root" gid="nto" mode="0644"/>
+  <file name="var/etc/system/config/debug_host.conf" uid="root" gid="nto" mode="0644"/>
+  <file name="var/etc/system/config/bslauncher.cfg" uid="root" gid="nto" mode="0644"/>
+</fileset>

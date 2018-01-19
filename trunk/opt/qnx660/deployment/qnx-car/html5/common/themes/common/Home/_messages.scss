@@ -1,0 +1,64 @@
+/* $Id$ */
+
+.home-messages {
+	margin-top: 12px * $y-multiplier;
+	height: 188px * $y-multiplier;
+	background: $message-background;
+	background-size: 100%;
+}
+
+.home-messages .msglist {
+	overflow: hidden;
+	height: 147px * $y-multiplier;
+	padding: {
+		top: 	10px * $y-multiplier;
+		right: 	15px * $x-multiplier;
+		bottom: 10px * $y-multiplier;
+		left: 	15px * $x-multiplier;
+	}
+	
+	.x-dataview-inner {
+		overflow: hidden;
+	}
+
+	.message {
+		display: -webkit-box;
+		color: $text-color;
+		
+		background: {
+			position: 100% 50%;
+			repeat: no-repeat;
+		}
+		
+		padding: {
+			top: 	6px * $y-multiplier;
+			right: 	30px * $x-multiplier;
+			bottom: 6px * $y-multiplier;
+			left: 	0px * $x-multiplier;
+		}
+	
+		.msglist-sender {
+			-webkit-box-flex: 1;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			overflow: hidden;
+			padding-right: 18px * $x-multiplier;
+		}
+
+		&.message-email 	{ background-image: $message-icon-email; 		}
+		&.message-text 		{ background-image: $message-icon-text; 		}
+		&.message-voicemail { background-image: $message-icon-voicemail; 	}
+		&.message-twitter 	{ background-image: $message-icon-twitter;		}
+	}
+
+	.x-dataview-emptytext {
+		margin-top: 50px * $y-multiplier;
+		
+		.x-innerhtml {
+			display: -webkit-box;
+			-webkit-box-pack: center;
+			-webkit-box-align: center;
+			font-size: 150%;
+		}
+	}
+}

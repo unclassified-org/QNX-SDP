@@ -1,0 +1,19 @@
+#!/bin/sh
+
+emmc_device="/dev/emmc0"
+if [ "$#" -ne 1 ] && [ "$#" -ne 2 ]
+then
+        echo "Usage: load-emmc URL [DEV]"
+        echo "URL must be the local (file://) or remote (http://) URL of the compressed EMMC image."
+        echo "DEV (optional) is the path to the EMMC device (default: ${emmc_device})."
+        exit 1
+fi
+
+if [ "$#" -eq 2 ]
+then
+        emmc_device="$2"
+fi
+
+echo "Loading compressed image $1 to $emmc_device"
+echo "The progress bar may appear to hang during the process. This is normal."
+curl "-#" "$1" | gzip -d 2>/dev/null | dd "of=$emmc_device" bs=1048576

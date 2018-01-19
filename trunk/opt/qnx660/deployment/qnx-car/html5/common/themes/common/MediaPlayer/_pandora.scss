@@ -1,0 +1,178 @@
+/**
+ * Styles for the Pandora integrated player.
+ * @author lgreenway
+ *
+ * $Id$
+ */
+.pandora-logo {
+	background-image: $img-pandora-logo;
+	background-size: contain;
+	background-position: 50% 50% !important;
+}
+
+.pandora-loginDialog {
+	width: 450px * $x-multiplier;
+	height: 230px * $y-multiplier;
+	padding: (10px * $y-multiplier) (15px * $x-multiplier);
+	background-image: $img-pandora-login-dialog;
+	background: no-repeat -2px * $x-multiplier 0px;
+	border: 1px solid white;
+
+	&.x-form .x-scroll-container,
+	.x-body.x-scroll-view {
+		background: none;
+	}
+	
+	.pandora-logo {
+		width: 100%;
+		height: 26px * $y-multiplier;
+		padding: 0px 0px (5px * $y-multiplier) 0px;
+		margin-bottom: 10px * $y-multiplier;
+	}
+
+	.pandora-title {
+		font-size: 26px * $y-multiplier;
+		height: 42px * $y-multiplier;
+		text-align: center;
+		width: 100%;
+		color:$dialog-title-color;
+	}
+
+	.x-clear-icon {
+		background-image: $img-clear-icon;
+
+		&:active {
+			background-image: $img-clear-icon-over;
+		}
+	}
+
+	.x-field {
+		background: none;
+		margin-bottom: 5px * $y-multiplier;
+	}
+	
+	.x-form-label {
+		background: none;
+	}
+	
+	.x-field-input {
+		background-color: $background-color;
+		font-size: 150%;
+		border-radius: 24px * $y-multiplier;
+		height: 50px * $y-multiplier !important;
+		padding: (11px * $y-multiplier) 0px 0px (24px * $x-multiplier);
+		width: 100%;
+		
+		.x-input-text, .x-input-password {
+			color: $text-color;
+			padding: 0;
+			min-height: initial;
+			background-color: transparent;
+		}
+	}
+	
+	.x-button {
+		margin: (10px * $y-multiplier) (5px * $x-multiplier) 0px (5px * $x-multiplier);
+	}
+}
+
+.pandora-panel {
+	margin-top: 20px * $y-multiplier;
+	height: 300px * $y-multiplier;
+
+	.pandora-albumart {
+		height: 300px * $y-multiplier;
+		width: 300px * $y-multiplier;	// Keep as square
+		background-size: contain;
+		background-image: $img-default-audio-artwork;
+		margin: 0px (30px * $x-multiplier) 0px (20px * $x-multiplier);
+	}
+	
+	.pandora-feedbackcontrols {
+		margin-bottom: 20px * $y-multiplier;
+	
+		.x-button {
+			margin-right: 17px * $x-multiplier;
+		}
+		.x-button:last-child {
+			margin-right: 0px;
+		}
+	}
+
+	.pandora-logo {
+		width: 100%;
+		height: 22px * $y-multiplier;
+		margin-bottom: 5px;
+	}
+
+	.pandora-nowplaying {
+		width: 400px * $x-multiplier;
+	
+		/* Truncate long text */
+		.x-innerhtml {
+			overflow-x: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+		}
+	
+		.nowplaying-progressbar {
+			width: 300px * $x-multiplier;
+		}
+	}
+	
+	.button-thumbUp.x-button {
+		width: 130px * $x-multiplier;
+		height: 50px * $y-multiplier;
+		background-image: $img-btn-pandora-thumbs-up;
+		
+		&.x-button-pressing, &.x-button-pressed {
+			border: none;
+			background-position-x: 50%;
+		}
+		
+		&.x-item-disabled {
+			background-position-x: 100%;
+		}
+	}
+	
+	.button-thumbDown.x-button {
+		width: 130px * $x-multiplier;
+		height: 50px * $y-multiplier;
+		background-image: $img-btn-pandora-thumbs-down;
+		
+		&.x-button-pressing, &.x-button-pressed {
+			border: none;
+			background-position-x: 50%;
+		}
+		
+		&.x-item-disabled {
+			background-position-x: 100%;
+		}
+	}
+	
+	.button-twitter.x-button {
+		width: 130px * $x-multiplier;
+		height: 50px * $y-multiplier;
+		background-image: $img-btn-pandora-twitter;
+		
+		&.x-button-pressing, &.x-button-pressed {
+			border: none;
+			background-image: $img-btn-pandora-twitter-over;
+		}
+		
+		&.x-item-disabled {
+			background-image: $img-btn-pandora-twitter-disabled;
+		}
+	}
+	
+	.button-pauseSmall.x-button {
+		width: 80px * $y-multiplier;
+		height: 80px * $y-multiplier;
+		background-image: $img-btn-pandora-pause-small;
+		
+		&.x-button-pressing, &.x-button-pressed {
+			border: none;
+			background-position-x: 100%;
+		}
+	}
+}

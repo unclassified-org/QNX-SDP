@@ -1,0 +1,19 @@
+.keyboard .hide {
+    background-image: url(../images/hide_key.png), -webkit-linear-gradient(bottom, rgb(15, 15, 15) 23%, rgb(79, 79, 79) 62%, rgb(135, 135, 135) 87%) !important;
+}
+
+.keyboard .lang {
+    background-image: url(../images/lang_sel.png), -webkit-linear-gradient(bottom, rgb(15, 15, 15) 23%, rgb(79, 79, 79) 62%, rgb(135, 135, 135) 87%) !important;
+}
+
+.keyboard .delete {
+    background-image: url(../images/delete.png), -webkit-linear-gradient(bottom, rgb(15, 15, 15) 23%, rgb(79, 79, 79) 62%, rgb(135, 135, 135) 87%) !important;
+}
+
+.keyboard .left-shift {
+    background-image: url(../images/shift.png), -webkit-linear-gradient(bottom, rgb(15, 15, 15) 23%, rgb(79, 79, 79) 62%, rgb(135, 135, 135) 87%) !important;
+}
+
+#toNumeric2, #toNumeric1, #toSymbols1, #toSymbols2 {
+    background-image: url(../images/more.png), -webkit-linear-gradient(bottom, rgb(15, 15, 15) 23%, rgb(79, 79, 79) 62%, rgb(135, 135, 135) 87%) !important;
+}

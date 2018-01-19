@@ -1,0 +1,28 @@
+.def_button{
+  background-image:  url(../images/720p/btn_def.png);
+  background-size: 189px 84px;
+  height: 84px;
+  width: 189px;
+}
+
+.def_button:active{
+  background-image:  url(../images/720p/btn_def_ovr.png);
+}
+
+/** Sencha overrides */
+
+.x-button,.x-button-pressed{
+  -webkit-border-radius: 0px !important;
+}
+
+.x-button.button-large{
+  border-radius: 8px;
+  width: 210px;
+  height: 75px;
+  font-size: 24px;
+  background-image:  url(../images/720p/btn_lrg.png);
+}
+
+.x-button.button-large:active{
+  background-image:  url(../images/720p/btn_lrg_ovr.png);
+}

@@ -1,0 +1,246 @@
+usage="Usage: $0 [-B <size>] -D </dev device location, e.g. /dev/hd0> <install archive>
+ -B: <size> specify the size in MB of the OS partition (default: 1024)
+ <install archive> is an *uncompressed* tar archive of content to be copied to the disk that was just initialized
+"
+
+while getopts B:D: opt
+do
+	case "${opt:?}" in
+		B) OS_SIZE_MB=${OPTARG};;
+		D) DISKINIT_DISK=${OPTARG};;
+		\?)
+			echo "${usage:?}" >&2
+			exit 2
+			;;
+	esac
+done
+shift "$((OPTIND - 1))"
+
+if [ -z "$DISKINIT_DISK" ]
+then
+	echo "ERROR: Must provide disk device location with -D"
+	echo "${usage:?}" >&2
+	exit 3
+fi
+
+if [ "$#" -ne 1 ]
+then
+	echo "${usage:?}" >&2
+	exit 2
+fi
+INSTALL_ARCHIVE=$1
+
+if [ ! -f ${INSTALL_ARCHIVE} ]
+then
+	echo "ERROR: Could not find install archive '${INSTALL_ARCHIVE}'"
+	exit 4
+fi
+
+#create a folder to mount the various partitions to
+SCRATCH_FOLDER=/tmp/disk-init
+mkdir $SCRATCH_FOLDER
+
+: ${UA_PARTCODE=177}
+: ${UA_PARTSLOT=2}
+: ${UA_SIZE_MB=100}
+ua_part="${DISKINIT_DISK:?}t${UA_PARTCODE:?}"
+ua_mount=${SCRATCH_FOLDER:?}/ua
+
+: ${OS_PARTCODE=179}
+: ${OS_PARTSLOT=3}
+: ${OS_SIZE_MB=1024}
+os_part="${DISKINIT_DISK:?}t${OS_PARTCODE:?}"
+os_mount=${SCRATCH_FOLDER:?}/base
+
+: ${DATA_PARTCODE=178}
+: ${DATA_PARTSLOT=4}
+data_part="${DISKINIT_DISK:?}t${DATA_PARTCODE:?}"
+data_mount=${SCRATCH_FOLDER:?}
+
+cleanup () {
+	if [ -d "$os_mount" ] && umount "${os_mount:?}" || umount -f "${os_mount:?}"
+	then
+		echo "Unmounted OS filesystem"
+	fi
+
+	if [ -d "$ua_mount" ] && umount "${ua_mount:?}" || umount -f "${ua_mount:?}"
+	then
+		echo "Unmounted Update Agent filesystem"
+	fi
+
+	mount | grep $data_part >/dev/null 2>&1
+	if [ $? == 0 ]; then
+		umount ${data_mount?} && echo "Unmounted Data filesystem" || umount -f ${data_mount?}
+	else
+		echo "Did not find Data filesystem ($data_part) mounted at $data_mount"
+	fi
+
+	trap '' EXIT
+}
+trap cleanup EXIT
+
+fatal () {
+	IFS=' '
+	echo "$0 fatal error: $*" >&2
+	exit 1
+}
+
+pause_with_msg () {
+	# show a message and pause; CTRL+C drops to a shell
+	[ "$#" -eq 1 ] || set -- "usage: pause_with_msg TEXT"
+	
+	abort=0
+	trap 'abort=1' INT
+	echo "$1"
+	
+	delay=5
+	while [ "$delay" -gt 0 ]
+	do
+		echo -n " $delay"
+		if ! sleep 1
+		then
+			abort=1
+			break
+		fi
+		: $((delay -= 1))
+	done
+	echo ''
+	
+	[ "$abort" -eq 0 ] || fatal "script aborted"
+	trap - INT
+}
+
+del_fsys ()  # del_fsys DISK PARTCODE
+{
+	if [ "$#" -ne 3 ]
+	then
+		echo "del_fsys usage error" >&2
+		return 2
+	fi
+	
+	fdisk "${1:?}" delete -s "${3:?}" -t "${2:?}" \
+		|| fatal "failed to delete partition"
+	mount -e "$1"  # reread partition table
+}
+
+add_qnx6_fsys ()  # add_qnx6_fsys DISK PARTCODE [START_CYL END_CYL (default:-p 100%)]
+{
+	if [ "$#" -ne 3 -a "$#" -ne 5 ]
+	then
+		echo "add_qnx6_fsys usage error, num args is: $#" >&2
+		return 2
+	fi
+	
+	q6part="${1:?}t${2:?}"
+	
+	if [ $# -eq 3 ]
+	then
+		fdisk "$1" add -s "${3:?}" -t "$2" -p 100 \
+			|| fatal "failed to add partition"
+	else
+		fdisk "$1" add -s "${3:?}" -t "$2" -c"${4:?}","${5:?}" \
+            || fatal "failed to add partition"
+	fi
+	mount -e "$1"  # reread partition table
+	waitfor "$q6part" || fatal "couldn't find partition"
+	
+	## create and mount a QNX6 filesystem
+	
+	head -c 512 /dev/zero > "$q6part" \
+		|| fatal "failed to clear QNX6 header"
+	mkqnx6fs -q "$q6part" || fatal "mkqnx6fs failed"
+}
+
+## check whether the UA, OS and/or Data partitions exist
+
+waitfor "${DISKINIT_DISK:?}" || fatal "couldn't find disk"
+
+
+# We've been asked to initialize one or more of the partitions, give them a chance to bail
+# with ctrl+c. Current scheme is:
+#    - Create fixed-size Update Agent (UA) partition;
+#    - Create fixed-size OS partition;
+#    - Create variable-sized Data partition with remaining space on disk.
+
+pause_with_msg "Disk will be reformatted; press CTRL+C to abort"
+
+#Delete all partitions on the disk
+fdisk "${DISKINIT_DISK:?}" delete -a
+	
+# Update Partition
+echo "Initialising Update Agent (UA) partition..."
+totalCylinders=`fdisk "${DISKINIT_DISK:?}" query -T`
+freeCylinders=`fdisk "${DISKINIT_DISK:?}" query -f`
+startCylinder=$((totalCylinders-freeCylinders+1))
+endCylinder=$((startCylinder+UA_SIZE_MB-1))
+add_qnx6_fsys "${DISKINIT_DISK:?}" \
+		"${UA_PARTCODE:?}" "${UA_PARTSLOT:?}" \
+		"${startCylinder:?}" "${endCylinder}"
+echo "Created QNX6 filesystem for UA partition"
+
+# Base (read-only) Partition
+echo "Initialising OS partition..."
+totalCylinders=`fdisk "${DISKINIT_DISK:?}" query -T`
+freeCylinders=`fdisk "${DISKINIT_DISK:?}" query -f`
+startCylinder=$((totalCylinders-freeCylinders+1))
+endCylinder=$((startCylinder+OS_SIZE_MB-1))
+add_qnx6_fsys "${DISKINIT_DISK:?}" \
+		"${OS_PARTCODE:?}" "${OS_PARTSLOT:?}" \
+		"${startCylinder:?}" "${endCylinder}"
+echo "Created QNX6 filesystem for OS partition"
+
+# User Data Partition
+echo "Initialising DATA partition with remaining space..."
+add_qnx6_fsys "${DISKINIT_DISK:?}" \
+		"${DATA_PARTCODE:?}" "${DATA_PARTSLOT:?}"
+echo "Created QNX6 filesystem for Data partition"
+
+mount | grep -q ${ua_part:?}
+if [ $? -ne 0 -a -n "${ua_mount?}" ]
+then
+	mount -tqnx6 "${ua_part:?}" "${ua_mount?}" \
+		|| fatal "failed to mount UA QNX6 FS"
+	
+	if [ -n "${ua_mount?}" ]
+	then
+		# The cleanup function will unmount the FS when the script exits.
+		echo "UA QNX6 filesystem mounted read/write at ${ua_mount:?}"
+	fi
+else 
+	mount -uw "${ua_mount:?}" || fatal "failed to mount UA QNX6 FS R/W"
+fi
+
+mount | grep -q ${data_part:?}
+if [ $? -ne 0 -a -n "${data_mount?}" ]
+then
+	mount -tqnx6 "${data_part:?}" "${data_mount?}" \
+		|| fatal "failed to mount DATA QNX6 FS"
+	
+	if [ -n "${data_mount?}" ]
+	then
+		# The cleanup function will unmount the FS when the script exits.
+		echo "DATA QNX6 filesystem mounted read/write at ${data_mount:?}"
+	fi
+else 
+        mount -uw "${data_mount:?}" || fatal "failed to mount DATA QNX6 FS R/W"
+fi
+
+mount | grep -q ${os_part:?}
+if [ $? -ne 0 -a -n "${os_mount?}" ]
+then
+	mount -tqnx6 "${os_part:?}" "${os_mount:?}" \
+		|| fatal "failed to mount OS QNX6 FS"
+	
+	if [ -n "${os_mount?}" ]
+	then
+		# The cleanup function will unmount the FS when the script exits.
+		echo "OS QNX6 filesystem mounted read/write at ${os_mount:?}"
+	fi
+else 
+	mount -uw "${os_mount:?}" || fatal "failed to mount OS QNX6 FS R/W"
+fi
+
+#Now unpack our archive to the mount location
+tar xmvf $INSTALL_ARCHIVE -C $SCRATCH_FOLDER
+
+## done

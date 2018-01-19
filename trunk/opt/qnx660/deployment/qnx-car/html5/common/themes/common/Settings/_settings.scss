@@ -1,0 +1,137 @@
+/**
+    Copied from media player
+    by mlytvynyuk
+ * CSS common to multiple views
+ * @author mlapierre
+ *
+ * $Id: settings.css 4273 2012-09-25 17:51:22Z mlapierre@qnx.com $
+ */
+
+body {
+  font-size: $font-size * $x-multiplier;
+}
+
+.sheet-spacer, .sheet-spacer.x-button-pressing {
+  background: no-repeat right;
+  background-image: $sheet-spacer-background;
+}
+
+.sheet-spacer.sheet-spacer-1 {
+  width: 250px * $x-multiplier;
+}
+
+.sheet-spacer.sheet-spacer-2 {
+  width: 300px * $x-multiplier;
+}
+
+.sheet-sub-right {
+  box-shadow: -10px 0 20px $background-color;
+}
+
+.sheet-sub-right.sheet-sub-right-1 {
+  width: 550px * $x-multiplier;
+}
+
+.sheet-sub-right.sheet-sub-right-2 {
+  width: 500px * $x-multiplier;
+}
+
+/* generic button classes */
+.def_button {
+  position: absolute;
+  color: $button-text-color;
+  background-size: 126px * $x-multiplier 56px * $y-multiplier;
+  height: 56px * $y-multiplier;
+  width: 126px * $x-multiplier;
+  background-image: $btn-def-background;
+}
+
+.def_button:active, .def_button.active {
+  color: $active-button-text-color;
+  background-image: $btn-def-background-ovr;
+}
+
+.x-button-label {
+  font-size: 94%;
+  line-height: 19px * $y-multiplier !important;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* base class for any sheet in Settings */
+.def_sheet {
+  -webkit-transition: all 0.5s;
+  background-color: transparent !important;
+  z-index: 1;
+}
+
+/** Panel where all Settings controls added */
+.settings_panel {
+  height: 395px * $y-multiplier;
+  background-size: 600px * $x-multiplier 395px * $y-multiplier;
+  color: $text-color !important;
+  background-image: $settings-background;
+
+  /* overriding default HTML color for member of settings_panel*/
+  .x-html {
+	color: $text-color;
+	margin: 0;
+  }
+}
+
+/* Styles for tabbar */
+.settings_tabBar {
+  width: 200px * $x-multiplier !important;
+  background-color: $background-color !important;
+
+  .x-tab {
+	background-repeat: no-repeat;
+	background-position: 0 * $x-multiplier 6px * $y-multiplier;
+	width: 200px * $x-multiplier;
+	height: 50px * $y-multiplier;
+	padding-left: 40px * $x-multiplier;
+	font-weight: bold;
+	padding-top: 8px * $y-multiplier;
+  }
+
+  .x-tab .x-button-label {
+	width: 100px * $x-multiplier !important; /* purposely squeezed */
+	word-wrap: normal;
+	display: block;
+	white-space: normal;
+	text-align: left;
+	overflow: visible;
+	font-size: 106% !important;
+	margin: -2px * $y-multiplier;
+  }
+
+  .x-tab:active {
+	background-color: $active-background-color;
+	color: $active-text-color;
+  }
+
+  .x-tab-active {
+	background-color: $active-background-color;
+	color: $active-text-color;
+  }
+}
+
+.wrapLabel .x-innerhtml {
+  width: 200px * $x-multiplier;
+  word-wrap: normal;
+  display: block;
+  white-space: normal;
+  text-align: left;
+  overflow: visible;
+}
+
+.all-caps-label {
+  font-size: 125%;
+  color: $text-color;
+  text-transform: uppercase;
+}
+
+/*Position for the dialog Spinner*/
+.x-msgbox .x-icon {
+  margin: 0.5em * $y-multiplier 0.8em * $x-multiplier 0 0.5em * $x-multiplier;
+}

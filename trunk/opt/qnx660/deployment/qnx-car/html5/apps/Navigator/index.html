@@ -1,0 +1,46 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <meta charset="utf-8">
+        <meta name="viewport" content="user-scalable=no, target-densitydpi=device-dpi, width=device-width">
+
+		<link rel="stylesheet" href="css/ui-scaling.css" type="text/css">
+
+		<!-- qnx.theme stylesheet -->
+        <link rel="stylesheet" id="theme-css" app="Navigator" type="text/css" charset="utf-8" onload="onReady()">
+
+        <script src="local:///chrome/webworks.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Navigator Specific libraries -->
+        <script src="js/Navigator.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/EventDispatcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/Applications.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/Status.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/Tabs.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/Voice.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/HNM.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+        
+        <!-- 3rd party convenience library -->
+        <script src="thirdparty/xui.js" type="text/javascript"></script>
+
+        <script type="text/javascript">
+            // Typically, an app should start with the 'webworksready' event.  However, in this case,
+            // the Navigator uses dimensions from the stylesheets to layout its webviews.  The url of the stylesheet link
+            // is set by the theme extension so the onload event is used to start the app instead.
+            function onReady() {
+                QNXCAR2.init();
+            }
+        </script>
+
+        <title>QnxCar2 Navigator</title>
+    </head>
+    <body>
+    	<div id="dummyElements">
+	        <div class="navBar"></div>
+	        <div class="statusBar"></div>
+            <div class="keyboard"></div>
+	    </div>
+        <div id="tablist"></div>
+    </body>     
+</html>

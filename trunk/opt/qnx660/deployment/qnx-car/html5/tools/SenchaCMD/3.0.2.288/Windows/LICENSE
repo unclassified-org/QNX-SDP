@@ -1,0 +1,113 @@
+Sencha Cmd
+Copyright (c) 2012 Sencha Inc. All rights reserved.
+
+SENCHA Cmd LICENSE v3.0
+
+1. By using and/or opening any packaging enclosing this software,
+expanding any compressed file containing this software or by utilizing
+this software, you agree to be bound by the terms of this license
+agreement.
+
+2. The software, documentation and any other materials accompanying this
+License whether on disk, in read only memory, on any other media or in
+any other form (collectively the "Software") are licensed, not sold, to
+you by Sencha Inc., as well as its respective members, agents, 
+directors, officers, servants and representatives, if any (collectively
+"Licensor") for use only under the terms of this License, and Licensor
+reserves all rights not expressly granted to you. The rights granted
+herein are limited to Licensor's intellectual property rights in the 
+Software and do not include any other patents or intellectual property rights. 
+
+3. Subject to your compliance with the terms and conditions set forth
+herein, Licensor hereby grants you a limited, revocable, non-exclusive,
+non-transferable, non-sublicensable license to install and use the 
+Software for the sole purpose of accessing, opening and using the
+capabilities and services enabled via the Software.
+
+4. This license must be included with all copies of the 
+Software, and may not be modified from its original format 
+as created by the Licensor. The Software may not be 
+distributed subject to any other license.
+
+5. This License is effective until terminated. Your rights 
+under this License will terminate automatically without 
+notice from Licensor or if you fail to comply with any 
+term(s) of this License. Upon the termination of this 
+License, you shall cease all use of the Software and destroy 
+all copies of it, whether full or partial.
+
+6. Selling or charging a fee for the Software is prohibited.
+
+7. The Software, in whole or in part, may not be 
+incorporated with or into any other software product without 
+written permission from Licensor.
+
+8. You expressly acknowledge and agree that use of the 
+software is at your sole risk and that the entire risk as to 
+satisfactory quality, performance, accuracy and effort is 
+with you. Licensor does not warrant against interference 
+with your enjoyment of the software, that the functions 
+contained in the software will meet your requirements, that 
+the operation of the software will be uninterrupted or 
+error-free, or that defects in the software will be 
+corrected. Should the software prove defective, you assume 
+the entire cost of all necessary servicing, repair or 
+correction.
+
+9. THE SOFTWARE IS PROVIDED "AS IS," WITHOUT WARRANTY OF ANY 
+KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE 
+WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR 
+PURPOSE AND NONINFRINGEMENT. No oral or written advice given 
+by Licensor or by an authorized representative of Licensor 
+shall create a warranty.
+
+10. TO THE EXTENT NOT PROHIBITED BY LAW, IN NO EVENT SHALL 
+THE LICENSOR BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER 
+LIABILITY, INCLUDING BUT NOT LIMITED TO PERSONAL INJURY, OR 
+ANY INCIDENTAL, SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES 
+WHATSOEVER, INCLUDING WITHOUT LIMITATION, DAMAGES FOR LOSS 
+OF PROFITS, LOSS OF DATA, BUSINESS INTERRUPTION OR ANY OTHER 
+COMMERCIAL DAMAGES OR LOSSES, ARISING OUT OF OR RELATED TO 
+YOUR USE OR INABILITY TO USE THE SOFTWARE, HOWEVER CAUSED, 
+REGARDLESS OF THE THEORY OF LIABILITY (CONTRACT, TORT OR 
+OTHERWISE) AND EVEN IF LICENSOR HAS BEEN ADVISED OF THE 
+POSSIBILITY OF SUCH DAMAGES.
+
+11. This License constitutes the entire agreement between 
+the parties with respect to the use of the Software licensed 
+hereunder and supersedes all prior or contemporaneous 
+understandings regarding such subject matter. No amendment 
+to or modification of this License will be binding unless in 
+writing and signed by Licensor. Any translation of this 
+License is done for local requirements and in the event of a 
+dispute between the English and any non-English versions, 
+the English version of this License shall govern.
+
+12. This License shall be construed and governed in accordance with the
+laws of California (regardless of its conflict of law provisions) and
+the competent courts in California shall have exclusive jurisdiction
+over any dispute arising out of or related to this License. Failure of
+Licensor to enforce any rights or to take action against you in the
+event of any breach hereunder shall not be deemed a waiver of such
+rights or of subsequent actions in the event of future breaches. The
+application of the United Nations Convention of Contracts for the
+International Sale of Goods is expressly excluded.
+
+13. If for any reason a court of competent jurisdiction 
+finds any provision, or portion thereof, to be 
+unenforceable, the remainder of this License shall continue 
+in full force and effect.
+
+14.  The following third party software may included within
+the Software:
+
+Qt (licensed commercially for use)
+Site: http://qt.nokia.com/products/
+License: http://qt.digia.com/us/license-agreements/
+
+YUI Compressor (BSD licensed) included in Sencha Command build tools
+site: http://developer.yahoo.com/yui/compressor/
+license: http://developer.yahoo.com/yui/license.html 
+
+
+

@@ -1,0 +1,44 @@
+/* $Id$ */
+
+.home-nav {
+	margin-top: 10px * $y-multiplier;
+	height: 265px * $y-multiplier;
+	background: $navigation-background;
+	background-size: 100%;
+}
+
+.nav-cardlayout {
+	height: 223px * $y-multiplier;
+}
+
+.nav-title {
+	text-align: left;
+	padding-left: 10px * $x-multiplier;
+}
+
+.x-img.nav-image {
+	width: 260px * $x-multiplier;
+	height: 220px * $y-multiplier;
+	background-position: center;
+}
+
+.nav-distance {
+	font-size: 225%;
+	padding-top: 90px * $y-multiplier;
+}
+
+.nav-disabled {
+	height: 223px * $y-multiplier;
+	background: $navigation-background-disabled;
+	background-size: 100%;
+	top: round(-3px * $y-multiplier);
+}
+
+.nav-enabled {
+	height: 265px * $y-multiplier;
+	background: transparent;
+}
+
+.x-layout-card-item {
+	background-color: transparent;
+}

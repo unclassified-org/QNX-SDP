@@ -1,0 +1,167 @@
+/**
+ * CSS common to multiple views
+ * @author mlapierre
+ *
+ * $Id: app.css 4273 2012-09-25 17:51:22Z mlapierre@qnx.com $
+ */
+body {
+	font-size: $font-size * $x-multiplier;
+}
+
+.comm-panel {
+	width: 800px * $x-multiplier;
+	height: 395px * $y-multiplier;
+	background-image: $app-background;
+	background-repeat: no-repeat;
+}
+
+.comm-panel	> .x-body {
+	padding-top: 44px * $y-multiplier;
+}
+
+.x-button,
+.x-button-pressing {
+	border: none !important;
+	background-color: transparent !important;
+	-webkit-box-shadow: none !important;
+	-webkit-border-radius: 0px !important;
+}
+
+.x-center, .x-centered {
+	height: 395px * $y-multiplier;
+}
+
+/** Call Status View  */
+.x-panel.x-floating.callStatusView {
+	-webkit-box-shadow: $active-background-color 0px (4px * $y-multiplier) (15px * $x-multiplier);
+	-webkit-border-radius: 0;
+	border-radius: 0;
+}
+
+.callStatusView {
+	display: block;
+	width: 500px * $x-multiplier;
+	height: 350px * $y-multiplier;
+	color: $text-color;
+	padding: none;
+	background-color: $background-color !important;
+	border: $call-border-color solid thin; 
+
+	.x-body {
+		background: none !important;
+	}
+	.x-panel-inner {
+		padding: (20px * $y-multiplier) (25px * $x-multiplier) !important;
+	}
+	.x-inner {
+		background: none !important;
+	}
+
+	.x-innerhtml {
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+
+	#callStatus {
+		font-size: 187.5%;
+		margin-bottom: 10px * $y-multiplier;
+	}
+
+	#duration {
+		font-size: 200%;
+		text-align: right;
+	}
+
+	#callId {
+		height: 80px * $y-multiplier;
+		font-size: 325%;
+		line-height: 80px * $y-multiplier;
+		text-align: center;
+	}
+
+	.buttons {
+		height: 60px * $y-multiplier;
+
+		.x-button {
+			margin: (0px * $y-multiplier) (10px * $x-multiplier);
+		}
+		
+		.x-button.x-item-disabled {
+			opacity: 0.7;
+			pointer-events: none;
+		}
+	}
+		
+	#acceptBt,
+	#declineBt,
+	#hangupBt {
+		width: 160px * $x-multiplier;
+		height: 60px * $y-multiplier !important;
+		background-size: 100%;
+	}
+
+	.contactInfo {
+		height: 130px * $y-multiplier;
+
+		#contactLogo {
+			width: 130px * $x-multiplier;
+			height: 130px * $y-multiplier;
+			background-size: auto 100%;
+			background-position: 50% 50%;
+			background-repeat: no-repeat;
+			margin-right: 20px * $x-multiplier;
+		}
+
+		.infoLabel {
+			width: 300px * $x-multiplier;
+		}
+
+		#contactName {
+			font-size: 225%;
+		}
+
+		#contactCompany, 
+		#contactJobTitle {
+			font-size: 150%;
+		}
+	}
+	#contactLogo {
+		background-image: $contact-details-default;
+	}
+	#acceptBt {
+		background-image: $accept-button;
+	}
+
+	#acceptBt:active {
+		background-image: $accept-button-over;
+	}
+
+	#acceptBt.x-item-disabled {
+		background-image: $accept-button-disabled;
+	}
+
+	#declineBt {
+		background-image: $decline-button;
+	}
+
+	#declineBt:active {
+		background-image: $decline-button-over;
+	}
+
+	#declineBt.x-item-disabled {
+		background-image: $decline-button-disabled;
+	}
+
+	#hangupBt {
+		background-image: $hangup-button;
+	}
+
+	#hangupBt:active {
+		background-image: $hangup-button-over;
+	}
+
+	#hangupBt.x-item-disabled {
+		background-image: $hangup-button-disabled;
+	}
+}

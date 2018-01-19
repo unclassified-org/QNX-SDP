@@ -1,0 +1,77 @@
+.radiotunerdial
+{
+	position: relative;
+	top: -44px * $y-multiplier;
+	left: -10px * $x-multiplier;
+	width: 343px * $x-multiplier;
+	height: 395px * $y-multiplier;
+	
+	z-index: 1;
+}
+
+.radiotunerdial .dial
+{
+	height: 720px * $y-multiplier;
+	width: 720px * $x-multiplier;
+	position: absolute;
+	top: -162px * $y-multiplier;
+	left: -358px * $x-multiplier;
+	background: $img-radio-dial no-repeat 0px 0px;
+	overflow: hidden;
+	z-index: 1;
+	pointer-events: none;
+}
+
+.radiotunerdial .overlay
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 360px * $x-multiplier;
+	margin-top: 0;
+	height: 100%;
+	background: $img-radio-dial-overlay no-repeat 0px 27%;
+	z-index: 3;
+}
+
+.radiotunerdial .frequencyListContainer
+{
+	position: absolute;
+	z-index: 4;
+	left: 40px * $x-multiplier;
+	top: 50%;
+	right: 0px;
+
+	margin: (-36px * $y-multiplier) 0 0 0;
+	padding: 0px 0px 0px (5px * $x-multiplier);
+
+	width: 186px * $x-multiplier;
+	height: 70px * $y-multiplier;
+
+	overflow: hidden;
+}
+
+.radiotunerdial ul.frequencies
+{
+	position: absolute;
+	top: -5px * $y-multiplier;
+
+	width: 176px * $x-multiplier;
+
+	margin: 0;
+	padding: 0;
+
+	list-style-type: none;
+	
+	-webkit-perspective: 1000;
+}
+
+.radiotunerdial ul.frequencies li
+{
+	font-size: 375%;
+	color: #FFFFFF;
+	height: 72px * $y-multiplier;
+	line-height: 72px * $y-multiplier;
+	padding-left: 5px * $x-multiplier;
+	-webkit-perspective: 1000;
+}

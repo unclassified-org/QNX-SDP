@@ -1,0 +1,5 @@
+#!/bin/sh
+
+DIRNAME="$(dirname $(which $0))"
+export LD_LIBRARY_PATH="$DIRNAME/phantom/lib"
+exec "$DIRNAME/phantom/bin/phantomjs" $*

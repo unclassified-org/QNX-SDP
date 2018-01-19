@@ -1,0 +1,28 @@
+[+script] .script = {
+	waitfor /dev/i2c0 5
+	waitfor /dev/screen
+
+	#######################################################################
+	## Video Capture Test from video input
+	#######################################################################
+	[pri=25r]rearview-camera -pipeline=4 -bsize=720x240 -csize=720x240 -zorder=-1 -parent-zorder=-1 -quit-if-no-video &
+        /proc/boot/timestamp "REARVIEW CAMERA DONE" &
+}
+
+[perms=0755]
+
+#############################################
+# Video Capture Test
+#############################################
+libcapture-board-j5-evm.so
+libcapture-soc-j5.so
+[type=link] libcapture.so=libcapture.so.1
+libcapture-decoder-tvp5158.so
+[type=link] /proc/boot/libcapture.so.1=/proc/boot/libcapture-board-j5-evm.so
+
+rearview-camera
+
+
+
+
+

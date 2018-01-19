@@ -1,0 +1,113 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: $containerBackground;
+    overflow: hidden;
+    font-size: $font-size * $font-multiplier;
+    -webkit-user-select: none;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 4px * $y-multiplier 4px * $y-multiplier;
+    width:100%;
+}
+
+tr {
+    text-align: center;
+}
+
+td {
+    background-position: center;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    height: 42px * $y-multiplier;
+    width:10%;
+}
+
+td:active {
+  background: $activeBackground;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.letter {
+    background: $letterBackground;
+    color: $active-button-text-color;
+}
+
+table.uppercase td.letter {
+    text-transform: uppercase;
+}
+
+.service {
+    background: $serviceBackground;
+    color: $active-button-text-color;
+}
+
+.number {
+    background: $numberBackground;
+    color: $active-text-color;
+}
+
+#deleteAlpha,
+#deleteNum,
+#deleteSym {
+    background-image: $deleteKey, $specialBackground;
+}
+
+#deleteAlpha:active,
+#deleteNum:active,
+#deleteSym:active {
+  background-image: $deleteKey, $activeBackground;
+}
+
+#leftShift,
+#rightShift {
+    background-image: $shiftKey, $specialBackground;
+}
+
+#leftShift:active,
+#rightShift:active {
+  background-image: $shiftKey, $activeBackground;
+}
+
+#leftMoreNum,
+#leftMoreSym,
+#rightMoreNum,
+#rightMoreSym {
+    background-image: $moreKey, $specialBackground;
+}
+
+#leftMoreNum:active,
+#leftMoreSym:active,
+#rightMoreNum:active,
+#rightMoreSym:active {
+  background-image: $moreKey, $activeBackground;
+}
+
+#hideAlpha,
+#hideNum,
+#hideSym {
+    background-image: $hideKey, $specialBackground;
+}
+
+#hideAlpha:active,
+#hideNum:active,
+#hideSym:active {
+  background-image: $hideKey, $activeBackground;
+}
+
+#language {
+    background-image: $langSelKey, $specialBackground;
+}
+
+#language:active {
+  background-image: $langSelKey, $activeBackground;
+}
+
+

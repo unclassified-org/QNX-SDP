@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<index>
+<entry keyword="configuring mm-pnp">
+<topic href="topic/mmautosync_config.html#mmautosync_config" title="Configuring mm-pnp"/>
+</entry>
+<entry keyword="displaying options of multimedia test utilities">
+<topic href="topic/using.html#using" title="Using the multimedia test utilities"/>
+</entry>
+<entry keyword="entering commands in interactive mode of mmcli">
+<topic href="topic/mmcli_session.html#mmcli_session" title="mmcli interactive sessions"/>
+</entry>
+<entry keyword="executing test scripts with mmcli">
+<topic href="topic/mmcli_script.html#mmcli_script" title="mmcli test scripts"/>
+</entry>
+<entry keyword="mm-pnp ">
+<entry keyword="child threads">
+<topic href="topic/mmautosync_process2.html#mmautosync_process2" title="Device monitoring, synchronization, and playback"/>
+</entry>
+<entry keyword="command line">
+<topic href="topic/mmautosync_command.html#mmautosync_command" title="mm-pnp command line"/>
+</entry>
+<entry keyword="configuration file">
+<topic href="topic/mmautosync_config.html#mmautosync_config" title="Configuring mm-pnp"/>
+</entry>
+<entry keyword="description">
+<topic href="topic/mmautosync_command.html#mmautosync_command" title="mm-pnp command line"/>
+</entry>
+<entry keyword="device monitoring, synchronization, and playback process">
+<topic href="topic/mmautosync_process2.html#mmautosync_process2" title="Device monitoring, synchronization, and playback"/>
+</entry>
+<entry keyword="initialization and termination activities">
+<topic href="topic/mmautosync_process1.html#mmautosync_process1" title="Initialization and termination activities"/>
+</entry>
+<entry keyword="main thread">
+<topic href="topic/mmautosync_process1.html#mmautosync_process1" title="Initialization and termination activities"/>
+</entry>
+<entry keyword="options">
+<topic href="topic/mmautosync_command.html#mmautosync_command" title="mm-pnp command line"/>
+</entry>
+<entry keyword="overview">
+<topic href="topic/mmautosync_intro.html#mmautosync_intro" title="mm-pnp"/>
+</entry>
+<entry keyword="source code">
+<topic href="topic/mmautosync_intro.html#mmautosync_intro" title="mm-pnp"/>
+</entry>
+</entry>
+<entry keyword="mmcli">
+<entry keyword="playing a video file">
+<topic href="topic/mmcli_playback_examples.html#mmcli_playback_examples" title="Using mmcli to play media files"/>
+</entry>
+<entry keyword="playing an audio file">
+<topic href="topic/mmcli_playback_examples.html#mmcli_playback_examples" title="Using mmcli to play media files"/>
+</entry>
+</entry>
+<entry keyword="mmcli ">
+<entry keyword="command line">
+<topic href="topic/mmcli_command.html#mmcli_command" title="mmcli command line"/>
+</entry>
+<entry keyword="description">
+<topic href="topic/mmcli_command.html#mmcli_command" title="mmcli command line"/>
+</entry>
+<entry keyword="interactive session example">
+<topic href="topic/mmcli_session.html#mmcli_session" title="mmcli interactive sessions"/>
+</entry>
+<entry keyword="interactive sessions">
+<topic href="topic/mmcli_session.html#mmcli_session" title="mmcli interactive sessions"/>
+</entry>
+<entry keyword="keywords">
+<topic href="topic/mmcli_language.html#mmcli_language" title="mmcli language"/>
+</entry>
+<entry keyword="language">
+<topic href="topic/mmcli_language.html#mmcli_language" title="mmcli language"/>
+</entry>
+<entry keyword="options">
+<topic href="topic/mmcli_command.html#mmcli_command" title="mmcli command line"/>
+</entry>
+<entry keyword="overview">
+<topic href="topic/mmcli_intro.html#mmcli_intro" title="mmcli"/>
+</entry>
+<entry keyword="test script example">
+<topic href="topic/mmcli_script.html#mmcli_script" title="mmcli test scripts"/>
+</entry>
+<entry keyword="test scripts">
+<topic href="topic/mmcli_script.html#mmcli_script" title="mmcli test scripts"/>
+</entry>
+</entry>
+<entry keyword="mmrplay">
+<entry keyword="playing a playlist">
+<topic href="topic/mmrplay_examples.html#mmrplay_examples" title="Playback examples"/>
+</entry>
+<entry keyword="playing a video file">
+<topic href="topic/mmrplay_examples.html#mmrplay_examples" title="Playback examples"/>
+</entry>
+<entry keyword="playing an audio file">
+<topic href="topic/mmrplay_examples.html#mmrplay_examples" title="Playback examples"/>
+</entry>
+<entry keyword="playing media files on local devices">
+<topic href="topic/mmrplay_examples.html#mmrplay_examples" title="Playback examples"/>
+</entry>
+<entry keyword="recording audio content">
+<topic href="topic/mmrplay_examples.html#mmrplay_examples" title="Playback examples"/>
+</entry>
+</entry>
+<entry keyword="mmrplay ">
+<entry keyword="command line">
+<topic href="topic/mmrplay_command.html#mmrplay_command" title="mmrplay command line"/>
+</entry>
+<entry keyword="description">
+<topic href="topic/mmrplay_command.html#mmrplay_command" title="mmrplay command line"/>
+</entry>
+<entry keyword="options">
+<topic href="topic/mmrplay_command.html#mmrplay_command" title="mmrplay command line"/>
+</entry>
+<entry keyword="overview">
+<topic href="topic/mmrplay_intro.html#mmrplay_intro" title="mmrplay"/>
+</entry>
+</entry>
+<entry keyword="multimedia test utilities">
+<entry keyword="binaries included in the installer package">
+<topic href="topic/utilities.html#utilities" title="Multimedia test utilities"/>
+</entry>
+<entry keyword="listing">
+<topic href="topic/utilities.html#utilities" title="Multimedia test utilities"/>
+</entry>
+</entry>
+<entry keyword="multimedia test utilities ">
+<entry keyword="overview">
+<topic href="topic/overview.html#overview" title="Role of the Multimedia Test Utilities"/>
+</entry>
+<entry keyword="role in app development">
+<topic href="topic/overview.html#overview" title="Role of the Multimedia Test Utilities"/>
+</entry>
+</entry>
+<entry keyword="running mmrplay">
+<topic href="topic/mmrplay_command.html#mmrplay_command" title="mmrplay command line"/>
+</entry>
+<entry keyword="starting mm-pnp">
+<topic href="topic/mmautosync_command.html#mmautosync_command" title="mm-pnp command line"/>
+</entry>
+<entry keyword="starting mmcli">
+<topic href="topic/mmcli_command.html#mmcli_command" title="mmcli command line"/>
+</entry>
+<entry keyword="using mmcli instead of other components">
+<topic href="topic/mmcli_vs_components.html#mmcli_vs_components" title="Using mmcli instead of other components"/>
+</entry>
+<entry keyword="using mmrplay instead of mm-renderer">
+<topic href="topic/mmrplay_vs_mm-renderer.html#mmrplay_vs_mmrenderer" title="Using mmrplay instead of mm-renderer"/>
+</entry>
+<entry keyword="using the multimedia test utilities">
+<topic href="topic/using.html#using" title="Using the multimedia test utilities"/>
+</entry>
+</index>

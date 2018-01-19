@@ -1,0 +1,98 @@
+/* $Id$ */
+
+.home-media {
+	margin-top: 10px * $x-multiplier;
+	height: 175px * $y-multiplier;
+	background: $media-background;
+}
+
+.media-albumart {
+	width: 108px * $y-multiplier;	// Maintain square aspect ratio
+	height: 108px * $y-multiplier;
+	margin: {
+		top: 	13px * $x-multiplier;
+		right: 	10px * $y-multiplier;
+		bottom: 13px * $x-multiplier;
+		left: 	10px * $y-multiplier;
+	};
+	background-color: black;
+	background-image: $media-default-artowrk;
+	background-size: contain;
+}
+
+.media-rightcol {
+	padding-top: 9px * $y-multiplier;
+	width: 225px * $x-multiplier;
+}
+
+.media-nowplaying {
+	background-color: transparent;
+	
+	.x-innerhtml {
+		overflow-x: hidden;
+		text-overflow: ellipsis;
+	}
+}
+
+.media-nothingplaying {
+	font-size: 150%;
+	padding: {
+		top: 	30px * $x-multiplier;
+		right: 	20px * $y-multiplier;
+		bottom: 30px * $x-multiplier;
+		left: 	20px * $y-multiplier;
+	};
+	background-color: transparent;
+}
+
+.media-source {
+	background-repeat: no-repeat;
+	background-position: left center;
+	font: {
+		size: 150%;
+		weight: bold;
+	}
+	padding: {
+		left: 30px * $x-multiplier;
+	};
+	white-space: nowrap;
+}
+
+.media-songtitle {
+	line-height: 125%;
+	font-weight: bold;
+	white-space: nowrap;
+}
+
+.media-artist {
+	line-height: 135%;
+	font-size: 75%;
+	white-space: nowrap;
+}
+
+.media-album {
+	line-height: 135%;
+	font-size: 75%;
+	font-weight: bold;
+	white-space: nowrap;
+}
+
+.media-progressbar {
+	width: 220px * $x-multiplier;
+}
+
+.media-progresstime {
+	font-size: 75%;
+	font-weight: bold;
+}
+
+.progressbar {
+	height: 12px * $y-multiplier;
+	margin: (3px * $y-multiplier) 0 0 0;
+	background: $progressbar-background;
+}
+
+.progressbar-highlight {
+	height: 12px * $y-multiplier;
+	background: $progressbar-highlight-background;
+}

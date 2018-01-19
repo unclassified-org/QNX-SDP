@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fileset name="basefs.common.scripts">
+  <directory name="scripts" uid="root" gid="nto" mode="0750"/>
+  <file name="scripts/bluetooth.sh" uid="root" gid="nto" mode="0750"/>
+  <file name="scripts/env.sh" uid="root" gid="nto" mode="0750"/>
+  <file name="scripts/env.override.board" uid="root" gid="nto" mode="0750"/>
+  <file name="scripts/env.override.variant" uid="root" gid="nto" mode="0750"/>
+  <file name="scripts/netconfig.sh" uid="root" gid="nto" mode="0750"/>
+  <file name="scripts/setdate.sh" uid="root" gid="nto" mode="0750"/>
+  <file name="scripts/shutdown.sh" uid="root" gid="nto" mode="0750"/>
+  <file name="scripts/sysinfo" uid="root" gid="nto" mode="0750"/>
+  <file name="scripts/update_nav.sh" uid="root" gid="nto" mode="0750"/>
+  <file name="scripts/setup-pps.sh" uid="root" gid="nto" mode="0750"/>
+  <file name="scripts/ethernet.sh" uid="root" gid="nto" mode="0750"/>
+  <file name="scripts/ethernet-variant.sh" uid="root" gid="nto" mode="0750"/>
+  <file name="scripts/wifi-variant.sh" uid="root" gid="nto" mode="0750"/>
+  <file name="scripts/dlna-start.sh" uid="root" gid="nto" mode="0750"/>
+  <file name="scripts/hid-start.sh" uid="root" gid="nto" mode="0750"/>
+  <file name="scripts/calib-start.sh" uid="root" gid="nto" mode="0750"/>
+  <file name="scripts/prepare_self_update.sh" uid="root" gid="nto" mode="0750"/>
+  <file name="scripts/post_self_update.sh" uid="root" gid="nto" mode="0750"/>
+  <file name="scripts/ssh-start.sh" uid="root" gid="nto" mode="0750"/>
+  <file name="scripts/settime-variant.sh" uid="root" gid="nto" mode="0750"/>
+  <file name="scripts/mixer-volume-init.sh" uid="root" gid="nto" mode="0750"/>
+  <file name="scripts/tmpfs_init.sh" uid="root" gid="nto" mode="0750"/>
+  <file name="scripts/qdb_init.sh" uid="root" gid="nto" mode="0750"/>
+  <file name="scripts/.run-startup.ksh" uid="root" gid="nto" mode="0640"/>
+  <file name="scripts/.run-pps.ksh" uid="root" gid="nto" mode="0640"/>
+  <file name="scripts/prepareDisk" uid="root" gid="nto" mode="0755"/>
+</fileset>

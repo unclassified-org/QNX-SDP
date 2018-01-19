@@ -1,0 +1,40 @@
+/*url to the common directory*/
+$commonDir:"platform:///apps/common";
+
+.x-msgbox.x-floating{
+	padding: 5px 15px 5px 15px;
+	background-image:  url(#{$commonDir}/img/720p/dialog_bkgrd.png);
+	font-size: 1.5em;
+}
+
+.x-msgbox.x-floating .x-msgbox-buttons{
+	border: 0px;
+	border-radius: 0px;
+}
+
+.x-msgbox.x-floating .x-msgbox-title{
+	height: 56px;
+	font-size: 36px;
+}
+
+.x-msgbox.x-floating .x-msgbox-buttons .x-button{
+	font-size: 1.5em;
+	background-image:  url(#{$commonDir}/img/720p/btn_blue_def.png);
+	margin-top: 11px;
+	width: 189px;
+	height: 84px;
+}
+
+.x-msgbox.x-floating .x-msgbox-buttons .x-button.x-button-pressing{
+	background-image:  url(#{$commonDir}/img/720p/btn_grey_def.png);
+}
+.x-msgbox .x-field-input{
+    font-size: 36px;
+	border-radius: 36px;
+	height: 63px !important;
+	padding: 6px 0px 0px 36px;
+}
+.x-clear-icon{
+    background-image: url(#{$commonDir}/img/search_del.png) !important;
+    background-repeat: no-repeat;
+}

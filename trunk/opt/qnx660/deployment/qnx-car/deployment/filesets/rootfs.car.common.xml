@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fileset name="rootfs.car.common">
+  <!-- include the root directory permissions in the tar file -->
+  <directory name="." uid="root" gid="nto" mode="0755"/>
+
+  <!-- directories used by mktar -->
+  <directory name="appinfo" uid="root" gid="nto" mode="0755"/>
+  <directory name="appinfo/menuentry" uid="root" gid="nto" mode="0755"/>
+
+  <!-- elements needed by dumper-->
+  <directory name="var/dumper" uid="root" gid="nto" mode="0777"/>
+
+  <!-- Required PPS object for AudioControl and ServiceSheduler and Others -->
+  <directory name="var/pps/servicedata" uid="root" gid="nto" mode="0755"/>
+  <file name="var/pps/servicedata/schedule" uid="root" gid="nto" mode="0666"/>
+  <file name="var/pps/services/audio/mixer" uid="root" gid="nto" mode="0666"/>
+  <file name="var/pps/system/navigator/windowgroup" uid="root" gid="nto" mode="0666"/>
+  <file name="var/pps/system/navigator/windowparams" uid="root" gid="nto" mode="0666"/>
+  <file name="var/pps/radio/command" uid="root" gid="nto" mode="0777"/>
+  <file name="var/pps/radio/status" uid="root" gid="nto" mode="0777"/>
+  <file name="var/pps/radio/ti_control" uid="root" gid="nto" mode="0777"/>
+  <file name="var/pps/radio/ti_rds" uid="root" gid="nto" mode="0777"/>
+  <file name="var/pps/radio/ti_status" uid="root" gid="nto" mode="0777"/>
+  <file name="var/pps/radio/tuners" uid="root" gid="nto" mode="0777"/>
+
+  <!-- Required PPS directories and object for mmsync and mmsyncclient -->
+  <directory name="var/pps/qnx/" uid="root" gid="nto" mode="0755"/>
+  <directory name="var/pps/qnx/qdb" uid="root" gid="nto" mode="0755"/>
+  <directory name="var/pps/qnx/qdb/status" uid="root" gid="nto" mode="0755"/>
+  <file name="var/pps/qnx/qdb/config/bluetoothdb" uid="root" gid="nto" mode="0777"/>
+  <file name="var/pps/qnx/qdb/config/messages" uid="root" gid="nto" mode="0777"/>
+  <file name="var/pps/qnx/qdb/config/navigation" uid="root" gid="nto" mode="0777"/>
+  <file name="var/pps/qnx/qdb/config/personalization" uid="root" gid="nto" mode="0777"/>
+  <file name="var/pps/qnx/qdb/config/phonebook" uid="root" gid="nto" mode="0777"/>
+
+  <directory name="var/pps/qnx/mount" uid="root" gid="nto" mode="0755"/>
+  <file name="var/pps/qnx/mount/mme" uid="root" gid="nto" mode="0666"/>
+
+  <!-- PPS objects needed by APK Runtime -->
+  <directory name="var/pps/services/apkruntime" uid="root" gid="nto" mode="0777"/>
+  <file name="var/pps/services/apkruntime/status" uid="root" gid="nto" mode="0777"/>
+  <file name="var/pps/services/apkruntime/control" uid="root" gid="nto" mode="0777"/>
+
+  <!-- elements needed by swud-->
+  <directory name="var/swud" uid="root" gid="nto" mode="0777"/>
+</fileset>

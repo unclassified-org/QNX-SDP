@@ -1,0 +1,22 @@
+<script src="weblauncher.js"></script>
+<script>
+var root = Object.create(qnx.weblauncher.webview);
+root.id = 1;
+root.setEnabledOutOfProcessWebInspector(true);
+
+root.onEvent('PropertyViewportEvent', function (webview, value, eventId) {
+    var newjson = JSON.parse(webview.viewport());
+    if (newjson['x'] == json['x']
+        && newjson['y'] == json['y']
+        && newjson['width'] == json['width']
+        && newjson['height'] == json['height'])
+        webview.printToStderr("Pass\n");
+    else
+        webview.printToStderr("Fail\n");
+
+    webview.destroy();
+});
+
+var json = {x: 1, y: 2, width: 200, height: 301};
+root.setViewport(JSON.stringify(json));
+</script>

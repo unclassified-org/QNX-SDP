@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fileset name="basefs.common.etc">
+  <directory name="etc" uid="root" gid="nto" mode="0755"/>
+  <file name="etc/pf.os" uid="root" gid="nto" mode="0640"/>
+  <file name="etc/pf.conf" uid="root" gid="nto" mode="0440"/>
+  <file name="etc/dhcpd-mhs.conf" uid="root" gid="nto" mode="0440"/>
+  <directory name="etc/dtm" uid="root" gid="nto" mode="0755"/>
+  <file name="etc/dhclient6.conf" uid="root" gid="nto" mode="0644"/>
+  <directory name="etc/fontconfig" uid="root" gid="nto" mode="0755"/>
+  <directory name="etc/fontconfig/conf.avail" uid="root" gid="nto" mode="0755"/>
+  <file name="etc/fontconfig/conf.avail/10-autohint.conf" uid="root" gid="nto" mode="0644"/>
+  <file name="etc/fontconfig/conf.avail/10-no-sub-pixel.conf" uid="root" gid="nto" mode="0644"/>
+  <file name="etc/fontconfig/conf.avail/10-sub-pixel-bgr.conf" uid="root" gid="nto" mode="0644"/>
+  <file name="etc/fontconfig/conf.avail/10-sub-pixel-rgb.conf" uid="root" gid="nto" mode="0644"/>
+  <file name="etc/fontconfig/conf.avail/10-sub-pixel-vbgr.conf" uid="root" gid="nto" mode="0644"/>
+  <file name="etc/fontconfig/conf.avail/10-sub-pixel-vrgb.conf" uid="root" gid="nto" mode="0644"/>
+  <file name="etc/fontconfig/conf.avail/10-unhinted.conf" uid="root" gid="nto" mode="0644"/>
+  <file name="etc/fontconfig/conf.avail/20-fix-globaladvance.conf" uid="root" gid="nto" mode="0644"/>
+  <file name="etc/fontconfig/conf.avail/20-unhint-small-vera.conf" uid="root" gid="nto" mode="0644"/>
+  <file name="etc/fontconfig/conf.avail/25-unhint-nonlatin.conf" uid="root" gid="nto" mode="0644"/>
+  <file name="etc/fontconfig/conf.avail/30-metric-aliases.conf" uid="root" gid="nto" mode="0644"/>
+  <file name="etc/fontconfig/conf.avail/30-urw-aliases.conf" uid="root" gid="nto" mode="0644"/>
+  <file name="etc/fontconfig/conf.avail/40-nonlatin.conf" uid="root" gid="nto" mode="0644"/>
+  <file name="etc/fontconfig/conf.avail/45-latin.conf" uid="root" gid="nto" mode="0644"/>
+  <file name="etc/fontconfig/conf.avail/49-sansserif.conf" uid="root" gid="nto" mode="0644"/>
+  <file name="etc/fontconfig/conf.avail/50-user.conf" uid="root" gid="nto" mode="0644"/>
+  <file name="etc/fontconfig/conf.avail/51-local.conf" uid="root" gid="nto" mode="0644"/>
+  <file name="etc/fontconfig/conf.avail/60-latin.conf" uid="root" gid="nto" mode="0644"/>
+  <file name="etc/fontconfig/conf.avail/65-fonts-persian.conf" uid="root" gid="nto" mode="0644"/>
+  <file name="etc/fontconfig/conf.avail/65-khmer.conf" uid="root" gid="nto" mode="0644"/>
+  <file name="etc/fontconfig/conf.avail/65-nonlatin.conf" uid="root" gid="nto" mode="0644"/>
+  <file name="etc/fontconfig/conf.avail/69-unifont.conf" uid="root" gid="nto" mode="0644"/>
+  <file name="etc/fontconfig/conf.avail/70-no-bitmaps.conf" uid="root" gid="nto" mode="0644"/>
+  <file name="etc/fontconfig/conf.avail/70-yes-bitmaps.conf" uid="root" gid="nto" mode="0644"/>
+  <file name="etc/fontconfig/conf.avail/80-delicious.conf" uid="root" gid="nto" mode="0644"/>
+  <file name="etc/fontconfig/conf.avail/90-synthetic.conf" uid="root" gid="nto" mode="0644"/>
+  <directory name="etc/fontconfig/conf.d" uid="root" gid="nto" mode="0755"/>
+  <symlink name="etc/fontconfig/conf.d/20-fix-globaladvance.conf" target="../conf.avail/20-fix-globaladvance.conf" uid="root" gid="nto" mode="0644"/>
+  <symlink name="etc/fontconfig/conf.d/20-unhint-small-vera.conf" target="../conf.avail/20-unhint-small-vera.conf" uid="root" gid="nto" mode="0644"/>
+  <symlink name="etc/fontconfig/conf.d/30-metric-aliases.conf" target="../conf.avail/30-metric-aliases.conf" uid="root" gid="nto" mode="0644"/>
+  <symlink name="etc/fontconfig/conf.d/30-urw-aliases.conf" target="../conf.avail/30-urw-aliases.conf" uid="root" gid="nto" mode="0644"/>
+  <symlink name="etc/fontconfig/conf.d/40-nonlatin.conf" target="../conf.avail/40-nonlatin.conf" uid="root" gid="nto" mode="0644"/>
+  <symlink name="etc/fontconfig/conf.d/45-latin.conf" target="../conf.avail/45-latin.conf" uid="root" gid="nto" mode="0644"/>
+  <symlink name="etc/fontconfig/conf.d/49-sansserif.conf" target="../conf.avail/49-sansserif.conf" uid="root" gid="nto" mode="0644"/>
+  <symlink name="etc/fontconfig/conf.d/50-user.conf" target="../conf.avail/50-user.conf" uid="root" gid="nto" mode="0644"/>
+  <symlink name="etc/fontconfig/conf.d/51-local.conf" target="../conf.avail/51-local.conf" uid="root" gid="nto" mode="0644"/>
+  <symlink name="etc/fontconfig/conf.d/60-latin.conf" target="../conf.avail/60-latin.conf" uid="root" gid="nto" mode="0644"/>
+  <symlink name="etc/fontconfig/conf.d/65-fonts-persian.conf" target="../conf.avail/65-fonts-persian.conf" uid="root" gid="nto" mode="0644"/>
+  <symlink name="etc/fontconfig/conf.d/65-nonlatin.conf" target="../conf.avail/65-nonlatin.conf" uid="root" gid="nto" mode="0644"/>
+  <symlink name="etc/fontconfig/conf.d/69-unifont.conf" target="../conf.avail/69-unifont.conf" uid="root" gid="nto" mode="0644"/>
+  <symlink name="etc/fontconfig/conf.d/80-delicious.conf" target="../conf.avail/80-delicious.conf" uid="root" gid="nto" mode="0644"/>
+  <symlink name="etc/fontconfig/conf.d/90-synthetic.conf" target="../conf.avail/90-synthetic.conf" uid="root" gid="nto" mode="0644"/>
+  <file name="etc/fontconfig/fonts.conf" uid="root" gid="nto" mode="0644"/>
+  <file name="etc/ftpusers" uid="root" gid="nto" mode="0644"/>
+  <file name="etc/group" uid="root" gid="nto" mode="0644"/>
+  <file name="etc/hosts" uid="root" gid="nto" mode="0644"/>
+  <file name="etc/inetd.conf" uid="root" gid="nto" mode="0644"/>
+  <file name="etc/pps.conf" uid="root" gid="nto" mode="0644"/>
+  <file name="etc/net.cfg" uid="root" gid="nto" mode="0644"/>
+  <file name="etc/netconfig" uid="root" gid="nto" mode="0644"/>
+  <directory name="etc/openssl" uid="root" gid="nto" mode="0755"/>
+  <directory name="etc/openssl/cert" uid="root" gid="nto" mode="0755"/>
+  <file name="etc/openssl/cert/cacert.pem" uid="root" gid="nto" mode="0644"/>
+  <file name="etc/passwd" uid="root" gid="nto" mode="0644"/>
+  <file name="etc/paymentsystem.conf" uid="root" gid="nto" mode="0644"/>
+  <file name="etc/services" uid="root" gid="nto" mode="0644"/>
+  <file name="etc/shadow" uid="root" gid="nto" mode="0640"/>
+  <directory name="etc/system" uid="root" gid="nto" mode="0755"/>
+  <directory name="etc/system/config" uid="root" gid="nto" mode="0755"/>
+  <directory name="etc/system/config/audio" uid="root" gid="nto" mode="0755"/>
+  <file name="etc/system/config/audio/audioman_default.conf" uid="root" gid="nto" mode="0666"/>
+  <file name="etc/system/config/bluetooth.conf" uid="root" gid="nto" mode="0755"/>
+  <file name="etc/system/config/coreServices2.json" uid="root" gid="nto" mode="0644"/>
+  <file name="etc/system/config/display.conf" uid="root" gid="nto" mode="0644"/>
+  <file name="etc/system/config/img.conf" uid="root" gid="nto" mode="0644"/>
+  <file name="etc/system/config/keymap.conf" uid="root" gid="nto" mode="0644"/>
+  <file name="etc/mm/mm-renderer.conf" uid="root" gid="nto" mode="0644"/>
+  <file name="etc/mm/mm-md.conf" uid="root" gid="nto" mode="0644"/>
+  <file name="etc/mm/mm-playlist.conf" uid="root" gid="nto" mode="0644"/>
+  <file name="etc/mm/mm-browse.conf" uid="root" gid="nto" mode="0644"/>
+  <directory name="etc/usblauncher" uid="root" gid="nto" mode="0755"/>
+  <file name="etc/usblauncher/rules.lua" uid="root" gid="nto" mode="0644"/>
+  <file name="etc/system/config/scaling.conf" uid="root" gid="nto" mode="0644"/>
+  <file name="etc/system/config/launcher.cfg" uid="root" gid="nto" mode="0644"/>
+  <file name="etc/system/config/launcher_caps" uid="root" gid="nto" mode="0644"/>
+  <directory name="etc/system/config/location" uid="root" gid="nto" mode="0750"/>
+  <file name="etc/termcap" uid="root" gid="nto" mode="0644"/>
+
+  <directory name="etc/authman" uid="root" gid="nto" mode="0750"/>
+  <file name="etc/authman/provision" uid="root" gid="nto" mode="0640"/>
+  <file name="etc/authman/sys.acl" uid="root" gid="nto" mode="0640"/>
+  <file name="etc/authman/sys.res" uid="root" gid="nto" mode="0640"/>
+
+  <file name="etc/slm-config-all.xml" uid="root" gid="nto" mode="0644"/>
+  <file name="etc/slm-config-platform.xml" uid="root" gid="nto" mode="0644"/>
+  <file name="etc/slm-config-modules.xml" uid="root" gid="nto" mode="0644"/>
+
+  <!-- Secondary IFS (previously lived in /dos), moved here for faster loading
+       on systems that have a fast drive -->
+  <file name="etc/secondary.ifs" uid="root" gid="nto" mode="0444"/>
+  
+ </fileset>

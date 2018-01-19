@@ -1,0 +1,31 @@
+.notice-wrap {
+	top: 15px;
+	right: 23px;
+	width: 480px;
+}
+ 
+.notice-item {
+	height: 150px;
+	margin: 0 0 18px 0;
+	-webkit-box-shadow: 0 0 15px 3px #51C7E9;
+}
+
+.notice-item p {
+	margin:15px;
+}
+.notice-item-title {
+	height: 45px;
+	background: transparent url(../assets/720p/alert_banner.png) top left no-repeat;
+}
+
+.notice-item-title h1 {
+	padding-top: 5px;
+}
+
+.notice-item-close {
+	width:24px;
+	height:24px;
+	left: 9px;
+	top: 9px;
+}
+

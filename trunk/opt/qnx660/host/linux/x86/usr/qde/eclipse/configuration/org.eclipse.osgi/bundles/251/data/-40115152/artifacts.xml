@@ -1,0 +1,787 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?artifactRepository version='1.1.0'?>
+<repository name='/opt/qnx660/target/qnx6/usr/help' type='org.eclipse.equinox.p2.artifact.repository.simpleRepository' version='1.0.0'>
+  <properties size='1'>
+    <property name='p2.timestamp' value='1419219164921'/>
+  </properties>
+  <mappings size='3'>
+    <rule filter='(&amp; (classifier=osgi.bundle))' output='${repoUrl}/plugins/${id}_${version}.jar'/>
+    <rule filter='(&amp; (classifier=binary))' output='${repoUrl}/binary/${id}_${version}'/>
+    <rule filter='(&amp; (classifier=org.eclipse.update.feature))' output='${repoUrl}/features/${id}_${version}.jar'/>
+  </mappings>
+  <artifacts size='70'>
+    <artifact classifier='osgi.bundle' id='com.qnx.doc.qnxcar2.nav' version='3.0.0.20140222'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.qnxcar2.nav_3.0.0.20140222/'/>
+        <property name='file.name' value='/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.qnxcar2.nav_3.0.0.20140222'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.qnx.doc.audiomanager.lib_ref' version='3.0.0.20140222'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.audiomanager.lib_ref_3.0.0.20140222/'/>
+        <property name='file.name' value='/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.audiomanager.lib_ref_3.0.0.20140222'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.qnx.doc.inputevents.lib_ref' version='3.0.0.20140222'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.inputevents.lib_ref_3.0.0.20140222/'/>
+        <property name='file.name' value='/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.inputevents.lib_ref_3.0.0.20140222'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.qnx.doc.qnxcar2.ppsref' version='3.0.0.20140222'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.qnxcar2.ppsref_3.0.0.20140222/'/>
+        <property name='file.name' value='/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.qnxcar2.ppsref_3.0.0.20140222'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.qnx.doc.copyright' version='3.0.0.20140222'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.copyright_3.0.0.20140222/'/>
+        <property name='file.name' value='/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.copyright_3.0.0.20140222'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.qnx.doc.neutrino.getting_started' version='3.0.0.20140222'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.neutrino.getting_started_3.0.0.20140222/'/>
+        <property name='file.name' value='/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.neutrino.getting_started_3.0.0.20140222'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.qnx.doc.neutrino.sys_arch' version='3.0.0.20140222'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.neutrino.sys_arch_3.0.0.20140222/'/>
+        <property name='file.name' value='/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.neutrino.sys_arch_3.0.0.20140222'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.qnx.doc.ham_en.dev_guide' version='3.0.0.20140222'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.ham_en.dev_guide_3.0.0.20140222/'/>
+        <property name='file.name' value='/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.ham_en.dev_guide_3.0.0.20140222'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.qnx.doc.qnxsdp.nav' version='3.0.0.20140222'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.qnxsdp.nav_3.0.0.20140222/'/>
+        <property name='file.name' value='/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.qnxsdp.nav_3.0.0.20140222'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.qnx.doc.neutrino.addon' version='3.0.0.20140222'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.neutrino.addon_3.0.0.20140222/'/>
+        <property name='file.name' value='/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.neutrino.addon_3.0.0.20140222'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.qnx.doc.neutrino.utilities' version='3.0.0.20140222'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.neutrino.utilities_3.0.0.20140222/'/>
+        <property name='file.name' value='/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.neutrino.utilities_3.0.0.20140222'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.qnx.doc.libmd.lib_ref' version='3.0.0.20140222'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.libmd.lib_ref_3.0.0.20140222/'/>
+        <property name='file.name' value='/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.libmd.lib_ref_3.0.0.20140222'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.qnx.doc.qnxcar.copyright' version='3.0.0.20140222'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.qnxcar.copyright_3.0.0.20140222/'/>
+        <property name='file.name' value='/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.qnxcar.copyright_3.0.0.20140222'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.qnx.doc.qnxcar2.fastboot_guide' version='3.0.0.20140222'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.qnxcar2.fastboot_guide_3.0.0.20140222/'/>
+        <property name='file.name' value='/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.qnxcar2.fastboot_guide_3.0.0.20140222'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.qnx.doc.appsandmedia.nav' version='3.0.0.20140222'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.appsandmedia.nav_3.0.0.20140222/'/>
+        <property name='file.name' value='/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.appsandmedia.nav_3.0.0.20140222'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='com.qnx.tools.ide.doc.qnx.car.platform.for.infotainment' version='3.0.0.20140222'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/opt/qnx660/target/qnx6/usr/help/eclipse/features/com.qnx.tools.ide.doc.qnx.car.platform.for.infotainment_3.0.0.20140222/'/>
+        <property name='file.name' value='/opt/qnx660/target/qnx6/usr/help/eclipse/features/com.qnx.tools.ide.doc.qnx.car.platform.for.infotainment_3.0.0.20140222'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.qnx.doc.neutrino.prog' version='3.0.0.20140222'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.neutrino.prog_3.0.0.20140222/'/>
+        <property name='file.name' value='/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.neutrino.prog_3.0.0.20140222'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.qnx.doc.mm_sync.dev_guide' version='3.0.0.20140222'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.mm_sync.dev_guide_3.0.0.20140222/'/>
+        <property name='file.name' value='/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.mm_sync.dev_guide_3.0.0.20140222'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.qnx.doc.appsandmedia.lifecycle' version='3.0.0.20140222'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.appsandmedia.lifecycle_3.0.0.20140222/'/>
+        <property name='file.name' value='/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.appsandmedia.lifecycle_3.0.0.20140222'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.qnx.doc.qnxcar2.qt.guide' version='3.0.0.20140222'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.qnxcar2.qt.guide_3.0.0.20140222/'/>
+        <property name='file.name' value='/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.qnxcar2.qt.guide_3.0.0.20140222'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.qnx.doc.qdb_en.dev_guide' version='3.0.0.20140222'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.qdb_en.dev_guide_3.0.0.20140222/'/>
+        <property name='file.name' value='/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.qdb_en.dev_guide_3.0.0.20140222'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.qnx.doc.glview.lib_ref' version='3.0.0.20140222'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.glview.lib_ref_3.0.0.20140222/'/>
+        <property name='file.name' value='/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.glview.lib_ref_3.0.0.20140222'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.qnx.doc.appsandmedia.mm_arch' version='3.0.0.20140222'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.appsandmedia.mm_arch_3.0.0.20140222/'/>
+        <property name='file.name' value='/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.appsandmedia.mm_arch_3.0.0.20140222'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.qnx.doc.libmmplaylist.lib_ref' version='3.0.0.20140222'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.libmmplaylist.lib_ref_3.0.0.20140222/'/>
+        <property name='file.name' value='/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.libmmplaylist.lib_ref_3.0.0.20140222'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.qnx.doc.web_ui.dev_guide' version='3.0.0.20140222'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.web_ui.dev_guide_3.0.0.20140222/'/>
+        <property name='file.name' value='/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.web_ui.dev_guide_3.0.0.20140222'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.qnx.doc.mm_control.conf_guide' version='3.0.0.20140222'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.mm_control.conf_guide_3.0.0.20140222/'/>
+        <property name='file.name' value='/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.mm_control.conf_guide_3.0.0.20140222'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='com.qnx.tools.ide.doc.qnx.sdk.for.apps.and.media' version='3.0.0.20140222'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/opt/qnx660/target/qnx6/usr/help/eclipse/features/com.qnx.tools.ide.doc.qnx.sdk.for.apps.and.media_3.0.0.20140222/'/>
+        <property name='file.name' value='/opt/qnx660/target/qnx6/usr/help/eclipse/features/com.qnx.tools.ide.doc.qnx.sdk.for.apps.and.media_3.0.0.20140222'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.qnx.doc.appsandmedia.mm_utils' version='3.0.0.20140222'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.appsandmedia.mm_utils_3.0.0.20140222/'/>
+        <property name='file.name' value='/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.appsandmedia.mm_utils_3.0.0.20140222'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.qnx.doc.bsp_update.guide' version='3.0.0.20140222'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.bsp_update.guide_3.0.0.20140222/'/>
+        <property name='file.name' value='/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.bsp_update.guide_3.0.0.20140222'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.qnx.doc.sat.user_guide' version='3.0.0.20140222'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.sat.user_guide_3.0.0.20140222/'/>
+        <property name='file.name' value='/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.sat.user_guide_3.0.0.20140222'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.qnx.doc.adaptivepartitioning.userguide' version='3.0.0.20140222'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.adaptivepartitioning.userguide_3.0.0.20140222/'/>
+        <property name='file.name' value='/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.adaptivepartitioning.userguide_3.0.0.20140222'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.qnx.doc.qnxcar2.hmi' version='3.0.0.20140222'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.qnxcar2.hmi_3.0.0.20140222/'/>
+        <property name='file.name' value='/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.qnxcar2.hmi_3.0.0.20140222'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.qnx.doc.ida.user_guide' version='3.0.0.20140222'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.ida.user_guide_3.0.0.20140222/'/>
+        <property name='file.name' value='/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.ida.user_guide_3.0.0.20140222'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.qnx.doc.neutrino.lib_ref' version='3.0.0.20140222'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.neutrino.lib_ref_3.0.0.20140222/'/>
+        <property name='file.name' value='/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.neutrino.lib_ref_3.0.0.20140222'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.qnx.doc.gestures.lib_ref' version='3.0.0.20140222'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.gestures.lib_ref_3.0.0.20140222/'/>
+        <property name='file.name' value='/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.gestures.lib_ref_3.0.0.20140222'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.qnx.doc.neutrino.resmgr' version='3.0.0.20140222'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.neutrino.resmgr_3.0.0.20140222/'/>
+        <property name='file.name' value='/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.neutrino.resmgr_3.0.0.20140222'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.qnx.doc.video_capture.lib_ref' version='3.0.0.20140222'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.video_capture.lib_ref_3.0.0.20140222/'/>
+        <property name='file.name' value='/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.video_capture.lib_ref_3.0.0.20140222'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.qnx.doc.qnxcar2.gsg' version='3.0.0.20140222'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.qnxcar2.gsg_3.0.0.20140222/'/>
+        <property name='file.name' value='/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.qnxcar2.gsg_3.0.0.20140222'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.qnx.doc.mm_detect.dev_guide' version='3.0.0.20140222'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.mm_detect.dev_guide_3.0.0.20140222/'/>
+        <property name='file.name' value='/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.mm_detect.dev_guide_3.0.0.20140222'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.qnx.doc.car.system_services.ref' version='3.0.0.20140222'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.car.system_services.ref_3.0.0.20140222/'/>
+        <property name='file.name' value='/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.car.system_services.ref_3.0.0.20140222'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.qnx.doc.qnxcar2.js.cordova_ref' version='3.0.0.20140222'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.qnxcar2.js.cordova_ref_3.0.0.20140222/'/>
+        <property name='file.name' value='/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.qnxcar2.js.cordova_ref_3.0.0.20140222'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.qnx.doc.screen' version='3.0.0.20140222'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.screen_3.0.0.20140222/'/>
+        <property name='file.name' value='/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.screen_3.0.0.20140222'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.qnx.doc.qnxcar2.system_architecture' version='3.0.0.20140222'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.qnxcar2.system_architecture_3.0.0.20140222/'/>
+        <property name='file.name' value='/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.qnxcar2.system_architecture_3.0.0.20140222'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.qnx.doc.neutrino.audio' version='3.0.0.20140222'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.neutrino.audio_3.0.0.20140222/'/>
+        <property name='file.name' value='/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.neutrino.audio_3.0.0.20140222'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.qnx.doc.dev_pub.ref_guide' version='3.0.0.20140222'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.dev_pub.ref_guide_3.0.0.20140222/'/>
+        <property name='file.name' value='/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.dev_pub.ref_guide_3.0.0.20140222'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.qnx.doc.qnxcar2.app_portal' version='3.0.0.20140222'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.qnxcar2.app_portal_3.0.0.20140222/'/>
+        <property name='file.name' value='/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.qnxcar2.app_portal_3.0.0.20140222'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.qnx.doc.core_networking.user_guide' version='3.0.0.20140222'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.core_networking.user_guide_3.0.0.20140222/'/>
+        <property name='file.name' value='/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.core_networking.user_guide_3.0.0.20140222'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.qnx.doc.mme.mmrenderer' version='3.0.0.20140222'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.mme.mmrenderer_3.0.0.20140222/'/>
+        <property name='file.name' value='/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.mme.mmrenderer_3.0.0.20140222'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.qnx.doc.neutrino.cookbook' version='3.0.0.20140222'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.neutrino.cookbook_3.0.0.20140222/'/>
+        <property name='file.name' value='/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.neutrino.cookbook_3.0.0.20140222'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.qnx.doc.neutrino.technotes' version='3.0.0.20140222'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.neutrino.technotes_3.0.0.20140222/'/>
+        <property name='file.name' value='/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.neutrino.technotes_3.0.0.20140222'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.qnx.doc.qnxsdp.quickstart' version='3.0.0.20140222'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.qnxsdp.quickstart_3.0.0.20140222/'/>
+        <property name='file.name' value='/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.qnxsdp.quickstart_3.0.0.20140222'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.qnx.doc.qnxcar2.cordova_porting_guide' version='3.0.0.20140222'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.qnxcar2.cordova_porting_guide_3.0.0.20140222/'/>
+        <property name='file.name' value='/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.qnxcar2.cordova_porting_guide_3.0.0.20140222'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='com.qnx.tools.ide.doc.qnx.software.development.platform' version='3.0.0.20140222'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/opt/qnx660/target/qnx6/usr/help/eclipse/features/com.qnx.tools.ide.doc.qnx.software.development.platform_3.0.0.20140222/'/>
+        <property name='file.name' value='/opt/qnx660/target/qnx6/usr/help/eclipse/features/com.qnx.tools.ide.doc.qnx.software.development.platform_3.0.0.20140222'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.qnx.doc.strpattern.lib_ref' version='3.0.0.20140222'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.strpattern.lib_ref_3.0.0.20140222/'/>
+        <property name='file.name' value='/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.strpattern.lib_ref_3.0.0.20140222'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.qnx.doc.neutrino.user_guide' version='3.0.0.20140222'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.neutrino.user_guide_3.0.0.20140222/'/>
+        <property name='file.name' value='/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.neutrino.user_guide_3.0.0.20140222'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.qnx.doc.qnxcar2.hmi_notif_mgr' version='3.0.0.20140222'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.qnxcar2.hmi_notif_mgr_3.0.0.20140222/'/>
+        <property name='file.name' value='/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.qnxcar2.hmi_notif_mgr_3.0.0.20140222'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.qnx.doc.appsandmedia.copyright' version='3.0.0.20140222'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.appsandmedia.copyright_3.0.0.20140222/'/>
+        <property name='file.name' value='/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.appsandmedia.copyright_3.0.0.20140222'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.qnx.doc.qnxcar2.html5.guide' version='3.0.0.20140222'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.qnxcar2.html5.guide_3.0.0.20140222/'/>
+        <property name='file.name' value='/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.qnxcar2.html5.guide_3.0.0.20140222'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.qnx.doc.multicore.user_guide' version='3.0.0.20140222'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.multicore.user_guide_3.0.0.20140222/'/>
+        <property name='file.name' value='/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.multicore.user_guide_3.0.0.20140222'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.qnx.doc.qnxcar2.btguide' version='3.0.0.20140222'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.qnxcar2.btguide_3.0.0.20140222/'/>
+        <property name='file.name' value='/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.qnxcar2.btguide_3.0.0.20140222'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.qnx.doc.neutrino.building' version='3.0.0.20140222'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.neutrino.building_3.0.0.20140222/'/>
+        <property name='file.name' value='/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.neutrino.building_3.0.0.20140222'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.qnx.doc.dinkum' version='3.0.0.20140222'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.dinkum_3.0.0.20140222/'/>
+        <property name='file.name' value='/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.dinkum_3.0.0.20140222'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.qnx.doc.pps.developer' version='3.0.0.20140222'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.pps.developer_3.0.0.20140222/'/>
+        <property name='file.name' value='/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.pps.developer_3.0.0.20140222'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.qnx.doc.asr.lib_ref' version='3.0.0.20140222'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.asr.lib_ref_3.0.0.20140222/'/>
+        <property name='file.name' value='/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.asr.lib_ref_3.0.0.20140222'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.qnx.doc.libimg.lib_ref' version='3.0.0.20140222'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.libimg.lib_ref_3.0.0.20140222/'/>
+        <property name='file.name' value='/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.libimg.lib_ref_3.0.0.20140222'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.qnx.doc.qnxcar2.mm_architecture' version='3.0.0.20140222'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.qnxcar2.mm_architecture_3.0.0.20140222/'/>
+        <property name='file.name' value='/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.qnxcar2.mm_architecture_3.0.0.20140222'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.qnx.doc.appsandmedia.embed_browser' version='3.0.0.20140222'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.appsandmedia.embed_browser_3.0.0.20140222/'/>
+        <property name='file.name' value='/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.appsandmedia.embed_browser_3.0.0.20140222'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.qnx.doc.qnxcar2.mm_player.dev_guide' version='3.0.0.20140222'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.qnxcar2.mm_player.dev_guide_3.0.0.20140222/'/>
+        <property name='file.name' value='/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.qnxcar2.mm_player.dev_guide_3.0.0.20140222'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.qnx.doc.qnxcar2.js.lib_ref' version='3.0.0.20140222'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.qnxcar2.js.lib_ref_3.0.0.20140222/'/>
+        <property name='file.name' value='/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.qnxcar2.js.lib_ref_3.0.0.20140222'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.qnx.doc.qnxcar2.images_guide' version='3.0.0.20140222'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.qnxcar2.images_guide_3.0.0.20140222/'/>
+        <property name='file.name' value='/opt/qnx660/target/qnx6/usr/help/eclipse/plugins/com.qnx.doc.qnxcar2.images_guide_3.0.0.20140222'/>
+      </repositoryProperties>
+    </artifact>
+  </artifacts>
+</repository>

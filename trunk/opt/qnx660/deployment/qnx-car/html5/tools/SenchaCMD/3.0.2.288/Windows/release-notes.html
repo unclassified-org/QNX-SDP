@@ -1,0 +1,453 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+    <title>
+        Sencha Cmd Release Notes
+    </title>
+    <style>
+        body {
+            color: #333;
+            padding: 0 40px 40px;
+            font-family: Helvetica, Arial, Geneva, sans-serif;
+            font-size: 12px;
+            line-height: normal;
+            width: 800px;
+            margin: 0 auto;
+        }
+
+        a#logo {
+            background: transparent url(logo-sencha-sm.png) no-repeat scroll 0px 100%;
+            display: block;
+            height: 58px;
+            margin: 0;
+            padding: 0;
+            width: 134px;
+
+            overflow: hidden;
+            text-indent: 150%;
+            white-space: nowrap;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Helvetica Neue', Helvetica, Arial, Geneva, sans-serif;
+            font-weight: 600;
+            margin: 1em 0;
+        }
+        h1 { font-size: 28px; }
+        h2 { font-size: 20px; }
+        h3 { font-size: 16px; }
+        ul li { padding: 2px 0; }
+        .doc { color: blue; }
+        .change { color: #196cb4; }
+        .new { color: #6e7a32; }
+        ul { padding: .1em 1.5em; }
+        .notes { color: #777; }
+        a { color: #0464BB; }
+        a:hover { color: rgb(28, 65, 124); }
+
+        pre {
+            background: ghostWhite;
+            border: 1px solid #ddd;
+            font-family: Menlo, Monaco, Courier, monospace;
+            overflow: auto;
+            padding: 12px;
+        }
+
+        hr {
+            color: #e0e0e0;
+            background-color: #e0e0e0;
+            height: 4px;
+            border: none;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+<p>
+    <a href="http://www.sencha.com/" id="logo" name="logo">Sencha Cmd</a>
+</p>
+
+<div id="releases">
+    <!-- ************************************************************************** -->
+    <!--
+    When a release is made, copy the generated div below this dynamic section
+    and then edit the queries below to adjust for the next release.
+    -->
+    <div class="release">
+        <h1>Release Notes for Sencha Cmd 3.0.2</h1>
+        <p class="notes">
+            Date: December 26, 2012<br>
+            Version Number: 3.0.2.288
+        </p>
+
+        <h2>Bugs Fixed</h2>
+<ul>
+    <li class="component">Misc (1)
+        <ul class="tickets">
+            <li class="ticket">
+                <span class="ticket-number">SDKTOOLS-282</span>&#160;<span class="ticket-notes">App upgrade does not properly upgrade themes to new package structure</span>
+            </li>
+        </ul>
+    </li>
+Total: 1</ul>
+        <h2>New Features</h2>
+<ul>
+Total: 0</ul>
+        <h2>Known Issues</h2>
+<ul>
+Total: 0</ul>
+    </div>
+    <!-- Paste release notes after a release below here... -->
+    <!-- ************************************************************************** -->
+    <div class="release">
+        <h1>Release Notes for Sencha Cmd 3.0.1</h1>
+        <p class="notes">
+            Date: December 23, 2012<br>
+            Version Number: 3.0.2.285
+        </p>
+        <h2>Bugs Fixed</h2>
+        <ul>
+            <li class="component">Generator (3)
+                <ul class="tickets">
+                    <li class="ticket">
+                        <span class="ticket-number">SDKTOOLS-226</span>&#160;<span class="ticket-notes">The buildPaths property is obsolete and should be removed from app.json.tpl</span>
+                    </li>
+                    <li class="ticket">
+                        <span class="ticket-number">SDKTOOLS-251</span>&#160;<span class="ticket-notes">Sencha generate form extends Ext.form.Fieldset instead of Ext.form.Panel</span>
+                    </li>
+                    <li class="ticket">
+                        <span class="ticket-number">SDKTOOLS-273</span>&#160;<span class="ticket-notes">Generated config.rb extensions can have naming conflicts</span>
+                    </li>
+                </ul>
+            </li>
+            <li class="component">Misc (5)
+                <ul class="tickets">
+                    <li class="ticket">
+                        <span class="ticket-number">SDKTOOLS-222</span>&#160;<span class="ticket-notes">App cache checksum fails for images</span>
+                    </li>
+                    <li class="ticket">
+                        <span class="ticket-number">SDKTOOLS-252</span>&#160;<span class="ticket-notes">Testing build have included sencha-touch.js file what would make a duplicate while running the app</span>
+                    </li>
+                    <li class="ticket">
+                        <span class="ticket-number">SDKTOOLS-259</span>&#160;<span class="ticket-notes">when upgrading touch app from 2.0.x -> 2.1.x, sdk location isn't updated</span>
+                    </li>
+                    <li class="ticket">
+                        <span class="ticket-number">SDKTOOLS-262</span>&#160;<span class="ticket-notes">Native build option in app-build still references 'buildPaths' app.json property</span>
+                    </li>
+                    <li class="ticket">
+                        <span class="ticket-number">SDKTOOLS-277</span>&#160;<span class="ticket-notes">Move 'sencha package' to 'sencha app package'</span>
+                    </li>
+                </ul>
+            </li>
+            <li class="component">Slicer (1)
+                <ul class="tickets">
+                    <li class="ticket">
+                        <span class="ticket-number">SDKTOOLS-257</span>&#160;<span class="ticket-notes">Theme build does not merge images properly and is inconsistently documented</span>
+                    </li>
+                </ul>
+            </li>
+        Total: 9</ul>
+    </div>
+
+    <div class="release">
+        <h1>Release Notes for Sencha Cmd 3.0.0 (GA)</h1>
+        <p class="notes">
+            Release Date: November 6, 2012<br>
+            Version Number: 3.0.0.250
+        </p>
+
+        <h2>Bugs Fixed</h2>
+        <ul>
+            <li class="component">Misc (16)
+                <ul class="tickets">
+                    <li class="ticket">
+                        <span class="ticket-number">SDKTOOLS-159</span>&#160;<span class="ticket-notes">Need a common strategy for ext and touch apps for rebuilding css via compass</span>
+                    </li>
+                    <li class="ticket">
+                        <span class="ticket-number">SDKTOOLS-173</span>&#160;<span class="ticket-notes">sencha ant production build does not work for Ext JS apps</span>
+                    </li>
+                    <li class="ticket">
+                        <span class="ticket-number">SDKTOOLS-175</span>&#160;<span class="ticket-notes">Compiler does not recognize hasMany/hasOne/belongsTo as Model dependencies</span>
+                    </li>
+                    <li class="ticket">
+                        <span class="ticket-number">SDKTOOLS-176</span>&#160;<span class="ticket-notes">Application compile step needs to be customizable</span>
+                    </li>
+                    <li class="ticket">
+                        <span class="ticket-number">SDKTOOLS-194</span>&#160;<span class="ticket-notes">Error reporting in "sencha app upgrade" is not always clear</span>
+                    </li>
+                    <li class="ticket">
+                        <span class="ticket-number">SDKTOOLS-200</span>&#160;<span class="ticket-notes">Invalid resourced created on sencha create app (touch 2.1-rc1 cmd 188)</span>
+                    </li>
+                    <li class="ticket">
+                        <span class="ticket-number">SDKTOOLS-205</span>&#160;<span class="ticket-notes">Overeager matching for -namespace</span>
+                    </li>
+                    <li class="ticket">
+                        <span class="ticket-number">SDKTOOLS-208</span>&#160;<span class="ticket-notes">senchacmd --sdk /pathtosdk generate app SampleApp /pathtosampleapp Fails</span>
+                    </li>
+                    <li class="ticket">
+                        <span class="ticket-number">SDKTOOLS-210</span>&#160;<span class="ticket-notes">sencha generate app Does Not Create 'model' and 'store' directories for Ext JS apps</span>
+                    </li>
+                    <li class="ticket">
+                        <span class="ticket-number">SDKTOOLS-215</span>&#160;<span class="ticket-notes">Need a -run switch for "sencha app build -run native" since build no longer runs by default</span>
+                    </li>
+                    <li class="ticket">
+                        <span class="ticket-number">SDKTOOLS-217</span>&#160;<span class="ticket-notes">There is a conflict with the use of stores, models and views config in controller and  bootstrap.js</span>
+                    </li>
+                    <li class="ticket">
+                        <span class="ticket-number">SDKTOOLS-219</span>&#160;<span class="ticket-notes">Compile directives can conflict with IE conditional comments so allow spaces between // and @</span>
+                    </li>
+                    <li class="ticket">
+                        <span class="ticket-number">SDKTOOLS-229</span>&#160;<span class="ticket-notes">Ext JS app build does not remove debug code</span>
+                    </li>
+                    <li class="ticket">
+                        <span class="ticket-number">SDKTOOLS-231</span>&#160;<span class="ticket-notes">Update sencha.exe to work on 64-bit JRE</span>
+                    </li>
+                    <li class="ticket">
+                        <span class="ticket-number">SDKTOOLS-238</span>&#160;<span class="ticket-notes">NullPointerException in 3.0.0.230</span>
+                    </li>
+                    <li class="ticket">
+                        <span class="ticket-number">SDKTOOLS-242</span>&#160;<span class="ticket-notes">Apps in Workspaces have wrong default ext image paths</span>
+                    </li>
+                </ul>
+            </li>
+            <li class="component">MobilePackager (1)
+                <ul class="tickets">
+                    <li class="ticket">
+                        <span class="ticket-number">SDKTOOLS-196</span>&#160;<span class="ticket-notes">Native Android packaging fails on Sencha Cmd v3.0.0.181</span>
+                    </li>
+                </ul>
+            </li>
+        Total: 17</ul>
+        
+    </div>
+    <div class="release">
+        <h1>Release Notes for Sencha Cmd 3.0.0 RC1</h1>
+        <p class="notes">
+            Release Date: October 25, 2012<br>
+            Version Number: 3.0.0.230
+        </p>
+        <h2>Highlights</h2>
+
+        <p>The highlights are improved UTF-8/multi-charset handling and correcting the
+        overwriting issues with "sencha app upgrade". To use the new charset directive in
+        your JS files, place this as the first line:</p>
+
+        <pre>
+    //@charset ISO-8859-1</pre>
+        
+        <p>Instead of "ISO-8859-1", the value to the right of <code>charset</code> can be
+        any valid Java
+        <a href="http://docs.oracle.com/javase/7/docs/api/java/nio/charset/Charset.html">charset</a>
+        name. The default is "UTF-8".</p>
+
+        <p>The <code>charset</code> directive is used to describe the encoding of an input
+        file to the compiler. This does not effect the encoding of the output file. The
+        content of the input file is converted to Unicode internally.</p>
+
+        <p>Also, auto-dependency detection has been improved so there should be fewer cases
+        where you need "requires" or "uses" for the compiler and not the dev environment
+        (due to synchronous loading).</p>
+
+        <h2>Bugs Fixed</h2>
+        <ul>
+            <li class="component">Cmd (1)
+                <ul class="tickets">
+                    <li class="ticket">
+                        <span class="ticket-number">TOUCH-3562</span>&#160;<span class="ticket-notes">Sencha generate app corrupts binary template files</span>
+                    </li>
+                </ul>
+            </li>
+            <li class="component">Documentation (1)
+                <ul class="tickets">
+                    <li class="ticket">
+                        <span class="ticket-number">SDKTOOLS-178</span>&#160;<span class="ticket-notes">Clarification on compiler debug directive</span>
+                    </li>
+                </ul>
+            </li>
+            <li class="component">Misc (13)
+                <ul class="tickets">
+                    <li class="ticket">
+                        <span class="ticket-number">SDKTOOLS-185</span>&#160;<span class="ticket-notes">Concatenate process does not properly encode French characters</span>
+                    </li>
+                    <li class="ticket">
+                        <span class="ticket-number">SDKTOOLS-186</span>&#160;<span class="ticket-notes">Running sencha app build on CI server will hang trying to connect to device</span>
+                    </li>
+                    <li class="ticket">
+                        <span class="ticket-number">SDKTOOLS-187</span>&#160;<span class="ticket-notes">Obfuscated third-party libraries using Ext JS require symbol metadata</span>
+                    </li>
+                    <li class="ticket">
+                        <span class="ticket-number">SDKTOOLS-188</span>&#160;<span class="ticket-notes">[BUG] Sencha Cmd 3.0.0.181 app upgrade</span>
+                    </li>
+                    <li class="ticket">
+                        <span class="ticket-number">SDKTOOLS-193</span>&#160;<span class="ticket-notes">Concatenate encodes app-all.js using ANSI instead of UTF8</span>
+                    </li>
+                    <li class="ticket">
+                        <span class="ticket-number">SDKTOOLS-195</span>&#160;<span class="ticket-notes">The sencha theme build command does not accept simple theme name argument</span>
+                    </li>
+                    <li class="ticket">
+                        <span class="ticket-number">SDKTOOLS-198</span>&#160;<span class="ticket-notes">Compiler does not detect instantiation point auto-dependencies</span>
+                    </li>
+                    <li class="ticket">
+                        <span class="ticket-number">SDKTOOLS-199</span>&#160;<span class="ticket-notes">Using 'upgrade' command overwrites files</span>
+                    </li>
+                    <li class="ticket">
+                        <span class="ticket-number">SDKTOOLS-205</span>&#160;<span class="ticket-notes">Overeager matching for -namespace</span>
+                    </li>
+                    <li class="ticket">
+                        <span class="ticket-number">SDKTOOLS-206</span>&#160;<span class="ticket-notes">Issue with exclude -all?</span>
+                    </li>
+                    <li class="ticket">
+                        <span class="ticket-number">SDKTOOLS-207</span>&#160;<span class="ticket-notes">Ant clean target not working</span>
+                    </li>
+                    <li class="ticket">
+                        <span class="ticket-number">SDKTOOLS-211</span>&#160;<span class="ticket-notes">JSB parse options get reset during compilation</span>
+                    </li>
+                    <li class="ticket">
+                        <span class="ticket-number">SDKTOOLS-47</span>&#160;<span class="ticket-notes">Fetching Components via xtype</span>
+                    </li>
+                </ul>
+            </li>
+        Total: 0</ul>
+    </div>
+    <div class="release">
+        <h1>Release Notes for Sencha Cmd 3.0.0 Beta 3</h1>
+        <p class="notes">
+            Release Date: October 5, 2012<br>
+            Version Number: 3.0.0.190
+        </p>
+        
+        <h2>Bugs Fixed</h2>
+        <ul>
+            <li class="component">Compiler (1)
+                <ul class="tickets">
+                    <li class="ticket">
+                        <span class="ticket-number">SDKTOOLS-177</span>&#160;<span class="ticket-notes">No dianogstic message when set match criteria match nothing in the classpath</span>
+                    </li>
+                </ul>
+            </li>
+            <li class="component">Generator (1)
+                <ul class="tickets">
+                    <li class="ticket">
+                        <span class="ticket-number">SDKTOOLS-170</span>&#160;<span class="ticket-notes">ExtJs autogenerated sample app contains maintainFlex property, which is nowhere implemented in code</span>
+                    </li>
+                </ul>
+            </li>
+            <li class="component">Misc (4)
+                <ul class="tickets">
+                    <li class="ticket">
+                        <span class="ticket-number">SDKTOOLS-162</span>&#160;<span class="ticket-notes">Sencha Cmd v3.0 :: CSS is overriden and erased // bad relative reference to images</span>
+                    </li>
+                    <li class="ticket">
+                        <span class="ticket-number">SDKTOOLS-172</span>&#160;<span class="ticket-notes">Metadata is generated for the fake MVC Application-derived class</span>
+                    </li>
+                    <li class="ticket">
+                        <span class="ticket-number">SDKTOOLS-180</span>&#160;<span class="ticket-notes">Using -append on compile concat or meta commands fails if output file has no path specified</span>
+                    </li>
+                    <li class="ticket">
+                        <span class="ticket-number">SDKTOOLS-184</span>&#160;<span class="ticket-notes">Dependency re-scan should be triggered when options change on compile context</span>
+                    </li>
+                </ul>
+            </li>
+        Total: 9</ul>
+    </div>
+    <div class="release">
+        <h1>Release Notes for Sencha Cmd 3.0.0 Beta 2</h1>
+        <p class="notes">
+            Release Date: September 26, 2012<br>
+            Version Number: 3.0.0.181
+        </p>
+        <h2>Customizable Builds</h2>
+        
+        <p>In this release we have introduced a new, top-level build script to provide a
+        consistent and customizable build process for Ext JS and Sencha Touch applications
+        The "sencha app build" is one way to perform an application build. This now calls
+        in to an <a href="http://ant.apache.org/" target="_blank">Ant</a> script to perform
+        the actual build. This means the build can now be customized as needed.</p>
+
+        <p>The Ant equivalent of "sencha app build [production|testing|native|package]" is:</p>
+        
+        <pre>
+    sencha ant [production|testing|native|package] build</pre>
+        
+        If you have Ant in your PATH, you can use it directly:
+
+        <pre>
+    ant [production|testing|native|package] build</pre>
+
+        <p>This runs the generated Ant build script to build your application. The reason
+        the arguments are swapped vs "sencha app build" is to accommodate how Ant processes
+        the command line.</p>
+        
+        <p>That's all that is necessary to use the Ant script. You don't have to do
+        anything extra to get Ant (it is provided by Sencha Cmd) and you don't have to
+        know anything about Ant. That is, unless you want to customize the build script.</p>
+
+        <p>For details on tuning your application's Ant build script, start by reading the
+        comments contained in "build.xml" (the Ant build script). Also you can consult the
+        <a href="http://ant.apache.org/manual/index.html" target="_blank">Ant Manual</a>
+        for details on using Ant.</p>
+        
+        <p>Alternatively, you can chose to wrap your own build process around the
+        "sencha app build" command.</p>
+        
+        <h2>Bugs Fixed</h2>
+        <ul>
+            <li class="component">Cmd (3)
+                <ul class="tickets">
+                    <li class="ticket">
+                        <span class="ticket-number">TOUCH-3450</span>&#160;<span class="ticket-notes">[2.1 beta3] Bug in the config.rb file (SASS Compile)</span>
+                    </li>
+                    <li class="ticket">
+                        <span class="ticket-number">TOUCH-3454</span>&#160;<span class="ticket-notes">[2.1 beta3] sencha generate app failed on linux64</span>
+                    </li>
+                    <li class="ticket">
+                        <span class="ticket-number">TOUCH-3466</span>&#160;<span class="ticket-notes">[2.1.0-b3] Ext.Loader path problem</span>
+                    </li>
+                </ul>
+            </li>
+            <li class="component">Misc (7)
+                <ul class="tickets">
+                    <li class="ticket">
+                        <span class="ticket-number">SDKTOOLS-110</span>&#160;<span class="ticket-notes">Generated app templates need to be loadable via file protocol</span>
+                    </li>
+                    <li class="ticket">
+                        <span class="ticket-number">SDKTOOLS-155</span>&#160;<span class="ticket-notes">Problems with the encoding characters using the compiler compression</span>
+                    </li>
+                    <li class="ticket">
+                        <span class="ticket-number">SDKTOOLS-157</span>&#160;<span class="ticket-notes">Sencha Cmd does not auto-detect xtype/xclass dependencies</span>
+                    </li>
+                    <li class="ticket">
+                        <span class="ticket-number">SDKTOOLS-158</span>&#160;<span class="ticket-notes">Sencha app upgrade doesn't work</span>
+                    </li>
+                    <li class="ticket">
+                        <span class="ticket-number">SDKTOOLS-163</span>&#160;<span class="ticket-notes">sencha app build: classes out of order</span>
+                    </li>
+                    <li class="ticket">
+                        <span class="ticket-number">SDKTOOLS-164</span>&#160;<span class="ticket-notes">Sencha Cmd 3.0 and Cygwin</span>
+                    </li>
+                    <li class="ticket">
+                        <span class="ticket-number">SDKTOOLS-37</span>&#160;<span class="ticket-notes">app-all.js is using ANSI not UTF8</span>
+                    </li>
+                </ul>
+            </li>
+            <li class="component">compiler (1)
+                <ul class="tickets">
+                    <li class="ticket">
+                        <span class="ticket-number">SDKTOOLS-156</span>&#160;<span class="ticket-notes">Compiler does not recognize xtype in Ext.define and create appropriate alias entries</span>
+                    </li>
+                </ul>
+            </li>
+            <li class="component">jsbuilder (2)
+                <ul class="tickets">
+                    <li class="ticket">
+                        <span class="ticket-number">SDKTOOLS-101</span>&#160;<span class="ticket-notes">Including a file that contains a string with more than 8192 characters breaks build process</span>
+                    </li>
+                    <li class="ticket">
+                        <span class="ticket-number">SDKTOOLS-104</span>&#160;<span class="ticket-notes">Remove "url" from app.json</span>
+                    </li>
+                </ul>
+            </li>
+        Total: 13</ul>
+    </div>
+    </body>
+</html>

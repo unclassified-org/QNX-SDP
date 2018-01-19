@@ -1,0 +1,232 @@
+/**
+ * Styles for the Audio view.
+ * @author lgreenway
+ *
+ * $Id$
+ */
+ 
+.music-panel {
+	padding-top: 11px * $y-multiplier;
+}
+
+.button-small.button-shuffle {
+	background-image: $img-btn-shuffle;
+	
+	&.x-button-pressed, &.x-button-pressing {
+		background-image: $img-btn-shuffle-over;
+	}
+}
+
+.button-small.button-repeat-all {
+	background-image: $img-btn-repeat-all;
+	
+	&.x-button-pressed, &.x-button-pressing {
+		background-image: $img-btn-repeat-all-over;
+	}
+}
+
+.button-small.button-repeat-one {
+	background-image: $img-btn-repeat-one;
+	
+	&.x-button-pressed, &.x-button-pressing {
+		background-image: $img-btn-repeat-one-over;
+	}
+}
+
+.button-play.x-button {
+	width: 120px * $y-multiplier;
+	height: 120px * $y-multiplier;
+	background-image: $img-btn-play;
+
+	&.x-button-pressing {
+		border: none;
+		background-position: (-120px * $y-multiplier) 0px; 
+	}
+}
+
+.button-pause.x-button {
+	width: 120px * $y-multiplier;
+	height: 120px * $y-multiplier;
+	background-image: $img-btn-pause;
+
+	&.x-button-pressing {
+		border: none;
+		background-position: (-120px * $y-multiplier) 0px; 
+	}
+}
+
+.button-back.x-button {
+	width: 80px * $y-multiplier;
+	height: 80px * $y-multiplier;		
+	background-image: $img-btn-back;
+	
+	&.x-button-pressing {
+		border: none;
+		background-position: (-80px * $y-multiplier) 0px; 
+	}
+}
+
+.button-skip.x-button {
+	width: 80px * $y-multiplier;
+	height: 80px * $y-multiplier;
+	background-image: $img-btn-skip;
+	
+	&.x-button-pressing {
+		border: none;
+		background-position: (-80px * $y-multiplier) 0px;
+	}
+}
+
+.music-nowplaying {
+	width: 250px * $x-multiplier;
+	padding-left: 15px * $x-multiplier;
+	margin-top: 6px * $y-multiplier;
+	pointer-events: none;
+	// TODO: Scale text shadow, too?
+	text-shadow: #000 2px 2px 3px;
+}
+
+.music-nowplaying > .x-inner {
+	z-index: 10;
+}
+.music-nowplaying .x-inner {
+	width: 100%;
+}
+.music-nowplaying .x-innerhtml {
+	overflow-x: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.music-nowplaying .x-layout-card-item {
+	background: none;
+}
+
+.nowplaying-source {
+	font-size: 150%;
+	font-weight: bold;
+	padding-left: 30px * $x-multiplier;
+	background-repeat: no-repeat;
+	background-position: left center;
+	white-space: nowrap;
+}
+
+.nowplaying-songtitle {
+	font-size: 100%;
+	font-weight: bold;
+}
+
+.nowplaying-artist {
+	font-size: 75%;
+	line-height: 135%;
+}
+
+.nowplaying-album {
+	font-size: 75%;
+	font-weight: bold;
+	line-height: 135%;
+}
+
+.nowplaying-progressbar {
+	width: 230px * $x-multiplier;
+	pointer-events: auto;
+}
+
+.nowplaying-progresstime {
+	font-size: 75%;
+	font-weight: bold;
+	
+	/* Performance enhancement to prevent progress dom mutation
+	to redraw entire page. */
+	-webkit-transform: translate3d(0px, 0px, 0px);
+	overflow: hidden;
+	width: 100%;
+	height: 14px * $y-multiplier;
+}
+
+.music-playlistcontrols {
+	width: 250px * $x-multiplier;
+	height: 50px * $y-multiplier;
+	margin-top: 6px * $y-multiplier;
+}
+.music-playlistcontrols .x-inner {
+	z-index: 11;
+}
+
+.music-centerpanel {
+	width: 300px * $x-multiplier;
+	pointer-events: none;
+	z-index: 11;
+}
+
+.music-mediacontrols {
+	pointer-events: auto;
+}
+
+.coverflow {
+	display: block;
+	height: 335px * $y-multiplier;
+	width: 100%;
+	top: -335px * $y-multiplier;
+	position: absolute;
+
+	-webkit-perspective: 900 !important;
+
+	background-color: transparent !important;
+}
+
+.coverflow.x-empty {
+	background: no-repeat 50% 0%;
+	background-image: $img-default-audio-artwork;
+}
+
+.coverflow > .x-inner, .coverflow > .x-body {
+	-webkit-transform-style: preserve-3d;
+	display: block;
+}
+
+.coverflow-item
+{
+	position: absolute;
+	
+	top: 65px * $y-multiplier;
+
+	display: block;
+	
+	width: 200px * $y-multiplier;
+	height: 200px * $y-multiplier;	// Keep as square
+	background-color: black;
+	background-size: contain !important;
+	background-image: $img-default-audio-artwork;
+	
+	-webkit-transform-origin-y: 100%;
+	-webkit-transform: translate3d((-60px  * $x-multiplier), (10px * $y-multiplier), -10px) rotate3d(0, 1, 0, -40deg) scale3d(0.8, 0.8, 1);
+	-webkit-transition-property: -webkit-transform;
+	-webkit-transition-duration: 300ms;
+	-webkit-transition-timing-function: linear;
+}
+
+.coverflow-item.previewing {
+	-webkit-transform: translate3d((-100px * $x-multiplier), 0px, 75px) scale3d(1, 1, 1) !important;
+}
+
+.coverflow-item.selected {
+	-webkit-transform: translate3d((-100px * $x-multiplier), 0px, 75px) scale3d(1.3, 1.3, 1) !important;
+}
+
+.coverflow-item.previewing ~ .coverflow-item, 
+.coverflow-item.selected ~ .coverflow-item {
+	-webkit-transform: translate3d((-140px * $x-multiplier), (10px * $y-multiplier), -10px) rotate3d(0, 1, 0, 40deg) scale3d(0.8, 0.8, 1);
+}
+
+body[data-currentProfile=mid] .coverflow > .x-body {
+	-webkit-transition: none !important;
+}
+
+body[data-currentProfile=mid] .coverflow-item {
+	-webkit-transition: none !important;
+	display: none;
+}
+
+body[data-currentProfile=mid] .coverflow-item.selected {
+	display: inherit !important;
+}

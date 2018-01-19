@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<index>
+<entry keyword="changing mm-control command options">
+<topic href="topic/mmcontrol_SLM_start.html#mm_control_SLM_start" title="Running mm-control"/>
+</entry>
+<entry keyword="command monitoring and execution">
+<topic href="topic/mm_control_setup.html#mm_control_setup" title="Setup and Command Monitoring "/>
+</entry>
+<entry keyword="command outcome reporting">
+<topic href="topic/media_cmd_processing.html#media_cmd_processing" title="Media command processing"/>
+</entry>
+<entry keyword="command parsing and execution">
+<topic href="topic/media_cmd_processing.html#media_cmd_processing" title="Media command processing"/>
+</entry>
+<entry keyword="command processing procedure">
+<topic href="topic/mm_control_setup.html#mm_control_setup" title="Setup and Command Monitoring "/>
+<topic href="topic/media_cmd_processing.html#media_cmd_processing" title="Media command processing"/>
+</entry>
+<entry keyword="command syntax">
+<entry keyword="mm-control">
+<topic href="topic/mmcontrol_usage.html#mm_control_usage" title="mm-control command line"/>
+</entry>
+</entry>
+<entry keyword="description">
+<entry keyword="mm-control">
+<topic href="topic/mmcontrol_usage.html#mm_control_usage" title="mm-control command line"/>
+</entry>
+</entry>
+<entry keyword="Disabling mm-control">
+<topic href="topic/mmcontrol_preventing.html#mm_control_preventing" title="Preventing mm-control from running"/>
+</entry>
+<entry keyword="mm-control command line">
+<topic href="topic/mmcontrol_usage.html#mm_control_usage" title="mm-control command line"/>
+</entry>
+<entry keyword="mm-control configuration file">
+<topic href="topic/mmcontrol_config.html#mm_control_config" title="mm-control configuration file"/>
+</entry>
+<entry keyword="mm-control prerequisites">
+<topic href="topic/mmcontrol_SLM_spec.html#mm_control_SLM_spec" title="mm-control SLM specification"/>
+</entry>
+<entry keyword="mm-control setup condition">
+<topic href="topic/mmcontrol_SLM_spec.html#mm_control_SLM_spec" title="mm-control SLM specification"/>
+</entry>
+<entry keyword="mm-control SLM specification">
+<topic href="topic/mmcontrol_SLM_spec.html#mm_control_SLM_spec" title="mm-control SLM specification"/>
+</entry>
+<entry keyword="mm-control usage">
+<topic href="topic/mmcontrol_usage.html#mm_control_usage" title="mm-control command line"/>
+</entry>
+<entry keyword="mm-control workflow">
+<topic href="topic/mmcontrol_SLM_spec.html#mm_control_SLM_spec" title="mm-control SLM specification"/>
+</entry>
+<entry keyword="options">
+<entry keyword="mm-control">
+<topic href="topic/mmcontrol_usage.html#mm_control_usage" title="mm-control command line"/>
+</entry>
+</entry>
+<entry keyword="Preventing mm-control from running">
+<topic href="topic/mmcontrol_preventing.html#mm_control_preventing" title="Preventing mm-control from running"/>
+</entry>
+<entry keyword="restarting mm-control from an application">
+<topic href="topic/mmcontrol_manual_start.html#mm_control_manual_start" title="Restarting mm-control manually"/>
+</entry>
+<entry keyword="restarting mm-control manually">
+<topic href="topic/mmcontrol_manual_start.html#mm_control_manual_start" title="Restarting mm-control manually"/>
+</entry>
+<entry keyword="SLM configuration file">
+<topic href="topic/mmcontrol_SLM_spec.html#mm_control_SLM_spec" title="mm-control SLM specification"/>
+</entry>
+<entry keyword="starting mm-control during bootup">
+<topic href="topic/mmcontrol_SLM_start.html#mm_control_SLM_start" title="Running mm-control"/>
+</entry>
+<entry keyword="starting mm-control with SLM">
+<topic href="topic/mmcontrol_SLM_start.html#mm_control_SLM_start" title="Running mm-control"/>
+</entry>
+<entry keyword="starting the multimedia controller service">
+<topic href="topic/mmcontrol_usage.html#mm_control_usage" title="mm-control command line"/>
+</entry>
+<entry keyword="System Launch Monitor (SLM) service">
+<topic href="topic/mmcontrol_SLM_start.html#mm_control_SLM_start" title="Running mm-control"/>
+</entry>
+</index>

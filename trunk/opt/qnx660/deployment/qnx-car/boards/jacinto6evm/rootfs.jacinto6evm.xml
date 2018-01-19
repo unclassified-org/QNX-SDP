@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fileset name="rootfs.jacinto6evm">
+  <directory name="var" uid="root" gid="nto" mode="0755"/>
+  <directory name="var/etc" uid="root" gid="nto" mode="0755"/>
+  <directory name="var/etc/system" uid="root" gid="nto" mode="0755"/>
+  <directory name="var/etc/system/config" uid="root" gid="nto" mode="0755"/>
+  <directory name="var/etc/system/config/network" uid="root" gid="nto" mode="0755"/>
+  <!-- uncomment this to bring-up/configure the 2nd ethernet interface. There is currently
+       a known issue with the network stack that could cause it to stop working some of the
+       time if you include this file (COREOS-73970).
+  <file name="var/etc/system/config/network/dm1.conf" uid="root" gid="nto" mode="0640"/>
+  -->
+  <file name="var/pps/qnxcar/themes" uid="root" gid="nto" mode="0777"/>
+</fileset>

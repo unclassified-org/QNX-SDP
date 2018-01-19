@@ -1,0 +1,1231 @@
+###########################################################################
+#
+# QNX Neutrino 6.6.0 on the Texas Instruments OMAP5 uEVM5432 Board
+#
+###########################################################################
+#
+# SUPPORTED DEVICES:
+#
+# RTC:      Real Time Clock
+# Watchdog
+# SERIAL:   OMAP UART
+# I2C:      Inter-Integrated Circuit Bus
+# SPI:      Serial Peripheral Interface Bus
+# MMC/SD:   MultMediaCard/Secure Digital
+# USB2,3:   Universal Serial Bus
+# Ethernet
+# Audio
+# SATA:     Serial ATA
+#
+###########################################################################
+
+###########################################################################
+# START OF BUILD SCRIPT
+###########################################################################
+
+[image=0x80100000]
+
+# For loading IFS images with the U-Boot
+[virtual=armle-v7,raw] .bootstrap = {
+
+    # Options specific to this BSP:
+    #
+    # Watchdog option:
+    #	-W:  watchdog startup option (wdtkick should be uncommented 
+    #	     when using this option)
+    #
+    # CPU frequency:
+    #	-c freq: set the CPU frequency to freq (overrides default frequency) 
+    #
+    # TI Syslink reserved memory addr [and optional size]
+    #   -L addr[,size] : specify the base address of memory reserved for TI Syslink use [and optional size]
+    #
+    # DDR memory size:
+    #	-d mem_size: set the total DDR size to mem_size
+    #
+    startup-omap5-uevm5432
+ 
+    # '-ae' startup option allows for unaligned memory accesses
+    PATH=:/proc/boot:/bin:/usr/bin:/sbin:/usr/sbin
+    LD_LIBRARY_PATH=:/proc/boot:/lib:/usr/lib:/lib/dll procnto-smp-instr -v -ae
+}
+[+script] .script = {
+
+
+        # Initialise the console
+        procmgr_symlink ../../proc/boot/libc.so.3 /usr/lib/ldqnx.so.2
+        display_msg
+        display_msg Welcome to QNX Neutrino 6.6.0 on the Texas Instruments OMAP5 uEVM5432 (ARMv7 Cortex-A15 core)
+        display_msg
+
+        #######################################################################
+        ## WatchDog utility
+        ## If startup is given '-W' parameter then the 'wdtkick' utility MUST
+        ## be uncommented below.
+        #######################################################################
+        # display_msg Starting Watchdog...
+        # dm814x-wdtkick -v
+
+        #######################################################################
+        ## Console SERIAL driver
+        #######################################################################
+        display_msg Starting UART3 (Console)
+        devc-seromap -e -F -b115200 -c48000000/16 0x48020000^2,106 -u1
+        waitfor /dev/ser1
+        reopen /dev/ser1
+
+        display_msg Starting UART2 (DEBUG IF)
+        devc-seromap -F -b115200 -c48000000/16 0x4806c000^2,105 -u2
+        waitfor /dev/ser2
+
+        #######################################################################
+        ## HCI driver
+        #######################################################################
+        #display_msg Starting HCI Shared Transport UART driver...
+        #devc-seromap_hci -u3 -a -n /etc/system/config/WL1893.bts -c 48000000/16 -g 0x4805b000,142 0x48066000^2,137
+
+        # Start some common servers
+        slogger &
+        pipe &
+
+        #######################################################################
+        ## MMC/SD driver
+        #######################################################################
+        display_msg Starting MMC/SD driver...
+        devb-sdmmc-omap5evm quiet blk cache=2M
+
+        #######################################################################
+        ## I2C driver -- Note: the xhci driver requires i2c0
+        #######################################################################
+        display_msg Starting I2C driver...
+        i2c-omap35xx-omap4 -p 0x48070000 -i 88 -c2 --u0
+        waitfor /dev/i2c0
+
+        #######################################################################
+        ## RTC - requires i2c driver to be running
+        #######################################################################
+        # display_msg Starting RTC utility...
+        # rtc phoenix
+
+        #######################################################################
+        ## resource seed (DMA) for SPI and audio
+        #######################################################################
+        resource_seed dma=0,31
+
+        #######################################################################
+        ## SPI driver - SPI2 interface
+        #######################################################################
+        display_msg starting SPI driver for SPI2...
+
+        # With DMA transfer
+        spi-master -u 2 -d omap4430 base=0x4809a100,irq=98,sdma=1,channel=2
+
+        # OR without DMA transfer
+        #spi-master -u 2 -d omap4430 base=0x4809a100,irq=98,sdma=0,channel=2
+
+        waitfor /dev/spi2
+
+        #######################################################################
+        ## USB EHCI driver
+        #######################################################################
+        display_msg Starting USB EHCI driver and XHCI driver...
+        io-usb -c -vvv -d uevm5432-ehci-omap3 ioport=0x4a064c00,irq=109 -d sevm-omap5-xhci ioport=0x4a030000,irq=124
+        waitfor /dev/io-usb/io-usb 4
+
+        # OR
+        #display_msg Starting USB EHCI driver...
+        #io-usb -c -vvv -d uevm5432-ehci-omap3 ioport=0x4a064c00,irq=109
+
+        # OR
+        #display_msg Starting USB XHCI driver...
+        #io-usb -c -vvv -d sevm-omap5-xhci ioport=0x4a030000,irq=124
+
+        waitfor /dev/io-usb/io-usb 4
+
+        #######################################################################
+        ## NETWORK driver - USB-Ethernet bridge requires a loaded USB driver
+        #######################################################################
+        display_msg Starting Ethernet driver...
+        sh -c "io-pkt-v6-hc -d smsc9500 mac=`omap4-dieid -m`"
+        waitfor /dev/io-net/en0
+
+        #######################################################################
+        ## Network services
+        #######################################################################
+        display_msg Starting network services...
+        devc-pty
+        inetd
+
+        #######################################################################
+        ## USB OTG port (operating in device mode)...
+        ## Make sure to also update the io-usb parameters to not launch the XHCI Host
+        ## Controller driver or else the USB Device Controller driver will not work!
+        #######################################################################
+
+        ###### Example of CDC-ACM (serial) device #####
+
+        # Step 1 - Start USB device stack
+        #display_msg Starting USB CDC-ACM DC driver...
+        #io-usb-dcd -d usbser-omap543x-dwcotg3 ioport=0x4a030000,irq=124
+        #waitfor /dev/io-usb-dcd/io-usb 4
+        #waitfor /dev/io-usb-dcd/devu-usbser-omap543x-dwcotg3.so 4
+
+        # Step 2 - Start USB CDC-ACM function driver and enable USB soft connect
+        #devc-serusb_dcd -e -v -F -s -d iface_list=0,unit=1
+        #waitfor /dev/serusb1
+        #ulink_ctrl -l 1
+
+        ##### Example of Mass Storage device #####
+        # Step 1 - Create a ram disk
+        #devb-ram ram capacity=16384,nodinit,cache=512k disk name=hd@10
+        #waitfor /dev/hd10
+        #fdisk /dev/hd10 add -t 6
+        #mount -e /dev/hd10
+        #waitfor /dev/hd10t6
+        #mkdosfs /dev/hd10t6
+
+        # Step 2 - Start device stack
+        #display_msg Starting USB UMASS DC driver...
+        #io-usb-dcd -d usbumass-omap543x-dwcotg3 ioport=0x4a030000,irq=124
+        #waitfor /dev/io-usb-dcd/io-usb 4
+        #waitfor /dev/io-usb-dcd/devu-usbumass-omap543x-dwcotg3.so 4
+       
+        # Step 3 - Start Mass Storage function driver and enable USB soft connect
+        #devu-umass_client-block -l lun=0,devno=1,iface=0,fname=/dev/hd10
+        #ulink_ctrl -l 1
+
+        ##### Example of NCM device (Ethernet over USB) #####
+        # Step 1 - Start USB device stack
+        #display_msg Starting USB NCM DC driver...
+        #io-usb-dcd -d usbncm-omap543x-dwcotg3 ioport=0x4a030000,irq=124
+        #waitfor /dev/io-usb-dcd/io-usb 4
+        #waitfor /dev/io-usb-dcd/devu-usbncm-omap543x-dwcotg3.so 4
+
+        # Step 2 - Start USB NCM function driver
+        # For best performance attach the usbdnet driver to an existing io-pkt stack. Alternatively multiple
+        # io-pkt stacks can be used (see SDP documentation for more details). 
+        #mount -Tio-pkt -o mac=123456789abc,protocol=ncm devnp-usbdnet.so
+        #ulink_ctrl -l1
+
+        # Step 3 - Assign IP address to ncm interface using DHCP OR any static IP.
+        #if_up -p ncm0
+
+        #ifconfig ncm0 192.168.10.100
+        # OR
+        #dhcp.client -i ncm0 -A0 &
+
+        #######################################################################
+        ## uncomment for DVFS support
+        #######################################################################
+        # dvfsmgr-omap5 -c /etc/dvfs/config/omap5/dvfs_omap5_es2.conf -v
+
+        #######################################################################
+        # Audio driver
+        #######################################################################
+        display_msg Starting audio driver...
+        io-audio -d mcpdm-omap5uevm clkmgnt=0
+        waitfor /dev/snd/pcmC0D0p
+        # display_msg Starting McBSP audio driver...
+        # io-audio -vv -d mcbsp-omap4 mclk=19200000
+        # waitfor /dev/snd/pcmC1D0p
+
+        #######################################################################
+        ## SATA driver
+        #######################################################################
+        # display_msg Starting SATA driver...
+        # devb-ahci-omap5 ahci ioport=0x4a140000,irq=86 blk cache=2M cam cache
+
+        #######################################################################
+        ## Set environment and start the main shell
+        #######################################################################
+        [+session] sh /proc/boot/.console.sh &
+}
+
+# Redirect console messages
+[type=link] /bin/sh=/proc/boot/ksh
+[type=link] /dev/console=/dev/ser1
+[type=link] /tmp=/dev/shmem
+
+# Programs require the runtime linker (ldqnx.so) to be at a fixed location
+
+###########################################################################
+## Shared libraries
+###########################################################################
+libc.so
+libpps.so
+libtracelog.so
+libcsm.so
+libhiddi.so.1
+libm.so.2
+
+###########################################################################
+## Block device libraries
+###########################################################################
+libcam.so
+cam-disk.so
+fs-qnx6.so
+fs-qnx4.so
+fs-dos.so
+io-blk.so
+
+###########################################################################
+## USB driver libraries
+###########################################################################
+libusbdi.so
+devu-uevm5432-ehci-omap3.so
+devu-sevm-omap5-xhci.so
+
+###########################################################################
+## USB Device Controller drivers
+###########################################################################
+devu-usbumass-omap543x-dwcotg3.so
+devu-usbser-omap543x-dwcotg3.so
+devu-usbncm-omap543x-dwcotg3.so
+libusbdci.so
+
+###########################################################################
+## uncomment for USB Function drivers
+###########################################################################
+devnp-usbdnet.so
+
+###########################################################################
+## SPI driver
+###########################################################################
+spi-omap4430.so
+
+###########################################################################
+## Network driver libraries
+###########################################################################
+devnp-asix.so
+devn-smsc9500.so
+devnp-shim.so
+libsocket.so
+#libnbutil.so
+#libbacktrace.so
+
+###########################################################################
+## Audio driver
+###########################################################################
+deva-ctrl-mcpdm-omap5uevm.so
+deva-ctrl-mcbsp-omap4.so
+libabe.so
+libasound.so
+libaudio_manager.so
+
+###########################################################################
+## Graphics support - screen
+###########################################################################
+libdisputil.so.2
+libWFD.so.1
+libinputevents.so.1
+libkalman.so.1
+screen-pvr2d.so
+/usr/lib/graphics/omap5430ES2_0/libWFDomap5430ES2_0.so=graphics/omap5430ES2_0/libWFDomap5430ES2_0.so
+/usr/lib/graphics/omap5430ES2_0/libsrv_um.so=graphics/omap5430ES2_0/libsrv_um.so
+/usr/lib/graphics/omap5430ES2_0/libpvr2d.so=graphics/omap5430ES2_0/libpvr2d.so
+/usr/lib/graphics/omap5430ES2_0/pvrsrvinit.so=graphics/omap5430ES2_0/pvrsrvinit.so
+/usr/lib/graphics/omap5430ES2_0/pvrsrv.so=graphics/omap5430ES2_0/pvrsrv.so
+/usr/lib/graphics/omap5430ES2_0/graphics.conf=graphics/omap5430ES2_0/graphics.conf
+/usr/lib/graphics/omap5430ES2_0/libwfdcfg-generic.so=graphics/omap5430ES2_0/libwfdcfg-generic.so
+
+###########################################################################
+## Graphics support - apps
+###########################################################################
+libEGL.so.1
+libscreen.so.1
+/usr/lib/graphics/omap5430ES2_0/libGLESv1_CM.so.1=libGLESv1_CM.so.1
+/usr/lib/graphics/omap5430ES2_0/libGLESv2.so.1=libGLESv2.so.1
+/usr/lib/graphics/omap5430ES2_0/libusc.so=graphics/omap5430ES2_0/libusc.so
+/usr/lib/graphics/omap5430ES2_0/libIMGegl.so=graphics/omap5430ES2_0/libIMGegl.so
+/usr/lib/graphics/omap5430ES2_0/wsegl-screen.so=graphics/omap5430ES2_0/wsegl-screen.so
+/usr/lib/graphics/omap5430ES2_0/libImgGLESv1_CM.so=graphics/omap5430ES2_0/libImgGLESv1_CM.so
+/usr/lib/graphics/omap5430ES2_0/libImgGLESv2.so=graphics/omap5430ES2_0/libImgGLESv2.so
+/usr/lib/graphics/omap5430ES2_0/libglslcompiler.so=graphics/omap5430ES2_0/libglslcompiler.so
+
+###########################################################################
+# Executables 
+# If you want to be able to run executables more than once,
+# put them after [data=c] attribute.
+###########################################################################
+[data=c]
+
+###########################################################################
+## SD driver
+###########################################################################
+devb-sdmmc-omap5evm
+
+###########################################################################
+## uncomment for SATA driver
+###########################################################################
+devb-ahci-omap5
+
+###########################################################################
+## USB driver
+###########################################################################
+usb
+devb-umass
+devb-ram
+io-usb
+
+###########################################################################
+## uncomment for USB Device stack and utils
+###########################################################################
+io-usb-dcd
+ulink_ctrl
+
+###########################################################################
+## uncomment for USB Function drivers
+###########################################################################
+devu-umass_client-block
+devc-serusb_dcd
+
+###########################################################################
+## DVFS support 
+###########################################################################
+dvfsmgr-omap5
+/etc/dvfs/config/omap5/dvfs_omap5_es2.conf=../install/etc/dvfs/config/omap5/dvfs_omap5_es2.conf
+
+###########################################################################
+## I2C driver
+###########################################################################
+i2c-omap35xx-omap4
+
+###########################################################################
+## SPI master
+###########################################################################
+spi-master
+
+###########################################################################
+## uncomment for NETWORK driver
+###########################################################################
+io-pkt-v6-hc
+nicinfo
+ping
+fs-nfs3
+ifconfig
+if_up
+dhcp.client
+
+###########################################################################
+## serial driver
+###########################################################################
+devc-seromap
+devc-seromap_hci
+
+###########################################################################
+## audio driver required binaries & files
+###########################################################################
+io-audio
+wave
+waverec
+mix_ctl
+
+###########################################################################
+## Screen executables
+###########################################################################
+/sbin/screen=screen
+/usr/bin/gles1-gears=gles1-gears
+/usr/bin/gles2-gears=gles2-gears
+/usr/bin/sw-vsync=sw-vsync
+
+###########################################################################
+## Set environment and start the main shell
+###########################################################################
+[perms=0744] .console.sh={
+
+# These environment variables are inherited by all the programs that follow.
+echo Setting environment variables...
+export SYSNAME=nto
+export TERM=qansi
+export HOME=/
+export PATH=:/proc/boot:/bin:/usr/bin:/opt/bin:/sbin
+export LD_LIBRARY_PATH=:/proc/boot:/lib:/usr/lib:/usr/lib/graphics:/usr/lib/graphics/omap5430ES2_0:/lib/dll:/opt/lib
+export GRAPHICS_ROOT=/usr/lib/graphics/omap5430ES2_0
+echo done.
+
+#start appsmedia-sample if it exists
+appsmediaScript=/proc/boot/.start-appsmedia-sample
+if [ -e "$appsmediaScript" ]; then
+   #appsmedia-sample uses dhclient instead of dhcp.client
+   . "$appsmediaScript"
+else
+   dhcp.client -i en0 &
+
+   #######################################################################
+   ## Start the screen graphics
+   #######################################################################
+   echo Starting Screen Graphics...
+   screen
+   echo done.
+
+   #######################################################################
+   ## USB umass driver - must be started after USB-Ethernet bridge driver
+   #######################################################################
+   echo Starting USB mass storage driver...
+   devb-umass cam pnp
+   echo done.
+
+fi
+
+#######################################################################
+## Momentics remote target service
+#######################################################################
+echo Starting qconn service...
+qconn
+
+ksh -l
+}
+###########################################################################
+## general commands
+###########################################################################
+cat
+chmod
+cp
+date
+df
+echo
+elvis
+fdisk
+find
+grep
+hostname
+ifconfig
+ln
+ls
+mkdir
+mkdosfs
+mkqnx6fs
+mv
+more
+mount
+netstat
+nicinfo
+pidin
+ping
+pipe
+pwd
+rm
+route
+shutdown
+slay
+slogger
+sloginfo
+top
+tracelogger
+umount
+uname
+use
+waitfor
+
+###########################################################################
+## Commands required for OMAP5 EVM
+###########################################################################
+dm814x-wdtkick
+ksh
+resource_seed
+rtc
+omap4-dieid
+
+###########################################################################
+## uncomment for debugging support
+###########################################################################
+devc-pty
+#ftpd
+inetd
+#/bin/login = login
+#pdebug
+qconn
+#telnetd
+
+#/etc/services = ../tools/qnx650/target/qnx6/etc/services
+
+#/etc/inetd.conf = {
+#ftp        stream tcp nowait root  /proc/boot/ftpd           in.ftpd -l
+#telnet     stream tcp nowait root  /proc/boot/telnetd        in.telnetd
+#}
+
+#/etc/ftpusers = {
+#/* Allow all users to connect to the ftp server */
+#* allow
+#}
+
+#/etc/ftpd.conf = {
+#/* Make things a+rw by default */
+#umask all 0000
+#}
+#
+#/etc/passwd = {
+#root::0:0:Superuser:/root:/bin/sh
+#ftp::14:80:FTP User:/tmp:
+#}
+
+###########################################################################
+## END OF BUILD SCRIPT
+###########################################################################
+
+###########################################################################
+##
+## INTERRUPT MAP
+##
+###########################################################################
+##
+## vector:   32
+## trigger:  level
+## device:   MPU_CLUSTER_IRQ_INTERR (from Module MPU_CLUSTER)
+
+## vector:   33
+## trigger:  level
+## device:   CS_CTI_MPU_C0_IRQ (from Module CS_CTI_MPU_C0)
+
+## vector:   34
+## trigger:  level
+## device:   CS_CTI_MPU_C1_IRQ (from Module CS_CTI_MPU_C1)
+
+## vector:   35
+## trigger:  level
+## device:   MPU_CLUSTER_IRQ_AXIERR (from Module MPU_CLUSTER)
+
+## vector:   36
+## trigger:  level
+## device:   ELM_IRQ (from Module ELM)
+
+## vector:   37
+## trigger:  level
+## device:   Reserved (from Module N/A)
+
+## vector:   38
+## trigger:  level
+## device:   Reserved (from Module N/A)
+
+## vector:   39
+## trigger:  level
+## device:   EXT_SYS_IRQ_1 (from Module EXT_SYS)
+
+## vector:   40
+## trigger:  level
+## device:   Reserved (from Module N/A)
+
+## vector:   41
+## trigger:  level
+## device:   L3_MAIN_IRQ_DBG_ERR (from Module L3_MAIN)
+
+## vector:   42
+## trigger:  level
+## device:   L3_MAIN_IRQ_APP_ERR (from Module L3_MAIN)
+
+## vector:   43
+## trigger:  level
+## device:   PRM_IRQ_MPU (from Module PRM)
+
+## vector:   44 (Cascade interrupt, Do not attach)
+## trigger:  level
+## device:   DMA_SYSTEM_IRQ_0 (from Module DMA_SYSTEM)
+
+## vector:   45	(Cascade interrupt, Do not attach)
+## trigger:  level
+## device:   DMA_SYSTEM_IRQ_1 (from Module DMA_SYSTEM)
+
+## vector:   46 (Cascade interrupt, Do not attach)
+## trigger:  level
+## device:   DMA_SYSTEM_IRQ_2 (from Module DMA_SYSTEM)
+
+## vector:   47 (Cascade interrupt, Do not attach)
+## trigger:  level
+## device:   DMA_SYSTEM_IRQ_3 (from Module DMA_SYSTEM)
+
+## vector:   48
+## trigger:  level
+## device:   L3_MAIN_IRQ_STAT_ALARM (from Module L3_MAIN)
+
+## vector:   49
+## trigger:  level
+## device:   MCBSP1_IRQ (from Module MCBSP1)
+
+## vector:   50
+## trigger:  level
+## device:   SMARTREFLEX_MPU_IRQ (from Module PU)
+
+## vector:   51
+## trigger:  level
+## device:   SMARTREFLEX_CORE_IRQ (from Module SMARTREFLEX_CORE)
+
+## vector:   52
+## trigger:  level
+## device:   GPMC_IRQ (from Module GPMC)
+
+## vector:   53
+## trigger:  level
+## device:   GPU_IRQ (from Module GPU)
+
+## vector:   54
+## trigger:  level
+## device:   MCBSP2_IRQ (from Module MCBSP2)
+
+## vector:   55
+## trigger:  level
+## device:   MCBSP3_IRQ (from Module MCBSP3)
+
+## vector:   56
+## trigger:  level
+## device:   ISS_IRQ_5 (from Module ISS)
+
+## vector:   57
+## trigger:  level
+## device:   DISPC_IRQ (from Module DISPC)
+
+## vector:   58
+## trigger:  level
+## device:   MAILBOX_IRQ_USER0 (from Module MAILBOX)
+
+## vector:   59
+## trigger:  level
+## device:   C2C_CTRL_MODULE_IRQ_0 (from Module LE)
+
+## vector:   60
+## trigger:  level
+## device:   DSP_IRQ_MMU (from Module DSP)
+
+## vector:   61 (Cascade interrupt, Do not attach)
+## trigger:  level
+## device:   GPIO1_IRQ_1 (from Module GPIO1) 
+
+## vector:   62 (Cascade interrupt, Do not attach)
+## trigger:  level
+## device:   GPIO2_IRQ_1 (from Module GPIO2)
+
+## vector:   63 (Cascade interrupt, Do not attach)
+## trigger:  level
+## device:   GPIO3_IRQ_1 (from Module GPIO3)
+
+## vector:   64 (Cascade interrupt, Do not attach)
+## trigger:  level
+## device:   GPIO4_IRQ_1 (from Module GPIO4)
+
+## vector:   65 (Cascade interrupt, Do not attach)
+## trigger:  level
+## device:   GPIO5_IRQ_1 (from Module GPIO5)
+
+## vector:   66 (Cascade interrupt, Do not attach)
+## trigger:  level
+## device:   GPIO6_IRQ_1 (from Module GPIO6)
+
+## vector:   67 (Cascade interrupt, Do not attach)
+## trigger:  level
+## device:   GPIO7_IRQ_1 (from Module GPIO7)
+
+## vector:   68
+## trigger:  level
+## device:   WD_TIMER3_IRQ (from Module WD_TIMER3)
+
+## vector:   69
+## trigger:  level
+## device:   TIMER1_IRQ (from Module TIMER1)
+
+## vector:   70
+## trigger:  level
+## device:   TIMER2_IRQ (from Module TIMER2)
+
+## vector:   71
+## trigger:  level
+## device:   TIMER3_IRQ (from Module TIMER3)
+
+## vector:   72
+## trigger:  level
+## device:   TIMER4_IRQ (from Module TIMER4)
+
+## vector:   73
+## trigger:  level
+## device:   TIMER5_IRQ (from Module TIMER5)
+
+## vector:   74
+## trigger:  level
+## device:   TIMER6_IRQ (from Module TIMER6)
+
+## vector:   75
+## trigger:  level
+## device:   TIMER7_IRQ (from Module TIMER7)
+
+## vector:   76
+## trigger:  level
+## device:   TIMER8_IRQ (from Module TIMER8)
+
+## vector:   77
+## trigger:  level
+## device:   TIMER9_IRQ (from Module TIMER9)
+
+## vector:   78
+## trigger:  level
+## device:   TIMER10_IRQ (from Module TIMER10)
+
+## vector:   79
+## trigger:  level
+## device:   TIMER11_IRQ (from Module TIMER11)
+
+## vector:   80
+## trigger:  level
+## device:   MCSPI4_IRQ (from Module MCSPI4)
+
+## vector:   81
+## trigger:  level
+## device:   Reserved (from Module N/A)
+
+## vector:   82
+## trigger:  level
+## device:   Reserved (from Module N/A)
+
+## vector:   83
+## trigger:  level
+## device:   Reserved (from Module N/A)
+
+## vector:   84
+## trigger:  level
+## device:   Reserved (from Module N/A)
+
+## vector:   85
+## trigger:  level
+## device:   DSI1_A_IRQ (from Module DSI1_A)
+
+## vector:   86
+## trigger:  level
+## device:   SATA_IRQ (from Module SATA)
+
+## vector:   87
+## trigger:  level
+## device:   DSI1_C_IRQ (from Module DSI1_C)
+
+## vector:   88
+## trigger:  level
+## device:   I2C1_IRQ (from Module I2C1)
+
+## vector:   89
+## trigger:  level
+## device:   I2C2_IRQ (from Module I2C2)
+
+## vector:   90
+## trigger:  level
+## device:   HDQ1W_IRQ (from Module HDQ1W)
+
+## vector:   91
+## trigger:  level
+## device:   MMC5_IRQ (from Module MMC5)
+
+## vector:   92
+## trigger:  level
+## device:   I2C5_IRQ (from Module I2C5)
+
+## vector:   93
+## trigger:  level
+## device:   I2C3_IRQ (from Module I2C3)
+
+## vector:   94
+## trigger:  level
+## device:   I2C4_IRQ (from Module I2C4)
+
+## vector:   95
+## trigger:  level
+## device:   Reserved (from Module N/A)
+
+## vector:   96
+## trigger:  level
+## device:   Reserved (from Module N/A)
+
+## vector:   97
+## trigger:  level
+## device:   MCSPI1_IRQ (from Module MCSPI1)
+
+## vector:   98
+## trigger:  level
+## device:   MCSPI2_IRQ (from Module MCSPI2)
+
+## vector:   99
+## trigger:  level
+## device:   HSI_IRQ_MPU_P1 (from Module HSI)
+
+## vector:   100
+## trigger:  level
+## device:   HSI_IRQ_MPU_P2 (from Module HSI)
+
+## vector:   101
+## trigger:  level
+## device:   FDIF_IRQ_3 (from Module FDIF)
+
+## vector:   102
+## trigger:  level
+## device:   UART4_IRQ (from Module UART4)
+
+## vector:   103
+## trigger:  level
+## device:   HSI_IRQ_MPU_DMA (from Module HSI)
+
+## vector:   104
+## trigger:  level
+## device:   UART1_IRQ (from Module UART1)
+
+## vector:   105
+## trigger:  level
+## device:   UART2_IRQ (from Module UART2)
+
+## vector:   106
+## trigger:  level
+## device:   UART3_IRQ (from Module UART3)
+
+## vector:   107
+## trigger:  level
+## device:   PBIAS_IRQ (from Module PBIAS)
+
+## vector:   108
+## trigger:  level
+## device:   USB_HOST_HS_IRQ_OHCI (from Module USB_HOST_HS)
+
+## vector:   109
+## trigger:  level
+## device:   USB_HOST_HS_IRQ_EHCI (from Module USB_HOST_HS)
+
+## vector:   110
+## trigger:  level
+## device:   USB_TLL_HS_IRQ (from Module USB_TLL_HS)
+
+## vector:   111
+## trigger:  level
+## device:   Reserved (from Module N/A)
+
+## vector:   112
+## trigger:  level
+## device:   WD_TIMER2_IRQ (from Module WD_TIMER2)
+
+## vector:   113
+## trigger:  level
+## device:   Reserved (from Module N/A)
+
+## vector:   114
+## trigger:  level
+## device:   Reserved (from Module N/A)
+
+## vector:   115
+## trigger:  level
+## device:   MMC1_IRQ (from Module MMC1)
+
+## vector:   116
+## trigger:  level
+## device:   Reserved (from Module N/A)
+
+## vector:   117
+## trigger:  level
+## device:   Reserved (from Module N/A)
+
+## vector:   118
+## trigger:  level
+## device:   MMC2_IRQ (from Module MMC2)
+
+## vector:   119
+## trigger:  level
+## device:   MODEM_ICR_IRQ_MPU (from Module MODEM_ICR)
+
+## vector:   120
+## trigger:  level
+## device:   C2C_CTRL_MODULE_IRQ_1 (from Module C2C_CTRL_MODULE)
+
+## vector:   121
+## trigger:  level
+## device:   DEBUGSS_IRQ_CT_UART_TX (from Module DEBUGSS)
+
+## vector:   122
+## trigger:  level
+## device:   DEBUGSS_IRQ_CT_UART_RX (from Module DEBUGSS)
+
+## vector:   123
+## trigger:  level
+## device:   MCSPI3_IRQ (from Module MCSPI3)
+
+## vector:   124
+## trigger:  level
+## device:   USB_OTG_SS_IRQ_CORE (from Module USB_OTG_SS)
+
+## vector:   125
+## trigger:  level
+## device:   USB_OTG_SS_IRQ_WRP (from Module USB_OTG_SS)
+
+## vector:   126
+## trigger:  level
+## device:   MMC3_IRQ (from Module MMC3)
+
+## vector:   127
+## trigger:  level
+## device:   Reserved (from Module N/A)
+
+## vector:   128
+## trigger:  level
+## device:   MMC4_IRQ (from Module MMC4)
+
+## vector:   129
+## trigger:  level
+## device:   SLIMBUS1_IRQ (from Module SLIMBUS1)
+
+## vector:   130
+## trigger:  level
+## device:   SLIMBUS2_IRQ (from Module SLIMBUS2)
+
+## vector:   131
+## trigger:  level
+## device:   AESS_IRQ_MPU (from Module AESS)
+
+## vector:   132
+## trigger:  level
+## device:   IPU_IRQ_MPU (from Module IPU)
+
+## vector:   133
+## trigger:  level
+## device:   HDMI_IRQ (from Module HDMI)
+
+## vector:   134
+## trigger:  level
+## device:   SMARTREFLEX_MM_IRQ (from Module SMARTREFLEX_MM)
+
+## vector:   135
+## trigger:  level
+## device:   IVA_IRQ_SYNC_1 (from Module IVA)
+
+## vector:   136
+## trigger:  level
+## device:   IVA_IRQ_SYNC_0 (from Module IVA)
+
+## vector:   137
+## trigger:  level
+## device:   UART5_IRQ (from Module UART5)
+
+## vector:   138
+## trigger:  level
+## device:   UART6_IRQ (from Module UART6)
+
+## vector:   139
+## trigger:  level
+## device:   IVA_IRQ_MAILBOX_0 (from Module IVA)
+
+## vector:   140
+## trigger:  level
+## device:   MCASP_IRQ_AREVT (from Module MCASP)
+
+## vector:   141
+## trigger:  level
+## device:   MCASP_IRQ_AXEVT (from Module MCASP)
+
+## vector:   142
+## trigger:  level
+## device:   EMIF1_IRQ (from Module EMIF1)
+
+## vector:   143
+## trigger:  level
+## device:   EMIF2_IRQ (from Module EMIF2)
+
+## vector:   144
+## trigger:  level
+## device:   MCPDM_IRQ (from Module MCPDM)
+
+## vector:   145
+## trigger:  level
+## device:   DMM_IRQ (from Module DMM)
+
+## vector:   146
+## trigger:  level
+## device:   DMIC_IRQ (from Module DMIC)
+
+## vector:   147
+## trigger:  level
+## device:   Reserved (from Module N/A)
+
+## vector:   148
+## trigger:  level
+## device:   Reserved (from Module N/A)
+
+## vector:   149
+## trigger:  level
+## device:   Reserved (from Module N/A)
+
+## vector:   150
+## trigger:  level
+## device:   Reserved (from Module N/A)
+
+## vector:   151
+## trigger:  level
+## device:   EXT_SYS_IRQ_2 (from Module EXT_SYS)
+
+## vector:   152
+## trigger:  level
+## device:   KBD_IRQ (from Module KBD)
+
+## vector:   153 (Cascade interrupt, Do not attach)
+## trigger:  level
+## device:   GPIO8_IRQ_1 (from Module GPIO8)
+
+## vector:   154
+## trigger:  level
+## device:   UNIPRO1_IRQ (from Module UNIPRO1)
+
+## vector:   155
+## trigger:  level
+## device:   UNIPRO2_IRQ (from Module UNIPRO2)
+
+## vector:   156
+## trigger:  level
+## device:   CAL_IRQ (from Module CAL)
+
+## vector:   157
+## trigger:  level
+## device:   Reserved (from Module N/A)
+
+## vector:   158
+## trigger:  level
+## device:   CTRL_MODULE_CORE_IRQ_THERMAL_ALERT (from Module CTRL_MODULE_CORE)
+
+## vector:   159
+## trigger:  level
+## device:   LLI_A_IRQ_0 (from Module LLI_A)
+
+## vector:   160
+## trigger:  level
+## device:   LLI_A_IRQ_1 (from Module LLI_A)
+
+## vector:   161
+## trigger:  level
+## device:   LLI_B_IRQ_0 (from Module LLI_B)
+
+## vector:   162
+## trigger:  level
+## device:   LLI_B_IRQ_1 (from Module LLI_B)
+
+## vector:   163
+## trigger:  level
+## device:   MPU_CLUSTER_IRQ_PMU_C0 (from Module MPU_CLUSTER)
+
+## vector:   164
+## trigger:  level
+## device:   MPU_CLUSTER_IRQ_PMU_C1 (from Module MPU_CLUSTER)
+
+## vector:   165
+## trigger:  level
+## device:   Reserved (from Module N/A)
+
+## vector:   166
+## trigger:  level
+## device:   Reserved (from Module N/A)
+
+## vector:   167
+## trigger:  level
+## device:   Reserved (from Module N/A)
+
+## vector:   168
+## trigger:  level
+## device:   Reserved (from Module N/A)
+
+## vector:   169
+## trigger:  level
+## device:   Reserved (from Module N/A)
+
+## vector:   170
+## trigger:  level
+## device:   Reserved (from Module N/A)
+
+## vector:   171
+## trigger:  level
+## device:   Reserved (from Module N/A)
+
+## vector:   172
+## trigger:  level
+## device:   Reserved (from Module N/A)
+
+## vector:   173
+## trigger:  level
+## device:   Reserved (from Module N/A)
+
+## vector:   174
+## trigger:  level
+## device:   Reserved (from Module N/A)
+
+## vector:   175
+## trigger:  level
+## device:   Reserved (from Module N/A)
+
+## vector:   176
+## trigger:  level
+## device:   Reserved (from Module N/A)
+
+## vector:   177
+## trigger:  level
+## device:   Reserved (from Module N/A)
+
+## vector:   178
+## trigger:  level
+## device:   Reserved (from Module N/A)
+
+## vector:   179
+## trigger:  level
+## device:   Reserved (from Module N/A)
+
+## vector:   180
+## trigger:  level
+## device:   Reserved (from Module N/A)
+
+## vector:   181
+## trigger:  level
+## device:   Reserved (from Module N/A)
+
+## vector:   182
+## trigger:  level
+## device:   Reserved (from Module N/A)
+
+## vector:   183
+## trigger:  level
+## device:   Reserved (from Module N/A)
+
+## vector:   184
+## trigger:  level
+## device:   Reserved (from Module N/A)
+
+## vector:   185
+## trigger:  level
+## device:   Reserved (from Module N/A)
+
+## vector:   186
+## trigger:  level
+## device:   Reserved (from Module N/A)
+
+## vector:   187
+## trigger:  level
+## device:   Reserved (from Module N/A)
+
+## vector:   188
+## trigger:  level
+## device:   Reserved (from Module N/A)
+
+## vector:   189
+## trigger:  level
+## device:   Reserved (from Module N/A)
+
+## vector:   190
+## trigger:  level
+## device:   Reserved (from Module N/A)
+
+## vector:   191
+## trigger:  level
+## device:   Reserved (from Module N/A)
+##
+
+###########################################################################
+##
+## System DMA interrupt
+##
+## vector:  256 - 287 (dma channel 0 - 31)
+## trigger: user defined
+## device:
+##
+###########################################################################
+
+###########################################################################
+##
+## Module GPIO1-GPIO8 interrupt
+##
+## vector:  1000 - 1255 (GPIO_PIN_0 - GPIO_PIN_255)
+## trigger: user defined
+## device:
+##
+###########################################################################

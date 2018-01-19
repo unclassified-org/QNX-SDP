@@ -1,0 +1,102 @@
+/* Home Screen */
+
+$home-item-search: 				url("#{$img-dir}/nav_home/searchdest_home.png");
+$home-item-poi: 				url("#{$img-dir}/nav_home/POI_home.png");
+$home-item-favourites: 			url("#{$img-dir}/nav_home/favedest_home.png");
+$home-item-history: 			url("#{$img-dir}/nav_home/desthistory_home.png");
+$home-item-map: 				url("#{$img-dir}/nav_home/maps_home.png");
+$home-item-settings: 			url("#{$img-dir}/nav_home/navsettings_home.png");
+
+/* Main Screen */
+
+$map-zoom-in: 					url("#{$img-dir}/nav_main/zoom_in.png");
+$map-zoom-out:		 			url("#{$img-dir}/nav_main/zoom_out.png");
+$map-message-background: 		url("#{$img-dir}/nav_main/nav_bar_main.png");
+$map-maneuver-large: 			url("#{$img-dir}/nav_main/nav_win_lrg.png");
+$map-maneuver-small: 			url("#{$img-dir}/nav_main/nav_win_sm.png");
+$map-destination: 				url("#{$img-dir}/nav_main/nav_bar_2.png");
+$map-cancel-navigation: 		url("#{$img-dir}/nav_main/cancelnav.png");
+
+/* Search */
+
+$search-panel-background: 		url("#{$img-dir}/nav_search/search_bkgrd.png");
+$search-clear-icon: 			url("#{$img-dir}/nav_search/search_del.png");
+$search-clear-icon-over: 		url("#{$img-dir}/nav_search/search_del_ovr.png");
+
+/* Common */
+
+$panel-background:				url("#{$img-dir}/nav_common/bkgrd_800x395.png");
+$checkbox-background:			url("#{$img-dir}/nav_settings/check_box.png");
+$button-background:				url("#{$img-dir}/nav_main/location_btn.png");
+
+/* Menu Controls */
+
+$clear-history-button: 			url("#{$img-dir}/nav_main/clear.png"), url("#{$img-dir}/nav_common/nav_actionbar.png");
+$clear-history-button-ovr: 		url("#{$img-dir}/nav_main/clear_ovr.png"), url("#{$img-dir}/nav_common/nav_actionbar.png");
+$add-favourite-button: 			url("#{$img-dir}/nav_main/add.png"), url("#{$img-dir}/nav_common/nav_actionbar.png");
+$add-favourite-button-ovr: 		url("#{$img-dir}/nav_main/add_ovr.png"), url("#{$img-dir}/nav_common/nav_actionbar.png");
+$settings-header: 				url("#{$img-dir}/nav_settings/menu_high.png");
+
+/* Main Menu */
+
+$menu-image-search: 			url("#{$img-dir}/nav_menu_icons/searchdest.png");
+$menu-image-poi: 				url("#{$img-dir}/nav_menu_icons/POI.png");
+$menu-image-favourites: 		url("#{$img-dir}/nav_menu_icons/fave.png");
+$menu-image-history: 			url("#{$img-dir}/nav_menu_icons/hist.png");
+$menu-image-map: 				url("#{$img-dir}/nav_menu_icons/maps.png");
+$menu-image-settings: 			url("#{$img-dir}/nav_menu_icons/navsettings.png");
+
+$menu-image-search-over: 		url("#{$img-dir}/nav_menu_icons/searchdest_ovr.png");
+$menu-image-poi-over: 			url("#{$img-dir}/nav_menu_icons/POI_ovr.png");
+$menu-image-favourites-over: 	url("#{$img-dir}/nav_menu_icons/fave_ovr.png");
+$menu-image-history-over: 		url("#{$img-dir}/nav_menu_icons/hist_ovr.png");
+$menu-image-map-over: 			url("#{$img-dir}/nav_menu_icons/maps_ovr.png");
+$menu-image-settings-over: 		url("#{$img-dir}/nav_menu_icons/navsettings_ovr.png");
+
+/* Settings */
+
+$menu-image-route: 				url("#{$img-dir}/nav_menu_icons/routepref.png");
+$menu-image-language: 			url("#{$img-dir}/nav_menu_icons/lang.png");
+$menu-image-units: 				url("#{$img-dir}/nav_menu_icons/unit.png");
+
+$menu-image-route-over:			url("#{$img-dir}/nav_menu_icons/routepref_ovr.png");
+$menu-image-language-over:		url("#{$img-dir}/nav_menu_icons/lang_ovr.png");
+$menu-image-units-over:			url("#{$img-dir}/nav_menu_icons/unit_ovr.png");
+
+/* POI Categories */
+
+$menu-image-accomodation:		url("#{$img-dir}/nav_menu_icons/accom.png");
+$menu-image-atm:				url("#{$img-dir}/nav_menu_icons/atm.png");
+$menu-image-attraction:			url("#{$img-dir}/nav_menu_icons/attract.png");
+$menu-image-church:				url("#{$img-dir}/nav_menu_icons/church.png");
+$menu-image-conference:			url("#{$img-dir}/nav_menu_icons/conf.png");
+$menu-image-hospital:			url("#{$img-dir}/nav_menu_icons/hosp.png");
+$menu-image-library:			url("#{$img-dir}/nav_menu_icons/lib.png");
+$menu-image-mall:				url("#{$img-dir}/nav_menu_icons/mall.png");
+$menu-image-museum:				url("#{$img-dir}/nav_menu_icons/museum.png");
+$menu-image-park:				url("#{$img-dir}/nav_menu_icons/park.png");
+$menu-image-parking:			url("#{$img-dir}/nav_menu_icons/parking.png");
+$menu-image-pharmacy:			url("#{$img-dir}/nav_menu_icons/pharm.png");
+$menu-image-public:				url("#{$img-dir}/nav_menu_icons/pubserv.png");
+$menu-image-restaurant:			url("#{$img-dir}/nav_menu_icons/restaurant.png");
+$menu-image-sports:				url("#{$img-dir}/nav_menu_icons/sports.png");
+$menu-image-transportation:		url("#{$img-dir}/nav_menu_icons/transport.png");
+$menu-image-zoo:				url("#{$img-dir}/nav_menu_icons/zoo.png");
+
+$menu-image-accomodation-over:	url("#{$img-dir}/nav_menu_icons/accom_ovr.png");
+$menu-image-atm-over:			url("#{$img-dir}/nav_menu_icons/atm_ovr.png");
+$menu-image-attraction-over:	url("#{$img-dir}/nav_menu_icons/attract_ovr.png");
+$menu-image-church-over:		url("#{$img-dir}/nav_menu_icons/church_ovr.png");
+$menu-image-conference-over:	url("#{$img-dir}/nav_menu_icons/conf_ovr.png");
+$menu-image-hospital-over:		url("#{$img-dir}/nav_menu_icons/hosp_ovr.png");
+$menu-image-library-over:		url("#{$img-dir}/nav_menu_icons/lib_ovr.png");
+$menu-image-mall-over:			url("#{$img-dir}/nav_menu_icons/mall_ovr.png");
+$menu-image-museum-over:		url("#{$img-dir}/nav_menu_icons/museum_ovr.png");
+$menu-image-park-over:			url("#{$img-dir}/nav_menu_icons/park_ovr.png");
+$menu-image-parking-over:		url("#{$img-dir}/nav_menu_icons/parking_ovr.png");
+$menu-image-pharmacy-over:		url("#{$img-dir}/nav_menu_icons/pharm_ovr.png");
+$menu-image-public-over:		url("#{$img-dir}/nav_menu_icons/pubserv_ovr.png");
+$menu-image-restaurant-over:	url("#{$img-dir}/nav_menu_icons/restaurant_ovr.png");
+$menu-image-sports-over:		url("#{$img-dir}/nav_menu_icons/sports_ovr.png");
+$menu-image-transportation-over:url("#{$img-dir}/nav_menu_icons/transport_ovr.png");
+$menu-image-zoo-over:			url("#{$img-dir}/nav_menu_icons/zoo_ovr.png");

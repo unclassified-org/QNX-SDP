@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fileset name="basefs.car.multimedia">
+  <!-- directories -->
+  <directory name="etc" uid="root" gid="nto" mode="0755"/>
+  <directory name="etc/system" uid="root" gid="nto" mode="0755"/>
+  <directory name="etc/system/config" uid="root" gid="nto" mode="0755"/>
+  <directory name="lib" uid="root" gid="nto" mode="0755"/>
+  <directory name="lib/dll" uid="root" gid="nto" mode="0755"/>
+  <directory name="usr" uid="root" gid="nto" mode="0755"/>
+  <directory name="usr/bin" uid="root" gid="nto" mode="0755"/>
+  <directory name="usr/lib" uid="root" gid="nto" mode="0755"/>
+  <directory name="usr/sbin" uid="root" gid="nto" mode="0755"/>
+
+  <!-- media manger -->
+  <file name="etc/mcd.conf" uid="root" gid="nto" mode="0644"/>
+  <file name="etc/mcd.mnt" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/sbin/mcd" uid="root" gid="nto" mode="0755"/>
+
+  <!-- media sync -->
+  <file name="etc/mmsync_car2.conf" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/sbin/mm-sync" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/bin/mmsyncclient" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libmmsyncclient.so" target="libmmsyncclient.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libmmsyncclient.so.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libdbnotify.so" target="libdbnotify.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libdbnotify.so.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="lib/dll/libqdb_notify.so" target="libqdb_notify.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/libqdb_notify.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/mm-mdp-mmf.so" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/mm-plp-m3u.so" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/mm-plp-qdb.so" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libmmcharconv.so" target="libmmcharconv.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libmmcharconv.so.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libmmplaylist.so" target="libmmplaylist.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libmmplaylist.so.1" uid="root" gid="nto" mode="0755"/>
+  
+  <symlink name="lib/libcsm.so" target="libcsm.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/libcsm.so.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libmmbrowse.so" target="libmmbrowse.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libmmbrowse.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/mpp-default.so" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/mpp-synced_default.so" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/mpp-dlna.so" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/mpp-ipod.so" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/mpp-avrcp.so" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libmmplayerclient.so" target="libmmplayerclient.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libmmplayerclient.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="etc/mm-player.cfg" uid="root" gid="nto" mode="0644"/>
+  <file name="lib/dll/mmbrowse-posix.so" uid="root" gid="nto" mode="0755"/>
+
+  <!-- required by io-fs-media service to support MTP -->
+  <file name="lib/dll/iofs-pfs.so" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/mm-mdp-mediafs.so" uid="root" gid="nto" mode="0775"/>
+
+  <!-- media track manager -->
+  <file name="usr/sbin/mm-trkmgr" uid="root" gid="nto" mode="0755"/>
+
+  <symlink name="usr/lib/libtrkmgrclient.so" target="libtrkmgrclient.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="/usr/lib/libtrkmgrclient.so.1" uid="root" gid="nto" mode="0755"/>
+
+  <!-- libmd -->
+  <symlink name="usr/lib/libmd.so" target="libmd.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libmd.so.1" uid="root" gid="nto" mode="0755"/>
+
+  <!-- mm-control -->
+  <file name="etc/mm-control.cfg" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/sbin/mm-control" uid="root" gid="nto" mode="0755"/>
+
+  <!-- mm-detect -->
+  <file name="usr/sbin/mm-detect" uid="root" gid="nto" mode="0755"/>
+  
+  <!-- mm-player -->
+  <file name="usr/sbin/mm-player" uid="root" gid="nto" mode="0755"/>
+
+  <!-- artwork -->
+  <file name="usr/sbin/artwork_client_car2" uid="root" gid="nto" mode="0755"/>
+
+  <!-- nowplaying -->
+  <file name="usr/sbin/nowplaying" uid="root" gid="nto" mode="0755"/>
+</fileset>
+

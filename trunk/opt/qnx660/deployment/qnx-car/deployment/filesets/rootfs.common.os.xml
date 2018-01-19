@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fileset name="rootfs.common.os">
+  <directory name="apps" uid="apps" gid="nto" mode="0755"/>
+  <directory name="var" uid="root" gid="nto" mode="0755"/>
+  <directory name="var/db" uid="root" gid="nto" mode="0755"/>
+  <directory name="var/db/backup" uid="root" gid="nto" mode="0755"/>
+  <directory name="var/db/backup2" uid="root" gid="nto" mode="0755"/>
+  <directory name="var/run" uid="root" gid="nto" mode="0755"/>
+  <directory name="var/flmso" uid="root" gid="nto" mode="0755"/>
+  <directory name="var/keymgr" uid="root" gid="nto" mode="0755"/>
+  <directory name="var/pps" uid="root" gid="nto" mode="0775"/>
+  <directory name="var/tmp" uid="root" gid="nto" mode="0777"/>
+  <file name="var/tmp/db/bluetoothdb.sql" uid="root" gid="nto" mode="0755"/>
+  <file name="var/tmp/db/car2_dlna.sql" uid="root" gid="nto" mode="0755"/>
+  <file name="var/tmp/db/messages_data.sql" uid="root" gid="nto" mode="0755"/>
+  <file name="var/tmp/db/messages.sql" uid="root" gid="nto" mode="0755"/>
+  <file name="var/tmp/db/mmplayer_client.sql" uid="root" gid="nto" mode="0755"/>
+  <file name="var/tmp/db/mmplayer_data.sql" uid="root" gid="nto" mode="0755"/>
+  <file name="var/tmp/db/mmplayer.sql" uid="root" gid="nto" mode="0755"/>
+  <file name="var/tmp/db/mmsync_car2.sql" uid="root" gid="nto" mode="0755"/>
+  <file name="var/tmp/db/mmsync_data_car2.sql" uid="root" gid="nto" mode="0755"/>
+  <file name="var/tmp/db/personalization_data_schema.sql" uid="root" gid="nto" mode="0755"/>
+  <file name="var/tmp/db/personalization_schema.sql" uid="root" gid="nto" mode="0755"/>
+  <file name="var/tmp/db/phonebook_data.sql" uid="root" gid="nto" mode="0755"/>
+  <file name="var/tmp/db/phonebook.sql" uid="root" gid="nto" mode="0755"/>
+
+  <directory name="var/log" uid="root" gid="logger" mode="0770"/>
+  <directory name="var/log/launcher" uid="root" gid="logger" mode="0770"/>
+  <directory name="var/log/wpa_pps" uid="root" gid="logger" mode="0770"/>
+  <directory name="var/log/wpa_supplicant" uid="root" gid="logger" mode="0770"/>
+  <directory name="var/log/sloginfo" uid="root" gid="logger" mode="0770"/>
+  <directory name="var/log/certmgr" uid="root" gid="logger" mode="0770"/>
+  <directory name="var/log/iked" uid="root" gid="logger" mode="0770"/>
+  <directory name="var/authman" uid="root" gid="nto" mode="0750"/>
+  <directory name="var/chroot" uid="root" gid="nto" mode="0755"/>
+  <directory name="var/chroot/sshd" uid="root" gid="nto" mode="0755"/>
+  <directory name="var/fontconfig" uid="root" gid="nto" mode="0755"/>
+  <directory name="var/usb" uid="root" gid="nto" mode="0755"/>
+  <directory name="var/usb/usbd" uid="root" gid="nto" mode="0755"/>
+  <directory name="var/usb/usbd/pdrvr" uid="root" gid="nto" mode="0755"/>
+  <directory name="var/usb/usbd/pdrvr/msc" uid="root" gid="nto" mode="0755"/>
+  <directory name="var/usb/usbd/services" uid="root" gid="nto" mode="0755"/>
+  <directory name="var/usb/usbd/services/dhcpd" uid="root" gid="nto" mode="0755"/>
+  <file name="var/usb/usbd/services/dhcpd/dhcpd_usbdnet.conf" uid="root" gid="nto" mode="0644"/>
+  <directory name="var/sapphire" uid="root" gid="nto" mode="0755"/>
+  <directory name="var/sapphire/files" uid="nobody" gid="nto" mode="0750"/>
+  <directory name="var/sapphire/icons" uid="nobody" gid="nto" mode="0750"/>
+  <directory name="var/sapphire/password" uid="nobody" gid="nto" mode="0750"/>
+  <directory name="var/clipboard" uid="root" gid="nto" mode="0777"/>
+
+  <directory name="root" uid="root" gid="nto" mode="0711"/>
+  <file name="root/.profile" uid="root" gid="nto" mode="755"/>
+</fileset>

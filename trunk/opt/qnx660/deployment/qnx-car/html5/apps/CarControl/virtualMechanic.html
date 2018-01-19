@@ -1,0 +1,341 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Virtual Mechanic</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	</head>
+	<body onload="window.location = 'index.html'">
+		<div id="virtualMechanic" data-role="page" data-dom-cache="true">
+			<div class="systemStatusButtons">
+				<div id="btn_showFluidLevels" class="button">
+					<div class="icon fluid"></div>
+					Fluid Levels
+				</div>
+				<div id="btn_showTractionSystem" class="button">
+					<div class="icon traction"></div>
+					Traction System
+				</div>
+				<div id="btn_showBrakingSystem" class="button">
+					<div class="icon braking"></div>
+					Braking System
+				</div>
+				<div id="btn_showPowertrainSystem" class="button">
+					<div class="icon powertrain"></div>
+					Powertrain System
+				</div>
+				<div id="btn_showElectricalSystem" class="button">
+					<div class="icon electric"></div>
+					Electrical System
+				</div>
+			</div>
+			
+			<div class="fuelGauge"></div>
+			
+			<div class="statsMaintenanceButtons">
+				<div id="btn_showVehicleStats" class="button">
+					<div class="icon stats"></div>
+					<div class="twoLineLabel">Vehicle Statistics</div>
+				</div>
+				<div id="scheduleMaintenance" class="button disabled">
+					<div class="icon calendar"></div>
+					<div class="twoLineLabel">Schedule Maintenance</div>
+				</div>
+			</div>
+			
+			<div id="dlg_fluidLevels" class="dialog">
+				<div class="window">
+					<div class="titleBar">
+						<div class="icon fluid"></div>
+						Fluid Levels
+						<div class="btnClose"></div>
+					</div>
+					<div class="content fluidLevels">
+						<div class="fluidGauge windshieldWasher">
+							<div class="title">Windshield Washer</div>
+							<div class="display"><div class="bar"></div></div>
+							<div class="statusIcon"></div>
+						</div>
+						<div class="fluidGauge transmission">
+							<div class="title">Transmission Fluid</div>
+							<div class="display"><div class="bar"></div></div>
+							<div class="statusIcon"></div>
+						</div>
+						<div class="fluidGauge fuel">
+							<div class="title">Fuel</div>
+							<div class="display"><div class="bar"></div></div>
+							<div class="statusIcon"></div>
+						</div>
+						<div class="fluidGauge engineCoolant">
+							<div class="title">Engine Coolant</div>
+							<div class="display"><div class="bar"></div></div>
+							<div class="statusIcon"></div>
+						</div>
+						<div class="fluidGauge brake">
+							<div class="title">Brake Fluid</div>
+							<div class="display"><div class="bar"></div></div>
+							<div class="statusIcon"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="dlg_tractionSystem" class="dialog">
+				<div class="window">
+					<div class="titleBar">
+						<div class="icon traction"></div>
+						Traction System
+						<div class="btnClose"></div>
+					</div>
+					<div class="content systemStatus traction">
+						<div class="statusArrow rear left">
+							<div class="statusItem rearLeft tirePressure">
+								<div class="icon"></div>
+								Tire Pressure
+							</div>
+							<div class="statusItem rearLeft tireWearLevel">
+								<div class="icon"></div>
+								Wear Level
+							</div>
+						</div>
+						
+						<div class="statusArrow rear right">
+							<div class="statusItem rearRight tirePressure">
+								<div class="icon"></div>
+								Tire Pressure
+							</div>
+							<div class="statusItem rearRight tireWearLevel">
+								<div class="icon"></div>
+								Wear Level
+							</div>
+						</div>
+						
+						
+						<div class="statusArrow front left">
+							<div class="statusItem frontLeft tirePressure">
+								<div class="icon"></div>
+								Tire Pressure
+							</div>
+							<div class="statusItem frontLeft tireWearLevel">
+								<div class="icon"></div>
+								Wear Level
+							</div>
+						</div>
+	
+						<div class="statusArrow front right">
+							<div class="statusItem frontRight tirePressure">
+								<div class="icon"></div>
+								Tire Pressure
+							</div>
+							<div class="statusItem frontRight tireWearLevel">
+								<div class="icon"></div>
+								Wear Level
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="dlg_brakingSystem" class="dialog">
+				<div class="window">
+					<div class="titleBar">
+						<div class="icon braking"></div>
+						Braking System
+						<div class="btnClose"></div>
+					</div>
+					<div class="content systemStatus braking">
+						<div class="statusArrow rear left">
+							<div class="statusItem rearLeft brakeWearLevel">
+								<div class="icon"></div>
+								Brake Pads
+							</div>
+							<div class="statusItem rearLeft brakeAbs">
+								<div class="icon"></div>
+								ABS Sensor
+							</div>
+						</div>
+						
+						<div class="statusArrow rear right">
+							<div class="statusItem rearRight brakeWearLevel">
+								<div class="icon"></div>
+								Brake Pads
+							</div>
+							<div class="statusItem rearRight brakeAbs">
+								<div class="icon"></div>
+								ABS Sensor
+							</div>
+						</div>
+						
+						
+						<div class="statusArrow front left">
+							<div class="statusItem frontLeft brakeWearLevel">
+								<div class="icon"></div>
+								Brake Pads
+							</div>
+							<div class="statusItem frontLeft brakeAbs">
+								<div class="icon"></div>
+								ABS Sensor
+							</div>
+						</div>
+	
+						<div class="statusArrow front right">
+							<div class="statusItem frontRight brakeWearLevel">
+								<div class="icon"></div>
+								Brake Pads
+							</div>
+							<div class="statusItem frontRight brakeAbs">
+								<div class="icon"></div>
+								ABS Sensor
+							</div>
+						</div>
+						
+						<div id="btnAbsToggle" class="absSwitch">
+							ABS Brakes
+							<div class="btnBase">
+								<div class="btn off"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div id="dlg_powertrainSystem" class="dialog">
+				<div class="window">
+					<div class="titleBar">
+						<div class="icon powertrain"></div>
+						Powertrain System
+						<div class="btnClose"></div>
+					</div>
+					<div class="content systemStatus powertrain">
+						<div class="statusBoxLarge rear">
+							<div class="title">Engine</div>
+							<div class="statusItem engineOil pressure">
+								<div class="icon"></div>
+								Oil Pressure -
+								<div class="statusText">Low</div>
+							</div>
+							<div class="statusItem engineOil level">
+								<div class="icon"></div>
+								Oil Level -
+								<div class="statusText">Normal</div>
+							</div>
+							<div class="statusItem engine rpm">
+								<div class="icon"></div>
+								RPM -
+								<div class="statusText">Normal</div>
+							</div>
+						</div>
+						
+						<div class="statusBoxLarge front">
+							<div class="title">Transmission</div>
+							<div class="statusItem transmission temperature">
+								<div class="icon"></div>
+								Temperature -
+								<div class="statusText">Low</div>
+							</div>
+							<div class="statusItem transmission clutchWear">
+								<div class="icon"></div>
+								Clutch Wear -
+								<div class="statusText">Normal</div>
+							</div>
+							<div class="statusItem transmission nextService">
+								<div class="icon"></div>
+								Next Service -
+								<div class="statusText">08/08/12</div>
+							</div>
+						</div>
+
+						<div id="currentGear" class="currentGear"></div>
+					</div>
+				</div>
+			</div>
+
+			<div id="dlg_electricalSystem" class="dialog">
+				<div class="window">
+					<div class="titleBar">
+						<div class="icon electric"></div>
+						Electrical System
+						<div class="btnClose"></div>
+					</div>
+					<div class="content systemStatus electrical">
+						<div class="statusArrow rear left">
+							<div class="statusItem rearLeft light">
+								<div class="icon"></div>
+								Left Tail Light
+								<div class="statusText">OK</div>
+							</div>
+						</div>
+						
+						<div class="statusArrow rear right">
+							<div class="statusItem rearRight light">
+								<div class="icon"></div>
+								Right Tail Light
+								<div class="statusText">OK</div>
+							</div>
+						</div>
+						
+						
+						<div class="statusArrow front left">
+							<div class="statusItem frontLeft light">
+								<div class="icon"></div>
+								Left Headlight
+								<div class="statusText">OK</div>
+							</div>
+						</div>
+	
+						<div class="statusArrow front right">
+							<div class="statusItem frontRight light">
+								<div class="icon"></div>
+								Right Headlight
+								<div class="statusText">OK</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="dlg_vehicleStats" class="dialog">
+				<div class="window">
+					<div class="titleBar">
+						<div class="icon stats"></div>
+						Vehicle Statistics
+						<div class="btnClose"></div>
+					</div>
+					<div class="content vehicleStats">
+						<div class="stat departureTime">
+							<div class="title">Departure Time</div>
+							<div class="icon"></div>
+							<div class="data">16:36 EST</div>
+							<div class="btnDef btnReset">Reset</div>
+						</div>
+						<div class="stat tripDuration">
+							<div class="title">Trip Duration</div>
+							<div class="icon"></div>
+							<div class="data">2 Hours 32 Minutes</div>
+							<div class="btnDef btnReset">Reset</div>
+						</div>
+						<div class="stat mileage">
+							<div class="title">Mileage</div>
+							<div class="icon"></div>
+							<div class="data">13.1 L / 100km</div>
+							<div class="btnDef btnReset">Reset</div>
+						</div>
+						<div class="stat distanceTraveled">
+							<div class="title">Distance Traveled</div>
+							<div class="icon"></div>
+							<div class="data">999 km</div>
+							<div class="btnDef btnReset">Reset</div>
+						</div>
+						<div class="stat avgSpeed">
+							<div class="title">Average Speed</div>
+							<div class="icon"></div>
+							<div class="data">56.1 km / hr.</div>
+							<div class="btnDef btnReset">Reset</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+
+	</body>
+</html>

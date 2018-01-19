@@ -1,0 +1,63 @@
+/* $Id: jquery.voice.css 4273 2012-09-25 17:51:22Z mlapierre@qnx.com $ */
+
+#voiceTab {
+	top:0px;
+	background: transparent url(../assets/720p/voice_bkgrd.png) bottom left repeat-x;
+}
+
+#voiceTab.show {
+	height: 309px;
+}
+
+#voiceBg {
+	opacity:0;
+}
+
+#voiceBg.show {
+	height:593px;
+	z-index:1;
+	background-color: black;
+	opacity:0.8;
+	-webkit-transition: opacity .5s ease;	
+}
+
+#voiceImg {
+	height: 300px;
+	width: 320px;
+	left: -478px;
+	background: transparent url(../assets/720p/voice_img.png) no-repeat;
+}
+
+#voiceAsrData {
+	width:1050px;
+	height:300px;
+}
+
+#voiceConfidence {
+	top: 42px;
+	left:42px;
+}
+
+#voiceConfidence span {
+  font-size: 5em;
+}
+
+#voiceState {
+	top: 60px;
+	left:330px;
+}
+
+#voiceState span {
+	font-size: 3.5em;
+}
+
+#voiceUtterance {
+	top: 150px;
+	left:330px;
+	width:870px;
+	height:120px;
+}
+
+#voiceUtterance span {
+	font-size: 3.5em;
+}

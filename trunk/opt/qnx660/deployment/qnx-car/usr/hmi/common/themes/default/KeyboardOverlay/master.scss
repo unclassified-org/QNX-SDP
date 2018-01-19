@@ -1,0 +1,29 @@
+// Import base theme variables
+
+@import '../base';
+
+$app-dir: $theme-dir + "/KeyboardOverlay";
+
+// Variable definitions for current application
+
+@media (min-height: 180px) and (max-height: 269px) 
+{
+	@import './800x480/style';
+	@import './images';
+	@import './palette';
+
+	// Import application layout
+	@import '../../common/KeyboardOverlay/master';
+
+
+}
+
+@media (min-height: 270px) and (max-height: 404px) 
+{
+	@import './1280x720/style';
+	@import './images';
+	@import './palette';
+
+	// Import application layout
+	@import '../../common/KeyboardOverlay/master';
+}

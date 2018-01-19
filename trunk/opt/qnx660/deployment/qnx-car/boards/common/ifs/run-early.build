@@ -1,0 +1,141 @@
+###################################################################################
+##
+## This includes non-platform-specific items that need to run as early as possible
+## (e.g. early audio chime, early splash screen, slogger, etc)
+##
+###################################################################################
+[+script] .script = {
+    #pipe needed by timestamp function
+    pipe &
+    
+    display_msg Build_2
+    #Run early chime
+    [pri=25r]/proc/boot/ksh /proc/boot/.early_chime &
+    /proc/boot/ksh /proc/boot/.early_splash &
+    /proc/boot/ksh /proc/boot/.early_ifs2 &
+    /proc/boot/ksh /proc/boot/.debug-utils &
+    /proc/boot/ksh /proc/boot/.start-pps &
+    /proc/boot/ksh /proc/boot/.start-slogger2 &
+    /proc/boot/ksh /proc/boot/.start-system &
+}
+
+
+[perms=0644] .early_chime = {
+	if /proc/boot/waitfor /dev/snd/defaultp; then
+	    /proc/boot/timestamp "LAUNCHING EARLY-CHIME" &
+	else
+            print "ERROR: Could not find audio device @ /dev/snd/defaultp"
+        exit 1
+    fi
+	
+	if [ -e "/proc/boot/.early_mix_ctl" ]; then
+		. /proc/boot/.early_mix_ctl
+	fi
+        print "Start Chime"
+	wave /proc/boot/car2-chime.wav > /dev/null
+	/proc/boot/timestamp "DONE EARLY-CHIME" &
+        
+        print "Build_01"
+
+	exit 0
+}
+
+[perms=0644] .early_splash = {
+	if /proc/boot/waitfor /dev/screen 10; then
+	    /proc/boot/timestamp "LAUNCHING EARLY-SPLASH" &
+	else
+        print "FATAL: Could not find screen @ /dev/screen"
+        exit 1
+    fi
+
+    . /proc/boot/.splash-screen &
+
+    /proc/boot/waitfor /base/bin/pidin
+    mypidin=$(pidin -p display_image -fa)
+    pid=$(echo $mypidin | sed -e 's/^.*[^0-9]\([0-9]\+\).*$/\1/')
+    if /proc/boot/waitfor /dev/screen/$pid 10; then
+        /proc/boot/timestamp "EARLY-SPLASH WINDOW CREATED" &
+    else
+        print "ERROR: Could not find wallpaper_car2 window (pid: $pid) in /dev/screen"
+        exit 1
+    fi
+
+	exit 0
+}
+
+[perms=0644] .early_ifs2 = {
+	if /proc/boot/waitfor /base/scripts/env.sh; then
+	    . /base/scripts/env.sh
+	else
+            print "ERROR: Could not find /base/scripts/env.sh before mounting secondary IFS"
+        exit 1
+    fi
+
+    if [ $\{IFS2_ENABLED\:-"false"\} != "true" ]; then
+        print "IFS2_ENABLED not set to true, secondary IFS disabled"
+        # Make a dummy path for SLM to detect
+        ln -Psf /dev/null /carifs2
+        exit 0
+    fi
+
+	if /proc/boot/waitfor $\{IFS2?\} 10; then
+	    /proc/boot/timestamp "LAUNCHING MOUNT-IFS2" &
+	else
+        print "ERROR: Timed out waiting for $\{IFS2?\} for secondary IFS"
+        exit 1
+    fi
+
+	if ! /base/usr/bin/mount_ifs -T -v -f $\{IFS2?\} -m $\{IFS2_LOC?\}; then
+        print "ERROR: Unable to mount secondary IFS"
+        exit 1
+    fi
+
+	if /proc/boot/waitfor $\{IFS2_LOC?\}; then
+	    /proc/boot/timestamp "DONE MOUNT-IFS2" &
+    else
+        print "ERROR: Could not find secondary IFS mount @ $\{IFS2_LOC?\}"
+        exit 1
+    fi
+
+    exit 0
+
+}
+
+[perms=0644] .debug-utils = {
+	/proc/boot/waitfor /base/usr/sbin/slogger
+
+	print Starting slogger
+	slogger -s256 -u100 &
+
+	print Starting dumper
+	#Note that dumper doesn't require it's dump dir exist when it starts
+	# so we don't wait for /var here
+	dumper -S -F -d /var/dumper/ &
+	
+	exit 0
+}
+
+[perms=0644] .start-pps = {
+	/proc/boot/waitfor /base/scripts/.run-pps.ksh
+	/proc/boot/timestamp "STARTING PPS" &
+    ksh /base/scripts/.run-pps.ksh
+}
+
+[perms=0644] .start-slogger2 = {
+	waitfor /dev/shmem
+	waitfor /pps
+	/proc/boot/timestamp "STARTING SLOGGER2" &
+	slogger2 -vvvvvv -U100 > /dev/shmem/slogger2-output.log 2>&1 &	
+}
+
+
+[perms=0644] .start-system = {
+	/proc/boot/waitfor /base/scripts/.run-startup.ksh
+    ksh /base/scripts/.run-startup.ksh
+}
+
+#For early audio
+[data=c perms=0755]
+wave
+car2-chime.wav
+

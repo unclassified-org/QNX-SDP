@@ -1,0 +1,27 @@
+<Client>
+	<DeviceId>
+		<DisplayName>WD TV Live Hub</DisplayName>
+		<DeviceDescriptionRecognition>
+			<DescriptionText>WD TV Live Hub</DescriptionText>
+		</DeviceDescriptionRecognition>
+		<MappingUpdatePolicy>FIX</MappingUpdatePolicy>
+	</DeviceId>
+	<Capabilities>
+		<Scaling>
+			<Target>JPEG160x160</Target>
+			<Target>JPEG1920x1080</Target>
+		</Scaling>
+	</Capabilities>
+	<Adaptations>
+		<DLNA>
+			<Version>DLNA15</Version>
+			<DescriptionFile>devicedescription-wd-live.xml</DescriptionFile>
+		</DLNA>
+	</Adaptations>
+	<DeviceQuirks>
+		<Quirk>NEEDS_THUMBNAIL_CI_FLAG</Quirk>
+		<Quirk>TV4IDS</Quirk>
+		<Quirk>NOEMBEDDEDALBUMART</Quirk>
+		<Quirk>NOARTISTROLECOMPOSER</Quirk>
+	</DeviceQuirks>
+</Client>

@@ -1,0 +1,251 @@
+/**
+ * Climate Control stylesheet.
+ *
+ * @author lgreenway@lixar.com
+ * 
+ * $Id: climateControl.css 4273 2012-09-25 17:51:22Z mlapierre@qnx.com $
+ */
+
+/* Climate Control */
+#climateControl
+{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 800px * $x-multiplier;
+	height: 395px * $y-multiplier;
+	min-height: 395px * $y-multiplier !important;
+	background: no-repeat top left, no-repeat top left;
+	overflow: hidden;
+}
+
+/* Climate Control: Fan control */
+#climateControl div.fanControl
+{
+	position: absolute;
+	top: 21px / $x-multiplier;
+	/*Must scale the height by the x since the dial must be kept square*/
+	width: 340px * $x-multiplier;
+	height: 340px * $x-multiplier;
+	overflow: hidden;
+}
+#climateControl div.fanControl[data-zone=row1left] {
+	left: -170px * $x-multiplier; 
+}
+#climateControl div.fanControl[data-zone=row1right] { 
+	right: -170px * $x-multiplier; 
+}
+#climateControl div.fanControl div.dialMask { position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; }
+#climateControl div.fanControl div.dial, #climateControl div.fanControl div.dialActive
+{
+	position: absolute;
+	top: -10px * $x-multiplier;
+	left: -10px * $x-multiplier;
+	/*Must scale the height by the x since the dial must be kept square*/
+	width: 360px * $x-multiplier;
+	height: 360px * $x-multiplier;
+
+	-webkit-transition: -webkit-transform 250ms ease-out;
+}
+#climateControl div.fanControl.dragging div.dial, #climateControl div.fanControl.dragging div.dialActive { -webkit-transition: -webkit-transform 1ms linear; }
+#climateControl div.fanControl[data-zone=row1left] div.dial { background: no-repeat 0% 0%; background-size: 100% 100%; }
+#climateControl div.fanControl[data-zone=row1left] div.dialActive { background: no-repeat 0% 0%; background-size: 100% 100%; }
+#climateControl div.fanControl[data-zone=row1right] div.dial { background: no-repeat 0% 0%; background-size: 100% 100%; }
+#climateControl div.fanControl[data-zone=row1right] div.dialActive { background: no-repeat 0% 0%; background-size: 100% 100%; }
+
+/* Climate Control: Temperature control */
+#climateControl div.tempControl
+{
+	position: absolute;
+	top: 25px * $y-multiplier;
+	width: 145px * $x-multiplier;
+	height: 160px * $y-multiplier;
+	overflow: hidden;
+}
+#climateControl div.tempControl[data-zone=row1left] { left: 199px * $x-multiplier; }
+#climateControl div.tempControl[data-zone=row1right] { right: 197px * $x-multiplier; }
+
+#climateControl div.tempControl div.temperature
+{
+	height: 160px * $y-multiplier;
+	overflow: hidden;
+	color: #c2c4c6;
+	text-align: center;
+ }
+#climateControl div.tempControl div.temperature ul {
+	position: absolute;
+	top: 45px * $y-multiplier;
+	height: 100%;
+	width: 100%;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	
+	-webkit-transition: -webkit-transform cubic-bezier(0.0, 0.0, 0.58, 1.0) 250ms;	
+}
+#climateControl div.tempControl div.temperature ul li
+{
+	height: 73px * $y-multiplier;
+	-webkit-font-smoothing: subpixel-antialiased;
+	font-size: 375%;
+	font-weight: normal;
+	text-shadow: none;
+	line-height: 73px * $y-multiplier;
+}
+	
+#climateControl div.tempControl div.temperature ul li {  }
+
+#climateControl div.tempControl div.temperature ul li span.degree { font-size: 50%; }
+
+/* Climate Control: Center toggle buttons */
+#climateControl div.centerToggleBtn
+{
+	position: absolute;
+	left: 368px * $x-multiplier;
+	width: 66px * $x-multiplier;
+	height: 66px * $y-multiplier;
+}
+
+/* Climate Control: Zone Link (All) toggle button */
+#climateControl div.centerToggleBtn.zoneLinkToggleControl 
+{ 
+	top: 25px * $y-multiplier; 
+	background: no-repeat 0% 0%;
+	background-size: 300% 100%;
+}
+#climateControl div.centerToggleBtn.zoneLinkToggleControl.active { background-position: 100% 0%; }
+#climateControl div.centerToggleBtn.zoneLinkToggleControl:active { background-position: 50% 0%; }
+
+/* Climate Control: AC toggle button */
+#climateControl div.centerToggleBtn.acToggleControl { top: 122px * $y-multiplier; background: no-repeat 0% 0%; background-size: 300% 100%; }
+#climateControl div.centerToggleBtn.acToggleControl.active  { background-position: 100% 0%; }
+#climateControl div.centerToggleBtn.acToggleControl:active { background-position: 50% 0% }
+
+/* Climate Control: Rear defrost toggle button */
+#climateControl div.centerToggleBtn.defrostToggleControl { top: 218px * $y-multiplier; background: no-repeat 0% 0%; background-size: 300% 100% }
+#climateControl div.centerToggleBtn.defrostToggleControl.active { background-position: 100% 0%;  }
+#climateControl div.centerToggleBtn.defrostToggleControl:active { background-position: 50% 0%; }
+
+/* Climate Control: Air circulation toggle button */
+#climateControl div.centerToggleBtn.airCirculationToggleControl { top: 301px * $y-multiplier; left: 338px * $x-multiplier; width: 126px * $x-multiplier; height: 66px * $y-multiplier; background: no-repeat 0% 0%; background-size: 400% 100%; }
+#climateControl div.centerToggleBtn.airCirculationToggleControl:active { background-position: 33.3% 0%; }
+#climateControl div.centerToggleBtn.airCirculationToggleControl.active { background-position: 66.6% 0%; }
+#climateControl div.centerToggleBtn.airCirculationToggleControl.active:active { background-position: 100% 0%; }
+
+/* Climate Control: Fan speed control */
+#climateControl div.fanSpeedControl
+{
+	position: absolute;
+	top: 218px * $y-multiplier;
+	width: 150px * $x-multiplier;
+	height: 66px * $y-multiplier;
+}
+#climateControl div.fanSpeedControl[data-zone=row1left] { left: 196px * $x-multiplier; }
+#climateControl div.fanSpeedControl[data-zone=row1right] { right: 195px * $x-multiplier; }
+#climateControl div.fanSpeedControl div.btn { width: 100%; height: 100%; background: no-repeat 0% 0%; background-size: 200% 700%; }
+#climateControl div.fanSpeedControl.level1 div.btn { background-position: 0% 16.6666%; }
+#climateControl div.fanSpeedControl.level2 div.btn { background-position: 0% 33.3333%; }
+#climateControl div.fanSpeedControl.level3 div.btn { background-position: 0% 50%; }
+#climateControl div.fanSpeedControl.level4 div.btn { background-position: 0% 66.6666%; }
+#climateControl div.fanSpeedControl.level5 div.btn { background-position: 0% 83.3333%; }
+#climateControl div.fanSpeedControl.level6 div.btn { background-position: 0% 100%; }
+#climateControl div.fanSpeedControl div.btn:active { background-position: 100% 0%; }
+#climateControl div.fanSpeedControl.level1 div.btn:active { background-position: 100% 16.6666%; }
+#climateControl div.fanSpeedControl.level2 div.btn:active { background-position: 100% 33.3333%; }
+#climateControl div.fanSpeedControl.level3 div.btn:active { background-position: 100% 50%; }
+#climateControl div.fanSpeedControl.level4 div.btn:active { background-position: 100% 66.6666%; }
+#climateControl div.fanSpeedControl.level5 div.btn:active { background-position: 100% 83.3333%; }
+#climateControl div.fanSpeedControl.level6 div.btn:active { background-position: 100% 100%; }
+
+/* Climate Control: Heated seat control */
+#climateControl div.heatedSeatControl
+{
+	position: absolute;
+	top: 301px * $y-multiplier;
+	width: 120px * $x-multiplier;
+	height: 66px * $y-multiplier;
+}
+#climateControl div.heatedSeatControl[data-zone=row1left] { left: 196px * $x-multiplier }
+#climateControl div.heatedSeatControl[data-zone=row1right] { right: 195px * $x-multiplier }
+#climateControl div.heatedSeatControl div.btn { width: 100%; height: 100%; background: no-repeat 0% 0%; background-size: 200% 400%; }
+#climateControl div.heatedSeatControl.level1 div.btn { background-position: 0% 33.3333%; }
+#climateControl div.heatedSeatControl.level2 div.btn { background-position: 0% 66.6666%; }
+#climateControl div.heatedSeatControl.level3 div.btn { background-position: 0% 100%; }
+#climateControl div.heatedSeatControl div.btn:active { background-position: 100% 0%; }
+#climateControl div.heatedSeatControl.level1:active div.btn { background-position: 100% 33.3333%; }
+#climateControl div.heatedSeatControl.level2:active div.btn { background-position: 100% 66.6666%; }
+#climateControl div.heatedSeatControl.level3:active div.btn { background-position: 100% 100%; }
+
+
+/* Climate Control images*/
+#climateControl
+{
+	background: $climate-control-bkgrd, $background;
+}
+
+#climateControl div.fanControl[data-zone=row1left] div.dialMask 
+{ 
+	-webkit-mask-image: $climate-control-dial-L-mask; 
+}
+
+#climateControl div.fanControl[data-zone=row1right] div.dialMask
+{ 
+	-webkit-mask-image: $climate-control-dial-R-mask; 
+}
+
+#climateControl div.fanControl[data-zone=row1left] div.dial 
+{ 
+	background-image: $climate-control-dial-L-white; 
+}
+
+#climateControl div.fanControl[data-zone=row1left] div.dialActive 
+{ 
+	background-image: $climate-control-dial-L-black; 
+}
+#climateControl div.fanControl[data-zone=row1right] div.dial
+{ 
+	background-image: $climate-control-dial-R-white; 
+}
+#climateControl div.fanControl[data-zone=row1right] div.dialActive
+{ 
+	background-image: $climate-control-dial-R-black; 
+}
+
+#climateControl div.tempControl div.temperature
+{
+ 	-webkit-mask-image: $climate-control-temp-control; 
+}
+
+/* Climate Control: Zone Link (All) toggle button */
+#climateControl div.centerToggleBtn.zoneLinkToggleControl 
+{ 
+	background-image: $climate-control-btn-all; 
+}
+
+/* Climate Control: AC toggle button */
+#climateControl div.centerToggleBtn.acToggleControl 
+{ 
+	background-image: $climate-control-btn-ac; 
+}
+
+/* Climate Control: Rear defrost toggle button */
+#climateControl div.centerToggleBtn.defrostToggleControl 
+{ 
+	background-image: $climate-control-btn-rearDef; 
+}
+
+/* Climate Control: Air circulation toggle button */
+#climateControl div.centerToggleBtn.airCirculationToggleControl 
+{ 
+	background-image: $climate-control-btn-circ; 
+}
+
+#climateControl div.fanSpeedControl div.btn 
+{ 
+	background-image: $climate-control-btn-fanSpeed; 
+}
+
+#climateControl div.heatedSeatControl div.btn 
+{ 
+	background-image: $climate-control-btn-heatedSeat; 
+}

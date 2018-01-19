@@ -1,0 +1,44 @@
+/* Base theme definition for default theme */
+
+/* Useful Definitions */
+
+$theme-dir: "platform:///apps/common/themes/titanium";
+
+
+/* Fonts */
+
+// @font-face { font-family: "Square"; src: url("#{$theme-dir}/common/fonts/1DB55E_A_0.ttf") format("truetype"); }
+// @font-face { font-family: "Square-Bold"; src: url("#{$theme-dir}/common/fonts/1DB55E_C_0.ttf") format("truetype"); }
+
+$font-family-default: 'Arial';
+$font-family-light: 'Arial';
+$font-family-medium: 'Arial Black';
+$font-family-bold: 'Arial Black';
+$font-size: 1em;
+
+/* Colors */
+
+$background-color: #000000;
+$text-color: #FFFFFF;
+$button-text-color: #FFFFFF;
+$button-disabled-color: #202020;
+$title-bar-background-color: rgba(158, 158, 158, 0.2);
+$title-bar-color:#000000;
+
+$sub-text-color:gray;
+
+$active-background-color: #DBDBDB;
+$active-text-color: #000000;
+$active-button-text-color: #000000;
+$active-button-disabled-color: #202020;
+
+$dialog-title-color: #FFFFFF;
+
+/* Other Defaults */
+
+body {
+	color: $text-color;
+	background-color: $background-color;
+	font-family: $font-family-default;
+	font-size: $font-size
+}

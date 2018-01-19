@@ -1,0 +1,180 @@
+/**
+ * Styles for the Radio view.
+ * @author lgreenway
+ *
+ * $Id$
+ */
+.radio-mid {
+	margin-top: 10px * $y-multiplier;
+	margin-right: 65px * $x-multiplier;	
+	margin-bottom: 0px * $y-multiplier;
+	margin-left: 65px * $x-multiplier;
+}
+
+.radio-panel {
+	background-image: $img-radio-background;
+}
+
+/* Override so that dial can appear underneath the top-docked menu button */
+.radio-panel .x-body { overflow: visible; }
+
+.radio-high .radio-leftpanel {
+	width: 343px * $x-multiplier;
+	z-index: 1;
+}
+
+.radio-high .radio-rightpanel {
+	height: 335px * $y-multiplier;
+	margin-top: 10px * $y-multiplier;
+	z-index: 2;
+}
+
+/* High quality radio dial. Theme-specific. */
+.radiotunerdial {}
+.radiotunerdial .dial {}
+.radiotunerdial .overlay {}
+.radiotunerdial .frequencyListContainer {}
+.radiotunerdial ul.frequencies {}
+.radiotunerdial ul.frequencies li {}
+
+/* Mid-quality tuner slider control */
+.radiotunerslider
+{
+	position: absolute;
+	left: 50%;
+	margin-left: -357px * $x-multiplier;
+
+	height: 110px * $y-multiplier;
+	width: 714px * $x-multiplier;
+
+	background: $img-radio-tuner-slider no-repeat 50% 0px;
+}
+
+.radiotunerslider .thumb {
+	position: absolute;
+	width: 80px * $x-multiplier;
+	height: 110px * $y-multiplier;
+}
+
+/* Thumb for radio-mid has less alpha transparency - speeds up rendering time a bit */
+.radio-mid .radiotunerslider .thumb { background-image: $img-radio-tuner-slider-thumb-mid; }
+.radio-high .radiotunerslider .thumb { background-image: $img-radio-tuner-slider-thumb-high; }
+
+/* Mid-quality current station info */
+.radiocurrentstation
+{
+	position: absolute;
+	top: -165px * $y-multiplier;
+	left: 445px * $x-multiplier;
+
+	overflow: hidden;
+:
+
+	height: 170px * $y-multiplier;
+	width: 210px * $x-multiplier;
+	
+	text-align: center;
+	line-height: 200%;
+	color: $text-color;
+	font-size: 500%;
+}
+
+/* Tuner Preset/AM, FM Band Buttons */
+.radiopresets {
+	height: 55px * $y-multiplier;
+	width: 100%;
+}
+.radiopresets .x-dataview-item,
+.radiotuners .x-dataview-item
+{
+	display: inline-block;
+}
+
+.button-preset, .button-tuner {
+	float: left;
+	background: $img-btn-radio-preset no-repeat 0px 0px;
+	background-size: 200% 100%;
+	width: 70px * $x-multiplier;
+	height: 50px * $y-multiplier;
+
+	margin: 0px (3px * $x-multiplier);
+
+	color: $button-text-color;
+	font-weight: bold;
+	line-height: 50px * $y-multiplier;
+	text-align: center;
+}
+.x-item-pressed .button-preset, .x-item-selected .button-preset,
+.x-item-pressed .button-tuner, .x-item-selected .button-tuner {
+	background-position-x: 100%;
+	color: $active-button-text-color;
+}
+
+.button-tuner { text-transform: uppercase; }
+
+/* Preset/Band mid-quality overrides */
+.radio-mid .radiopresets { margin-left: 4px * $x-multiplier; }
+.radio-mid .button-preset { margin: 0px (8px * $x-multiplier); }
+.radio-mid .radiotuners .x-dataview-item { display: block; margin-bottom: 10px * $y-multiplier; }
+.radio-mid .button-tuner { float: none; }
+
+/* Seek/Scan rocker buttons */
+.radio-controls {
+	height: 55px * $y-multiplier;
+	.x-inner > .x-container:first-of-type {
+		width: 157px * $x-multiplier;
+
+		.radiotuners {
+			width: 100%;
+		}
+	}
+}
+
+.x-button.radiorockerbutton {
+	background: $img-btn-radio-rocker no-repeat 0px 0px;
+	background-size: 300% 100%;
+	width: 140px * $x-multiplier;
+	height: 50px * $y-multiplier;
+	color: $button-text-color;
+	
+	margin: 0px (5px * $x-multiplier);
+
+	font-size: 120%;
+	text-transform: uppercase;
+}
+.x-button.radiorockerbutton.press-left { background-position-x: 50%; }
+.x-button.radiorockerbutton.press-right { background-position-x: 100%; }
+
+/* Seek/Scan mid-quality overrides */
+.radio-mid .x-button.radiorockerbutton {
+	margin:
+		0px * $y-multiplier
+		3px * $x-multiplier
+		10px * $y-multiplier
+		3px * $x-multiplier; }
+
+/* Station Information */
+.radio-stationinfo
+{
+	color: $text-color;
+	font-size: 185%;
+}
+.radio-stationinfo .stationName { font-size: 200%; }
+.radio-stationinfo .genre { font-size: 50%; text-transform: uppercase; }
+.radio-stationinfo .artist { font-size: 150%; }
+.radio-stationinfo .title { }
+.radio-stationinfo .hd { font-size: 60%; }
+
+.radio-stationinfo .stationName,
+.radio-stationinfo .genre,
+.radio-stationinfo .artist,
+.radio-stationinfo .title,
+.radio-stationinfo .hd { -webkit-box-flex: 1; }
+
+.radio-stationinfo .hd { min-height: 2em; }
+
+/* Station Information standard overrides */
+.radio-high .radio-stationinfo { margin-left: 25px * $x-multiplier; } /* Move over a bit due to overlap of tuner dial into right panel */
+
+/* Station Information mid-quality overrides */
+.radio-mid .radio-stationinfo { font-size: 140%; margin-left: 10px * $x-multiplier; } /* Reduce font size due to smaller available height */

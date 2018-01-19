@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<?eclipse version="3.0"?> 
+<plugin version="1.0" provider-name="%plugin.providername" name="Runtime for APK"
+   id="com.qnx.doc.qnxcar2.apk">
+
+   <extension point="org.eclipse.help.toc">
+	<toc file="main.xml" primary="true"/>
+   </extension>
+   
+	<extension point="org.eclipse.help.index">
+	 <index file="index.xml"/>
+	</extension>
+	
+</plugin>

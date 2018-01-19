@@ -1,0 +1,22 @@
+<Client>
+	<DeviceId>
+		<DisplayName>Twonky NMC</DisplayName>
+		<HttpRecognition>
+			<HttpText>TwonkyMedia-NMC</HttpText>
+			<HttpText>Twonky-NMC</HttpText>
+		</HttpRecognition>
+		<MappingUpdatePolicy>FIX</MappingUpdatePolicy>
+	</DeviceId>
+	<Capabilities>
+		<ProtocolList>
+			<Protocol>DNS</Protocol>
+			<Protocol>ROUTING</Protocol>
+		</ProtocolList>
+	</Capabilities>
+	<Adaptations>
+		<DefaultView>advanceddefault</DefaultView>
+		<DLNA>
+			<Version>DLNA15</Version>
+		</DLNA>
+	</Adaptations>
+</Client>

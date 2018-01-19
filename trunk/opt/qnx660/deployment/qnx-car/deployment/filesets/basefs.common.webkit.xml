@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fileset name="basefs.common.webkit">
+  <symlink name="usr/lib/libgrskia.so" target="libgrskia.so.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libgrskia.so.1" target="libgrskia.so.1.0" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libgrskia.so.1.0" uid="root" gid="nto" mode="0755"/>
+</fileset>

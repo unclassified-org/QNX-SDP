@@ -1,0 +1,391 @@
+export LD_LIBRARY_PATH=/ua/lib:/ua/usr/lib:${LD_LIBRARY_PATH}:/base/lib:/base/usr/lib
+export PATH=/ua/bin:/ua/sbin:/ua/usr/bin:/ua/usr/sbin:${PATH}
+
+startup=0
+delpart=0
+updatepart=0
+autoupdate=0
+
+: ${DISKINIT_DISK=/dev/cardisk0}
+
+: ${UA_PARTCODE=177}
+: ${UA_PARTSLOT=2}
+: ${UA_SIZE_MB=100}
+ua_part="${DISKINIT_DISK:?}t${UA_PARTCODE:?}"
+ua_init=0
+ua_mount=${OS_MOUNT-/ua}
+
+: ${OS_PARTCODE=179}
+: ${OS_PARTSLOT=3}
+: ${OS_SIZE_MB=1024}
+os_part="${DISKINIT_DISK:?}t${OS_PARTCODE:?}"
+os_init=0
+os_mount=${OS_MOUNT-/base}
+
+: ${DATA_PARTCODE=178}
+: ${DATA_PARTSLOT=4}
+data_part="${DISKINIT_DISK:?}t${DATA_PARTCODE:?}"
+data_init=0
+data_mount=${DATA_MOUNT-/}
+
+: ${DOS_PARTCODE=12}
+dos_part="${DOS_DISK:-${DISKINIT_DISK:?}}t${DOS_PARTCODE:?}"
+dos_mount=${DOS_MOUNT-/dos}
+
+usage="Usage: $0 [-NRU]
+ -R: recreate QNX6 UA, OS & Data partitions
+ -B: <size> specify the size in MB of the OS partition (default: 1024)
+ -U: update QNX6 UA, OS & Data partition
+ -N: non-interactive mode, used with -U: run updateAgent, then exit.
+"
+
+while getopts SRUNB: opt
+do
+	case "${opt:?}" in
+		B) OS_SIZE_MB=${OPTARG};;
+		S) startup=1;;
+		R) delpart=1;;
+		U) updatepart=1;;
+		N) autoupdate=1;;
+		\?)
+			echo "${usage:?}" >&2
+			exit 2
+			;;
+	esac
+done
+shift "$((OPTIND - 1))"
+
+if [ "$#" -ne 0 ]
+then
+	echo "${usage:?}" >&2
+	exit 2
+fi
+
+if [ -n "${IN_DISKINIT+set}" ]
+then
+	echo "disk-init already running; exit first" >&2
+	exit 1
+fi
+
+if [ "${updatepart:?}" -ne 0 -a ${delpart:?} -ne 0 ]
+then
+	echo "disk-init -R and -U are mutually exclusive" >&2
+	exit 1
+fi
+
+# set the prompt for any shells we start
+if [ "${updatepart:?}" -ne 0 ]
+then
+	export PS1="(update)# "
+	if ! waitfor "${ua_part:?}" 2>/dev/null
+	then
+		echo "Update Agent partition not found (${ua_part:?}i, can't proceed"
+		cleanup
+		exit 1
+	fi
+else
+	export PS1="(init)# "
+fi
+export IN_DISKINIT=1
+
+cleanup () {
+	if [ -d "$os_mount" ] && umount "${os_mount:?}" || umount -f "${os_mount:?}"
+	then
+		echo "Unmounted OS filesystem"
+	fi
+
+	if [ -d "$ua_mount" ] && umount "${ua_mount:?}" || umount -f "${ua_mount:?}"
+	then
+		echo "Unmounted Update Agent filesystem"
+	fi
+
+	mount | grep $data_part >/dev/null 2>&1
+	if [ $? == 0 ]; then
+		umount ${data_mount?} && echo "Unmounted Data filesystem" || umount -f ${data_mount?}
+	else
+		echo "Did not find Data filesystem ($data_part) mounted at $data_mount"
+	fi
+
+	#set boot into e.g. panda.ifs on next boot
+	car2_ifs=$(ls /dos/*.ifs | grep -v "\-update\.ifs" | grep -v "\-init\.ifs")
+	if [ -n "${car2_ifs?}" ] && [ -f ${car2_ifs} ]; then
+		echo "setting system to boot into ${car2_ifs?}..."
+		cp ${car2_ifs?} "${dos_mount?}/qnx-ifs" || echo "disk-init: ERROR: Failed to copy ${car2_ifs?} to ${dos_mount?}/qnx-ifs"
+	else 
+		echo "Could not determine system IFS from /dos to set for next boot"
+	fi
+
+	mount | grep $dos_part >/dev/null 2>&1
+	if [ $? == 0 ]; then
+        	if [ -d "$dos_mount" ] && umount "${dos_mount:?}" || umount -f "${dos_mount:?}"
+        	then
+              	  echo "Unmounted DOS filesystem"
+        	fi
+	else
+		echo "Did not find DOS filesystem ($dos_part) mounted at $dos_mount"
+	fi
+
+	trap '' EXIT
+}
+trap cleanup EXIT
+
+fatal () {
+	IFS=' '
+	echo "disk-init fatal error: $*" >&2
+	exit 1
+}
+
+pause_with_msg () {
+	# show a message and pause; CTRL+C drops to a shell
+	[ "$#" -eq 1 ] || set -- "usage: pause_with_msg TEXT"
+	
+	abort=0
+	trap 'abort=1' INT
+	echo "$1"
+	
+	delay=5
+	while [ "$delay" -gt 0 ]
+	do
+		echo -n " $delay"
+		if ! sleep 1
+		then
+			abort=1
+			break
+		fi
+		: $((delay -= 1))
+	done
+	echo ''
+	
+	[ "$abort" -eq 0 ] || fatal "script aborted"
+	trap - INT
+}
+
+del_fsys ()  # del_fsys DISK PARTCODE
+{
+	if [ "$#" -ne 3 ]
+	then
+		echo "del_fsys usage error" >&2
+		return 2
+	fi
+	
+	fdisk "${1:?}" delete -s "${3:?}" -t "${2:?}" \
+		|| fatal "failed to delete partition"
+	mount -e "$1"  # reread partition table
+}
+
+add_qnx6_fsys ()  # add_qnx6_fsys DISK PARTCODE [START_CYL END_CYL (default:-p 100%)]
+{
+	if [ "$#" -ne 3 -a "$#" -ne 5 ]
+	then
+		echo "add_qnx6_fsys usage error, num args is: $#" >&2
+		return 2
+	fi
+	
+	q6part="${1:?}t${2:?}"
+	
+	if [ $# -eq 3 ]
+	then
+		fdisk "$1" add -s "${3:?}" -t "$2" -p 100 \
+			|| fatal "failed to add partition"
+	else
+		fdisk "$1" add -s "${3:?}" -t "$2" -c"${4:?}","${5:?}" \
+            || fatal "failed to add partition"
+	fi
+	mount -e "$1"  # reread partition table
+	waitfor "$q6part" || fatal "couldn't find partition"
+	
+	## create and mount a QNX6 filesystem
+	
+	head -c 512 /dev/zero > "$q6part" \
+		|| fatal "failed to clear QNX6 header"
+	mkqnx6fs -q "$q6part" || fatal "mkqnx6fs failed"
+	#mkqnx6fs -q -o-lfncksum "$q6part" || fatal "mkqnx6fs failed"
+}
+
+## check whether the UA, OS and/or Data partitions exist
+
+
+waitfor "${DISKINIT_DISK:?}" || fatal "couldn't find disk"
+#Also wait for DOS_DISK if the system's dos partition is located on a different disk
+if [ -n "${DOS_DISK}" ]
+then
+   waitfor "${DOS_DISK}" || echo "warning: could not find disk specified by \$DOS_DISK: '${DOS_DISK}'"
+fi
+
+# If asked to wipe the disk, delete all partitions and flag for partition init
+# Otherwise, verify that the partitions exist already, else flag for partition init
+#   TODO: If we are aksed for autoupdate, bail out if the partitions do not exist?
+#         And if we do bail out, should we kick them into init IFS to initialize manually?
+#         Or what?
+if [ "${delpart:?}" -ne 0 ]
+then
+	pause_with_msg "Disk will be reformatted; press CTRL+C to abort"
+	### Delete UA partition
+	waitfor "${ua_part:?}" 2>/dev/null ||:
+	del_fsys "${DISKINIT_DISK:?}" \
+			"${UA_PARTCODE:?}" "${UA_PARTSLOT:?}"
+	ua_init=1
+	### Delete OS partition
+	waitfor "${os_part:?}" 2>/dev/null ||:
+	del_fsys "${DISKINIT_DISK:?}" \
+			"${OS_PARTCODE:?}" "${OS_PARTSLOT:?}"
+	os_init=1
+	### Delete DATA partition
+	waitfor "${data_part:?}" 2>/dev/null ||:
+	del_fsys "${DISKINIT_DISK:?}" \
+			"${DATA_PARTCODE:?}" "${DATA_PARTSLOT:?}"
+	data_init=1
+else
+        echo "Checking Disk..."
+	if ! waitfor "${ua_part:?}" 2>/dev/null
+	then
+		ua_init=1
+	fi
+	if ! waitfor "${os_part:?}" 2>/dev/null
+	then
+		os_init=1
+	fi
+	if ! waitfor "${data_part:?}" 2>/dev/null
+	then
+		data_init=1
+	fi
+fi
+
+# We've been asked to initialize one or more of the partitions, give them a chance to bail
+# with ctrl+c. Current scheme is:
+#    - Create fixed-size Update Agent (UA) partition;
+#    - Create fixed-size OS partition;
+#    - Create variable-sized Data partition with remaining space on disk.
+if [ "${ua_init:?}" -ne 0 -o "${os_init:?}" -ne 0 -o "${data_init:?}" -ne 0 ]
+then
+	if [ "${startup:?}" -ne 0 ]
+	then
+		pause_with_msg "Disk will be partitioned; press CTRL+C to abort"
+	fi
+	
+	if [ "${ua_init:?}" -ne 0 ];
+	then
+		echo "Initialising Update Agent (UA) partition..."
+		totalCylinders=`fdisk "${DISKINIT_DISK:?}" query -T`
+		freeCylinders=`fdisk "${DISKINIT_DISK:?}" query -f`
+		startCylinder=$((totalCylinders-freeCylinders+1))
+		endCylinder=$((startCylinder+UA_SIZE_MB-1))
+		add_qnx6_fsys "${DISKINIT_DISK:?}" \
+				"${UA_PARTCODE:?}" "${UA_PARTSLOT:?}" \
+				"${startCylinder:?}" "${endCylinder}"
+		echo "Created QNX6 filesystem for UA partition"
+	fi
+
+	if [ "${os_init:?}" -ne 0 ];
+	then
+		echo "Initialising OS partition..."
+		totalCylinders=`fdisk "${DISKINIT_DISK:?}" query -T`
+		freeCylinders=`fdisk "${DISKINIT_DISK:?}" query -f`
+		startCylinder=$((totalCylinders-freeCylinders+1))
+		endCylinder=$((startCylinder+OS_SIZE_MB-1))
+		add_qnx6_fsys "${DISKINIT_DISK:?}" \
+				"${OS_PARTCODE:?}" "${OS_PARTSLOT:?}" \
+				"${startCylinder:?}" "${endCylinder}"
+		echo "Created QNX6 filesystem for OS partition"
+	fi
+
+	if [ "${data_init:?}" -ne 0 ];
+	then
+		echo "Initialising DATA partition with remaining space..."
+		add_qnx6_fsys "${DISKINIT_DISK:?}" \
+				"${DATA_PARTCODE:?}" "${DATA_PARTSLOT:?}"
+		echo "Created QNX6 filesystem for Data partition"
+	fi
+fi
+
+mount | grep -q ${ua_part:?}
+if [ $? -ne 0 -a -n "${ua_mount?}" ]
+then
+	mount -tqnx6 "${ua_part:?}" "${ua_mount:-/ua}" \
+		|| fatal "failed to mount UA QNX6 FS"
+	
+	if [ -n "${ua_mount?}" ]
+	then
+		# The cleanup function will unmount the FS when the script exits.
+		echo "UA QNX6 filesystem mounted read/write at ${ua_mount:?}"
+	fi
+else 
+	mount -uw "${ua_mount:-/ua}" || fatal "failed to mount UA QNX6 FS R/W"
+fi
+
+mount | grep -q ${data_part:?}
+if [ $? -ne 0 -a -n "${data_mount?}" ]
+then
+	mount -tqnx6 "${data_part:?}" "${data_mount:-/}" \
+		|| fatal "failed to mount DATA QNX6 FS"
+	
+	if [ -n "${data_mount?}" ]
+	then
+		# The cleanup function will unmount the FS when the script exits.
+		echo "DATA QNX6 filesystem mounted read/write at ${data_mount:?}"
+	fi
+else 
+        mount -uw "${data_mount:-/}" || fatal "failed to mount DATA QNX6 FS R/W"
+fi
+
+mount | grep -q ${os_part:?}
+if [ $? -ne 0 -a -n "${os_mount?}" ]
+then
+	mount -tqnx6 "${os_part:?}" "${os_mount:-/base}" \
+		|| fatal "failed to mount OS QNX6 FS"
+	
+	if [ -n "${os_mount?}" ]
+	then
+		# The cleanup function will unmount the FS when the script exits.
+		echo "OS QNX6 filesystem mounted read/write at ${os_mount:?}"
+	fi
+else 
+	mount -uw "${os_mount:-/base}" || fatal "failed to mount OS QNX6 FS R/W"
+fi
+
+#Also mount the dos partition - failure is not fatal as some platforms may not have a dos part
+mount | grep -q ${dos_part:?}
+if [ $? -ne 0 -a -n "${dos_mount?}" ]
+then
+	mount -tdos "${dos_part:?}" "${dos_mount:-/dos}" \
+		|| echo "warning: failed to mount DOS FS from ${dos_part:?}"
+
+	if [ -n "${dos_mount?}" ]
+	then
+		# The cleanup function will unmount the FS when the script exits.
+		echo "DOS filesystem mounted read/write at ${dos_mount:?}"
+	fi
+else 
+        mount -uw "${dos_mount:-/dos}" || fatal "failed to mount DOS FS R/W"
+fi
+
+if [ "${updatepart:?}" -ne 0 -a "${autoupdate:?}" -ne 0 ]
+then
+	echo "Running updateAgent..."
+	# TODO: run updateAgent, if successful, update boot IFS to system
+	GRAPHICS_ROOT=/proc/boot updateAgent -log 7
+	updRes=$? 
+	echo "updateAgent returned: $updRes"
+
+	#TODO: Take alternate action based on updateAgent return code?
+	if [ "${updRes:?}" -ne 0 ]
+	then
+		echo "updateAgent exited with error $updRes, starting debug shell..."
+		sh
+	fi
+
+	#Explicitly cleanup() to ensure changes are written to disk.
+	cleanup
+else 
+    # --------------------
+    # STANDARD INIT PROMPT
+    # --------------------
+
+    # Start networking in the background
+    ( network-start > /dev/null && dhcp.client -m ) &
+
+	# run a shell for interactive update or disk initialisation
+	sh
+fi
+
+## done

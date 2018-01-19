@@ -1,0 +1,16 @@
+#!/bin/sh
+BBWP_DIR=`dirname "$0"`
+myUname=`uname`
+
+if [ "$myUname" = "Darwin" ]; then
+    NODE="$BBWP_DIR/third_party/node/mac/node"
+elif [ "$myUname" = "Linux" ]; then
+    NODE="$BBWP_DIR/third_party/node/linux/node"
+fi
+
+# Use System node if none defined or available
+if [ -z "$NODE" ] || [ ! -e $NODE ]; then
+    NODE=`which node`
+fi
+
+$NODE "$BBWP_DIR/lib/bbwp.js" "$@"

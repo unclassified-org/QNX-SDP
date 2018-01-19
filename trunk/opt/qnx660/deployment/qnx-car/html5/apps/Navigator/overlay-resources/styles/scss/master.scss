@@ -1,0 +1,75 @@
+/**
+ *  File:../../../../../../common/scss/reset.scss
+ **/
+@import "../../../../../../common/scss/reset";
+
+/**
+ *  File:../../../../../../common/scss/font.scss
+ **/
+@import "../../../../../../common/scss/font";
+
+/**
+ *  File:style.scss
+ **/
+@import "style";
+
+/**
+ *  File:jquery.voice.scss
+ **/
+@import "jquery.voice";
+
+/**
+ *  File:jquery.notice.scss
+ **/
+@import "jquery.notice";
+
+/**
+ *  File: jquery.info.scss 
+ **/
+@import "jquery.info";
+
+/**
+ *  File:jquery.cover.scss
+ **/
+@import "jquery.cover";
+@media (device-height: 480px) {
+	/**
+	 *  File:StandardDef/jquery.voice.scss
+	 **/
+	@import "StandardDef/jquery.voice";
+	
+	/**
+	 *  File:StandardDef/jquery.notice.scss
+	 **/
+	@import "StandardDef/jquery.notice";
+	
+	/**
+	 *  File:StandardDef/jquery.cover.scss
+	 **/
+	@import "StandardDef/jquery.cover";
+
+}
+
+@media (device-height: 720px) { 
+
+	/**
+	 *  File:720p/jquery.voice.scss
+	 **/
+	@import "720p/jquery.voice";
+	
+	/**
+	 *  File:720p/jquery.notice.scss
+	 **/
+	@import "720p/jquery.notice";
+	
+	/**
+	 *  File: 720p/jquery.info.scss
+	 **/
+	@import "720p/jquery.info";
+	
+	/**
+	 *  File:720p/jquery.cover.scss
+	 **/
+	@import "720p/jquery.cover";
+
+}

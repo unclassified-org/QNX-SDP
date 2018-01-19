@@ -1,0 +1,32 @@
+// Import base theme variables
+
+@import '../base';
+@import "../common/media-sources";
+
+$app-dir: $theme-dir + "/MediaPlayer";
+
+// Variable definitions for current application
+
+@media (max-device-height: 719px) 
+{
+	@import './800x480/style';
+	@import './images';
+
+	// Common resources
+	@import '../../common/menu';
+	@import '../../common/lists';
+	@import '../../common/messagebox';
+
+	// Application
+	@import '../../common/MediaPlayer/mediaplayer';
+	@import '../../common/MediaPlayer/home';
+	@import '../../common/MediaPlayer/audio';
+	@import '../../common/MediaPlayer/menu';
+	@import '../../common/MediaPlayer/pandora';
+	@import '../../common/MediaPlayer/radio';
+	@import '../../common/MediaPlayer/search';
+	@import '../../common/MediaPlayer/video';
+
+	// Specific to theme
+	@import './radiotunerdial';
+}

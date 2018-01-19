@@ -1,0 +1,116 @@
+/**
+ * CSS for the search view
+ * @author mlapierre
+ *
+ * $Id: _search.scss 6897 2013-07-24 14:47:34Z nschultz@qnx.com $
+ */
+
+.search.panel {
+	background-image: $search-panel-background;
+	padding: 0px;
+
+	.search-title {
+		height: 42px * $y-multiplier;
+		font-size: 150%;
+		color: $text-color;
+		background-color: $title-bar-background-color;
+		padding: {
+			top: 7px * $y-multiplier;
+			right: 0px;
+			bottom: 0px;
+			left: 20px * $x-multiplier;
+		}
+	}
+
+	.x-list.search-type {
+		height: 353px * $y-multiplier;
+		background-color: transparent;		
+	}
+	
+	.search-bar {
+		height: 60px * $y-multiplier;
+		background-color: $title-bar-background-color;
+
+		.x-field.search-input {
+			background-color: black;
+			font-size: 150%;
+			color: $text-color;
+			border-radius: 24px * $x-multiplier;
+			height: 42px * $y-multiplier !important;
+			margin: {
+				top: 9px  * $y-multiplier;
+				right: 0px;
+				bottom: 0px;
+				left: 20px * $x-multiplier;
+			}
+			padding-left: 20px * $x-multiplier;
+			min-height: 0px;
+			padding: 0px;
+				
+			.x-component-outer {
+				margin: {
+					top: 6px * $y-multiplier;
+					right: 16px * $x-multiplier;
+					bottom: 6px * $y-multiplier;
+					left: 16px * $x-multiplier;
+				}
+				
+				.x-input-el {
+					min-height: 0px;
+					padding: 0px;
+					color: $text-color;
+				}
+				.x-clear-icon {
+					margin-top: -25px * $x-multiplier;
+					margin-right: -7px * $x-multiplier;
+					background-image: $search-clear-icon !important;
+					height: 52px * $x-multiplier;
+					width: 52px * $x-multiplier;
+				}
+				.x-clear-icon:active {
+					background-image: $search-clear-icon-over !important;
+				}
+			}
+		}
+		
+		.x-field.search-input.level0 {
+			width: 590px * $x-multiplier;
+            height: 42px * $y-multiplier; /* TODO temporary workaround to reduce screen redraws on keypresses */
+            overflow: hidden; /* TODO temporary workaround to reduce screen redraws on keypresses */
+		}
+
+		.x-field.search-input.level1 {
+			width: 520px * $x-multiplier;
+            height: 42px * $y-multiplier; /* TODO temporary workaround to reduce screen redraws on keypresses */
+            overflow: hidden; /* TODO temporary workaround to reduce screen redraws on keypresses */
+		}
+
+		.x-field.search-input.level2 {
+			width: 450px * $x-multiplier;
+            height: 42px * $y-multiplier; /* TODO temporary workaround to reduce screen redraws on keypresses */
+            overflow: hidden; /* TODO temporary workaround to reduce screen redraws on keypresses */
+		}
+
+		.x-field.search-input.level3 {
+			width: 380px * $x-multiplier;
+            height: 42px * $y-multiplier; /* TODO temporary workaround to reduce screen redraws on keypresses */
+            overflow: hidden; /* TODO temporary workaround to reduce screen redraws on keypresses */
+		}
+		
+		.search-button {
+			width: 140px * $x-multiplier;
+			height: 50px * $y-multiplier;
+			margin: {
+				top: 5px * $y-multiplier;
+				right: 0px;
+				bottom: 0px;
+				left: 20px * $x-multiplier;
+			}
+		}
+	}
+	
+	.x-list.search-results {
+		height: 335px * $y-multiplier;
+		background-color: transparent;		
+	}
+}

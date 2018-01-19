@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<index>
+<entry keyword="adaptive partitioning">
+<topic href="topic/adaptive_partitioning.html#adaptivepartitioning" title="Adaptive Partitioning"/>
+</entry>
+<entry keyword="Apache Cordova">
+<topic href="topic/arch_html5_app_model.html#html5appmodel" title="HTML5 application framework"/>
+</entry>
+<entry keyword="Applications Window Manager">
+<topic href="topic/arch_html5_app_model.html#html5appmodel" title="HTML5 application framework"/>
+<entry keyword="See Navigator">
+</entry>
+</entry>
+<entry keyword="architecture">
+<entry keyword="overview of">
+<topic href="topic/top_level_design.html#qnxcartopleveldesign" title="Top-Level Design"/>
+</entry>
+</entry>
+<entry keyword="architecture (multimedia)">
+<topic href="topic/arch_multimedia.html#multimedia" title="Multimedia"/>
+</entry>
+<entry keyword="ASR">
+<topic href="topic/arch_asr.html#asr" title="Automatic Speech Recognition (ASR)"/>
+<topic href="topic/top_level_design.html#qnxcartopleveldesign" title="Top-Level Design"/>
+<entry keyword="components">
+<topic href="topic/arch_asr_tts.html#asr_tts" title="ASR and TTS integration"/>
+</entry>
+<entry keyword="modules">
+<topic href="topic/arch_asr_modules.html#asr_modules" title="ASR modules"/>
+</entry>
+</entry>
+<entry keyword="authorization manager (authman)">
+<topic href="topic/arch_app_mgmt.html#appmgmt" title="Application Management"/>
+</entry>
+<entry keyword="Automatic Speech Recognition (ASR)">
+<topic href="topic/arch_asr.html#asr" title="Automatic Speech Recognition (ASR)"/>
+</entry>
+<entry keyword="backup camera">
+<topic href="topic/arch_camera.html#camera" title="Rearview camera"/>
+<entry keyword="See rearview camera">

@@ -1,0 +1,44 @@
+<div id="statusContainer">
+    <div class="serverSettingsTitlebarWrapper">
+        <div class="subHeader nomargin">
+            <span class="subheaderTitle" string="status"></span>
+        </div>
+    </div>
+	<div>
+		<span class="titleWrapper">
+			<span string="status_desc" class="title"></span>
+		</span>
+	</div>
+	<div class="smallServerContentSpacer"></div>
+    <div class="serverNameContainer nobg">
+        <div class="largestFont">
+            <span id="servername"/>
+        </div>
+        <div>
+            <span string="version" /> : <span id="version"/>
+        </div>
+		<div>
+            <span string="port"></span> : <span id="port"/>
+        </div>
+        <div>
+            <span string="server_up_time"></span> : <span id="serveruptime"/>
+        </div>
+        <div>
+            <span string="server_build_date"></span> : <span id="serverbuilddate"/>
+        </div>
+
+    </div>
+	<div class="smallServerContentSpacer"></div>
+	<div> <span id="languagelist"></span>
+		<a class="actionbtnmd bold" onmousedown="onButtonMouseDown(this)" onmouseup="onButtonMouseUp(this)" onclick="updateLanguage();">
+			<span class="actionbtn_l"></span><span string="update_language"class="actionbtn_c"></span><span class="actionbtn_r"></span>
+		</a>
+	</div>
+
+	<div class="smallServerContentSpacer"></div>
+	<div>
+		<a class="actionbtnmd bold" onmousedown="onButtonMouseDown(this)" onmouseup="onButtonMouseUp(this)" onclick="reloadConfig();">
+			<span class="actionbtn_l"></span><span string="reload_config"class="actionbtn_c"></span><span class="actionbtn_r"></span>
+		</a>
+	</div>
+</div>

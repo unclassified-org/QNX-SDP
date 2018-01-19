@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fileset name="basefs.car.realvnc">
+<!-- Services -->
+  <file name="bin/mlink-daemon" uid="root" gid="nto" mode="0755"/>
+  <file name="bin/mlink-rtp" uid="root" gid="nto" mode="0755"/>
+<!-- Viewers -->
+  <!-- QNX viewer for MirrorLink, to be used with mlink-daemon -->
+  <file name="bin/mlink-viewer" uid="root" gid="nto" mode="0755"/>
+<!-- RealVNC license file -->
+  <file name="usr/mlink/vnclicense" uid="root" gid="nto" mode="0644"/>
+<!-- images for user interface -->
+  <file name="usr/mlink/default.png" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/mlink/controls.png" uid="root" gid="nto" mode="0644"/>
+<!-- RealVNC SDKs -->
+  <symlink name="usr/lib/realvnc/libvncviewersdk.so" target="libvncviewersdk.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/realvnc/libvncviewersdk.so.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/realvnc/libvncdapsdk.so" target="libvncdapsdk.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/realvnc/libvncdapsdk.so.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/realvnc/libvnccdbsdk.so" target="libvnccdbsdk.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/realvnc/libvnccdbsdk.so.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/realvnc/libvncdiscoverysdk.so" target="libvncdiscoverysdk.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/realvnc/libvncdiscoverysdk.so.1" uid="root" gid="nto" mode="0755"/>
+<!-- VNC bearers -->
+  <file name="usr/lib/realvnc/libvncbearer-C.so" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/realvnc/libvncbearer-D.so" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/realvnc/libvncbearer-L.so" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/realvnc/libvncbearer-USBAAP.so" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/realvnc/libvncbearer-USBAND.so" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/realvnc/libvncbearer-USBBB.so" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/realvnc/libvncbearer-USBS60.so" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/realvnc/libvncbearer-USBWM.so" uid="root" gid="nto" mode="0755"/>
+<!-- RealVNC provider -->
+  <file name="usr/lib/realvnc/libvncdeviceprovider-usb.so" uid="root" gid="nto" mode="0755"/>
+<!-- RealVNC discoverers -->
+  <file name="usr/lib/realvnc/libvncdiscoverer-mirrorlink.so" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/realvnc/libvncdiscoverer-usb.so" uid="root" gid="nto" mode="0755"/>
+<!-- other libraries -->
+  <symlink name="lib/libusb-1.0.so" target="libusb-1.0.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/libusb-1.0.so.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/realvnc/libaudiorouter.so" target="libaudiorouter.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/realvnc/libaudiorouter.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/realvnc/libjrtplib.so" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/realvnc/libjrtplib.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/realvnc/libjthread.so" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/realvnc/libjthread.so.1" uid="root" gid="nto" mode="0755"/>
+<!-- NCM driver for mirrorlink -->
+  <file name="lib/dll/devnp-ncm.so" uid="root" gid="nto" mode="0755" />
+<!-- scripts -->
+  <file name="scripts/vncdiscovery/usb-device-attached.sh" uid="root" gid="nto" mode="0755" />
+</fileset>
+

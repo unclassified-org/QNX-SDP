@@ -1,0 +1,38 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+        <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <title>Shutdown Application</title>
+
+        <link rel="stylesheet" href="resources/css/master.css" type="text/css" media="screen" title="no title" charset="utf-8">
+        
+        <script src="local:///chrome/webworks.js" type="text/javascript" charset="utf-8"></script>
+
+        <script type="text/javascript">
+            function onReady() {
+            }
+
+            window.addEventListener("load", function(e) {
+                document.addEventListener("webworksready", onReady);
+            }, false);
+
+
+            /**
+             * Click event handler, will invoke shutdown process,
+             * and set UI to reflect the state of shutdown, removes click handler
+             * to prevent user issuing multiple shutdown requests
+             * */
+            function onShutdown(){
+                qnx.power.shutdown("userRequest","1");
+                document.getElementById("label").innerText = "Shutting down...";
+                document.getElementById("button").onclick = "";
+                document.getElementById("button").className += " off";
+            }
+        </script>
+    </head> 
+    <body>
+        <div id="button" class="button" onclick="onShutdown();"></div>
+        <div class="label" id="label">Shutdown</div>
+    </body>
+</html>

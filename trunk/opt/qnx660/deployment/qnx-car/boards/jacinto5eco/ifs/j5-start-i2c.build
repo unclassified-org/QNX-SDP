@@ -1,0 +1,16 @@
+[+script] .script = {
+
+        # load I2C driver (required by Audio driver and rearview camera)
+        #######################################################################
+        ## I2C driver
+        #######################################################################
+        i2c-omap35xx-j5 -i 70 -p0x48028000 --u0
+        i2c-omap35xx-j5 -i 71 -p0x4802a000 --u1
+        i2c-omap35xx-j5 -i 30 -p0x4819c000 --u2
+        i2c-omap35xx-j5 -i 31 -p0x4819e000 --u3
+
+}
+
+# Executables
+[data=c perms=0755]
+i2c-omap35xx-j5

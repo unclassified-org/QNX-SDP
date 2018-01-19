@@ -1,0 +1,190 @@
+#!/bin/sh
+set -e
+
+if [ "$#" -ne 1 ] || [ "$1" = "" ]
+then
+	echo "Usage: $0 BARFILE"
+	exit 2
+fi
+barfile=$1
+
+if ! [ -e "${barfile?}" ]
+then
+	echo "No such file: ${barfile?}" >&2
+	exit 1
+fi
+
+
+### unzip into temporary directory
+
+appsdir="/apps"
+bar_tmpdir="${appsdir?}/.bar-unzip.$$"
+
+cleartmp () {
+	lastRC=$?
+	set -- "$bar_tmpdir"
+	[ -n "$1" ] && [ -d "$1" ] && rm -rf "$1"
+	return $lastRC
+}
+
+mkdir -p "${bar_tmpdir:?}"
+trap cleartmp 0
+
+if ! unzip "${barfile:?}" -d "${bar_tmpdir:?}"
+then
+	echo "Unzip failed" >&2
+	exit 1
+fi
+echo ''
+
+
+### parse manifest
+
+pkgname=''
+pkgid=''
+appcat=''
+applabel=''
+appicon=icon.png
+appsplash=''
+apporient=''
+apphidden='' #TODO
+appmultitype='' #TODO
+assetname=''
+assettype=''
+
+manifest="${bar_tmpdir:?}/META-INF/MANIFEST.MF"
+if [ ! -e "${manifest?}" ]
+then
+	echo "Manifest not found" >&2
+	exit 1
+fi
+
+cr=$(echo -e '\r')  # non-POSIX
+IFS=:
+while read key value
+do
+	value=${value# }
+	value=${value%"$cr"}
+	case "$key" in
+		Package-Id) pkgid=$value;;
+		Package-Name) pkgname=$value;;
+		Entry-Point-Icon) appicon=$value;;
+		Entry-Point-Name) applabel=$value;;
+                Application-Category) appcat=$value;;
+		Entry-Point-Splash-Screen) appsplash=$value;;
+		Entry-Point-Orientation) apporient=$value;;
+		#making executable for Archive-Asset-Type = qnx/elf
+		Archive-Asset-Name) assetname=$value;;
+		Archive-Asset-Type) 
+				assettype=$value
+				typeset -l assettype
+				if [[ ${assettype} = "qnx/elf" ]]
+				then
+					fpath="${bar_tmpdir:?}/${assetname:?}"
+					echo "${assetname:?}: making executable"
+					chmod 755 ${fpath}
+				fi
+				;;
+	esac
+done < "${manifest?}"
+
+if [ -z "$pkgid" ] || [ -z "$pkgname" ]
+then
+	echo "Can't determine package name and ID" >&2
+	exit 1
+fi
+
+### set group ID
+
+newgid () {
+	_newgrp_max=9999
+
+	if [ ! -d /etc/id ]; then
+		#Initialize the id to _newgrp_max (this is the starting gid) 
+		mkdir /etc/id
+	fi
+	
+	#Check for no existing id	
+	if [[ -z $(ls -A /etc/id) ]]; then
+		#Initialize the id to _newgrp_max (this is the starting gid)
+		touch /etc/id/9999
+	fi
+	
+	set -- /etc/id/*
+	for _newgrp_tmp
+	do
+		_newgrp_tmp=${_newgrp_tmp##*/}
+		if [ "$_newgrp_tmp" -gt "$_newgrp_max" ]
+		then
+			_newgrp_max=$_newgrp_tmp
+		fi
+	done
+	
+	_newgrp_tmp="/etc/id/${_newgrp_max:?}"
+	[ -e "${_newgrp_tmp:?}" ] || :>> "${_newgrp_tmp:?}"
+	
+	set -- "$((_newgrp_max + 1))"
+	mv "${_newgrp_tmp:?}" "/etc/id/$1" || return
+	
+	unset _newgrp_tmp _newgrp_max
+	echo "$1"
+}
+
+if ! gid=$(newgid)
+then
+	echo "Can't create group ID" >&2
+	exit 1
+fi
+
+chgrp -R "${gid:?}" "${bar_tmpdir:?}"
+
+
+### move to final location and insert into application list
+
+# PR:168499 - '-' characters in package name need to be replaced by '.'.
+pkgdir=`echo "${pkgname:?}.${pkgid:?}" | sed 's/-/\./g'`
+case "$pkgdir" in
+	*:*)
+		echo "Bad package name or ID" >&2
+		exit 1
+		;;
+esac
+
+bar_deldir=""
+newdir="${appsdir?}/${pkgdir:?}"
+if [ -h "${newdir:?}" ]
+then
+	if ! rm -f "${newdir:?}"
+	then
+		echo "rm failed" >&2
+		exit 1
+	fi
+elif [ -d "${newdir:?}" ]
+then
+	bar_deldir="${appsdir?}/.del-$$.${pkgdir:?}"
+	if ! mv "${newdir:?}" "${bar_deldir:?}"
+	then
+		echo "Rename failed" >&2
+		exit 1
+	fi
+fi
+if ! mv "${bar_tmpdir:?}" "${newdir:?}"
+then
+	echo "Rename failed" >&2
+	exit 1
+fi
+
+
+# done
+echo "Application installed as ${pkgdir:?}"
+if [ -n "${bar_deldir?}" ]
+then
+	if ! rm -rf "${bar_deldir:?}"
+	then
+		echo "Failed to remove old directory \"${bar_deldir:?}\"" >&2
+		exit 1
+	fi
+fi
+
+
+exit 0;

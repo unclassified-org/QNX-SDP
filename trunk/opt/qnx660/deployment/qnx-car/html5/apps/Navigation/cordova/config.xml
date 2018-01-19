@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="navigation" version="1.0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:rim="http://www.blackberry.com/ns/widgets">
+    <name>Navigation</name>
+    <author>QNX Software Systems Limited</author>
+    <content src="index.html" />
+    <icon src="resources/img/blank.png" />
+    <config-file target="bar-descriptor.xml" parent="/qnx"> 
+        <category>system</category> 
+    </config-file>
+    <rim:permissions>
+        <rim:permit>access_shared</rim:permit>
+        <rim:permit>read_device_identifying_information</rim:permit>
+    </rim:permissions>
+    <access uri="*" subdomains="true" />
+    <access uri="file:///" subdomains="true" />
+    <feature name="Accelerometer" value="Accelerometer" />
+    <feature name="Battery" value="Battery" />
+    <feature name="Camera" value="Camera" />
+    <feature name="media-capture" value="Capture" />
+    <feature name="Contacts" value="Contacts" />
+    <feature name="Device" value="Device" />
+    <feature name="Geolocation" value="Geolocation" />
+    <feature name="Logger" value="Logger" />
+    <feature name="Media" value="Media" />
+    <feature name="NetworkStatus" value="NetworkStatus" />
+    <feature name="Notification" value="Notification" />
+    <feature name="SplashScreen" value="SplashScreen" />
+    <feature name="com.blackberry.utils" />
+    <feature name="com.blackberry.jpps" />
+    <feature name="com.qnx.car.profile" />
+    <feature name="com.qnx.car.theme" />
+    <feature name="com.qnx.car.navigation" />
+    <feature name="com.qnx.application.event" />
+</widget>

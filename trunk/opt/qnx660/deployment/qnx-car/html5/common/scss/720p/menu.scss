@@ -1,0 +1,111 @@
+/**
+ * 1280x720 overrides/images for the common Sencha Touch 2.1 application
+ * pull-down menus.
+ * @author lgreenway
+ *
+ * $Id: menu.scss 5883 2013-03-08 20:47:20Z lgreenway@qnx.com $
+ */
+
+// FIXME: The measurement and settings variables cannot be set as !default due to the common menu.scss definitions taking precedence
+
+// Measurements
+$menuWidth: 1280px;
+$menuHeight: 593px;
+$subMenuIndent: 112px;
+
+// Menu settings
+$maxVisibleSubMenus: 3;
+$maxDepth: 20;
+
+// Images
+$menu-show-img: 'platform:///apps/common/img/720p/menu/menu_exp.png' !default;
+$menu-show-img-ovr: 'platform:///apps/common/img/720p/menu/menu_exp_ovr.png' !default;
+$menu-hide-img: 'platform:///apps/common/img/720p/menu/menu_collapse.png' !default;
+$menu-hide-img-ovr: 'platform:///apps/common/img/720p/menu/menu_collapse_ovr.png' !default;
+$menu-shadow-img: 'platform:///apps/common/img/720p/menu/menu_shadow.png' !default;
+
+.menu-show {
+	background-image: url(#{$menu-show-img});
+	height: 66px;
+}
+
+.menu-show:active {
+	background-image: url(#{$menu-show-img-ovr});
+}
+
+.menu-hide {
+	background-image: url(#{$menu-hide-img});
+	height: 66px;
+}
+
+.menu-hide:active {
+	background-image: url(#{$menu-hide-img-ovr});
+}
+
+.stacked-menu {
+	height: $menuHeight; 
+	width: $menuWidth;
+
+	// Shift sub-menus to the left once the maximum number of stacked menus has been exceeded
+	$depth: $maxVisibleSubMenus + 1;
+	@while $depth <= $maxDepth {
+		&.depth#{$depth} .menu.sub {
+			-webkit-transform: translate3d(-($subMenuIndent * ($depth - $maxVisibleSubMenus)), 0px, 0px);
+		}
+		$depth: $depth + 1;
+	}
+	
+	.menu {
+		height: $menuHeight !important; 
+		width: $menuWidth;
+	
+		&.sub {
+			padding-left: 15px;
+			background-image: url(#{$menu-shadow-img});
+
+			// Define the sub-menu levels
+			$level: 1;
+			@while $level <= $maxDepth {
+				&.level#{$level} {
+					// The width of the menu is dependant on its level
+					@if $level <= $maxVisibleSubMenus {
+						width: $menuWidth - ($subMenuIndent * $level);
+					} @else {
+						width: $menuWidth - ($subMenuIndent * $maxVisibleSubMenus);
+					}
+
+					left: ($subMenuIndent * $level);
+					
+					// Performance hack for Sencha list rendering
+					.menu-list {
+						@if $level <= $maxVisibleSubMenus {
+							width: $menuWidth - ($subMenuIndent * $level);
+						} @else {
+							width: $menuWidth - ($subMenuIndent * $maxVisibleSubMenus);
+						}
+					}
+				}
+				$level: $level + 1;
+			}
+					
+			&.hidden {
+				-webkit-transform: translate3d($menuWidth, 0px, 0px);
+			}
+		}
+		
+		.menu-list {
+			height: $menuHeight;
+			width: $menuWidth;
+		}
+		
+		.x-mask {
+			height: $menuHeight;	// HACK: The mask has a height of 0 if the contents of the menu contains a docked item
+		}
+	}
+}
+
+.pull-down-menu {
+	height: $menuHeight;
+	width: $menuWidth;
+	-webkit-transform: translateY(-$menuHeight);
+}

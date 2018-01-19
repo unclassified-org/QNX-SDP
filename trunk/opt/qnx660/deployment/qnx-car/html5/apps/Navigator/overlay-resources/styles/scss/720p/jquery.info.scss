@@ -1,0 +1,13 @@
+.info-container {
+	top:0px;
+}
+
+.info-container.show {
+	height: 75px;
+}
+
+@-webkit-keyframes innerglow {
+	0% { -webkit-box-shadow: inset 0 0 30px 12px rgba(81, 199, 233, 0.5) }
+	50% { -webkit-box-shadow: inset 0 0 30px 12px rgba(81, 199, 233, 1) }
+	100% { -webkit-box-shadow: inset 0 0 30px 12px rgba(81, 199, 233, 0.5) }
+}

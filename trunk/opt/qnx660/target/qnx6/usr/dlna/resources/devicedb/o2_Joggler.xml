@@ -1,0 +1,14 @@
+<Client>
+	<DeviceId>
+		<DisplayName>o2 Joggler</DisplayName>
+		<DeviceDescriptionRecognition>
+			<DescriptionText>XBMC Media Center - Media Renderer</DescriptionText>
+		</DeviceDescriptionRecognition>
+		<MappingUpdatePolicy>FIXPC3</MappingUpdatePolicy>
+	</DeviceId>
+	<Capabilities>
+		<Scaling>
+			<Target>JPEG800x600</Target>
+		</Scaling>
+	</Capabilities>
+</Client>

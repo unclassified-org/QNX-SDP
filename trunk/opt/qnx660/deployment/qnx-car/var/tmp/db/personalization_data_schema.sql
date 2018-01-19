@@ -1,0 +1,1 @@
+INSERT INTO "profiles" VALUES(1,'Default','0','default','male1',NULL);

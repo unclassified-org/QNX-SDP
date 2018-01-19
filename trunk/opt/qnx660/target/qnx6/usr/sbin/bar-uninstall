@@ -1,0 +1,81 @@
+#!/bin/sh
+set -e
+appsDir="/apps"
+appDataDir="/accounts/1000/appdata"
+
+function showApplications
+{
+    echo "List of installed applications:"
+    # to grab just the app name (and not the id tag) prior to Android player relied on the fact
+    # .test was used in ID. Added a sed clause ahead of this to remove anything ahead of :: without a
+    # dot (.). This *mostly* works - but some app names do have dots in their IDs. These still end up
+    # cleaner than if we did nothing. - PM
+    for app in `ls -1 /apps/`; do
+        echo "   - $app"
+    done
+}
+
+function ensureApplication
+{
+    local error=0
+
+    # Make sure we're only dealing with one application.
+    numberApplications=0
+    for app in $FULL_APPLICATION_NAME; do
+        numberApplications=$((numberApplications+1))
+    done
+
+    if [ $numberApplications -ne 1 ]; then
+        error=$((error+1))
+    fi
+
+    # Ensure the application still exists.
+    if [ "$FULL_APPLICATION_NAME" = "" ]; then
+        error=$((error+1))
+    fi
+
+    if [ $error -ne 0 ]; then
+        showApplications >&2
+        echo "Error: Unable to deternmine installed application: [$APPLICATION]." >&2
+    fi
+    return $error 
+}
+
+function removeApplication
+{
+    if [ -d $appDataDir/$FULL_APPLICATION_NAME ]; then
+        # Try this operation twice as we often get a Bad file descriptor error on the first attempt)
+        rm -rf $appDataDir/$FULL_APPLICATION_NAME 2> /dev/null
+        if [ -d $appDataDir/$FULL_APPLICATION_NAME ]; then
+            rm -rf $appDataDir/$FULL_APPLICATION_NAME || exit $?
+        fi
+    else 
+        echo "Warning: [$APPLICATION] not found in $appDataDir/." >&2
+        echo "         (application may never have been launched)" >&2
+    fi
+
+    if [ -d $appsDir/$FULL_APPLICATION_NAME ]; then
+        rm -rf $appsDir/$FULL_APPLICATION_NAME || exit $?
+    else 
+        echo "Warning: [$APPLICATION] not found in $appsDir/." >&2
+    fi
+    return 0
+}
+
+# Main
+
+if [ $# -ne 1 ] || [ -z "$1" ]; then
+	showApplications >&2
+	exit 1
+fi
+
+APPLICATION=$1
+FULL_APPLICATION_NAME=$(ls -1 /apps/ | grep $1)
+echo "Remove: $FULL_APPLICATION_NAME"
+
+ensureApplication || exit $?
+removeApplication || exit $?
+
+echo
+echo "Application [$APPLICATION] has been successfully removed."
+exit 0

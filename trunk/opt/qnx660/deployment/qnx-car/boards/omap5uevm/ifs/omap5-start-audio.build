@@ -1,0 +1,32 @@
+[+script] .script = {
+    	# Seed hardware resources into the Resource database manager
+    	resource_seed dma=0,31 &
+
+	waitfor /dev/i2c0 5
+
+	#######################################################################
+	## AUDIO driver
+	##  - Requires the I2C driver to be enabled
+	##  - Play audio (early_chime) 
+	#######################################################################
+	io-audio -d mcpdm-omap5uevm cap_name=defaultc,dindex=1,play_name=defaultp &
+}
+
+[perms=0644] .early_mix_ctl = {
+	# Enable Headphones for OMAP5
+	mix_ctl switch "Headphone Select" on > /dev/null
+	mix_ctl group Headphone volume=75% > /dev/null
+}
+
+# Executables
+[data=c perms=0755]
+resource_seed
+mix_ctl
+
+### Libraries
+[perms=0755]
+
+#for early audio
+deva-ctrl-mcpdm-omap5uevm.so
+libabe.so.1
+

@@ -1,0 +1,198 @@
+body {
+	color: #fff;
+	font-family: Arial;
+	margin: 0px;
+}
+
+#hdRadio {
+	background: url(../images/bkgrd_800x395.png);
+}
+
+#bandSelectBtn {
+	position: absolute;
+	left: 60px !important;
+	top: 100px !important;
+	width: 100px;
+	height: 100px;
+	z-index: 1;
+	color: white;
+	font-size: 36px;
+	background: transparent;
+}
+
+#showHdStatusBtn {
+	color: white;
+	width: 100px;
+	height: 38px;
+	font-size: 12px;
+	border-radius: 8px !important;
+}
+
+#debugBtn {
+	position: absolute;
+	left: 10px !important;
+	top: 300px !important;
+	width: 100px;
+	height: 50px;
+	z-index: 1;
+}
+
+#stationName {
+	position: absolute;
+	left: 15px;
+	top: 28px;
+	font-size: 26px;
+	font-weight: bold;
+	z-index: 1;
+}
+
+#genreName {
+	position: absolute;
+	left: 30px;
+	top: 58px;
+	font-size: 26px;
+	font-weight: bold;
+	z-index: 1;
+}
+
+.hdSongInfo {
+	width: 300px;
+	font-family: Arial;
+	color: #FFFFFF;
+}
+
+#albumName {
+	font-size: 30px;
+	font-family: Charcoal;
+	height: 36px;
+}
+#artistName {
+	font-size: 44px;
+	height: 50px;
+}
+#songName {
+	font-size: 24px;
+	/*font-family: Impact;*/
+	font-style: italic;
+	height: 60px;
+}
+
+.presetBtn {
+	font-size: 22px;
+	height: 25px;
+	font-weight:bold !important;
+	color: #FFFFFF !important;
+	text-align: center;
+}
+
+.hdStatusText {
+	font-size: 20px;
+}
+
+.qnxRadioBtn  {
+	background-color: #11598C;
+	background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #4CA9E9), color-stop(2%, #156EAC), color-stop(100%, #0D456C));
+	background-image: -webkit-linear-gradient(#4CA9E9,#156EAC 2%,#0D456C);
+	background-image: linear-gradient;
+	border-radius: 8px !important;
+}
+
+#hdTrafficPanel {
+	background: rgba(0,0,0,0.5);
+	position: absolute;
+	max-width: 685px;
+	left: 5px;
+	bottom: 45px;
+	height: 35px;
+	font-size: 20px;
+	color: #FFFFFF;
+	padding: 7px 20px;
+	border-radius: 8px;
+	overflow: hidden;
+	z-index: 1;
+}
+
+#hdStatusUpdate {
+	height: 36px;
+	font-size: 28px;
+	font-weight: bold;
+	border-bottom: solid;
+	border-color: #FFFFFF;
+	margin: 3px;
+}
+
+#hdAcquireBtn {
+	border-radius: 8px !important;
+}
+
+.hdStatusHeader{
+	font-size: 14px;
+	border-bottom: solid;
+	border-color: #FFFFFF;
+	margin: 3px;
+}
+
+#pgrmSelectPanel {
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 1;
+}
+
+#hd_logo {
+	position: absolute;
+	top: 92px;
+	height: 120px;
+	width: 65px;
+	background-repeat:no-repeat;
+}
+
+#pgrmBtnPanel {
+	position: absolute;
+	top: 175px;
+	left: 75px;
+}
+
+.hdPgrmBtnSelected, .hdPgrmBtnAvailable {
+	background-color: transparent !important;
+	background-image: none !important;
+	color: grey;
+	height: 30px;
+	width: 25px;
+	font-size: 20px;
+	text-align: center;
+	border: none;
+	-webkit-box-shadow: none;
+}
+
+.hdPgrmBtnSelected{
+	color: #FF9C33 !important;
+	border-style: solid !important;
+	border-width: 2px !important;
+	border-color: #FF9C33 !important;
+	border-radius: 5px !important;
+	-webkit-box-shadow: none;
+}
+
+.hdPgrmBtnAvailable{
+	color: #FFFF00;
+}
+
+.radiotunerslider
+{
+    background: url(../img/radio/tuner_bar.png) no-repeat 50% 0px;
+	height: 110px;
+	width: 714px;
+	margin: 0px -65px;
+}
+
+.radiotunerslider .thumb {
+    width: 80px;
+    height: 110px;
+    background: url(../img/radio/tuner_btn.png) no-repeat 0px 0px;
+}
+
+.radio-panel {
+	background-image: url('../../../common/img/bkgrd_800x395.png');
+	background-repeat: no-repeat;
+}

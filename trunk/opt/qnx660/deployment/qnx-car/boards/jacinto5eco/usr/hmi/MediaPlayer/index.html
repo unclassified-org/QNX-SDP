@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- 
+		The main and only HTML page for Media Player
+		@author mlapierre
+		
+		$Id: index.html 2881 2012-06-07 14:45:17Z mlapierre@qnx.com $ 
+	-->
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Media Player</title>
+
+	<link rel="stylesheet" href="../common/css/font-futura.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	<link rel="stylesheet" href="../common/js/sencha-touch-2.0.1.1/resources/css/sencha-touch.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	<link rel="stylesheet" href="../common/css/menu.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	<link rel="stylesheet" href="../common/css/media.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	<link rel="stylesheet" href="resources/css/mediaplayer.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	<link rel="stylesheet" href="resources/css/home.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	<link rel="stylesheet" href="resources/css/audio.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	<link rel="stylesheet" href="resources/css/radio.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	<link rel="stylesheet" href="resources/css/video.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	<link rel="stylesheet" href="resources/css/menu.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	<link rel="stylesheet" href="resources/css/search.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	<link rel="stylesheet" href="resources/css/pandora.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	<link rel="stylesheet" href="resources/css/cover.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	<link rel="stylesheet" href="resources/css/hd_radio.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	<link rel="stylesheet" href="resources/css/dab_radio.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	
+	<!-- JNEXT dependencies -->
+	<script src="../common/js/jnext/jnext.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../common/js/jnext/pps.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../common/js/jnext/sqlite3.js" type="text/javascript" charset="utf-8"></script>
+
+	<!-- QNXCAR Framework -->
+	<script src="../common/js/QnxCar/QnxCar.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../common/js/QnxCar/EventDispatcher.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../common/js/QnxCar/Apps/Core.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../common/js/QnxCar/Media/Library.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../common/js/QnxCar/Media/Sources.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../common/js/QnxCar/Media/Audio.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../common/js/QnxCar/Media/Radio.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../common/js/QnxCar/Remote/Media.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../common/js/QnxCar/Vehicle/Sensors.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../common/js/QnxCar/System/Settings.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../common/js/QnxCar/Util/ImagePreloader.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../common/js/QnxCar/Util/LazyLoader.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../common/js/QnxCar/System/Theme.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../common/js/QnxCar/Apps/Core.js" type="text/javascript" charset="utf-8"></script>
+	
+	<script type="text/javascript" src="preload.js"></script>
+	<script type="text/javascript" src="../common/js/sencha-touch-2.0.1.1/sencha-touch-all.js"></script>
+	<script type="text/javascript" src="../common/js/jquery/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="app.js" defer="defer"></script>
+	
+	<!-- Pandora -->
+	<script type="text/javascript" src="resources/js/jstorage.js"></script>
+	<script type="text/javascript" src="resources/js/Pandora.js" defer="defer"></script>
+</head>
+<body>
+	<embed id="objJSExt" type="application/jnext-scriptable-plugin" width="0" height="0" style="position: absolute">
+</body>
+</html>

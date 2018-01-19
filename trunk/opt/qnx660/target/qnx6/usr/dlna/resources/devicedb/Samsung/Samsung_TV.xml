@@ -1,0 +1,35 @@
+<Client>
+	<DeviceId>
+		<DisplayName>Samsung TV</DisplayName>
+		<DeviceDescriptionRecognition>
+			<DescriptionText>Samsung DTV</DescriptionText>
+		</DeviceDescriptionRecognition>
+		<MappingUpdatePolicy>FIX</MappingUpdatePolicy>
+	</DeviceId>
+	<Adaptations>
+		<DLNA>
+			<Version>DLNA15</Version>
+			<PretendServer>SAMSUNGFEATLIST</PretendServer>
+		</DLNA>
+		<HTTP>
+			<HttpSetting>chunked</HttpSetting>
+		</HTTP>
+		<MimeTranslations>
+			<MimeTypeMapping>
+				<In>video/x-matroska</In>
+				<Out>video/x-mkv</Out>
+			</MimeTypeMapping>
+			<MimeTypeMapping>
+				<In>video/mpeg2</In>
+				<Out>video/mpeg</Out>
+			</MimeTypeMapping>
+			<MimeTypeSuppress>audio/x-wav</MimeTypeSuppress>
+		</MimeTranslations>
+	</Adaptations>
+	<DeviceQuirks>
+		<Quirk>NEEDS_THUMBNAIL_CI_FLAG</Quirk>
+		<Quirk>SUPPRESS_SEEK_ON_GROWING_FILES</Quirk>
+		<Quirk>FORCE_DURATION</Quirk>
+		<Quirk>FORCE_4TH_FIELD</Quirk>
+	</DeviceQuirks>
+</Client>

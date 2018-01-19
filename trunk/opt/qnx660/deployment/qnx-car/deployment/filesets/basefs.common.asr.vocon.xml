@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fileset name="basefs.common.asr.vocon">
+  <file name="lib/dll/asr/asr-vocon3200-recognition.so" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/genericdca.so" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libgenericdca.so" target="genericdca.so" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/nmsp_audioplayback.so" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libnmsp_audioplayback.so" target="nmsp_audioplayback.so" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/nmsp_audiorecord.so" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libnmsp_audiorecord.so" target="nmsp_audiorecord.so" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/nmsp_core.so" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libnmsp_core.so" target="nmsp_core.so" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/nmsp_dictationresult.so" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libnmsp_dictationresult.so" target="nmsp_dictationresult.so" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/nmsp_oem.so" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libnmsp_oem.so" target="nmsp_oem.so" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/nmsp_resource_common.so" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libnmsp_resource_common.so" target="nmsp_resource_common.so" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/nmsp_resource_nmas.so" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libnmsp_resource_nmas.so" target="nmsp_resource_nmas.so" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/nmsp_speex.so" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libnmsp_speex.so" target="nmsp_speex.so" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/pal_audio.so" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libpal_audio.so" target="pal_audio.so" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/pal_core.so" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libpal_core.so" target="pal_core.so" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/sse.so" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libsse.so" target="sse.so" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/vocon3200_asr.so" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libvocon3200_asr.so" target="vocon3200_asr.so" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/vocon3200_base.so" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libvocon3200_base.so" target="vocon3200_base.so" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/vocon3200_dasr.so" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libvocon3200_dasr.so" target="vocon3200_dasr.so" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/vocon3200_gram2.so" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libvocon3200_gram2.so" target="vocon3200_gram2.so" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/vocon3200_nmsp.so" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libvocon3200_nmsp.so" target="vocon3200_nmsp.so" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/vocon3200_platform.so" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libvocon3200_platform.so" target="vocon3200_platform.so" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/vocon3200_pron.so" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libvocon3200_pron.so" target="vocon3200_pron.so" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/vocon3200_sse.so" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libvocon3200_sse.so" target="vocon3200_sse.so" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/vocon_ext_heap.so" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libvocon_ext_heap.so" target="vocon_ext_heap.so" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/vocon_ext_stream.so" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libvocon_ext_stream.so" target="vocon_ext_stream.so" uid="root" gid="nto" mode="0755"/>
+  <file name="opt/asr/conversation/en-US/common/car-common.fcf" uid="root" gid="nto" mode="0755"/>
+  <file name="opt/asr/conversation/en-US/dialer/car-dialer.fcf" uid="root" gid="nto" mode="0755"/>
+  <file name="opt/asr/conversation/en-US/car-media/car-media.fcf" uid="root" gid="nto" mode="0755"/>
+  <file name="opt/asr/conversation/en-US/search/car-search.fcf" uid="root" gid="nto" mode="0755"/>
+  <file name="opt/vocon/enu/acmod4_900_enu_gen_car_f16_v2_0_0.dat" uid="root" gid="nto" mode="0755"/>
+  <file name="opt/vocon/enu/clc_enu_cfg1_v1_1_4.dat" uid="root" gid="nto" mode="0755"/>
+  <file name="opt/vocon/enu/clc_enu_cfg3_v1_1_4.dat" uid="root" gid="nto" mode="0755"/>
+  <file name="opt/vocon/enu/clc_enu_mpthreevadml_v1_0_5.dat" uid="root" gid="nto" mode="0755"/>
+  <file name="opt/vocon/enu/clc_enu_vadvde_v1_0_2.dat" uid="root" gid="nto" mode="0755"/>
+</fileset>

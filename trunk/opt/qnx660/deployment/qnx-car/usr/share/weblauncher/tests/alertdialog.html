@@ -1,0 +1,39 @@
+<script>qnx.callExtensionMethod('webview.setEnabledOutOfProcessWebInspector', 1, true);</script>
+<script src="weblauncher.js"></script>
+
+<script>
+var root = Object.create(qnx.weblauncher.webview);
+root.id = 1;
+root.setEnabledOutOfProcessWebInspector(true);
+
+var webview = Object.create(qnx.weblauncher.webview);
+webview.id = root.create(root.applicationWindowGroup(), "OutProcess");
+
+webview.onEvent('Created', function (webview, value, eventId) {
+    webview.setEnableDialogRequestedEvents(true);
+    webview.setGeometry(0, 0, screen.width, screen.height);
+    webview.setVisible(true);
+    webview.setActive(true);
+    webview.loadString('<script>console.error(confirm("woot?") ? "Pass" : "Fail");</scr'+'ipt>');
+});
+
+webview.onEvent('DialogRequested', function (webview, value, eventId) {
+    console.log("dialog requested!");
+    qnx.callExtensionMethod('eventLoop.delayEvent', eventId);
+
+
+    setTimeout(function() {
+        console.log("We are in done!");
+        var json = JSON.stringify({setResult: "true", setPreventDefault: true});
+        //var json = JSON.stringify({setPreventDefault: true});
+        qnx.callExtensionMethod('eventLoop.resumeEvent', eventId, json);
+        webview.destroy();
+    }, 2000);
+});
+
+webview.onEvent('Destroyed', function (webview, value, eventId) {
+    webview.delete();
+    root.destroy();
+});
+
+</script>

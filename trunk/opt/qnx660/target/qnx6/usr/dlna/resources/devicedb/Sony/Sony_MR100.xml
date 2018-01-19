@@ -1,0 +1,20 @@
+<Client>
+	<DeviceId>
+		<DisplayName>Sony MR100</DisplayName>
+		<HttpRecognition>
+			<HttpText>VGP-MR100</HttpText>
+		</HttpRecognition>
+		<MappingUpdatePolicy>FIX</MappingUpdatePolicy>
+	</DeviceId>
+	<Capabilities>
+		<Scaling>
+			<Target>JPEG120x90</Target>
+			<Target>JPEG720x576</Target>
+		</Scaling>
+		<SupportedMediaProfiles>
+			<Profile>MP3</Profile>
+			<Profile>WAV</Profile>
+			<Profile>WMV</Profile>
+		</SupportedMediaProfiles>
+	</Capabilities>
+</Client>

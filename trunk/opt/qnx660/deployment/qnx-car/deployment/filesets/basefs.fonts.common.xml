@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- This fileset is used to organize Currently Used fonts -->
+
+<fileset name="basefs.fonts.common">
+
+  <directory name="usr/fonts" uid="root" gid="nto" mode="0755"/>
+  <directory name="usr/fonts/font_repository" uid="root" gid="nto" mode="0755"/>
+
+  <directory name="usr/fonts/font_repository/monotype" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/fonts/font_repository/monotype/arialbd.ttf" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/fonts/font_repository/monotype/ariali.ttf" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/fonts/font_repository/monotype/arial.ttf" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/fonts/font_repository/monotype/cour.ttf" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/fonts/font_repository/monotype/tahomabd.ttf" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/fonts/font_repository/monotype/tahoma.ttf" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/fonts/font_repository/monotype/timesbd.ttf" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/fonts/font_repository/monotype/times.ttf" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/fonts/font_repository/monotype/verdanab.ttf" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/fonts/font_repository/monotype/verdana.ttf" uid="root" gid="nto" mode="0644"/>
+
+  <directory name="usr/fonts/font_repository/ttf-bitstream-vera-1.10" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/fonts/font_repository/ttf-bitstream-vera-1.10/VeraBd.ttf" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/fonts/font_repository/ttf-bitstream-vera-1.10/Vera.ttf" uid="root" gid="nto" mode="0644"/>
+
+  <directory name="usr/fonts/font_repository/han" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/fonts/font_repository/han/SourceHanSansCN-Bold.otf" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/fonts/font_repository/han/SourceHanSansCN-ExtraLight.otf" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/fonts/font_repository/han/SourceHanSansCN-Normal.otf" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/fonts/font_repository/han/SourceHanSansJP-Bold.otf" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/fonts/font_repository/han/SourceHanSansJP-ExtraLight.otf" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/fonts/font_repository/han/SourceHanSansJP-Normal.otf" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/fonts/font_repository/han/SourceHanSansKR-Bold.otf" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/fonts/font_repository/han/SourceHanSansKR-ExtraLight.otf" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/fonts/font_repository/han/SourceHanSansKR-Normal.otf" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/fonts/font_repository/han/SourceHanSansTW-Bold.otf" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/fonts/font_repository/han/SourceHanSansTW-ExtraLight.otf" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/fonts/font_repository/han/SourceHanSansTW-Normal.otf" uid="root" gid="nto" mode="0644"/>
+</fileset>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fileset name="basefs.testing.debug">
+  <file name="appinstall/bars/unsigned/html5/Settings.debug.bar" uid="root" gid="nto" mode="0755"/>
+  <file name="appinstall/bars/unsigned/html5/GeolocationTest.bar" uid="root" gid="nto" mode="0755"/>
+  <file name="appinstall/bars/unsigned/html5/AppSection.debug.bar" uid="root" gid="nto" mode="0755"/>
+  <file name="appinstall/bars/unsigned/html5/MediaPlayer.debug.bar" uid="root" gid="nto" mode="0755"/>
+  <file name="appinstall/bars/unsigned/html5/MediaPlayer_mmplayer.debug.bar" uid="root" gid="nto" mode="0755"/>
+  <file name="appinstall/bars/unsigned/html5/Home.debug.bar" uid="root" gid="nto" mode="0755"/>
+  <file name="appinstall/bars/unsigned/html5/Communication.debug.bar" uid="root" gid="nto" mode="0755"/>
+</fileset>

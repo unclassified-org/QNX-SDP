@@ -1,0 +1,129 @@
+/**
+ * Common CSS for Sencha Touch 2.1 application pull-down menus.
+ * @author lgreenway
+ *
+ * $Id: menu.scss 5883 2013-03-08 20:47:20Z lgreenway@qnx.com $
+ */
+
+// Measurements
+$menuWidth: 800px !default;
+$menuHeight: 395px !default;
+$subMenuIndent: 70px !default;
+
+// Menu settings
+$maxVisibleSubMenus: 3 !default;	// The maximum number of visible sub-menus before they start to be shifted
+$maxDepth: 20 !default;				// Defines the maximum depth of the stacked menu
+
+body[data-currentProfile=mid] .menu-sub { -webkit-transition: none !important; }
+
+.menu-show {
+	background-repeat: no-repeat;
+	height: 44px;
+	width: 100%;
+}
+
+.menu-hide {
+	background-repeat: no-repeat;
+	height: 44px;
+	width: 100%;
+}
+
+.stacked-menu {
+	height: $menuHeight; 
+	width: $menuWidth;
+	background-color: black;
+	border: none;
+
+	// Shift sub-menus to the left once the maximum number of stacked menus has been exceeded
+	$depth: $maxVisibleSubMenus + 1;
+	@while $depth <= $maxDepth {
+		&.depth#{$depth} .menu.sub {
+			-webkit-transform: translate3d(-($subMenuIndent * ($depth - $maxVisibleSubMenus)), 0px, 0px);
+		}
+		$depth: $depth + 1;
+	}
+	
+	.menu {
+		position: absolute;
+		height: $menuHeight !important; 
+		width: $menuWidth;
+		padding: 0px;
+		overflow: hidden;
+		background-image: none;
+		background-color: transparent;
+		border: none;
+		z-index: 6;
+	
+		&.sub {
+			background-repeat: repeat-y;
+			-webkit-transition: -webkit-transform 350ms ease-in-out;
+			-webkit-transform: translate3d(0px, 0px, 0px);
+	
+			// Define the sub-menu levels
+			$level: 1;
+			@while $level <= $maxDepth {
+				&.level#{$level} {
+					// The width of the menu is dependant on its level
+					@if $level <= $maxVisibleSubMenus {
+						width: $menuWidth - ($subMenuIndent * $level);
+					} @else {
+						width: $menuWidth - ($subMenuIndent * $maxVisibleSubMenus);
+					}
+
+					left: ($subMenuIndent * $level);
+					z-index: 6 + ($level);
+					
+					// Performance hack for Sencha list rendering
+					.menu-list {
+						@if $level <= $maxVisibleSubMenus {
+							width: $menuWidth - ($subMenuIndent * $level);
+						} @else {
+							width: $menuWidth - ($subMenuIndent * $maxVisibleSubMenus);
+						}
+					}
+				}
+				$level: $level + 1;
+			}
+					
+			&.hidden {
+				-webkit-transform: translate3d($menuWidth, 0px, 0px);
+			}
+		}
+		
+		// For menus which have toolbars
+		.x-dock {
+			position: relative;
+		}
+		
+		.menu-list {
+			height: $menuHeight;
+			width: $menuWidth;
+			background-color: rgba(0,0,0,1);
+		}
+		
+		.x-mask {
+			height: $menuHeight;	// HACK: The mask has a height of 0 if the contents of the menu contains a docked item
+			-webkit-transition-property: opacity, visibility;
+			-webkit-transition-duration: 350ms;
+			-webkit-transition-timing-function: linear;
+			background: black;
+			opacity: 0.8;
+			
+			&.hidden {
+				opacity: 0;
+				visibility: hidden;
+			}
+		}
+	}
+}
+
+.pull-down-menu {
+	height: $menuHeight;
+	width: $menuWidth;
+	-webkit-transition: -webkit-transform 500ms ease-in-out;
+	-webkit-transform: translateY(-$menuHeight);
+	
+	&.show {
+		-webkit-transform: translate3d(0px, 0px, 0px);
+	}
+}

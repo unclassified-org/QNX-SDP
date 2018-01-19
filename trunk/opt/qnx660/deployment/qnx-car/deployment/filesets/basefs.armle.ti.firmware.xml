@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fileset name="basefs.armle.ducati">
+  <file name="lib/firmware/ducati/base_image_app_m3.xem3" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/firmware/ducati/Notify_MPUSYS_reroute_Test_Core0.xem3" uid="root" gid="nto" mode="0755"/>
+</fileset>

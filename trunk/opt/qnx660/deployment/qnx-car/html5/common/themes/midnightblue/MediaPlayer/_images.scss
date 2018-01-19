@@ -1,0 +1,88 @@
+$img-btn-shuffle: url(#{$img-dir}/shuffle.png);
+$img-btn-shuffle-over: url(#{$img-dir}/shuffle_ovr.png);
+$img-btn-repeat-all: url(#{$img-dir}/repeat_all.png);
+$img-btn-repeat-all-over: url(#{$img-dir}/repeat_all_ovr.png);
+$img-btn-repeat-one: url(#{$img-dir}/repeat_one.png);
+$img-btn-repeat-one-over: url(#{$img-dir}/repeat_one_ovr.png);
+$img-btn-play: url(#{$img-dir}/play.png);
+$img-btn-pause: url(#{$img-dir}/pause.png);
+$img-btn-back: url(#{$img-dir}/back.png);
+$img-btn-skip: url(#{$img-dir}/skip.png);
+$img-default-audio-artwork: url('#{$img-dir}/album_def.png');
+
+$img-home-radio: url(#{$img-dir}/radio_home.png);
+$img-home-music: url(#{$img-dir}/music_home.png);
+$img-home-video: url(#{$img-dir}/video_home.png);
+$img-home-search: url(#{$img-dir}/search_home.png);
+
+$img-background: url('#{$img-dir}/bkgrd.png');
+$img-btn-small: url(#{$img-dir}/btn_def.png);
+$img-btn-small-over: url(#{$img-dir}/btn_def_ovr.png);
+$img-progress-bar: url(#{$img-dir}/prog_bar.png);
+$img-progress-bar-highlight: url(#{$img-dir}/prog_bar_ovr.png);
+$img-btn-large: url(#{$img-dir}/btn_lrg.png);
+$img-btn-large-over: url(#{$img-dir}/btn_lrg_ovr.png);
+
+$img-menu-folder: url(#{$img-dir}/menu_icons/folder.png);
+$img-menu-radio: url(#{$img-dir}/menu_icons/radio.png);
+$img-menu-pandora: url(#{$img-dir}/menu_icons/pandora.png);
+$img-menu-hdd: url(#{$img-dir}/menu_icons/HDDef.png);
+$img-menu-cd: url(#{$img-dir}/menu_icons/CD.png);
+$img-menu-usb: url(#{$img-dir}/menu_icons/USB.png);
+$img-menu-sd: url(#{$img-dir}/menu_icons/SDCard.png);
+$img-menu-ipod: url(#{$img-dir}/menu_icons/ipod.png);
+$img-menu-DLNA: url(#{$img-dir}/menu_icons/DLNA.png);
+$img-menu-bluetooth: url(#{$img-dir}/menu_icons/bluetooth.png);
+$img-menu-mtp: url(#{$img-dir}/menu_icons/mtp.png);
+$img-menu-song: url(#{$img-dir}/menu_icons/song.png);
+$img-menu-playlist: url(#{$img-dir}/menu_icons/playlist.png);
+$img-menu-artist: url(#{$img-dir}/menu_icons/artist.png);
+$img-menu-album: url(#{$img-dir}/menu_icons/album.png);
+$img-menu-genre: url(#{$img-dir}/menu_icons/genre.png);
+$img-menu-video: url(#{$img-dir}/menu_icons/video.png);
+$img-menu-pandoraStation: url(#{$img-dir}/menu_icons/pandora.png);
+
+$img-menu-folder-over: url(#{$img-dir}/menu_icons/folder_ovr.png);
+$img-menu-radio-over: url(#{$img-dir}/menu_icons/radio_ovr.png);
+$img-menu-pandora-over: url(#{$img-dir}/menu_icons/pandora_ovr.png);
+$img-menu-hdd-over: url(#{$img-dir}/menu_icons/HDDef_ovr.png);
+$img-menu-cd-over: url(#{$img-dir}/menu_icons/CD_ovr.png);
+$img-menu-usb-over: url(#{$img-dir}/menu_icons/USB_ovr.png);
+$img-menu-sd-over: url(#{$img-dir}/menu_icons/SDCard_ovr.png);
+$img-menu-ipod-over: url(#{$img-dir}/menu_icons/ipod_ovr.png);
+$img-menu-DLNA-over: url(#{$img-dir}/menu_icons/DLNA_ovr.png);
+$img-menu-bluetooth-over: url(#{$img-dir}/menu_icons/bluetooth.png);
+$img-menu-mtp-over: url(#{$img-dir}/menu_icons/mtp.png);
+$img-menu-song-over: url(#{$img-dir}/menu_icons/song_ovr.png);
+$img-menu-playlist-over: url(#{$img-dir}/menu_icons/playlist_ovr.png);
+$img-menu-artist-over: url(#{$img-dir}/menu_icons/artist_ovr.png);
+$img-menu-album-over: url(#{$img-dir}/menu_icons/album_ovr.png);
+$img-menu-genre-over: url(#{$img-dir}/menu_icons/genre_ovr.png);
+$img-menu-video-over: url(#{$img-dir}/menu_icons/video_ovr.png);
+$img-menu-pandoraStation-over: url(#{$img-dir}/menu_icons/pandora_ovr.png);
+
+$img-pandora-login-dialog: url(#{$img-dir}/dialog_bkgrd.png) !important;
+$img-pandora-logo: url(#{$img-dir}/pandora/logo-pandora-600x85.png);
+$img-btn-pandora-thumbs-up: url(#{$img-dir}/pandora/thumbs_up.png);
+$img-btn-pandora-thumbs-down: url(#{$img-dir}/pandora/thumbs_down.png);
+$img-btn-pandora-twitter: url(#{$img-dir}/pandora/twitter_pandora.png);
+$img-btn-pandora-twitter-over: url(#{$img-dir}/pandora/twitter_pandora_ovr.png);
+$img-btn-pandora-twitter-disabled: url(#{$img-dir}/pandora/twitter_pandora_dis.png);
+$img-btn-pandora-pause-small: url(#{$img-dir}/pause_small.png);
+
+$img-radio-background: url('#{$img-dir}/bkgrd.png');
+$img-radio-dial: url('#{$img-dir}/radio/dial.png');
+$img-radio-dial-overlay: url('#{$img-dir}/radio/dial_metre.png');
+$img-radio-tuner-slider: url('#{$img-dir}/radio/tuner_bar.png');
+$img-radio-tuner-slider-thumb-high: url('#{$img-dir}/radio/tuner_btn_high.png');
+$img-radio-tuner-slider-thumb-mid: url('#{$img-dir}/radio/tuner_btn_mid.png');
+$img-btn-radio-preset: url('#{$img-dir}/radio/btn_def.png');
+$img-btn-radio-rocker: url('#{$img-dir}/radio/btn_seekscan.png');
+
+$img-search-background: url(#{$img-dir}/search_bkgrd.png);
+$img-clear-icon: url(#{$img-dir}/search_del.png) !important;
+$img-clear-icon-over: url(#{$img-dir}/search_del_ovr.png) !important;
+$img-btn-search: url(#{$img-dir}/btn_lrg.png);
+$img-btn_search-over: url(#{$img-dir}/btn_lrg_ovr.png);
+
+$img-video-background: url(#{$img-dir}/video_24.png);

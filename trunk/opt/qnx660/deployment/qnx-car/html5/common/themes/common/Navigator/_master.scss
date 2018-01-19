@@ -1,0 +1,103 @@
+/* $Id$ */
+body {
+	margin: 0px;
+}
+
+#tablist {
+	display: table;
+	table-layout: fixed;
+	text-align: left;
+}
+
+#tablist.disabled {
+	pointer-events: none;
+}
+
+.tabItem {
+	position: absolute;
+	width: 123px * $x-multiplier;
+	background-position-y: 50%;
+
+	&.voice { 
+		background-image: $tab-voice; 
+	}
+	&.home { 
+		background-image: $tab-home; 
+	}
+	&.nav { 
+		background-image: $tab-navigation; 
+	}
+	&.media { 
+		background-image: $tab-mediaplayer; 
+	}
+	&.car { 
+		background-image: $tab-carcontrol; 
+	}
+	&.comm { 
+		background-image: $tab-communication; 
+	}
+	&.apps { 
+		background-image: $tab-appsection; 
+	}
+
+	&.highlighted {
+		background-position-y: 100%;
+	}
+}
+
+#tablist.disabled > .tabItem,
+.tabItem.disabled {
+	background-position-y: 0%;
+	pointer-events: none;
+}
+
+/*
+ * positions after the small voice tab (px): 62, 185, 308, 431, 554, 677
+ * class name generated from tab order parameter
+ */
+
+.tabItem.voice {
+	width: 62px * $x-multiplier;
+}
+
+.pos2 {
+	left: 62px * $x-multiplier;
+}
+
+.pos3 {
+	left: 185px * $x-multiplier;
+}
+
+.pos4 { 
+	left: 308px * $x-multiplier;
+}
+
+.pos5 {
+	left: 431px * $x-multiplier;
+}
+
+.pos6 {
+	left: 554px * $x-multiplier;
+}
+
+.pos7 {
+	left: 677px * $x-multiplier;
+}
+
+// Dummy elements for ui sizing
+
+#dummyElements {
+	position: absolute;
+	-webkit-transform: translate3d(-100%, -100%, 0);
+	z-index: -9999;
+
+	.navBar {
+		height: 60px * $y-multiplier;
+	}
+	.statusBar {
+		height: 25px * $y-multiplier;
+	}
+	.keyboard {
+		height: 190px * $y-multiplier;
+	}
+}

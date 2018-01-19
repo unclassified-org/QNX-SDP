@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets"
+        xmlns:rim="http://www.blackberry.com/ns/widgets"
+        version="1.0.0.0"
+        id="Shutdown">
+    <name>Shutdown</name>
+    <author>QNX</author>
+	<rim:category name="vehicle"/>
+    <description>Shutdown system Application</description>
+    <feature id="blackberry.event" required="true" version="1.0.0.0"/>
+    <feature id="qnx.application.event" required="true" version="1.0.0.0"/>
+    <feature id="qnx.power" required="true" version="1.0.0.0"/>
+    <access uri="*"/>
+    <icon src="icon.png"/>
+    <content src="index.html"/>  
+    <rim:permissions>
+        <rim:permit>configure_system</rim:permit>
+    </rim:permissions>
+</widget>

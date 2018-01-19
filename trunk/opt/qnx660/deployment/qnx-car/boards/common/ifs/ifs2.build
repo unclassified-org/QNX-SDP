@@ -1,0 +1,14 @@
+[compress=2]
+
+#WARNING: At the moment, there is a ~28MB limit on how much you can put into the
+# secondary IFS
+
+[perms=0755]
+[prefix=/usr/lib]
+#libicuuc.so.49
+libcrypto.so.2
+libicui18n.so.49
+libwebview.so.2.0
+libwebkitplatform.so.0.1
+#libicudata.so.49
+libwebkit.so.0.1

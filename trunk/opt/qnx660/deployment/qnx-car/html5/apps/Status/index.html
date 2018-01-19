@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+	<!-- qnx.theme2 stylesheet, status -->
+	<link rel="stylesheet" id="theme-css" app="Status" type="text/css" charset="utf-8">
+
+	<script src="platform:///apps/common/js/jquery/jquery-1.6.4.min.js" type="text/javascript" charset="utf-8"></script>
+
+	<script type="text/javascript">
+		function onReady() {
+			var node = document.createElement("script");
+			node.setAttribute("type", "text/javascript");
+			node.setAttribute("src", "js/status.js");
+			document.getElementsByTagName("head")[0].appendChild(node);
+		}
+		window.addEventListener("load", function (e) {
+			document.addEventListener("webworksready", onReady);
+		}, false);
+	</script>
+
+	<script src="local:///chrome/webworks.js" type="text/javascript" charset="utf-8"></script>
+	<title>Status</title>
+
+</head>
+
+<body>
+	<div id="statuslist">
+		<div id="environmentData">
+			<span class="profileName"></span> | 
+			<span class="time">--:-- --</span> | 
+			<span class="temperature"><span class="value">--</span>&deg;C</span>
+		</div>
+		<div id="logo"></div>
+		<ul id="services">
+			<li id="phone" class="service"></li>
+			<li id="bluetooth" class="service"></li>
+			<li id="wifi" class="service"></li>
+			<li id="device" class="service"></li>
+			<li id="volume">
+				<div class="stat service show"></div>
+				<div class="level"></div>
+			</li>
+		</ul>
+	</div>
+
+</body>
+</html>

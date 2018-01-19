@@ -1,0 +1,25 @@
+<!-- WARNING
+     Maintenance of this document is tricky.  Changes made here will need to be 
+     reflected in the smb.conf file (and vice versa).  
+ -->
+<DeviceVolumes>
+	<Volume id='Media' StorageType='Internal' ContentType='Media'>
+		<SambaConfiguration>
+			<Credentials>dtm</Credentials>
+			<Path>media</Path>
+		</SambaConfiguration>
+	</Volume>
+	<Volume id='MemoryCard' StorageType='External' ContentType='Media'>
+		<SambaConfiguration>
+			<Credentials>dtm</Credentials>
+			<Path>removable_SDCARD</Path>
+		</SambaConfiguration>
+	</Volume>
+	<Volume id='DesktopConfiguration' StorageType ='Internal' ContentType ='DesktopConfiguration'>
+		<SambaConfiguration>
+			<Credentials>dtm</Credentials>
+			<Path>dtm</Path>
+		</SambaConfiguration>
+	</Volume>
+</DeviceVolumes>
+

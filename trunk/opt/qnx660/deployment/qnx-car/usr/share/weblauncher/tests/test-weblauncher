@@ -1,0 +1,2 @@
+#!/bin/sh
+CHROME_URL=file:///usr/share/weblauncher/tests/launcher.html exec weblauncher $@

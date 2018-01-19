@@ -1,0 +1,97 @@
+/**
+ * Common CSS for Sencha Touch 2.1 application lists using the
+ * Ext.dataview.List component.
+ * @author lgreenway
+ *
+ * $Id: lists.scss 5717 2013-01-18 16:08:21Z lgreenway@qnx.com $
+ */
+ 
+.x-list.menu-list {
+	background-color: transparent;
+
+	.x-dock {
+		border: none !important;
+		
+		// HACK: Lists which have plugins have a dock container which has a height of 0
+		&.x-stretched {
+			-webkit-box-flex: 1;
+		}
+	}
+	
+	.x-list-item {
+		height: (59px * $y-multiplier);
+		font-size: 300%;
+		color: $text-color;
+		padding: 0px (20px * $x-multiplier);
+		border: none !important;
+		
+		&.menu-selected > .x-innerhtml, > .x-innerhtml:active {
+			border: none !important;
+			color: $active-text-color !important;
+			background-color: $active-background-color !important;
+			background-image: none !important;
+			text-shadow: none !important;
+		}
+
+		&.x-list-item-tpl {
+			.menu-image-left {
+				background-position: left center;
+				background-repeat: no-repeat;
+				padding-left: (60px * $x-multiplier);
+			}
+		
+			.menu-image-right {
+				background-position: right center;
+				background-repeat: no-repeat;
+				background-size: (48px * $x-multiplier) (48px * $x-multiplier);
+				padding-right: (60px * $x-multiplier);
+			}
+
+			.menu-label {
+				&, * {
+					text-overflow: ellipsis;
+					overflow: hidden;
+					white-space: nowrap;
+				}
+				
+				.menu-line-1 {
+					display: -webkit-box;
+					font-size: 50%;
+					line-height: 32px * $y-multiplier;
+					font-weight: bold;
+					
+					.left {
+						-webkit-box-flex: 1;
+						padding-right: (10px * $x-multiplier);
+					}
+					
+					.right {
+						font-weight: normal;
+						font-size: 80%;
+					}
+				}
+				
+				.menu-line-2 {
+					font-size: 37.5%;
+					line-height: 24px * $y-multiplier;
+					color: $sub-text-color;
+					width: 100%;
+				}
+			}
+		}
+		&.x-list-item-last {
+			height: 80px * $x-multiplier !important;
+		}
+	}
+	
+	.x-list-emptytext {
+		font-size: 125%%;
+		display: block;
+	}
+}
+
+.x-list .x-list-item .x-list-item-body, 
+.x-list .x-list-item.x-list-item-tpl .x-innerhtml {
+	padding: 0px !important;
+}
+

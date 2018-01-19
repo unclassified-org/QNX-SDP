@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fileset name="rootfs.car.navigation_sample">
+   <file name="var/tmp/db/navigation_sample_data.sql" uid="root" gid="nto" mode="0755"/>
+   <file name="var/tmp/db/navigation_sample.sql" uid="root" gid="nto" mode="0755"/>
+</fileset>

@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Audio Control</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	</head>
+	<body onload="window.location = 'index.html'">
+		<div id="audioControl" data-role="page" data-dom-cache="true">
+			<div id="audioSettings">
+				<div class="setting">
+					<div class="name">Volume</div>
+					<div id="volumeControl" class="sliderControl volume">
+						<div class="btnDown"></div>
+						<div class="display"></div>
+						<div class="btnUp"></div>
+					</div>
+				</div>
+				<div class="setting">
+					<div class="name">Bass</div>
+					<div id="bassControl" class="sliderControl bass">
+						<div class="btnDown"></div>
+						<div class="display"></div>
+						<div class="btnUp"></div>
+					</div>
+				</div>
+				<div class="setting">
+					<div class="name">Treble</div>
+					<div id="trebleControl" class="sliderControl treble">
+						<div class="btnDown"></div>
+						<div class="display"></div>
+						<div class="btnUp"></div>
+					</div>
+				</div>
+			</div>
+			
+			<div id="fadeBalanceControl" class="fadeBalanceControl">
+				<div class="boundingBox">
+					<div class="fadeBalancePosition"></div>
+				</div>
+			</div>
+		</div>
+
+	</body>
+</html>

@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Climate Control</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	</head>
+	<body onload="window.location = 'index.html'">
+		<div id="climateControl" data-role="page" data-dom-cache="true">
+			<div id="leftFanControl" class="fanControl" data-zone="row1left">
+				<div class="dial"></div>
+				<div class="dialMask">
+					<div class="dialActive"></div>
+				</div>
+			</div>
+			
+			<div id="leftTempControl" class="tempControl" data-zone="row1left">
+				<div class="temperature">
+					<ul>
+					</ul>
+				</div>
+			</div>
+			
+			<div id="leftFanSpeedControl" class="fanSpeedControl" data-zone="row1left">
+				<div class="btn"></div>
+			</div>
+			
+			<div id="leftHeatedSeatControl" class="heatedSeatControl" data-zone="row1left">
+				<div class="btn"></div>
+			</div>
+
+			<div id="linkTempToggleControl" class="centerToggleBtn zoneLinkToggleControl"></div>
+			<div id="acToggleControl" class="centerToggleBtn acToggleControl"></div>
+			<div id="defrostToggleControl" class="centerToggleBtn defrostToggleControl"></div>
+			<div id="airCirculationToggleControl" class="centerToggleBtn airCirculationToggleControl"></div>
+
+			<div id="rightFanControl" class="fanControl" data-zone="row1right" data-clockwise-index="true">
+				<div class="dial"></div>
+				<div class="dialMask">
+					<div class="dialActive"></div>
+				</div>
+			</div>
+			
+			<div id="rightTempControl" class="tempControl" data-zone="row1right">
+				<div class="temperature">
+					<ul>
+					</ul>
+				</div>
+			</div>
+			
+			<div id="rightFanSpeedControl" class="fanSpeedControl" data-zone="row1right">
+				<div class="btn"></div>
+			</div>
+			
+			<div id="rightHeatedSeatControl" class="heatedSeatControl" data-zone="row1right">
+				<div class="btn"></div>
+			</div>
+		</div>
+
+	</body>
+</html>

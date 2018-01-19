@@ -1,0 +1,76 @@
+#
+# Launcher capability mappings to supplementary groups
+#
+# Each line has one of the following formats:
+#
+#    <capname> group <group>
+#    <capname> relgroup <offset>
+#    <capname> user <user>
+#
+# where
+#
+#    <capname> is the capability name
+#    <group>   is a group name (from /etc/group) or ID
+#    <offset>  is an increment on the account GID
+#    <user>    is a user name (from /etc/passwd) or ID
+#
+
+
+#
+# PERIMETERS
+#
+
+access_shared               relgroup 1
+access_sys                  relgroup 2
+access_enterprise_shared    group 1201
+access_personal_shared      group 1001
+
+gain_personal_group         group 1000
+gain_personal_sys           group 1002
+gain_corporate_group group 1100
+gain_corporate_sys   group 1102
+gain_bridge_group           group 1100
+gain_bridge_shared          group 1101
+gain_bridge_sys             group 1102
+gain_enterprise_group       group 1200
+gain_enterprise_shared      group 1201
+gain_enterprise_sys         group 1202
+gain_all_shared             group 1001
+gain_all_shared             group 1101
+gain_all_shared             group 1201
+
+access_perimeter_bridge     group 1100
+access_perimeter_enterprise group 1200
+
+
+#
+#SYSTEM
+#
+gain_nto_group              group 0
+access_protected_media      group protected_media
+_sys_access_wm_drm_licenses group drm_license
+configure_certificates      group 1000_certs
+use_installer               group upd
+access_installer            group upd
+configure_system            group logger
+access_system_services      group logger
+configure_system_settings   group 430
+read_app_metadata           user  apps
+gain_pim_group              group pim
+gain_bluetooth_group        group 300
+gain_bt_remotedevices_group group 301
+gain_ptg_group              group ptg
+gain_dtg_group              group dtg
+access_bbm_data             group bbm_data
+access_escreens_metainfo    group 104
+gain_bbiocore_group         group bbiocore
+gain_bbio_group             group bbio
+gain_oma_fl_group           group 366
+datatool_network_access     group carrier_config
+access_ema_group            group ema
+gain_voice_mail_group       group visual_voicemail
+control_resource_arbiter    group 386
+gain_notifications_group    group notifications
+gain_resarb_hi_priority     group resarb_hi_priority
+gain_bp2p_group             group bp2p
+

@@ -1,0 +1,39 @@
+// Import base theme variables
+
+@import '../base';
+
+$app-dir: $theme-dir + "/AppSection";
+
+$button-font: "Arial Regular", sans-serif;
+$button-font-pressed: "Arial Bold", sans-serif;
+
+//override button text color for this app
+$button-text-color: #000000;
+
+// Variable definitions for current application
+
+// @media (max-device-height: 719px) 
+// {
+	@import './800x480/style';
+	@import './images';
+
+	// Import application layout
+	@import '../../common/AppSection/master';
+
+	// Load common components
+	$common-img-dir: $theme-dir + "/common/800x480/img";
+	@import '../common/loading-animation';
+// }
+
+// @media (min-device-height: 720px) 
+// {
+// 	@import './1280x720/style';
+// 	@import './images';
+
+// 	// Import application layout
+//	@import '../../common/AppSection/master';
+
+// 	// Load common components
+// 	$common-img-dir: $theme-dir + "/common/1280x720/img";
+// 	@import '../common/loading-animation';
+// }

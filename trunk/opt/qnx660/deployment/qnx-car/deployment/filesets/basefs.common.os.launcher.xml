@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fileset name="basefs.common.os.launcher">
+  <file name="sbin/launcher" uid="root" gid="nto" mode="0750"/>
+</fileset>

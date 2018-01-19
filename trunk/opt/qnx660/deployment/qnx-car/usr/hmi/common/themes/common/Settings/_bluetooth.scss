@@ -1,0 +1,319 @@
+/* $Id$ */
+
+.x-tab.icon_bluetooth_connectivity{
+  background-image: $bluetooth-tab-icon;
+}
+
+.x-tab-active.icon_bluetooth_connectivity{
+  background-image: $bluetooth-tab-icon-active;
+}
+
+.bluetooth_tab {
+  font-size: 125%;
+
+  .bt_logo {
+	background-size: 60px * $x-multiplier 60px * $y-multiplier;
+	background-repeat: no-repeat;
+	width: 60px * $x-multiplier;
+	height: 60px * $y-multiplier;
+	position: absolute;
+	top: 22px * $x-multiplier;
+	left: 50px * $y-multiplier;
+	background-image: $bt-logo-background;
+  }
+
+  .bt_logo_text {
+	position: absolute;
+	top: 27px * $x-multiplier;
+	left: 114px * $y-multiplier;
+	font-size: 150%;
+	font-weight: bold;
+	line-height: 25px * $y-multiplier;
+  }
+
+  .connected_devices_label {
+	position: absolute;
+	left: 50px * $x-multiplier;
+	top: 173px * $y-multiplier;
+  }
+
+  .device_name_label {
+	position: absolute;
+	left: 50px * $x-multiplier;
+	top: 87px * $y-multiplier;
+  }
+
+  #my_device_name {
+	position: absolute;
+	left: 50px * $x-multiplier;
+	top: 122px * $y-multiplier;
+	font-size: 112%;
+	font-weight: bold;
+	background-size: 280px  * $x-multiplier 40px * $y-multiplier;
+	background-repeat: no-repeat;
+	width: 280px * $x-multiplier;
+	height: 40px * $y-multiplier;
+	overflow: hidden;
+	background-image: $input-text-background;
+  }
+
+  #add_new_device {
+	position: absolute;
+	left: 45px * $x-multiplier;
+	top: 330px * $y-multiplier;
+	width: 226px * $x-multiplier;
+	height: 56px * $y-multiplier;
+	background-size: 226px * $x-multiplier 56px * $y-multiplier;
+	background-image: $add-new-device;
+  }
+
+  #add_new_device:active {
+	background-image: $add-new-device-active;
+  }
+
+  #list_devices {
+	position: absolute;
+	left: 50px * $x-multiplier;
+	top: 210px * $y-multiplier;
+	width: 500px * $x-multiplier;
+	height: 117px * $y-multiplier;
+	background-color: inherit;
+
+	.x-list-item {
+	  height: 50px  * $y-multiplier;
+	  color: $text-color;
+	}
+
+	.x-list-item::before {
+	  background-image: $list-devices-item-before;
+	  background-repeat: no-repeat;
+	}
+
+	.x-list-item.x-item-pressed::before {
+	  background-image: $list-devices-item-pressed-before;
+	  background-repeat: no-repeat;
+	}
+	/* Sencha 2.1 Upgrade fix */
+	.x-innerhtml {
+	  margin: 0px;
+	  padding-left: 20px * $x-multiplier !important;
+	  font-size: 112%;
+	}
+
+	.x-list-item-label {
+	  margin: 0px;
+	  padding-top: 10px * $y-multiplier;
+	  padding-left: 30px * $x-multiplier !important;
+	  font-size: 112%;
+	  border-bottom-style: solid;
+	  border-bottom-width: 1px;
+	  border-color: $border-color;
+	  background-color: inherit !important;
+	}
+
+	.x-list-item:first-child {
+	  border-top: $border-color 1px solid !important;
+	}
+
+	.x-list-item::before {
+	  content: "";
+	  position: absolute;
+	  width: 24px * $x-multiplier;
+	  height: 24px * $y-multiplier;
+	  top: 12px * $y-multiplier;
+	  left: 5px * $x-multiplier;
+	  border: none;
+	  background-color: transparent !important;
+	  background-clip: border;
+	}
+
+	.x-item-pressed {
+	  border: none !important;
+	  color: black !important;
+	  background-color: $active-background-color !important;
+	  background-image: none !important;
+	  text-shadow: none !important;
+	}
+	/* to mark connected devices bold */
+	.list_item_div.connected {
+	  font-weight: bold;
+	  white-space: nowrap;
+	}
+
+	.list_item_div .device_name {
+	  text-overflow: ellipsis;
+	  overflow: hidden;
+	  white-space: nowrap;
+	  padding-right: 10px; /* Check this */
+	}
+
+	.list_item_div.connected .device_name {
+	  max-width: 380px * $x-multiplier;
+	  float: left;
+	}
+  }
+}
+
+.add_device_sheet {
+
+  color: $text-color;
+  .settings_panel {
+	padding-top: 20px * $y-multiplier;
+  }
+
+  .icon {
+	position: absolute;
+	left: 65px * $x-multiplier;
+	top: 0px * $y-multiplier;
+	width: 64px * $x-multiplier;
+	height: 64px * $y-multiplier;
+	background-size: 64px * $x-multiplier 64px * $y-multiplier;
+	background-image: $add-device-sheet-icon;
+  }
+
+  .label {
+	position: absolute;
+	left: 142px * $x-multiplier;
+	top: 11px * $y-multiplier;
+	font-size: 225%;
+	font-weight: bold;
+  }
+
+  .bt_listen {
+	position: absolute;
+	left: 65px * $x-multiplier;
+	top: 205px * $y-multiplier;
+  }
+
+  .bt_search {
+	position: absolute;
+	left: 65px * $x-multiplier;
+	top: 275px * $y-multiplier;
+  }
+
+  #search_text {
+	position: absolute;
+	left: 60px * $x-multiplier;
+	top: 83px * $y-multiplier;
+	font-size: 90%;
+	width: 125px * $x-multiplier;
+	text-align: center;
+  }
+
+  .found_devices_label {
+	position: absolute;
+	left: 210px * $x-multiplier;
+	top: 76px * $y-multiplier;
+	font-size: 125%;
+  }
+
+  #countdown {
+	position: absolute;
+	left: 210px * $x-multiplier;
+	top: 150px * $y-multiplier;
+	height: 219px * $y-multiplier;
+	width: 310px * $x-multiplier;
+	background-color: inherit;
+	font-size: 500%;
+	text-align: center;
+  }
+
+  #countdown_text {
+	position: absolute;
+	left: 210px * $x-multiplier;
+	top: 83px * $y-multiplier;
+	background-color: inherit;
+	height: 219px * $y-multiplier;
+	width: 310px * $x-multiplier;
+	text-align: center;
+  }
+
+  .devices_list {
+	position: absolute;
+	left: 210px * $x-multiplier;
+	top: 110px * $y-multiplier;
+	height: 219px * $y-multiplier;
+	width: 310px * $x-multiplier;
+	background-color: inherit;
+
+	.x-list-item {
+	  background-color: transparent;
+	  font-size: 100%;
+	  padding-left: 0px;
+	  color: $border-color;
+	}
+
+	.x-list-item:first-child {
+	  border-top: $border-color 1px solid !important;
+	}
+
+	.x-list-item-label {
+	  margin: 0px;
+	  border-bottom-style: solid;
+	  border-bottom-width: 1px;
+	  border-color: $text-color;
+	  background-color: inherit !important;
+	}
+
+	.x-item-pressed {
+	  border: none !important;
+	  color: $active-text-color !important;
+	  background-color: $active-background-color !important;
+	  background-image: none !important;
+	  text-shadow: none !important;
+	}
+  }
+
+  .loading {
+	position: absolute;
+	width: 48px * $x-multiplier;
+	height: 48px * $y-multiplier;
+	left: 125px * $x-multiplier;
+	top: 155px * $y-multiplier;
+	background-size: 48px * $x-multiplier;
+  }
+}
+
+/** Pairing view classes */
+.pairing_sheet {
+  .settings_panel {
+	padding-top: 20px * $y-multiplier;
+  }
+
+  .icon {
+	position: absolute;
+	left: 225px * $x-multiplier;
+	top: 65px * $y-multiplier;
+	background-size: 31px * $x-multiplier 31px * $y-multiplier;
+	background-repeat: no-repeat;
+	height: 31px * $y-multiplier;
+	width: 31px * $x-multiplier;
+	background-image: $pairing-sheet-icon;
+  }
+
+  .label {
+	position: absolute;
+	left: 170px * $x-multiplier;
+	top: 11px * $y-multiplier;
+	font-size: 225%;
+	font-weight: bold;
+  }
+
+  #pairing_text {
+	position: absolute;
+	left: 0px;
+	top: 149px * $y-multiplier;
+	font-size: 90%;
+	width: 500px * $x-multiplier;
+	text-align: center;
+  }
+
+  #pairing_status {
+	position: absolute;
+	left: 0px;
+	top: 179px * $y-multiplier;
+	font-size: 90%;
+	width: 500px * $x-multiplier;
+	text-align: center;
+  }
+}

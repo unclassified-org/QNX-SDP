@@ -1,0 +1,64 @@
+body {
+  height: 592px !important;
+}
+
+.mainView {
+  width: 1280px;
+}
+
+.leftColumn {
+  width: 345px;
+  height: 100%;
+
+  #catlist {
+    width: 345px;
+    height: 360px;
+  }
+  .qnxLogo {
+    height: 135px;
+    background-image: url("../../resources/images/qnx_logo.png");
+  }
+
+  .line1 {
+    height: 4px;
+    background-image: url("../../resources/images/div_line.png");
+  }
+}
+
+#navlist {
+  width: 935px;
+  height: 100%;
+
+  .home-item {
+    width: 150px;
+    margin: 30px;
+    text-align: center;
+  }
+}
+
+.app_sheet {
+  height: 100%;
+  width: 100%;
+
+  .license {
+	margin: 30px;
+  }
+
+  #appDescription {
+	width: 540px !important;
+	height: 120px !important;
+  }
+  #appIcon, #appIcon img {
+	width: 300px;
+	height: 300px;
+  }
+
+  #appName {
+	font-size: 1.5em;
+	width: 600px;
+  }
+
+  #installBtn, #uninstallBtn {
+	margin-top: 22px;
+  }
+}

@@ -1,0 +1,12 @@
+<Client>
+	<DeviceId>
+		<DisplayName>TwonkyPlayer</DisplayName>
+		<DeviceDescriptionRecognition>
+			<DescriptionText>pvConnect</DescriptionText>
+		</DeviceDescriptionRecognition>
+		<HttpRecognition>
+			<HttpText>pvConnect</HttpText>
+		</HttpRecognition>
+		<MappingUpdatePolicy>FIXPC</MappingUpdatePolicy>
+	</DeviceId>
+</Client>

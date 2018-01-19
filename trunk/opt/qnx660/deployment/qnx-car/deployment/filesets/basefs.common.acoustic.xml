@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fileset name="basefs.common.acoustic">
+  <!-- etc/acoustic - Configuration and tuning files -->
+  <directory name="etc/acoustic" uid="root" gid="nto" mode="0755"/>
+  <file name="etc/acoustic/acoustic.conf" uid="root" gid="nto" mode="0640"/>
+  <file name="etc/acoustic/handsfree.qcf" uid="root" gid="nto" mode="0640"/>
+
+  <!-- sbin - Resource manager binary -->
+  <file name="sbin/io-acoustic" uid="root" gid="nto" mode="0750"/>
+
+  <!-- lib - Acoustic processing library and variants -->
+  <symlink name="lib/libqwa.so" target="libqwa.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/libqwa.so.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="lib/libqwa_rcs.so" target="libqwa_rcs.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/libqwa_rcs.so.1" uid="root" gid="nto" mode="0755"/>
+
+  <!-- lib/dll - Acoustic processing library and variants -->
+  <file name="lib/dll/apm-aap-hf.so" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/apm-aap-rcs-hf.so" uid="root" gid="nto" mode="0755"/>
+
+  <!-- usr/lib - Interface libraries -->
+  <symlink name="usr/lib/libioap.so" target="libioap.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libioap.so.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libacoustic.so" target="libacoustic.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libacoustic.so.1" uid="root" gid="nto" mode="0755"/>
+
+</fileset>

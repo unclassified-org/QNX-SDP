@@ -1,0 +1,11 @@
+.def_button {
+	background-image: url("../../resources/images/btn_def.png");
+}
+
+.def_button:active {
+	background-image: url("../../resources/images/btn_def_ovr.png");
+}
+
+.def_button.active {
+	background-image: url("../../resources/images/btn_def_ovr.png");
+}

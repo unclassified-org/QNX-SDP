@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?NLS  TYPE="org.eclipse.help.toc"?>
+<toc label="QNX SDK for Apps and Media" topic="topic/bookset.html">
+
+
+<topic label="About the QNX SDK for Apps and Media" href="../com.qnx.doc.appsandmedia.embed_browser/topic/about.html">
+    <link toc="../com.qnx.doc.appsandmedia.embed_browser/main.xml" />
+</topic>    
+    
+<topic label="Application and Window Management" href="../com.qnx.doc.appsandmedia.lifecycle/topic/about.html">
+    <link toc="../com.qnx.doc.appsandmedia.lifecycle/main.xml" />
+</topic>
+    
+<topic label="HTML5 Developer's Guide" href="../com.qnx.doc.web_ui.dev_guide/topic/about.html">
+    <link toc="../com.qnx.doc.web_ui.dev_guide/main.xml" />
+</topic>
+    
+<topic label="Multimedia Components" href="topic/multimedia.html">
+
+    <topic label="Architecture Guide" href="../com.qnx.doc.appsandmedia.mm_arch/topic/about.html">
+        <link toc="../com.qnx.doc.appsandmedia.mm_arch/main.xml" />
+    </topic>
+    
+    <topic label="Metadata Provider Library" href="../com.qnx.doc.libmd.lib_ref/topic/about.html">
+        <link toc="../com.qnx.doc.libmd.lib_ref/main.xml" />
+    </topic>
+    
+    <topic label="Multimedia Playlist Library" href="../com.qnx.doc.libmmplaylist.lib_ref/topic/about.html">
+        <link toc="../com.qnx.doc.libmmplaylist.lib_ref/main.xml" />
+    </topic>
+    
+    <topic label="Multimedia Renderer" href="../com.qnx.doc.mme.mmrenderer/com.qnx.doc.mme.mmrenderer/topic/about.html">
+        <link toc="../com.qnx.doc.mme.mmrenderer/mme.mmrenderer.xml" />
+    </topic>
+    
+    <topic label="Multimedia Synchronizer" href="../com.qnx.doc.mm_sync.dev_guide/com.qnx.doc.mm_sync.dev_guide/topic/about.html">
+        <link toc="../com.qnx.doc.mm_sync.dev_guide/mm_sync.dev_guide.xml" />
+    </topic>
+
+    <topic label="Multimedia Test Utilities" href="../com.qnx.doc.appsandmedia.mm_utils/topic/about.html">
+        <link toc="../com.qnx.doc.appsandmedia.mm_utils/main.xml" />
+    </topic>
+
+</topic>
+      
+<topic label="Copyrights" href="../com.qnx.doc.appsandmedia.copyright/com.qnx.doc.copyright/topic/coverpage.html">
+    <link toc="../com.qnx.doc.appsandmedia.copyright/copyright_appsandmedia.xml" />
+</topic>
+    
+</toc>

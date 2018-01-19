@@ -1,0 +1,175 @@
+# =========================
+# CAR2 Image Description Script
+# =========================
+SCRIPT_PATH=`dirname $0`
+OSVERSION_FILE=/base/etc/os.version
+SERVICES_ENABLED=/var/etc/services-enabled
+
+function chapter
+{
+    cat << EOF
+
+# ==========================
+# $@
+# ==========================
+EOF
+}
+
+function usage
+{
+    cat << EOF
+# $0 - Image Description Script
+
+Usage: $0
+
+Options:
+    -h  # Show this help
+    -j  # Display Jira Wiki Format
+    -x  # Debug
+
+Print information describing the running system.
+EOF
+}
+
+# =========================
+# Parse Arguments
+# =========================
+
+while getopts hjvx opt; do
+    case $opt in
+    h) usage ; exit 0 ;;
+    v) VERBOSE=1 ;;
+    x) set -x ; VERBOSE=1 ;;
+    j) JIRA=1 ;;
+    ?) usage >&2; exit 1 ;;
+    esac
+done
+shift $((OPTIND-1))
+OPTIND=0
+
+
+# =========================
+# Determine which HMI is running
+# =========================
+HMI="UNKNOWN"
+numWebKitProcesses=`pidin a | grep webkit-child-launcher | grep -v grep | wc -l | sed 's/ //g'`
+numQTProcesses=`pidin a | grep qtcar | grep -v grep | wc -l | sed 's/ //g'`
+
+[ $numWebKitProcesses -gt 0 ] && HMI="HTML"
+[ $numQTProcesses -gt 0 ] && HMI="QT"
+
+
+# =========================
+# Print a summary
+# =========================
+if [ ! -z "$JIRA" ]; then
+
+    # With Jira Wiki Content
+    echo "{panel:title=SUMMARY}"
+    cat << EOF
+||NAME||VALUE||
+|HMI|$HMI|
+|IFS|$IFS_VARIANT|
+`grep buildNum $OSVERSION_FILE | sed 's/^/|/mg' | sed 's/: */|/mg' | sed 's/$/|/mg'`
+`grep platform $OSVERSION_FILE | sed 's/^/|/mg' | sed 's/: */|/mg' | sed 's/$/|/mg'`
+`grep variant $OSVERSION_FILE | sed 's/^/|/mg' | sed 's/: */|/mg' | sed 's/$/|/mg'`
+EOF
+
+    # Prep the system information section with Jira content
+    echo "{panel}"
+    echo "{code:title=SYSTEM INFORMATION}"
+
+else
+    # No Jira Wiki Content
+
+    chapter "SUMMARY"
+    cat << EOF
+HMI: $HMI
+IFS: $IFS_VARIANT
+`grep buildNum $OSVERSION_FILE`
+`grep platform $OSVERSION_FILE`
+`grep variant $OSVERSION_FILE`
+EOF
+
+fi
+
+
+# =========================
+# SYSTEM INFO
+# =========================
+chapter "SYSTEM INFORMATION"
+uname -a
+pidin info
+
+
+# =========================
+# os.version
+# =========================
+if [ -f "$OSVERSION_FILE" ]; then
+    chapter "OS.VERSION"
+    cat $OSVERSION_FILE
+else
+    echo "[warning]: No [$OSVERSION_FILE] file." >&2
+fi
+
+
+# =========================
+# IFS Variant
+# =========================
+echo "IFS: $IFS_VARIANT"
+
+
+# =========================
+# ASR Enabled
+# =========================
+applicationKey=`grep "application-key.*=" /etc/asr-car.cfg  | sed 's/\s*//g'`
+applicationId=`grep "application-id.*=" /etc/asr-car.cfg  | sed 's/\s*//g'`
+
+isASREnabled="Enabled"
+if [ "$applicationKey" = "application-key=set-app-key" ] || [ "$applicationId" = "application-id=set-app-id" ]; then
+    isASREnabled="Disabled"
+fi
+echo "ASR: $isASREnabled"
+
+# =========================
+# Services-Enabled
+# =========================
+if [ -f "$SERVICES_ENABLED" ]; then
+    chapter "SERVICES-ENABLED"
+    cat $SERVICES_ENABLED
+else
+    echo "[warning]: No [$SERVICES_ENABLED] file." >&2
+fi
+
+
+# =========================
+# NETWORK INFO
+# =========================
+chapter "NETWORK INFORMATION"
+ifconfig
+ping -c 2 google.com
+
+
+# =========================
+# DISK INFO
+# =========================
+chapter "DISK INFORMATION"
+df -h
+
+
+# =========================
+# Processor Load
+# =========================
+chapter "PROCESSOR LOAD"
+top -i1
+
+
+# =========================
+# Core Files
+# =========================
+chapter "CORE FILES"
+ls -l /var/dumper/*
+
+
+[ ! -z "$JIRA" ] && echo "{code}"
+exit 0

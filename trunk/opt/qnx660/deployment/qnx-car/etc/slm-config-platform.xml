@@ -1,0 +1,13 @@
+
+    <!-- VARIANT SPECIFIC ENTRIES -->
+
+
+    <!-- Dummy components to allow use of common config -->
+	<SLM:component name="io-audio_mcbsp">
+		<SLM:command launch="builtin">no_op</SLM:command>
+	</SLM:component>
+
+	<SLM:component name="syslink_daemon">
+	        <SLM:command launch="builtin">no_op</SLM:command>
+	</SLM:component>
+

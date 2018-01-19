@@ -1,0 +1,66 @@
+/*$Id: loading_animation.scss 5673 2013-01-14 17:23:58Z lgreenway@qnx.com $*/
+
+/**
+ * CSS rules for the global loading animation
+ */
+
+.loadingOverlay {
+	background: rgba(0, 0, 0, 0.3) url("#{$common-img-dir}/loadingOverlay.png") no-repeat 0% 0% !important;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-size: 100% !important;
+	z-index: 99;
+}
+
+.loadingText {
+	position: absolute;
+	top: 50%;
+	right: 0;
+	left: 0;
+	text-align: center;
+	margin-top: -70px * $y-multiplier;
+	text-transform: uppercase;
+}
+
+.loading, .loadingAnimation {
+	background: transparent url("#{$common-img-dir}/loading.png") no-repeat 50% 50%;
+	position: absolute;
+	/*Use the y-multiplier on width to ensure the spinner is scaled uniformly*/
+	width: 48px * $y-multiplier;
+	height: 48px * $y-multiplier;
+	top: 50%;
+	left: 50%;
+	margin-top: -24px * $y-multiplier;
+	margin-left: -24px * $x-multiplier;
+	overflow: hidden;
+	z-index: 2;
+	background-size: 100%;
+	-webkit-animation-name: rotate;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+}
+
+@-webkit-keyframes rotate {
+	from {
+		-webkit-transform: rotate(0deg);
+	}
+	to { 
+		-webkit-transform: rotate(360deg);
+	}
+}
+
+/** Used to display wait spinner in dialogs*/
+.waitspinner {
+	background: transparent url("#{$common-img-dir}/loading.png") no-repeat 50% 50% !important;
+	overflow: hidden;
+	z-index: 2;
+	background-size: 100% 100% !important;
+	-webkit-animation-name: rotate;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+}

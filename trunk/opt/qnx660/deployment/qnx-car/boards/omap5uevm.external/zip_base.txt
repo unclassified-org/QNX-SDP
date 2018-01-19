@@ -1,0 +1,7 @@
+../omap5uevm/sd-boot/MLO
+../omap5uevm/sd-boot/boot.scr
+../omap5uevm/sd-boot/u-boot.bin
+../omap5uevm/sd-boot/u-boot.img
+../omap5uevm/sd-boot/omap5uevm-sd-hdr.raw.gz
+../omap5uevm/ifs/qnx-ifs
+zip_base/TI_PandaCodecLicense.pdf

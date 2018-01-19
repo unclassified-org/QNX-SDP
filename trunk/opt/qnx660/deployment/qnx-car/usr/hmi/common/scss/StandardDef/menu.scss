@@ -1,0 +1,37 @@
+/**
+ * Standard definition (800x480) overrides/images for the common Sencha Touch 2.1 application
+ * pull-down menus.
+ * @author lgreenway
+ *
+ * $Id: menu.scss 5817 2013-02-13 21:45:57Z lgreenway@qnx.com $
+ */
+
+// Images
+$menu-show-img: 'platform:///apps/common/img/menu/menu_exp.png' !default;
+$menu-show-img-ovr: 'platform:///apps/common/img/menu/menu_exp_ovr.png' !default;
+$menu-hide-img: 'platform:///apps/common/img/menu/menu_collapse.png' !default;
+$menu-hide-img-ovr: 'platform:///apps/common/img/menu/menu_collapse_ovr.png' !default;
+$menu-shadow-img: 'platform:///apps/common/img/menu/menu_shadow.png' !default;
+
+.menu-show {
+	background-image: url(#{$menu-show-img});
+}
+
+.menu-show:active {
+	background-image: url(#{$menu-show-img-ovr});
+}
+
+.menu-hide {
+	background-image: url(#{$menu-hide-img});
+}
+
+.menu-hide:active {
+	background-image: url(#{$menu-hide-img-ovr});
+}
+
+.stacked-menu .menu {
+	&.sub {
+		padding-left: 10px;
+		background-image: url(#{$menu-shadow-img});
+	}
+}

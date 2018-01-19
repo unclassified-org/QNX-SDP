@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <fileset name="basefs.car.qt">
+   <directory name="qt5-5.2" uid="root" gid="nto" mode="0755"/>
+   <directory name="qt5-5.2/lib" uid="root" gid="nto" mode="0755"/>
+   <directory name="qt5-5.2/lib/fonts" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/bin/qmlbundle" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/bin/qmljs" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/bin/qmlscene" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/bin/qmltestrunner" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/bin/qml" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/bin/qtpaths" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/bin/xmlpatterns" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/bin/xmlpatternsvalidator" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/fonts/DejaVuSans-Bold.ttf" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/fonts/DejaVuSans-BoldOblique.ttf" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/fonts/DejaVuSans-Oblique.ttf" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/fonts/DejaVuSans.ttf" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/fonts/DejaVuSansMono-Bold.ttf" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/fonts/DejaVuSansMono-BoldOblique.ttf" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/fonts/DejaVuSansMono-Oblique.ttf" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/fonts/DejaVuSansMono.ttf" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/fonts/DejaVuSerif-Bold.ttf" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/fonts/DejaVuSerif-BoldOblique.ttf" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/fonts/DejaVuSerif-Oblique.ttf" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/fonts/DejaVuSerif.ttf" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/fonts/README" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/fonts/UTBI____.pfa" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/fonts/UTB_____.pfa" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/fonts/UTI_____.pfa" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/fonts/UTRG____.pfa" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/fonts/Vera.ttf" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/fonts/VeraBI.ttf" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/fonts/VeraBd.ttf" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/fonts/VeraIt.ttf" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/fonts/VeraMoBI.ttf" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/fonts/VeraMoBd.ttf" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/fonts/VeraMoIt.ttf" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/fonts/VeraMono.ttf" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/fonts/VeraSe.ttf" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/fonts/VeraSeBd.ttf" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/fonts/c0419bt_.pfb" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/fonts/c0582bt_.pfb" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/fonts/c0583bt_.pfb" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/fonts/c0611bt_.pfb" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/fonts/c0632bt_.pfb" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/fonts/c0633bt_.pfb" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/fonts/c0648bt_.pfb" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/fonts/c0649bt_.pfb" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/fonts/cour.pfa" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/fonts/courb.pfa" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/fonts/courbi.pfa" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/fonts/couri.pfa" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/fonts/cursor.pfa" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/fonts/dejavu_sans_11_50.qpf2" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/fonts/fixed_120_50.qpf" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/fonts/fixed_70_50.qpf" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/fonts/helvetica_100_50.qpf" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/fonts/helvetica_100_50i.qpf" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/fonts/helvetica_100_75.qpf" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/fonts/helvetica_100_75i.qpf" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/fonts/helvetica_120_50.qpf" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/fonts/helvetica_120_50i.qpf" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/fonts/helvetica_120_75.qpf" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/fonts/helvetica_120_75i.qpf" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/fonts/helvetica_140_50.qpf" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/fonts/helvetica_140_50i.qpf" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/fonts/helvetica_140_75.qpf" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/fonts/helvetica_140_75i.qpf" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/fonts/helvetica_180_50.qpf" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/fonts/helvetica_180_50i.qpf" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/fonts/helvetica_180_75.qpf" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/fonts/helvetica_180_75i.qpf" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/fonts/helvetica_240_50.qpf" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/fonts/helvetica_240_50i.qpf" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/fonts/helvetica_240_75.qpf" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/fonts/helvetica_240_75i.qpf" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/fonts/helvetica_80_50.qpf" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/fonts/helvetica_80_50i.qpf" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/fonts/helvetica_80_75.qpf" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/fonts/helvetica_80_75i.qpf" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/fonts/japanese_230_50.qpf" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/fonts/l047013t.pfa" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/fonts/l047016t.pfa" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/fonts/l047033t.pfa" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/fonts/l047036t.pfa" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/fonts/l048013t.pfa" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/fonts/l048016t.pfa" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/fonts/l048033t.pfa" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/fonts/l048036t.pfa" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/fonts/l049013t.pfa" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/fonts/l049016t.pfa" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/fonts/l049033t.pfa" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/fonts/l049036t.pfa" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/fonts/micro_40_50.qpf" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/fonts/unifont_160_50.qpf" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/libQt5Bootstrap.a" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/libQt5Bootstrap.la" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/libQt5Bootstrap.prl" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/libQt5Concurrent.la" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/libQt5Concurrent.prl" uid="root" gid="nto" mode="0755"/>
+   <symlink name="qt5-5.2/lib/libQt5Concurrent.so" target="libQt5Concurrent.so.5.2.0" uid="root" gid="nto" mode="0755"/>
+   <symlink name="qt5-5.2/lib/libQt5Concurrent.so.5" target="libQt5Concurrent.so.5.2.0" uid="root" gid="nto" mode="0755"/>
+   <symlink name="qt5-5.2/lib/libQt5Concurrent.so.5.2" target="libQt5Concurrent.so.5.2.0" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/libQt5Concurrent.so.5.2.0" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/libQt5Core.la" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/libQt5Core.prl" uid="root" gid="nto" mode="0755"/>
+   <symlink name="qt5-5.2/lib/libQt5Core.so" target="libQt5Core.so.5.2.0" uid="root" gid="nto" mode="0755"/>
+   <symlink name="qt5-5.2/lib/libQt5Core.so.5" target="libQt5Core.so.5.2.0" uid="root" gid="nto" mode="0755"/>
+   <symlink name="qt5-5.2/lib/libQt5Core.so.5.2" target="libQt5Core.so.5.2.0" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/libQt5Core.so.5.2.0" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/libQt5Gui.la" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/libQt5Gui.prl" uid="root" gid="nto" mode="0755"/>
+   <symlink name="qt5-5.2/lib/libQt5Gui.so" target="libQt5Gui.so.5.2.0" uid="root" gid="nto" mode="0755"/>
+   <symlink name="qt5-5.2/lib/libQt5Gui.so.5" target="libQt5Gui.so.5.2.0" uid="root" gid="nto" mode="0755"/>
+   <symlink name="qt5-5.2/lib/libQt5Gui.so.5.2" target="libQt5Gui.so.5.2.0" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/libQt5Gui.so.5.2.0" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/libQt5Network.la" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/libQt5Network.prl" uid="root" gid="nto" mode="0755"/>
+   <symlink name="qt5-5.2/lib/libQt5Network.so" target="libQt5Network.so.5.2.0" uid="root" gid="nto" mode="0755"/>
+   <symlink name="qt5-5.2/lib/libQt5Network.so.5" target="libQt5Network.so.5.2.0" uid="root" gid="nto" mode="0755"/>
+   <symlink name="qt5-5.2/lib/libQt5Network.so.5.2" target="libQt5Network.so.5.2.0" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/libQt5Network.so.5.2.0" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/libQt5OpenGL.la" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/libQt5OpenGL.prl" uid="root" gid="nto" mode="0755"/>
+   <symlink name="qt5-5.2/lib/libQt5OpenGL.so" target="libQt5OpenGL.so.5.2.0" uid="root" gid="nto" mode="0755"/>
+   <symlink name="qt5-5.2/lib/libQt5OpenGL.so.5" target="libQt5OpenGL.so.5.2.0" uid="root" gid="nto" mode="0755"/>
+   <symlink name="qt5-5.2/lib/libQt5OpenGL.so.5.2" target="libQt5OpenGL.so.5.2.0" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/libQt5OpenGL.so.5.2.0" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/libQt5OpenGLExtensions.a" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/libQt5OpenGLExtensions.la" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/libQt5OpenGLExtensions.prl" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/libQt5PlatformSupport.a" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/libQt5PlatformSupport.la" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/libQt5PlatformSupport.prl" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/libQt5PrintSupport.la" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/libQt5PrintSupport.prl" uid="root" gid="nto" mode="0755"/>
+   <symlink name="qt5-5.2/lib/libQt5PrintSupport.so" target="libQt5PrintSupport.so.5.2.0" uid="root" gid="nto" mode="0755"/>
+   <symlink name="qt5-5.2/lib/libQt5PrintSupport.so.5" target="libQt5PrintSupport.so.5.2.0" uid="root" gid="nto" mode="0755"/>
+   <symlink name="qt5-5.2/lib/libQt5PrintSupport.so.5.2" target="libQt5PrintSupport.so.5.2.0" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/libQt5PrintSupport.so.5.2.0" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/libQt5Qml.la" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/libQt5Qml.prl" uid="root" gid="nto" mode="0755"/>
+   <symlink name="qt5-5.2/lib/libQt5Qml.so" target="libQt5Qml.so.5.2.0" uid="root" gid="nto" mode="0755"/>
+   <symlink name="qt5-5.2/lib/libQt5Qml.so.5" target="libQt5Qml.so.5.2.0" uid="root" gid="nto" mode="0755"/>
+   <symlink name="qt5-5.2/lib/libQt5Qml.so.5.2" target="libQt5Qml.so.5.2.0" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/libQt5Qml.so.5.2.0" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/libQt5QmlDevTools.a" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/libQt5QmlDevTools.la" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/libQt5QmlDevTools.prl" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/libQt5Quick.la" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/libQt5Quick.prl" uid="root" gid="nto" mode="0755"/>
+   <symlink name="qt5-5.2/lib/libQt5Quick.so" target="libQt5Quick.so.5.2.0" uid="root" gid="nto" mode="0755"/>
+   <symlink name="qt5-5.2/lib/libQt5Quick.so.5" target="libQt5Quick.so.5.2.0" uid="root" gid="nto" mode="0755"/>
+   <symlink name="qt5-5.2/lib/libQt5Quick.so.5.2" target="libQt5Quick.so.5.2.0" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/libQt5Quick.so.5.2.0" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/libQt5QuickParticles.la" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/libQt5QuickParticles.prl" uid="root" gid="nto" mode="0755"/>
+   <symlink name="qt5-5.2/lib/libQt5QuickParticles.so" target="libQt5QuickParticles.so.5.2.0" uid="root" gid="nto" mode="0755"/>
+   <symlink name="qt5-5.2/lib/libQt5QuickParticles.so.5" target="libQt5QuickParticles.so.5.2.0" uid="root" gid="nto" mode="0755"/>
+   <symlink name="qt5-5.2/lib/libQt5QuickParticles.so.5.2" target="libQt5QuickParticles.so.5.2.0" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/libQt5QuickParticles.so.5.2.0" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/libQt5QuickTest.la" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/libQt5QuickTest.prl" uid="root" gid="nto" mode="0755"/>
+   <symlink name="qt5-5.2/lib/libQt5QuickTest.so" target="libQt5QuickTest.so.5.2.0" uid="root" gid="nto" mode="0755"/>
+   <symlink name="qt5-5.2/lib/libQt5QuickTest.so.5" target="libQt5QuickTest.so.5.2.0" uid="root" gid="nto" mode="0755"/>
+   <symlink name="qt5-5.2/lib/libQt5QuickTest.so.5.2" target="libQt5QuickTest.so.5.2.0" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/libQt5QuickTest.so.5.2.0" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/libQt5Sql.la" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/libQt5Sql.prl" uid="root" gid="nto" mode="0755"/>
+   <symlink name="qt5-5.2/lib/libQt5Sql.so" target="libQt5Sql.so.5.2.0" uid="root" gid="nto" mode="0755"/>
+   <symlink name="qt5-5.2/lib/libQt5Sql.so.5" target="libQt5Sql.so.5.2.0" uid="root" gid="nto" mode="0755"/>
+   <symlink name="qt5-5.2/lib/libQt5Sql.so.5.2" target="libQt5Sql.so.5.2.0" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/libQt5Sql.so.5.2.0" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/libQt5Svg.la" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/libQt5Svg.prl" uid="root" gid="nto" mode="0755"/>
+   <symlink name="qt5-5.2/lib/libQt5Svg.so" target="libQt5Svg.so.5.2.0" uid="root" gid="nto" mode="0755"/>
+   <symlink name="qt5-5.2/lib/libQt5Svg.so.5" target="libQt5Svg.so.5.2.0" uid="root" gid="nto" mode="0755"/>
+   <symlink name="qt5-5.2/lib/libQt5Svg.so.5.2" target="libQt5Svg.so.5.2.0" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/libQt5Svg.so.5.2.0" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/libQt5Test.la" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/libQt5Test.prl" uid="root" gid="nto" mode="0755"/>
+   <symlink name="qt5-5.2/lib/libQt5Test.so" target="libQt5Test.so.5.2.0" uid="root" gid="nto" mode="0755"/>
+   <symlink name="qt5-5.2/lib/libQt5Test.so.5" target="libQt5Test.so.5.2.0" uid="root" gid="nto" mode="0755"/>
+   <symlink name="qt5-5.2/lib/libQt5Test.so.5.2" target="libQt5Test.so.5.2.0" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/libQt5Test.so.5.2.0" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/libQt5Widgets.la" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/libQt5Widgets.prl" uid="root" gid="nto" mode="0755"/>
+   <symlink name="qt5-5.2/lib/libQt5Widgets.so" target="libQt5Widgets.so.5.2.0" uid="root" gid="nto" mode="0755"/>
+   <symlink name="qt5-5.2/lib/libQt5Widgets.so.5" target="libQt5Widgets.so.5.2.0" uid="root" gid="nto" mode="0755"/>
+   <symlink name="qt5-5.2/lib/libQt5Widgets.so.5.2" target="libQt5Widgets.so.5.2.0" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/libQt5Widgets.so.5.2.0" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/libQt5Xml.la" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/libQt5Xml.prl" uid="root" gid="nto" mode="0755"/>
+   <symlink name="qt5-5.2/lib/libQt5Xml.so" target="libQt5Xml.so.5.2.0" uid="root" gid="nto" mode="0755"/>
+   <symlink name="qt5-5.2/lib/libQt5Xml.so.5" target="libQt5Xml.so.5.2.0" uid="root" gid="nto" mode="0755"/>
+   <symlink name="qt5-5.2/lib/libQt5Xml.so.5.2" target="libQt5Xml.so.5.2.0" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/libQt5Xml.so.5.2.0" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/libQt5XmlPatterns.la" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/libQt5XmlPatterns.prl" uid="root" gid="nto" mode="0755"/>
+   <symlink name="qt5-5.2/lib/libQt5XmlPatterns.so" target="libQt5XmlPatterns.so.5.2.0" uid="root" gid="nto" mode="0755"/>
+   <symlink name="qt5-5.2/lib/libQt5XmlPatterns.so.5" target="libQt5XmlPatterns.so.5.2.0" uid="root" gid="nto" mode="0755"/>
+   <symlink name="qt5-5.2/lib/libQt5XmlPatterns.so.5.2" target="libQt5XmlPatterns.so.5.2.0" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/lib/libQt5XmlPatterns.so.5.2.0" uid="root" gid="nto" mode="0755"/>
+   <directory name="qt5-5.2/plugins" uid="root" gid="nto" mode="0755"/>
+   <directory name="qt5-5.2/plugins/accessible" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/plugins/accessible/libqtaccessiblequick.so" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/plugins/accessible/libqtaccessiblewidgets.so" uid="root" gid="nto" mode="0755"/>
+   <directory name="qt5-5.2/plugins/bearer" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/plugins/bearer/libqgenericbearer.so" uid="root" gid="nto" mode="0755"/>
+   <directory name="qt5-5.2/plugins/iconengines" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/plugins/iconengines/libqsvgicon.so" uid="root" gid="nto" mode="0755"/>
+   <directory name="qt5-5.2/plugins/imageformats" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/plugins/imageformats/libqgif.so" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/plugins/imageformats/libqico.so" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/plugins/imageformats/libqjpeg.so" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/plugins/imageformats/libqmng.so" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/plugins/imageformats/libqsvg.so" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/plugins/imageformats/libqtga.so" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/plugins/imageformats/libqtiff.so" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/plugins/imageformats/libqwbmp.so" uid="root" gid="nto" mode="0755"/>
+   <directory name="qt5-5.2/plugins/platforms" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/plugins/platforms/libqminimal.so" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/plugins/platforms/libqoffscreen.so" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/plugins/platforms/libqqnx.so" uid="root" gid="nto" mode="0755"/>
+   <directory name="qt5-5.2/plugins/qmltooling" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/plugins/qmltooling/libqmldbg_qtquick2.so" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/plugins/qmltooling/libqmldbg_tcp.so" uid="root" gid="nto" mode="0755"/>
+   <directory name="qt5-5.2/plugins/sqldrivers" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/plugins/sqldrivers/libqsqlite.so" uid="root" gid="nto" mode="0755"/>
+   <directory name="qt5-5.2/qml" uid="root" gid="nto" mode="0755"/>
+   <directory name="qt5-5.2/qml/Qt" uid="root" gid="nto" mode="0755"/>
+   <directory name="qt5-5.2/qml/Qt/labs" uid="root" gid="nto" mode="0755"/>
+   <directory name="qt5-5.2/qml/Qt/labs/folderlistmodel" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/qml/Qt/labs/folderlistmodel/libqmlfolderlistmodelplugin.so" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/qml/Qt/labs/folderlistmodel/plugins.qmltypes" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/qml/Qt/labs/folderlistmodel/qmldir" uid="root" gid="nto" mode="0755"/>
+   <directory name="qt5-5.2/qml/Qt/labs/settings" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/qml/Qt/labs/settings/libqmlsettingsplugin.so" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/qml/Qt/labs/settings/plugins.qmltypes" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/qml/Qt/labs/settings/qmldir" uid="root" gid="nto" mode="0755"/>
+   <directory name="qt5-5.2/qml/QtGraphicalEffects" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/qml/QtGraphicalEffects/Blend.qml" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/qml/QtGraphicalEffects/BrightnessContrast.qml" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/qml/QtGraphicalEffects/ColorOverlay.qml" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/qml/QtGraphicalEffects/Colorize.qml" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/qml/QtGraphicalEffects/ConicalGradient.qml" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/qml/QtGraphicalEffects/Desaturate.qml" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/qml/QtGraphicalEffects/DirectionalBlur.qml" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/qml/QtGraphicalEffects/Displace.qml" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/qml/QtGraphicalEffects/DropShadow.qml" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/qml/QtGraphicalEffects/FastBlur.qml" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/qml/QtGraphicalEffects/GammaAdjust.qml" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/qml/QtGraphicalEffects/GaussianBlur.qml" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/qml/QtGraphicalEffects/Glow.qml" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/qml/QtGraphicalEffects/HueSaturation.qml" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/qml/QtGraphicalEffects/InnerShadow.qml" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/qml/QtGraphicalEffects/LevelAdjust.qml" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/qml/QtGraphicalEffects/LinearGradient.qml" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/qml/QtGraphicalEffects/MaskedBlur.qml" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/qml/QtGraphicalEffects/OpacityMask.qml" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/qml/QtGraphicalEffects/RadialBlur.qml" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/qml/QtGraphicalEffects/RadialGradient.qml" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/qml/QtGraphicalEffects/RectangularGlow.qml" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/qml/QtGraphicalEffects/RecursiveBlur.qml" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/qml/QtGraphicalEffects/ThresholdMask.qml" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/qml/QtGraphicalEffects/ZoomBlur.qml" uid="root" gid="nto" mode="0755"/>
+   <directory name="qt5-5.2/qml/QtGraphicalEffects/private" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/qml/QtGraphicalEffects/private/FastGlow.qml" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/qml/QtGraphicalEffects/private/FastInnerShadow.qml" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/qml/QtGraphicalEffects/private/FastMaskedBlur.qml" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/qml/QtGraphicalEffects/private/GaussianDirectionalBlur.qml" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/qml/QtGraphicalEffects/private/GaussianGlow.qml" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/qml/QtGraphicalEffects/private/GaussianInnerShadow.qml" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/qml/QtGraphicalEffects/private/GaussianMaskedBlur.qml" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/qml/QtGraphicalEffects/private/SourceProxy.qml" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/qml/QtGraphicalEffects/qmldir" uid="root" gid="nto" mode="0755"/>
+   <directory name="qt5-5.2/qml/QtQml" uid="root" gid="nto" mode="0755"/>
+   <directory name="qt5-5.2/qml/QtQml/Models.2" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/qml/QtQml/Models.2/libmodelsplugin.so" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/qml/QtQml/Models.2/qmldir" uid="root" gid="nto" mode="0755"/>
+   <directory name="qt5-5.2/qml/QtQuick" uid="root" gid="nto" mode="0755"/>
+   <directory name="qt5-5.2/qml/QtQuick/Dialogs" uid="root" gid="nto" mode="0755"/>
+   <directory name="qt5-5.2/qml/QtQuick/Dialogs/Private" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/qml/QtQuick/Dialogs/Private/libdialogsprivateplugin.so" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/qml/QtQuick/Dialogs/Private/qmldir" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/qml/QtQuick/Dialogs/libdialogplugin.so" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/qml/QtQuick/Dialogs/plugins.qmltypes" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/qml/QtQuick/Dialogs/qmldir" uid="root" gid="nto" mode="0755"/>
+   <directory name="qt5-5.2/qml/QtQuick/LocalStorage" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/qml/QtQuick/LocalStorage/libqmllocalstorageplugin.so" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/qml/QtQuick/LocalStorage/plugins.qmltypes" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/qml/QtQuick/LocalStorage/qmldir" uid="root" gid="nto" mode="0755"/>
+   <directory name="qt5-5.2/qml/QtQuick/Particles.2" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/qml/QtQuick/Particles.2/libparticlesplugin.so" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/qml/QtQuick/Particles.2/plugins.qmltypes" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/qml/QtQuick/Particles.2/qmldir" uid="root" gid="nto" mode="0755"/>
+   <directory name="qt5-5.2/qml/QtQuick/PrivateWidgets" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/qml/QtQuick/PrivateWidgets/libwidgetsplugin.so" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/qml/QtQuick/PrivateWidgets/plugins.qmltypes" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/qml/QtQuick/PrivateWidgets/qmldir" uid="root" gid="nto" mode="0755"/>
+   <directory name="qt5-5.2/qml/QtQuick/Window.2" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/qml/QtQuick/Window.2/libwindowplugin.so" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/qml/QtQuick/Window.2/plugins.qmltypes" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/qml/QtQuick/Window.2/qmldir" uid="root" gid="nto" mode="0755"/>
+   <directory name="qt5-5.2/qml/QtQuick/XmlListModel" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/qml/QtQuick/XmlListModel/libqmlxmllistmodelplugin.so" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/qml/QtQuick/XmlListModel/plugins.qmltypes" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/qml/QtQuick/XmlListModel/qmldir" uid="root" gid="nto" mode="0755"/>
+   <directory name="qt5-5.2/qml/QtQuick.2" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/qml/QtQuick.2/libqtquick2plugin.so" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/qml/QtQuick.2/plugins.qmltypes" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/qml/QtQuick.2/qmldir" uid="root" gid="nto" mode="0755"/>
+   <directory name="qt5-5.2/qml/QtTest" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/qml/QtTest/SignalSpy.qml" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/qml/QtTest/TestCase.qml" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/qml/QtTest/libqmltestplugin.so" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/qml/QtTest/plugins.qmltypes" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/qml/QtTest/qmldir" uid="root" gid="nto" mode="0755"/>
+   <file name="qt5-5.2/qml/QtTest/testlogger.js" uid="root" gid="nto" mode="0755"/>
+</fileset>

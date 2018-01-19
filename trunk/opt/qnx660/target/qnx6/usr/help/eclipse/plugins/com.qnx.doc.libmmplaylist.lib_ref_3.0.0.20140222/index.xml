@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<index>
+<entry keyword="architecture">
+<topic href="topic/arch.html#arch" title="Architecture of libmmplaylist"/>
+</entry>
+<entry keyword="concurrent sessions">
+<topic href="topic/sessions.html#sessions" title="Playlist sessions"/>
+</entry>
+<entry keyword="configuration file">
+<topic href="topic/config_file.html#config" title="Configuration File"/>
+</entry>
+<entry keyword="configuring plugins">
+<topic href="topic/config_file.html#config" title="Configuration File"/>
+</entry>
+<entry keyword="formats">
+<topic href="topic/plugins_included.html#included_plugins" title="Included plugins"/>
+</entry>
+<entry keyword="handling session errors">
+<topic href="topic/sessions.html#sessions" title="Playlist sessions"/>
+</entry>
+<entry keyword="included plugins">
+<topic href="topic/plugins_included.html#included_plugins" title="Included plugins"/>
+</entry>
+<entry keyword="layers">
+<topic href="topic/arch.html#arch" title="Architecture of libmmplaylist"/>
+</entry>
+<entry keyword="libmmplaylist API">
+<topic href="topic/api/libmmplaylist_api_overview.html#libmmplaylist_api" title="Multimedia Playlist API"/>
+</entry>
+<entry keyword="libmmplaylist introduction">
+<topic href="topic/overview.html#overview" title="Multimedia Playlist Library Overview"/>
+</entry>
+<entry keyword="libmmplaylist overview">
+<topic href="topic/overview.html#overview" title="Multimedia Playlist Library Overview"/>
+</entry>
+<entry keyword="MM_PLAYLIST environment variable">
+<topic href="topic/config_file.html#config" title="Configuration File"/>
+</entry>
+<entry keyword="mmplaylist_init() as the first function to call">
+<topic href="topic/api/libmmplaylist_api_overview.html#libmmplaylist_api" title="Multimedia Playlist API"/>
+</entry>
+<entry keyword="mmplaylist_terminate() as the last function to call">
+<topic href="topic/api/libmmplaylist_api_overview.html#libmmplaylist_api" title="Multimedia Playlist API"/>
+</entry>
+<entry keyword="multimedia playlist API">
+<topic href="topic/api/libmmplaylist_api_overview.html#libmmplaylist_api" title="Multimedia Playlist API"/>
+</entry>
+<entry keyword="playlist file parsing">
+<topic href="topic/plugins.html#plugins" title="Plugins"/>
+</entry>
+<entry keyword="playlist plugins">
+<topic href="topic/plugins.html#plugins" title="Plugins"/>
+</entry>
+<entry keyword="playlist sessions">
+<topic href="topic/sessions.html#sessions" title="Playlist sessions"/>
+</entry>
+<entry keyword="playlists">
+<topic href="topic/overview.html#overview" title="Multimedia Playlist Library Overview"/>
+</entry>
+<entry keyword="plugin ratings">
+<topic href="topic/plugin_ratings.html#plugin_ratings" title="Plugin ratings"/>
+</entry>
+<entry keyword="plugins">
+<topic href="topic/plugins.html#plugins" title="Plugins"/>
+</entry>
+<entry keyword="session error information">
+<topic href="topic/sessions.html#sessions" title="Playlist sessions"/>
+</entry>
+</index>

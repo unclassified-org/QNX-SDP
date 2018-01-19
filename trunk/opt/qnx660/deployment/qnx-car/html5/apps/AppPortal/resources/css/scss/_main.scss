@@ -1,0 +1,99 @@
+body {
+  color: white;
+  font-family: 'Arial';
+  background-color: #000;
+  height: 395px !important;
+}
+
+.leftColumn {
+  width: 230px;
+  height: 100%;
+
+  #catlist {
+	width: 230px;
+	height: 360px;
+	background-color: #1e1e1e;
+	border: none !important;
+
+	.category-item {
+	  color: white !important;
+	}
+
+	.category-item * {
+	  border: none !important;
+	  border-top: none !important;
+	  border-bottom: none !important;
+	}
+
+	.category-item-pressed, .category-item-selected {
+	  background-color: #51c7e9;
+	  color: black !important;
+	}
+  }
+
+  .qnxLogo {
+	height: 90px;
+	background-color: #1e1e1e;
+	background-position: center center;
+	background-repeat: no-repeat;
+  }
+
+  .line1 {
+	height: 3px;
+	background-color: #1e1e1e;
+	background-position: center center;
+	background-repeat: no-repeat;
+  }
+}
+
+#navlist {
+  width: 570px;
+  height: 100%;
+  background-color: #2d2d2d;
+  border: 0px !important;
+
+  .home-item {
+	width: 100px;
+	margin: 20px;
+	text-align: center;
+  }
+}
+
+.app_sheet {
+  height: 100%;
+  background-color: #1e1e1e;
+  width: 100%;
+
+  #appDescription {
+	width: 300px !important;
+	height: 80px !important;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	color: white !important;
+	text-align: center;
+  }
+  #appIcon, #appIcon img {
+	width: 200px;
+	height: 200px;
+  }
+
+  #appName {
+	color: white;
+	font-weight: bold;
+	font-variant-caps: titling-caps;
+	font-size: 1.5em;
+	width: 400px;
+	text-align: center;
+  }
+
+  #installBtn, #uninstallBtn {
+	margin-top: 15px;
+  }
+}
+
+.license_sheet {
+  .license {
+	margin: 20px;
+	overflow: scroll;
+  }
+}

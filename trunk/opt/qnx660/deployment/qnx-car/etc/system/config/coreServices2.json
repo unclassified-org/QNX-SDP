@@ -1,0 +1,6 @@
+{
+"static_modules" : "shutdown",
+"dynamic_modules" : "",
+"disable_procmon" : true,
+"disable_hwid" : true
+}

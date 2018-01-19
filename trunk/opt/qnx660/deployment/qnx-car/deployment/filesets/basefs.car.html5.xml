@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fileset name="basefs.car.html5">
+  <!-- include the root directory permissions in the tar file -->
+  <directory name="." uid="root" gid="nto" mode="0755"/>
+
+  <!-- include two libraries which are used by the current torch-launcher-->
+  <directory name="lib" uid="root" gid="nto" mode="0755"/>
+
+  <file name="scripts/config/bluetooth" uid="root" gid="nto" mode="0755"/>
+  <file name="etc/system/config/bluetooth.conf" uid="root" gid="nto" mode="0755"/>
+  <file name="scripts/bluetooth.sh" uid="root" gid="nto" mode="0750"/> 
+
+<!--
+  <file name="apps/sys.html5/Animation01.tar" uid="root" gid="nto" mode="0755"/>
+  <file name="apps/sys.html5/JNEXT_PPS_demo.tar" uid="root" gid="nto" mode="0755"/>
+  <file name="apps/sys.html5/ListExample.tar" uid="root" gid="nto" mode="0755"/>
+  <file name="apps/sys.html5/MultiViewExample.tar" uid="root" gid="nto" mode="0755"/>
+  <file name="apps/sys.html5/PerformanceExample.tar" uid="root" gid="nto" mode="0755"/>
+  <file name="apps/sys.html5/VirtualMechanic.tar" uid="root" gid="nto" mode="0755"/>
+-->
+  <!-- -->
+</fileset>

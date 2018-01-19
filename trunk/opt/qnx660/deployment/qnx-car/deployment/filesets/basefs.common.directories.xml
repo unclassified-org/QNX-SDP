@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fileset name="basefs.common.directories">
+  <description>Highest Level OS partition directories</description>
+  <notes/>
+  <directory name="bin" uid="root" gid="nto" mode="0755"/>
+  <directory name="sbin" uid="root" gid="nto" mode="0755"/>
+  <directory name="lib" uid="root" gid="nto" mode="0755"/>
+  <directory name="lib/firmware" uid="root" gid="nto" mode="0755"/>
+  <directory name="usr" uid="root" gid="nto" mode="0755"/>
+  <directory name="usr/share" uid="root" gid="nto" mode="0755"/>
+  <directory name="usr/bin" uid="root" gid="nto" mode="0755"/>
+  <directory name="usr/lib" uid="root" gid="nto" mode="0755"/>
+  <directory name="appinstall" uid="root" gid="nto" mode="0755"/>
+  <directory name="appinstall/bars" uid="root" gid="nto" mode="0755"/>
+  <directory name="appinstall/bars/unsigned" uid="root" gid="nto" mode="0755"/>
+  <directory name="appinstall/bars/signed" uid="root" gid="nto" mode="0755"/>
+</fileset>

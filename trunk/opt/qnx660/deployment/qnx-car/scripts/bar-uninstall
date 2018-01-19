@@ -1,0 +1,99 @@
+#!/bin/sh
+set -e
+appsDir="/apps"
+appDataDir="/accounts/1000/appdata"
+appPpsObject="/pps/system/navigator/applications/applications"
+
+function showApplications
+{
+    echo "List of installed applications:"
+    # to grab just the app name (and not the id tag) prior to APK runtime relied on the fact
+    # .test was used in ID. Added a sed clause ahead of this to remove anything ahead of :: without a
+    # dot (.). This *mostly* works - but some app names do have dots in their IDs. These still end up
+    # cleaner than if we did nothing. - PM
+    for app in `cat $appPpsObject | grep -v ^\@ | sed 's/\.[^\.]*::.*//' | sed 's/\.test.*//'`; do
+        echo "   - $app"
+    done
+}
+
+function ensureApplication
+{
+    local error=0
+
+    # Make sure we're only dealing with one application.
+    numberApplications=0
+    for app in $FULL_APPLICATION_NAME; do
+        numberApplications=$((numberApplications+1))
+    done
+
+    if [ $numberApplications -ne 1 ]; then
+        error=$((error+1))
+    fi
+
+    # Ensure the application still exists.
+    if [ -z "`cat $appPpsObject | grep "^$APPLICATION" 2> /dev/null`" ]; then
+        error=$((error+1))
+    fi
+
+    if [ $error -ne 0 ]; then
+        showApplications >&2
+        echo "Error: Unable to deternmine installed application: [$APPLICATION]." >&2
+    fi
+    return $error 
+}
+
+function removeApplication
+{
+    if [ -d $appDataDir/$FULL_APPLICATION_NAME ]; then
+        # Try this operation twice as we often get a Bad file descriptor error on the first attempt)
+        rm -rf $appDataDir/$FULL_APPLICATION_NAME 2> /dev/null
+        if [ -d $appDataDir/$FULL_APPLICATION_NAME ]; then
+            rm -rf $appDataDir/$FULL_APPLICATION_NAME || exit $?
+        fi
+    else 
+        echo "Warning: [$APPLICATION] not found in $appDataDir/." >&2
+        echo "         (application may never have been launched)" >&2
+    fi
+
+    if [ -d $appsDir/$FULL_APPLICATION_NAME ]; then
+        rm -rf $appsDir/$FULL_APPLICATION_NAME || exit $?
+    else 
+        echo "Warning: [$APPLICATION] not found in $appsDir/." >&2
+    fi
+    echo "-$FULL_APPLICATION_NAME" >> $appPpsObject
+    return 0
+}
+
+ppsRegApp=/pps/system/installer/registeredapps/applications
+function removeFromApkruntimeInstaller
+{
+   find /pps/system/installer/upd/current -type f -exec grep -q "actual_name::$APPLICATION" '{}' \; -exec rm '{}' \;
+   registeredApp=`grep $APPLICATION $ppsRegApp`
+   if [ $registeredApp ]; then
+      echo "-$registeredApp" >> $ppsRegApp
+      echo "Removed from registeredapps"
+   fi 
+}
+
+# Main
+
+if [ $# -ne 1 ] || [ -z "$1" ]; then
+	showApplications >&2
+	exit 1
+fi
+
+APPLICATION=$1
+FULL_APPLICATION_NAME=`cat $appPpsObject | grep "^$1\." 2> /dev/null | sed 's/:.*//'`
+if [ -z $FULL_APPLICATION_NAME ]; then
+    FULL_APPLICATION_NAME=`cat $appPpsObject | grep "^$1:" 2> /dev/null | sed 's/:.*//'`
+fi
+
+echo "Remove: $FULL_APPLICATION_NAME"
+
+ensureApplication || exit $?
+removeFromApkruntimeInstaller || exit $?
+removeApplication || exit $?
+
+echo
+echo "Application [$APPLICATION] has been successfully removed."
+exit 0

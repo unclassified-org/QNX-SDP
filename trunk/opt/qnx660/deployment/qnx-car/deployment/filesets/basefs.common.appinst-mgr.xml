@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fileset name="basefs.common.appinst-mgr">
+
+  <!-- appinst-mgr 
+	Fileset for the appinst-mgr service, which is the service side of a demo-grade appworld application. 
+	There is a corresponding HTML5 app that uses this service.
+   -->
+
+  <directory name="usr/sbin/" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/sbin/appinst-mgr" uid="root" gid="nto" mode="0755"/>
+
+</fileset>

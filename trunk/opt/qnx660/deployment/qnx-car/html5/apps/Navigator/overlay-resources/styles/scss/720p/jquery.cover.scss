@@ -1,0 +1,16 @@
+/* $Id $ */
+
+.innerCover {
+	top:0px;
+	width:1280px;
+	height:593px;
+	background: #010101 url('platform:///apps/common/img/720p/loadingOverlay.png') no-repeat fixed top left;
+}
+
+.loading {
+	width: 108px;
+	height: 108px;
+	margin-top: -38px;
+	margin-left: -38px;
+	background: transparent url("platform:///apps/common/img/720p/loading.png") no-repeat 50% 50%;
+}

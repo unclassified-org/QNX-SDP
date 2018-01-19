@@ -1,0 +1,66 @@
+###########################################################################
+##
+## Starts the system disk as /dev/cardisk*, and any other required disks
+## and dependencies
+##
+###########################################################################
+
+[+script] .script = {
+	######################################################################
+	## PCI Server
+	## Starting PCI Server required by devb-ahci (as SATA connection is provided through PCIe)
+	#####################################################################	
+	pci-dm814x-eco
+    	waitfor /dev/pci 4
+        
+	display_msg Starting SATA disk as system disk /dev/cardisk0...
+	devb-ahci ahci blk hookdll=vfs-hooks-rim.so,cache=16m,noatime,automount=@/proc/boot/omap5_emmc_sata_automount cam cache,async,quiet dos exe=all disk name=cardisk &
+	waitfor /dev/cardisk0 10
+}
+
+#This will be called later on
+[perms=0555] .start-secondary-disks = {
+    #######################################################################
+    ## NAND_ETFS driver
+    ##
+    ## Provide proper "-r" value for reserving the low NAND area on your board
+    ##     -r kbytes    Set size of raw partition /dev/etfs1. Default: 0.
+    ## Only when starting the driver for the first time, use "-e" option 
+    ## to erase and create the ETFS filesystem 
+    #######################################################################
+    display_msg Starting NAND as boot disk...
+    #fs-etfs-jacinto5_micron -m /fs/etfs
+    #fs-etfs-jacinto5_micron -e -m /fs/etfs
+    # reserve first 4 blk for IPL and 1024 blk for IFS
+    fs-etfs-jacinto5_micron -D ipl=4,ifs=1028 -r131584 -m /fs/etfs
+}
+
+[perms=0444] omap5_emmc_sata_automount = {
+    cardisk0t178:/:qnx6
+    cardisk0t179:/base:qnx6:ro
+}
+
+[perms=0750] env.override.diskconf = {
+    #Declare the disk variant in env
+    export IFS_VARIANT=j5-nand-sata.ifs
+}
+
+
+### Libraries
+[perms=0755]
+
+# for apkruntime (allows 800/800 to acts as root inside apkruntime sandbox) 
+vfs-hooks-rim.so
+
+# Executables
+[data=c perms=0755]
+devb-ahci 
+pci-dm814x-eco
+
+###########################################################################
+## uncomment for NAND ETFS driver
+###########################################################################
+fs-etfs-jacinto5_micron
+etfsctl
+[perms=0755]/usr/sbin/update_nand=update_nand
+

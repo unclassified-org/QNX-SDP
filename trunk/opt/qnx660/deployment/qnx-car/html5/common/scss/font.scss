@@ -1,0 +1,126 @@
+/* @license
+ * MyFonts Webfont Build ID 1946974, 2012-01-17T13:33:06-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Futura Bold Condensed by Tilde
+ * URL: http://www.myfonts.com/fonts/tilde/futura/bold-condensed/
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: Futura Bold Condensed Italic by Tilde
+ * URL: http://www.myfonts.com/fonts/tilde/futura/bold-condensed-italic/
+ * Licensed pageviews: unspecified
+ * 
+ * Webfont: Futura Extra Black by Tilde
+ * URL: http://www.myfonts.com/fonts/tilde/futura/extra-black/
+ * Licensed pageviews: unspecified
+ * 
+ * Webfont: Futura Medium Condensed by Tilde
+ * URL: http://www.myfonts.com/fonts/tilde/futura/medium-condensed/
+ * Licensed pageviews: unspecified
+ * 
+ * Webfont: Futura Book Italic by Tilde
+ * URL: http://www.myfonts.com/fonts/tilde/futura/book-italic/
+ * Licensed pageviews: unspecified
+ * 
+ * Webfont: Futura Book by Tilde
+ * URL: http://www.myfonts.com/fonts/tilde/futura/book/
+ * Licensed pageviews: unspecified
+ * 
+ * Webfont: Futura Light Condensed by Tilde
+ * URL: http://www.myfonts.com/fonts/tilde/futura/light-condensed/
+ * Licensed pageviews: unspecified
+ * 
+ * Webfont: Futura Extra Black Condensed by Tilde
+ * URL: http://www.myfonts.com/fonts/tilde/futura/extra-black-condensed/
+ * Licensed pageviews: unspecified
+ * 
+ * Webfont: Futura Heavy Italic by Tilde
+ * URL: http://www.myfonts.com/fonts/tilde/futura/heavy-italic/
+ * Licensed pageviews: unspecified
+ * 
+ * Webfont: Futura Heavy by Tilde
+ * URL: http://www.myfonts.com/fonts/tilde/futura/heavy/
+ * Licensed pageviews: unspecified
+ * 
+ * Webfont: Futura Light by Tilde
+ * URL: http://www.myfonts.com/fonts/tilde/futura/light/
+ * Licensed pageviews: unspecified
+ * 
+ * Webfont: Futura Light Italic by Tilde
+ * URL: http://www.myfonts.com/fonts/tilde/futura/light-italic/
+ * Licensed pageviews: unspecified
+ * 
+ * Webfont: Futura Bold by Tilde
+ * URL: http://www.myfonts.com/fonts/tilde/futura/bold/
+ * Licensed pageviews: unspecified
+ * 
+ * Webfont: Futura Bold Italic by Tilde
+ * URL: http://www.myfonts.com/fonts/tilde/futura/bold-italic/
+ * Licensed pageviews: unspecified
+ * 
+ * Webfont: Futura Medium Italic by Tilde
+ * URL: http://www.myfonts.com/fonts/tilde/futura/medium-italic/
+ * Licensed pageviews: unspecified
+ * 
+ * Webfont: Futura Medium by Tilde
+ * URL: http://www.myfonts.com/fonts/tilde/futura/medium/
+ * Licensed pageviews: unspecified
+ * 
+ * Webfont: Futura Extra Black Italic by Tilde
+ * URL: http://www.myfonts.com/fonts/tilde/futura/extra-black-italic/
+ * Licensed pageviews: unspecified
+ * 
+ * Webfont: Futura Extra Black Condensed Italic by Tilde
+ * URL: http://www.myfonts.com/fonts/tilde/futura/extra-black-condensed-italic/
+ * Licensed pageviews: unspecified
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=1946974
+ * Webfonts copyright: Copyright 1990-2007 Bitstream Inc. All rights reserved. Modification for European languages. Copyright 1995-2007 Tilde, SIA.
+ * 
+ * © 2012 Bitstream Inc
+*/
+
+$commonDir: "platform:///apps/common";
+
+@font-face { font-family: "FuturaTL-Light"; src: url("#{$commonDir}/fonts/1DB55E_A_0.ttf") format("truetype"); }
+@font-face { font-family: "FuturaTL-Bold"; src: url("#{$commonDir}/fonts/1DB55E_C_0.ttf") format("truetype"); }
+@font-face { font-family: "FuturaTL-Book"; src: url("#{$commonDir}/fonts/1DB55E_5_0.ttf") format("truetype"); }
+@font-face { font-family: "FuturaTL-Medium"; src: url("#{$commonDir}/fonts/1DB55E_F_0.ttf") format("truetype"); }
+
+/*
+These fonts are not used, but keeping these here to identify the ttf files in case we want to re-add them
+
+@font-face { font-family: "FuturaTL-BoldCn"; src: url("#{$commonDir}/fonts/1DB55E_0_0.ttf") format("truetype"); }
+
+@font-face { font-family: "FuturaTL-BoldCnItalic"; src: url("#{$commonDir}/fonts/1DB55E_1_0.ttf") format("truetype"); }
+
+@font-face { font-family: "FuturaTL-ExtraBlack"; src: url("#{$commonDir}/fonts/1DB55E_2_0.ttf") format("truetype"); }
+
+@font-face { font-family: "FuturaTL-MediumCn"; src: url("#{$commonDir}/fonts/1DB55E_3_0.ttf") format("truetype"); }
+
+@font-face { font-family: "FuturaTL-BookItalic"; src: url("#{$commonDir}/fonts/1DB55E_4_0.ttf") format("truetype"); }
+
+@font-face { font-family: "FuturaTL-LightCn"; src: url("#{$commonDir}/fonts/1DB55E_6_0.ttf") format("truetype"); }
+
+@font-face { font-family: "FuturaTL-ExtraBlackCn"; src: url("#{$commonDir}/fonts/1DB55E_7_0.ttf") format("truetype"); }
+
+@font-face { font-family: "FuturaTL-HeavyItalic"; src: url("#{$commonDir}/fonts/1DB55E_8_0.ttf") format("truetype"); }
+
+@font-face { font-family: "FuturaTL-Heavy"; src: url("#{$commonDir}/fonts/1DB55E_9_0.ttf") format("truetype"); }
+
+@font-face { font-family: "FuturaTL-LightItalic"; src: url("#{$commonDir}/fonts/1DB55E_B_0.ttf") format("truetype"); }
+
+@font-face { font-family: "FuturaTL-BoldItalic"; src: url("#{$commonDir}/fonts/1DB55E_D_0.ttf") format("truetype"); }
+
+@font-face { font-family: "FuturaTL-MediumItalic"; src: url("#{$commonDir}/fonts/1DB55E_E_0.ttf") format("truetype"); }
+
+@font-face { font-family: "FuturaTL-ExtraBlackItalic"; src: url("#{$commonDir}/fonts/1DB55E_10_0.ttf") format("truetype"); }
+ 
+@font-face { font-family: "FuturaTL-ExtraBlackCnItalic"; src: url("#{$commonDir}/fonts/1DB55E_11_0.ttf") format("truetype"); }
+*/

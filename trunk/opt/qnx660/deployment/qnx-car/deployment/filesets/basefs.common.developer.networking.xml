@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fileset name="basefs.common.developer.networking">
+  <file name="etc/rpc" uid="root" gid="nto" mode="0644"/>
+  <file name="etc/ftpd.conf" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/bin/curl" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/bin/ftp" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/bin/scp" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/sbin/fs-cifs" uid="root" gid="nto" mode="0750"/>
+  <file name="usr/sbin/fs-nfs3" uid="root" gid="nto" mode="0750"/>
+  <symlink name="usr/bin/portmap" target="../sbin/rpcbind" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/sbin/rpcbind" uid="root" gid="nto" mode="0750"/>
+  <file name="usr/sbin/ftpd" uid="root" gid="nto" mode="0750"/>
+  <file name="usr/sbin/tcpdump" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/sbin/telnetd" uid="root" gid="nto" mode="0750"/>
+  <file name="usr/sbin/ntpd" uid="root" gid="nto" mode="0750"/>
+</fileset>

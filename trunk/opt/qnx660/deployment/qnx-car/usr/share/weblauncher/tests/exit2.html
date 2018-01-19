@@ -1,0 +1,13 @@
+<script>qnx.callExtensionMethod('webview.setEnabledOutOfProcessWebInspector', 1, true);</script>
+<script src="weblauncher.js"></script>
+<script>
+var root = Object.create(qnx.weblauncher.webview);
+root.id = 1;
+
+var inwebview = Object.create(qnx.weblauncher.webview);
+inwebview.id = root.create(root.applicationWindowGroup(), "InProcess");
+inwebview.onEvent('Created', function (webview, value, eventId) {
+        webview.destroy();
+        root.destroy();
+        });
+</script>

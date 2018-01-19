@@ -1,0 +1,15 @@
+@options
+units::metric
+daynight::both
+language::en_US
+voice::Rupert
+routing::fastest
+show_turn_restrictions:b:true
+avoid_motorways:b:false
+avoid_ferries:b:false
+avoid_tolls:b:false
+avoid_tunnels:b:false
+avoid_unpaved:b:false
+avoid_construction:b:false
+avoid_time_restricted:b:false
+avoid_seasonal_roads:b:false

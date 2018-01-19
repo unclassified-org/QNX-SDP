@@ -1,0 +1,49 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+        <meta name="viewport" content="width=800, height=395, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <title>HTMLGears</title>
+        
+        <link rel="stylesheet" href="css/reset.css" type="text/css" media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" title="no title" charset="utf-8">
+        <!-- workaroung prevent Theme extension from failing -->
+		<link rel="stylesheet" id="themeStyleAsset" href="css/master.css" type="text/css" media="screen" title="no title" charset="utf-8">
+        
+        <script src="local:///chrome/webworks.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+        <script src="thirdparty/xui.js" type="text/javascript" charset="utf-8"></script>
+
+        <script type="text/javascript">
+            function onReady() {
+                TestApp.init();
+            }
+            window.addEventListener("load", function(e) {
+                document.addEventListener("webworksready", onReady);
+            }, false);
+        </script>
+
+    </head> 
+    <body>
+        <div id="container">
+        <h1>Test Application</h1>
+        <fieldset class="fieldset">
+            <legend>Status</legend>
+            <label for="test_app"></label>
+            <input type="text" id="test_app" value="blank"/><br>
+        </fieldset>
+        <fieldset class="fieldset">
+            <legend>Window Group</legend>
+            <label for="window_group">windowgroup</label>
+            <input type="text" id="window_group" value="blank"/><br>
+        </fieldset>
+        <fieldset class="fieldset">
+            <legend>Control</legend>
+            <input type="button" id="set" value="Set"/>
+            <input type="button" id="start" value="Start"/>
+            <input type="button" id="stop" value="Stop"/><br>
+        </fieldset>
+        <div id="message" style="display:none;"></div>
+        </div>
+    </body>
+</html>

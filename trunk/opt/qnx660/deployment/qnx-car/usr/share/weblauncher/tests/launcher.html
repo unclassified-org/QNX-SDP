@@ -1,0 +1,22 @@
+<script src="weblauncher.js"></script>
+<script>
+var root = Object.create(qnx.weblauncher.webview);
+root.id = 1;
+
+root.setEnabledOutOfProcessWebInspector(true);
+
+qnx.weblauncher.applicationWindow.setVisible(true);
+
+var webview = Object.create(qnx.weblauncher.webview);
+webview.id = root.create(root.applicationWindowGroup(), "InProcess");
+
+webview.onEvent('Created', function (webview, value, eventId) {
+    webview.setGeometry(0, 0, screen.width, screen.height);
+    webview.setZOrder(4);
+    webview.setVisible(true);
+    webview.setActive(true);
+    var args = JSON.parse(root.arguments());
+    webview.loadURL(args.pop());
+});
+
+</script>

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/repos/qnx_sdp/!svn/ver/5401/branches/6.6.0/trunk/target/qnx6/armle-v7/lib/dll/hmi-notification
+END
+event-source-generic.so
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/repos/qnx_sdp/!svn/ver/5401/branches/6.6.0/trunk/target/qnx6/armle-v7/lib/dll/hmi-notification/event-source-generic.so
+END
+event-source-vm.so
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/repos/qnx_sdp/!svn/ver/5401/branches/6.6.0/trunk/target/qnx6/armle-v7/lib/dll/hmi-notification/event-source-vm.so
+END
+event-source-handsfree.so
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/repos/qnx_sdp/!svn/ver/5401/branches/6.6.0/trunk/target/qnx6/armle-v7/lib/dll/hmi-notification/event-source-handsfree.so
+END

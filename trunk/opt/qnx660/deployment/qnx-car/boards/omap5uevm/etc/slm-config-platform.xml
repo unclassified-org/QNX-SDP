@@ -1,0 +1,115 @@
+
+    <!-- VARIANT SPECIFIC ENTRIES -->
+
+    <SLM:component name="symlink_wifi">
+          <SLM:command launch="builtin">pathmgr_symlink</SLM:command>
+          <SLM:args>/var/etc/ap_pps_mhs.conf /base/etc/ap_pps_mhs.conf; /var/etc/wpa_pps.conf /base/etc/wpa_pps.conf; /var/etc/wpa_supplicant.conf /base/etc/wpa_supplicant.conf</SLM:args>
+   </SLM:component>
+
+   <SLM:component name="usb">
+        <SLM:command>io-usb</SLM:command>
+	<SLM:args>-vvv -c -duevm5432-ehci-omap3 ioport=0x4a064c00,irq=109,num_itd=512 -d sevm-omap5-xhci ioport=0x4a030000,irq=124</SLM:args>
+	<SLM:waitfor wait="pathname">/dev/io-usb/io-usb</SLM:waitfor>
+	<SLM:stop stop="signal">SIGTERM</SLM:stop>
+   </SLM:component>
+   
+   <SLM:component name="hci">
+        <SLM:command>devc-seromap_hci</SLM:command>
+	<SLM:args>-E -f -a -g 0x4805b000,142 -c48000000/16 0x48066000^2,137</SLM:args>
+	<SLM:waitfor wait="pathname">/dev/serbt1</SLM:waitfor>
+	<SLM:stop stop="signal">SIGTERM</SLM:stop>
+   </SLM:component>
+
+   <SLM:component name="keyboard">
+        <SLM:command>keyboard-imf</SLM:command>
+	<SLM:args>-U 99:0 -d hdmi</SLM:args>
+	<SLM:stop stop="signal">SIGTERM</SLM:stop>
+	<SLM:depend>pps-setup</SLM:depend>
+        <SLM:depend>screen-ready</SLM:depend>
+        <SLM:depend>io-hid</SLM:depend>
+   </SLM:component>  
+
+   <SLM:component name="bluetooth">
+        <SLM:command>io-bluetooth</SLM:command>
+	<SLM:args>-vvvvv -s /etc/system/config/bluetooth/TIInit_11.8.32.QNX.bts</SLM:args>
+	<SLM:waitfor wait="pathname">/dev/io-bluetooth/btmgr</SLM:waitfor>
+	<SLM:stdout>/var/log/io-bluetooth/stdout</SLM:stdout>
+	<SLM:stderr>/var/log/io-bluetooth/stderr</SLM:stderr>
+	<SLM:stop stop="signal">SIGTERM</SLM:stop>
+	<SLM:depend>hci</SLM:depend>
+	<SLM:depend>ioacoustic</SLM:depend>
+	<SLM:depend>qdb</SLM:depend>
+   </SLM:component>
+
+   <SLM:component name="pps-bluetooth">
+        <SLM:command>pps-bluetooth</SLM:command>
+	<SLM:args>-vvvvv</SLM:args>
+ 	<SLM:stop stop="signal">SIGTERM</SLM:stop>
+	<SLM:depend>bluetooth</SLM:depend>
+	<SLM:depend>pps</SLM:depend>
+   </SLM:component>
+   
+   <SLM:component name="pps-pbap-initiator">
+	<SLM:command>bluetooth-pbap-initiator</SLM:command>
+	<SLM:args>-vv</SLM:args>
+	<SLM:stop stop="signal">SIGTERM</SLM:stop>
+	<SLM:depend>pps</SLM:depend>
+   </SLM:component>
+   
+   <SLM:component name="pps-map-initiator">
+	<SLM:command>bluetooth-map-initiator</SLM:command>
+	<SLM:args>-vv</SLM:args>
+	<SLM:stop stop="signal">SIGTERM</SLM:stop>
+	<SLM:depend>pps</SLM:depend>
+	<SLM:depend>qdb</SLM:depend>
+   </SLM:component>
+   
+   <SLM:component name="pan-if-monitor">
+	<SLM:command>ifwatchd</SLM:command>
+	<SLM:args>-A /scripts/ifarrv.sh -D /scripts/ifdepart.sh pan0</SLM:args>
+	<SLM:stop stop="signal">SIGTERM</SLM:stop>
+   </SLM:component>
+      
+   
+   <SLM:component name="io-audio_mcbsp">
+        <SLM:command>io-audio</SLM:command>
+        <SLM:args>-d mcbsp-omap4 mclk=19200000</SLM:args>
+        <SLM:waitfor wait="pathname">/dev/snd/pcmC1D0p</SLM:waitfor>
+        <SLM:stop stop="signal">SIGTERM</SLM:stop>
+        <SLM:depend>io-audio</SLM:depend>
+   </SLM:component>
+ 
+    <SLM:component name="syslink_daemon">
+          <SLM:command>/base/bin/syslink</SLM:command>
+		  <!-- We are trying the experimental ducati binary that uses only 40MB memory
+          <SLM:args>-f /lib/firmware/ducati/ducati-m3-core0_es2.xem3 -H 0</SLM:args>
+		  -->
+		  <SLM:args>-f /lib/firmware/ducati/ducati-m3-core0_es2_40mb_unsupported_experimental.xem3 -H 0</SLM:args>
+        <SLM:waitfor wait="pathname">/dev/syslink</SLM:waitfor>
+   </SLM:component>
+
+   <SLM:component name="trace_syslink">                          
+        <SLM:command>syslink_trace_daemon</SLM:command>                 
+        <SLM:stop stop="signal">SIGTERM</SLM:stop>
+        <SLM:depend>syslink_daemon</SLM:depend>                          
+   </SLM:component> 
+
+   <SLM:component name="dvfs">                          
+        <SLM:command>dvfsmgr-omap5</SLM:command>                 
+        <SLM:args>-c /base/etc/dvfs/config/omap5/dvfs_omap5_es2.conf -v</SLM:args>
+        <SLM:stop stop="signal">SIGTERM</SLM:stop>
+        <SLM:waitfor wait="pathname">/dev/dvfs</SLM:waitfor>
+   </SLM:component> 
+
+   <SLM:component name="dvfs_client">                          
+        <SLM:command>dvfs_client</SLM:command>                 
+        <SLM:stop stop="signal">SIGTERM</SLM:stop>
+        <SLM:depend>dvfs</SLM:depend>                          
+        <SLM:waitfor wait="blocks"></SLM:waitfor>
+   </SLM:component> 
+
+   <SLM:component name="dvfs-set-min-level">                          
+        <SLM:command launch="builtin">system</SLM:command>                 
+        <SLM:args>echo S1 > /dev/dvfs_client_1</SLM:args>
+        <SLM:depend>dvfs_client</SLM:depend>                          
+   </SLM:component> 

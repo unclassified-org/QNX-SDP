@@ -1,0 +1,52 @@
+### screen-common.build
+
+[+script] screen-libs-in-ifs = {
+    # Using a [type=link] does not work for scaling.conf, gets eclipsed/overwritten
+    procmgr_symlink /proc/boot/scaling.conf /etc/system/config/scaling.conf
+    GRAPHICS_ROOT=/proc/boot 
+    screen &
+}
+
+
+[perms=0644] img.conf = {
+[img_codec_png.so]
+mime=image/png:application/png:application/x-png
+ext=png
+}
+
+### Libraries
+[perms=0755]
+
+libWFD.so.1
+[type=link] libWFD.so=libWFD.so.1
+libdisputil.so.2
+[type=link] libdisputil.so=libdisputil.so.2
+libmtouch-devi.so.1
+[type=link] libmtouch-devi.so=libmtouch-devi.so.1
+libkalman.so.1
+[type=link] libkalman.so=libkalman.so.1
+libinputevents.so.1
+[type=link] libinputevents.so=libinputevents.so.1
+libhiddi.so.1
+
+screen-gles2.so 
+libGLESv2.so.1
+[type=link] libGLESv2.so=libGLESv2.so.1
+libEGL.so.1
+[type=link] libEGL.so=libEGL.so.1
+
+#for early splash screen
+libscreen.so.1
+[type=link] libscreen.so=libscreen.so.1
+libimg.so.1
+
+### Executables
+[perms=0755 data=c]
+
+screen
+#graphics.conf=../etc/system/config/graphics.conf
+scaling.conf=../etc/system/config/scaling.conf
+[type=link] /etc/system/config/graphics.conf=/proc/boot/graphics.conf
+[type=link] /etc/system/config/img.conf=/proc/boot/img.conf
+
+##eof

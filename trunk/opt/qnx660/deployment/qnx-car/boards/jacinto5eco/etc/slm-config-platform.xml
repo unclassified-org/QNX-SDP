@@ -1,0 +1,119 @@
+
+    <!-- VARIANT SPECIFIC ENTRIES -->
+
+    <SLM:component name="symlink_wifi">
+          <SLM:command launch="builtin">pathmgr_symlink</SLM:command>
+          <SLM:args>/var/etc/ap_pps_mhs.conf /base/etc/ap_pps_mhs.conf; /var/etc/wpa_pps.conf /base/etc/wpa_pps.conf; /var/etc/wpa_supplicant.conf /base/etc/wpa_supplicant.conf</SLM:args>
+   </SLM:component>
+
+   <SLM:component name="usb">
+        <SLM:command>io-usb</SLM:command>
+	<SLM:args>-vvv -c -d dm816x-mg ioport=0x47401400,irq=18,ioport=0x47401c00,irq=19</SLM:args>
+	<SLM:waitfor wait="pathname">/dev/io-usb/io-usb</SLM:waitfor>
+	<SLM:stop stop="signal">SIGTERM</SLM:stop>
+   </SLM:component>
+
+   <SLM:component name="io-audio_mcbsp">
+        <SLM:command>io-audio</SLM:command>
+	<SLM:args>-vv -d mcbsp-dm814x xprotocol=pcm,rprotocol=pcm</SLM:args>
+        <SLM:waitfor wait="pathname">/dev/snd/pcmC1D0p</SLM:waitfor>
+	<SLM:stop stop="signal">SIGTERM</SLM:stop>
+	<SLM:depend>io-audio</SLM:depend>
+   </SLM:component>
+
+   <SLM:component name="keyboard">
+        <SLM:command>keyboard-imf</SLM:command>
+	<SLM:args>-U 99:0 -d internal</SLM:args>
+	<SLM:stop stop="signal">SIGTERM</SLM:stop>
+	<SLM:depend>pps-setup</SLM:depend>
+        <SLM:depend>screen-ready</SLM:depend>
+        <SLM:depend>io-hid</SLM:depend>
+   </SLM:component>  
+
+   <!-- BLUETOOTH DUMMY SERVICE: If you enable the bluetooth services below, comment out this dummy service! -->
+   <SLM:component name="pps-bluetooth">
+	<SLM:command launch="builtin">no_op</SLM:command>
+   </SLM:component>
+
+   <!-- BLUETOOTH START: Bluetooth is disabled by default to enable please remove the comment tags
+   <SLM:component name="hci">
+        <SLM:command>devc-seromap_hci</SLM:command>
+	<SLM:args>-vv -E -f -a -c48000000/16 0x481A6000^2,44</SLM:args>
+	<SLM:waitfor wait="pathname">/dev/serbt1</SLM:waitfor>
+	<SLM:stop stop="signal">SIGTERM</SLM:stop>
+   </SLM:component>
+
+   <SLM:component name="bluetooth">
+        <SLM:command>io-bluetooth</SLM:command>
+	<SLM:args>-vvvvv -s /etc/system/config/bluetooth/j5eco_handsfree_r_x_protocol_pcm.bts</SLM:args>
+	<SLM:waitfor wait="pathname">/dev/io-bluetooth/btmgr</SLM:waitfor>
+	<SLM:stdout>/var/log/io-bluetooth/stdout</SLM:stdout>
+	<SLM:stderr>/var/log/io-bluetooth/stderr</SLM:stderr>
+	<SLM:stop stop="signal">SIGTERM</SLM:stop>
+	<SLM:depend>hci</SLM:depend>
+	<SLM:depend>ioacoustic</SLM:depend>
+	<SLM:depend>qdb</SLM:depend>
+	<SLM:depend>pps</SLM:depend>
+   </SLM:component>   
+
+   <SLM:component name="pps-bluetooth">
+        <SLM:command>pps-bluetooth</SLM:command>
+	<SLM:args>-vvvvv</SLM:args>
+ 	<SLM:stop stop="signal">SIGTERM</SLM:stop>
+	<SLM:depend>bluetooth</SLM:depend>
+	<SLM:depend>pps</SLM:depend>
+   </SLM:component>
+   
+   <SLM:component name="pps-pbap-initiator">
+	<SLM:command>bluetooth-pbap-initiator</SLM:command>
+	<SLM:args>-vv</SLM:args>
+	<SLM:stop stop="signal">SIGTERM</SLM:stop>
+	<SLM:depend>pps</SLM:depend>
+   </SLM:component>
+   
+   <SLM:component name="pps-map-initiator">
+	<SLM:command>bluetooth-map-initiator</SLM:command>
+	<SLM:args>-vv</SLM:args>
+	<SLM:stop stop="signal">SIGTERM</SLM:stop>
+	<SLM:depend>pps</SLM:depend>
+	<SLM:depend>qdb</SLM:depend>
+   </SLM:component>
+   
+   <SLM:component name="pan-if-monitor">
+	<SLM:command>ifwatchd</SLM:command>
+	<SLM:args>-A /scripts/ifarrv.sh -D /scripts/ifdepart.sh pan0</SLM:args>
+	<SLM:stop stop="signal">SIGTERM</SLM:stop>
+   </SLM:component>
+      
+       BLUETOOTH END: Bluetooth is disabled by default to enable please remove the comment tags -->
+
+   <!-- TI Radio Components-->
+   <SLM:component name="mq">
+	<SLM:command>mq</SLM:command>
+	<SLM:stop stop="signal">SIGTERM</SLM:stop>
+   </SLM:component>
+
+<!-- Do not currently start this as when RadioApp starts and loads the firmware, the onboard ethernet is killed (no more packets arrive or can be sent) -->
+<!--
+   <SLM:component name="radio_app">
+	<SLM:command>/sbin/RadioApp</SLM:command>
+	<SLM:args>-p 0 -f /etc/system/config/radio/jive_dsp_app_elf.out -h pps</SLM:args>
+	<SLM:depend>syslink_daemon</SLM:depend>
+	<SLM:depend>pps</SLM:depend>
+	<SLM:stop stop="signal">SIGTERM</SLM:stop>
+   </SLM:component>
+
+   <SLM:component name="radio_adapter">
+	<SLM:command>radio-adapter</SLM:command>
+	<SLM:args>-m 7</SLM:args>
+	<SLM:depend>radio_app</SLM:depend>
+	<SLM:depend>pps</SLM:depend>
+	<SLM:stop stop="signal">SIGTERM</SLM:stop>
+   </SLM:component>
+-->
+
+   <SLM:component name="syslink_daemon">
+	<SLM:command>/sbin/syslink_drv</SLM:command>
+	<SLM:depend>mq</SLM:depend>
+	<SLM:stop stop="signal">SIGTERM</SLM:stop>
+   </SLM:component>

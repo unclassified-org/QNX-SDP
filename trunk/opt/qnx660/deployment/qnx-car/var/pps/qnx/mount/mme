@@ -1,0 +1,6 @@
+@mme
+device_type::hdd
+fs_type::qnx
+id::mme
+mount::/accounts/1000/shared/
+name::Juke Box

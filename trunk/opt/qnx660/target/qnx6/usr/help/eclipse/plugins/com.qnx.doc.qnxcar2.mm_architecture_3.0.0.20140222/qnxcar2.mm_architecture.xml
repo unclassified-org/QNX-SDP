@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<toc label="QNX CAR Multimedia Architecture Guide" topic="com.qnx.doc.qnxcar2.mm_architecture/../com.qnx.doc.appsandmedia.mm_arch/topic/mm_devices.html"><topic label="QNX CAR Multimedia Architecture" href="com.qnx.doc.qnxcar2.mm_architecture/topic/qnx_car_mm_arch.html"><topic label="Media device detection and synchronization" href="com.qnx.doc.qnxcar2.mm_architecture/topic/qnx_car_mm_arch_synch.html"/><topic label="Media browsing" href="com.qnx.doc.qnxcar2.mm_architecture/topic/qnx_car_mm_arch_browse.html"/><topic label="Media playback" href="com.qnx.doc.qnxcar2.mm_architecture/topic/qnx_car_mm_arch_play.html"/></topic></toc>

@@ -1,0 +1,25 @@
+// Import base theme variables
+
+@import '../base';
+
+$app-dir: $theme-dir + "/NavigatorOverlay";
+
+// Variable definitions for current application
+
+// @media (max-device-height: 719px) 
+// {
+	@import './800x480/style';
+	@import './images';
+
+	// Import application layout
+	@import '../../common/NavigatorOverlay/master';
+// }
+
+// @media (min-device-height: 720px) 
+// {
+//	@import './1280x720/style';
+//	@import './images';
+	
+	// Import application layout
+//	@import '../../common/NavigatorOverlay/master';
+// }

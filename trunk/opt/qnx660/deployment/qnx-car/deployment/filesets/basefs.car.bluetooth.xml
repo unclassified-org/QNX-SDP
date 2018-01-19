@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fileset name="basefs.car.bluetooth">
+  <!-- These are the libraries that are needed for MIME parsing -->
+  <symlink name="usr/lib/libpcre.so" target="libpcre.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libpcre.so.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libffi.so" target="libffi.so.5" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libffi.so.5" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libgmodule-2.0.so" target="libgmodule-2.0.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libgmodule-2.0.so.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libgio-2.0.so" target="libgio-2.0.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libgio-2.0.so.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libglib-2.0.so" target="libglib-2.0.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libglib-2.0.so.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libgobject-2.0.so" target="libgobject-2.0.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libgobject-2.0.so.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libgthread-2.0.so" target="libgthread-2.0.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libgthread-2.0.so.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libgmime.so" target="libgmime.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libgmime.so.1" uid="root" gid="nto" mode="0755"/>
+  <!-- libraries required for XML parsing -->
+  <symlink name="usr/lib/libexpat.so" target="libexpat.so.2" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libexpat.so.2" uid="root" gid="nto" mode="0755"/>
+  <!-- These are libraries that are needed to allow pps-bluetooth to talk to io-bluetooth -->
+  <symlink name="lib/libbluetooth.so" target="libbluetooth.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/libbluetooth.so.1" uid="root" gid="nto" mode="0755"/>
+  <!-- This is the hci driver for the stack -->
+  <file name="sbin/devc-seromap_hci" uid="root" gid="nto" mode="0755"/>
+  <!-- this is the pps interface manager to the stack -->
+  <file name="sbin/pps-bluetooth" uid="root" gid="nto" mode="0755"/>
+  <!-- these are the executables that will initate the initial sync -->
+  <file name="sbin/bluetooth-map-initiator" uid="root" gid="nto" mode="0755"/>
+  <file name="sbin/bluetooth-pbap-initiator" uid="root" gid="nto" mode="0755"/>
+  <!-- these are the scripts for handling the PAN network interface -->
+  <file name="scripts/ifarrv.sh" uid="root" gid="nto" mode="0755"/>
+  <file name="scripts/ifdepart.sh" uid="root" gid="nto" mode="0755"/>
+  <!-- this is the pps interface to expose SPP data via PPS -->
+  <file name="bin/pps-spp" uid="root" gid="nto" mode="0755"/>
+</fileset>

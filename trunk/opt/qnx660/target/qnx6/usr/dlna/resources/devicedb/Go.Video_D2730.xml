@@ -1,0 +1,24 @@
+<Client>
+	<DeviceId>
+		<DisplayName>Go.Video D2730</DisplayName>
+		<HttpRecognition>
+			<HttpText>D2730</HttpText>
+		</HttpRecognition>
+		<MappingUpdatePolicy>FIX</MappingUpdatePolicy>
+	</DeviceId>
+	<Capabilities>
+		<Scaling>
+			<Target>JPEG800x600</Target>
+		</Scaling>
+		<SupportedMediaProfiles>
+			<Profile>MP3</Profile>
+			<Profile>WAV</Profile>
+			<Profile>WMV</Profile>
+		</SupportedMediaProfiles>
+	</Capabilities>
+	<Adaptations>
+		<DLNA>
+			<Version>DLNANO</Version>
+		</DLNA>
+	</Adaptations>
+</Client>

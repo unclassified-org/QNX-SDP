@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fileset name="basefs.car.util">
+  <!-- binaries that Deckard includes in the IFS -->
+  <file name="usr/bin/cksum" uid="nobody" gid="nto" mode="2750"/>
+  <file name="bin/ksh" uid="root" gid="nto" mode="0755"/>
+  <file name="bin/login" uid="root" gid="nto" mode="0755"/>
+  <symlink name="bin/sh" target="ksh" uid="root" gid="nto" mode="0755"/>
+  <symlink name="bin/waitfor" target="on" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/cam-disk.so" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/sbin/random" uid="root" gid="nto" mode="0750"/>
+  <file name="sbin/pipe" uid="root" gid="nto" mode="0755"/>
+  <!-- -->
+</fileset>

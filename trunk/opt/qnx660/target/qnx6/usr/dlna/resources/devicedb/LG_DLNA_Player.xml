@@ -1,0 +1,15 @@
+<Client>
+	<DeviceId>
+		<DisplayName>LG DLNA Player</DisplayName>
+		<HttpRecognition>
+			<HttpText>LGE_DLNA_SDK</HttpText>
+			<HttpText>LG_UA</HttpText>
+		</HttpRecognition>
+		<MappingUpdatePolicy>FIX</MappingUpdatePolicy>
+	</DeviceId>
+	<Adaptations>
+		<DLNA>
+			<Version>DLNA15</Version>
+		</DLNA>
+	</Adaptations>
+</Client>

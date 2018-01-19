@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fileset name="basefs.car.inputservice">
+
+  <symlink name="lib/libinput_client.so" target="libinput_client.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/libinput_client.so.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="lib/libinput_utilities.so" target="libinput_utilities.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/libinput_utilities.so.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="lib/libcounters.so" target="libcounters.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/libcounters.so.1" uid="root" gid="nto" mode="0755"/>
+</fileset>

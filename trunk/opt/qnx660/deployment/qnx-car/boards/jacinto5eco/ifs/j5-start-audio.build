@@ -1,0 +1,18 @@
+[+script] .script = {
+	waitfor /dev/i2c0 5
+
+	#######################################################################
+	## AUDIO driver
+	##  - Requires the I2C driver to be enabled
+	#######################################################################
+	display_msg Starting audio driver...
+        io-audio -d mcasp-j5_aic3106 mcasp=2,cap_name=defaultc,dindex=1,play_name=defaultp &
+}
+
+### Libraries
+[perms=0755]
+
+#for early audio
+deva-ctrl-mcasp-j5_aic3106.so
+libabe.so.1
+

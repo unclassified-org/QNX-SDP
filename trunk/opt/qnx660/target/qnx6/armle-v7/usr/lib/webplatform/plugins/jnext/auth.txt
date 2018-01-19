@@ -1,0 +1,24 @@
+# Only the URL prefixes listed here will be allowed to run the specified JNEXT
+# extensions. The syntax of this file is as follows:
+#  <url_prefix> <extension_name[,name2,...,nameN] | *>
+#
+# For example the following will allow file URL's to only run the filereader
+# and sqlite3 extensions:
+#  file:///    filereader,sqlite3
+#
+# The following will allow local loopback URL's to run any extension:
+#  http://127.0.0.1/  *
+#
+# The first matching URL prefix is used. Note that it is important for extra
+# security to specify a slash after any domain name or IP address in the url
+# prefix. This prevents a malicious web site from impersonating allowed URL's.
+# For example if the http URL above had no slash after the IP, a URL of the
+# following form would be allowed: http://127.0.0.1.malicious.com
+# For this reason the QNX version of the JNEXT plugin will enforce that all
+# URL prefixes contain at least 3 slashes.
+
+http://localhost:8080/ *
+http://127.0.0.1:1080/ *
+http://127.0.0.2:187/  *
+file:/// *
+local:/// *

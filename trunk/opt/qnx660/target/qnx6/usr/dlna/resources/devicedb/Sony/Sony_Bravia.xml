@@ -1,0 +1,22 @@
+<Client>
+	<DeviceId>
+		<DisplayName>Sony Bravia</DisplayName>
+		<HttpRecognition>
+			<HttpText>BRAVIA</HttpText>
+		</HttpRecognition>
+		<MappingUpdatePolicy>FIX</MappingUpdatePolicy>
+	</DeviceId>
+	<Capabilities>
+		<SupportedMediaProfiles>
+			<Profile>MPEG</Profile>
+		</SupportedMediaProfiles>
+	</Capabilities>
+	<Adaptations>
+		<DLNA>
+			<Version>DLNA15</Version>
+		</DLNA>
+	</Adaptations>
+	<DeviceQuirks>
+		<Quirk>ADDITIONAL_MPEG_RES</Quirk>
+	</DeviceQuirks>
+</Client>

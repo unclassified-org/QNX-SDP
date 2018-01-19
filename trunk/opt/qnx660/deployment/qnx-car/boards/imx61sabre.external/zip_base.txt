@@ -1,0 +1,2 @@
+../imx61sabre/sd-boot/imx61sabre-sd-hdr.raw.gz
+../imx61sabre/ifs/qnx-ifs

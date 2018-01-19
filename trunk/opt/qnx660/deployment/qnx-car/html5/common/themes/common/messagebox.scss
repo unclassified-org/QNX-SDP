@@ -1,0 +1,111 @@
+.x-msgbox {
+	font-size: $font-size;
+	padding: 0px;
+}
+
+.x-msgbox.x-floating {
+	background: $background-color;
+	box-shadow: 0px 0px (20px * $x-multiplier) (1px * $x-multiplier) $title-bar-background-color;
+	font-family: $font-family-default;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	border: none;
+	min-width: 240px * $x-multiplier;
+	max-width: 320px * $x-multiplier;
+}
+
+.x-msgbox.x-floating .x-msgbox-buttons {
+	border: 0px;
+	border-radius: 0px;
+
+	.x-button {
+		background-size: 100% 100%;
+		background-image: url("#{$theme-common-img-dir}/btn_blue_def.png");
+		color: $button-text-color;
+	}
+
+	.x-button.x-button-pressing {
+		background-size: 100% 100%;
+		background-image: url("#{$theme-common-img-dir}/btn_grey_def.png");
+		color: $active-button-text-color;
+	}
+}
+
+.x-msgbox.x-floating .x-msgbox-title {
+	width: 100%;
+	height: 37px * $y-multiplier;
+	font-size: 125%;
+	text-transform: capitalize;
+	color: $text-color;
+	background-color: $title-bar-background-color;
+}
+
+.x-msgbox-buttons {
+	padding: {
+		top: 0.4em * $y-multiplier;
+		right: 0em;
+		bottom: 0.4em * $y-multiplier;
+		left: 0em;
+	}
+	height: auto;
+}
+
+.x-msgbox.x-floating .x-msgbox-title .x-title{
+	font-weight: normal;
+}
+
+.x-msgbox.x-floating .x-msgbox-text {
+	color: $text-color;
+	text-align: center;
+	padding: {
+		top: 6px * $y-multiplier;
+		right: 6px * $y-multiplier;
+		bottom: 6px * $y-multiplier;
+		left: 6px * $y-multiplier;
+	}
+	line-height: 1.4em * $y-multiplier;
+	text-shadow: rgba(0, 0, 0, 0.5) 0 -0.08em * $y-multiplier 0;
+}
+
+.x-msgbox.x-floating .x-msgbox-buttons .x-button {
+	font-size: 150%;
+	background-color: transparent;
+	border: 0px;
+	margin-top: 7px * $y-multiplier;
+	padding: 0px;
+	width: 126px * $x-multiplier;
+	height: 56px * $y-multiplier;
+	color: $button-text-color;
+}
+
+.x-msgbox .x-icon {
+	margin: {
+		top: 0.5em * $y-multiplier;
+		right: 0.8em * $x-multiplier;
+		bottom: 0em;
+		left: 0.5em * $x-multiplier;
+	}
+}
+.x-msgbox .x-field-text .x-component-outer{
+	background-color: $background-color;
+}
+.x-msgbox .x-field-input{
+	background-color: $background-color;
+	font-size: 150%;
+	border-radius: 24px * $x-multiplier;
+	height: 42px * $y-multiplier !important;
+	width: 90%;
+	margin: 0 auto;
+	border: solid 1px $active-background-color;
+	padding: {
+		top: 4px * $y-multiplier;
+		right: 0px;
+		bottom: 0px;
+		left: 24px * $x-multiplier;
+	}
+}
+.x-msgbox .x-field-input .x-input-text{
+	color: $text-color;
+	padding: 0px;
+	min-height: 0px; 
+}

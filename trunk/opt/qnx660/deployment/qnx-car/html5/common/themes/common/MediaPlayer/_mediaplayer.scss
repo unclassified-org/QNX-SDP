@@ -1,0 +1,103 @@
+/**
+ * Styles common to the entire MediaPlayer application.
+ * @author lgreenway
+ *
+ * $Id$
+ */
+body {
+	font-size: $font-size * $x-multiplier;
+}
+
+body[data-currentprofile=mid] {
+	.x-dataview.radiotuners {
+		height: 110px * $y-multiplier;
+		width: 80px * $x-multiplier;
+	}
+
+	#ext-radiotunerpresets-1 {
+		width: 600px * $x-multiplier;
+	}
+}
+
+.x-list {
+	background-color: transparent;
+}
+
+.x-msgbox {
+	z-index: 9999 !important;
+}
+
+.media-panel {
+	width: 800px * $x-multiplier;
+	height: 395px * $y-multiplier;
+	background-image: $img-background;
+	background-repeat: no-repeat;
+}
+
+.media-panel > .x-body {
+	padding-top: 44px * $y-multiplier;
+}
+
+.button-small {
+	width: 70px * $x-multiplier;
+	height: 50px * $y-multiplier;
+	margin-right: 10px * $x-multiplier;
+	background-image: $img-btn-small;
+	background-size: 100% 100%;
+	
+	&.x-button-pressed, &.x-button-pressing {
+		background-image: $img-btn-small-over;
+	}
+}
+
+.progressbar {
+	height: 30px * $y-multiplier;
+	margin: (-6px * $y-multiplier) 0 (-9px * $y-multiplier) 0;
+	background-image: $img-progress-bar;
+	background-position: 0px 50%;
+	background-repeat: repeat-x;
+}
+ 
+.progressbar-highlight {
+	height: 30px * $y-multiplier;
+	width: 100%;
+	-webkit-transform: scaleX(0);
+	-webkit-transform-origin-x: 0;
+	background-image: $img-progress-bar-highlight;
+	background-position: 0px 50%;
+	background-repeat: repeat-x;
+}
+
+.x-button,.x-button-pressed,.x-button,.x-button-pressing {
+	border: none !important;
+	background-color: transparent !important;
+	-webkit-box-shadow: none !important;
+	-webkit-border-radius: 0px !important;
+}
+
+
+.x-button.button-large {
+	border-radius: 5px * $y-multiplier;
+	width: 140px * $x-multiplier;
+	height: 50px * $y-multiplier;
+	font-size: 100%;
+	text-align: center;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: $button-text-color;
+	background-image: $img-btn-large;
+	background-size: 100% 100%;
+	
+	&:active {
+		background-image: $img-btn-large-over;
+	}
+}
+
+.x-button.button-large:active {
+	color: $active-button-text-color;
+}
+
+.x-button.x-item-disabled {
+	pointer-events: none;
+	opacity: 0.5;
+}

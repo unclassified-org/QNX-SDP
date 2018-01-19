@@ -1,0 +1,20 @@
+<Client>
+	<DeviceId>
+		<DisplayName>Philips TV</DisplayName>
+		<HttpRecognition>
+			<HttpText>Allegro-Software-WebClient/4.61 DLNADOC/1.0</HttpText>
+			<HttpText>Streamium/1.0</HttpText>
+		</HttpRecognition>
+		<MappingUpdatePolicy>FIX</MappingUpdatePolicy>
+	</DeviceId>
+	<Capabilities>
+		<Scaling>
+			<Target>JPEG1920x1080</Target>
+		</Scaling>
+	</Capabilities>
+	<Adaptations>
+		<DLNA>
+			<Version>DLNA10</Version>
+		</DLNA>
+	</Adaptations>
+</Client>

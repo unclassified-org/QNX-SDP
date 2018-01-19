@@ -1,0 +1,103 @@
+body {
+	font-size: $font-size * $x-multiplier;
+	background-color: transparent;
+}
+
+.panel {
+	background-image: $panel-background;
+	background-repeat: no-repeat;
+	width: 800px * $x-multiplier;
+	height: ceil(395px * $y-multiplier);
+	overflow: hidden;
+}
+
+.x-button,.x-button-pressing {
+//	font-size: $font-size * $x-multiplier;
+	border: none !important;
+	-webkit-box-shadow: none !important;
+	-webkit-border-radius: 0px !important;
+}
+
+.x-list {
+	background: transparent;
+}
+
+.x-form .x-scroll-container {
+	background: transparent;
+}
+
+.x-select-overlay {
+	z-index: 999 !important;
+}
+
+.x-field {
+	background-color: transparent;
+}
+
+.x-form-label {
+	background-color: transparent;
+	span {
+		font-size: 112.5%;
+	}
+}
+
+.x-field-checkbox {
+	height: 45px * $y-multiplier;
+	.x-form-label {
+		color: $text-color;
+	}
+
+
+	.x-input-el+.x-field-mask::after {
+		background-image: $checkbox-background;
+		background-repeat: no-repeat;
+		margin {
+			top: 4px * $y-multiplier;
+			left: 15px * $x-multiplier;
+		}
+		background-position: 0% 100%;
+		width: 30px * $x-multiplier;
+		height: 30px * $y-multiplier;
+		content: '';
+		font-family: '';
+	}
+
+	.x-input-el:checked+.x-field-mask::after {
+		background-position: 0% 0% !important;	
+	}
+}
+
+
+input.x-input-checkbox[type="checkbox"]:before { 
+}
+
+input.x-input-checkbox[type="checkbox"]:checked:before { 
+}
+
+.x-checkmark-base, .x-field-checkbox .x-input-el::after, .x-field-checkbox .x-input-el:checked::after, .x-select-overlay .x-item-selected .x-list-item-label::before, .x-select-overlay .x-item-selected .x-list-item-label::after {
+	width: 0;
+	height: 0;
+	-webkit-mask-size: 0;
+	-webkit-mask-image: none;
+}
+
+.x-button.green {
+	background-image: $button-background;
+	background-color: transparent;
+	background-size: 100% 200%;
+	background-position: 0% 100%;
+	color: $button-text-color;
+}
+
+.x-button.green:active {
+	background-position: 0px 0px;
+	color: $active-button-text-color;
+}
+
+.x-mask {
+	background: rgba(0, 0, 0, 0.8);
+}
+
+input {
+	background-color: transparent;
+}

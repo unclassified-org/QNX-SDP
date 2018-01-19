@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+      font: 18pt Verdana, Sans-Serif;
+    background: transparent;
+    overflow: hidden;
+}
+
+#container {
+    position: absolute;
+    width: 800px;
+    height: 185px;
+    background: #565656;
+    overflow: hidden;
+    padding-top: 5px;
+    -webkit-user-select: none;
+    background-image: -webkit-linear-gradient(bottom, #242427 30%, #2E474E 100%);
+}
+
+.keyboard {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding-left: 10px;
+    color: #333333
+}
+
+.keyboard li {
+    float: left;
+    margin: 0 7px 3px 0;
+    width: 70px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    padding-top: 0px;
+    border: 1px solid #343434;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+
+    text-shadow: 0 1px 1px #ffffff;
+
+    background-image: -webkit-linear-gradient(bottom, rgb(65, 140, 161) 30%, rgb(47, 75, 86) 100%);
+    -webkit-tap-highlight-color: rgba(255,255,255,0.5);
+}
+
+.keyboard .tab, .keyboard .delete {
+    width: 70px;
+}
+
+.keyboard .capslock {
+    width: 80px;
+}
+
+.keyboard .return {
+    width: 148px;
+}
+
+.keyboard .left-shift {
+    width: 70px;
+}
+
+.keyboard .right-shift {
+    width: 70px;
+}
+
+.lastitem {
+    margin-right: 0;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.keyboard .space {
+    width: 307px;
+}
+
+.on {
+    display: none;
+}
+
+.service, .hide, .lang, .layout {
+    color: #fff;
+    background-image: -webkit-linear-gradient(bottom, rgb(36, 36, 39) 30%, rgb(51, 90, 101) 100%) !important;
+    text-shadow: 0 -1px -1px #333333 !important;
+}
+
+.number {
+    background-image: -webkit-linear-gradient(bottom, rgb(214, 214, 214) 26%, rgb(240, 240, 240) 68%, rgb(255, 255, 255) 87%) !important;
+}
+
+.letter {
+    background-image: -webkit-linear-gradient(bottom, rgb(65, 140, 161) 30%, rgb(47, 75, 86) 100%) !important;
+}
+
+.symbol {
+    background-image: -webkit-linear-gradient(bottom, rgb(163, 160, 163) 23%, rgb(212, 212, 212) 62%, rgb(235, 235, 235) 87%);
+}
+
+.keyboard .hide {
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.keyboard .lang {
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.keyboard .delete {
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.keyboard .left-shift {
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#numerical_symbols {
+    display: none;
+}
+
+#symbols {
+    display: none;
+}

@@ -1,0 +1,105 @@
+
+#voiceTab {
+    position: absolute;
+    top:0px;
+    height: 0px;
+    width:100%;
+    z-index: 2;
+    background: transparent $voiceBkgrd;
+    background-repeat: repeat-x;
+    background-position: bottom left;
+    -webkit-transition: height .25s linear;
+}
+
+#voiceTab.show {
+	height: 206px * $y-multiplier;
+}
+
+#voiceBg {
+  opacity:0;
+}
+
+#voiceBg.show {
+  height: 395px * $y-multiplier;
+  z-index: 1;
+  background-color: $active-background-color;
+  opacity:0.8;
+  -webkit-transition: opacity .5s ease;
+}
+
+#voiceImg {
+	position: absolute;
+  top: 0px;
+	left: -213px * $x-multiplier;
+  height: 200px * $y-multiplier;
+  width: 213px * $x-multiplier;
+  background: transparent $voiceDude;
+  background-repeat: no-repeat;
+	-webkit-transition: left .25s linear;
+  overflow: none;
+}
+
+#voiceImg.show {
+	left: 0;
+}
+
+#voiceAsrData.show {
+  opacity:1.0;
+}
+
+#voiceAsrData {
+  position:relative;
+  display: inline-block;
+  top:0px;
+  left:0px;
+  width:700px * $x-multiplier;
+  height:200px * $y-multiplier;
+  opacity:0;
+  -webkit-transition: opacity .25s linear;
+}
+
+#voiceConfidence {
+  position: absolute;
+  top: 28px * $y-multiplier;
+  left: 28px * $x-multiplier;
+}
+
+#voiceConfidence span {
+  font-size: 300% * $y-multiplier;
+  font-weight: bold;
+  color: $active-text-color;
+  opacity: 0.4;
+}
+
+#voiceState {
+  position: absolute;
+  top: 40px * $y-multiplier;
+  left:220px * $x-multiplier;
+}
+
+#voiceState span {
+  font-weight: bold;
+  font-size: 250% * $y-multiplier;
+  color: $active-text-color;
+  opacity: 0.6;
+}
+
+#voiceUtterance {
+  position: absolute;
+  top: 100px * $y-multiplier;
+  left:220px * $x-multiplier;
+  width:580px * $x-multiplier;
+  height:88px * $y-multiplier;
+  overflow: hidden;
+  line-height: 2.6em * $y-multiplier;
+}
+
+#voiceUtterance span {
+  color: $active-text-color;
+  font-weight: bold;
+  font-size: 250% * $y-multiplier;
+  opacity: 0.8;
+  display:block;
+  position:relative;
+  left: 0px;
+}

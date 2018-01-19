@@ -1,0 +1,22 @@
+<Client>
+	<DeviceId>
+		<DisplayName>Naim Audio Streamer</DisplayName>
+		<HttpRecognition>
+			<HttpText>KnOS/3.2 bridgeCo-DMP/3.0 DLNADOC/1.50 INTEL_NMPR/2.0</HttpText>
+		</HttpRecognition>
+		<MappingUpdatePolicy>FIX</MappingUpdatePolicy>
+	</DeviceId>
+	<Adaptations>
+		<DLNA>
+			<Version>DLNA15</Version>
+		</DLNA>
+	</Adaptations>
+	<Capabilities>
+		<MediaTypeList>
+			<MediaType>MUSIC</MediaType>
+		</MediaTypeList>
+		<SupportedMediaProfiles>
+			<Profile>AASCALE#JPEG500x500</Profile>
+		</SupportedMediaProfiles>
+	</Capabilities>
+</Client>

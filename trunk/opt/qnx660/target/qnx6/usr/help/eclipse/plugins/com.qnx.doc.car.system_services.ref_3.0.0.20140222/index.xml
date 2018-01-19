@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<index>
+<entry keyword=" io-acoustic ">
+<entry keyword="command-line options">
+<topic href="topic/io-acoustic.html#io-acoustic" title=" io-acoustic "/>
+</entry>
+<entry keyword="running">
+<topic href="topic/io-acoustic.html#io-acoustic" title=" io-acoustic "/>
+</entry>
+</entry>
+<entry keyword=" swud ">
+<entry keyword="command-line options">
+<topic href="topic/software_update_swud_starting.html#swud_starting" title=" swud "/>
+</entry>
+<entry keyword="starting manually">
+<topic href="topic/software_update_swud_starting.html#swud_starting" title=" swud "/>
+</entry>
+</entry>
+<entry keyword=".qcf configuration files">
+<topic href="topic/aec_config_qcf.html#qcf" title="Acoustic processing tuning files (.qcf)"/>
+</entry>
+<entry keyword="AAP">
+<topic href="topic/aec.html#overview" title="Handsfree Telephony"/>
+<topic href="topic/aec_config_qcf.html#qcf" title="Acoustic processing tuning files (.qcf)"/>
+<entry keyword="See acoustic processing">
+<topic href="topic/aec.html#overview" title="Handsfree Telephony"/>

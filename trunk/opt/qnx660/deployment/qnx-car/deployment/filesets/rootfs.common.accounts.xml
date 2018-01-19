@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fileset name="rootfs.common.accounts">
+  <directory name="accounts" uid="apps" gid="nto" mode="0755"/>
+  <!-- Primary Account -->
+  <directory name="accounts/1000" uid="root" gid="1000" mode="0755"/>
+  <directory name="accounts/1000/appdata" uid="apps" gid="1000" mode="0750"/>
+  <directory name="accounts/1000/clipboard" uid="root" gid="1000" mode="2770"/>
+  <directory name="accounts/1000/certificates" uid="root" gid="1003" mode="2770"/>
+  <file name="accounts/1000/certificates/.metadata_never_index" uid="root" gid="1003" mode="2740"/>
+  <!-- Primary Acccount: Shared -->
+  <directory name="accounts/1000/shared" uid="root" gid="1001" mode="0750"/>
+  <file name="accounts/1000/shared/.metadata_never_index" uid="root" gid="1001" mode="0740"/>
+  <directory name="accounts/1000/shared/bookmarks" uid="root" gid="1001" mode="2770"/>
+  <directory name="accounts/1000/shared/books" uid="root" gid="1001" mode="2770"/>
+  <directory name="accounts/1000/shared/documents" uid="root" gid="1001" mode="2770"/>
+  <directory name="accounts/1000/shared/documents/attachments" uid="root" gid="1001" mode="2770"/>
+  <directory name="accounts/1000/shared/downloads" uid="root" gid="1001" mode="2770"/>
+  <directory name="accounts/1000/shared/misc" uid="root" gid="1001" mode="2770"/>
+  <directory name="accounts/1000/shared/music" uid="root" gid="1001" mode="2770"/>
+  <directory name="accounts/1000/shared/photos" uid="root" gid="1001" mode="2770"/>
+  <directory name="accounts/1000/shared/photos/contacts" uid="root" gid="1001" mode="2770"/>
+  <directory name="accounts/1000/shared/print" uid="root" gid="1001" mode="2770"/>
+  <directory name="accounts/1000/shared/camera" uid="root" gid="1001" mode="2770"/>
+  <directory name="accounts/1000/shared/videos" uid="root" gid="1001" mode="0755"/>
+  <directory name="accounts/1000/shared/voice" uid="root" gid="1001" mode="2770"/>
+  <!-- Primary Acccount: System -->
+  <directory name="accounts/1000/sys" uid="root" gid="1002" mode="0750"/>
+  <directory name="accounts/1000/sys/dtm" uid="root" gid="1002" mode="2770"/>
+  <file name="accounts/1000/sys/dtm/.metadata_never_index" uid="root" gid="1002" mode="2740"/>
+  <directory name="accounts/1000/sysdata" uid="root" gid="1002" mode="0750"/>
+  <directory name="accounts/1000/sysdata/sapphire" uid="root" gid="1002" mode="0750"/>
+  <directory name="accounts/1000/sysdata/sapphire/sdcache" uid="root" gid="1002" mode="2770"/>
+  <directory name="accounts/1000/sysdata/sapphire/squidcache" uid="root" gid="1002" mode="2770"/>
+  <directory name="accounts/1000/sys/useralarm" uid="root" gid="1002" mode="0750"/>
+  <!-- Development Acccount -->
+  <directory name="accounts/devuser" uid="devuser" gid="devuser" mode="0750"/>
+  <file name="accounts/devuser/.profile" uid="devuser" gid="devuser" mode="750"/>
+  <!-- Sharewith directory -->
+  <directory name="accounts/1000/sharewith" uid="apps" gid="nto" mode="0751"/>
+  <directory name="accounts/1000/sharewith/bluetooth" uid="apps" gid="bluetooth" mode="2751"/>
+  <directory name="accounts/1000/sharewith/media" uid="apps" gid="dlna" mode="2751"/>
+  <directory name="accounts/1000/sharewith/pim" uid="apps" gid="pim" mode="2751"/>
+  <directory name="accounts/1000/sharewith/search" uid="apps" gid="search" mode="2751"/>
+  <directory name="accounts/1000/sharewith/mmsynclite" uid="apps" gid="media" mode="2751"/>
+  <!-- Navigator's pre-created sandbox directory (runs as root) -->
+  <directory name="accounts/1000/appdata/car.navigator" uid="root" gid="nto" mode="0750"/>
+  <directory name="accounts/1000/appdata/car.navigator/data" uid="root" gid="nto" mode="0750"/>
+  <directory name="accounts/1000/appdata/car.navigator/data/chrome" uid="root" gid="nto" mode="0750"/>
+  <directory name="accounts/1000/appdata/car.navigator/data/chrome/localstorage" uid="root" gid="nto" mode="0750"/>
+  <!-- Config Account -->
+  <directory name="accounts/1000/config" uid="root" gid="1000_config" mode="2771"/>
+</fileset>

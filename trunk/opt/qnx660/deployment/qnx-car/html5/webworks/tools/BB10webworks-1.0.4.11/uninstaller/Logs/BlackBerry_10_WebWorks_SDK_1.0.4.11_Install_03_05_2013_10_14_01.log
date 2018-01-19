@@ -1,0 +1,1454 @@
+__________________________________________________________________________
+
+Tue Mar 05 10:14:26 EST 2013
+
+Free Memory: 18057 kB
+Total Memory: 31168 kB
+
+java.class.path:
+    C:\Users\mlytvynyuk\AppData\Local\Temp\I1362496407\InstallerData\IAClasses.zip
+    C:\Users\mlytvynyuk\AppData\Local\Temp\I1362496407\InstallerData\Execute.zip
+    C:\Users\mlytvynyuk\AppData\Local\Temp\I1362496407\Windows\InstallerData\Execute.zip
+    C:\Users\mlytvynyuk\AppData\Local\Temp\I1362496407\InstallerData\Resource1.zip
+    C:\Users\mlytvynyuk\AppData\Local\Temp\I1362496407\Windows\InstallerData\Resource1.zip
+    C:\Users\mlytvynyuk\AppData\Local\Temp\I1362496407\InstallerData
+    C:\Users\mlytvynyuk\AppData\Local\Temp\I1362496407\Windows\InstallerData
+
+ZGUtil.CLASS_PATH:
+    C:\Users\mlytvynyuk\AppData\Local\Temp\I1362496407\InstallerData\IAClasses.zip
+    C:\Users\mlytvynyuk\AppData\Local\Temp\I1362496407\InstallerData\Execute.zip
+    C:\Users\mlytvynyuk\AppData\Local\Temp\I1362496407\InstallerData
+
+sun.boot.class.path:
+    C:\Program Files\Java\jre6\lib\resources.jar
+    C:\Program Files\Java\jre6\lib\rt.jar
+    C:\Program Files\Java\jre6\lib\sunrsasign.jar
+    C:\Program Files\Java\jre6\lib\jsse.jar
+    C:\Program Files\Java\jre6\lib\jce.jar
+    C:\Program Files\Java\jre6\lib\charsets.jar
+    C:\Program Files\Java\jre6\lib\modules\jdk.boot.jar
+    C:\Program Files\Java\jre6\classes
+
+java.ext.dirs:
+    C:\Program Files\Java\jre6\lib\ext
+    C:\Windows\Sun\Java\lib\ext
+
+java.version                  == 1.6.0_29 (Java 1)
+java.vm.name                  == Java HotSpot(TM) 64-Bit Server VM
+java.vm.vendor                == Sun Microsystems Inc.
+java.vm.version               == 20.4-b02
+java.vm.specification.name    == Java Virtual Machine Specification
+java.vm.specification.vendor  == Sun Microsystems Inc.
+java.vm.specification.version == 1.0
+java.specification.name       == Java Platform API Specification
+java.specification.vendor     == Sun Microsystems Inc.
+java.specification.version    == 1.6
+java.vendor                   == Sun Microsystems Inc.
+java.vendor.url               == http://java.sun.com/
+java.class.version            == 50.0
+java.compiler                 == null
+java.home                     == C:\Program Files\Java\jre6
+java.io.tmpdir                == C:\Users\MLYTVY~1\AppData\Local\Temp\
+os.name                       == Windows 7
+os.arch                       == amd64
+os.version                    == 6.1
+path.separator                == ;
+file.separator                == \
+file.encoding                 == Cp1252
+user.name                     == mlytvynyuk
+user.home                     == C:\Users\mlytvynyuk
+user.dir                      == C:\Users\mlytvynyuk\AppData\Local\Temp\I1362496407\Windows
+user.language                 == en
+user.region                   == null
+__________________________________________________________________________
+
+Installed Feature(s) Application of BlackBerry 10 WebWorks SDK 1.0.4.11
+
+Install Begin: MARCH 5, 2013 10:13:34 AM EST
+Install End: MARCH 5, 2013 10:14:04 AM EST
+
+Installed by InstallAnywhere 14.0 Enterprise Build 4349
+
+
+User Interactions
+-----------------
+
+
+#Choose Install Folder
+#---------------------
+USER_INSTALL_DIR=d:\\tools\\BlackBerry 10 WebWorks SDK 1.0.4.11
+
+#Install
+#-------
+-fileOverwrite_d\:\\tools\\BlackBerry\ 10\ WebWorks\ SDK\ 1.0.4.11\\uninstaller\\Uninstall\ BlackBerry\ 10\ WebWorks\ SDK\ 1.0.4.11.lax=Yes
+-fileOverwrite_d\:\\tools\\BlackBerry\ 10\ WebWorks\ SDK\ 1.0.4.11\\uninstaller\\resource\\iawin64_x64.dll=Yes
+-fileOverwrite_d\:\\tools\\BlackBerry\ 10\ WebWorks\ SDK\ 1.0.4.11\\uninstaller\\resource\\iawin32.dll=Yes
+-fileOverwrite_d\:\\tools\\BlackBerry\ 10\ WebWorks\ SDK\ 1.0.4.11\\uninstaller\\resource\\remove.exe=Yes
+-fileOverwrite_d\:\\tools\\BlackBerry\ 10\ WebWorks\ SDK\ 1.0.4.11\\bbwp.bat=Yes
+-fileOverwrite_d\:\\tools\\BlackBerry\ 10\ WebWorks\ SDK\ 1.0.4.11\\licenses.txt=Yes
+-fileOverwrite_d\:\\tools\\BlackBerry\ 10\ WebWorks\ SDK\ 1.0.4.11\\SDK_license_English.txt=Yes
+-fileOverwrite_d\:\\tools\\BlackBerry\ 10\ WebWorks\ SDK\ 1.0.4.11\\third_party\\node\\windows\\node.exe=Yes
+-fileOverwrite_d\:\\tools\\BlackBerry\ 10\ WebWorks\ SDK\ 1.0.4.11\\lib\\bbwp.js=Yes
+-fileOverwrite_d\:\\tools\\BlackBerry\ 10\ WebWorks\ SDK\ 1.0.4.11\\lib\\bbwpignore.js=Yes
+
+Summary
+-------
+
+Installation: Successful.
+
+444 Successes
+0 Warnings
+0 NonFatalErrors
+0 FatalErrors
+
+Action Notes:
+
+None
+
+Install Log Detail:
+
+Check Disk Space:         C:\Program Files\
+                          Status: SUCCESSFUL
+                          Additional Notes: NOTE - Required Disk Space: 15,930,489; Free Disk Space: 191,247,339,520
+
+
+
+Check Disk Space:         d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11
+                          Status: SUCCESSFUL
+                          Additional Notes: NOTE - Required Disk Space: 15,930,489; Free Disk Space: 336,550,166,528
+
+Check Disk Space:         d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11
+                          Status: SUCCESSFUL
+                          Additional Notes: NOTE - Required Disk Space: 15,930,489; Free Disk Space: 336,550,166,528
+
+Install Directory:        d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\
+                          Status: SUCCESSFUL
+
+Install Directory:        d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\uninstaller\
+                          Status: SUCCESSFUL
+
+Install Uninstaller:      BlackBerry 10 WebWorks SDK 1.0.4.11(Install All Uninstaller Components)
+                          Status: SUCCESSFUL
+
+Create LaunchAnywhere:    resource jar is empty
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\uninstaller\Uninstall BlackBerry 10 WebWorks SDK 1.0.4.11.exe
+                          Status: SUCCESSFUL
+
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\uninstaller\Uninstall BlackBerry 10 WebWorks SDK 1.0.4.11.lax
+                          Status: SUCCESSFUL
+
+Install Directory:        d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\uninstaller\resource\
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\uninstaller\resource\iawin64_x64.dll
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\uninstaller\resource\iawin32.dll
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\uninstaller\resource\remove.exe
+                          Status: SUCCESSFUL
+
+Make Registry Entry:      Key: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\BlackBerry 10 WebWorks SDK 1.0.4.11
+                          Value Name: DisplayName
+                          Value Data: BlackBerry 10 WebWorks SDK 1.0.4.11
+                          Status: SUCCESSFUL
+
+Make Registry Entry:      Key: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\BlackBerry 10 WebWorks SDK 1.0.4.11
+                          Value Name: UninstallString
+                          Value Data: "d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\uninstaller\Uninstall BlackBerry 10 WebWorks SDK 1.0.4.11.exe"
+                          Status: SUCCESSFUL
+
+Make Registry Entry:      Key: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\BlackBerry 10 WebWorks SDK 1.0.4.11
+                          Value Name: Publisher
+                          Value Data: Research In Motion
+                          Status: SUCCESSFUL
+
+Make Registry Entry:      Key: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\BlackBerry 10 WebWorks SDK 1.0.4.11
+                          Value Name: URLInfoAbout
+                          Value Data: www.rim.com
+                          Status: SUCCESSFUL
+
+Make Registry Entry:      Key: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\BlackBerry 10 WebWorks SDK 1.0.4.11
+                          Value Name: ProductID
+                          Value Data: 9acd4288-1f07-11b2-82ed-f0c0f4dbd299
+                          Status: SUCCESSFUL
+
+Make Registry Entry:      Key: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\BlackBerry 10 WebWorks SDK 1.0.4.11
+                          Value Name: InstallLocation
+                          Value Data: d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11
+                          Status: SUCCESSFUL
+
+Make Registry Entry:      Key: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\BlackBerry 10 WebWorks SDK 1.0.4.11
+                          Value Name: InstallDate
+                          Value Data: Tue Mar 05 10:14:01 EST 2013
+                          Status: SUCCESSFUL
+
+Make Registry Entry:      Key: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\BlackBerry 10 WebWorks SDK 1.0.4.11
+                          Value Name: DisplayVersion
+                          Value Data: 1.0.4.11
+                          Status: SUCCESSFUL
+
+Install Uninstaller:      BlackBerry 10 WebWorks SDK 1.0.4.11(Install All Uninstaller Components)
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\default-icon.png
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\dependencies\tools\bin\blackberry-airpackager
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\dependencies\tools\bin\blackberry-airpackager.bat
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\dependencies\tools\bin\blackberry-connect
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\dependencies\tools\bin\blackberry-connect.bat
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\dependencies\tools\bin\blackberry-custompackager
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\dependencies\tools\bin\blackberry-custompackager.bat
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\dependencies\tools\bin\blackberry-debugtokenrequest
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\dependencies\tools\bin\blackberry-debugtokenrequest.bat
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\dependencies\tools\bin\blackberry-deploy
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\dependencies\tools\bin\blackberry-deploy.bat
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\dependencies\tools\bin\blackberry-keytool
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\dependencies\tools\bin\blackberry-keytool.bat
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\dependencies\tools\bin\blackberry-nativepackager
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\dependencies\tools\bin\blackberry-nativepackager.bat
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\dependencies\tools\bin\blackberry-pythonpackager
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\dependencies\tools\bin\blackberry-pythonpackager.bat
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\dependencies\tools\bin\blackberry-signer
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\dependencies\tools\bin\blackberry-signer.bat
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\dependencies\tools\bin\blackberry-uripackager
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\dependencies\tools\bin\blackberry-uripackager.bat
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\dependencies\tools\lib\apache-mime4j-0.6.jar
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\dependencies\tools\lib\BarAir.jar
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\dependencies\tools\lib\BarDeploy.jar
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\dependencies\tools\lib\BarLibrary.jar
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\dependencies\tools\lib\BarPackager.jar
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\dependencies\tools\lib\BarSigner.jar
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\dependencies\tools\lib\commons-codec-1.4.jar
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\dependencies\tools\lib\commons-logging-1.1.1.jar
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\dependencies\tools\lib\Connect.jar
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\dependencies\tools\lib\DebugTokenRequest.jar
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\dependencies\tools\lib\EccpressoAll.jar
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\dependencies\tools\lib\EccpressoJDK15ECC.jar
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\dependencies\tools\lib\httpclient-4.0.3.jar
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\dependencies\tools\lib\httpcore-4.0.1.jar
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\dependencies\tools\lib\httpmime-4.0.3.jar
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\dependencies\tools\lib\jqconnDoor.jar
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\dependencies\tools\lib\KeyTool.jar
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\clientFiles\webworks-1.0.4.11.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\dependencies\bootstrap\index.html
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\dependencies\bootstrap\require.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\dependencies\bootstrap\ui.html
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\dependencies\bootstrap\wwe
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\dependencies\jnext\auth.txt
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\app\client.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\app\index.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\app\manifest.json
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\bbm.platform\BBMEvents.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\bbm.platform\BBMJNEXT.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\bbm.platform\client.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\bbm.platform\device\libbbm.so
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\bbm.platform\index.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\bbm.platform\manifest.json
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\bbm.platform\simulator\libbbm.so
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\card\client.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\card\index.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\card\manifest.json
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\connection\client.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\connection\index.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\connection\manifest.json
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\event\client.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\event\index.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\event\manifest.json
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\identity\client.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\identity\index.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\identity\manifest.json
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\invoke\client.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\invoke\index.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\invoke\invocationEvents.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\invoke\manifest.json
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\invoked\client.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\invoked\index.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\invoked\invocationEvents.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\invoked\manifest.json
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\io\client.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\io\index.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\io\manifest.json
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\io.filetransfer\client.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\io.filetransfer\device\libfiletransfer.so
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\io.filetransfer\index.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\io.filetransfer\manifest.json
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\io.filetransfer\simulator\libfiletransfer.so
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\jpps\client.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\jpps\device\libjpps.so
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\jpps\index.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\jpps\manifest.json
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\jpps\simulator\libjpps.so
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\notification\client.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\notification\index.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\notification\manifest.json
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\payment\client.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\payment\device\libpaymentjnext.so
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\payment\index.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\payment\manifest.json
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\payment\simulator\libpaymentjnext.so
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\pim.calendar\Attendee.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\pim.calendar\CalendarAccount.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\pim.calendar\CalendarError.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\pim.calendar\CalendarEvent.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\pim.calendar\CalendarEventFilter.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\pim.calendar\CalendarFindOptions.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\pim.calendar\CalendarFolder.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\pim.calendar\CalendarRepeatRule.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\pim.calendar\calendarUtils.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\pim.calendar\client.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\pim.calendar\device\libpimcalendar.so
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\pim.calendar\index.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\pim.calendar\manifest.json
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\pim.calendar\simulator\libpimcalendar.so
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\pim.contacts\client.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\pim.contacts\Contact.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\pim.contacts\ContactAccount.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\pim.contacts\ContactActivity.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\pim.contacts\ContactAddress.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\pim.contacts\contactConsts.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\pim.contacts\ContactError.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\pim.contacts\ContactField.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\pim.contacts\ContactFindOptions.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\pim.contacts\ContactName.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\pim.contacts\ContactNews.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\pim.contacts\ContactOrganization.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\pim.contacts\ContactPhoto.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\pim.contacts\ContactPickerOptions.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\pim.contacts\contactUtils.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\pim.contacts\device\libpimcontacts.so
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\pim.contacts\index.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\pim.contacts\manifest.json
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\pim.contacts\simulator\libpimcontacts.so
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\push\client.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\push\device\libpushjnext.so
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\push\index.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\push\manifest.json
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\push\simulator\libpushjnext.so
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\sensors\client.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\sensors\device\libsensors.so
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\sensors\index.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\sensors\manifest.json
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\sensors\sensorsEvents.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\sensors\sensorsJNEXT.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\sensors\simulator\libsensors.so
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\system\client.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\system\index.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\system\manifest.json
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\ui.contextmenu\client.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\ui.contextmenu\index.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\ui.contextmenu\manifest.json
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\ui.cover\client.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\ui.cover\index.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\ui.cover\manifest.json
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\ui.dialog\client.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\ui.dialog\index.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\ui.dialog\manifest.json
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\ui.toast\client.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\ui.toast\index.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\ui.toast\manifest.json
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\utils\client.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\utils\device\libutils.so
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\utils\index.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\utils\manifest.json
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\ext\utils\simulator\libutils.so
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\lib\config\default.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\lib\config\user.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\lib\config.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\lib\controllerWebView.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\lib\event.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\lib\events\applicationEvents.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\lib\events\deviceEvents.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\lib\exception.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\lib\framework.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\lib\jnext.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\lib\overlayWebView.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\lib\plugins\default.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\lib\plugins\event.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\lib\plugins\extensions.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\lib\policy\folderAccess.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\lib\policy\webkitOriginAccess.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\lib\policy\whitelist.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\lib\server.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\lib\utils.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\lib\webkitEvent.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\lib\webkitHandlers\networkResourceRequested.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\lib\webview.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\lib\webworks-info.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\Framework\README.md
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\lib\bar-builder.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\lib\bar-conf.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\lib\cmdline.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\lib\conf.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\lib\config-parser.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\lib\extension-manager.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\lib\file-manager.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\lib\i18n-manager.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\lib\localize.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\lib\logger.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\lib\native-packager.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\lib\packager-utils.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\lib\packager-validator.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\lib\session.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\lib\signing-helper.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\.bin\jasmine-node
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\.bin\xlocalize
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\commander\.npmignore
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\commander\.travis.yml
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\commander\History.md
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\commander\index.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\commander\lib\commander.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\commander\Makefile
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\commander\package.json
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\commander\Readme.md
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\data2xml\.npmignore
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\data2xml\.travis.yml
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\data2xml\data2xml.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\data2xml\examples\complex.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\data2xml\examples\simple.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\data2xml\package.json
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\data2xml\README.md
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\data2xml\test\basics.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\data2xml\test\load.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\data2xml\test\xml-generation.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\jWorkflow\.npmignore
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\jWorkflow\jworkflow-min-0.6.0.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\jWorkflow\lib\jWorkflow.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\jWorkflow\package.json
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\jWorkflow\Rakefile
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\jWorkflow\README.rdoc
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\jWorkflow\test\test.html
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\jWorkflow\test\test_jworkflow.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\jWorkflow\test\vendor\jquery.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\jWorkflow\test\vendor\qunit.css
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\jWorkflow\test\vendor\qunit.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\localize\bin\translations.json
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\localize\bin\xlocalize.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\localize\lib\localize.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\localize\package.json
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\localize\README.md
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\localize\test\localize.test.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\localize\test\translations\subsitution\translations.json
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\localize\test\translations\translations\helloWorld.es.txt
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\localize\test\translations\translations\helloWorld.txt
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\localize\test\translations\translations.json
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\localize\test\xlocalize\subdir\test2.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\localize\test\xlocalize\test.html
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\localize\test\xlocalize.test.sh
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\localize\test\xlocalize.testfile1.json
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\localize\test\xlocalize.testfile2.json
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\localize\test\xlocalize.testfile3.json
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\localize\test\xlocalize.testfile4.json
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\validator\.npmignore
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\validator\index.html
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\validator\index.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\validator\lib\defaultError.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\validator\lib\entities.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\validator\lib\filter.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\validator\lib\index.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\validator\lib\validator.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\validator\lib\validators.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\validator\lib\xss.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\validator\package.json
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\validator\README.md
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\validator\test\filter.test.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\validator\test\run.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\validator\test\validator.test.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\validator\test.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\validator\validator-min.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\validator\validator.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\wrench\.npmignore
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\wrench\lib\wrench.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\wrench\lib\x.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\wrench\package.json
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\wrench\readme.md
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\wrench\tests\mkdir.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\wrench\tests\readdir\bar.txt
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\wrench\tests\readdir\foo\bar\ipsum.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\wrench\tests\readdir\foo\dolor.md
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\wrench\tests\readdir\foo\lorem.txt
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\wrench\tests\readdir.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\wrench\tests\runner.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\.npmignore
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\Cakefile
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\lib\xml2js.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\AUTHORS
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\examples\big-not-pretty.xml
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\examples\example.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\examples\get-products.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\examples\hello-world.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\examples\not-pretty.xml
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\examples\pretty-print.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\examples\shopping.xml
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\examples\strict.dtd
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\examples\switch-bench.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\examples\test.html
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\examples\test.xml
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\lib\sax.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\package.json
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\README.md
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\test\buffer-overrun.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\test\case.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\test\cdata-chunked.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\test\cdata-end-split.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\test\cdata-fake-end.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\test\cdata-multiple.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\test\cdata.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\test\cyrillic.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\test\duplicate-attribute.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\test\entities.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\test\entity-mega.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\test\index.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\test\issue-23.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\test\issue-30.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\test\issue-35.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\test\issue-47.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\test\issue-49.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\test\issue-84.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\test\parser-position.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\test\script-close-better.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\test\script.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\test\self-closing-child-strict.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\test\self-closing-child.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\test\self-closing-tag.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\test\stray-ending.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\test\trailing-attribute-no-value.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\test\trailing-non-whitespace.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\test\unclosed-root.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\test\unquoted.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\test\xmlns-issue-41.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\test\xmlns-rebinding.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\test\xmlns-strict.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\test\xmlns-unbound.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\test\xmlns-xml-default-ns.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\test\xmlns-xml-default-prefix-attribute.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\test\xmlns-xml-default-prefix.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\node_modules\sax\test\xmlns-xml-default-redefine.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\package.json
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\README.md
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\src\xml2js.coffee
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\test\fixtures\sample.xml
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\xml2js\test\xml2js.test.coffee
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\CHANGES.md
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\inflate.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\.npmignore
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\CHANGES.md
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\design\q0.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\design\q1.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\design\q2.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\design\q3.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\design\q4.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\design\q5.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\design\q6.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\design\q7.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\design\README.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\examples\async-generators\0.html
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\examples\async-generators\1-return.html
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\examples\async-generators\2-error-propagation.html
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\examples\async-generators\3-wishful-thinking.html
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\examples\async-generators\README.md
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\examples\delay.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\examples\join.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\examples\shallow-deep.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\examples\step1.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\examples\step2.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\examples\step3.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\examples\then1.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\examples\then2.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\examples\then3.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\examples\view1.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\examples\view2.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\examples\view3.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\markm-mzero.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\node_modules\event-queue\event-queue.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\node_modules\event-queue\package.json
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\node_modules\event-queue\readme.md
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\package.json
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\q.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\q.min.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\README.md
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\ref_send.md
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\test\all.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\test\issue\22.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\test\issue\9.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\test\join.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\test\methods.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\test\multiple-listeners.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\test\promised-chains.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\test\reject.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\test\resolve-reject.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\test\thenable.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\test\value-of.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\test.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q\TODO
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q-io\CHANGES
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q-io\package.json
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q-io\q-io.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q-io\README
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q-io\test\issues\1.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q-io-buffer\package.json
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q-io-buffer\q-io-buffer.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\node_modules\q-io-buffer\README
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\package.json
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\README.md
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\test.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\zip.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\node_modules\zip\zip.zip
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\params-example.json
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\README.txt
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\third_party\data2xml\data2xml.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\third_party\jnext\jnext-patch.txt
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\third_party\wrench\wrench.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\bbwp.bat
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\licenses.txt
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\SDK_license_English.txt
+                          Status: SUCCESSFUL
+
+Install Directory:        d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\third_party\
+                          Status: SUCCESSFUL
+                          Additional Notes: NOTE - Directory already existed
+
+Install Directory:        d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\third_party\node\
+                          Status: SUCCESSFUL
+
+Install Directory:        d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\third_party\node\windows\
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\third_party\node\windows\node.exe
+                          Status: SUCCESSFUL
+
+Install Directory:        d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\lib\
+                          Status: SUCCESSFUL
+                          Additional Notes: NOTE - Directory already existed
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\lib\bbwp.js
+                          Status: SUCCESSFUL
+
+Install File:             d:\tools\BlackBerry 10 WebWorks SDK 1.0.4.11\lib\bbwpignore.js
+                          Status: SUCCESSFUL
+
+
+Execute Script/Batch file:   Fixing the bin permission (WINDOWS)
+                          Status: SUCCESSFUL
+

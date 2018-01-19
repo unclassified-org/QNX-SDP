@@ -1,0 +1,118 @@
+###################################################################################
+##
+## This includes non-platform-specific items that are common to all IFSs
+## and are not critical to come up as early as possible
+##
+###################################################################################
+
+[uid=0 gid=0 perms=0755 dperms=0755 -optional]
+
+### Scripts
+
+[+script] car_startup_bootscript = {
+    display_msg Build_8
+}
+
+[perms=0644] .console.sh = {
+    nowait=0
+    while getopts n opt
+    do
+        case "$opt" in
+            n) nowait=1;;
+            \?)
+                # ignore errors so the shell will start
+                ;;
+        esac
+    done
+    shift "$((OPTIND - 1))"
+    [ "$#" -gt 0 ] && echo ".console.sh: ignoring extra parameter(s)" >&2
+    
+    # allow CTRL-C to disable a bad env.sh
+    ctrl_c () \{ unset ENV || :; \}
+    trap ctrl_c INT
+    
+    : $\{BASEFS=/base\}
+    ENV=/proc/boot/.console-profile
+    export BASEFS ENV
+
+    if [ "$nowait" -eq 0 ]
+    then
+        waitfor "$BASEFS/scripts/env.sh"
+    fi
+    
+    while :
+    do
+        ksh -l
+        sleep 1
+    done
+}
+
+[perms=0644] .console-profile = {
+    unset ENV ||:
+    x=$BASEFS/scripts/env.sh
+    [ -e "$x" ] && . "$x"
+    unset x
+}
+
+[perms=0755] timestamp-procnto = {
+    #!/proc/boot/ksh
+    
+    waitfor /dev/pipe
+    #Get time as early as possible
+    time=$(/proc/boot/uptime_car2)
+
+    if [ $# -eq 0 ]; then 
+        print "Usage: $0 <milestone information>"
+        exit 1
+    fi
+        
+    print "CAR_BOOT_METRICS: ($1) at $time seconds"
+    
+    if [ -e /dev/slog ]; then
+        logger "CAR_BOOT_METRICS: ($1) at $time seconds"
+    fi
+}
+
+[type=link] /bin/sh=/proc/boot/ksh
+[type=link] /proc/boot/sh=/proc/boot/ksh
+
+# Redirect console messages
+[type=link] /dev/console=/dev/ser1
+
+### Libraries
+[perms=0755]
+
+# Shared libraries
+libc.so.3
+libm.so.2
+
+# Block driver
+libcam.so.2
+io-blk.so
+cam-disk.so
+fs-qnx6.so
+fs-dos.so
+#libtracelog.so.1
+
+#for early audio (common to all platforms)
+libasound.so.2
+libpps.so.1
+libaudio_manager.so.1
+libcsm.so.1
+
+### Executables
+[perms=0755 data=c]
+ksh
+pipe
+shutdown
+waitfor=on
+
+#for early audio 
+io-audio
+
+#for boot-time measuring
+logger
+uptime_car2
+timestamp
+
+##eof

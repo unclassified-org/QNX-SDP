@@ -1,0 +1,25 @@
+/*$Id: loading_animation.scss 5673 2013-01-14 17:23:58Z lgreenway@qnx.com $*/
+
+$commonDir: "platform:///apps/common";
+
+/**
+ * CSS rules for the global loading animation
+ */
+
+.loadingOverlay {
+	background: rgba(0, 0, 0, 0.3) url("#{$commonDir}/img/loadingOverlay.png") no-repeat top !important;
+}
+
+.loading {
+	background: transparent url("#{$commonDir}/img/loading.png") no-repeat 50% 50%;
+}
+
+.loadingAnimation {
+	background: transparent url("#{$commonDir}/img/loading.png") no-repeat 50% 50%;
+}
+
+/** Used to display wait spinner in dialogs*/
+.waitspinner {
+	background: transparent url("#{$commonDir}/img/loading.png") no-repeat 50% 50% !important;
+	background-size: 100% 100% !important;
+}

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fileset name="basefs.common.asr.generic">
+  <file name="lib/dll/asr/asr-att-recognition.so" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/asr/asr-capture-audio.so" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/asr/asr-car-hmi-prompt.so" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/asr/asr-dialer-conversation.so" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/asr/asr-dump-conversation.so" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/asr/asr-file-audio.so" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/asr/asr-initiator-conversation.so" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/asr/asr-mm-control-car-media-conversation.so" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/asr/asr-mm-player-car-media-conversation.so" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/asr/asr-nuance_tts-prompt.so" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/asr/asr-offboard_tts-prompt.so" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/asr/asr-search-conversation.so" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/asr/asr-step-conversation.so" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/asr/asr-vlingo-recognition.so" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/asr/asr-wav_file-prompt.so" uid="root" gid="nto" mode="0755"/>
+
+  <directory name="opt/asr/conversation/sounds/en-US" uid="root" gid="nto" mode="0755"/>
+  <directory name="opt/asr/conversation/sounds/fr-FR" uid="root" gid="nto" mode="0755"/>
+  <directory name="opt/asr/conversation/en-US/common" uid="root" gid="nto" mode="0755"/>
+  <file name="opt/asr/conversation/sounds/beep.wav" uid="root" gid="nto" mode="0755"/>
+  <file name="opt/asr/conversation/sounds/error.wav" uid="root" gid="nto" mode="0755"/>
+  <file name="opt/asr/conversation/sounds/session_end.wav" uid="root" gid="nto" mode="0755"/>
+  <file name="opt/asr/conversation/sounds/voice_app_cancel.wav" uid="root" gid="nto" mode="0755"/>
+  <file name="opt/asr/conversation/sounds/voice_app_error.wav" uid="root" gid="nto" mode="0755"/>
+  <file name="opt/asr/conversation/sounds/voice_app_results_success.wav" uid="root" gid="nto" mode="0755"/>
+  <file name="opt/asr/conversation/sounds/voice_app_start_recognition.wav" uid="root" gid="nto" mode="0755"/>
+  <file name="opt/asr/conversation/sounds/voice_app_stop_listening_start_thinking.wav" uid="root" gid="nto" mode="0755"/>
+  <file name="opt/asr/conversation/sounds/voice_app_wake_start.wav" uid="root" gid="nto" mode="0755"/>
+
+  <file name="opt/asr/conversation/en-US/common/car-control.cfg" uid="root" gid="nto" mode="0755"/>
+
+  <file name="opt/asr/conversation/en-US/car-media/car-control.cfg" uid="root" gid="nto" mode="0755"/>
+  <file name="opt/asr/conversation/en-US/car-media/car-prompts.cfg" uid="root" gid="nto" mode="0755"/>
+  <file name="opt/asr/conversation/en-US/dialer/car-control.cfg" uid="root" gid="nto" mode="0755"/>
+  <file name="opt/asr/conversation/en-US/dialer/car-prompts.cfg" uid="root" gid="nto" mode="0755"/>
+
+  <file name="opt/asr/conversation/en-US/initiator/prompts.cfg" uid="root" gid="nto" mode="0755"/>
+
+  <file name="opt/asr/conversation/en-US/search/car-control.cfg" uid="root" gid="nto" mode="0755"/>
+  <file name="opt/asr/conversation/en-US/search/car-prompts.cfg" uid="root" gid="nto" mode="0755"/>
+
+  <file name="opt/asr/conversation/en-US/sounds/performing_query.wav" uid="root" gid="nto" mode="0755"/>
+  <file name="opt/asr/conversation/en-US/sounds/salutation.wav" uid="root" gid="nto" mode="0755"/>
+  <file name="opt/asr/conversation/en-US/sounds/service_error.wav" uid="root" gid="nto" mode="0755"/>
+
+  <file name="opt/asr/conversation/en-US/step/car-prompts.cfg" uid="root" gid="nto" mode="0755"/>
+
+  <file name="opt/asr/prompt/en-US/vocon3200/car-prompts.cfg" uid="root" gid="nto" mode="0755"/>
+
+  <file name="etc/asr-car.cfg" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libasr-core.so" target="libasr-core.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libasr-core.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/sbin/io-asr-generic" uid="root" gid="nto" mode="0755"/>
+</fileset>

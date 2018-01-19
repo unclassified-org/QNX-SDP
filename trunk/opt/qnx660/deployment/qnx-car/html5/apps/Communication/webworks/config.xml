@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:rim="http://www.blackberry.com/ns/widgets"
+	version="1.0.0.0" id="Communication" xml:lang="en">
+	<author href="http://www.qnx.com/" rim:copyright="Copyright 2012 QNX Software Systems Limited">QNX Software
+		Systems Limited
+	</author>
+	<name>Communication</name>
+	<rim:category name="system"/>
+	<rim:permissions>
+		<rim:permit>access_shared</rim:permit>
+	</rim:permissions>
+	<access uri="file:///" />
+	<access uri="*" />
+	<content src="index.html" />
+	<icon src="icon.png" />
+	<feature id="qnx.application" required="true" version="1.0.0.0" />
+	<feature id="qnx.application.event" required="true" version="1.0.0.0" />
+	<feature id="qnx.message" required="true" version="1.0.0.0" />
+	<feature id="qnx.bluetooth.pbap" required="true" version="1.0.0.0" />
+	<feature id="qnx.bluetooth" required="true" version="1.0.0.0" />
+	<feature id="qnx.phone" required="true" version="1.0.0.0" />
+	<feature id="qnx.settings" required="true" version="1.0.0.0" />
+	<feature id="car.theme" required="true" version="1.0.0.0"/>
+	<feature id="car.sensors" required="true" version="1.0.0.0" />
+</widget>

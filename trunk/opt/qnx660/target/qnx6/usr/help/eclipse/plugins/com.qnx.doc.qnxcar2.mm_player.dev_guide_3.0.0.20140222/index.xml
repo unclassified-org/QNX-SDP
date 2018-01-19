@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<index>
+<entry keyword="AVRCP plugin">
+<topic href="topic/mpp_avrcp.html#avrcp_plugin" title="AVRCP Plugin"/>
+</entry>
+<entry keyword="browsing and playback interface">
+<topic href="topic/mmp_api/mmplayer_browse_and_play_api.html#browse_and_playback_API" title="Media browsing and playback interface"/>
+<entry keyword="constants">
+<topic href="topic/mmp_api/mmplayer_browse_and_play_api_constants.html#browse_and_playback_API_constants" title="Constants in types.h"/>
+</entry>
+<entry keyword="data types">
+<topic href="topic/mmp_api/mmplayer_browse_and_play_api_data_types.html#browse_and_playback_API_data_types" title="Data types in types.h"/>
+</entry>
+<entry keyword="enumerations">
+<topic href="topic/mmp_api/mmplayer_browse_and_play_api_enums.html#browse_and_playback_API_enums" title="Enumerations in types.h"/>
+</entry>
+<entry keyword="functions">
+<topic href="topic/mmp_api/mmplayer_browse_and_play_api_functions.html#browse_and_playback_API_functions" title="Functions in mmplayerclient.h"/>
+</entry>
+</entry>
+<entry keyword="car.mediaplayer extension">
+<topic href="topic/arch_overview.html#arch" title="Architecture"/>
+</entry>
+<entry keyword="configuration file">
+<topic href="topic/config_file.html#config" title="Configuration file"/>
+</entry>
+<entry keyword="configuring Media Player Plugins (MPPs)">
+<topic href="topic/config_file.html#config" title="Configuration file"/>
+</entry>
+<entry keyword="configuring playback settings">
+<topic href="topic/config_file.html#config" title="Configuration file"/>
+</entry>
+<entry keyword="Digital Media Controller (DMC)">
+<topic href="topic/mpp_dlna.html#dlna_plugin" title="DLNA Plugin"/>
+</entry>
+<entry keyword="Digital Media Renderer (DMR)">
+<topic href="topic/mpp_dlna.html#dlna_plugin" title="DLNA Plugin"/>
+</entry>
+<entry keyword="Digital Media Server (DMS)">
+<topic href="topic/mpp_dlna.html#dlna_plugin" title="DLNA Plugin"/>
+</entry>
+<entry keyword="DLNA plugin">
+<topic href="topic/mpp_dlna.html#dlna_plugin" title="DLNA Plugin"/>
+</entry>
+<entry keyword="event interface">
+<topic href="topic/mmp_api/mmplayer_event_api.html#event_API" title="Event interface"/>
+<entry keyword="data types">
+<topic href="topic/mmp_api/mmplayer_event_api_data_types.html#event_API_data_types" title="Data types in events.h"/>
+</entry>
+<entry keyword="enumerations">
+<topic href="topic/mmp_api/mmplayer_event_api_enums.html#event_API_enums" title="Enumerations in events.h and types.h"/>
+</entry>
+<entry keyword="functions">
+<topic href="topic/mmp_api/mmplayer_event_functions.html#event_API_functions" title="Functions in events.h"/>
+</entry>
+</entry>
+<entry keyword="HMI app communication with mm-player">
+<topic href="topic/arch_overview.html#arch" title="Architecture"/>
+</entry>
+<entry keyword="iPod plugin">
+<topic href="topic/mpp_ipod.html#ipod_plugin" title="iPod Plugin"/>
+</entry>
+<entry keyword="media nodes">
+<topic href="topic/medianodes.html#medianodes" title="Media nodes"/>
+</entry>
+<entry keyword="Media Player Plugins (MPPs)">
+<topic href="topic/mpp_plugins.html#plugins" title="Media Player Plugins"/>
+<entry keyword="See mm-player plugins">

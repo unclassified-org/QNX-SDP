@@ -1,0 +1,17 @@
+<Client>
+	<DeviceId>
+		<DisplayName>Marantz DMP</DisplayName>
+		<DeviceDescriptionRecognition>
+			<DescriptionText>marantz DMP</DescriptionText>
+		</DeviceDescriptionRecognition>
+		<MappingUpdatePolicy>FIX</MappingUpdatePolicy>
+	</DeviceId>
+	<Adaptations>
+		<MimeTranslations>
+			<MimeTypeMapping>
+				<In>audio/x-wav</In>
+				<Out>audio/wav</Out>
+			</MimeTypeMapping>
+		</MimeTranslations>
+	</Adaptations>
+</Client>

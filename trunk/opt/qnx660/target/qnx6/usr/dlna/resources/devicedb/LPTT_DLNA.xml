@@ -1,0 +1,15 @@
+<Client>
+    <DeviceId>
+        <DisplayName>LPTT</DisplayName>
+        <HttpRecognition>
+            <HttpText>LPTT:</HttpText>
+        </HttpRecognition>
+        <MappingUpdatePolicy>FIXPC1</MappingUpdatePolicy>
+    </DeviceId>
+    <Adaptations>
+        <DefaultView>byfolder</DefaultView>
+        <DLNA>
+            <Version>DLNA15</Version>
+        </DLNA>
+    </Adaptations>
+</Client> 

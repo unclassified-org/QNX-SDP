@@ -1,0 +1,30 @@
+<view name='ipodlike' path='ipodlike.view'>
+	<navtree>
+		<container id='music'>
+			<link id='music/all' />
+			<link id='music/genre' />
+			<link id='music/artists' />
+			<link id='music/albums' />
+			<link id='music/composers' />
+			<link id='music/playlists' />
+			<link id='music/mytwonky' />
+		</container>
+		<container id='picture' >
+			<link id='picture/all' />
+			<link id='picture/date' />
+			<link id='picture/albums' />
+			<link id='picture/keywords' />
+			<link id='picture/rating' />
+			<link id='picture/playlists' />
+			<link id='picture/mytwonky' />
+		</container>
+		<container id='video' >
+			<link id='video/all' />
+			<link id='video/albums' />
+			<link id='video/date' />
+			<link id='video/rating' />
+			<link id='video/playlists' />
+			<link id='video/mytwonky' />
+		</container>
+	</navtree>
+</view>

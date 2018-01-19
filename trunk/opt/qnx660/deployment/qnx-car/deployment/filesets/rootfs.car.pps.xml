@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fileset name="rootfs.car.pps">
+  <directory name="var/pps/system/navigator" uid="root" gid="nto" mode="0775"/>
+  <directory name="var/pps/services/navigator" uid="root" gid="nto" mode="0775"/>
+  <directory name="var/pps/applications" uid="root" gid="nto" mode="0775"/>
+  <file name="var/pps/applications/appremote" uid="root" gid="nto" mode="0777"/>
+  <directory name="var/pps/qnxcar" uid="root" gid="nto" mode="0775"/>
+  <file name="var/pps/qnxcar/sensors" uid="root" gid="nto" mode="0777"/>
+  <file name="var/pps/qnxcar/hvac" uid="root" gid="nto" mode="0777"/>
+  <file name="var/pps/qnxcar/locale" uid="root" gid="nto" mode="0777"/>
+  <directory name="var/pps/qnxcar/system" uid="root" gid="nto" mode="0775"/>
+  <file name="var/pps/qnxcar/system/settings" uid="root" gid="nto" mode="0777"/>
+  <file name="var/pps/qnxcar/system/info" uid="root" gid="nto" mode="0444"/>
+  <file name="var/pps/qnxcar/themes" uid="root" gid="nto" mode="0777"/>
+  <directory name="var/pps/qnxcar/profile" uid="root" gid="nto" mode="0775"/>
+  <file name="var/pps/qnxcar/profile/theme" uid="root" gid="nto" mode="0777"/>
+  <file name="var/pps/qnxcar/profile/user" uid="root" gid="nto" mode="0777"/>
+  <directory name="var/pps/services/update" uid="root" gid="nto" mode="0775"/>
+  <file name="var/pps/services/update/status" uid="root" gid="nto" mode="0777"/>
+  <file name="var/pps/services/update/settings" uid="root" gid="nto" mode="0777"/>
+  <file name="var/pps/services/update/target" uid="root" gid="nto" mode="0777"/>
+  <file name="var/pps/qnxcar/navigation/options" uid="root" gid="nto" mode="0755"/>
+  <file name="var/pps/qnxcar/navigation/geolocation" uid="root" gid="nto" mode="0755"/>
+  <file name="var/pps/qnxcar/navigation/control" uid="root" gid="nto" mode="0755"/>
+  <directory name="var/pps/services/mm-control" uid="root" gid="nto" mode="0775"/>
+  <directory name="var/pps/services/asr" uid="root" gid="nto" mode="0775"/>
+  <file name="var/pps/services/asr/control" uid="root" gid="nto" mode="0777"/>
+  <directory name="var/pps/services/vnc/discovery/usb" uid="root" gid="nto" mode="0775"/>
+  <directory name="var/pps/services/hmi-notification" uid="root" gid="nto" mode="0775"/>
+  <file name="var/pps/services/hmi-notification/Status" uid="root" gid="nto" mode="0777"/>
+  <directory name="var/pps/services/mirrorlink" uid="root" gid="nto" mode="0775"/>
+</fileset>

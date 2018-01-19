@@ -1,0 +1,40 @@
+/* $Id$ */
+
+.wrapper {
+	background: $background-color $loadingOverlay;
+	display: -webkit-box;
+	-webkit-box-flex: 1;
+	-webkit-box-pack: center;
+	-webkit-box-align: center;
+}
+
+.loading {
+	content: $loading;
+}
+
+@-webkit-keyframes rotate {
+	from {
+	  -webkit-transform: rotate(0deg);
+	}
+	to { 
+	  -webkit-transform: rotate(360deg);
+	}
+}
+
+.rotate {
+	line-height: 0px;
+	-webkit-animation-name: rotate;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+}
+
+.hidden {
+    opacity: 0;
+    -webkit-transition: opacity 0.3s linear;
+}
+
+.visible {
+    opacity: 1;
+    -webkit-transition: opacity 0.3s linear;
+}

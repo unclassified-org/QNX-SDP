@@ -1,0 +1,808 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<index>
+<entry keyword="[n] (nonpersistence qualifier)">
+<topic href="topic/howppsworks.html#ppsrefconcept" title="Overview of the PPS Service"/>
+</entry>
+<entry keyword="@ sign (appears at start of every object)">
+<topic href="topic/howppsworks.html#ppsrefconcept" title="Overview of the PPS Service"/>
+</entry>
+<entry keyword="&lt;device&gt; directory">
+<topic href="topic/qnxdevice.html#device" title="/pps/qnx/device/&lt;device&gt;"/>
+</entry>
+<entry keyword="accounts directory">
+<topic href="topic/accounts.html#accounts" title="/pps/accounts/"/>
+</entry>
+<entry keyword="appinst-mgr">
+<topic href="topic/servicesappinststatus.html#testtrackinst" title="/pps/services/appinst-mgr/status"/>
+<topic href="topic/servicesappinstcontrol.html#testtrackinst" title="/pps/services/appinst-mgr/control"/>
+</entry>
+<entry keyword="applications launcher">
+<topic href="topic/launchercontrol.html#navigator" title="/pps/services/launcher/control"/>
+</entry>
+<entry keyword="Applications Navigator">
+<topic href="topic/navigatorcommand.html#navigator" title="/pps/system/navigator/command"/>
+<topic href="topic/navigatorapplications.html#navigator" title="/pps/system/navigator/applications/applications"/>
+<topic href="topic/navigatorwindowparams.html#navigator" title="/pps/system/navigator/windowparams"/>
+<topic href="topic/launchercontrol.html#navigator" title="/pps/services/launcher/control"/>
+<topic href="topic/navigatorappdata.html#navigator" title="/pps/system/navigator/appdata"/>
+<topic href="topic/navigatorwindowgroup.html#navigator" title="/pps/system/navigator/windowgroup"/>
+<topic href="topic/applauncher.html#navigator" title="/pps/services/app-launcher"/>
+</entry>
+<entry keyword="ASR">
+<topic href="topic/asr.html#speech" title="/pps/services/asr/control"/>
+</entry>
+<entry keyword="Audio Control">
+<topic href="topic/audiomixer.html#audio" title="/pps/services/audio/mixer"/>
+</entry>
+<entry keyword="audio devices">
+<topic href="topic/audiodevices.html#audio" title="/pps/services/audio/devices/"/>
+</entry>
+<entry keyword="Audio Manager">
+<topic href="topic/audiovoicestatus.html#audio" title="/pps/services/audio/voice_status"/>
+<topic href="topic/audiodevices.html#audio" title="/pps/services/audio/devices/"/>
+<topic href="topic/audioroutercontrol.html#audio" title="/pps/services/audio/audio_router_control"/>
+<topic href="topic/audiotypes.html#audio" title="/pps/services/audio/types/"/>
+<topic href="topic/audiocontrol.html#audio" title="/pps/services/audio/control"/>
+<entry keyword="audio types">
+<topic href="topic/audiotypes.html#audio" title="/pps/services/audio/types/"/>
+</entry>
+<entry keyword="commands">
+<topic href="topic/audiocontrol.html#audio" title="/pps/services/audio/control"/>
+</entry>
+<entry keyword="devices">
+<topic href="topic/audiodevices.html#audio" title="/pps/services/audio/devices/"/>
+</entry>
+<entry keyword="library">
+<topic href="topic/audiocontrol.html#audio" title="/pps/services/audio/control"/>
+</entry>
+<entry keyword="routing commands">
+<topic href="topic/audioroutercontrol.html#audio" title="/pps/services/audio/audio_router_control"/>
+</entry>
+<entry keyword="voice settings">
+<topic href="topic/audiovoicestatus.html#audio" title="/pps/services/audio/voice_status"/>
+</entry>
+</entry>
+<entry keyword="audio types">
+<topic href="topic/audiotypes.html#audio" title="/pps/services/audio/types/"/>
+</entry>
+<entry keyword="audio_router_control object">
+<topic href="topic/audioroutercontrol.html#audio" title="/pps/services/audio/audio_router_control"/>
+</entry>
+<entry keyword="avatar attribute (Personalization)">
+<topic href="topic/qnxcarprofileuser.html#carcontrol" title="/pps/qnxcar/profile/user"/>
+</entry>
+<entry keyword="Bluetooth">
+<topic href="topic/bluetoothcontrol.html#bluetooth" title="/pps/services/bluetooth/control"/>
+<topic href="topic/handsfreestatus.html#bluetooth" title="/pps/services/bluetooth/handsfree/status"/>
+<topic href="topic/bluetoothphonebookstatus.html#bluetooth" title="/pps/services/bluetooth/phonebook/status"/>
+<topic href="topic/bluetoothstatus.html#bluetooth" title="/pps/services/bluetooth/status"/>
+<topic href="topic/handsfreecontrol.html#bluetooth" title="/pps/services/bluetooth/handsfree/control"/>
+<topic href="topic/bluetoothphonebookcontrol.html#bluetooth" title="/pps/services/bluetooth/phonebook/control"/>
+<entry keyword="commands">
+<topic href="topic/bluetoothcontrol.html#bluetooth" title="/pps/services/bluetooth/control"/>
+</entry>
+<entry keyword="control object">
+<topic href="topic/bluetoothcontrol.html#bluetooth" title="/pps/services/bluetooth/control"/>
+</entry>
+<entry keyword="events">
+<topic href="topic/bluetoothstatus.html#bluetooth" title="/pps/services/bluetooth/status"/>
+</entry>
+<entry keyword="MAP">
+<topic href="topic/bluetoothmessagesstatus.html#bluetooth" title="/pps/services/bluetooth/messages/status"/>
+<topic href="topic/bluetoothmessagescontrol.html#bluetooth" title="/pps/services/bluetooth/messages/control"/>
+<topic href="topic/bluetoothmessagesnotification.html#bluetooth" title="/pps/services/bluetooth/messages/notification"/>
+</entry>
+<entry keyword="paired devices">
+<topic href="topic/bluetoothparieddevices.html#bluetooth" title="/pps/services/bluetooth/paired_devices/&lt;mac_addr&gt;"/>
+</entry>
+<entry keyword="PBAP">
+<topic href="topic/bluetoothphonebookstatus.html#bluetooth" title="/pps/services/bluetooth/phonebook/status"/>
+<topic href="topic/bluetoothphonebookcontrol.html#bluetooth" title="/pps/services/bluetooth/phonebook/control"/>
+</entry>
+<entry keyword="profiles">
+<topic href="topic/bluetoothcontrol.html#bluetooth" title="/pps/services/bluetooth/control"/>
+<topic href="topic/bluetoothservices.html#bluetooth" title="/pps/services/bluetooth/services"/>
+</entry>
+<entry keyword="status object">
+<topic href="topic/bluetoothstatus.html#bluetooth" title="/pps/services/bluetooth/status"/>
+</entry>
+</entry>
+<entry keyword="Bluetooth stack information">
+<topic href="topic/bluetoothsettings.html#bluetooth" title="/pps/services/bluetooth/settings"/>
+</entry>
+<entry keyword="Climate Control">
+<topic href="topic/qnxcarsensors.html#carcontrol" title="/pps/qnxcar/sensors"/>
+<topic href="topic/qnxcarhvac.html#carcontrol" title="/pps/qnxcar/hvac"/>
+</entry>
+<entry keyword="clock">
+<topic href="topic/clockcontrol.html#services" title="/pps/services/clock/control"/>
+<topic href="topic/clockstatus.html#services" title="/pps/services/clock/status"/>
+</entry>
+<entry keyword="config/&lt;dbname&gt; directory">
+<topic href="topic/qdbconfig.html#qdb" title="/pps/qnx/qdb/config/&lt;dbname&gt;"/>
+</entry>
+<entry keyword="context input parameters">
+<topic href="topic/mm-renderercontextnameinput.html#multimedia" title="/pps/services/multimedia/renderer/context/&lt;contextname&gt;/input"/>
+</entry>
+<entry keyword="contextname (mm-renderer)">
+<topic href="topic/mm-renderercontextnamestate.html#multimedia" title="/pps/services/multimedia/renderer/context/&lt;contextname&gt;/state"/>
+<topic href="topic/mm-renderercontextnameinput.html#multimedia" title="/pps/services/multimedia/renderer/context/&lt;contextname&gt;/input"/>
+<topic href="topic/mm-renderercontextnameoutputnum.html#multimedia" title="/pps/services/multimedia/renderer/context/&lt;contextname&gt;/output#"/>
+<topic href="topic/mm-renderercontextnameparam.html#multimedia" title="/pps/services/multimedia/renderer/context/&lt;contextname&gt;/param"/>
+<topic href="topic/mm-renderercontextname.html#multimedia" title="/pps/services/multimedia/renderer/context/&lt;contextname&gt;"/>
+<topic href="topic/mm-renderercontextnamemetadata.html#multimedia" title="/pps/services/multimedia/renderer/context/&lt;contextname&gt;/metadata"/>
+<topic href="topic/mm-renderercontextnamestatus.html#multimedia" title="/pps/services/multimedia/renderer/context/&lt;contextname&gt;/status"/>
+<topic href="topic/mm-renderercontextnameplay-queue.html#multimedia" title="/pps/services/multimedia/renderer/context/&lt;contextname&gt;/play-queue"/>
+<topic href="topic/mm-renderercontextnamepnum.html#multimedia" title="/pps/services/multimedia/renderer/context/&lt;contextname&gt;/p#"/>
+</entry>
+<entry keyword="database">
+<entry keyword="configuration objects">
+<topic href="topic/qdbconfig.html#qdb" title="/pps/qnx/qdb/config/&lt;dbname&gt;"/>
+</entry>
+<entry keyword="status objects">
+<topic href="topic/qdbstatus.html#qdb" title="/pps/qnx/qdb/status/&lt;dbname&gt;"/>
+</entry>
+</entry>
+<entry keyword="dbnotify directory">
+<topic href="topic/dbnotifydbs.html#qdb" title="/pps/qnx/dbnotify/dbs"/>
+</entry>
+<entry keyword="dbs object">
+<topic href="topic/dbnotifydbs.html#qdb" title="/pps/qnx/dbnotify/dbs"/>
+</entry>
+<entry keyword="delta subscription mode">
+<topic href="topic/howppsworks.html#ppsrefconcept" title="Overview of the PPS Service"/>
+</entry>
+<entry keyword="demo-commands object">
+<topic href="topic/applicationsweathernetwork.html#accounts" title="/pps/applications/weathernetwork/"/>
+</entry>
+<entry keyword="device driver object">
+<topic href="topic/qnxdriver.html#driver" title="/pps/qnx/driver/&lt;pid&gt;"/>
+</entry>
+<entry keyword="device publishers">
+<topic href="topic/qnxdevice.html#device" title="/pps/qnx/device/&lt;device&gt;"/>
+<topic href="topic/qnxdriver.html#driver" title="/pps/qnx/driver/&lt;pid&gt;"/>
+<topic href="topic/qnxmount.html#mount" title="/pps/qnx/mount/&lt;device&gt;"/>
+<topic href="topic/qnxdevice_ctrl.html#device_ctrl" title="/pps/qnx/device/&lt;device&gt;_ctrl"/>
+</entry>
+<entry keyword="devices">
+<entry keyword="audio">
+<topic href="topic/audiovoicestatus.html#audio" title="/pps/services/audio/voice_status"/>
+<topic href="topic/audiodevices.html#audio" title="/pps/services/audio/devices/"/>
+</entry>
+<entry keyword="voice settings">
+<topic href="topic/audiovoicestatus.html#audio" title="/pps/services/audio/voice_status"/>
+</entry>
+</entry>
+<entry keyword="devices (Bluetooth)">
+<topic href="topic/bluetoothparieddevices.html#bluetooth" title="/pps/services/bluetooth/paired_devices/&lt;mac_addr&gt;"/>
+<topic href="topic/bluetoothservices.html#bluetooth" title="/pps/services/bluetooth/services"/>
+</entry>
+<entry keyword="driver/&lt;pid&gt; directory">
+<topic href="topic/qnxdriver.html#driver" title="/pps/qnx/driver/&lt;pid&gt;"/>
+</entry>
+<entry keyword="full subscription mode">
+<topic href="topic/howppsworks.html#ppsrefconcept" title="Overview of the PPS Service"/>
+</entry>
+<entry keyword="gears.h">
+<topic href="topic/yourown.html#ppsrefconcept" title="Setting Up Your Own Objects"/>
+</entry>
+<entry keyword="gears.js">
+<topic href="topic/yourown.html#ppsrefconcept" title="Setting Up Your Own Objects"/>
+</entry>
+<entry keyword="Geolocation service">
+<topic href="topic/geolocationcontrol.html#gps" title="/pps/services/geolocation/control"/>
+</entry>
+<entry keyword="handsfree">
+<topic href="topic/handsfreestatus.html#bluetooth" title="/pps/services/bluetooth/handsfree/status"/>
+<topic href="topic/handsfreecontrol.html#bluetooth" title="/pps/services/bluetooth/handsfree/control"/>
+</entry>
+<entry keyword="HMI">
+<entry keyword="application displays">
+<topic href="topic/qnxcarsystemsettings.html#carcontrol" title="/pps/qnxcar/system/settings"/>
+</entry>
+</entry>
+<entry keyword="HMI Notification Manager">
+<topic href="topic/hmi_notif_control.html#services" title="/pps/services/hmi-notification/control"/>
+<topic href="topic/hmi_notif_Status.html#services" title="/pps/services/hmi-notification/Status"/>
+<topic href="topic/hmi_notif_Messaging.html#services" title="/pps/services/hmi-notification/Messaging"/>
+</entry>
+<entry keyword="HTMLGears">
+<topic href="topic/yourown.html#ppsrefconcept" title="Setting Up Your Own Objects"/>
+</entry>
+<entry keyword="HVAC settings">
+<topic href="topic/qnxcarhvac.html#carcontrol" title="/pps/qnxcar/hvac"/>
+</entry>
+<entry keyword="io-asr manager">
+<topic href="topic/asr.html#speech" title="/pps/services/asr/control"/>
+</entry>
+<entry keyword="JavaScript">
+<topic href="topic/yourown.html#ppsrefconcept" title="Setting Up Your Own Objects"/>
+</entry>
+<entry keyword="keyboard">
+<topic href="topic/keyboardcontrol.html#keyboard" title="/pps/system/keyboard/control"/>
+</entry>
+<entry keyword="latitude">
+<topic href="topic/applicationsweathernetwork.html#accounts" title="/pps/applications/weathernetwork/"/>
+</entry>
+<entry keyword="launching applications">
+<topic href="topic/launchercontrol.html#navigator" title="/pps/services/launcher/control"/>
+</entry>
+<entry keyword="libpps">
+<topic href="topic/yourown.html#ppsrefconcept" title="Setting Up Your Own Objects"/>
+</entry>
+<entry keyword="locale">
+<topic href="topic/qnxcarlocale.html#carcontrol" title="/pps/qnxcar/locale"/>
+</entry>
+<entry keyword="longitude">
+<topic href="topic/applicationsweathernetwork.html#accounts" title="/pps/applications/weathernetwork/"/>
+</entry>
+<entry keyword="MAP (Message Access Profile)">
+<topic href="topic/bluetoothmessagesstatus.html#bluetooth" title="/pps/services/bluetooth/messages/status"/>
+<topic href="topic/bluetoothmessagescontrol.html#bluetooth" title="/pps/services/bluetooth/messages/control"/>
+<topic href="topic/bluetoothmessagesnotification.html#bluetooth" title="/pps/services/bluetooth/messages/notification"/>
+</entry>
+<entry keyword="media database">
+<topic href="topic/dbnotifydbs.html#qdb" title="/pps/qnx/dbnotify/dbs"/>
+</entry>
+<entry keyword="mediaplayer">
+<topic href="topic/mm-control.html#multimedia" title="/pps/services/mm-control/control"/>
+</entry>
+<entry keyword="mediaplayer object">
+<topic href="topic/applicationsmediaplayer.html#multimedia" title="/pps/applications/mediaplayer"/>
+</entry>
+<entry keyword="messages">
+<entry keyword="format">
+<topic href="topic/howppsworks.html#ppsrefconcept" title="Overview of the PPS Service"/>
+</entry>
+</entry>
+<entry keyword="messages (Bluetooth)">
+<topic href="topic/bluetoothmessagesstatus.html#bluetooth" title="/pps/services/bluetooth/messages/status"/>
+<topic href="topic/bluetoothmessagescontrol.html#bluetooth" title="/pps/services/bluetooth/messages/control"/>
+<topic href="topic/bluetoothmessagesnotification.html#bluetooth" title="/pps/services/bluetooth/messages/notification"/>
+</entry>
+<entry keyword="metadata object for multimedia inputs">
+<topic href="topic/mm-renderercontextnamemetadata.html#multimedia" title="/pps/services/multimedia/renderer/context/&lt;contextname&gt;/metadata"/>
+</entry>
+<entry keyword="Midnight Blue theme">
+<topic href="topic/qnxcarthemes.html#carcontrol" title="/pps/qnxcar/themes"/>
+</entry>
+<entry keyword="MirrorLink">
+<topic href="topic/servicesvnc.html#services" title="/pps/services/vnc/discovery/"/>
+</entry>
+<entry keyword="mixer object">
+<topic href="topic/audiomixer.html#audio" title="/pps/services/audio/mixer"/>
+</entry>
+<entry keyword="mlink-daemon">
+<topic href="topic/servicesvnc.html#services" title="/pps/services/vnc/discovery/"/>
+</entry>
+<entry keyword="mm-control">
+<topic href="topic/mm-control.html#multimedia" title="/pps/services/mm-control/control"/>
+</entry>
+<entry keyword="mm-renderer">
+<topic href="topic/mm-renderercomponent.html#multimedia" title="/pps/services/multimedia/renderer/component/"/>
+<topic href="topic/mm-renderercontextnamestate.html#multimedia" title="/pps/services/multimedia/renderer/context/&lt;contextname&gt;/state"/>
+<topic href="topic/mm-renderercontextnameinput.html#multimedia" title="/pps/services/multimedia/renderer/context/&lt;contextname&gt;/input"/>
+<topic href="topic/mm-renderercontextnameoutputnum.html#multimedia" title="/pps/services/multimedia/renderer/context/&lt;contextname&gt;/output#"/>
+<topic href="topic/mm-renderercontextnameparam.html#multimedia" title="/pps/services/multimedia/renderer/context/&lt;contextname&gt;/param"/>
+<topic href="topic/mm-control.html#multimedia" title="/pps/services/mm-control/control"/>
+<topic href="topic/mm-renderercontextname.html#multimedia" title="/pps/services/multimedia/renderer/context/&lt;contextname&gt;"/>
+<topic href="topic/mm-renderercontextnamemetadata.html#multimedia" title="/pps/services/multimedia/renderer/context/&lt;contextname&gt;/metadata"/>
+<topic href="topic/mm-renderercontextnamestatus.html#multimedia" title="/pps/services/multimedia/renderer/context/&lt;contextname&gt;/status"/>
+<topic href="topic/mm-renderercontextnameplay-queue.html#multimedia" title="/pps/services/multimedia/renderer/context/&lt;contextname&gt;/play-queue"/>
+<topic href="topic/mm-renderercontextnamepnum.html#multimedia" title="/pps/services/multimedia/renderer/context/&lt;contextname&gt;/p#"/>
+<entry keyword="plugins">
+<topic href="topic/mm-renderercomponent.html#multimedia" title="/pps/services/multimedia/renderer/component/"/>
+</entry>
+</entry>
+<entry keyword="mmr_context_parameters()">
+<topic href="topic/mm-renderercontextnameparam.html#multimedia" title="/pps/services/multimedia/renderer/context/&lt;contextname&gt;/param"/>
+</entry>
+<entry keyword="mount/&lt;device&gt; directory">
+<topic href="topic/qnxmount.html#mount" title="/pps/qnx/mount/&lt;device&gt;"/>
+</entry>
+<entry keyword="mounted devices">
+<entry keyword="attributes">
+<topic href="topic/qnxmount.html#mount" title="/pps/qnx/mount/&lt;device&gt;"/>
+</entry>
+</entry>
+<entry keyword="multimedia">
+<entry keyword="playback">
+<topic href="topic/applicationsmediaplayer.html#multimedia" title="/pps/applications/mediaplayer"/>
+</entry>
+</entry>
+<entry keyword="multimedia renderer context">
+<entry keyword="status object">
+<topic href="topic/mm-renderercontextnamestatus.html#multimedia" title="/pps/services/multimedia/renderer/context/&lt;contextname&gt;/status"/>
+</entry>
+</entry>
+<entry keyword="mutexes (used in &quot;gears&quot; demo)">
+<topic href="topic/yourown.html#ppsrefconcept" title="Setting Up Your Own Objects"/>
+</entry>
+<entry keyword="navigation">
+<entry keyword="control object">
+<topic href="topic/qnxcarnavigationcontrol.html#navigation" title="/pps/qnxcar/navigation/control"/>
+</entry>
+<entry keyword="geolocation object">
+<topic href="topic/qnxcarnavigationgeolocation.html#navigation" title="/pps/qnxcar/navigation/geolocation"/>
+</entry>
+<entry keyword="options">
+<topic href="topic/qnxcarnavigationoptions.html#navigation" title="/pps/qnxcar/navigation/options"/>
+</entry>
+<entry keyword="status object">
+<topic href="topic/qnxcarnavigationstatus.html#navigation" title="/pps/qnxcar/navigation/status"/>
+</entry>
+</entry>
+<entry keyword="navigator/appdata object">
+<topic href="topic/navigatorappdata.html#navigator" title="/pps/system/navigator/appdata"/>
+</entry>
+<entry keyword="navigator/applications/applications object">
+<topic href="topic/navigatorapplications.html#navigator" title="/pps/system/navigator/applications/applications"/>
+</entry>
+<entry keyword="Network Manager">
+<topic href="topic/networkingcontrol.html#networking" title="/pps/services/networking/control"/>
+</entry>
+<entry keyword="networking">
+<topic href="topic/networkingallstatuspublic.html#networking" title="/pps/services/networking/all/status_public"/>
+<entry keyword="proxy">
+<topic href="topic/networkingallproxy.html#networking" title="/pps/services/networking/all/proxy"/>
+</entry>
+<entry keyword="status object">
+<topic href="topic/networkingallinterfaces_interface.html#networking" title="/pps/services/networking/all/interfaces/&lt;interface&gt;"/>
+<topic href="topic/networkingallproxy.html#networking" title="/pps/services/networking/all/proxy"/>
+</entry>
+</entry>
+<entry keyword="nonpersistence qualifier ([n])">
+<topic href="topic/howppsworks.html#ppsrefconcept" title="Overview of the PPS Service"/>
+</entry>
+<entry keyword="Now Playing">
+<topic href="topic/mediaplayerstatus.html#mediaplayer_status" title="/pps/services/multimedia/mediaplayer/status"/>
+<topic href="topic/mediaplayerphone.html#mediaplayer_phone" title="/pps/services/multimedia/mediaplayer/phone"/>
+<topic href="topic/mediacontrollercontrol.html#mediacontroller_control" title="/pps/services/multimedia/mediacontroller/control"/>
+<topic href="topic/mediaplayercontrol.html#mediaplayer_control" title="/pps/services/multimedia/mediaplayer/control"/>
+<entry keyword="commands">
+<topic href="topic/mediaplayerstatus.html#mediaplayer_status" title="/pps/services/multimedia/mediaplayer/status"/>
+<topic href="topic/mediaplayerphone.html#mediaplayer_phone" title="/pps/services/multimedia/mediaplayer/phone"/>
+<topic href="topic/mediacontrollercontrol.html#mediacontroller_control" title="/pps/services/multimedia/mediacontroller/control"/>
+<topic href="topic/mediaplayercontrol.html#mediaplayer_control" title="/pps/services/multimedia/mediaplayer/control"/>
+</entry>
+</entry>
+<entry keyword="O_CREAT">
+<topic href="topic/yourown.html#ppsrefconcept" title="Setting Up Your Own Objects"/>
+</entry>
+<entry keyword="objects">
+<entry keyword=".all">
+<topic href="topic/howppsworks.html#ppsrefconcept" title="Overview of the PPS Service"/>
+</entry>
+<entry keyword=".notify">
+<topic href="topic/howppsworks.html#ppsrefconcept" title="Overview of the PPS Service"/>
+</entry>
+<entry keyword="control">
+<topic href="topic/howppsworks.html#ppsrefconcept" title="Overview of the PPS Service"/>
+</entry>
+<entry keyword="creating">
+<topic href="topic/yourown.html#ppsrefconcept" title="Setting Up Your Own Objects"/>
+</entry>
+<entry keyword="creating in JavaScript">
+<topic href="topic/yourown.html#ppsrefconcept" title="Setting Up Your Own Objects"/>
+</entry>
+<entry keyword="defined">
+<topic href="topic/howppsworks.html#ppsrefconcept" title="Overview of the PPS Service"/>
+</entry>
+<entry keyword="format">
+<topic href="topic/howppsworks.html#ppsrefconcept" title="Overview of the PPS Service"/>
+</entry>
+<entry keyword="server">
+<topic href="topic/yourown.html#ppsrefconcept" title="Setting Up Your Own Objects"/>
+</entry>
+<entry keyword="status">
+<topic href="topic/howppsworks.html#ppsrefconcept" title="Overview of the PPS Service"/>
+</entry>
+<entry keyword="using open()">
+<topic href="topic/yourown.html#ppsrefconcept" title="Setting Up Your Own Objects"/>
+</entry>
+</entry>
+<entry keyword="open()">
+<topic href="topic/yourown.html#ppsrefconcept" title="Setting Up Your Own Objects"/>
+</entry>
+<entry keyword="OpenGL ES 2.0 &quot;gears&quot;">
+<topic href="topic/yourown.html#ppsrefconcept" title="Setting Up Your Own Objects"/>
+<entry keyword="control and status objects for">
+<topic href="topic/yourown.html#ppsrefconcept" title="Setting Up Your Own Objects"/>
+</entry>
+</entry>
+<entry keyword="OpenGL ES 2.0 Gears demo">
+<topic href="topic/gearsstatus.html#services" title="/pps/services/gears/status"/>
+<topic href="topic/gearscontrol.html#services" title="/pps/services/gears/control"/>
+</entry>
+<entry keyword="options">
+<entry keyword="pathname">
+<topic href="topic/howppsworks.html#ppsrefconcept" title="Overview of the PPS Service"/>
+</entry>
+<entry keyword="pps command-line">
+<topic href="topic/howppsworks.html#ppsrefconcept" title="Overview of the PPS Service"/>
+</entry>
+</entry>
+<entry keyword="output parameters for multimedia context">
+<topic href="topic/mm-renderercontextnameoutputnum.html#multimedia" title="/pps/services/multimedia/renderer/context/&lt;contextname&gt;/output#"/>
+</entry>
+<entry keyword="overcurrent condition (USB)">
+<topic href="topic/qnxdevice.html#device" title="/pps/qnx/device/&lt;device&gt;"/>
+</entry>
+<entry keyword="p# (object for input URL and parameters for tracks)">
+<topic href="topic/mm-renderercontextnamepnum.html#multimedia" title="/pps/services/multimedia/renderer/context/&lt;contextname&gt;/p#"/>
+</entry>
+<entry keyword="PandoraLink">
+<topic href="topic/bluetoothspp.html#bluetooth" title="/pps/services/bluetooth/spp/spp"/>
+</entry>
+<entry keyword="pathname open options">
+<topic href="topic/howppsworks.html#ppsrefconcept" title="Overview of the PPS Service"/>
+</entry>
+<entry keyword="PBAP (Phone Book Access Profile)">
+<topic href="topic/bluetoothphonebookstatus.html#bluetooth" title="/pps/services/bluetooth/phonebook/status"/>
+<topic href="topic/bluetoothphonebookcontrol.html#bluetooth" title="/pps/services/bluetooth/phonebook/control"/>
+</entry>
+<entry keyword="persistence directory">
+<topic href="topic/howppsworks.html#ppsrefconcept" title="Overview of the PPS Service"/>
+<entry keyword="changing">
+<topic href="topic/howppsworks.html#ppsrefconcept" title="Overview of the PPS Service"/>
+</entry>
+</entry>
+<entry keyword="Personalization">
+<topic href="topic/qnxcarprofileuser.html#carcontrol" title="/pps/qnxcar/profile/user"/>
+<topic href="topic/qnxcarprofiletheme.html#carcontrol" title="/pps/qnxcar/profile/theme"/>
+</entry>
+<entry keyword="Personalization app">
+<topic href="topic/qnxcarthemes.html#carcontrol" title="/pps/qnxcar/themes"/>
+</entry>
+<entry keyword="phonebooks (Bluetooth)">
+<topic href="topic/bluetoothphonebookstatus.html#bluetooth" title="/pps/services/bluetooth/phonebook/status"/>
+<topic href="topic/bluetoothphonebookcontrol.html#bluetooth" title="/pps/services/bluetooth/phonebook/control"/>
+</entry>
+<entry keyword="play-queue (playlist window object)">
+<topic href="topic/mm-renderercontextnameplay-queue.html#multimedia" title="/pps/services/multimedia/renderer/context/&lt;contextname&gt;/play-queue"/>
+</entry>
+<entry keyword="playlist">
+<topic href="topic/mm-renderercontextnameplay-queue.html#multimedia" title="/pps/services/multimedia/renderer/context/&lt;contextname&gt;/play-queue"/>
+<topic href="topic/mm-renderercontextnamepnum.html#multimedia" title="/pps/services/multimedia/renderer/context/&lt;contextname&gt;/p#"/>
+<entry keyword="window">
+<topic href="topic/mm-renderercontextnameplay-queue.html#multimedia" title="/pps/services/multimedia/renderer/context/&lt;contextname&gt;/play-queue"/>
+</entry>
+</entry>
+<entry keyword="plugins (mm-renderer)">
+<topic href="topic/mm-renderercomponent.html#multimedia" title="/pps/services/multimedia/renderer/component/"/>
+</entry>
+<entry keyword="pps">
+<entry keyword="-t option recommended">
+<topic href="topic/howppsworks.html#ppsrefconcept" title="Overview of the PPS Service"/>
+</entry>
+<entry keyword="command-line options">
+<topic href="topic/howppsworks.html#ppsrefconcept" title="Overview of the PPS Service"/>
+</entry>
+</entry>
+<entry keyword="PPS">
+<entry keyword="encoding/decoding data for">
+<topic href="topic/yourown.html#ppsrefconcept" title="Setting Up Your Own Objects"/>
+</entry>
+<entry keyword="guidelines for working with">
+<topic href="topic/yourown.html#ppsrefconcept" title="Setting Up Your Own Objects"/>
+</entry>
+<entry keyword="key concepts">
+<topic href="topic/howppsworks.html#ppsrefconcept" title="Overview of the PPS Service"/>
+</entry>
+<entry keyword="objects used internally">
+<topic href="topic/appendix_a.html#appendix" title="List of Objects Used Internally"/>
+</entry>
+</entry>
+<entry keyword="pps_decoder_*()">
+<topic href="topic/yourown.html#ppsrefconcept" title="Setting Up Your Own Objects"/>
+</entry>
+<entry keyword="pps_encoder_*()">
+<topic href="topic/yourown.html#ppsrefconcept" title="Setting Up Your Own Objects"/>
+</entry>
+<entry keyword="pps_init()">
+<topic href="topic/yourown.html#ppsrefconcept" title="Setting Up Your Own Objects"/>
+</entry>
+<entry keyword="pps-spp">
+<topic href="topic/bluetoothspp.html#bluetooth" title="/pps/services/bluetooth/spp/spp"/>
+</entry>
+<entry keyword="pps.c">
+<topic href="topic/yourown.html#ppsrefconcept" title="Setting Up Your Own Objects"/>
+</entry>
+<entry keyword="ppsUtils.js">
+<topic href="topic/yourown.html#ppsrefconcept" title="Setting Up Your Own Objects"/>
+</entry>
+<entry keyword="profile/theme object">
+<topic href="topic/qnxcarprofiletheme.html#carcontrol" title="/pps/qnxcar/profile/theme"/>
+</entry>
+<entry keyword="profile/user object">
+<topic href="topic/qnxcarprofileuser.html#carcontrol" title="/pps/qnxcar/profile/user"/>
+</entry>
+<entry keyword="publishers">
+<entry keyword="multiple for one object">
+<topic href="topic/howppsworks.html#ppsrefconcept" title="Overview of the PPS Service"/>
+</entry>
+</entry>
+<entry keyword="publishing">
+<entry keyword="is asynchronous">
+<topic href="topic/howppsworks.html#ppsrefconcept" title="Overview of the PPS Service"/>
+</entry>
+<entry keyword="uses open() and write()">
+<topic href="topic/howppsworks.html#ppsrefconcept" title="Overview of the PPS Service"/>
+</entry>
+</entry>
+<entry keyword="q# (playlist window object)">
+<topic href="topic/mm-renderercontextnameplay-queue.html#multimedia" title="/pps/services/multimedia/renderer/context/&lt;contextname&gt;/play-queue"/>
+</entry>
+<entry keyword="QDB">
+<topic href="topic/qdbconfig.html#qdb" title="/pps/qnx/qdb/config/&lt;dbname&gt;"/>
+<topic href="topic/qdbstatus.html#qdb" title="/pps/qnx/qdb/status/&lt;dbname&gt;"/>
+</entry>
+<entry keyword="QNX App Portal">
+<topic href="topic/servicesappinstcontrol.html#testtrackinst" title="/pps/services/appinst-mgr/control"/>
+</entry>
+<entry keyword="qnx/device/&lt;device&gt;_ctrl object">
+<topic href="topic/qnxdevice_ctrl.html#device_ctrl" title="/pps/qnx/device/&lt;device&gt;_ctrl"/>
+</entry>
+<entry keyword="qnxcar/hvac object">
+<topic href="topic/qnxcarhvac.html#carcontrol" title="/pps/qnxcar/hvac"/>
+</entry>
+<entry keyword="qnxcar/sensors object">
+<topic href="topic/qnxcarsensors.html#carcontrol" title="/pps/qnxcar/sensors"/>
+</entry>
+<entry keyword="radio">
+<entry keyword="control object">
+<topic href="topic/qnxcarradiocontrol.html#radio" title="/pps/radio/command"/>
+</entry>
+<entry keyword="status object">
+<topic href="topic/qnxcarradiostatus.html#radio" title="/pps/radio/status"/>
+</entry>
+<entry keyword="tuners object">
+<topic href="topic/qnxcarradiotuners.html#radio" title="/pps/radio/tuners"/>
+</entry>
+</entry>
+<entry keyword="rb-self-update.so">
+<topic href="topic/updatetarget.html#software_update" title="/pps/services/update/target"/>
+</entry>
+<entry keyword="RealVNC">
+<topic href="topic/servicesvnc.html#services" title="/pps/services/vnc/discovery/"/>
+</entry>
+<entry keyword="responses">
+<entry keyword="format">
+<topic href="topic/howppsworks.html#ppsrefconcept" title="Overview of the PPS Service"/>
+</entry>
+</entry>
+<entry keyword="server objects">
+<topic href="topic/yourown.html#ppsrefconcept" title="Setting Up Your Own Objects"/>
+</entry>
+<entry keyword="servicedata/schedule object (Virtual Mechanic)">
+<topic href="topic/servicedataschedule.html#gps" title="/pps/servicedata/schedule"/>
+</entry>
+<entry keyword="services/app-launcher object (Applications Navigator)">
+<topic href="topic/applauncher.html#navigator" title="/pps/services/app-launcher"/>
+</entry>
+<entry keyword="services/audio/control object">
+<topic href="topic/audiocontrol.html#audio" title="/pps/services/audio/control"/>
+</entry>
+<entry keyword="services/audio/devices directory">
+<topic href="topic/audiodevices.html#audio" title="/pps/services/audio/devices/"/>
+</entry>
+<entry keyword="services/audio/types directory">
+<topic href="topic/audiotypes.html#audio" title="/pps/services/audio/types/"/>
+</entry>
+<entry keyword="services/audio/voice_status object">
+<topic href="topic/audiovoicestatus.html#audio" title="/pps/services/audio/voice_status"/>
+</entry>
+<entry keyword="services/bluetooth/handsfree/control object">
+<topic href="topic/handsfreecontrol.html#bluetooth" title="/pps/services/bluetooth/handsfree/control"/>
+</entry>
+<entry keyword="services/bluetooth/handsfree/status object">
+<topic href="topic/handsfreestatus.html#bluetooth" title="/pps/services/bluetooth/handsfree/status"/>
+</entry>
+<entry keyword="services/bluetooth/services object">
+<topic href="topic/bluetoothservices.html#bluetooth" title="/pps/services/bluetooth/services"/>
+</entry>
+<entry keyword="services/bluetooth/settings object">
+<topic href="topic/bluetoothsettings.html#bluetooth" title="/pps/services/bluetooth/settings"/>
+</entry>
+<entry keyword="services/bluetooth/spp/spp object">
+<topic href="topic/bluetoothspp.html#bluetooth" title="/pps/services/bluetooth/spp/spp"/>
+</entry>
+<entry keyword="services/clock/control object">
+<topic href="topic/clockcontrol.html#services" title="/pps/services/clock/control"/>
+</entry>
+<entry keyword="services/clock/status object">
+<topic href="topic/clockstatus.html#services" title="/pps/services/clock/status"/>
+</entry>
+<entry keyword="services/gears/control object">
+<topic href="topic/gearscontrol.html#services" title="/pps/services/gears/control"/>
+</entry>
+<entry keyword="services/gears/status object">
+<topic href="topic/gearsstatus.html#services" title="/pps/services/gears/status"/>
+</entry>
+<entry keyword="services/geolocation/control object">
+<topic href="topic/geolocationcontrol.html#gps" title="/pps/services/geolocation/control"/>
+</entry>
+<entry keyword="services/hmi-notification/control object">
+<topic href="topic/hmi_notif_control.html#services" title="/pps/services/hmi-notification/control"/>
+</entry>
+<entry keyword="services/hmi-notification/Messaging object">
+<topic href="topic/hmi_notif_Messaging.html#services" title="/pps/services/hmi-notification/Messaging"/>
+</entry>
+<entry keyword="services/hmi-notification/Status object">
+<topic href="topic/hmi_notif_Status.html#services" title="/pps/services/hmi-notification/Status"/>
+</entry>
+<entry keyword="services/launcher/control object">
+<topic href="topic/launchercontrol.html#navigator" title="/pps/services/launcher/control"/>
+</entry>
+<entry keyword="services/mm-control/control object">
+<topic href="topic/mm-control.html#multimedia" title="/pps/services/mm-control/control"/>
+</entry>
+<entry keyword="services/multimedia/mediacontroller/control object">
+<topic href="topic/mediacontrollercontrol.html#mediacontroller_control" title="/pps/services/multimedia/mediacontroller/control"/>
+</entry>
+<entry keyword="services/multimedia/mediaplayer/control object">
+<topic href="topic/mediaplayercontrol.html#mediaplayer_control" title="/pps/services/multimedia/mediaplayer/control"/>
+</entry>
+<entry keyword="services/multimedia/mediaplayer/phone object">
+<topic href="topic/mediaplayerphone.html#mediaplayer_phone" title="/pps/services/multimedia/mediaplayer/phone"/>
+</entry>
+<entry keyword="services/multimedia/mediaplayer/status object">
+<topic href="topic/mediaplayerstatus.html#mediaplayer_status" title="/pps/services/multimedia/mediaplayer/status"/>
+</entry>
+<entry keyword="services/multimedia/renderer/component/ directory">
+<topic href="topic/mm-renderercomponent.html#multimedia" title="/pps/services/multimedia/renderer/component/"/>
+</entry>
+<entry keyword="services/multimedia/renderer/control object">
+<topic href="topic/mm-renderercontrol.html#radio" title="/pps/services/multimedia/renderer/control"/>
+</entry>
+<entry keyword="services/networking/all/status_public object">
+<topic href="topic/networkingallstatuspublic.html#networking" title="/pps/services/networking/all/status_public"/>
+</entry>
+<entry keyword="services/networking/control object">
+<topic href="topic/networkingcontrol.html#networking" title="/pps/services/networking/control"/>
+</entry>
+<entry keyword="services/tethering/control object">
+<topic href="topic/tetheringcontrol.html#tether" title="/pps/services/tethering/control"/>
+</entry>
+<entry keyword="services/update/control object">
+<topic href="topic/updatecontrol.html#software_update" title="/pps/services/update/control"/>
+</entry>
+<entry keyword="services/update/settings object">
+<topic href="topic/updatesettings.html#software_update" title="/pps/services/update/settings"/>
+</entry>
+<entry keyword="services/update/status object">
+<topic href="topic/updatestatus.html#software_update" title="/pps/services/update/status"/>
+</entry>
+<entry keyword="services/update/target object">
+<topic href="topic/updatetarget.html#software_update" title="/pps/services/update/target"/>
+</entry>
+<entry keyword="services/wifi/control object">
+<topic href="topic/serviceswificontrol.html#wifi" title="/pps/services/wifi/control"/>
+</entry>
+<entry keyword="settings object (for HMI application displays)">
+<topic href="topic/qnxcarsystemsettings.html#carcontrol" title="/pps/qnxcar/system/settings"/>
+</entry>
+<entry keyword="software build information">
+<topic href="topic/qnxcarsysteminfo.html#system" title="/pps/qnxcar/system/info"/>
+</entry>
+<entry keyword="Software Update">
+<topic href="topic/updatetarget.html#software_update" title="/pps/services/update/target"/>
+<topic href="topic/updatesettings.html#software_update" title="/pps/services/update/settings"/>
+<topic href="topic/updatecontrol.html#software_update" title="/pps/services/update/control"/>
+<topic href="topic/updatestatus.html#software_update" title="/pps/services/update/status"/>
+</entry>
+<entry keyword="speech session">
+<topic href="topic/asr.html#speech" title="/pps/services/asr/control"/>
+</entry>
+<entry keyword="status/&lt;dbname&gt; directory">
+<topic href="topic/qdbstatus.html#qdb" title="/pps/qnx/qdb/status/&lt;dbname&gt;"/>
+</entry>
+<entry keyword="strobe commands">
+<topic href="topic/asr.html#speech" title="/pps/services/asr/control"/>
+</entry>
+<entry keyword="subscribers">
+<entry keyword="multiple for one object">
+<topic href="topic/howppsworks.html#ppsrefconcept" title="Overview of the PPS Service"/>
+</entry>
+</entry>
+<entry keyword="subscribing">
+<entry keyword="uses open() and read()">
+<topic href="topic/howppsworks.html#ppsrefconcept" title="Overview of the PPS Service"/>
+</entry>
+</entry>
+<entry keyword="swud-client-config.so">
+<topic href="topic/updatesettings.html#software_update" title="/pps/services/update/settings"/>
+</entry>
+<entry keyword="swud-legacy-hmi.so">
+<topic href="topic/updatecontrol.html#software_update" title="/pps/services/update/control"/>
+<topic href="topic/updatestatus.html#software_update" title="/pps/services/update/status"/>
+</entry>
+<entry keyword="SYNC_START (Bluetooth phonebook command)">
+<topic href="topic/bluetoothphonebookcontrol.html#bluetooth" title="/pps/services/bluetooth/phonebook/control"/>
+</entry>
+<entry keyword="system/info object">
+<topic href="topic/qnxcarsysteminfo.html#system" title="/pps/qnxcar/system/info"/>
+</entry>
+<entry keyword="system/keyboard/control object">
+<topic href="topic/keyboardcontrol.html#keyboard" title="/pps/system/keyboard/control"/>
+</entry>
+<entry keyword="Tether Manager">
+<topic href="topic/tetheringstatus.html#tether" title="/pps/services/tethering/status"/>
+</entry>
+<entry keyword="Tether Manager (tetherman)">
+<topic href="topic/tetheringcontrol.html#tether" title="/pps/services/tethering/control"/>
+<topic href="topic/navigatorstatustether.html#wifi" title="/pps/system/navigator/status/tethering"/>
+</entry>
+<entry keyword="The Weather Network">
+<topic href="topic/applicationsweathernetwork.html#accounts" title="/pps/applications/weathernetwork/"/>
+<entry keyword="changing location">
+<topic href="topic/applicationsweathernetwork.html#accounts" title="/pps/applications/weathernetwork/"/>
+</entry>
+</entry>
+<entry keyword="theme attribute (Personalization)">
+<topic href="topic/qnxcarprofiletheme.html#carcontrol" title="/pps/qnxcar/profile/theme"/>
+</entry>
+<entry keyword="themes (Personalization)">
+<topic href="topic/qnxcarthemes.html#carcontrol" title="/pps/qnxcar/themes"/>
+</entry>
+<entry keyword="themes object">
+<topic href="topic/qnxcarthemes.html#carcontrol" title="/pps/qnxcar/themes"/>
+</entry>
+<entry keyword="Titanium theme">
+<topic href="topic/qnxcarthemes.html#carcontrol" title="/pps/qnxcar/themes"/>
+</entry>
+<entry keyword="tracksessions">
+<topic href="topic/mm-control.html#multimedia" title="/pps/services/mm-control/control"/>
+</entry>
+<entry keyword="update delta file">
+<topic href="topic/updatecontrol.html#software_update" title="/pps/services/update/control"/>
+</entry>
+<entry keyword="USB">
+<entry keyword="control object">
+<topic href="topic/qnxdevice_ctrl.html#device_ctrl" title="/pps/qnx/device/&lt;device&gt;_ctrl"/>
+</entry>
+<entry keyword="status object">
+<topic href="topic/qnxdevice.html#device" title="/pps/qnx/device/&lt;device&gt;"/>
+<entry keyword="attributes">
+<topic href="topic/qnxdevice.html#device" title="/pps/qnx/device/&lt;device&gt;"/>
+</entry>
+</entry>
+<entry keyword="stick">
+<entry keyword="sample object">
+<topic href="topic/qnxmount.html#mount" title="/pps/qnx/mount/&lt;device&gt;"/>
+</entry>
+</entry>
+</entry>
+<entry keyword="usblauncher">
+<topic href="topic/qnxdevice.html#device" title="/pps/qnx/device/&lt;device&gt;"/>
+<topic href="topic/qnxdriver.html#driver" title="/pps/qnx/driver/&lt;pid&gt;"/>
+<topic href="topic/qnxmount.html#mount" title="/pps/qnx/mount/&lt;device&gt;"/>
+<topic href="topic/qnxdevice_ctrl.html#device_ctrl" title="/pps/qnx/device/&lt;device&gt;_ctrl"/>
+</entry>
+<entry keyword="vendor subdirectory">
+<topic href="topic/accounts.html#accounts" title="/pps/accounts/"/>
+</entry>
+<entry keyword="Virtual Mechanic">
+<topic href="topic/qnxcarsensors.html#carcontrol" title="/pps/qnxcar/sensors"/>
+<topic href="topic/servicedataschedule.html#gps" title="/pps/servicedata/schedule"/>
+</entry>
+<entry keyword="voice settings (for audio devices)">
+<topic href="topic/audiovoicestatus.html#audio" title="/pps/services/audio/voice_status"/>
+</entry>
+<entry keyword="weathernetwork object">
+<topic href="topic/applicationsweathernetwork.html#accounts" title="/pps/applications/weathernetwork/"/>
+</entry>
+<entry keyword="WIFI HOTSPOT (Settings app)">
+<topic href="topic/navigatorstatushotspot.html#wifi" title="/pps/system/navigator/status/mobile_hotspot"/>
+</entry>
+<entry keyword="WLAN service (wpa_pps)">
+<topic href="topic/serviceswifistatus.html#wifi" title="/pps/services/wifi/status"/>
+<topic href="topic/serviceswificontrol.html#wifi" title="/pps/services/wifi/control"/>
+</entry>
+<entry keyword="Zone Link feature">
+<topic href="topic/qnxcarhvac.html#carcontrol" title="/pps/qnxcar/hvac"/>
+</entry>
+<entry keyword="zones">
+<topic href="topic/mm-control.html#multimedia" title="/pps/services/mm-control/control"/>
+</entry>
+</index>

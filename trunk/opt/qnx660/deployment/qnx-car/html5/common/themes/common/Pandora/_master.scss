@@ -1,0 +1,347 @@
+body {
+	background: $img-body-background no-repeat top left;
+	background-size: 100% 100%;
+	background-attachment: fixed;
+	
+	-webkit-transform: none !important;
+}
+
+/* BRANDING BAR
+------------------------------------------ */
+.brandingBar {
+	background-image: $img-branding-bar-background;
+}
+
+
+/* NAVIGATION MENU
+------------------------------------------ */
+.topNav {
+	background-image: $img-top-nav-background;
+}
+
+.topNav a {
+	color: $text-color;
+}
+
+.topNav a.button-showStationList {
+	background-image: $img-icon-top-nav-station-list;
+}
+
+.topNav a.button-showNowPlaying {
+	background-image: $img-icon-top-nav-now-playing;
+}
+
+.topNav .stationCreationNav { display: none; }
+
+.topNav .on { background: $background-color; }
+
+/* MAIN CONTENT SECTION - !keep this as abstract as possible!
+------------------------------------------ */
+.mainContentWrapper {
+	background: transparent;
+	border-top: 0;
+}
+
+
+/* NOW PLAYING SECTION
+------------------------------------------ */
+.nowPlayingContainer {
+	background: transparent;
+}
+
+.nowplayingcontainer .art {
+	border-top: 0px;
+	border-right: 0px;
+	border-bottom: 0px;
+	border-right: 0px
+}
+
+.nowplayingcontainer .artist_name span,
+.nowplayingcontainer .album_name span
+{
+	color: $text-color;
+}
+
+/* progress bar */
+.progress {
+}
+.progbar {
+	background: $gradient-progress-bar;
+	border: 0px;
+	border-radius: 0px;
+	box-shadow: none;
+}
+.progbar-status {
+	height: 100%;
+	background: $gradient-progress-bar-status;
+	border-radius: 0px;
+	box-shadow: none;
+	border-bottom: 0px;
+}
+/* Station List */
+.stationListContainer
+{
+	background: transparent;
+}
+
+.stationListContainer ul {
+	border-left: none;
+}
+
+.stationListContainer .stationItem {
+}
+
+.stationListContainer .jspVerticalBar, .stationListContainer .jspVerticalBar .jspTrack {
+	background: $color-station-scroll-track;
+	opacity: 0.6;
+}
+
+.stationListContainer .jspVerticalBar .jspDrag {
+	background: $color-station-scroll-drag;
+}
+
+.modal-controls
+{
+	background: rgba(0,0,0,0.4);
+	border: 0px; /* Override 'border' style */
+	border-top: 0px;
+	border-right: 0px;
+	border-bottom: 0px;
+	border-left: 1px solid $color-modal-controls-border;
+}
+
+.stationListContainer .stationItem
+{
+	border-top: 1px solid $color-station-border-top;
+	border-bottom: 1px solid $color-station-border-bottom;
+}
+
+.stationListContainer .stationItem.selected
+{
+	background: $gradient-station-selected;
+}
+
+/* Create station container */
+.createStationContainer
+{
+	background: rgba(0,0,0,0.4);
+}
+
+.createStationContainer .modal-controls
+{
+	background: rgba(0,0,0,0.4);
+	border-left: 1px solid $color-modal-controls-border;
+	border-right: 0;
+	border-top: 0;
+	border-bottom: 0;
+}
+
+.results
+{
+	background: rgba(0,0,0,0.5);
+}
+
+.results-list li
+{
+	color: $text-color;
+}
+
+.results-list li a
+{
+	-webkit-tap-highlight-color: rgba(255,255,255,0.5);
+}
+
+
+/* BUTTONS 
+----------------------------------------------------------------------------- */
+.controlpad .button-1 {
+	background: $img-btn-def no-repeat 0px 0px !important; 
+
+	box-shadow: 0px 0px 6px rgba(0, 0, 0, 1) !important;
+	
+	border-radius: 0px !important;
+	border-top: 0px !important;
+	border-right: 0px !important;
+	border-bottom: 0px !important;
+	border-left: 0px !important;
+	text-shadow: none !important;
+	
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+.controlpad .button-1 span
+{
+}
+.controlpad .button-1:hover
+{
+	background-position: 100% 0px !important; 
+}
+
+.button-2
+{
+	background: $color-btn2-background;
+	border: 1px solid $color-btn2-border; 
+	border-radius: 0px;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.button-2:hover, .button-2.on:hover
+{
+	background: $color-btn2-background;
+	border: 1px solid $color-btn2-border; 
+}
+.button-2:focus, .button-2.on, .button-2.selected { background-color: $color-btn2-background-on; border-color: $color-btn2-border-on;}
+
+.keypad .button-1
+{
+	border-top: 1px solid $color-keypad-key-border-top;
+	border-bottom: 1px solid $color-keypad-key-border-bottom;
+	border-radius: 0px;
+	background: $gradient-keypad-btn;
+}
+
+.keypad .button-1 a {
+	color: $button-text-color;
+	text-shadow: none;
+}
+
+
+/* button icons - default states */
+.icon-thumbsup {background: $img-icon-thumbs-up no-repeat center center;}
+.icon-thumbsdown {background: $img-icon-thumbs-down no-repeat center center;}
+.icon-menu {background: $img-icon-menu no-repeat center center;}
+.icon-playpause {background: $img-icon-play-pause no-repeat center center;}
+.icon-skip {background: $img-icon-skip no-repeat center center;}
+.icon-genres {background: $img-icon-genres no-repeat center top;}
+.icon-cancel {background: $img-icon-cancel no-repeat center top;}
+.icon-addstation {background: $img-icon-add-station no-repeat center top;}
+
+/* button icons - on states */
+.on .icon-playpause, .play .icon-playpause {background: $img-icon-play-pause-on no-repeat center center;}
+.on .icon-thumbsup, .thumbed .icon-thumbsup {background: $img-icon-thumbs-up-on no-repeat center center;}
+.on .icon-thumbsdown, .thumbed .icon-thumbsdown {background: $img-icon-thumbs-down-on no-repeat center center;}
+/*720p Theme overrides*/
+@media (min-device-height: 720px) 
+{
+	body {
+		width: 100%;
+		height:100%;
+
+		.brandingBar{
+			background-size: 100% 100%;
+		}
+		.topNav {
+			background-size: 100% 100%;
+			height: 75px;
+			.icon {
+				width: 210px;
+				height: 60px;
+				a{
+					background-size: contain;
+					padding: 5px 0px 0px 50px;
+					margin-top: 10px;
+					font-size: 140%
+				}
+			}
+			
+		}
+		.mainContentWrapper {
+			width: 100%;
+
+			.nowPlayingContainer {
+
+				.infobox{
+					padding-top: 80px;
+					.art {
+						width: 350px;
+						height: 350px;
+					}
+					.infobox-body {
+						margin-top: 20px;
+						.textView{
+							height: 150px;
+						}
+						.progress {
+							.progbar {
+								height: 20px;
+								margin: 2px 20px 0px;
+							}
+						}
+						.controlpad {
+							a {
+								background-size: 200% 100% !important;
+								width: 75px;
+								height: 50px;
+								span {
+									width: 43px;
+									height: 43px;
+									margin: auto;
+								}
+							}
+						}
+					}
+				}
+			}
+			.stationListContainer {
+				.jspScrollable {
+					width: 1045px !important;
+					.jspContainer {
+						width: 100% !important;
+						.jspPane{	
+							width: 1010px !important;
+							.stationItem {
+								height: 75px;
+								.station_name{
+									font-size: 150%;
+									padding-top: 20px;
+									vertical-align: top;
+								}
+							}
+							.art{
+								width: 60px;
+								height: 60px;
+							}
+						}
+						.jspVerticalBar{
+							width: 30px;
+						}
+					}
+				}
+			}
+			.modal-controls {
+				width: 230px !important;
+				padding-top: 100px !important;
+				a{
+					width: 200px !important;
+					height: 160px !important;
+					span{
+						background-position: 50% 10%;
+						background-size: 35% 25%;
+						height: 100%;
+						width:100%;
+						padding-top: 100px !important;
+					}
+				}
+			}
+			.searchContainer {
+				width: 1000px;
+				.searchbox input {
+					height: 35px;
+					font-size: 150%;
+				}
+				.keypad {
+					width: 720px;
+					li {
+						width: 65px;
+					}
+					.button-1.x3 {
+						width: 345px !important;
+					}
+				}
+				.results{
+					width: 250px;
+					height: 280px;
+				}
+			}
+		}
+	}
+}

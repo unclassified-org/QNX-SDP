@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fileset name="basefs.bootstrap.python">
+  <!-- This package should be enough to run Python,
+       but it hasn't been tested. -->
+
+  <!-- python dependencies -->
+
+  <directory name="lib" uid="root" gid="nto" mode="0755"/>
+  <symlink name="lib/libsocket.so" target="libsocket.so.3" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/libsocket.so.3" uid="root" gid="nto" mode="0755"/>
+  <symlink name="lib/libm.so" target="libm.so.2" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/libm.so.2" uid="root" gid="nto" mode="0755"/>
+
+  <directory name="usr" uid="root" gid="nto" mode="0755"/>
+  <directory name="usr/lib" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libbz2.so" target="libbz2.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libbz2.so.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libcrypto.so" target="libcrypto.so.2" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libcrypto.so.2" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libssl.so" target="libssl.so.2" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libssl.so.2" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libz.so" target="libz.so.2" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libz.so.2" uid="root" gid="nto" mode="0755"/>
+
+  <!-- end dependencies; libc is in the IFS -->
+
+  <directory name="usr/bin" uid="root" gid="nto" mode="0755"/>
+
+  <!-- python 2.7 distribution in basefs.python27.os.xml -->
+
+</fileset>

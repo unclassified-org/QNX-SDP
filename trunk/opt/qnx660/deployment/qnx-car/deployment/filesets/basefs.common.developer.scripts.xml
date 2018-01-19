@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fileset name="basefs.common.developer.scripts">
+  <file name="scripts/load-emmc" uid="root" gid="nto" mode="0755"/>
+</fileset>

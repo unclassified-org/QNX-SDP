@@ -1,0 +1,110 @@
+/* $Id:$ */
+
+$background:		 						url("#{$img-dir}/bkgrd_800x395.png");
+
+/*Audio Control Assets*/					
+$audio-control-bkg-slider:					url("#{$img-dir}/audioControl/backgrounds/bkg_slider.png");
+$audio-control-bkg-sliderDisplay:			url("#{$img-dir}/audioControl/backgrounds/bkg_sliderDisplay.png");
+$audio-control-bkg-sliderDisplay-vol:		url("#{$img-dir}/audioControl/backgrounds/bkg_sliderDisplay_vol.png");
+$audio-control-bkg-vehicle: 				url("#{$img-dir}/audioControl/backgrounds/bkg_vehicle.png");
+$audio-control-btn-fade:					url("#{$img-dir}/audioControl/buttons/btn_fade.png");
+$audio-control-btn-slider-mask:				url("#{$img-dir}/audioControl/buttons/btn_slider_mask.png"); 
+$audio-control-btn-slider-minus:			url("#{$img-dir}/audioControl/buttons/btn_slider_minus.png");
+$audio-control-btn-slider-plus:				url("#{$img-dir}/audioControl/buttons/btn_slider_plus.png"); 
+
+/*Climate Control Assets*/
+$climate-control-bkgrd:						url("#{$img-dir}/climateControl/backgrounds/climate_bkgrd.png");  
+$climate-control-dial-L-black:				url("#{$img-dir}/climateControl/backgrounds/dial_L_black.png");
+$climate-control-dial-L-black-old:			url("#{$img-dir}/climateControl/backgrounds/dial_L_black_old.png"); 
+$climate-control-dial-L-white:				url("#{$img-dir}/climateControl/backgrounds/dial_L_white.png"); 
+$climate-control-dial-R-black:				url("#{$img-dir}/climateControl/backgrounds/dial_R_black.png");
+$climate-control-dial-R-black-old:			url("#{$img-dir}/climateControl/backgrounds/dial_R_black_old.png");
+$climate-control-dial-R-white:				url("#{$img-dir}/climateControl/backgrounds/dial_R_white.png");
+$climate-control-btn-ac:					url("#{$img-dir}/climateControl/buttons/btn_ac.png");
+$climate-control-btn-all:					url("#{$img-dir}/climateControl/buttons/btn_all.png");
+$climate-control-btn-circ:					url("#{$img-dir}/climateControl/buttons/btn_circ.png");
+$climate-control-btn-fanSpeed:				url("#{$img-dir}/climateControl/buttons/btn_fanSpeed.png");
+$climate-control-btn-heatedSeat:			url("#{$img-dir}/climateControl/buttons/btn_heatedSeat.png");
+$climate-control-btn-rearDef:				url("#{$img-dir}/climateControl/buttons/btn_rearDef.png");
+$climate-control-dial-L-mask:				url("#{$img-dir}/climateControl/masks/dial_L_mask.png");
+$climate-control-dial-R-mask:				url("#{$img-dir}/climateControl/masks/dial_R_mask.png");
+$climate-control-temp-control:				url("#{$img-dir}/climateControl/masks/temp_control.png");
+
+/*Dialog*/
+$dialog-bg-header:							url("#{$img-dir}/dialog/bg_header.png");
+
+/*Home Screen Assets*/
+$home-climate-control:							url("#{$img-dir}/home/buttons/climate_home.png");
+$home-personalization:							url("#{$img-dir}/home/buttons/pers_home.png");
+$home-mechanic:								url("#{$img-dir}/home/buttons/servesched_home.png");
+$home-audio-control:						url("#{$img-dir}/home/buttons/vol_home.png");
+
+/*Loading*/
+$loading:									url("#{$img-dir}/loading/loading.png");
+$loading-overlay:							url("#{$img-dir}/loading/loadingOverlay.png");
+
+/*Personalization Assets*/
+$personalization-bg-main:					url("#{$img-dir}/personalization/backgrounds/bg_main.png");
+$personalization-bg-modal-body:				url("#{$img-dir}/personalization/backgrounds/bg_modal_body.png");
+$personalization-bg-modal-shadow:			url("#{$img-dir}/personalization/backgrounds/bg_modal_shadow.png");
+$personalization-btn-chkbx:					url("#{$img-dir}/personalization/buttons/btn_chkbx.png");
+$personalization-btn-default:				url("#{$img-dir}/personalization/buttons/btn_default.png");
+$personalization-btn-modal-back:			url("#{$img-dir}/personalization/buttons/btn_modal_back.png");
+$personalization-btn-profile-add:			url("#{$img-dir}/personalization/buttons/btn_profile_add.png");
+$personalization-btn-name-clear:			url("#{$img-dir}/personalization/buttons/btn_profile_name_clear.png");
+$personalization-btn-profile-remove:		url("#{$img-dir}/personalization/buttons/btn_profile_remove.png");
+$personalization-drpdown-default:			url("#{$img-dir}/personalization/buttons/drpdwn_default.png");
+$personalization-avatar-female1:			url("#{$img-dir}/personalization/profile_images/img_avatar_female1.png");
+$personalization-avatar-female1-dis:		url("#{$img-dir}/personalization/profile_images/img_avatar_female1_dis.png");
+$personalization-avatar-female2:			url("#{$img-dir}/personalization/profile_images/img_avatar_female2.png");
+$personalization-avatar-female2-dis:		url("#{$img-dir}/personalization/profile_images/img_avatar_female2_dis.png");
+$personalization-avatar-male1:				url("#{$img-dir}/personalization/profile_images/img_avatar_male1.png");
+$personalization-avatar-male1-dis:			url("#{$img-dir}/personalization/profile_images/img_avatar_male1_dis.png");
+$personalization-avatar-male2:				url("#{$img-dir}/personalization/profile_images/img_avatar_male2.png");
+$personalization-avatar-male2-dis:			url("#{$img-dir}/personalization/profile_images/img_avatar_male2_dis.png");
+
+/*Virtual Mechanic Assets*/										
+$virtual-mechanic-abs-switch:				url("#{$img-dir}/virtualMechanic/backgrounds/absSwitch.png");
+$virtual-mechanic-abs-switch-base:			url("#{$img-dir}/virtualMechanic/backgrounds/absSwitch_base.png");
+$virtual-mechanic-braking-bg:				url("#{$img-dir}/virtualMechanic/backgrounds/braking_bkgrd.png");
+$virtual-mechanic-current-gear:				url("#{$img-dir}/virtualMechanic/backgrounds/currentGear.png");
+$virtual-mechanic-dialog-bg:				url("#{$img-dir}/virtualMechanic/backgrounds/dialog_bkgrd.png");
+$virtual-mechanic-electrical-bg:			url("#{$img-dir}/virtualMechanic/backgrounds/electrical_bkgrd.png");
+$virtual-mechanic-fluid-bar-blk:			url("#{$img-dir}/virtualMechanic/backgrounds/fluid_bar_blk.png");
+$virtual-mechanic-fluid-bar-caut:			url("#{$img-dir}/virtualMechanic/backgrounds/fluid_bar_caut.png");
+$virtual-mechanic-fluid-bar-norm:			url("#{$img-dir}/virtualMechanic/backgrounds/fluid_bar_norm.png");
+$virtual-mechanic-fluid-bar-red:			url("#{$img-dir}/virtualMechanic/backgrounds/fluid_bar_red.png");
+$virtual-mechanic-powertrain-bg:			url("#{$img-dir}/virtualMechanic/backgrounds/powertrain_bkgrd.png");
+$virtual-mechanic-status-arrow-large-L:		url("#{$img-dir}/virtualMechanic/backgrounds/statusArrow_large_left.png");
+$virtual-mechanic-status-arrow-large-R:		url("#{$img-dir}/virtualMechanic/backgrounds/statusArrow_large_right.png");
+$virtual-mechanic-status-arrow-L:			url("#{$img-dir}/virtualMechanic/backgrounds/statusArrow_left.png");
+$virtual-mechanic-status-arrow-R:			url("#{$img-dir}/virtualMechanic/backgrounds/statusArrow_right.png");
+$virtual-mechanic-status-box-large:			url("#{$img-dir}/virtualMechanic/backgrounds/statusBox_large.png");
+$virtual-mechanic-stat-avg-speed:			url("#{$img-dir}/virtualMechanic/backgrounds/stat_avspeed.png");
+$virtual-mechanic-stat-depart:				url("#{$img-dir}/virtualMechanic/backgrounds/stat_depart.png");
+$virtual-mechanic-stat-distance:			url("#{$img-dir}/virtualMechanic/backgrounds/stat_distance.png");
+$virtual-mechanic-stat-milage:				url("#{$img-dir}/virtualMechanic/backgrounds/stat_mileage.png");
+$virtual-mechanic-stat-trip-dur:			url("#{$img-dir}/virtualMechanic/backgrounds/stat_tripdur.png");
+$virtual-mechanic-traction-bg:				url("#{$img-dir}/virtualMechanic/backgrounds/traction_bkgrd.png");
+$virtual-mechanic-bg:						url("#{$img-dir}/virtualMechanic/backgrounds/virtMech_bkgrd.png");
+$virtual-mechanic-btn-abs-switch:			url("#{$img-dir}/virtualMechanic/buttons/btn_absSwitch.png");
+$virtual-mechanic-btn-def:					url("#{$img-dir}/virtualMechanic/buttons/btn_def.png");
+$virtual-mechanic-btn-dialog-close:			url("#{$img-dir}/virtualMechanic/buttons/btn_dialogClose.png");
+$virtual-mechanic-btn-vehicle-stats-maint:	url("#{$img-dir}/virtualMechanic/buttons/btn_vehicleStatsMaint.png");
+$virtual-mechanic-btn-vehicle-status:		url("#{$img-dir}/virtualMechanic/buttons/btn_vehicleStatus.png");
+$virtual-mechanic-fuel-bar:					url("#{$img-dir}/virtualMechanic/fuelBar.png");
+$virtual-mechanic-icon-braking:				url("#{$img-dir}/virtualMechanic/icons/braking.png");
+$virtual-mechanic-icon-calendar:			url("#{$img-dir}/virtualMechanic/icons/calendar.png");
+$virtual-mechanic-icon-caution:				url("#{$img-dir}/virtualMechanic/icons/caution.png");
+$virtual-mechanic-icon-electric:			url("#{$img-dir}/virtualMechanic/icons/electric.png");
+$virtual-mechanic-icon-fluid:				url("#{$img-dir}/virtualMechanic/icons/fluid.png");
+$virtual-mechanic-icon-ok:					url("#{$img-dir}/virtualMechanic/icons/ok.png");
+$virtual-mechanic-icon-powertrain:			url("#{$img-dir}/virtualMechanic/icons/powertrain.png");
+$virtual-mechanic-icon-stats:				url("#{$img-dir}/virtualMechanic/icons/stats.png");
+$virtual-mechanic-icon-traction:			url("#{$img-dir}/virtualMechanic/icons/traction.png");
+/*Dialog Images*/
+$dialog-bg:									url("#{$theme-common-img-dir}/dialog_bkgrd.png");
+$dialog-bg-header:							url("#{$theme-common-img-dir}/dialog_bg_header.png");
+$dialog-button-blue:						url("#{$theme-common-img-dir}/btn_blue_def.png");
+$dialog-button-grey:						url("#{$theme-common-img-dir}/btn_grey_def.png");
+$dialog-button-clear:						url("#{$theme-common-img-dir}/search_del.png");

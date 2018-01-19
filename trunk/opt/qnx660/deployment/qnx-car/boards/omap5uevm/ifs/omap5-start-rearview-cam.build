@@ -1,0 +1,25 @@
+[+script] .script = {
+        ksh /proc/boot/.rearview-cam 
+}
+
+[perms=0644] .rearview-cam = {
+        #Don't wait longer than 4 here, or else the scripts in run-early.build will timeout waiting for
+        # the disk (or else extend the waitfor's there if we need to wait longer than 4s here)
+        waitfor /dev/screen 4
+        waitfor /dev/i2c3
+        rearview-camera -zorder=-1 -parent-zorder=-1 -pipeline=1 -format=uyvy -sfsize=640x480 -bsize=640x480 -ddr-clk=384 -source=0 -nlanes=1 > /dev/null 2>&1 &
+        /proc/boot/timestamp "REARVIEW CAMERA DONE" &
+}
+
+### Libraries
+[perms=0755]
+libcapture-board-omap4-5-uevm-es2.so
+libcapture-soc-omap4-5.so
+libcapture-camera-ov5640.so
+[type=link] libcapture.so=libcapture.so.1
+[type=link] /proc/boot/libcapture.so.1=/proc/boot/libcapture-board-omap4-5-uevm-es2.so
+
+# Executables
+[data=c perms=0755]
+rearview-camera
+##eof

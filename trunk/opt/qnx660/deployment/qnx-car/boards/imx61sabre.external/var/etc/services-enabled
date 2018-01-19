@@ -1,0 +1,6 @@
+# <service>:true/false to enable/disable the service respectively 
+APKRUNTIME:false
+DLNA:false
+WIFI:false
+NAVIGATION:true
+APPUPD:false

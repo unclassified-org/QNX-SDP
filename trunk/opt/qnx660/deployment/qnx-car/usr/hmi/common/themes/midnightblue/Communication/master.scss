@@ -1,0 +1,37 @@
+// Import base theme variables
+
+@import '../base';
+
+$app-dir: $theme-dir + "/Communication";
+
+// Variable definitions for current application
+$phone-number-background: #252122;
+$call-border-color: #ffffff;
+
+@media (max-device-height: 719px) 
+{
+	@import './800x480/style';
+	@import './images';
+
+	// Import common components
+	@import '../../common/menu';
+	@import '../../common/lists';
+	@import '../../common/messagebox';
+
+	// Import application layout
+	@import '../../common/Communication/master';
+}
+
+@media (min-device-height: 720px) 
+{
+	@import './1280x720/style';
+	@import './images';
+	
+	// Import common components
+	@import '../../common/menu';
+	@import '../../common/lists';
+	@import '../../common/messagebox';
+
+	// Import application layout
+	@import '../../common/Communication/master';
+}

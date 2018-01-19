@@ -1,0 +1,23 @@
+// Import base theme variables
+
+@import '../base';
+
+$app-dir: $theme-dir + "/Status";
+
+@media (max-device-height: 719px) 
+{
+	@import './800x480/style';
+	@import './images';
+
+	// Import application layout
+	@import '../../common/Status/master';
+}
+
+@media (min-device-height: 720px) 
+{
+	@import './1280x720/style';
+	@import './images';
+
+	// Import application layout
+	@import '../../common/Status/master';
+}

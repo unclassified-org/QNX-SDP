@@ -1,0 +1,101 @@
+/* $Id: jquery.voice.css 4273 2012-09-25 17:51:22Z mlapierre@qnx.com $ */
+
+#voiceTab {
+    position: absolute;
+    top:0px;
+    height: 0px;
+    width:100%;
+    z-index: 2;
+    -webkit-transition: height .25s linear;
+}
+
+#voiceTab.show {
+	height: 206px;
+}
+
+#voiceBg {
+  opacity:0;
+}
+
+#voiceBg.show {
+  height: 395px;
+  z-index: 1;
+  background-color: black;
+  opacity:0.8;
+  -webkit-transition: opacity .5s ease;
+}
+
+#voiceImg {
+	height: 200px;
+	width: 213px;
+	position: absolute;
+	top: 0px;
+	left: -213px;
+	-webkit-transition: left .25s linear;
+}
+
+#voiceImg.show {
+	left: 0;
+}
+
+#voiceAsrData.show {
+  opacity:1.0;
+}
+
+#voiceAsrData {
+  position:relative;
+  top:0px;
+  left:0px;
+  display: inline-block;
+  width:700px;
+  height:200px;
+  /* border:1px dotted yellow; */
+  opacity:0;
+  -webkit-transition: opacity .25s linear;
+}
+
+#voiceConfidence {
+  position: absolute;
+  top: 28px;
+  left:28px;
+  /* border:1px dotted yellow; */
+}
+
+#voiceConfidence span {
+  font-size: 40pt;
+  font-weight: bold;
+  color: #333;
+  opacity: 0.4;
+}
+
+#voiceState {
+  position: absolute;
+  top: 40px;
+  left:220px;
+}
+
+#voiceState span {
+  font-weight: bold;
+  font-size: 30pt;
+  color: #333;
+  opacity: 0.6;
+}
+
+#voiceUtterance {
+  position: absolute;
+  top: 100px;
+  left:220px;
+  width:580px;
+  height:80px;
+  overflow: hidden;
+}
+
+#voiceUtterance span {
+  color: white;
+  font-weight: bold;
+  font-size: 30pt;
+  opacity: 0.8;
+  display:block;
+  position:relative;
+  left: 0px;
+}

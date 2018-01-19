@@ -1,0 +1,29 @@
+$subMenuIndent: 290px;
+$maxDepth: 1;
+
+@import "../../../../../common/scss/menu";
+@import "../../../../../common/scss/lists";
+@import "../../../../../common/scss/sencha_tweaks";
+@import "../../../../../common/scss/messagebox";
+@import "main";
+@import "defaults";
+
+@media (max-device-height: 719px) {
+
+	@import "../../../../../common/scss/StandardDef/menu";
+	@import "../../../../../common/scss/StandardDef/lists";
+	@import "../../../../../common/scss/StandardDef/media";
+	@import "../../../../../common/scss/StandardDef/messagebox";
+	@import "StandardDef/main";
+	@import "StandardDef/defaults";
+}
+
+@media (min-device-height: 720px) { 
+
+	@import "../../../../../common/scss/720p/menu";
+	@import "../../../../../common/scss/720p/lists";
+	@import "../../../../../common/scss/720p/media";
+	@import "../../../../../common/scss/720p/messagebox";
+	@import "720p/main";
+  	@import "720p/defaults";
+}

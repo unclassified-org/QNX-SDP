@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fileset name="dosfs.omap5uevm.lvds.boot">
+  <file name="omap5-emmc-sata-lvds.ifs" uid="root" gid="nto" mode="0644"/>
+</fileset>

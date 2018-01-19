@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fileset name="basefs.common.asr.nuance_tts">
+  <symlink name="lib/libttsengine.so" target="libttsengine.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/libttsengine.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/asr/asr-nuance_tts-prompt.so" uid="root" gid="nto" mode="0755"/>
+  <symlink name="usr/lib/libvocalizer.so" target="libvocalizer.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/libvocalizer.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="opt/tts/nuance/Data/binbroker.dat" uid="root" gid="nto" mode="0755"/>
+  <file name="opt/tts/nuance/Data/clc_enu_cfg1.dat" uid="root" gid="nto" mode="0755"/>
+  <file name="opt/tts/nuance/Data/clc_enu_samantha_cfg1.dat" uid="root" gid="nto" mode="0755"/>
+  <file name="opt/tts/nuance/Data/img_enus.bin" uid="root" gid="nto" mode="0755"/>
+  <file name="opt/tts/nuance/Data/lid.dat" uid="root" gid="nto" mode="0755"/>
+  <file name="opt/tts/nuance/Data/lvr_enus8k.bin" uid="root" gid="nto" mode="0755"/>
+  <file name="opt/tts/nuance/Data/prm_enus.bin" uid="root" gid="nto" mode="0755"/>
+  <file name="opt/tts/nuance/Data/select_samantha_bet2f16.dat" uid="root" gid="nto" mode="0755"/>
+  <file name="opt/tts/nuance/Data/str_enus.bin" uid="root" gid="nto" mode="0755"/>
+  <file name="opt/tts/nuance/Data/synth_med_fxd_bet2f16.dat" uid="root" gid="nto" mode="0755"/>
+  <file name="opt/tts/nuance/Data/vst_config_gen.bin" uid="root" gid="nto" mode="0755"/>
+  <file name="var/pps/services/asr/tts" uid="root" gid="nto" mode="0777"/>
+</fileset>

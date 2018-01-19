@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fileset name="basefs.common.debug.os">
+  <file name="bin/df" uid="root" gid="nto" mode="0750"/>
+  <file name="bin/dd" uid="root" gid="nto" mode="0755"/>
+  <file name="bin/diff" uid="root" gid="nto" mode="0755"/>
+  <file name="bin/du" uid="root" gid="nto" mode="0755"/>
+  <file name="bin/esh" uid="root" gid="nto" mode="0755"/>
+  <file name="bin/tar" uid="root" gid="nto" mode="0755"/>
+  <symlink name="bin/vi" target="elvis" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/bin/coreinfo" uid="root" gid="nto" mode="0750"/>
+  <file name="usr/bin/events" uid="root" gid="nto" mode="0750"/>
+  <file name="usr/bin/mix_ctl" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/bin/mmcli" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/bin/hogs" uid="root" gid="nto" mode="0750"/>
+  <file name="usr/bin/hd" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/bin/sqlite3" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/bin/wave" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/sbin/tracelogger" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/bin/qtalk" uid="root" gid="nto" mode="0755"/>
+  <file name="bin/in32" uid="root" gid="nto" mode="0750"/>
+  <file name="bin/out32" uid="root" gid="nto" mode="0750"/>
+  <file name="bin/isend" uid="root" gid="nto" mode="0750"/>
+  <file name="bin/isendrecv" uid="root" gid="nto" mode="0750"/>
+</fileset>

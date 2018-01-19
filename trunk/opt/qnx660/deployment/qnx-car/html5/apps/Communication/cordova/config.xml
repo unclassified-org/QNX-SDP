@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="Communication" version="1.0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:rim="http://www.blackberry.com/ns/widgets">
+    <name>Communication</name>
+    <author>QNX</author>
+    <description>Communication application for QNX CAR 2</description>
+    <license href="http://opensource.org/licenses/alphabetical">
+    </license>
+    <content src="index.html" />
+    <config-file target="bar-descriptor.xml" parent="/qnx"> 
+        <category>system</category> 
+    </config-file>
+    <rim:permissions>
+        <rim:permit>access_shared</rim:permit>
+        <rim:permit>read_device_identifying_information</rim:permit>
+   </rim:permissions>
+    <icon src="icon.png" />
+    <access uri="*" subdomains="true" />
+    <access uri="file:///" subdomains="true" />
+    <feature name="Accelerometer" value="Accelerometer" />
+    <feature name="Battery" value="Battery" />
+    <feature name="Camera" value="Camera" />
+    <feature name="media-capture" value="Capture" />
+    <feature name="Contacts" value="Contacts" />
+    <feature name="Device" value="Device" />
+    <feature name="Geolocation" value="Geolocation" />
+    <feature name="Logger" value="Logger" />
+    <feature name="Media" value="Media" />
+    <feature name="NetworkStatus" value="NetworkStatus" />
+    <feature name="Notification" value="Notification" />
+    <feature name="SplashScreen" value="SplashScreen" />
+    <feature name="com.blackberry.utils" />
+    <feature name="com.blackberry.jpps" />
+    <feature name="com.qnx.car.profile" />
+    <feature name="com.qnx.application"/>
+    <feature name="com.qnx.application.event"/>
+    <feature name="com.qnx.message"/>
+    <feature name="com.qnx.bluetooth"/>
+    <feature name="com.qnx.bluetooth.pbap"/>
+    <feature name="com.qnx.phone"/>
+    <feature name="com.qnx.settings"/>
+    <feature name="com.qnx.car.theme"/>
+    <feature name="com.qnx.car.sensors"/>
+</widget>

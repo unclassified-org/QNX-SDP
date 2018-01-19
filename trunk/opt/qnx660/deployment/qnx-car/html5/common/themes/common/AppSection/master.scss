@@ -1,0 +1,108 @@
+/* $Id: menu.css 4273 2012-09-25 17:51:22Z mlapierre@qnx.com $ */
+
+body {
+	position:absolute;
+	padding: 0px;
+	margin: 0px;
+	width: 800px * $x-multiplier;
+	height: 395px * $y-multiplier;
+	overflow: none;
+	background: $body-background;
+	font-size: $font-size * $x-multiplier;
+}
+
+.card.card1 {
+	height: 335px * $y-multiplier;
+}
+
+.x-dataview-inner {
+	padding-top: 10px * $y-multiplier;
+}
+
+.home-item {
+	float: left;
+	margin: {
+		top: 2px * $y-multiplier;
+		right: 23px * $x-multiplier;
+		bottom: 2px * $y-multiplier;
+		left: 23px * $x-multiplier;
+	}
+	text-align: center;
+	width: 87px * $x-multiplier;
+	height: 110px * $y-multiplier;
+
+	img {
+		width: 60px * $x-multiplier;
+		height: 60px * $y-multiplier;
+	}
+}
+
+$box-shadow-blur: $x-multiplier * 15px;
+.home-item img:active {
+	border: none;
+	background-color: rgba(81, 199, 233, 0.2);
+	-webkit-box-shadow: 0 0 $box-shadow-blur rgba(81, 199, 233, 0.2);
+	-webkit-border-radius: 3px * $x-multiplier;
+}
+
+.home-item.disabled{
+	opacity: 0.3;
+}
+
+.home-item h3{
+	font: {
+		size: 75%;
+		family: "Arial Regular", sans-serif;
+	}
+	color: $text-color;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.x-toolbar-tb-ui {
+	height: 50px * $y-multiplier;
+	width: 800px * $x-multiplier;
+	background: $app-bar;
+	border-bottom: none !important;
+}
+
+.x-button-label {
+	width: 133px * $x-multiplier;
+	height: 50px * $y-multiplier;
+	line-height: 50px * $y-multiplier;
+}
+
+.btn-base {
+	color:$button-text-color;
+	text-align: center;
+	font: {
+		size: 100%;
+		family: $button-font;
+	}
+	border: none;
+	border-radius: 0px;
+	text-shadow: rgba(255,255,255,0.25) 0 0.08em 0; 
+}
+
+.x-button-pressed {
+	background: $app-bar-highlighted;	
+	color: $text-color;
+	font: {
+		size: 100%;
+		family: $button-font-pressed;
+	}
+	text-shadow: rgba(0,0,0,0.25) 0.2em 0.2em 0.2em; 
+	background-size: 100% 100%
+}
+
+.x-fullscreen, .x-layout-fit-item, .x-layout-card-item {
+	background: transparent;
+}
+
+.x-item-disabled .home-item{
+	opacity: 0.3;
+}
+
+.scrollable-dataview {
+	height: 345px * $y-multiplier;
+}

@@ -1,0 +1,47 @@
+###########################################################################
+##
+## QNX Neutrino 6.5.0 on the Texas Instruments OMAP 5432 uEVM Board
+##
+###########################################################################
+##
+## SUPPORTED DEVICES:
+##
+## SERIAL:   OMAP UART
+## I2C:      Inter-Integrated Circuit Bus
+## SPI:      Serial Peripheral Interface Bus
+## MMC/SD:   MultMediaCard/Secure Digital  
+## 
+###########################################################################
+##
+## NOTES:
+##
+###########################################################################
+
+###########################################################################
+## START OF BUILD SCRIPT
+###########################################################################
+
+[image=0x80100000]
+
+# For loading IFS images with the U-Boot
+[virtual=armle-v7,raw] .bootstrap = {
+    startup-omap5-uevm5432 -P2
+    #######################################################################
+    ## PATH set here is the *safe* path for executables.
+    ## LD_LIBRARY_PATH set here is the *safe* path for libraries.
+    ##     i.e. These are the paths searched by setuid/setgid binaries.
+    ##          (confstr(_CS_PATH...) and confstr(_CS_LIBPATH...))
+    #######################################################################
+    [module=aps] PATH=/proc/boot:/bin:/usr/bin:/opt/bin:/base/bin:/base/usr/bin:/base/sbin:/base/usr/sbin LD_LIBRARY_PATH=/proc/boot:/lib:/usr/lib:/lib/dll:/opt/lib:/base/lib:/base/usr/lib:/base/lib/dll procnto-smp-instr -ae 
+}
+
+[-page_align code=uip data=copy +compress]
+
+[+script] .script = {
+    # Initialise the console
+    procmgr_symlink ../../proc/boot/libc.so.3 /usr/lib/ldqnx.so.2
+    i2c-omap35xx-omap4 -p 0x48070000 -i 88 -c2 --u0 
+    i2c-omap35xx-omap4 -p 0x48060000 -i 93 -c2 --u3 
+    timestamp "IFS SCRIPT START" &
+}
+

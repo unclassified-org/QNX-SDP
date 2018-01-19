@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" 
+		xmlns:rim="http://www.blackberry.com/ns/widgets" 
+		version="1.0.0.5" id="carcontrol" xml:lang="en">
+	<author href="http://www.example.com/" rim:copyright="Copyright 1998-2011 My Corp">QNX</author>
+	<name>Car Control</name>
+	<rim:category name="system"/>
+	<rim:permissions>
+		<rim:permit>access_shared</rim:permit>
+	</rim:permissions>
+	<access uri="*" />
+	<content src="index.html"/>
+	<feature id="car.Zone" required="true" version="1.0.0.0"/>
+	<feature id="car.hvac" required="true" version="1.0.0.0"/>
+	<feature id="car.audiomixer" required="true" version="1.0.0.0"/>
+	<feature id="car.theme" required="true" version="1.0.0.0"/>
+	<feature id="car.profile" required="true" version="1.0.0.0"/>
+
+	<feature id="car.sensors" required="true" version="1.0.0.0"/>
+
+	<feature id="qnx.application" required="true" version="1.0.0.0"/>
+	<feature id="qnx.application.event" required="true" version="1.0.0.0"/>
+	<feature id="qnx.bluetooth" required="true" version="1.0.0.0"/>
+	<feature id="qnx.settings" required="true" version="1.0.0.0"/>
+</widget>

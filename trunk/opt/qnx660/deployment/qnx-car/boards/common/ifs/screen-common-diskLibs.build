@@ -1,0 +1,17 @@
+### screen-common.build
+
+[+script] screen-libs-on-disk = {
+    display_msg Build_6
+    display_msg Waiting for disk before starting screen...
+    /proc/boot/waitfor /base/etc/system/config/graphics.conf 10
+    display_msg Starting screen.
+    screen &
+}
+
+[type=link] /etc/system/config/img.conf=/base/etc/system/config/img.conf
+[type=link] /etc/system/config/images=/base/etc/system/config/images
+[type=link] /proc/boot/scaling.conf=/base/etc/system/config/scaling.conf
+[type=link] /proc/boot/graphics.conf=/base/etc/system/config/graphics.conf
+[type=link] /etc/system/config/scaling.conf=/base/etc/system/config/scaling.conf
+
+##eof

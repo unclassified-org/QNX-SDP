@@ -1,0 +1,56 @@
+/**
+ * Styles for the Home view.
+ * @author lgreenway
+ *
+ * $Id$
+ */
+
+.home-panel {
+	.x-dataview {
+		height: 100%;
+	}
+}
+
+.home-item {
+	width: 290px * $x-multiplier;
+	height: 160px * $y-multiplier;
+	float: left;
+	margin: (10px * $y-multiplier) 0px 0px (74px * $x-multiplier);
+	text-align: center;
+	padding-top: 10px * $y-multiplier;
+	background: transparent no-repat top left;
+	background-size: 200% 100%;
+	color: $title-bar-color;
+	
+	&:active {
+		background-position-x: -100%;
+		color: $active-button-text-color;
+	}
+}
+
+.home-item span, .home-item-safe span, .home-item-unsafe span {
+	font-size: 94%;
+}
+
+.home-radio {
+	background-image: $img-home-radio;
+}
+
+.home-music {
+	background-image: $img-home-music;
+}
+
+.home-video {
+	background-image: $img-home-video;
+}
+
+.home-search {
+	background-image: $img-home-search;
+}
+
+/** home items while driving **/
+
+.home-item.unavailable, .home-item.unsafe.driving {
+	pointer-events: none;
+	opacity: 0.2;
+}

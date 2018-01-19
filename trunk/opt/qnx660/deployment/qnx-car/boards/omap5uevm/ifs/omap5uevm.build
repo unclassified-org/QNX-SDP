@@ -1,0 +1,69 @@
+[+script] .script = {
+        #######################################################################
+        ## Console SERIAL driver
+        ##
+        ## Start serial driver early, see issue ID 448693
+        #######################################################################
+        display_msg Starting UART1 (Console).....
+        devc-seromap -e -F -b115200 -c48000000/16 0x48020000^2,106 -u1 &
+        reopen /dev/ser1
+
+        # Use UART2 as debug port
+        # Set UART2_TX/UART2_RX PINMUX
+        #out32 0x4A0028bc 0x0000118
+
+        # Use UART2 as debug port
+        #display_msg Starting UART2 (DEBUG IF)
+        #devc-seromap -F -b115200 -c48000000/16 0x4806c000^2,105 -u2
+        #waitfor /dev/ser2 4
+
+        #######################################################################
+        ## RTC - requires i2c resource manager to be running
+        #######################################################################
+        # Temporary hack to take processor line out of the msecure mode. Imp for RTC to work.
+        out32 0x4a002980 0x01080918
+	display_msg Starting RTC utility...
+        rtc phoenix &
+        
+        #######################################################################
+        ## USB EHCI driver
+        #######################################################################
+        #display_msg starting USB driver...
+        #io-usb -vvv -dehci-omap3 ioport=0x4a064c00,irq=109 -d sevm-omap5-xhci ioport=0x4a030000,irq=124
+        #waitfor /dev/io-usb/io-usb 4
+
+        # Release USB bridge reset line
+        #out32 0x48057194 0x10000
+        
+	# Release Ethernet reset line
+        #out32 0x4ae10194 0x8000
+
+        #######################################################################
+        ## SATA driver
+        #######################################################################
+        # display_msg Starting SATA driver...
+        # devb-ahci ahci ioport=0x4a140000,irq=86 blk cache=2M cam cache
+
+        #######################################################################
+        ## These env variables are inherited by all the programs which follow
+        #######################################################################
+
+        SYSNAME=nto
+        TERM=qansi
+        HOME=/
+#        PATH=:/proc/boot:/bin:/usr/bin:/opt/bin
+#        LD_LIBRARY_PATH=:/proc/boot:/lib:/usr/lib:/lib/dll:/opt/lib
+
+#        [+session] sh &
+}
+
+[perms=0644] .splash-screen = {	
+    waitfor /base/usr/share/images/car-startup.png
+    display_image -zorder=-2 -noinit=1 -display=hdmi -file=/base/usr/share/images/car-startup.png -pipeline=1 &
+}
+
+# Executables
+[data=c perms=0755]
+devc-seromap
+rtc
+out32

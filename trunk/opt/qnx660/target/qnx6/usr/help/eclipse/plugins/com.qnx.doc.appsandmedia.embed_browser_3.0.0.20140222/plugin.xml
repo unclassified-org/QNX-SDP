@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<?eclipse version="3.0"?> 
+<plugin version="1.0" provider-name="%plugin.providername" name="About the QNX SDK for Apps and Media"
+   id="com.qnx.doc.appsandmedia.embed_browser">
+
+   <extension point="org.eclipse.help.toc">
+	<toc file="main.xml" primary="true"/>
+   </extension>
+   
+	<extension point="org.eclipse.help.index">
+	 <index file="index.xml"/>
+	</extension>
+	
+</plugin>

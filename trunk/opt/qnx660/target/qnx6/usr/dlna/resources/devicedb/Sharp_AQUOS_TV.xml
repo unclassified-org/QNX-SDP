@@ -1,0 +1,14 @@
+<Client>
+	<DeviceId>
+		<DisplayName>Sharp AQUOS TV</DisplayName>
+		<HttpRecognition>
+			<HttpText>SHARP-AQUOS-DMP</HttpText>
+		</HttpRecognition>
+		<MappingUpdatePolicy>FIX</MappingUpdatePolicy>
+	</DeviceId>
+	<Adaptations>
+		<DLNA>
+			<Version>DLNA15</Version>
+		</DLNA>
+	</Adaptations>
+</Client>

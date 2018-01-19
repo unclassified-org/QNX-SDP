@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin name="Multimedia Renderer Developer's Guide" id="com.qnx.doc.mme.mmrenderer" version="1.0"
+    provider-name="%plugin.providername">
+
+    <extension point="org.eclipse.help.toc">
+        <toc file="mme.mmrenderer.xml" primary="true"/>
+    </extension>
+
+    <extension point="org.eclipse.help.index">
+        <index file="index.xml"/>
+    </extension>
+
+    <extension id="com.qnx.doc.mme.mmrenderer.libhover" name="MMRenderer API Documentation"
+        point="org.eclipse.linuxtools.cdt.libhover.library">
+        <library location="output.libhover" name="MMRenderer lib ref Documentation" type="C"/>
+    </extension>
+
+</plugin>

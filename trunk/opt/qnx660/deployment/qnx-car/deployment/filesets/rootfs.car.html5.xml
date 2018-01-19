@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fileset name="rootfs.car.html5.common">
+  <!-- include the root directory permissions in the tar file -->
+  <directory name="." uid="root" gid="nto" mode="0755"/>
+  <file name="var/pps/system/navigator/command" uid="root" gid="nto" mode="0666"/>
+  <file name="var/pps/services/gears/status" uid="root" gid="nto" mode="0777"/>
+  <file name="var/pps/services/app-launcher" uid="root" gid="nto" mode="0777"/>
+
+  <!-- required for platform:/// to function, will be linked to /usr/include/webplatform -->
+  <directory name="var/webplatform" uid="root" gid="nto" mode="0777"/>
+</fileset>

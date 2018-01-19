@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<toc label="Multimedia Architecture Guide" topic="topic/about.html"><topic label="Multimedia Architecture" href="topic/mm_arch.html"><topic label="Device detection and information retrieval" href="topic/mm_devices.html"/><topic label="Metadata synchronization and retrieval" href="topic/mm_synch.html"/><topic label="Media playback" href="topic/mm_playback.html"/></topic></toc>

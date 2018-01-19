@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+    <head>
+        <script src="weblauncher.js"></script>
+        <script>
+        qnx.weblauncher.applicationWindow.setVisible(true);
+
+        var root = Object.create(qnx.weblauncher.webview);
+        root.id = 1;
+
+        var webview = Object.create(qnx.weblauncher.webview);
+        webview.id = root.create(root.applicationWindowGroup(), "InProcess");
+
+        webview.onEvent('Created', function (webview, value, eventId) {
+            webview.setGeometry(0, 0, 200, 200);
+            webview.setVisible(true);
+            webview.setActive(true);
+            webview.loadString("<html><body style=\"background-color:red;\"></body></html>");
+        });
+
+        window.addEventListener("load", function () {
+             var t = setTimeout("onInit()", 1000);
+        });
+
+        function onInit () {
+            var pointer = webview.jsScreenWindowHandle();
+            qnx.weblauncher.applicationWindow.flushContext();
+
+            qnx.weblauncher.windowAnimations.animateGlobalAlpha(pointer, "Linear", 5.0, 255, 0);
+            qnx.weblauncher.windowAnimations.animateWindowLocation(pointer, "Linear", 5.0, 1024, 600, 0, 0);
+        };
+        </script>
+    </head>
+</html>

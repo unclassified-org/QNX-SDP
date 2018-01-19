@@ -1,0 +1,154 @@
+<project basedir=".">
+
+    <target name="init-sencha-command">
+        <taskdef resource="com/sencha/ant/antlib.xml" classpath="${cmd.dir}/sencha.jar"/>
+    </target>
+
+    <target name="init-properties">
+        <property name="senchadir" value=".sencha"/>
+    </target>
+
+    <target name="init" depends="init-properties,init-sencha-command"/>
+
+    <target name="copy-framework-to-workspace-impl">
+        <fail>This is the default implementation from Sencha CMD and must be overriden by the framework.</fail>
+    </target>
+    <target name="-before-copy-framework-to-workspace"/>
+    <target name="-after-copy-framework-to-workspace"/>
+    <target name="copy-framework-to-workspace"
+            depends="init,
+                     -before-copy-framework-to-workspace,
+                     copy-framework-to-workspace-impl,
+                     -after-copy-framework-to-workspace"
+            unless="args.skipCopy"/>
+
+    <target name="generate-workspace-impl" unless="args.skipCreate">
+        <x-generate dir="${cmd.config.dir}/templates/workspace"
+                    todir="${args.path}">
+            <param name="senchadir" value="${senchadir}"/>
+        </x-generate>
+    </target>
+    <target name="-before-generate-workspace"/>
+    <target name="-after-generate-workspace"/>
+    <target name="generate-workspace"
+            depends="init,
+                     -before-generate-workspace,
+                     generate-workspace-impl,
+                     copy-framework-to-workspace,
+                     -after-generate-workspace"/>
+
+
+    <target name="generate-app-impl">
+        <fail>This is the default implementation from Sencha CMD and must be overriden by the framework.</fail>
+    </target>
+    <target name="-before-generate-app"/>
+    <target name="-after-generate-app"/>
+    <target name="generate-app"
+            depends="init,-before-generate-app,generate-app-impl,-after-generate-app"/>
+
+    <target name="generate-theme-impl">
+        <fail>This is the default implementation from Sencha CMD and must be overriden by the framework.</fail>
+    </target>
+    <target name="-before-generate-theme"/>
+    <target name="-after-generate-theme"/>
+    <target name="generate-theme"
+            depends="init,-before-generate-theme,generate-theme-impl,-after-generate-theme"/>
+
+    <target name="generate-controller-impl">
+        <fail>This is the default implementation from Sencha CMD and must be overriden by the framework.</fail>
+    </target>
+
+    <target name="-before-generate-controller"/>
+    <target name="-after-generate-controller"/>
+    <target name="generate-controller"
+            depends="init,-before-generate-controller,generate-controller-impl,-after-generate-controller"/>
+
+    <target name="generate-profile-impl">
+        <fail>This is the default implementation from Sencha CMD and must be overriden by the framework.</fail>
+    </target>
+    <target name="-before-generate-profile"/>
+    <target name="-after-generate-profile"/>
+    <target name="generate-profile"
+            depends="init,-before-generate-profile,generate-profile-impl,-after-generate-profile"/>
+
+
+    <target name="generate-model-impl">
+        <fail>This is the default implementation from Sencha CMD and must be overriden by the framework.</fail>
+    </target>
+    <target name="-before-generate-model"/>
+    <target name="-after-generate-model"/>
+    <target name="generate-model"
+            depends="init,-before-generate-model,generate-model-impl,-after-generate-model"/>
+
+    <target name="generate-form-impl">
+        <fail>This is the default implementation from Sencha CMD and must be overriden by the framework.</fail>
+    </target>
+    <target name="-before-generate-form"/>
+    <target name="-after-generate-form"/>
+    <target name="generate-form"
+            depends="init,-before-generate-form,generate-form-impl,-after-generate-form"/>
+
+
+    <target name="generate-view-impl">
+        <fail>This is the default implementation from Sencha CMD and must be overriden by the framework.</fail>
+    </target>
+    <target name="-before-generate-view"/>
+    <target name="-after-generate-view"/>
+    <target name="generate-view"
+            depends="init,-before-generate-view,generate-view-impl,-after-generate-view"/>
+
+    <target name="app-build-impl">
+        <local name="antprops"/>
+        <script language="javascript">
+            var archive = project.getProperty("args.archive"),
+                appPath = project.getProperty("args.path"),
+                autoRun = project.getProperty("args.autorun"),
+                antProps = "-p=args.autorun:" + autoRun
+            if(archive) {
+                antProps += ",args.archive:" + archive;
+            }
+            project.setProperty("antprops", antProps);
+        </script>
+        <x-sencha-command>
+            config
+            --prop
+            args.path=${args.path}
+            then
+            ant
+            ${antprops}
+            -f
+            ${app.dir}/build.xml
+            ${args.environment}
+            build
+        </x-sencha-command>
+    </target>
+    <target name="-before-app-build"/>
+    <target name="-after-app-build"/>
+    <target name="app-build"
+            depends="init,-before-app-build,app-build-impl,-after-app-build"/>
+
+    <target name="app-upgrade-impl">
+        <fail>This is the default implementation from Sencha CMD and must be overriden by the framework.</fail>
+    </target>
+    <target name="-before-app-upgrade"/>
+    <target name="-after-app-upgrade"/>
+    <target name="app-upgrade"
+            depends="init,-before-app-upgrade,app-upgrade-impl,-after-app-upgrade"/>
+
+    <target name="app-resolve-impl">
+        <fail>This is the default implementation from Sencha CMD and must be overriden by the framework.</fail>
+    </target>
+    <target name="-before-app-resolve"/>
+    <target name="-after-app-resolve"/>
+    <target name="app-resolve"
+            depends="init,-before-app-resolve,app-resolve-impl,-after-app-resolve"/>
+
+    <target name="app-refresh-impl">
+        <fail>This is the default implementation from Sencha CMD and must be overriden by the framework.</fail>
+    </target>
+    <target name="-before-app-refresh"/>
+    <target name="-after-app-refresh"/>
+    <target name="app-refresh"
+            depends="init,-before-app-refresh,app-refresh-impl,-after-app-refresh"/>
+    
+</project>

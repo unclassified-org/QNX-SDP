@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- 
+		The main and only HTML page for Media Player
+		@author mlapierre
+		
+		$Id: index.html 7262 2013-09-26 16:08:50Z nschultz@qnx.com $ 
+	-->
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<title>Media Player</title>
+
+	<link rel="stylesheet" href="resources/css/external-includes.css" type="text/css" media="screen" title="no title" charset="utf-8">
+
+	<!-- qnx.theme2 stylesheet, settings -->
+	<link rel="stylesheet" id="theme-css" app="MediaPlayer" type="text/css" charset="utf-8">
+
+	<script type="text/javascript">
+		
+		/* 
+		NOTE: Copied from app.js, reason - mess with sencha packaging. 
+		Can be moved into separate file if there will be more utility methods like that
+		*/
+		
+		/**
+		 * Adds a format function to the String prototype
+		 * Ex: "Hello {0}".format("Joe") will return "Hello Joe"
+		 * @return {String} The formatted string
+		 */
+		String.prototype.format = function() {
+			var formatted = this;
+			for (var i = 0; i < arguments.length; i++) {
+				var regexp = new RegExp('\\{'+i+'\\}', 'gi');
+				formatted = formatted.replace(regexp, arguments[i]);
+			}
+			return formatted;
+		};		
+	</script>
+
+	<script>
+		<!-- Here as example non sencha apps would you this to listen and initialize the app-->		
+		function onReady() {
+			var node = document.createElement("script");
+			node.setAttribute("type", "text/javascript");
+			node.setAttribute("src", "app.js");
+			document.getElementsByTagName("head")[0].appendChild(node);		
+		}
+		window.addEventListener("load", function(e) {
+			document.addEventListener("webworksready", onReady);
+		}, false);
+	</script>
+	<script src="local:///chrome/webworks.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" src="platform:///apps/common/js/touch-2.2.1/sencha-touch-all.js"></script>
+	<script type="text/javascript" src="platform:///apps/common/js/jquery/jquery-1.7.2.min.js"></script>
+	
+	<!-- Pandora -->
+	<script type="text/javascript" src="resources/js/jstorage.js"></script>
+	<script type="text/javascript" src="resources/js/Pandora.js" defer="defer"></script>
+</head>
+<body>	
+</body>
+</html>

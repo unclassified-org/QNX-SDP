@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<index>
+<entry keyword="concurrent sessions">
+<topic href="topic/sessions.html#sessions" title="Metadata-extraction sessions"/>
+</entry>
+<entry keyword="configuration file contents">
+<topic href="topic/config_file.html#config_file" title="Configuration file"/>
+</entry>
+<entry keyword="configuring MDPs">
+<topic href="topic/config_mdps.html#config_mdps" title="Configuring Metadata Providers"/>
+</entry>
+<entry keyword="default configuration file">
+<topic href="topic/config_file.html#config_file" title="Configuration file"/>
+</entry>
+<entry keyword="establishing sessions">
+<topic href="topic/sessions.html#sessions" title="Metadata-extraction sessions"/>
+</entry>
+<entry keyword="handling session errors">
+<topic href="topic/sessions.html#sessions" title="Metadata-extraction sessions"/>
+</entry>
+<entry keyword="included MDPs">
+<topic href="topic/plugins_included.html#included_mdps" title="Included MDPs"/>
+</entry>
+<entry keyword="libmd API">
+<topic href="topic/api/libmd_api_overview.html#libmd_api" title="Metadata Provider API"/>
+</entry>
+<entry keyword="libmd architecture">
+<topic href="topic/arch.html#arch" title="Architecture of libmd"/>
+</entry>
+<entry keyword="libmd configuration file">
+<topic href="topic/config_file.html#config_file" title="Configuration file"/>
+</entry>
+<entry keyword="libmd introduction">
+<topic href="topic/overview.html#overview" title="Metadata Provider Overview"/>
+</entry>
+<entry keyword="libmd layers">
+<topic href="topic/arch.html#arch" title="Architecture of libmd"/>
+</entry>
+<entry keyword="libmd overview">
+<topic href="topic/overview.html#overview" title="Metadata Provider Overview"/>
+</entry>
+<entry keyword="libmd plugins">
+<topic href="topic/plugins.html#plugins" title="Metadata providers"/>
+</entry>
+<entry keyword="md_error.h data types">
+<topic href="topic/api/md_errors.h_typedefs_overview.html#md_errors.h_typedefs_overview" title="Data types in md_errors.h"/>
+</entry>
+<entry keyword="md_error.h functions">
+<topic href="topic/api/md_errors.h_functions_overview.html#md_errors.h_functions_overview" title="Functions in md_errors.h"/>
+</entry>
+<entry keyword="md.h data types">
+<topic href="topic/api/md.h_typedefs_overview.html#md.h_typedefs_overview" title="Data types in md.h"/>
+</entry>
+<entry keyword="md.h functions">
+<topic href="topic/api/md.h_functions_overview.html#md.h_functions_overview" title="Functions in md.h"/>
+</entry>
+<entry keyword="MDP metadata extraction">
+<topic href="topic/plugins_extraction.html#md_extraction" title="Metadata extraction"/>
+</entry>
+<entry keyword="MDP ratings">
+<topic href="topic/plugins_ratings.html#ratings" title="MDP ratings"/>
+</entry>
+<entry keyword="metadata">
+<topic href="topic/overview.html#overview" title="Metadata Provider Overview"/>
+</entry>
+<entry keyword="metadata matches">
+<topic href="topic/sessions.html#sessions" title="Metadata-extraction sessions"/>
+</entry>
+<entry keyword="metadata provider API">
+<topic href="topic/api/libmd_api_overview.html#libmd_api" title="Metadata Provider API"/>
+</entry>
+<entry keyword="metadata providers (MDPs)">
+<topic href="topic/plugins.html#plugins" title="Metadata providers"/>
+</entry>
+<entry keyword="metadata-extraction session">
+<topic href="topic/sessions.html#sessions" title="Metadata-extraction sessions"/>
+</entry>
+<entry keyword="session error information">
+<topic href="topic/sessions.html#sessions" title="Metadata-extraction sessions"/>
+</entry>
+<entry keyword="session parameters">
+<topic href="topic/sessions.html#sessions" title="Metadata-extraction sessions"/>
+</entry>
+</index>

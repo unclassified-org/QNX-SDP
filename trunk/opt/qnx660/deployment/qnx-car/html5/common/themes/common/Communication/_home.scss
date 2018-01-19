@@ -1,0 +1,59 @@
+/**
+ * CSS for the home view
+ * @author mlapierre
+ *
+ * $Id: home.css 4273 2012-09-25 17:51:22Z mlapierre@qnx.com $
+ */
+.home-dv {
+	padding-left: 0px;
+	height: 100%;
+}
+
+.home-item {
+	background-size: 200% 100%;
+	width: 290px * $x-multiplier;
+	height: 160px * $y-multiplier;
+	float: left;
+	margin: {
+		top: 10px * $y-multiplier;
+		right: 0px * $x-multiplier;
+		bottom: 0px * $y-multiplier;
+		left: 74px * $x-multiplier;
+	}
+	text-align: center;
+	padding-top: 10px * $y-multiplier;
+	color: $title-bar-color;
+	span {
+		font-size: 93.75%;
+	}
+}
+
+.home-item:active {
+	background-position-x: -100%;
+	color: $active-button-text-color;
+}
+
+.unavailable {
+	pointer-events: none;
+	opacity: 0.2;
+}
+
+.home-email {
+	background-image: $home-email;
+}
+
+.home-text {
+	background-image: $home-text;
+}
+
+.home-calllog {
+	background-image: $home-calllog;
+}
+
+.home-addressbook {
+	background-image: $home-addressbook;
+}
+
+.home-dialpad {
+	background-image: $home-dialpad;
+}

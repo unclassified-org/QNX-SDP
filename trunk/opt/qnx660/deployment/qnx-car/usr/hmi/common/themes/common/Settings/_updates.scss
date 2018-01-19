@@ -1,0 +1,73 @@
+/* $Id$ */
+
+.x-tab.icon_update {
+  background-image: $update-tab-icon;
+}
+
+.x-tab-active.icon_update {
+  background-image: $update-tab-icon-active;
+}
+
+.update_tab {
+  font-size: 125%;
+  position: relative;
+
+  .logo_text {
+	position: absolute;
+	left: 114px * $x-multiplier;
+	top: 32px * $y-multiplier;
+	font-size: 150%;
+	font-weight: bold;
+	line-height: 25px * $y-multiplier;
+	width: 500px * $x-multiplier;
+  }
+
+  .logo {
+	position: absolute;
+	left: 50px * $x-multiplier;
+	top: 27px * $y-multiplier;
+	width: 64px * $x-multiplier;
+	height: 64px * $y-multiplier;
+	background-size: 64px * $y-multiplier 64px * $x-multiplier;
+	background-image: $update-sheet-icon;
+  }
+
+  .update_button {
+	position: absolute;
+	left: 114px * $x-multiplier;
+	top: 250px * $y-multiplier;
+  }
+
+  .check_button {
+	position: absolute;
+	left: 114px * $x-multiplier;
+	top: 250px * $y-multiplier;
+  }
+
+  #version_label {
+	position: absolute;
+	left: 114px * $x-multiplier;
+	top: 202px * $y-multiplier;
+	width: 350px * $x-multiplier;
+	font-size: 100%;
+	text-align: left;
+  }
+
+  #update_available_label {
+	position: absolute;
+	left: 114px * $x-multiplier;
+	top: 122px * $y-multiplier;
+	width: 450px * $x-multiplier;
+	font-size: 100%;
+	text-align: left;
+  }
+
+  #action_label {
+	position: absolute;
+	left: 114px * $x-multiplier;
+	top: 182px * $y-multiplier;
+	width: 450px * $x-multiplier;
+	font-size: 100%;
+	text-align: left;
+  }
+}

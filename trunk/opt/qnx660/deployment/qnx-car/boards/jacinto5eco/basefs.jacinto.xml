@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fileset name="basefs.jacinto">
+  <file name="etc/system/config/graphics.conf" uid="root" gid="nto" mode="0644"/>
+  
+  <!-- Bluetooth -->
+  <directory name="etc/system/config/bluetooth" uid="root" gid="nto" mode="0755"/>
+  <file name="etc/system/config/bluetooth/j5eco_handsfree_r_x_protocol_pcm.bts" uid="root" gid="nto" mode="0644"/>
+
+  <!-- TI Radio -->
+  <directory name="etc/system/config/radio" uid="root" gid="nto" mode="0755"/>
+  <file name="ti/radio/sbin/jive_dsp_app_elf.out" dest="/etc/system/config/radio/jive_dsp_app_elf.out" uid="root" gid="nto" mode="0644"/>
+  <file name="ti/radio/sbin/RadioApp" dest="sbin/RadioApp" uid="root" gid="nto" mode="0755"/>
+  <file name="ti/radio/sbin/syslink_drv" dest="sbin/syslink_drv" uid="root" gid="nto" mode="0755"/>
+  <file name="ti/radio/sbin/audiopp_dsp.ini" dest="usr/bin/audiopp_dsp.ini" uid="root" gid="nto" mode="0644"/>
+  <file name="usr/sbin/radio-adapter" uid="root" gid="nto" mode="0755"/>
+  
+  <!--TODO file name="etc/system/config/cacheflags.conf" uid="root" gid="nto" mode="0644"/ -->
+  <file name="lib/dll/deva-ctrl-mcbsp-dm814x.so" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/deva-ctrl-mcasp-j5_aic3106.so" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/devu-dm816x-mg.so" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/screen-pvr2d.so" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/spi-dm816x.so" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/dll/devnp-dm814x-eco.so" uid="root" gid="nto" mode="0755"/>
+  <symlink name="lib/libmtouch-calib.so" target="libmtouch-calib.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/libmtouch-calib.so.1" uid="root" gid="nto" mode="0755"/>
+  <symlink name="lib/libmtouch-devi.so" target="libmtouch-devi.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="lib/libmtouch-devi.so.1" uid="root" gid="nto" mode="0755"/>
+  <file name="bin/resource_seed" uid="root" gid="nto" mode="0755"/>
+  <file name="sbin/devb-mmcsd-jacinto5" uid="root" gid="nto" mode="0755"/>
+  <file name="sbin/pci-dm814x-eco" uid="root" gid="nto" mode="0755"/>
+  <file name="sbin/devc-seromap" uid="root" gid="nto" mode="0755"/>
+  <file name="sbin/i2c-omap35xx-j5" uid="root" gid="nto" mode="0755"/>
+  <file name="sbin/spi-master" uid="root" gid="nto" mode="0755"/>
+  <directory name="usr/lib/graphics/jacinto5" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/graphics/jacinto5/libglslcompiler.so" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/graphics/jacinto5/libIMGegl.so" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/graphics/jacinto5/libImgGLESv1_CM.so" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/graphics/jacinto5/libImgGLESv2.so" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/graphics/jacinto5/libpvr2d.so" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/graphics/jacinto5/libPVRScopeServices.so" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/graphics/jacinto5/libsrv_um.so" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/graphics/jacinto5/libusc.so" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/graphics/jacinto5/libWFDjacinto5.so" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/graphics/jacinto5/libwfdcfg-j5-evm.so" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/graphics/jacinto5/pvrsrvinit.so" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/graphics/jacinto5/pvrsrv.so" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/lib/graphics/jacinto5/wsegl-screen.so" uid="root" gid="nto" mode="0755"/>
+
+  <!-- touch -->
+  <file name="usr/bin/devi-mxt224" uid="root" gid="nto" mode="0755"/>
+
+  <!-- Nand -->
+  <file name="sbin/fs-etfs-jacinto5_micron" uid="root" gid="nto" mode="0755"/>
+  <file name="bin/update_nand" uid="root" gid="nto" mode="0755"/>
+
+  <!-- WiFi -->
+  <file name="etc/system/config/wifi/tiwlan.ini" uid="root" gid="nto" mode="0644"/>
+  <file name="etc/system/config/wifi/firmware.bin" uid="root" gid="nto" mode="0644"/>
+  <file name="etc/system/config/wifi/nvs_map.bin" uid="root" gid="nto" mode="0644"/>
+  <file name="etc/system/config/wifi/wpa_supplicant.conf" uid="root" gid="nto" mode="0644"/>
+
+  <file name="lib/dll/devnp-ti1283-j5.so" uid="root" gid="nto" mode="0755"/>
+  <file name="usr/sbin/wpa_supplicant_ti" uid="root" gid="nto" mode="0755"/>
+
+  <!-- XXX -->
+</fileset>

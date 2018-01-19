@@ -1,0 +1,17 @@
+<Client>
+	<DeviceId>
+		<DisplayName>Philips Music Player NP1100</DisplayName>
+		<DeviceDescriptionRecognition>
+			<DescriptionText>NP1100</DescriptionText>
+		</DeviceDescriptionRecognition>
+		<MappingUpdatePolicy>FIX</MappingUpdatePolicy>
+	</DeviceId>
+	<Capabilities>
+		<MediaTypeList>
+			<MediaType>MUSIC</MediaType>
+		</MediaTypeList>
+	</Capabilities>
+	<DeviceQuirks>
+		<Quirk>CANNOTREGISTERDEVICE</Quirk>
+	</DeviceQuirks>
+</Client>

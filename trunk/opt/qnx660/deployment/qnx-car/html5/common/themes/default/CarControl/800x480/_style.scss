@@ -1,0 +1,11 @@
+/* $Id$ */
+/* Multipliers */
+$x-multiplier: 1;
+$y-multiplier: 1;
+
+/*Multiplier for the fonts since using the resolution ratios doesn't quite work*/
+$font-multiplier: 1;
+
+$img-dir: $app-dir + '/800x480/img';
+$theme-common-img-dir: $theme-dir + '/common/800x480/img'; 
+

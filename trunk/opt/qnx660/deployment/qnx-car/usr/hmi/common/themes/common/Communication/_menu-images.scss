@@ -1,0 +1,86 @@
+.menu-image-recent {
+	background-image: $menu-recent;
+}
+.x-list-item.menu-selected .menu-image-recent {
+	background-image: $menu-recent-over;
+}
+
+.menu-image-addressbook {
+	background-image: $menu-addressbook;
+}
+.x-list-item.menu-selected .menu-image-addressbook {
+	background-image: $menu-addressbook-over;
+}
+
+.menu-image-messages {
+	background-image: $menu-messages;
+}
+.x-list-item.menu-selected .menu-image-messages {
+	background-image: $menu-messages-over;
+}
+
+.menu-image-dialpad {
+	background-image: $menu-dialpad;
+}
+.x-list-item.menu-selected .menu-image-dialpad {
+	background-image: $menu-dialpad-over;
+}
+
+.menu-image-allmsgs {
+	background-image: $menu-allmessages;
+}
+.x-list-item.menu-selected .menu-image-allmsgs {
+	background-image: $menu-allmessages-over;
+}
+
+.menu-image-email {
+	background-image: $menu-email;
+}
+.x-list-item.menu-selected .menu-image-email {
+	background-image: $menu-email-over;
+}
+
+.menu-image-text {
+	background-image: $menu-textmessages;
+}
+.x-list-item.menu-selected .menu-image-text {
+	background-image: $menu-textmessages-over;
+}
+
+.menu-image-contact {
+	background-image: $menu-contacts;
+}
+
+.x-list-item.menu-selected .menu-image-contact {
+	background-image: $menu-contacts-over;
+}
+
+.menu-contactdetails-image {
+	background-image: $contact-details-default;
+}
+
+.menu-contactdetails-button, .menu-contactdetails-large-button {
+	background-image: $contact-details-button;
+}
+.menu-contactdetails-large-button {
+	background-image: $contact-details-button-large;
+}
+.menu-contactdetails-button:active {
+	background-image: $contact-details-button-over;
+}
+
+.menu-contactdetails-detailimg-phone {
+	background-image: $contact-details-phone;
+}
+
+.menu-contactdetails-detailimg-email {
+	background-image: $contact-details-email;
+}
+
+.menu-contactdetails-detailimg-text {
+	background-image: $contact-details-text;
+}
+
+.menu-contactdetails-detailimg-address {
+	background-image: $contact-details-address;
+}

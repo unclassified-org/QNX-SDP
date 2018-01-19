@@ -1,0 +1,68 @@
+### screen-jacinto5.build
+
+
+### Libraries
+[perms=0755]
+
+graphics/jacinto5/libglslcompiler.so
+graphics/jacinto5/libIMGegl.so
+graphics/jacinto5/libImgGLESv1_CM.so
+graphics/jacinto5/libImgGLESv2.so
+graphics/jacinto5/libpvr2d.so
+graphics/jacinto5/libPVRScopeServices.so
+graphics/jacinto5/libsrv_um.so
+graphics/jacinto5/libusc.so
+graphics/jacinto5/libWFDjacinto5.so
+graphics/jacinto5/pvrsrvinit.so
+graphics/jacinto5/pvrsrv.so
+graphics/jacinto5/wsegl-screen.so
+graphics/jacinto5/libj5modes-evm.so
+graphics/jacinto5/libwfdcfg-j5-evm.so
+
+screen-pvr2d.so
+libscreen.so.1
+[type=link] libscreen.so=libscreen.so.1
+libimg.so.1
+libpng14.so.0
+libz.so.2
+img_codec_png.so
+
+# Common Libraries
+[perms=0644] img.conf = {
+[img_codec_png.so]
+mime=image/png:application/png:application/x-png
+ext=png
+}
+
+### Libraries
+[perms=0755]
+
+libWFD.so.1
+[type=link] libWFD.so=libWFD.so.1
+libdisputil.so.2
+[type=link] libdisputil.so=libdisputil.so.2
+libmtouch-devi.so.1
+[type=link] libmtouch-devi.so=libmtouch-devi.so.1
+libkalman.so.1
+[type=link] libkalman.so=libkalman.so.1
+libinputevents.so.1
+[type=link] libinputevents.so=libinputevents.so.1
+libhiddi.so.1
+
+screen-gles2.so
+libGLESv2.so.1
+[type=link] libGLESv2.so=libGLESv2.so.1
+libEGL.so.1
+[type=link] libEGL.so=libEGL.so.1
+
+### Executables
+[perms=0755 data=c]
+screen
+graphics.conf=../etc/system/config/graphics.conf
+scaling.conf=../etc/system/config/scaling.conf
+
+[type=link] /base/usr/lib/graphics/jacinto5/graphics.conf=/proc/boot/graphics.conf
+[type=link] /base/etc/system/config/graphics.conf=/proc/boot/graphics.conf
+[type=link] /base//etc/system/config/scaling.conf=/proc/boot/scaling.conf
+[type=link] /base/etc/system/config/img.conf=/proc/boot/img.conf
+##eof

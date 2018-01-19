@@ -1,0 +1,908 @@
+body {
+    color: #555555;
+    font-family: "Segoe UI",Helvetica,sans-serif;
+    font-size: small;
+	background: #FFF repeat scroll 0 0 transparent;
+	line-height: normal;
+}
+
+a, a:link, a:visited, a:active {
+	color: #555;
+	text-decoration: none;
+}
+
+#content {
+	background: #transparent;
+	overflow: hidden;
+	width: 1000px;
+	margin: 0 auto;
+}
+
+#accountForm {
+	overflow: hidden;
+	margin: 20px auto;
+}
+
+.accountSettingsContainer {
+	width: 980px;
+	margin: 0px auto;
+}
+
+.floatL {
+	float: left;
+}
+
+.floatR {
+	float: right;
+}
+
+.clear {
+	clear: both;
+	overflow: hidden;
+	display: block;
+	height: 0px;
+	line-height: 0px;
+}
+
+.serverSettingsWrapper {
+    width: 980px;
+    padding: 20px 0px;
+}
+
+.serverSettingsTitlebarWrapper {
+    padding: 0px 0px 15px 0px;
+}
+
+.serverSettingsTitle {
+    padding-top: 5px;
+}
+
+.serverSettingsLeftNav {
+    width: 240px;
+    float: left;
+}
+
+.serverSettingsLeftNav.extraspace {
+    padding-bottom: 130px;
+}
+
+.serverSettingsLeftNavItem {
+    border-bottom: 1px dotted #555;
+    cursor: pointer;
+    background: #CDCDCD;
+    height: 75px;
+}
+
+.serverSettingsLeftNavItem:hover .serverSettingsLeftNavTextWrapper, .serverSettingsLeftNavItem.active .serverSettingsLeftNavTextWrapper
+{
+	color: #FFF;
+}
+
+.serverSettingsLeftNavTextWrapper {
+    padding: 10px 30px 0px 20px;
+    color: #363636;
+}
+
+.serverSettingsLeftNavTextWrapper .largeFont {
+    font-weight: bold;
+}
+
+.serverSettingsLeftNavItem:hover, .serverSettingsLeftNavItem.active {
+    background: #017AAC;
+}
+
+.serverSettingsContentWrapper {
+    padding: 0px;
+    float: left;
+    width: 740px;
+}
+
+.serverSettingsContentWrapper.contentDisplay {
+    padding: 0px;
+    float: left;
+    width: 830px;
+}
+
+.serverSettingsContentWrapper.loading
+{
+	background: url("/loading_icon.gif") no-repeat scroll center center transparent;
+}
+
+.serverSettingsContentWrapper.nonav {
+    padding-left: 270px;
+}
+
+.serverContentSpacer {
+    height: 45px;
+}
+
+.smallServerContentSpacer {
+    height: 20px;
+}
+
+.serverNameContainer {
+    background: #E2E2E2;
+    width: 400px;
+    padding: 15px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.serverNameContainer.nobg {
+    background: none;
+    padding: 0px;
+    cursor: auto;
+}
+
+.textWrapper {
+    display: inline-block;
+    width: 335px;
+}
+
+.mediaReceiversTable {
+    border-spacing: 5px;    
+}
+
+.mediaReceiversTable th {
+    color: #959595;
+    text-align: left;
+}
+
+.mediaReceiversTable input
+{
+	background: #FFF;
+	border: 1px solid #7F9DB9;
+	color: #000;
+}
+
+.largestFont {
+    font-size: 1.45em;
+}
+
+.largeFont {
+    font-size: 1.09em;
+}
+
+.normalFont {
+    font-size: 1em;
+}
+
+.smallFont {
+    font-size: .91em;
+}
+
+.smallestFont
+{
+	font-size: .85em;
+}
+
+.slab
+{
+	font-family: 'MuseoSlab500',Arial,Arial,Helvetica,sans-serif;
+}
+
+a.actionbtn,a.actionbtnmd,a.actionbtnlg {
+	color: #707070;
+	cursor: pointer;
+	display: inline-block;
+	font-family: "Segoe UI", "Trebuchet MS", Arial, Helvetica, sans-serif;
+	margin-left: 5px;
+	outline: none;
+	padding: 0;
+	text-decoration: none;
+}
+
+.leftAlign a.actionbtn,.leftAlign a.actionbtnmd,.leftAlign a.actionbtnlg
+	{
+	margin-left: 0px;
+	margin-right: 5px;
+}
+
+a.actionbtn {
+	font-size: 1em;
+	font-weight: normal;
+	height: 20px;
+}
+
+a.actionbtnmd {
+	font-size: 1.09em;
+	height: 26px;
+}
+
+a.actionbtnlg {
+	font-size: 1.91em;
+	height: 36px;
+}
+
+a.actionbtnlg.bold {
+	font-weight: bold;
+}
+
+a.inlineLink  {
+   color: #017aac;
+}
+
+a.inlineLink:hover, a.inlineLink:active  {
+   text-decoration: underline;
+}
+
+/* Icon Generic Defintiions */
+.ico {
+	background: transparent url("btn_sprite.png") no-repeat scroll 0 -80px;
+	width: 20px;
+	height: 20px;
+	margin-right: 2px;
+	text-decoration: none;
+	border: 0;
+}
+
+.icomd {
+	background: transparent url("btn_sprite_md.png") no-repeat scroll 0 -100px;
+	width: 25px;
+	height: 25px;
+	text-decoration: none;
+	border: 0;
+}
+
+.icolg {
+	background: transparent url("btn_sprite_lg.png") no-repeat scroll 0 -108px;
+	width: 36px;
+	height: 36px;
+	text-decoration: none;
+	border: 0;
+}
+
+a.actionbtn .actionbtn_l,a.actionbtnmd .actionbtn_l,a.actionbtnlg .actionbtn_l {
+	float: left;
+	text-decoration: none;
+}
+
+a.actionbtn .actionbtn_l {
+	background: transparent url("btn_sprite.png") no-repeat scroll 0
+		-60px;
+	width: 5px;
+	height: 20px;
+}
+
+a.actionbtnmd .actionbtn_l {
+	background: transparent url("btn_sprite_md.png") no-repeat scroll
+		0 -75px;
+	width: 5px;
+	height: 25px;
+}
+
+a.actionbtnmd.confirm .actionbtn_l {
+	background: transparent url("btn_sprite_md_confirm.png") no-repeat
+		scroll 0 -78px;
+}
+
+a.actionbtnlg .actionbtn_l {
+	background: transparent url("btn_sprite_lg.png") no-repeat scroll
+		0 -108px;
+	width: 10px;
+	height: 36px;
+}
+
+a.actionbtn .actionbtn_c,a.actionbtn .actionbtn_drop,a.actionbtnmd .actionbtn_c, a.actionbtnmd .actionbtn_drop ,a.actionbtnlg .actionbtn_c
+	{
+	float: left;
+	text-decoration: none;
+	text-shadow: 1px 1px 0 #e1e1e1;
+}
+
+a.actionbtn .actionbtn_c,a.actionbtn .actionbtn_drop {
+	background: transparent url("btn_sprite.png") repeat-x scroll 0 0;
+	line-height: 20px;
+}
+
+a.actionbtn .actionbtn_drop {
+	width: 15px;
+	overflow: hidden;
+	padding: 0 0 0 5px;
+}
+
+a.actionbtnmd .actionbtn_c,a.actionbtnmd .actionbtn_drop {
+	background: transparent url("btn_sprite_md.png") repeat-x scroll 0 0;
+	line-height: 25px;
+}
+
+a.actionbtnmd.bold .actionbtn_c,a.actionbtnmd.bold .actionbtn_drop {
+	font-weight: bold;
+}
+
+a.actionbtnmd .actionbtn_drop {
+	width: 20px;
+	overflow: hidden;
+	padding-left: 5px;
+}
+
+a.actionbtnlg .actionbtn_c {
+	background: transparent url("btn_sprite_lg.png") repeat-x scroll
+		0 0;
+	line-height: 33px;
+	padding: 0 0 3px;
+}
+
+a.actionbtn.noIconButton .actionbtn_c,a.actionbtnmd.noIconButton .actionbtn_c,a.actionbtnlg.noIconButton .actionbtn_c {
+	padding: 0 0.5em;
+}
+a.actionbtnlg .actionbtn_c.pause {
+	padding: 0px 19px;
+}
+
+a.actionbtn .actionbtn_r,a.actionbtnmd .actionbtn_r,a.actionbtnlg .actionbtn_r
+	{
+	float: left;
+	overflow: hidden;
+	text-decoration: none;
+}
+
+a.actionbtn .actionbtn_r {
+	background: transparent url("btn_sprite.png") no-repeat scroll -95px -60px;
+	width: 5px;
+	height: 20px;
+	line-height: 20px;
+}
+
+a.actionbtnmd .actionbtn_r {
+	background: transparent url("btn_sprite_md.png") no-repeat scroll -95px -75px;
+	width: 5px;
+	height: 25px;
+	line-height: 25px;
+}
+
+a.actionbtnlg .actionbtn_r {
+	background: transparent url("btn_sprite_lg.png") no-repeat scroll -134px -108px;
+	width: 10px;
+	height: 36px;
+	line-height: 36px;
+}
+
+a.actionbtn .actionbtn_ico {
+	width: 22px;
+	padding-left: 3px;
+}
+
+a.actionbtn .actionbtn_ico.actionbtn_r {
+	background: transparent url("btn_sprite.png") no-repeat scroll -60px -60px;
+}
+
+a.actionbtnmd .actionbtn_ico {
+	width: 25px;
+}
+a.actionbtnmd .actionbtn_r.actionbtn_ico {
+	background-position: -75px -75px;
+}
+
+a.actionbtnlg .actionbtn_ico {
+	width: 36px;
+}
+
+a.actionbtn:hover .actionbtn_l {
+	background-position: -25px -60px;
+}
+
+a.actionbtn:hover .actionbtn_c,a.actionbtn:hover .actionbtn_drop {
+	background-position: 0 -20px;
+	color: #252525;
+	text-shadow: 1px 1px 0 #cecece;
+}
+
+a.actionbtn:hover .actionbtn_r {
+	background-position: -120px -60px;
+}
+
+a.actionbtn:hover .actionbtn_r.actionbtn_ico {
+	background-position: -80px -60px;
+}
+
+a.actionbtnmd:hover .actionbtn_l {
+	background-position: -25px -75px;
+}
+a.actionbtnmd:hover .actionbtn_r.actionbtn_ico {
+	background-position: -100px -75px;
+}
+
+a.actionbtnmd:hover .actionbtn_c, a.actionbtnmd:hover .actionbtn_drop {
+	background-position: 0 -25px;
+	color: #252525;
+	text-shadow: 1px 1px 0 #cecece;
+}
+
+a.actionbtnmd:hover .actionbtn_r {
+	background-position: -120px -75px;
+}
+
+a.actionbtnlg:hover .actionbtn_l {
+	background-position: -36px -108px;
+}
+
+a.actionbtnlg:hover .actionbtn_c {
+	background-position: 0 -36px;
+	color: #252525;
+	text-shadow: 1px 1px 0 #cecece;
+}
+
+a.actionbtnlg:hover .actionbtn_r {
+	background-position: -170px -108px;
+}
+
+a.actionbtn.active .actionbtn_l {
+	background-position: -50px -60px;
+}
+
+a.actionbtn.active .actionbtn_c,a.actionbtn.active .actionbtn_drop {
+	background-position: 0 -40px;
+	color: #252525;
+	text-shadow: 1px 1px 0 #aaa;
+}
+
+a.actionbtn.active .actionbtn_r {
+	background-position: -145px -60px;
+}
+
+a.actionbtn.active .actionbtn_ico.actionbtn_r {
+	background-position: -100px -60px;
+}
+
+a.actionbtnmd.active .actionbtn_l {
+	background-position: -50px -75px;
+}
+
+a.actionbtnmd.active .actionbtn_c, a.actionbtnmd.active .actionbtn_drop {
+	background-position: 0 -50px;
+	color: #000;
+}
+a.actionbtnmd.active .actionbtn_r {
+	background-position: -145px -75px;
+}
+a.actionbtnmd.active .actionbtn_r.actionbtn_ico {
+	background-position: -125px -75px;
+}
+a.actionbtnlg.active .actionbtn_l {
+	background-position: -72px -108px;
+}
+a.actionbtnlg.active .actionbtn_c {
+	background-position: 0 -72px;
+	color: #000;
+}
+a.actionbtnlg.active .actionbtn_r {
+	background-position: -206px -108px;
+}
+
+.nomargin {
+	margin: 0px !important;
+}
+
+.overlay {
+	background: #000;
+	opacity: 0.5;
+	filter: alpha(opacity =       50);
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+	z-index: 1000;
+}
+
+.dialogWrapper {
+	z-index: 1001;
+	position: fixed;
+	top: 25%;
+	width: 420px;
+}
+
+.dialogWrapper.select {
+	width: 400px;
+}
+
+.dialogWrapper.folderBrowse
+{
+	width: 700px;
+}
+
+.dialogTop,.dialogBottom {
+	display: block;
+	font-size: 1px;
+}
+
+.d1 {
+	margin: 0 5px;
+}
+
+.d1,.d2,.d3 {
+	height: 1px;
+}
+
+.d1,.d2,.d3,.d4 {
+	display: block;
+	overflow: hidden;
+}
+
+.d2 {
+	border-width: 0 2px;
+	margin: 0 3px;
+}
+
+.d2,.d3,.d4 {
+	background: #E1E1E1;
+}
+
+.d3 {
+	margin: 0 2px;
+}
+
+.d4 {
+	height: 2px;
+	margin: 0 1px;
+}
+
+.dialogContentWrapper {
+	background: #E1E1E1;
+	display: block;
+	padding: 8px 10px;
+}
+
+.dialogContent {
+	background: #FFF;
+	border: 1px solid #B7B7B7;
+	padding: 10px;
+}
+
+.dialogButtonContainer {
+	padding-top: 20px;
+}
+
+.dialogButtonContainer .actionbtnmd
+{
+	margin: 0px 5px 0px 0px;
+}
+
+#dirDisplayContainer.scroll
+{
+	height: 355px;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+.dirPathDisplay
+{
+	background: #ECECEC;
+	padding: 10px 25px;
+}
+
+.parentDirRow
+{
+	margin: 25px 0px;
+	cursor: pointer;
+}
+
+.dirRow
+{
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+
+.parentDirIcon
+{
+	width: 7px;
+	height: 12px;
+	background: url(ico_upFolder.png) no-repeat center;
+	display: inline-block;
+	margin-right: 10px;
+	padding-left: 8px;
+}
+
+.dirIcon
+{
+	width: 15px;
+	height: 13px;
+	background: url(ico_folder.png) no-repeat;
+	display: inline-block;
+	margin-right: 10px;
+}
+
+#headWrapper {
+	background: #000;
+	height: 5em;
+}
+#header {
+	color: #333;
+	margin: 0 auto;
+	position: relative;
+	width: 980px;
+}
+#nav li {
+	border-right: 1px solid #444;
+	display: block;
+	float: left;
+}
+#nav a {
+	
+	color: #959595;
+	font-weight: 500;
+	font-style: normal;
+	font-family: 'MuseoSlab500', Arial, Helvetica, sans-serif;
+	font-size: 2em;
+	line-height: 2.5em;
+	margin: 0;
+	padding: 17px 10px 17px;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+#nav a:hover {
+	background-color: #111;
+	color: #fff;
+}
+#nav a.active
+{
+	background: url("ico_arrow_topnav.gif") no-repeat scroll center bottom transparent;
+	color: #017AAC;
+}
+@font-face {
+    font-family: 'MuseoSlab500';
+    src: url('Museo_Slab_500-webfont.eot');
+    src: url('Museo_Slab_500-webfont.eot?iefix') format('eot'),
+         url('Museo_Slab_500-webfont.woff') format('woff'),
+         url('Museo_Slab_500-webfont.ttf') format('truetype'),
+         url('Museo_Slab_500-webfont.svg#webfont8VbsAwew') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#login ul.loginContainer {
+	float: right;
+}
+#login li.loginItem {
+	float: right;
+	position: relative;
+	color: #444;
+	font-family: 'MuseoSlab500', Arial, Arial, Helvetica, sans-serif;
+}
+#login li.loginItem a {
+	color: #959595;
+	cursor: pointer;
+}
+#login li.loginItem a:hover {
+	color: #FFF;
+	
+}
+#login li.loginItem a:active {
+	text-decoration: underline;
+}
+
+#login li.loginItem {
+	float: left;
+	display: inline;
+	line-height: 3.4em;
+}
+.leftNav {
+	margin: 0px 20px 50px 0;
+	width: 130px;
+	float: left;
+}
+#subnav {
+	position: relative;
+}
+#subnav ul {
+	margin: 0 0 5px;
+}
+#subnav li {
+	position: relative;
+	cursor: pointer;
+}
+#leftColumn h2 a:hover {
+	color: #FFF;
+}
+#subnav h2 {
+	background: url("bg_diagpattern.gif");
+	height: 1.25em;
+	margin-bottom: 2px;
+}
+#subnav h2 a {
+	display: block;
+	line-height: 1.25em;
+	height: 1.25em;
+	text-decoration: none;
+	cursor: pointer;
+}
+#subnav h2 a span.title {
+	font-family: 'MuseoSlab500', Arial, Arial, Helvetica, sans-serif;
+	background-color: #fff;
+	color: #017aac;
+	display: inline-block;
+	padding: 0 5px;
+	margin-left: 5px;
+	font-size: 1.2em;
+	font-weight: 500;
+}
+#subnav h2 a:hover span.title {
+	border: 5px solid #017aac;
+	border-width: 0 0 0 5px;
+	margin: 0;
+}
+#subnav ul li .addLink a {
+	padding: 0;
+}
+#subnav ul li a {
+	padding: 0 10px;
+	line-height: 2.17em;
+	color: #555;
+	display: block;
+	border-bottom: 1px dotted #cac9c9;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+#subnav ul li a:hover {
+	text-decoration: underline !important;	
+}
+#subnav ul li.current a {
+	background: #017aac;
+	color: #fff !important;
+}
+
+.subHeader {
+	background: url("bg_diagpattern.gif");
+	overflow: hidden;
+	height: 3.33em;
+	padding-right: 50px;
+	margin-bottom: 10px;
+}
+.subheaderTitle {
+	font-style: normal;
+	line-height: 1.67em;
+	float: left;
+	font-family: 'MuseoSlab500', Arial, Arial, Helvetica, sans-serif;
+	background-color: #fff;
+	color: #017aac;
+	display: block;
+	padding: 0 5px;
+	margin-left: .58em;
+	font-size: 2em;
+	font-weight: 500;
+}
+
+.browsePages
+{
+	line-height: 1.43em;
+	text-align: center;
+	padding: 0 125px;
+}
+
+.browsePages a
+{
+	color: #017AAC;
+	cursor: pointer;
+}
+
+.browsePages a:hover
+{
+	text-decoration: underline;
+}
+
+.breadcrumb
+{
+    color: #888888;
+    font-size: 0.92em;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.breadcrumb a {
+	color: #888;
+	cursor: pointer;
+}
+
+.breadcrumb a:hover {
+	text-decoration: underline;
+}
+
+.longInput
+{
+	width: 276px;
+}
+
+.selectInput
+{
+	width: 100px;
+}
+
+.boxHeader
+{
+	background: url("bg_diagpattern.gif") repeat scroll 0 0 transparent;
+    height: 2.5em;
+	margin-bottom: 12px;
+}
+
+.boxHeader .titleWrapper
+{
+	display: block;
+    height: 2.5em;
+    line-height: 2.5em;
+    text-decoration: none;
+}
+
+.boxHeader .title
+{
+	background-color: #FFFFFF;
+    color: #017AAC;
+    display: block;
+    float: left;
+    font-family: 'MuseoSlab500',Arial,Arial,Helvetica,sans-serif;
+    font-size: 1.67em;
+    font-weight: 500;
+    margin-left: 15px;
+    padding: 0 5px;
+}
+
+.mixedContentSeparator
+{
+	height: 10px;
+}
+
+.truncate {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+	-moz-binding: url('ellipsis.xml#ellipsis');
+}
+
+.leftNavTitle
+{
+	color: #959595!important;
+	font-size: 1.5em!important;
+}
+
+.error
+{
+	color: #F00;
+	font-weight: bold;
+}
+
+.spinner
+{
+	height: 40px;
+	width: 40px;
+	background: url(ani_spinner_40black.gif) no-repeat;
+}
+
+#footer {
+	clear: both;
+	background-color: #000;
+	color: #ebebeb;
+	width: 100%;
+	margin-top: 50px;
+}
+#footer a { color: #ebebeb; }
+#footer a:hover { text-decoration: underline; }
+.footerContent {
+	width: 930px;
+	margin: 0px auto;
+	padding: 30px 0px;
+	font-family: Arial Unicode MS,Arial,sans-serif;
+}
+.logo {
+	width: 145px;
+	height: 48px;
+	background: url(footer_logo.png) no-repeat;
+}
+.footerTitle {
+	font-weight: bold;
+	font-family: 'MuseoSlab500',Arial,Arial,Helvetica,sans-serif;
+}
+.footerContentWrapper {
+	float: left;
+	text-align: left;
+	margin-right: 90px;
+}
+.footerContentWrapper.right {
+	float: right;
+	text-align: right;
+	margin: 0;
+}
+.footerContentWrapper li {
+	padding-top: 5px;
+}

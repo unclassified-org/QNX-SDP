@@ -1,0 +1,13 @@
+@hvac
+airRecirculation_all:b:false
+airConditioning_all:b:false
+fanDirection_row1left::faceAndFeet
+fanDirection_row1right::face
+fanSpeed_row1left:n:1
+fanSpeed_row1right:n:3
+temperature_row1left:n:21
+temperature_row1right:n:19
+heatedSeat_row1left:n:2
+heatedSeat_row1right:n:0
+defrost_all:b:true
+zoneLink_all:b:false

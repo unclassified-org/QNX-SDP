@@ -1,0 +1,50 @@
+/**
+ * 1280x720 overrides/images for the Sencha Touch 2.1 application lists
+ * using the Ext.dataview.List component.
+ * @author lgreenway
+ *
+ * $Id: lists.scss 5717 2013-01-18 16:08:21Z lgreenway@qnx.com $
+ */
+
+.x-list.menu-list {
+
+	.x-list-item {
+		height: 89px;
+		font-size: 72px;
+		padding: 0px 30px;
+	}
+	.x-list-item-body {
+
+		.menu-image-left {
+			padding-left: 96px;
+		}
+	
+		.menu-image-right {
+			background-size: 72px 72px;
+			padding-right: 96px;
+		}
+	
+		.menu-label {
+			
+			.menu-line-1 {
+				font-size: 36px;
+				line-height: 36px;
+				padding-top: 9px;
+				
+				.right {
+					font-size: 30px;
+				}
+			}
+			
+			.menu-line-2 {
+				font-size: 27px;
+				line-height: 33px;
+			}
+		}
+	}
+	
+	.x-list-emptytext {
+		font-size: 42px;
+		margin: 15px;
+	}
+}

@@ -1,0 +1,175 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<index>
+<entry keyword="BAR files">
+<entry keyword="creating">
+<topic href="topic/packaging.html#packaging" title="Packaging a Qt App"/>
+</entry>
+<entry keyword="packaging tool ">
+<topic href="topic/packaging.html#packaging" title="Packaging a Qt App"/>
+<entry keyword="See blackberry-nativepackager">
+</entry>
+</entry>
+</entry>
+<entry keyword="BaseCommand class">
+<entry keyword="specification">
+<topic href="topic/qplayer_api/class_q_player_base_command.html#q_player_base_command" title="BaseCommand"/>
+</entry>
+</entry>
+<entry keyword="blackberry-nativepackager">
+<entry keyword="command line example">
+<topic href="topic/packaging.html#packaging" title="Packaging a Qt App"/>
+</entry>
+<entry keyword="command-line commands">
+<topic href="topic/packaging_command_options.html#packaging_cmd_options" title="Qt command-line options for blackberry-nativepackager"/>
+</entry>
+<entry keyword="command-line other options">
+<topic href="topic/packaging_command_options.html#packaging_cmd_options" title="Qt command-line options for blackberry-nativepackager"/>
+</entry>
+<entry keyword="command-line packaging options">
+<topic href="topic/packaging_command_options.html#packaging_cmd_options" title="Qt command-line options for blackberry-nativepackager"/>
+</entry>
+<entry keyword="command-line path options">
+<topic href="topic/packaging_command_options.html#packaging_cmd_options" title="Qt command-line options for blackberry-nativepackager"/>
+</entry>
+<entry keyword="command-line syntax">
+<topic href="topic/packaging_command_options.html#packaging_cmd_options" title="Qt command-line options for blackberry-nativepackager"/>
+</entry>
+<entry keyword="command-line variables">
+<topic href="topic/packaging_command_options.html#packaging_cmd_options" title="Qt command-line options for blackberry-nativepackager"/>
+</entry>
+<entry keyword="packaging a Qt app">
+<topic href="topic/packaging.html#packaging" title="Packaging a Qt App"/>
+</entry>
+<entry keyword="sample command line">
+<topic href="topic/packaging_command_options.html#packaging_cmd_options" title="Qt command-line options for blackberry-nativepackager"/>
+</entry>
+<entry keyword="tool name and location">
+<topic href="topic/packaging.html#packaging" title="Packaging a Qt App"/>
+</entry>
+</entry>
+<entry keyword="BrowseCommand class">
+<entry keyword="specification">
+<topic href="topic/qplayer_api/class_q_player_browse_command.html#q_player_browse_command" title="BrowseCommand"/>
+</entry>
+</entry>
+<entry keyword="Changeset structure">
+<topic href="topic/qpps_api/struct_q_pps_changeset.html#Changeset" title="Changeset"/>
+</entry>
+<entry keyword="CreateTrackSessionCommand class">
+<entry keyword="specification">
+<topic href="topic/qplayer_api/class_q_player_create_track_session_command.html#q_player_create_track_session_command" title="CreateTrackSessionCommand"/>
+</entry>
+</entry>
+<entry keyword="CurrentTrackCommand class">
+<entry keyword="specification">
+<topic href="topic/qplayer_api/class_q_player_current_track_command.html#q_player_current_track_command" title="CurrentTrackCommand"/>
+</entry>
+</entry>
+<entry keyword="CurrentTrackPositionCommand class">
+<entry keyword="specification">
+<topic href="topic/qplayer_api/class_q_player_current_track_position_command.html#q_player_current_track_position_command" title="CurrentTrackPositionCommand"/>
+</entry>
+</entry>
+<entry keyword="DirWatcher class">
+<entry keyword="functions">
+<topic href="topic/qpps_api/dirwatcher_functions.html#q_pps_dirwatcher_public_functions" title="Public functions in DirWatcher"/>
+</entry>
+<entry keyword="signals">
+<topic href="topic/qpps_api/dirwatcher_signals.html#q_pps_dirwatcher_signals" title="Signals in DirWatcher"/>
+</entry>
+<entry keyword="specification">
+<topic href="topic/qpps_api/class_q_pps_dirwatcher.html#q_pps_dirwatcher" title="DirWatcher"/>
+</entry>
+</entry>
+<entry keyword="Error codes enum">
+<topic href="topic/qplayer_api/enum_q_player_error_codes.html#ErrorCodes" title="Error codes enum"/>
+</entry>
+<entry keyword="host system">
+<entry keyword="definition">
+<topic href="topic/host_preparing.html#host_preparation" title="Preparing your host system for Qt development"/>
+</entry>
+<entry keyword="preparing for Qt app development">
+<topic href="topic/host_preparing.html#host_preparation" title="Preparing your host system for Qt development"/>
+</entry>
+<entry keyword="prerequisites">
+<topic href="topic/host_preparing.html#host_preparation" title="Preparing your host system for Qt development"/>
+</entry>
+</entry>
+<entry keyword="MediaNode class">
+<topic href="topic/qplayer_api/class_q_player_media_node.html#MediaNode" title="MediaNode"/>
+</entry>
+<entry keyword="MediaSource class">
+<topic href="topic/qplayer_api/class_q_player_media_source.html#MediaSource" title="MediaSource"/>
+</entry>
+<entry keyword="MediaSourceEventType enum">
+<topic href="topic/qplayer_api/enum_q_player_ms_event_type.html#MediaSourceEventType" title="MediaSourceEventType"/>
+</entry>
+<entry keyword="MediaSourcesCommand class">
+<entry keyword="specification">
+<topic href="topic/qplayer_api/class_q_player_media_sources_command.html#q_player_media_sources_command" title="MediaSourcesCommand"/>
+</entry>
+</entry>
+<entry keyword="Metadata class">
+<topic href="topic/qplayer_api/class_q_player_metadata.html#Metadata" title="Metadata"/>
+</entry>
+<entry keyword="MetadataCommand class">
+<entry keyword="specification">
+<topic href="topic/qplayer_api/class_q_player_extended_metadata_command.html#q_player_extended_metadata_command" title="ExtendedMetadataCommand"/>
+<topic href="topic/qplayer_api/class_q_player_metadata_command.html#q_player_metadata_command" title="MetadataCommand"/>
+</entry>
+</entry>
+<entry keyword="Object class">
+<entry keyword="functions">
+<topic href="topic/qpps_api/object_functions.html#q_pps_object_public_functions" title="Public functions in Object"/>
+</entry>
+<entry keyword="properties">
+<topic href="topic/qpps_api/object_properties.html#q_pps_object_public_properties" title="Public properties of Object"/>
+</entry>
+<entry keyword="signals">
+<topic href="topic/qpps_api/object_signals.html#q_pps_object_signals" title="Signals in Object"/>
+</entry>
+<entry keyword="slots">
+<topic href="topic/qpps_api/object_slots.html#q_pps_object_public_slots" title="Public slots in Object"/>
+</entry>
+<entry keyword="specification">
+<topic href="topic/qpps_api/class_q_pps_object.html#q_pps_object" title="Object"/>
+</entry>
+</entry>
+<entry keyword="PlayerState class">
+<topic href="topic/qplayer_api/class_q_player_player_state.html#PlayerState" title="PlayerState"/>
+</entry>
+<entry keyword="PlayerStateCommand class">
+<entry keyword="specification">
+<topic href="topic/qplayer_api/class_q_player_player_state_command.html#q_player_player_state_command" title="PlayerStateCommand"/>
+</entry>
+</entry>
+<entry keyword="QNX QDF">
+<entry keyword="installing">
+<topic href="topic/host_installing_qnx_qdf.html#host_installing_qnx_qdf" title="Installing QNX QDF"/>
+</entry>
+</entry>
+<entry keyword="QPlayer class">
+<entry keyword="constants">
+<topic href="topic/qplayer_api/qplayer_constants.html#q_player_qplayer_public_functions" title="Public constants used by QPlayer"/>
+</entry>
+<entry keyword="functions">
+<topic href="topic/qplayer_api/qplayer_functions.html#q_player_qplayer_public_functions" title="Public functions in QPlayer"/>
+</entry>
+<entry keyword="signals">
+<topic href="topic/qplayer_api/qplayer_signals.html#q_player_qplayer_signals" title="Signals in QPlayer"/>
+</entry>
+<entry keyword="slots">
+<topic href="topic/qplayer_api/qplayer_slots.html#q_player_qplayer_public_slots" title="Public slots in QPlayer"/>
+</entry>
+<entry keyword="specification">
+<topic href="topic/qplayer_api/class_q_player_qplayer.html#q_player_qplayer" title="QPlayer class"/>
+</entry>
+</entry>
+<entry keyword="QPlayer library">
+<entry keyword="API">
+<topic href="topic/qplayer_api/qplayer_api.html#qplayer_api" title="QPlayer API"/>
+</entry>
+<entry keyword="classes">
+<entry keyword="BaseCommand">
+<topic href="topic/qplayer_api/class_q_player_base_command.html#q_player_base_command" title="BaseCommand"/>
+<entry keyword="See BaseCommand class">

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<?eclipse version="3.0"?> 
+<plugin name="Multimedia Architecture Guide" id="com.qnx.doc.appsandmedia.mm_arch" version="1.0"
+	provider-name="%plugin.providername">
+	
+
+   <extension point="org.eclipse.help.toc">
+	<toc file="main.xml" primary="true"/>
+   </extension>
+   
+	<extension point="org.eclipse.help.index">
+	 <index file="index.xml"/>
+	</extension>
+</plugin>

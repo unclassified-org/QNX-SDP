@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fileset name="basefs.car.navigation_sample">
+   <file name="usr/bin/navigation-sample" uid="root" gid="nto" mode="0755"/>
+   <file name="scripts/navigation-sample.sh" uid="root" gid="nto" mode="0755"/>
+   <symlink name="scripts/navigation.sh" target="navigation-sample.sh" uid="root" gid="nto" mode="0750"/>
+</fileset>
